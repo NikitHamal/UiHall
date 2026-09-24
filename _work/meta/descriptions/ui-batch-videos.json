@@ -1,0 +1,741 @@
+{
+ "items": {
+  "VID-0298": {
+   "id": "VID-0298",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "AI assistant quick actions, black card",
+   "description": "A black phone card for an AI assistant (ChatGPT-style): 'Start a voice chat / Create an image / Write or edit' list and a '+ Ask ChatGPT' mic button. A quick-actions home for an AI assistant. The mic button is the only saturated element.",
+   "roles": [
+    "home",
+    "chat"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "ai",
+    "cta",
+    "dark-ui"
+   ],
+   "quality": "Short clip (5.4s); real motion (median 18.1).",
+   "source_note": "AI assistant quick-actions screen."
+  },
+  "VID-0299": {
+   "id": "VID-0299",
+   "category": "other",
+   "type": "flow-walkthrough",
+   "title": "Pixel RTS map with minimal HUD",
+   "description": "A top-down pixel-art game map: green terrain, trees, a village with buildings, a 'Day 13 14:32' HUD strip and an inventory hotbar at the bottom. Game footage rather than a UI demo — kept for the minimal pixel HUD (day/time strip + hotbar) and the pixel-art palette.",
+   "roles": [],
+   "style": [],
+   "tags": [
+    "game-ui",
+    "pixel-art"
+   ],
+   "quality": "Game screen-recording; HUD text tiny.",
+   "source_note": "Honest read: this is gameplay, not an interface demo."
+  },
+  "VID-0300": {
+   "id": "VID-0300",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "Read app — book spine shelf",
+   "description": "A 'Read' bookshelf app: a long shelf of book spines (The Hobbit, a blue classical-bust volume, The Great Gatsby, Guns, …) where the selected book's cover floats up in front of the shelf. A horizontal shelf carousel with a pop-out selected state; the spine colours are the scan-line pattern.",
+   "roles": [
+    "home",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "books",
+    "reading",
+    "shelf",
+    "carousel"
+   ],
+   "quality": "Real motion (median 30.2, 34.5s)."
+  },
+  "VID-0301": {
+   "id": "VID-0301",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "Classified document card, tilted",
+   "description": "A cream backdrop with a tilted blue-framed card showing a mock 'classified document': 'This document is classified and intended solely for authorized personnel… By continuing, you acknowledge that you understand the sensitivity… 'Do you really not follow instructions, do you?' with two small avatar faces and Yes/No buttons. A mock classified-document consent screen; the tilt and the two little faces are the personality.",
+   "roles": [
+    "auth"
+   ],
+   "style": [
+    "minimal"
+   ],
+   "tags": [
+    "document",
+    "legal",
+    "card",
+    "status"
+   ],
+   "quality": "Real motion (median 15.4, 18.5s)."
+  },
+  "VID-0302": {
+   "id": "VID-0302",
+   "category": "illustration",
+   "type": "flow-walkthrough",
+   "title": "Pattern-filled figure, generative morph",
+   "description": "A sequence of a silhouetted seated figure filled with different decorative patterns (blue scribbles, gold waves, pomegranate branches, roses…) over a textured paper background. An illustration/motion demo — the high motion is the pattern and texture morphing, not UI. One of the highest-motion clips in the corpus.",
+   "roles": [],
+   "style": [
+    "illustration-led"
+   ],
+   "tags": [
+    "illustration",
+    "generative-art",
+    "motion",
+    "animation"
+   ],
+   "quality": "Very high motion (median 110.9, 20s); a generative illustration study."
+  },
+  "VID-0303": {
+   "id": "VID-0303",
+   "category": "illustration",
+   "type": "flow-walkthrough",
+   "title": "Gothic grimoire book cover",
+   "description": "A dark gothic book cover ('The Grimoire…') with alchemical/celestial ornament on near-black ground. A near-static cover reveal; the cover is the whole composition — no app chrome at all.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "illustration-led"
+   ],
+   "tags": [
+    "book",
+    "illustration",
+    "dark-ui"
+   ],
+   "quality": "Near-static (median 8.7, 11.2s)."
+  },
+  "VID-0304": {
+   "id": "VID-0304",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "Prefetch list demo with grocery panel",
+   "description": "Two panels side by side: a grey skeleton list ('Fetch on click') and a 'Groceries / Saturday' list (Get-milk, Sourdough, Avocados, Coffee beans, 'Add item') under a 'Prefetch on hover' label. A web list-UI demo where skeleton loading meets a grocery list; two states, one question.",
+   "roles": [
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "list-row",
+    "food",
+    "checklist",
+    "loading-state"
+   ],
+   "quality": "Near-static (median 8.0, 10.1s)."
+  },
+  "VID-0305": {
+   "id": "VID-0305",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "New Expense entry, ring and numpad",
+   "description": "A dark 'New Expense' phone screen: 'New Expense / Title / Amount / Category Housing · May 25, 2025 / Account …' with a spending ring and a '+ USD' input, plus a numpad below. A dark expense-entry screen; the ring shows the budget fill while the numpad is the input.",
+   "roles": [
+    "form"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "budgeting",
+    "spending",
+    "dark-ui",
+    "progress-ring"
+   ],
+   "quality": "Real motion (median 15.0, 12.6s)."
+  },
+  "VID-0306": {
+   "id": "VID-0306",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "Japanese card on dot grid",
+   "description": "A Japanese pink card ('この夢が残してきたのは / というのは…') on a dot grid — minimal Japanese text on a pastel field. A localised, near-static card study; the dot grid is the only texture.",
+   "roles": [],
+   "style": [
+    "minimal"
+   ],
+   "tags": [
+    "localised",
+    "card"
+   ],
+   "quality": "Near-static (median 8.5, 7s); Japanese copy legible."
+  },
+  "VID-0307": {
+   "id": "VID-0307",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "Payment form, card to paid",
+   "description": "A 'Complete your payment / From: Asahi Sasaki' form: Full name, Email, a 'Payment method' row (Card / Bank transfer / Crypto), Card number, MM/YY, CVV and a 'Pay €5,000.00' button. A long, near-static payment-form recording; the method row is the one choice point.",
+   "roles": [
+    "checkout",
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "payment",
+    "localised"
+   ],
+   "quality": "Very long near-static clip (median 1.1, 57.3s)."
+  },
+  "VID-0308": {
+   "id": "VID-0308",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Dashr delivery rider ad",
+   "description": "A green 'Dashr' delivery app ad: a delivery-rider illustration beside a 'Dashr' phone, with the line 'Deliver faster, earn smarter with Dashr'. A promo reel for a delivery-rider app; the rider is the illustration lead.",
+   "roles": [
+    "hero",
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "illustration-led"
+   ],
+   "tags": [
+    "delivery",
+    "motion",
+    "promo",
+    "illustration"
+   ],
+   "quality": "Near-static (median 1.4, 7.7s)."
+  },
+  "VID-0309": {
+   "id": "VID-0309",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "GOMPASHE dark item list",
+   "description": "A dark green 'GOMPASHE' phone screen: a list of 'Item 6' through 'Item 20' rows on near-black ground. A minimal dark list UI; the green-on-dark is the whole identity. A second clip of the same design as another GOMPASHE clip.",
+   "roles": [
+    "list"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "dark-ui"
+   ],
+   "quality": "Near-static (median 6.7, 10.6s)."
+  },
+  "VID-0310": {
+   "id": "VID-0310",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "Most read — book spine shelf",
+   "description": "A light 'Most read' bookshelf of colourful book spines: '23 · Virat Kohli · 23 books · Read the spines' and '4,872 approved edits'. A horizontal book-spine UI where the spines themselves are the scroll strip; the selected book lifts out.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "books",
+    "reading",
+    "shelf",
+    "carousel"
+   ],
+   "quality": "Real motion (median 30.8, 17.8s)."
+  },
+  "VID-0311": {
+   "id": "VID-0311",
+   "category": "dashboard",
+   "type": "flow-walkthrough",
+   "title": "Fleet Insights glass card on photo",
+   "description": "A 'Fleet Insights' glass card floating over a scenic lake-and-pines photo: 'Avg fuel efficiency 7975 km/l', a Jan–Apr stacked bar chart and a 'Fuel Used 320 L' tooltip. A glassmorphism dashboard card on a photographic backdrop; the blur is the separator between chrome and photo.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "glassmorphism",
+    "light-mode"
+   ],
+   "tags": [
+    "glass",
+    "chart",
+    "photographic"
+   ],
+   "quality": "Near-static (median 3.7, 9.4s)."
+  },
+  "VID-0312": {
+   "id": "VID-0312",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "GOMPASHE dark item list, second clip",
+   "description": "The same dark green 'GOMPASHE' phone screen as the other GOMPASHE clip: 'Item 6' through 'Item 20' rows on near-black ground. Kept as a second take of the same minimal dark list design.",
+   "roles": [
+    "list"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "dark-ui"
+   ],
+   "quality": "Moderate motion (median 6.0, 19.2s)."
+  },
+  "VID-0313": {
+   "id": "VID-0313",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "In-hand flower capture, NATURAL",
+   "description": "An in-hand capture demo: a phone held up to a pink flower with a dark 'NATURAL' camera/capture overlay ('AI', 'M', 'Scan' bottom controls with a check state). A plant-identification capture app shown in the real world; the in-hand framing is the point.",
+   "roles": [
+    "detail",
+    "media"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "in-hand",
+    "camera",
+    "capture",
+    "photo",
+    "plant"
+   ],
+   "quality": "Real motion (median 32.6, 15.7s)."
+  },
+  "VID-0314": {
+   "id": "VID-0314",
+   "category": "dashboard",
+   "type": "flow-walkthrough",
+   "title": "Fleet Panel, dark operations view",
+   "description": "A 'Fleet Panel' desktop dashboard (dark, orange charts): 'Welcome back, Selum', 'Cash burn $28,220', '4,320', '6,305', 'Daily Total $4,550', '$20,320' and an orange line chart. A near-static fleet/fuel operations dashboard; the orange is the single accent on the dark ground.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "analytics",
+    "chart",
+    "kpi",
+    "dark-ui"
+   ],
+   "quality": "Near-static (median 3.7, 32.9s)."
+  },
+  "VID-0315": {
+   "id": "VID-0315",
+   "category": "website",
+   "type": "flow-walkthrough",
+   "title": "Inori LinkedIn profile walkthrough",
+   "description": "A LinkedIn profile page for 'Inori' — 'CS student / AI engineer', a 'Connect' button, an 'm3c-canvas' featured post ('Sketch Material 3 Expressive screens…') and 'Trending #1…'. A personal LinkedIn profile recording; kept as a profile-page reference with a design showcase post.",
+   "roles": [
+    "profile"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "social",
+    "portfolio"
+   ],
+   "quality": "Near-static (median 1.2, 2.8s)."
+  },
+  "VID-0316": {
+   "id": "VID-0316",
+   "category": "dashboard",
+   "type": "flow-walkthrough",
+   "title": "AutoPay & Savings dashboard",
+   "description": "A light 'AutoPay & Savings' dashboard: a 'Spending in September' card ($8,420, -8.2% vs August) with a category breakdown (Housing $2,450 29%, Food & dining $1,240 15%, Travel $1,120 13%, Shopping $840 10%, Transportation $620 7%, Subscriptions $284 3%, Everything else $1,866 22%), a 'Money in / Money out' bar chart with 'Forecast' (Oct/Nov), and a 'Savings' panel. A personal-finance dashboard; the category bars are the hero.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "data-dense"
+   ],
+   "tags": [
+    "budgeting",
+    "spending",
+    "savings",
+    "chart",
+    "kpi"
+   ],
+   "quality": "Real motion (median 15.3, 15s)."
+  },
+  "VID-0317": {
+   "id": "VID-0317",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "AutoFill Transactions, pixel budget tracker",
+   "description": "A pixel-art budget tracker: an 'AutoFill Transactions' sticker over a 'New Expense' form (Category 'Demo - Groceries', Account 'Demo - Main checking', Date 'Today', Recurring 'Doesn't repeat', Memo 'Groceries') with a numpad, then a dashboard (Used $16,342.59 of $35,000, green ring, category list). A pixel-art expense tracker showing autofill into a form.",
+   "roles": [
+    "form",
+    "dashboard"
+   ],
+   "style": [],
+   "tags": [
+    "pixel-art",
+    "budgeting",
+    "spending",
+    "chart"
+   ],
+   "quality": "Real motion (median 32.0, 20.6s)."
+  },
+  "VID-0318": {
+   "id": "VID-0318",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "Select a project, minimal card",
+   "description": "A light grey card: 'Select a project / Start by typing…' with a '+ Request approval' row. A minimal project-selection screen from a design tool; almost nothing on the card, which is the aesthetic.",
+   "roles": [
+    "list",
+    "empty-state"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "project-picker",
+    "card"
+   ],
+   "quality": "Near-static (median 0.7, 6.7s)."
+  },
+  "VID-0319": {
+   "id": "VID-0319",
+   "category": "website",
+   "type": "marketing",
+   "title": "Three-card money education strip",
+   "description": "Three cards side by side teaching money basics: 'Track your money at a glance', 'Spend money in seconds', 'Stay on top of spending', each with a small node-graph illustration. A marketing/education triptych; the tiny illustrations are the only decoration.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "finance",
+    "education",
+    "illustration"
+   ],
+   "quality": "Near-static (median 0.4, 9s)."
+  },
+  "VID-0320": {
+   "id": "VID-0320",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "Share transcript modal, Meetlab",
+   "description": "A 'Share transcript' modal on white: a 'decision before Wednesday' card ('Opening copy needs a decision before Wednesday…'), an 'Add to:' row (Drive, Notion, Linear, Jira, Slack), a 'meetlab.app/b2b2641c…' link and a 'Copy link' button. A meeting-notes/AI-transcript share app; the modal is the whole surface.",
+   "roles": [
+    "detail",
+    "chat"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "ai",
+    "sharing",
+    "modal"
+   ],
+   "quality": "Near-static (median 0.9, 6.3s)."
+  },
+  "VID-0321": {
+   "id": "VID-0321",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Hexlethy onboarding flow, four steps",
+   "description": "A 'Hexlethy' wellness onboarding flow, four dark screens with step progress (3/4, 4/4): 'What is your profession?' (Professional, Athlete, Student, Trainer, Head coach, Other), 'What gets in your way most?' (I lose focus, My schedule gets messy, I start but don't stay consistent, I overwork, I struggle to prioritize), 'What should Hexlethy Protect?' (Fitness, Training, Sleep, Learning, Productivity, Deep work, Family), then the Pro plan $19/month with 'Start 3-day free trial'. A complete onboarding flow with a paywall at the end.",
+   "roles": [
+    "onboarding",
+    "pricing"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "welcome",
+    "steps",
+    "streak",
+    "goal",
+    "cta"
+   ],
+   "quality": "Real motion (median 60.9, 40.4s)."
+  },
+  "VID-0322": {
+   "id": "VID-0322",
+   "category": "dashboard",
+   "type": "flow-walkthrough",
+   "title": "Aira client notes, heatmap grid",
+   "description": "A desktop 'Aira' app in three panels: 'Client notes' with a heatmap grid ('84.1%', '79.3%', '91.5%'), an 'In progress' chip, a date list (Feb 16 05:00, 06:00…), and side rails. A client-meeting notes dashboard; the heatmap is the hero and the panels move as the cursor works.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "heat-map",
+    "analytics",
+    "table"
+   ],
+   "quality": "High motion (median 41.7, 16.3s); cursor-driven."
+  },
+  "VID-0323": {
+   "id": "VID-0323",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Chapel — lock-screen card promo",
+   "description": "A 'Chapel' lock-screen card app promo: 'should say something. / Pick one of 31 designs. / Reshape the card. / Save it. Set it.' with four phone mockups (a pink card 'Slow is smooth. Smooth is fast.'), stats '28 templates, 31 palettes, 10 typefaces, 4+5 doodles', and a 'Lock Card — Wallpapers with something to say. Get it on the App Store' CTA. A marketing reel for a lock-screen wallpaper app.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "splash-screen",
+    "promo",
+    "cta",
+    "app-store",
+    "home-screen",
+    "typography"
+   ],
+   "quality": "Very high motion (median 72.9, 9.3s)."
+  },
+  "VID-0324": {
+   "id": "VID-0324",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Three minimal event posters",
+   "description": "Three minimalist posters side by side: 'Cozy and deep / 21:00-23:00', 'From the book x / 21:00-23:00' and 'Night inspiration 1.5 / Digital Design' (a dark green poster with a glowing star). A series of minimal event posters; type and one glow do all the work.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "minimal",
+    "editorial"
+   ],
+   "tags": [
+    "poster",
+    "event",
+    "star",
+    "glow"
+   ],
+   "quality": "Real motion (median 9.0, 13.7s)."
+  },
+  "VID-0325": {
+   "id": "VID-0325",
+   "category": "motion-demo",
+   "type": "flow-walkthrough",
+   "title": "LAYESS pixel font tool",
+   "description": "A 'LAYESS' pixel-font/type tool demo: a grid canvas with black pixel shapes forming letters (C, 6, 8…), layer panels ('Disque 1', 'NOR I-A', 'LAYERS'), a 'COMPOSITION' panel (COLOR, SHAPE, ANIMATION, TEXT) and a 'COLOR' editor. A motion demo of a pixel-font / generative-type tool; the glyphs animate across the grid.",
+   "roles": [
+    "editor"
+   ],
+   "style": [],
+   "tags": [
+    "pixel-art",
+    "typography",
+    "design-tool",
+    "animation",
+    "generative-art"
+   ],
+   "quality": "High motion (median 36.7, 12.6s)."
+  },
+  "VID-0326": {
+   "id": "VID-0326",
+   "category": "dashboard",
+   "type": "flow-walkthrough",
+   "title": "Vireo investment dashboard, long recording",
+   "description": "A 'Vireo' portfolio dashboard: 'VIREO Investments' with 'Total value $527.49K', '1.3 yrs', '10', '7.43%', an 'Investment Weight (%)' donut, 'Investment by Rating' list, 'Investment by Security Type' and 'Upcoming Payments'. A long, slow screen recording of a personal finance/investment dashboard; the donut is the hero.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "investing",
+    "finance",
+    "portfolio",
+    "chart",
+    "kpi"
+   ],
+   "quality": "Long clip (median 30.1 over 127.1s).",
+   "source_note": "One of the longest recordings in the corpus."
+  },
+  "VID-0327": {
+   "id": "VID-0327",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "GenThompson pendant lamp message",
+   "description": "An iPhone in the dark with an amber/teal pendant lamp glowing ('HELLO…'), and a script-style message: 'I build brick because I wanted to build something that's more beautiful, and more personal… Thanks for learning with me. GenThompson' with a signature. A cinematic product/design promo with a message on a dark screen.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "motion",
+    "cinematic",
+    "glow",
+    "dark-ui"
+   ],
+   "quality": "Real motion (median 5.1, 10.5s)."
+  },
+  "VID-0328": {
+   "id": "VID-0328",
+   "category": "website",
+   "type": "flow-walkthrough",
+   "title": "Organic Studio — local AI chat IDE",
+   "description": "A desktop app 'Organic Studio — Localchat' (an Obsidian-style markdown editor): two panes, a markdown document on the left and an 'Integrations' panel on the right listing Claude, Gemini, GPT, Qwen, Perplexity, Grok and various tools. A local AI chat/IDE with agent integrations; the integration list is the feature.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "ai",
+    "developer",
+    "code",
+    "menu",
+    "developer-tools"
+   ],
+   "quality": "Near-static (median 0.8, 11.8s)."
+  },
+  "VID-0329": {
+   "id": "VID-0329",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "In-hand receipt OCR, live",
+   "description": "An in-hand capture: a crumpled paper receipt held to the back of a phone; the in-app OCR unfolds and flattens it live (crumpled → flat receipt 'Итого 470 ₽'), with a bottom bar 'Telegram / VK / Share'. A live in-hand receipt-scanning demo with Russian UI; the unfurl is the motion.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "minimal"
+   ],
+   "tags": [
+    "in-hand",
+    "camera",
+    "receipt",
+    "scan",
+    "sharing"
+   ],
+   "quality": "High motion (median 42.4, 25.1s).",
+   "source_note": "Russian UI; 'Итого 470 ₽' = total 470 rubles."
+  },
+  "VID-0330": {
+   "id": "VID-0330",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Memory Photo mosaic wallpaper promo",
+   "description": "A '追忆 Photo' (Memory Photo) wallpaper app promo: a settings screen with a 'gradient card' item, then a phone with a dense mosaic of many photos, a mosaic being revealed over a dark grid, and a full mosaic + app icon '追忆 Photo — Download on the App Store'. A promo for a photo-mosaic wallpaper app; the reveal is the payoff.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "minimal"
+   ],
+   "tags": [
+    "photo-grid",
+    "app-store",
+    "promo",
+    "cta",
+    "home-screen"
+   ],
+   "quality": "Very high motion (median 61.0, 31.4s)."
+  },
+  "VID-0331": {
+   "id": "VID-0331",
+   "category": "website",
+   "type": "flow-walkthrough",
+   "title": "VS Code hot-reload phone preview",
+   "description": "A VS Code window showing 'server_001.go' (Gin framework code) beside an 'iPhone 18 Pro' device preview with a 'Cancel' screen (X button). A dev workflow with a live phone preview; the split is code-left, device-right.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "developer",
+    "code",
+    "terminal",
+    "device-frame"
+   ],
+   "quality": "Near-static (median 1.3, 3.3s)."
+  },
+  "VID-0332": {
+   "id": "VID-0332",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Ferrock corporate claims platform reveal",
+   "description": "A 'Ferrock' corporate brand reveal: 'Work as executed, structured into live claims.' with a 'Take It for a Test Drive' CTA, then a red-branded dashboard (construction schedule), 'Live Claim File / Critical Path Analysis', a Gantt chart 'Coating of Livers', 'Delay Analysis', 'One platform. Three surfaces.' (Contracts & Claims, General Counsel, Evidence screens), and the 'J| Ferrock' wordmark. A corporate legal/construction software promo.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "corporate",
+    "minimal"
+   ],
+   "tags": [
+    "branding",
+    "bars",
+    "timeline",
+    "legal",
+    "motion"
+   ],
+   "quality": "High motion (median 41.7, 16.3s)."
+  },
+  "VID-0333": {
+   "id": "VID-0333",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "muso — make a song, keep a moment",
+   "description": "A 'muso' music app promo ('Make a song / Keep a moment'): a phone with a player card 'Air FAB', 'Make it yours.' with a 'Create My Song' button, two phone mockups with a spinning black 'muso' record disc (diamond motif), and 'muso — Make a song / Keep a moment'. A music-creation app promo built on a spinning-disc motif.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "dark-mode",
+    "playful"
+   ],
+   "tags": [
+    "music",
+    "promo",
+    "motion",
+    "micro-interaction",
+    "dark-ui"
+   ],
+   "quality": "High motion (median 40.0, 62.1s)."
+  }
+ }
+}

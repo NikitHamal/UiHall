@@ -1,0 +1,2333 @@
+{
+ "VID-0001": {
+  "median": 60.77,
+  "max": 64.45,
+  "duration_s": 67.5,
+  "fps": 30,
+  "frames": 2024
+ },
+ "VID-0002": {
+  "median": 42.46,
+  "max": 49.74,
+  "duration_s": 61.1,
+  "fps": 29.63,
+  "frames": 1811
+ },
+ "VID-0003": {
+  "median": 40.88,
+  "max": 91.87,
+  "duration_s": 1.2,
+  "fps": 29.24,
+  "frames": 35
+ },
+ "VID-0004": {
+  "median": 42.9,
+  "max": 50.38,
+  "duration_s": 16,
+  "fps": 30,
+  "frames": 481
+ },
+ "VID-0005": {
+  "median": 85.18,
+  "max": 97.15,
+  "duration_s": 16.6,
+  "fps": 25,
+  "frames": 415
+ },
+ "VID-0006": {
+  "median": 0.25,
+  "max": 2.87,
+  "duration_s": 30.8,
+  "fps": 30,
+  "frames": 925
+ },
+ "VID-0007": {
+  "median": 2.31,
+  "max": 2.46,
+  "duration_s": 30.9,
+  "fps": 30,
+  "frames": 926
+ },
+ "VID-0008": {
+  "median": 0,
+  "max": 2.07,
+  "duration_s": 30.8,
+  "fps": 30,
+  "frames": 925
+ },
+ "VID-0009": {
+  "median": 2.31,
+  "max": 2.46,
+  "duration_s": 30.9,
+  "fps": 30,
+  "frames": 926
+ },
+ "VID-0010": {
+  "median": 0.55,
+  "max": 2.97,
+  "duration_s": 30.8,
+  "fps": 30,
+  "frames": 924
+ },
+ "VID-0011": {
+  "median": 2.31,
+  "max": 2.46,
+  "duration_s": 30.9,
+  "fps": 30,
+  "frames": 926
+ },
+ "VID-0012": {
+  "median": 0,
+  "max": 2.83,
+  "duration_s": 30.8,
+  "fps": 30,
+  "frames": 923
+ },
+ "VID-0013": {
+  "median": 0,
+  "max": 1.94,
+  "duration_s": 30.8,
+  "fps": 30,
+  "frames": 925
+ },
+ "VID-0014": {
+  "median": 0,
+  "max": 1.09,
+  "duration_s": 30.8,
+  "fps": 30,
+  "frames": 925
+ },
+ "VID-0015": {
+  "median": 33.71,
+  "max": 66.73,
+  "duration_s": 18.3,
+  "fps": 30,
+  "frames": 550
+ },
+ "VID-0016": {
+  "median": 21.26,
+  "max": 35.17,
+  "duration_s": 55.2,
+  "fps": 23.98,
+  "frames": 1324
+ },
+ "VID-0017": {
+  "median": 67.21,
+  "max": 96.35,
+  "duration_s": 8,
+  "fps": 24,
+  "frames": 192
+ },
+ "VID-0018": {
+  "median": 60.71,
+  "max": 92.53,
+  "duration_s": 5,
+  "fps": 24,
+  "frames": 121
+ },
+ "VID-0019": {
+  "median": 59.18,
+  "max": 112.92,
+  "duration_s": 15.2,
+  "fps": 24.04,
+  "frames": 365
+ },
+ "VID-0020": {
+  "median": 24.87,
+  "max": 30.49,
+  "duration_s": 47.9,
+  "fps": 30,
+  "frames": 1436
+ },
+ "VID-0021": {
+  "median": 49.21,
+  "max": 57.27,
+  "duration_s": 105.5,
+  "fps": 25,
+  "frames": 2638
+ },
+ "VID-0022": {
+  "median": 0.33,
+  "max": 0.83,
+  "duration_s": 153.4,
+  "fps": 30,
+  "frames": 4601
+ },
+ "VID-0023": {
+  "median": 0.03,
+  "max": 2.17,
+  "duration_s": 30.8,
+  "fps": 30,
+  "frames": 925
+ },
+ "VID-0024": {
+  "median": 0.81,
+  "max": 2.55,
+  "duration_s": 30.8,
+  "fps": 30,
+  "frames": 925
+ },
+ "VID-0025": {
+  "median": 0.24,
+  "max": 1.92,
+  "duration_s": 30.8,
+  "fps": 30,
+  "frames": 925
+ },
+ "VID-0026": {
+  "median": 0.58,
+  "max": 0.92,
+  "duration_s": 180.6,
+  "fps": 30,
+  "frames": 5419
+ },
+ "VID-0027": {
+  "median": 0,
+  "max": 0.31,
+  "duration_s": 180.1,
+  "fps": 30,
+  "frames": 5402
+ },
+ "VID-0028": {
+  "median": 0.18,
+  "max": 1.19,
+  "duration_s": 181.4,
+  "fps": 30,
+  "frames": 5443
+ },
+ "VID-0029": {
+  "median": 0.49,
+  "max": 1.46,
+  "duration_s": 178.1,
+  "fps": 30,
+  "frames": 5344
+ },
+ "VID-0030": {
+  "median": 2.92,
+  "max": 3.13,
+  "duration_s": 174,
+  "fps": 30,
+  "frames": 5220
+ },
+ "VID-0031": {
+  "median": 0.85,
+  "max": 2.1,
+  "duration_s": 177.6,
+  "fps": 30,
+  "frames": 5327
+ },
+ "VID-0032": {
+  "median": 2.66,
+  "max": 3.83,
+  "duration_s": 75.4,
+  "fps": 30,
+  "frames": 2262
+ },
+ "VID-0033": {
+  "median": 0.53,
+  "max": 0.62,
+  "duration_s": 10.1,
+  "fps": 30,
+  "frames": 302
+ },
+ "VID-0034": {
+  "median": 0.07,
+  "max": 41.37,
+  "duration_s": 87.5,
+  "fps": 30,
+  "frames": 2625
+ },
+ "VID-0035": {
+  "median": 10.58,
+  "max": 50.21,
+  "duration_s": 82.4,
+  "fps": 30,
+  "frames": 2473
+ },
+ "VID-0036": {
+  "median": 47.66,
+  "max": 109.21,
+  "duration_s": 729.2,
+  "fps": 25,
+  "frames": 18231
+ },
+ "VID-0037": {
+  "median": 10.11,
+  "max": 44.53,
+  "duration_s": 945.4,
+  "fps": 29.97,
+  "frames": 28333
+ },
+ "VID-0038": {
+  "median": 35.48,
+  "max": 49.82,
+  "duration_s": 168.6,
+  "fps": 29.97,
+  "frames": 5052
+ },
+ "VID-0039": {
+  "median": 3.25,
+  "max": 29.4,
+  "duration_s": 9.7,
+  "fps": 27.3,
+  "frames": 266
+ },
+ "VID-0040": {
+  "median": 14.58,
+  "max": 20.18,
+  "duration_s": 62.1,
+  "fps": 30,
+  "frames": 1863
+ },
+ "VID-0041": {
+  "median": 1.36,
+  "max": 3.25,
+  "duration_s": 15,
+  "fps": 25,
+  "frames": 375
+ },
+ "VID-0042": {
+  "median": 70.45,
+  "max": 74.23,
+  "duration_s": 16.3,
+  "fps": 30,
+  "frames": 488
+ },
+ "VID-0043": {
+  "median": 50.21,
+  "max": 59.22,
+  "duration_s": 14.9,
+  "fps": 23.98,
+  "frames": 357
+ },
+ "VID-0044": {
+  "median": 45.12,
+  "max": 100.31,
+  "duration_s": 25.1,
+  "fps": 30,
+  "frames": 752
+ },
+ "VID-0045": {
+  "median": 7.05,
+  "max": 47.43,
+  "duration_s": 13.9,
+  "fps": 30,
+  "frames": 417
+ },
+ "VID-0046": {
+  "median": 10.49,
+  "max": 17.68,
+  "duration_s": 83.9,
+  "fps": 27.5,
+  "frames": 2307
+ },
+ "VID-0047": {
+  "median": 51.05,
+  "max": 134.95,
+  "duration_s": 15.1,
+  "fps": 25,
+  "frames": 378
+ },
+ "VID-0048": {
+  "median": 65.96,
+  "max": 99.57,
+  "duration_s": 22.1,
+  "fps": 30,
+  "frames": 663
+ },
+ "VID-0049": {
+  "median": 58.05,
+  "max": 108.19,
+  "duration_s": 69.9,
+  "fps": 23.98,
+  "frames": 1677
+ },
+ "VID-0050": {
+  "median": 2.34,
+  "max": 4.9,
+  "duration_s": 139.4,
+  "fps": 30,
+  "frames": 4181
+ },
+ "VID-0051": {
+  "median": 33.11,
+  "max": 41.33,
+  "duration_s": 89.3,
+  "fps": 30.16,
+  "frames": 2692
+ },
+ "VID-0052": {
+  "median": 140.02,
+  "max": 184.31,
+  "duration_s": 183.1,
+  "fps": 76.9,
+  "frames": 14081
+ },
+ "VID-0053": {
+  "median": 0.66,
+  "max": 230.81,
+  "duration_s": 6,
+  "fps": 30,
+  "frames": 180
+ },
+ "VID-0054": {
+  "median": 100.37,
+  "max": 119.19,
+  "duration_s": 55.7,
+  "fps": 30,
+  "frames": 1671
+ },
+ "VID-0055": {
+  "median": 75.69,
+  "max": 110.25,
+  "duration_s": 11.8,
+  "fps": 30,
+  "frames": 355
+ },
+ "VID-0056": {
+  "median": 12.37,
+  "max": 19.28,
+  "duration_s": 105.9,
+  "fps": 60,
+  "frames": 6355
+ },
+ "VID-0057": {
+  "median": 3.96,
+  "max": 8.59,
+  "duration_s": 7.4,
+  "fps": 60,
+  "frames": 443
+ },
+ "VID-0058": {
+  "median": 89.66,
+  "max": 108.3,
+  "duration_s": 32,
+  "fps": 30,
+  "frames": 961
+ },
+ "VID-0059": {
+  "median": 48.43,
+  "max": 65.38,
+  "duration_s": 37.5,
+  "fps": 30,
+  "frames": 1124
+ },
+ "VID-0060": {
+  "median": 38.01,
+  "max": 46.44,
+  "duration_s": 30.8,
+  "fps": 60,
+  "frames": 1845
+ },
+ "VID-0061": {
+  "median": 4.03,
+  "max": 45.29,
+  "duration_s": 5,
+  "fps": 30,
+  "frames": 150
+ },
+ "VID-0062": {
+  "median": 16.47,
+  "max": 47.91,
+  "duration_s": 2.9,
+  "fps": 59.94,
+  "frames": 175
+ },
+ "VID-0063": {
+  "median": 5.87,
+  "max": 6.01,
+  "duration_s": 22.2,
+  "fps": 60,
+  "frames": 1329
+ },
+ "VID-0064": {
+  "median": 2.09,
+  "max": 230.51,
+  "duration_s": 12.8,
+  "fps": 50,
+  "frames": 639
+ },
+ "VID-0065": {
+  "median": 7.08,
+  "max": 14.58,
+  "duration_s": 30.7,
+  "fps": 55,
+  "frames": 1690
+ },
+ "VID-0066": {
+  "median": 19.19,
+  "max": 64.75,
+  "duration_s": 46.9,
+  "fps": 57.67,
+  "frames": 2702
+ },
+ "VID-0067": {
+  "median": 21.53,
+  "max": 22.95,
+  "duration_s": 20.6,
+  "fps": 59.94,
+  "frames": 1232
+ },
+ "VID-0068": {
+  "median": 29.54,
+  "max": 31.26,
+  "duration_s": 21.4,
+  "fps": 60,
+  "frames": 1285
+ },
+ "VID-0069": {
+  "median": 15.73,
+  "max": 61.51,
+  "duration_s": 23.6,
+  "fps": 53.83,
+  "frames": 1270
+ },
+ "VID-0070": {
+  "median": 45.67,
+  "max": 82.62,
+  "duration_s": 22.6,
+  "fps": 60,
+  "frames": 1358
+ },
+ "VID-0071": {
+  "median": 12.05,
+  "max": 192.04,
+  "duration_s": 16,
+  "fps": 57.31,
+  "frames": 916
+ },
+ "VID-0072": {
+  "median": 17.04,
+  "max": 75.14,
+  "duration_s": 6.6,
+  "fps": 60,
+  "frames": 398
+ },
+ "VID-0073": {
+  "median": 24.85,
+  "max": 44.79,
+  "duration_s": 28,
+  "fps": 59.94,
+  "frames": 1677
+ },
+ "VID-0074": {
+  "median": 6.73,
+  "max": 38.21,
+  "duration_s": 10.7,
+  "fps": 60,
+  "frames": 640
+ },
+ "VID-0075": {
+  "median": 0.42,
+  "max": 12.29,
+  "duration_s": 4.3,
+  "fps": 57.19,
+  "frames": 244
+ },
+ "VID-0076": {
+  "median": 3.38,
+  "max": 10.27,
+  "duration_s": 10.2,
+  "fps": 60,
+  "frames": 610
+ },
+ "VID-0077": {
+  "median": 12.68,
+  "max": 25.21,
+  "duration_s": 32.4,
+  "fps": 53.77,
+  "frames": 1742
+ },
+ "VID-0078": {
+  "median": 36.59,
+  "max": 81.31,
+  "duration_s": 33.3,
+  "fps": 60,
+  "frames": 1995
+ },
+ "VID-0079": {
+  "median": 37.64,
+  "max": 70.64,
+  "duration_s": 14.4,
+  "fps": 60,
+  "frames": 864
+ },
+ "VID-0080": {
+  "median": 6.61,
+  "max": 47.37,
+  "duration_s": 12.2,
+  "fps": 50,
+  "frames": 611
+ },
+ "VID-0081": {
+  "median": 9.31,
+  "max": 10.4,
+  "duration_s": 20,
+  "fps": 60,
+  "frames": 1199
+ },
+ "VID-0082": {
+  "median": 2.65,
+  "max": 33.09,
+  "duration_s": 11.2,
+  "fps": 60,
+  "frames": 675
+ },
+ "VID-0083": {
+  "median": 8.05,
+  "max": 15.95,
+  "duration_s": 73.8,
+  "fps": 30,
+  "frames": 2213
+ },
+ "VID-0084": {
+  "median": 13.86,
+  "max": 19.63,
+  "duration_s": 11,
+  "fps": 30,
+  "frames": 330
+ },
+ "VID-0085": {
+  "median": 35.42,
+  "max": 55.64,
+  "duration_s": 14,
+  "fps": 59.94,
+  "frames": 838
+ },
+ "VID-0086": {
+  "median": 8.12,
+  "max": 11.48,
+  "duration_s": 5.3,
+  "fps": 34.85,
+  "frames": 185
+ },
+ "VID-0087": {
+  "median": 3.64,
+  "max": 26.39,
+  "duration_s": 5.2,
+  "fps": 30,
+  "frames": 156
+ },
+ "VID-0088": {
+  "median": 41.42,
+  "max": 66.63,
+  "duration_s": 20,
+  "fps": 30,
+  "frames": 599
+ },
+ "VID-0089": {
+  "median": 1.06,
+  "max": 1.74,
+  "duration_s": 39,
+  "fps": 48.71,
+  "frames": 1898
+ },
+ "VID-0090": {
+  "median": 4.88,
+  "max": 6.08,
+  "duration_s": 2.3,
+  "fps": 60,
+  "frames": 137
+ },
+ "VID-0091": {
+  "median": 15.52,
+  "max": 40.27,
+  "duration_s": 7.9,
+  "fps": 60,
+  "frames": 476
+ },
+ "VID-0092": {
+  "median": 2.21,
+  "max": 2.34,
+  "duration_s": 13.4,
+  "fps": 60,
+  "frames": 805
+ },
+ "VID-0093": {
+  "median": 11.43,
+  "max": 13.36,
+  "duration_s": 8.8,
+  "fps": 29.89,
+  "frames": 263
+ },
+ "VID-0094": {
+  "median": 29.77,
+  "max": 91.06,
+  "duration_s": 16.5,
+  "fps": 60,
+  "frames": 992
+ },
+ "VID-0095": {
+  "median": 0.93,
+  "max": 2.79,
+  "duration_s": 10.3,
+  "fps": 60,
+  "frames": 615
+ },
+ "VID-0096": {
+  "median": 103.81,
+  "max": 126.47,
+  "duration_s": 130.8,
+  "fps": 25,
+  "frames": 3270
+ },
+ "VID-0097": {
+  "median": 4.14,
+  "max": 5.73,
+  "duration_s": 65.5,
+  "fps": 53.16,
+  "frames": 3482
+ },
+ "VID-0098": {
+  "median": 0.28,
+  "max": 9.12,
+  "duration_s": 5.3,
+  "fps": 60,
+  "frames": 319
+ },
+ "VID-0099": {
+  "median": 24.94,
+  "max": 37.64,
+  "duration_s": 8.3,
+  "fps": 60,
+  "frames": 496
+ },
+ "VID-0100": {
+  "median": 0.86,
+  "max": 1.19,
+  "duration_s": 10.2,
+  "fps": 30,
+  "frames": 306
+ },
+ "VID-0101": {
+  "median": 9.02,
+  "max": 13.63,
+  "duration_s": 10.6,
+  "fps": 30,
+  "frames": 319
+ },
+ "VID-0102": {
+  "median": 78.16,
+  "max": 100.1,
+  "duration_s": 45.8,
+  "fps": 30,
+  "frames": 1373
+ },
+ "VID-0103": {
+  "median": 21.8,
+  "max": 23.41,
+  "duration_s": 4.4,
+  "fps": 30,
+  "frames": 131
+ },
+ "VID-0104": {
+  "median": 59.32,
+  "max": 81.31,
+  "duration_s": 51,
+  "fps": 25,
+  "frames": 1276
+ },
+ "VID-0105": {
+  "median": 1.87,
+  "max": 84.75,
+  "duration_s": 10.9,
+  "fps": 60,
+  "frames": 652
+ },
+ "VID-0106": {
+  "median": 2.77,
+  "max": 3.49,
+  "duration_s": 19.2,
+  "fps": 60,
+  "frames": 1152
+ },
+ "VID-0107": {
+  "median": 5.97,
+  "max": 26.32,
+  "duration_s": 5.2,
+  "fps": 24,
+  "frames": 124
+ },
+ "VID-0108": {
+  "median": 5.71,
+  "max": 41.37,
+  "duration_s": 5.9,
+  "fps": 24,
+  "frames": 141
+ },
+ "VID-0109": {
+  "median": 10.07,
+  "max": 12.73,
+  "duration_s": 10,
+  "fps": 24,
+  "frames": 240
+ },
+ "VID-0110": {
+  "median": 34.53,
+  "max": 82.68,
+  "duration_s": 5.2,
+  "fps": 24,
+  "frames": 124
+ },
+ "VID-0111": {
+  "median": 3.32,
+  "max": 4.26,
+  "duration_s": 13.2,
+  "fps": 60,
+  "frames": 792
+ },
+ "VID-0112": {
+  "median": 3.23,
+  "max": 3.39,
+  "duration_s": 21.2,
+  "fps": 40.72,
+  "frames": 865
+ },
+ "VID-0113": {
+  "median": 6.01,
+  "max": 10.22,
+  "duration_s": 21.7,
+  "fps": 58.56,
+  "frames": 1270
+ },
+ "VID-0114": {
+  "median": 7.15,
+  "max": 15.29,
+  "duration_s": 10.2,
+  "fps": 59.98,
+  "frames": 614
+ },
+ "VID-0115": {
+  "median": 16.56,
+  "max": 26.15,
+  "duration_s": 20,
+  "fps": 60,
+  "frames": 1201
+ },
+ "VID-0116": {
+  "median": 4.11,
+  "max": 4.52,
+  "duration_s": 11,
+  "fps": 30,
+  "frames": 329
+ },
+ "VID-0117": {
+  "median": 1.34,
+  "max": 2.01,
+  "duration_s": 5.4,
+  "fps": 57.13,
+  "frames": 308
+ },
+ "VID-0118": {
+  "median": 27.46,
+  "max": 45.06,
+  "duration_s": 8.7,
+  "fps": 30.07,
+  "frames": 261
+ },
+ "VID-0119": {
+  "median": 36.79,
+  "max": 38.94,
+  "duration_s": 3.9,
+  "fps": 30,
+  "frames": 118
+ },
+ "VID-0120": {
+  "median": 11.99,
+  "max": 22.99,
+  "duration_s": 10,
+  "fps": 60,
+  "frames": 598
+ },
+ "VID-0121": {
+  "median": 21.9,
+  "max": 23.8,
+  "duration_s": 25.4,
+  "fps": 30,
+  "frames": 761
+ },
+ "VID-0122": {
+  "median": 10.51,
+  "max": 15.99,
+  "duration_s": 8.6,
+  "fps": 30.13,
+  "frames": 260
+ },
+ "VID-0123": {
+  "median": 1.61,
+  "max": 2.27,
+  "duration_s": 10.6,
+  "fps": 60.07,
+  "frames": 637
+ },
+ "VID-0124": {
+  "median": 2.94,
+  "max": 86.19,
+  "duration_s": 5.7,
+  "fps": 30,
+  "frames": 171
+ },
+ "VID-0125": {
+  "median": 23.97,
+  "max": 26.13,
+  "duration_s": 124,
+  "fps": 30,
+  "frames": 3721
+ },
+ "VID-0126": {
+  "median": 3.04,
+  "max": 4.52,
+  "duration_s": 9.6,
+  "fps": 15.31,
+  "frames": 147
+ },
+ "VID-0127": {
+  "median": 3.61,
+  "max": 229.52,
+  "duration_s": 20.5,
+  "fps": 30,
+  "frames": 616
+ },
+ "VID-0128": {
+  "median": 46.2,
+  "max": 61.28,
+  "duration_s": 19.8,
+  "fps": 60.02,
+  "frames": 1187
+ },
+ "VID-0129": {
+  "median": 34.05,
+  "max": 54.79,
+  "duration_s": 105.3,
+  "fps": 30,
+  "frames": 3159
+ },
+ "VID-0130": {
+  "median": 50.35,
+  "max": 59.76,
+  "duration_s": 22.4,
+  "fps": 29.99,
+  "frames": 672
+ },
+ "VID-0131": {
+  "median": 21.31,
+  "max": 41.83,
+  "duration_s": 29.1,
+  "fps": 30,
+  "frames": 872
+ },
+ "VID-0132": {
+  "median": 14.33,
+  "max": 62.18,
+  "duration_s": 17.4,
+  "fps": 50.61,
+  "frames": 881
+ },
+ "VID-0133": {
+  "median": 35.92,
+  "max": 39.21,
+  "duration_s": 49.1,
+  "fps": 30,
+  "frames": 1473
+ },
+ "VID-0134": {
+  "median": 79.88,
+  "max": 119.15,
+  "duration_s": 65.5,
+  "fps": 29.97,
+  "frames": 1963
+ },
+ "VID-0135": {
+  "median": 10.06,
+  "max": 11.75,
+  "duration_s": 36.5,
+  "fps": 60,
+  "frames": 2191
+ },
+ "VID-0136": {
+  "median": 37.35,
+  "max": 50.63,
+  "duration_s": 18.1,
+  "fps": 60,
+  "frames": 1086
+ },
+ "VID-0137": {
+  "median": 0.44,
+  "max": 4.43,
+  "duration_s": 19.4,
+  "fps": 60,
+  "frames": 1165
+ },
+ "VID-0138": {
+  "median": 5.02,
+  "max": 7.77,
+  "duration_s": 27.6,
+  "fps": 30,
+  "frames": 829
+ },
+ "VID-0139": {
+  "median": 29.07,
+  "max": 31.71,
+  "duration_s": 9.8,
+  "fps": 60,
+  "frames": 587
+ },
+ "VID-0140": {
+  "median": 13.76,
+  "max": 215.26,
+  "duration_s": 40.4,
+  "fps": 34.9,
+  "frames": 1411
+ },
+ "VID-0141": {
+  "median": 19.91,
+  "max": 42.81,
+  "duration_s": 8,
+  "fps": 60,
+  "frames": 482
+ },
+ "VID-0142": {
+  "median": 20.93,
+  "max": 28.18,
+  "duration_s": 21.9,
+  "fps": 30,
+  "frames": 658
+ },
+ "VID-0143": {
+  "median": 63.17,
+  "max": 83.66,
+  "duration_s": 78.9,
+  "fps": 30,
+  "frames": 2367
+ },
+ "VID-0144": {
+  "median": 11.53,
+  "max": 16.35,
+  "duration_s": 32.6,
+  "fps": 60,
+  "frames": 1955
+ },
+ "VID-0145": {
+  "median": 22.3,
+  "max": 24.56,
+  "duration_s": 50.2,
+  "fps": 60,
+  "frames": 3010
+ },
+ "VID-0146": {
+  "median": 5.02,
+  "max": 6.89,
+  "duration_s": 72.2,
+  "fps": 57.23,
+  "frames": 4130
+ },
+ "VID-0147": {
+  "median": 2.08,
+  "max": 9.47,
+  "duration_s": 5,
+  "fps": 60,
+  "frames": 301
+ },
+ "VID-0148": {
+  "median": 24.4,
+  "max": 40.52,
+  "duration_s": 96.4,
+  "fps": 60,
+  "frames": 5784
+ },
+ "VID-0149": {
+  "median": 3.79,
+  "max": 7.09,
+  "duration_s": 2.1,
+  "fps": 60,
+  "frames": 129
+ },
+ "VID-0150": {
+  "median": 4.69,
+  "max": 5.62,
+  "duration_s": 8.4,
+  "fps": 60,
+  "frames": 502
+ },
+ "VID-0151": {
+  "median": 3.66,
+  "max": 9.87,
+  "duration_s": 16.6,
+  "fps": 60,
+  "frames": 997
+ },
+ "VID-0152": {
+  "median": 4.6,
+  "max": 5.41,
+  "duration_s": 11.9,
+  "fps": 10,
+  "frames": 119
+ },
+ "VID-0153": {
+  "median": 7.25,
+  "max": 109.88,
+  "duration_s": 16,
+  "fps": 60,
+  "frames": 958
+ },
+ "VID-0154": {
+  "median": 4.79,
+  "max": 49.9,
+  "duration_s": 10.3,
+  "fps": 60,
+  "frames": 620
+ },
+ "VID-0155": {
+  "median": 41.58,
+  "max": 83.06,
+  "duration_s": 6.6,
+  "fps": 60,
+  "frames": 397
+ },
+ "VID-0156": {
+  "median": 22.86,
+  "max": 26.75,
+  "duration_s": 20.3,
+  "fps": 59.98,
+  "frames": 1219
+ },
+ "VID-0157": {
+  "median": 26.85,
+  "max": 39.66,
+  "duration_s": 26.4,
+  "fps": 60,
+  "frames": 1582
+ },
+ "VID-0158": {
+  "median": 17.94,
+  "max": 185.06,
+  "duration_s": 27.4,
+  "fps": 60,
+  "frames": 1647
+ },
+ "VID-0159": {
+  "median": 3.23,
+  "max": 7.65,
+  "duration_s": 10,
+  "fps": 59.9,
+  "frames": 600
+ },
+ "VID-0160": {
+  "median": 0.43,
+  "max": 0.81,
+  "duration_s": 5.2,
+  "fps": 30,
+  "frames": 157
+ },
+ "VID-0161": {
+  "median": 30.48,
+  "max": 32.36,
+  "duration_s": 11.3,
+  "fps": 60,
+  "frames": 680
+ },
+ "VID-0162": {
+  "median": 40.66,
+  "max": 94.99,
+  "duration_s": 49,
+  "fps": 60,
+  "frames": 2937
+ },
+ "VID-0163": {
+  "median": 9.54,
+  "max": 10.9,
+  "duration_s": 14.4,
+  "fps": 30,
+  "frames": 432
+ },
+ "VID-0164": {
+  "median": 11.54,
+  "max": 15.92,
+  "duration_s": 19.7,
+  "fps": 30,
+  "frames": 591
+ },
+ "VID-0165": {
+  "median": 9.9,
+  "max": 24.86,
+  "duration_s": 18.9,
+  "fps": 60,
+  "frames": 1135
+ },
+ "VID-0166": {
+  "median": 2.83,
+  "max": 25.22,
+  "duration_s": 25.9,
+  "fps": 60,
+  "frames": 1555
+ },
+ "VID-0167": {
+  "median": 8.82,
+  "max": 11.29,
+  "duration_s": 25,
+  "fps": 60,
+  "frames": 1500
+ },
+ "VID-0168": {
+  "median": 1.07,
+  "max": 2.15,
+  "duration_s": 5.6,
+  "fps": 60,
+  "frames": 338
+ },
+ "VID-0169": {
+  "median": 5.76,
+  "max": 8.7,
+  "duration_s": 3.3,
+  "fps": 60,
+  "frames": 200
+ },
+ "VID-0170": {
+  "median": 73.48,
+  "max": 110.08,
+  "duration_s": 3.2,
+  "fps": 60,
+  "frames": 195
+ },
+ "VID-0171": {
+  "median": 27.63,
+  "max": 35.6,
+  "duration_s": 14,
+  "fps": 30,
+  "frames": 420
+ },
+ "VID-0172": {
+  "median": 27.63,
+  "max": 35.6,
+  "duration_s": 14,
+  "fps": 30,
+  "frames": 420
+ },
+ "VID-0173": {
+  "median": 6.26,
+  "max": 12.17,
+  "duration_s": 1.9,
+  "fps": 60.26,
+  "frames": 114
+ },
+ "VID-0174": {
+  "median": 2.86,
+  "max": 11.04,
+  "duration_s": 6.2,
+  "fps": 30,
+  "frames": 185
+ },
+ "VID-0175": {
+  "median": 56.36,
+  "max": 79.41,
+  "duration_s": 67.8,
+  "fps": 24,
+  "frames": 1626
+ },
+ "VID-0176": {
+  "median": 34.69,
+  "max": 46.35,
+  "duration_s": 15.3,
+  "fps": 30,
+  "frames": 459
+ },
+ "VID-0177": {
+  "median": 1.08,
+  "max": 1.46,
+  "duration_s": 3.2,
+  "fps": 10,
+  "frames": 32
+ },
+ "VID-0178": {
+  "median": 56.22,
+  "max": 58.2,
+  "duration_s": 14.7,
+  "fps": 60,
+  "frames": 880
+ },
+ "VID-0179": {
+  "median": 16.04,
+  "max": 23.69,
+  "duration_s": 17.9,
+  "fps": 60,
+  "frames": 1076
+ },
+ "VID-0180": {
+  "median": 1.4,
+  "max": 1.57,
+  "duration_s": 33.3,
+  "fps": 30,
+  "frames": 1000
+ },
+ "VID-0181": {
+  "median": 85.73,
+  "max": 102.57,
+  "duration_s": 58.5,
+  "fps": 60,
+  "frames": 3507
+ },
+ "VID-0182": {
+  "median": 45.2,
+  "max": 79.58,
+  "duration_s": 30.1,
+  "fps": 59.95,
+  "frames": 1803
+ },
+ "VID-0183": {
+  "median": 25.79,
+  "max": 28.67,
+  "duration_s": 8.4,
+  "fps": 60,
+  "frames": 503
+ },
+ "VID-0184": {
+  "median": 6.3,
+  "max": 21.87,
+  "duration_s": 44,
+  "fps": 60,
+  "frames": 2638
+ },
+ "VID-0185": {
+  "median": 46.85,
+  "max": 51.79,
+  "duration_s": 10.3,
+  "fps": 30,
+  "frames": 309
+ },
+ "VID-0186": {
+  "median": 12.61,
+  "max": 15.65,
+  "duration_s": 3.5,
+  "fps": 30,
+  "frames": 106
+ },
+ "VID-0187": {
+  "median": 10.04,
+  "max": 12.34,
+  "duration_s": 26.6,
+  "fps": 60,
+  "frames": 1598
+ },
+ "VID-0188": {
+  "median": 19.87,
+  "max": 27.55,
+  "duration_s": 9,
+  "fps": 60,
+  "frames": 541
+ },
+ "VID-0189": {
+  "median": 13.19,
+  "max": 33.81,
+  "duration_s": 14.4,
+  "fps": 60,
+  "frames": 866
+ },
+ "VID-0190": {
+  "median": 5.41,
+  "max": 52.4,
+  "duration_s": 9.1,
+  "fps": 59.94,
+  "frames": 545
+ },
+ "VID-0191": {
+  "median": 12.73,
+  "max": 13.29,
+  "duration_s": 15.4,
+  "fps": 60,
+  "frames": 924
+ },
+ "VID-0192": {
+  "median": 51.1,
+  "max": 52.79,
+  "duration_s": 16.1,
+  "fps": 60,
+  "frames": 966
+ },
+ "VID-0193": {
+  "median": 79.33,
+  "max": 93.93,
+  "duration_s": 18.7,
+  "fps": 60,
+  "frames": 1121
+ },
+ "VID-0194": {
+  "median": 3.28,
+  "max": 3.49,
+  "duration_s": 24.2,
+  "fps": 24,
+  "frames": 582
+ },
+ "VID-0195": {
+  "median": 49.18,
+  "max": 61.98,
+  "duration_s": 183.8,
+  "fps": 24,
+  "frames": 4411
+ },
+ "VID-0196": {
+  "median": 4.25,
+  "max": 50.66,
+  "duration_s": 19.2,
+  "fps": 60,
+  "frames": 1152
+ },
+ "VID-0197": {
+  "median": 1.13,
+  "max": 23.55,
+  "duration_s": 9.9,
+  "fps": 24,
+  "frames": 238
+ },
+ "VID-0198": {
+  "median": 7.78,
+  "max": 57.82,
+  "duration_s": 57.7,
+  "fps": 60,
+  "frames": 3464
+ },
+ "VID-0199": {
+  "median": 6.1,
+  "max": 6.79,
+  "duration_s": 12.6,
+  "fps": 60,
+  "frames": 753
+ },
+ "VID-0200": {
+  "median": 26.95,
+  "max": 48.84,
+  "duration_s": 6.6,
+  "fps": 60,
+  "frames": 397
+ },
+ "VID-0201": {
+  "median": 61.49,
+  "max": 80.87,
+  "duration_s": 49.8,
+  "fps": 30,
+  "frames": 1495
+ },
+ "VID-0202": {
+  "median": 18.43,
+  "max": 23.76,
+  "duration_s": 28.5,
+  "fps": 30,
+  "frames": 856
+ },
+ "VID-0203": {
+  "median": 14.03,
+  "max": 15.93,
+  "duration_s": 12.7,
+  "fps": 31.58,
+  "frames": 401
+ },
+ "VID-0204": {
+  "median": 12.26,
+  "max": 42.46,
+  "duration_s": 12.3,
+  "fps": 60,
+  "frames": 737
+ },
+ "VID-0205": {
+  "median": 12.37,
+  "max": 42.69,
+  "duration_s": 36.5,
+  "fps": 30,
+  "frames": 1094
+ },
+ "VID-0206": {
+  "median": 41.4,
+  "max": 47.4,
+  "duration_s": 25.3,
+  "fps": 30,
+  "frames": 760
+ },
+ "VID-0207": {
+  "median": 4.54,
+  "max": 5.4,
+  "duration_s": 30,
+  "fps": 30,
+  "frames": 900
+ },
+ "VID-0208": {
+  "median": 72.92,
+  "max": 75.71,
+  "duration_s": 26.9,
+  "fps": 60,
+  "frames": 1612
+ },
+ "VID-0209": {
+  "median": 18.98,
+  "max": 193.15,
+  "duration_s": 28,
+  "fps": 60,
+  "frames": 1678
+ },
+ "VID-0210": {
+  "median": 42.01,
+  "max": 66.04,
+  "duration_s": 161.1,
+  "fps": 59.94,
+  "frames": 9659
+ },
+ "VID-0211": {
+  "median": 3.72,
+  "max": 7.36,
+  "duration_s": 3.1,
+  "fps": 60,
+  "frames": 186
+ },
+ "VID-0212": {
+  "median": 69.27,
+  "max": 166.14,
+  "duration_s": 28,
+  "fps": 60,
+  "frames": 1680
+ },
+ "VID-0213": {
+  "median": 32.33,
+  "max": 50.03,
+  "duration_s": 16.3,
+  "fps": 60,
+  "frames": 979
+ },
+ "VID-0214": {
+  "median": 6.09,
+  "max": 6.46,
+  "duration_s": 10.2,
+  "fps": 30,
+  "frames": 306
+ },
+ "VID-0215": {
+  "median": 13.66,
+  "max": 15.23,
+  "duration_s": 55.1,
+  "fps": 57.61,
+  "frames": 3177
+ },
+ "VID-0216": {
+  "median": 10.62,
+  "max": 19.34,
+  "duration_s": 61.2,
+  "fps": 57.53,
+  "frames": 3521
+ },
+ "VID-0217": {
+  "median": 20.14,
+  "max": 21.65,
+  "duration_s": 14.3,
+  "fps": 60,
+  "frames": 861
+ },
+ "VID-0218": {
+  "median": 4.56,
+  "max": 24.63,
+  "duration_s": 22.1,
+  "fps": 60,
+  "frames": 1323
+ },
+ "VID-0219": {
+  "median": 45.52,
+  "max": 49.85,
+  "duration_s": 12.5,
+  "fps": 60,
+  "frames": 751
+ },
+ "VID-0220": {
+  "median": 19.73,
+  "max": 29.83,
+  "duration_s": 16.7,
+  "fps": 30,
+  "frames": 500
+ },
+ "VID-0221": {
+  "median": 11.63,
+  "max": 71.58,
+  "duration_s": 22.9,
+  "fps": 60,
+  "frames": 1375
+ },
+ "VID-0222": {
+  "median": 40.86,
+  "max": 124.92,
+  "duration_s": 50.8,
+  "fps": 29.97,
+  "frames": 1521
+ },
+ "VID-0223": {
+  "median": 31.2,
+  "max": 44.32,
+  "duration_s": 12.5,
+  "fps": 58.16,
+  "frames": 729
+ },
+ "VID-0224": {
+  "median": 4.19,
+  "max": 4.41,
+  "duration_s": 30.6,
+  "fps": 30,
+  "frames": 919
+ },
+ "VID-0225": {
+  "median": 1.48,
+  "max": 2.05,
+  "duration_s": 38.4,
+  "fps": 60,
+  "frames": 2301
+ },
+ "VID-0226": {
+  "median": 10.63,
+  "max": 20.11,
+  "duration_s": 10.9,
+  "fps": 60,
+  "frames": 655
+ },
+ "VID-0227": {
+  "median": 1.38,
+  "max": 6.12,
+  "duration_s": 29,
+  "fps": 60,
+  "frames": 1738
+ },
+ "VID-0228": {
+  "median": 16.05,
+  "max": 17.31,
+  "duration_s": 7.7,
+  "fps": 8.33,
+  "frames": 64
+ },
+ "VID-0229": {
+  "median": 3.34,
+  "max": 24.94,
+  "duration_s": 3.3,
+  "fps": 30,
+  "frames": 100
+ },
+ "VID-0230": {
+  "median": 28.93,
+  "max": 83.96,
+  "duration_s": 81,
+  "fps": 30,
+  "frames": 2429
+ },
+ "VID-0231": {
+  "median": 6.51,
+  "max": 9.16,
+  "duration_s": 8.7,
+  "fps": 30,
+  "frames": 262
+ },
+ "VID-0232": {
+  "median": 7.44,
+  "max": 14.7,
+  "duration_s": 24,
+  "fps": 30,
+  "frames": 720
+ },
+ "VID-0233": {
+  "median": 0.15,
+  "max": 21.22,
+  "duration_s": 3.8,
+  "fps": 56.84,
+  "frames": 218
+ },
+ "VID-0234": {
+  "median": 1.42,
+  "max": 24.13,
+  "duration_s": 9.9,
+  "fps": 30,
+  "frames": 297
+ },
+ "VID-0235": {
+  "median": 27.23,
+  "max": 52.14,
+  "duration_s": 8.2,
+  "fps": 60,
+  "frames": 493
+ },
+ "VID-0236": {
+  "median": 39.25,
+  "max": 40.36,
+  "duration_s": 11,
+  "fps": 60,
+  "frames": 661
+ },
+ "VID-0237": {
+  "median": 6.12,
+  "max": 6.16,
+  "duration_s": 5.2,
+  "fps": 57.33,
+  "frames": 301
+ },
+ "VID-0238": {
+  "median": 11.32,
+  "max": 11.33,
+  "duration_s": 12.3,
+  "fps": 59.34,
+  "frames": 727
+ },
+ "VID-0239": {
+  "median": 7.85,
+  "max": 10.2,
+  "duration_s": 13.4,
+  "fps": 29.85,
+  "frames": 401
+ },
+ "VID-0240": {
+  "median": 10.48,
+  "max": 17.15,
+  "duration_s": 30,
+  "fps": 30,
+  "frames": 900
+ },
+ "VID-0241": {
+  "median": 0.61,
+  "max": 13.51,
+  "duration_s": 8.6,
+  "fps": 60,
+  "frames": 516
+ },
+ "VID-0242": {
+  "median": 35.1,
+  "max": 43.71,
+  "duration_s": 6.4,
+  "fps": 60,
+  "frames": 384
+ },
+ "VID-0243": {
+  "median": 9.15,
+  "max": 47.03,
+  "duration_s": 15.4,
+  "fps": 35.6,
+  "frames": 547
+ },
+ "VID-0244": {
+  "median": 33.98,
+  "max": 220.96,
+  "duration_s": 14.4,
+  "fps": 30,
+  "frames": 433
+ },
+ "VID-0245": {
+  "median": 25.82,
+  "max": 73.92,
+  "duration_s": 5.2,
+  "fps": 59.98,
+  "frames": 312
+ },
+ "VID-0246": {
+  "median": 30.96,
+  "max": 45.81,
+  "duration_s": 6.8,
+  "fps": 60,
+  "frames": 410
+ },
+ "VID-0247": {
+  "median": 2.79,
+  "max": 43.96,
+  "duration_s": 19.5,
+  "fps": 60,
+  "frames": 1168
+ },
+ "VID-0248": {
+  "median": 55.87,
+  "max": 76.27,
+  "duration_s": 23.1,
+  "fps": 60,
+  "frames": 1387
+ },
+ "VID-0249": {
+  "median": 0.31,
+  "max": 0.52,
+  "duration_s": 11.2,
+  "fps": 60,
+  "frames": 669
+ },
+ "VID-0250": {
+  "median": 37.42,
+  "max": 47.26,
+  "duration_s": 26.3,
+  "fps": 60,
+  "frames": 1577
+ },
+ "VID-0251": {
+  "median": 83.84,
+  "max": 105.81,
+  "duration_s": 172,
+  "fps": 60,
+  "frames": 10321
+ },
+ "VID-0252": {
+  "median": 9.85,
+  "max": 16.94,
+  "duration_s": 13.2,
+  "fps": 60,
+  "frames": 789
+ },
+ "VID-0253": {
+  "median": 6.75,
+  "max": 12.84,
+  "duration_s": 11,
+  "fps": 60,
+  "frames": 660
+ },
+ "VID-0254": {
+  "median": 2.73,
+  "max": 3.78,
+  "duration_s": 5,
+  "fps": 60,
+  "frames": 300
+ },
+ "VID-0255": {
+  "median": 38.64,
+  "max": 44.52,
+  "duration_s": 106,
+  "fps": 59.51,
+  "frames": 6311
+ },
+ "VID-0256": {
+  "median": 3.88,
+  "max": 5.79,
+  "duration_s": 10.4,
+  "fps": 60,
+  "frames": 624
+ },
+ "VID-0257": {
+  "median": 16.67,
+  "max": 37.12,
+  "duration_s": 20.7,
+  "fps": 30,
+  "frames": 622
+ },
+ "VID-0258": {
+  "median": 4.32,
+  "max": 21.83,
+  "duration_s": 15.1,
+  "fps": 60,
+  "frames": 904
+ },
+ "VID-0259": {
+  "median": 41.82,
+  "max": 42.42,
+  "duration_s": 5.8,
+  "fps": 15.03,
+  "frames": 87
+ },
+ "VID-0260": {
+  "median": 0.36,
+  "max": 0.93,
+  "duration_s": 48,
+  "fps": 60,
+  "frames": 2881
+ },
+ "VID-0261": {
+  "median": 36.82,
+  "max": 45.95,
+  "duration_s": 22.1,
+  "fps": 30,
+  "frames": 663
+ },
+ "VID-0262": {
+  "median": 3.03,
+  "max": 46.73,
+  "duration_s": 24.7,
+  "fps": 60,
+  "frames": 1479
+ },
+ "VID-0263": {
+  "median": 5.46,
+  "max": 8.63,
+  "duration_s": 17.3,
+  "fps": 50,
+  "frames": 866
+ },
+ "VID-0264": {
+  "median": 1.26,
+  "max": 3.81,
+  "duration_s": 9.3,
+  "fps": 23.91,
+  "frames": 222
+ },
+ "VID-0265": {
+  "median": 0.7,
+  "max": 3.8,
+  "duration_s": 6.7,
+  "fps": 50.3,
+  "frames": 337
+ },
+ "VID-0266": {
+  "median": 5.6,
+  "max": 10.81,
+  "duration_s": 10.3,
+  "fps": 30,
+  "frames": 309
+ },
+ "VID-0267": {
+  "median": 31.17,
+  "max": 35.72,
+  "duration_s": 10,
+  "fps": 24,
+  "frames": 240
+ },
+ "VID-0268": {
+  "median": 32.44,
+  "max": 59.36,
+  "duration_s": 10.4,
+  "fps": 30,
+  "frames": 312
+ },
+ "VID-0269": {
+  "median": 3.3,
+  "max": 7.67,
+  "duration_s": 5.9,
+  "fps": 60,
+  "frames": 352
+ },
+ "VID-0270": {
+  "median": 2.72,
+  "max": 3.18,
+  "duration_s": 28.7,
+  "fps": 60,
+  "frames": 1720
+ },
+ "VID-0271": {
+  "median": 0.96,
+  "max": 3.46,
+  "duration_s": 10.7,
+  "fps": 30,
+  "frames": 320
+ },
+ "VID-0272": {
+  "median": 48.53,
+  "max": 115.72,
+  "duration_s": 54.6,
+  "fps": 30,
+  "frames": 1637
+ },
+ "VID-0273": {
+  "median": 21.47,
+  "max": 50.08,
+  "duration_s": 24.4,
+  "fps": 60,
+  "frames": 1462
+ },
+ "VID-0274": {
+  "median": 4.92,
+  "max": 5.47,
+  "duration_s": 21,
+  "fps": 53.23,
+  "frames": 1118
+ },
+ "VID-0275": {
+  "median": 2.27,
+  "max": 6.07,
+  "duration_s": 12.9,
+  "fps": 57.51,
+  "frames": 740
+ },
+ "VID-0276": {
+  "median": 1.03,
+  "max": 11.05,
+  "duration_s": 6,
+  "fps": 60.13,
+  "frames": 362
+ },
+ "VID-0277": {
+  "median": 13.61,
+  "max": 23.14,
+  "duration_s": 30,
+  "fps": 30,
+  "frames": 900
+ },
+ "VID-0278": {
+  "median": 6.5,
+  "max": 9.25,
+  "duration_s": 15,
+  "fps": 30,
+  "frames": 450
+ },
+ "VID-0279": {
+  "median": 6.68,
+  "max": 6.87,
+  "duration_s": 10.4,
+  "fps": 30,
+  "frames": 311
+ },
+ "VID-0280": {
+  "median": 30.66,
+  "max": 49.1,
+  "duration_s": 11.9,
+  "fps": 60,
+  "frames": 712
+ },
+ "VID-0281": {
+  "median": 0.81,
+  "max": 5.79,
+  "duration_s": 17.4,
+  "fps": 60,
+  "frames": 1042
+ },
+ "VID-0282": {
+  "median": 1.49,
+  "max": 1.58,
+  "duration_s": 29,
+  "fps": 31.9,
+  "frames": 925
+ },
+ "VID-0283": {
+  "median": 26.42,
+  "max": 108.91,
+  "duration_s": 21.4,
+  "fps": 60,
+  "frames": 1284
+ },
+ "VID-0284": {
+  "median": 72.86,
+  "max": 75.7,
+  "duration_s": 26.9,
+  "fps": 60,
+  "frames": 1612
+ },
+ "VID-0285": {
+  "median": 3.28,
+  "max": 3.92,
+  "duration_s": 19.1,
+  "fps": 57.65,
+  "frames": 1103
+ },
+ "VID-0286": {
+  "median": 19.31,
+  "max": 25.21,
+  "duration_s": 26.2,
+  "fps": 59.99,
+  "frames": 1572
+ },
+ "VID-0287": {
+  "median": 11.32,
+  "max": 20.38,
+  "duration_s": 12.9,
+  "fps": 60,
+  "frames": 776
+ },
+ "VID-0288": {
+  "median": 103.02,
+  "max": 103.18,
+  "duration_s": 11.3,
+  "fps": 56.76,
+  "frames": 639
+ },
+ "VID-0289": {
+  "median": 17.17,
+  "max": 24.18,
+  "duration_s": 15.7,
+  "fps": 60.05,
+  "frames": 940
+ },
+ "VID-0290": {
+  "median": 30.18,
+  "max": 34.77,
+  "duration_s": 17.6,
+  "fps": 60,
+  "frames": 1057
+ },
+ "VID-0291": {
+  "median": 11.83,
+  "max": 14.15,
+  "duration_s": 14.6,
+  "fps": 60,
+  "frames": 878
+ },
+ "VID-0292": {
+  "median": 8.08,
+  "max": 17.96,
+  "duration_s": 6.7,
+  "fps": 60,
+  "frames": 399
+ },
+ "VID-0293": {
+  "median": 87,
+  "max": 103.16,
+  "duration_s": 16.4,
+  "fps": 60,
+  "frames": 986
+ },
+ "VID-0294": {
+  "median": 3.61,
+  "max": 4.05,
+  "duration_s": 12.2,
+  "fps": 60,
+  "frames": 735
+ },
+ "VID-0295": {
+  "median": 2.83,
+  "max": 4.04,
+  "duration_s": 34,
+  "fps": 54.55,
+  "frames": 1852
+ },
+ "VID-0296": {
+  "median": 3.13,
+  "max": 5.17,
+  "duration_s": 13,
+  "fps": 37.61,
+  "frames": 487
+ },
+ "VID-0297": {
+  "median": 1.06,
+  "max": 1.74,
+  "duration_s": 39,
+  "fps": 48.71,
+  "frames": 1898
+ },
+ "VID-0298": {
+  "median": 18.07,
+  "max": 21.99,
+  "duration_s": 5.4,
+  "fps": 60,
+  "frames": 325
+ },
+ "VID-0299": {
+  "median": 21.51,
+  "max": 51.18,
+  "duration_s": 9.9,
+  "fps": 60,
+  "frames": 594
+ },
+ "VID-0300": {
+  "median": 30.2,
+  "max": 68.56,
+  "duration_s": 34.5,
+  "fps": 59.98,
+  "frames": 2072
+ },
+ "VID-0301": {
+  "median": 15.37,
+  "max": 15.98,
+  "duration_s": 18.5,
+  "fps": 30,
+  "frames": 555
+ },
+ "VID-0302": {
+  "median": 110.85,
+  "max": 140.19,
+  "duration_s": 20,
+  "fps": 30,
+  "frames": 600
+ },
+ "VID-0303": {
+  "median": 8.66,
+  "max": 194.87,
+  "duration_s": 11.2,
+  "fps": 55.67,
+  "frames": 626
+ },
+ "VID-0304": {
+  "median": 8.04,
+  "max": 9.86,
+  "duration_s": 10.1,
+  "fps": 30,
+  "frames": 302
+ },
+ "VID-0305": {
+  "median": 14.99,
+  "max": 24.34,
+  "duration_s": 12.6,
+  "fps": 60,
+  "frames": 755
+ },
+ "VID-0306": {
+  "median": 8.51,
+  "max": 22.02,
+  "duration_s": 7,
+  "fps": 60,
+  "frames": 418
+ },
+ "VID-0307": {
+  "median": 1.12,
+  "max": 14.95,
+  "duration_s": 57.3,
+  "fps": 60,
+  "frames": 3440
+ },
+ "VID-0308": {
+  "median": 1.43,
+  "max": 33.26,
+  "duration_s": 7.7,
+  "fps": 60,
+  "frames": 459
+ },
+ "VID-0309": {
+  "median": 6.65,
+  "max": 8.5,
+  "duration_s": 10.6,
+  "fps": 14.29,
+  "frames": 151
+ },
+ "VID-0310": {
+  "median": 30.8,
+  "max": 35.71,
+  "duration_s": 17.8,
+  "fps": 60,
+  "frames": 1065
+ },
+ "VID-0311": {
+  "median": 3.72,
+  "max": 5.15,
+  "duration_s": 9.4,
+  "fps": 60,
+  "frames": 564
+ },
+ "VID-0312": {
+  "median": 6.01,
+  "max": 7.02,
+  "duration_s": 19.2,
+  "fps": 60,
+  "frames": 1151
+ },
+ "VID-0313": {
+  "median": 32.57,
+  "max": 37.72,
+  "duration_s": 15.7,
+  "fps": 30,
+  "frames": 470
+ },
+ "VID-0314": {
+  "median": 3.74,
+  "max": 9.29,
+  "duration_s": 32.9,
+  "fps": 50.64,
+  "frames": 1667
+ },
+ "VID-0315": {
+  "median": 1.18,
+  "max": 82.67,
+  "duration_s": 2.8,
+  "fps": 30,
+  "frames": 85
+ },
+ "VID-0316": {
+  "median": 15.31,
+  "max": 20.65,
+  "duration_s": 15,
+  "fps": 60,
+  "frames": 900
+ },
+ "VID-0317": {
+  "median": 31.99,
+  "max": 34.06,
+  "duration_s": 20.6,
+  "fps": 30,
+  "frames": 618
+ },
+ "VID-0318": {
+  "median": 0.67,
+  "max": 3.75,
+  "duration_s": 6.7,
+  "fps": 50.3,
+  "frames": 337
+ },
+ "VID-0319": {
+  "median": 0.43,
+  "max": 0.62,
+  "duration_s": 9,
+  "fps": 60,
+  "frames": 540
+ },
+ "VID-0320": {
+  "median": 0.88,
+  "max": 4.44,
+  "duration_s": 6.3,
+  "fps": 54.93,
+  "frames": 347
+ },
+ "VID-0321": {
+  "median": 60.88,
+  "max": 64.42,
+  "duration_s": 40.4,
+  "fps": 60,
+  "frames": 2426
+ },
+ "VID-0322": {
+  "median": 6.84,
+  "max": 9.42,
+  "duration_s": 11.7,
+  "fps": 57.6,
+  "frames": 675
+ },
+ "VID-0323": {
+  "median": 72.9,
+  "max": 138.59,
+  "duration_s": 9.3,
+  "fps": 30,
+  "frames": 278
+ },
+ "VID-0324": {
+  "median": 9.04,
+  "max": 10.68,
+  "duration_s": 13.7,
+  "fps": 29.9,
+  "frames": 411
+ },
+ "VID-0325": {
+  "median": 36.65,
+  "max": 94.15,
+  "duration_s": 12.6,
+  "fps": 60,
+  "frames": 753
+ },
+ "VID-0326": {
+  "median": 30.07,
+  "max": 38.66,
+  "duration_s": 127.1,
+  "fps": 30,
+  "frames": 3813
+ },
+ "VID-0327": {
+  "median": 5.07,
+  "max": 23.69,
+  "duration_s": 10.5,
+  "fps": 59.9,
+  "frames": 627
+ },
+ "VID-0328": {
+  "median": 0.79,
+  "max": 0.92,
+  "duration_s": 11.8,
+  "fps": 60,
+  "frames": 711
+ },
+ "VID-0329": {
+  "median": 42.38,
+  "max": 93.23,
+  "duration_s": 25.1,
+  "fps": 60,
+  "frames": 1503
+ },
+ "VID-0330": {
+  "median": 61.02,
+  "max": 72.31,
+  "duration_s": 31.4,
+  "fps": 30,
+  "frames": 943
+ },
+ "VID-0331": {
+  "median": 1.3,
+  "max": 1.55,
+  "duration_s": 3.3,
+  "fps": 41.33,
+  "frames": 135
+ },
+ "VID-0332": {
+  "median": 41.68,
+  "max": 93.3,
+  "duration_s": 16.3,
+  "fps": 30,
+  "frames": 489
+ },
+ "VID-0333": {
+  "median": 39.99,
+  "max": 185.6,
+  "duration_s": 62.1,
+  "fps": 60,
+  "frames": 3724
+ }
+}

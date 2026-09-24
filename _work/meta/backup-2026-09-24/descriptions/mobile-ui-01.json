@@ -1,0 +1,335 @@
+{
+ "note": "Review pass 1 of the undescribed mobile-app-ui images. Sheets _work/review/review_01.jpg and review_02.jpg. Written from the processed web images, so descriptions match what the site displays. Palette, dimensions and contrast are measured elsewhere and deliberately not repeated here.",
+ "items": {
+  "IMG-0039": {
+   "id": "IMG-0039",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "gold flower shop - product grid, warm peach",
+   "description": "A mobile shop screen for a plant retailer called 'gold flower shop'. The header is a soft peach panel with the shop name and a search field; beneath it a row of pill-shaped chip filters (Featured, all products, plants and so on). The body is a list of products in a two-column grid, each row showing a small square thumbnail, a plant name, a short teal-grey description line, a star rating with a review count, and a price plus a small green trend figure. The whole screen sits on a pale cream background with generous gutters. The lesson is the chip row: it makes a catalogue of near-identical green plants feel browsable without adding a heavy section header, and the peach header supplies the only warmth in an otherwise monochrome palette.",
+   "roles": [
+    "list",
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "ecommerce",
+    "product-grid",
+    "chip-filter",
+    "plant",
+    "price",
+    "rating-stars"
+   ],
+   "quality": "Clear capture; product names legible."
+  },
+  "IMG-0040": {
+   "id": "IMG-0040",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "gold flower shop - product grid, sorted by price",
+   "description": "The same plant-shop catalogue as IMG-0039 but scrolled deeper and with a price sort applied, showing a wider list of products. Each row keeps the identical structure - thumbnail, name, two-line description, rating, price, trend delta - and the vertical rhythm never breaks across the longer list. Two wide banner cards interrupt the rows partway down, one orange and one light, breaking the monotony without changing the row grid. Useful as a study in how a dense commerce list stays legible: consistent row height, a single accent colour for price action, and colour banners used as punctuation rather than decoration.",
+   "roles": [
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "ecommerce",
+    "product-grid",
+    "sorting",
+    "price",
+    "banner"
+   ],
+   "quality": "Clear capture; the longer list makes the row rhythm easy to check."
+  },
+  "IMG-0041": {
+   "id": "IMG-0041",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "gold flower shop - product detail with botanical line art",
+   "description": "A product detail screen for the plant shop. The top two-thirds is a pale yellow card containing fine black line art of a plant specimen drawn with a measurement axis running through it, so the illustration reads as a technical botanical plate rather than a photograph. Below, the product name sits over a price row, then a customer review block with an avatar and a short pull quote. The screen is mostly empty space, with the single illustration carrying the whole page. The idea worth taking is treating a product image as a diagram - it signals care and authority far more cheaply than staging a photo, and it scales cleanly to any product in the range.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "illustration-led"
+   ],
+   "tags": [
+    "ecommerce",
+    "product-detail",
+    "line-art",
+    "testimonial",
+    "price",
+    "plant"
+   ],
+   "quality": "Clear capture; the line art and price are legible."
+  },
+  "IMG-0042": {
+   "id": "IMG-0042",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "gold flower shop - two specimen plates stacked",
+   "description": "The same botanical product screen as IMG-0041 but showing two illustration cards stacked vertically, each with its own specimen drawing and measurement axis, separated by a labelled divider. The pair demonstrates consistency: both plates use the same stroke weight, the same axis treatment and the same card proportions, so they read as one series. The most useful detail is the divider label sitting between them, which turns two images into a comparison rather than a slideshow.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "illustration-led"
+   ],
+   "tags": [
+    "ecommerce",
+    "product-detail",
+    "line-art",
+    "comparison",
+    "divider",
+    "plant"
+   ],
+   "quality": "Clear capture; both plates legible at review size."
+  },
+  "IMG-0104": {
+   "id": "IMG-0104",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Instagram DMs - chat thread, dark mode",
+   "description": "An Instagram direct-message thread in dark mode. The top bar carries a back chevron, the contact's avatar, name and presence line, and call and info icons on the right. The transcript runs down a near-black background: incoming messages sit as grey bubbles on the left, outgoing messages as saturated magenta bubbles on the right, and a row of large emoji reactions floats over one bubble. At the bottom is a camera icon, a rounded message field and a row of attachment buttons. The screen is the reference for very-high-contrast chat: one saturated accent for everything the user said, neutral grey for everyone else, and no borders anywhere.",
+   "roles": [
+    "chat"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "high-contrast"
+   ],
+   "tags": [
+    "chat-bubble",
+    "emoji",
+    "reaction",
+    "social",
+    "composer"
+   ],
+   "quality": "Clear capture; bubble colours and text legible."
+  },
+  "IMG-0105": {
+   "id": "IMG-0105",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Instagram DMs - shared media card in a thread",
+   "description": "A dark-mode chat thread where a message contains a media card: a small photo thumbnail with a rounded corner and a link-style caption block underneath. The card is visually distinct from the plain text bubbles around it but keeps the same width, so the transcript column stays intact. The detail worth borrowing is that a shared item is rendered as a card *inside* the message stream rather than as a separate attachment panel - the conversation remains one continuous column regardless of payload type.",
+   "roles": [
+    "chat",
+    "media"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "chat-bubble",
+    "card",
+    "social",
+    "photo"
+   ],
+   "quality": "Clear capture; the media card and caption are legible."
+  },
+  "IMG-0106": {
+   "id": "IMG-0106",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Instagram DMs - thread with a link preview",
+   "description": "Another dark-mode Instagram thread, this one dominated by a long link preview card: a wide image, a bold headline line and a grey source line, all in one rounded block. Around it sit short text bubbles and a row of heart reactions. The preview card is much taller than the surrounding messages, which is precisely the point - the layout gives shared content more vertical weight than conversation, and the reader still knows at a glance which messages are truly theirs because of the accent colour split.",
+   "roles": [
+    "chat"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "chat-bubble",
+    "link-preview",
+    "card",
+    "social",
+    "reaction"
+   ],
+   "quality": "Clear capture; the preview headline is legible."
+  },
+  "IMG-0107": {
+   "id": "IMG-0107",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Instagram DMs - long thread, reactions and replies",
+   "description": "A dense dark-mode chat transcript showing the busiest state of the Instagram message view: many short outgoing bubbles in magenta, a couple of incoming grey bubbles, emoji reactions pinned to individual messages, and a thread-reply affordance. The value here is what happens under load. With this many bubbles the column still reads top-to-bottom without confusion, because only two bubble colours exist, reply depth is shown by a thin indent and a grey quoted line rather than a nested box, and reactions are small enough not to shift the bubble positions.",
+   "roles": [
+    "chat"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "high-contrast"
+   ],
+   "tags": [
+    "chat-bubble",
+    "reaction",
+    "thread-reply",
+    "social",
+    "dense-content"
+   ],
+   "quality": "Clear capture; a dense state, legible at review size."
+  },
+  "IMG-0161": {
+   "id": "IMG-0161",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Grove - onboarding sequence, green and cream",
+   "description": "A four-panel onboarding sequence for a climate app called Grove. Panels alternate between an illustration-led cover (soft watercolour foliage, a headline, a one-line body and a solid dark-green primary button) and a denser informative screen carrying a progress ring, a headline figure and a short explanation with a small chart. The sequence shows a deliberate pacing pattern: one emotional screen, then one factual screen, repeated. The palette is tightly restricted to deep green, cream and a muted sage, so the screens feel like pages of one book rather than four separate views.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "illustration-led",
+    "rounded"
+   ],
+   "tags": [
+    "carousel",
+    "sustainability",
+    "progress",
+    "cta",
+    "multi-panel"
+   ],
+   "quality": "Clear capture; panel structure legible."
+  },
+  "IMG-0191": {
+   "id": "IMG-0191",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Goals checklist - soft blue gradient header",
+   "description": "A personal-goals screen with the headline 'Turn your goals into a real plan'. The upper third is a pale blue-to-white vertical gradient carrying the headline and a small avatars row; below it sits a grouped checklist of goals on white cards, each row with a coloured leading dot, a title, a supporting line and a chevron. A teal secondary button reading 'Create goal' closes the list. The screen is a good example of the gradient-header-plus-white-cards convention: the gradient does all the branding, the cards do all the work, and there is no chrome between them.",
+   "roles": [
+    "list",
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "gradient-heavy"
+   ],
+   "tags": [
+    "goal-selection",
+    "checklist",
+    "gradient",
+    "cta",
+    "avatar"
+   ],
+   "quality": "Clear capture; headline and list rows legible."
+  },
+  "IMG-0192": {
+   "id": "IMG-0192",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Personal-agent app - chat-forward empty state",
+   "description": "A screen headed 'Your personal agent that takes things off your plate', built around a large centred chat transcript. A few sample exchanges are shown as grey and white bubbles - a question, a confirmation with a small task chip, and a reply - and each bubble carries a small timestamp. The whole point is the empty state: rather than showing a blank composer, the screen demonstrates several plausible conversations so a new user understands the product's grammar before typing anything.",
+   "roles": [
+    "chat",
+    "empty-state",
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "soft-shadow"
+   ],
+   "tags": [
+    "ai",
+    "chat-bubble",
+    "timestamp",
+    "assistant"
+   ],
+   "quality": "Clear capture; bubble text legible."
+  },
+  "IMG-0193": {
+   "id": "IMG-0193",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Cloudborn - 'The world can wait' moon poster",
+   "description": "A near-black poster dominated by a photographic full moon, with the line 'The world can wait.' set in a high-contrast serif across two lines in the upper third, and a small wordmark at the bottom. There is no UI at all - it is a mood or teaser asset. It is filed here because it is the clearest example in the collection of type-over-photograph done properly: the text sits in the moon's empty dark quadrant, so it needs no scrim, no box and no shadow to stay readable.",
+   "roles": [
+    "landing-section",
+    "hero"
+   ],
+   "style": [
+    "dark-mode",
+    "editorial",
+    "bold-typography"
+   ],
+   "tags": [
+    "poster",
+    "serif",
+    "photo",
+    "splash",
+    "moon"
+   ],
+   "quality": "Clear capture; the headline and wordmark are legible."
+  },
+  "IMG-0198": {
+   "id": "IMG-0198",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Vitality coach - morning check-in with avatar pill",
+   "description": "A soft-toned wellness screen with a large friendly avatar at the top and a greeting line beneath it. Below sits a pill-shaped status chip summarising the user's starting energy, then a short prompt asking how the day should feel, followed by a column of large tappable option rows. The screen is almost entirely pastel with no hard edges beyond the option rows themselves. It is a good reference for a low-stakes input screen: one question, one obvious answer set, and nothing else competing for attention.",
+   "roles": [
+    "form",
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "wellness-coach",
+    "option-list",
+    "question",
+    "avatar",
+    "pastel"
+   ],
+   "quality": "Clear capture; the prompt and options are legible."
+  },
+  "IMG-0199": {
+   "id": "IMG-0199",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Vitality coach - goal setting with inline pickers",
+   "description": "A follow-up wellness screen where the user sets a goal. A headline sits at the top, then a vertical stack of grouped white cards, each containing a label and an inline value that opens a picker - one for a target, one for frequency, one for a reminder time. A large pill button anchors the bottom. The pattern is the compact settings stack: instead of pushing to a new page per value, each choice is edited in place, and the card group gives the whole thing a single visual unit.",
+   "roles": [
+    "form",
+    "settings"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "wellness-coach",
+    "picker",
+    "goal-selection",
+    "cta"
+   ],
+   "quality": "Clear capture; card labels legible."
+  }
+ }
+}

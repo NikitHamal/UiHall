@@ -1,0 +1,16 @@
+{
+  "name": "stormy-mcp",
+  "version": "1.0.0",
+  "description": "MCP server exposing the Stormy design corpus — a curated, visually-described catalogue of mobile and web interface design — to AI agents.",
+  "type": "module",
+  "bin": { "stormy-mcp": "./server.js" },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "selftest": "node selftest.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {},
+  "license": "MIT",
+  "private": true
+}

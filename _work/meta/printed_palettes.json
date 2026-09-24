@@ -1,0 +1,45 @@
+{
+ "note": "The ten named two-tone palette cards print their own colour names and hex values. Those hexes are quoted here verbatim rather than measured, because the card itself is the authority. 'ink' is the colour the label text is actually set in, read from the card. Each asset still keeps its measured k-means palette - that is what drives the swatch wall bands.",
+ "items": {
+  "IMG-0055": [
+   { "name": "Raspberry Red", "hex": "#EE005A", "ink": "#0A1520" },
+   { "name": "Deep Space Blue", "hex": "#012641", "ink": "#EE005A" }
+  ],
+  "IMG-0056": [
+   { "name": "Shadow Grey", "hex": "#272727", "ink": "#D4AA7D" },
+   { "name": "Sandy Clay", "hex": "#D4AA7D", "ink": "#2B2B2B" }
+  ],
+  "IMG-0057": [
+   { "name": "Electric Rose", "hex": "#FE00AE", "ink": "#C1FE1A" },
+   { "name": "Chartreuse", "hex": "#C1FE1A", "ink": "#FE00AE" }
+  ],
+  "IMG-0058": [
+   { "name": "Lime Cream", "hex": "#DDEA78", "ink": "#433455" },
+   { "name": "Vintage Grape", "hex": "#433455", "ink": "#DDEA78" }
+  ],
+  "IMG-0059": [
+   { "name": "Celadon", "hex": "#A8D3A8", "ink": "#553832" },
+   { "name": "Chocolate Plum", "hex": "#553832", "ink": "#A8D3A8" }
+  ],
+  "IMG-0060": [
+   { "name": "Cherry Blossom", "hex": "#F9A8B8", "ink": "#1A1265" },
+   { "name": "Deep Twilight", "hex": "#1A1265", "ink": "#F9A8B8" }
+  ],
+  "IMG-0061": [
+   { "name": "Coffee Bean", "hex": "#20130D", "ink": "#F3D98F" },
+   { "name": "Morning Butter", "hex": "#F3D98F", "ink": "#20130D" }
+  ],
+  "IMG-0062": [
+   { "name": "Regal Navy", "hex": "#0D3B66", "ink": "#FAF0CA" },
+   { "name": "Lemon Chiffon", "hex": "#FAF0CA", "ink": "#0D3B66" }
+  ],
+  "IMG-0063": [
+   { "name": "Espresso", "hex": "#3E2723", "ink": "#F4C9D6" },
+   { "name": "Peony", "hex": "#F4C9D6", "ink": "#3E2723" }
+  ],
+  "IMG-0064": [
+   { "name": "Deep Mocha", "hex": "#3D2E2B", "ink": "#E1D0C9" },
+   { "name": "Powder Petal", "hex": "#E1D0C9", "ink": "#3D2E2B" }
+  ]
+ }
+}

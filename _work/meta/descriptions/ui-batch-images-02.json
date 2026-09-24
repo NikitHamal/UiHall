@@ -1,0 +1,919 @@
+{
+ "items": {
+  "IMG-0501": {
+   "id": "IMG-0501",
+   "category": "website",
+   "type": "screen",
+   "title": "Erisproven — SaaS CRM overview",
+   "description": "A desktop CRM 'Erisproven' in English: a left sidebar (Dashboard, Contacts, Companies, Projects, Expenses…), a main 'Sales Overview' with KPIs (3,200, 87, 75%), a line chart, 'Top Clients' and an 'Expenses' table with many rows. A three-pane SaaS CRM dashboard; the table is the densest element.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "data-dense"
+   ],
+   "tags": [
+    "table",
+    "chart",
+    "analytics",
+    "kpi"
+   ],
+   "quality": "Clean capture; table text small."
+  },
+  "IMG-0502": {
+   "id": "IMG-0502",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Sony headphones product page, watermarked",
+   "description": "An iPhone product-detail screen for 'Sony WH-1000XM4 Headphones' ($349.99, 'Amazon') with a large 'KONKA' watermark across it and a seller review 'Sara Chen…'. A product page mockup — kept because the layout (price, seller, review) is the reference, not the watermark.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "e-commerce",
+    "product-detail",
+    "product-shot"
+   ],
+   "quality": "Watermarked capture; layout still legible.",
+   "pair_with": "IMG-0503"
+  },
+  "IMG-0503": {
+   "id": "IMG-0503",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Sony headphones product page, clean",
+   "description": "An iPhone product-detail screen for 'Sony WH-1000XM4 Headphones': product image, seller reviews, 'Sold by …', a star rating, a 'Buy Now' button and '100+ reviews'. The clean, unwatermarked version of the other card — a standard e-commerce product page with rating and CTA.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "e-commerce",
+    "product-detail",
+    "rating"
+   ],
+   "quality": "Clean capture; legible.",
+   "pair_with": "IMG-0502"
+  },
+  "IMG-0504": {
+   "id": "IMG-0504",
+   "category": "design-system",
+   "type": "component",
+   "title": "Category chips, colour-coded",
+   "description": "A component sheet of coloured category chips: 'Date & time' (green), 'Job title' (blue), 'Meeting' (teal), 'Your address' (purple), 'Alarm' (pink), 'Personnel' (yellow), 'Role' (red), 'Priority' (orange) — each a pill with a small icon. A colour-coding chip system where the hue carries the category.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "flat"
+   ],
+   "tags": [
+    "chip",
+    "chips",
+    "iconography",
+    "colour-coding",
+    "ui-kit"
+   ],
+   "quality": "Clean capture; labels legible."
+  },
+  "IMG-0505": {
+   "id": "IMG-0505",
+   "category": "design-system",
+   "type": "component",
+   "title": "Two list panels — sales and storage",
+   "description": "A two-panel list UI: left 'SALES' (Customers, Sales Orders, Services, Packages, Shipments) and right 'STORAGE UNITS' (Warehouses, Rented Storage…). Flat list rows with small icons, two columns side by side. A list/menu component pair for a warehouse/ERP style app.",
+   "roles": [
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "list-row",
+    "multi-panel",
+    "menu"
+   ],
+   "quality": "Clean capture; labels legible."
+  },
+  "IMG-0506": {
+   "id": "IMG-0506",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "Racers — orange trading dashboard",
+   "description": "A desktop finance app 'Racers' in orange: KPI cards ($12,549.80, $169.10, Ra-72, 77%), a 'Market Leaders' bar chart (Orange, Red, Green, $33,727.90), a 'Recent transactions' table, a 'Portfolio' chart and 'Top Gainers'. A dense trading/finance dashboard; the orange accent does the branding.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "data-dense"
+   ],
+   "tags": [
+    "fintech",
+    "finance",
+    "kpi",
+    "chart",
+    "table"
+   ],
+   "quality": "Clean capture; figures legible."
+  },
+  "IMG-0507": {
+   "id": "IMG-0507",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "Trading platform — balance, tabs, sparkline",
+   "description": "A white desktop trading platform: 'Overview' with 'My Balance $162,540.00', tabs (Deposits, Top Experts, Forum, Blockchain, Top Games, Top Gainers), a transaction list (Alpha, Green, Orion, Photon, Lyra…) and a '30 Day / 90 Day / 365' sparkline chart. A crypto/trading dashboard organised as tabs over a balance hero number.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "fintech",
+    "trading",
+    "crypto",
+    "sparkline",
+    "table"
+   ],
+   "quality": "Clean capture; figures legible."
+  },
+  "IMG-0508": {
+   "id": "IMG-0508",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "eQh episode screen, near-empty",
+   "description": "A dark card with an 'eQh' logo, 'Episode 2' and three empty rounded rectangles (placeholder video frames). A minimal, near-empty episode/playlist screen — the empty frames are placeholders, which the honest read is: a loading or empty state.",
+   "roles": [
+    "media",
+    "empty-state"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "podcast",
+    "dark-ui"
+   ],
+   "quality": "Placeholder/empty state; little content visible."
+  },
+  "IMG-0509": {
+   "id": "IMG-0509",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Pick your avatars, dark grid",
+   "description": "A dark phone screen 'Pick your favorite avatars' with a grid of eight avatar circles (Eli, Jenna, Marcus A, Kira, Devon, Lena, Zoe, Rico…), a 'Confirm Selection' button and 'Skip, we'll select a random avatar'. An avatar picker with a skip path; the grid is the whole screen.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "dark-mode",
+    "playful"
+   ],
+   "tags": [
+    "avatar",
+    "avatar-picker",
+    "multi-panel"
+   ],
+   "quality": "Clean capture; avatar names legible."
+  },
+  "IMG-0510": {
+   "id": "IMG-0510",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Team chat message list",
+   "description": "A 'Chat' phone screen: a list of teammate messages (Freddie Groux 'Is there a good time to talk…', Anna Adams 'The design review is scheduled…', Michael Carter 'You have 3 unreviewed docs…', Sophia Miller, Jake Anderson, Emily Parker, Marcus Ford) each with a name, a truncated preview and a timestamp (2h, 1h, 5h…), plus a bottom input bar. A team chat list with previews.",
+   "roles": [
+    "chat",
+    "list",
+    "notification"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "messaging",
+    "timestamp"
+   ],
+   "quality": "Clean capture; previews legible."
+  },
+  "IMG-0511": {
+   "id": "IMG-0511",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "The Olive Fashion Edit — curation feed",
+   "description": "A fashion curation app 'The Olive Fashion Edit'. 'Denim Overshoat' (brown card, 'The Studio', 'Fits like an everyday jacket with clean tailoring…'), 'Find Your Edit' with product cards (green dress $89, bag, boots) and a bottom bar. An editorial product-curation feed; the product cards are the content.",
+   "roles": [
+    "feed",
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "editorial"
+   ],
+   "tags": [
+    "e-commerce",
+    "product-detail",
+    "cards",
+    "multi-panel"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0512": {
+   "id": "IMG-0512",
+   "category": "illustration",
+   "type": "component",
+   "title": "Six avatar illustrations, pastel circles",
+   "description": "Six circular avatar illustrations: a brown-haired figure in a yellow shirt, a dark-haired figure, a green-haired figure in orange, a figure in a blue hat, a blue-shirted figure, and a brown/tan figure. A diverse avatar illustration set on pastel circles — the kind of asset that feeds an avatar picker.",
+   "roles": [],
+   "style": [
+    "playful",
+    "illustration-led"
+   ],
+   "tags": [
+    "avatar",
+    "illustration",
+    "character",
+    "artwork"
+   ],
+   "quality": "Clean illustration; faces legible."
+  },
+  "IMG-0513": {
+   "id": "IMG-0513",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Choose Avatar onboarding, iPhone",
+   "description": "An iPhone 'Choose Avatar' onboarding screen: 'Choose your favorite avatar style. You can always change these later.' with a 3×2 grid of avatars, a purple 'Continue' button and a 'Skip for now' link. The iPhone bezel frames the screen on a white backdrop; a classic avatar-picker step.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "avatar",
+    "avatar-picker",
+    "cta"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0514": {
+   "id": "IMG-0514",
+   "category": "mobile-app-ui",
+   "type": "component",
+   "title": "Client Dashboard bento widget",
+   "description": "A dark widget card 'Client Dashboard' with a bento grid of coloured pills (blue, green, yellow, orange chips of various sizes) and a bottom row '5:41 / 24% / 102 / 38'. A dashboard widget/bento component where the pill sizes encode importance.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based"
+   ],
+   "tags": [
+    "widgets",
+    "bento",
+    "dark-ui",
+    "multi-panel"
+   ],
+   "quality": "Clean capture; figures legible."
+  },
+  "IMG-0515": {
+   "id": "IMG-0515",
+   "category": "mobile-app-ui",
+   "type": "component",
+   "title": "Listening Time stat widget",
+   "description": "A dark widget card 'Listening Time' with a large '18.42 hr' number, an icon cluster (Song Playlist 239, Peak Time 9:44–12:44 AM) and a chevron. A music stats widget built around one big number with two small supporting stats.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "music",
+    "stats",
+    "metric",
+    "dark-ui"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0516": {
+   "id": "IMG-0516",
+   "category": "mobile-app-ui",
+   "type": "component",
+   "title": "AI Discovery widget with glow",
+   "description": "A dark reddish-brown widget card 'AI Discovery' with a '24 tracks' number, 'AI Match: 94%' and a wavy glow along the bottom. An AI music discovery widget; the glow is the only non-functional decoration and it sets the warm tone.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "gradient-heavy"
+   ],
+   "tags": [
+    "ai",
+    "music",
+    "metric",
+    "glow",
+    "gradient"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0517": {
+   "id": "IMG-0517",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Sustainability app, eight screens",
+   "description": "A 2×4 grid of eight phone screens for a sustainability/volunteering app: 'Your Victory', 'Make Me a Path' (cookie photo), 'Explore for a Living' (tree), 'Gonna to a New…' (person on a path), 'Feed Earth a Story', 'Pick a Real World Cause' (city + green), 'Save your Data' (graph), 'Find People with Similar…' — with a 'DESIGN — @katejoydesign' credit. A multi-screen flow sheet with photos.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "playful"
+   ],
+   "tags": [
+    "sustainability",
+    "multi-panel",
+    "photo",
+    "cta"
+   ],
+   "quality": "Small screens in a sheet; captions legible, per-screen text not."
+  },
+  "IMG-0518": {
+   "id": "IMG-0518",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "AuroraCRM analytics, KPIs and donut",
+   "description": "A desktop 'AuroraCRM' analytics dashboard: KPI cards (423, 1,847, 20.0k, $350,000), a 'Revenue Trend' bar chart (July–November with November highlighted in purple), an 'Activity Breakdown' donut (2,522, slices: Website, Referral, Email, Social, Direct), 'Lead Quality Score Target 84.3%', 'Monthly Revenue Target' and 'Team Performance'. A dense SaaS analytics view; the donut is the hero.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "data-dense"
+   ],
+   "tags": [
+    "analytics",
+    "kpi",
+    "bar-chart",
+    "chart",
+    "data-viz"
+   ],
+   "quality": "Clean capture; figures legible."
+  },
+  "IMG-0519": {
+   "id": "IMG-0519",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "AuroraCRM activity and upcoming",
+   "description": "A desktop 'AuroraCRM' activity dashboard: KPIs (197, 487, 123, 32), a 'Recently Updated Deals' list, an 'Upcoming This Week' list (Mason Trautwein 'Client Review & Roadmap Review', 'Team Weekly Standup') and a 'Recent Activity' timeline (Meeting, 'Weekly marketing campaign', Notes, 'Q3 Marketing Plan'). A list-plus-timeline dashboard.",
+   "roles": [
+    "dashboard",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "analytics",
+    "timeline",
+    "kpi"
+   ],
+   "quality": "Clean capture; list text small."
+  },
+  "IMG-0520": {
+   "id": "IMG-0520",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "AuroraCRM deals table",
+   "description": "A desktop 'AuroraCRM' deals table: columns (Priority, Category, Name, Owner, Value, Probability, Expected…) with rows (High/Normal/Low chips; Orion, Stellar, Nova, Lyra, Vega, Andromeda, Centauri, Polaris…), and a left sidebar list (Dashboard, Contacts, Deals, Tasks…). A dense CRM table view; priority chips are the colour carriers.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "table",
+    "data-table",
+    "kpi"
+   ],
+   "quality": "Clean capture; table text small."
+  },
+  "IMG-0521": {
+   "id": "IMG-0521",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "CRM contacts table view",
+   "description": "A desktop CRM screen: a left sidebar (Dashboard, Leads, Contacts, Companies, Deals, Tasks, Calendar…) and a large table of contacts with names, dates and amounts, many rows. A table-centric contacts view; the sidebar is the navigation, the table is the content.",
+   "roles": [
+    "dashboard",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "table",
+    "data-table",
+    "contacts"
+   ],
+   "quality": "Clean capture; table text small."
+  },
+  "IMG-0522": {
+   "id": "IMG-0522",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "Dark analytics, hero line chart",
+   "description": "A dark 'Analytics' dashboard: KPIs (1,284, 326, 43m, 91.4%), a large line/area chart (Revenue Growth, 'Total: $2.4M'), a 'Top 5' list and a bottom bar. A dark analytics dashboard where the hero line chart is the visual centre and the KPIs frame it.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "analytics",
+    "dark-ui",
+    "chart",
+    "kpi"
+   ],
+   "quality": "Clean capture; figures legible."
+  },
+  "IMG-0523": {
+   "id": "IMG-0523",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "LaunchFlow LMS analytics, yellow",
+   "description": "A desktop 'LaunchFlow' LMS dashboard in yellow: 'Analytics' + 'Learning Content' (list of items with checkmarks), 'AI Performance' cards (97%, 115, 42 sec), a 'Content' panel and 'Content Health' + 'Action Bar'. A learning analytics dashboard; the yellow accent carries the brand across panels.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "data-dense"
+   ],
+   "tags": [
+    "analytics",
+    "kpi",
+    "education",
+    "progress"
+   ],
+   "quality": "Clean capture; figures legible."
+  },
+  "IMG-0524": {
+   "id": "IMG-0524",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "KaiOS analytics, big percentage",
+   "description": "A dark 'KaiOS' app screen: a large '8.6%' yellow number, a stats row (1,562, 69, 10, 55, 23, 18), a top toggle ('KaiOS 2024 / KaiOS 2025'), and an 'Action Bar' of cards ('42 sec', '9%', '81%', '72%'). An analytics dashboard built around one big yellow percentage with supporting stats.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "analytics",
+    "kpi",
+    "yellow",
+    "percentage"
+   ],
+   "quality": "Clean capture; figures legible."
+  },
+  "IMG-0525": {
+   "id": "IMG-0525",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "PilotDesk social analytics",
+   "description": "A 'PilotDesk' social media dashboard: KPI chips (86/670, 874, 95%, $1…), 'Audience Demographics' (Age 22–55, Interest chips, Gender, Engagement), a 'Post Performance' line chart with legend, an 'Engagement by Post' table and a 'High-Engagement Performance' bars (10%, 12%, 8%, 15%, -35%). A dense social analytics view; the chart is the hero.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "analytics",
+    "social",
+    "kpi",
+    "chart",
+    "table"
+   ],
+   "quality": "Clean capture; figures legible."
+  },
+  "IMG-0526": {
+   "id": "IMG-0526",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "Dial budgeting with category usage",
+   "description": "A light budgeting dashboard 'Dial': a 'Budget' panel (N$8,560.00, N$25,000.00, N$2,000.00), a 'Budget Category Usage' block (Food, Travel, Sports, Entertainment, Shopping bars), 'Last 8 Months', a 'Budget Spending Breakdown' bars and a small map at the bottom. A budget app with a map; the bars carry the categories.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "budgeting",
+    "finance",
+    "spending",
+    "bar-chart",
+    "map"
+   ],
+   "quality": "Clean capture; figures legible."
+  },
+  "IMG-0527": {
+   "id": "IMG-0527",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "PilotDesk HR dashboard, orange",
+   "description": "A 'PilotDesk' HR/project dashboard in orange: 'Dashboard Overview' KPI cards (98%, 2,083, 85, 96%, 203), a 'Department Summary' donut/gauge, a 'Project Reporting' table, a 'Monthly Performance' line chart, 'Daily/Weekly/Monthly' tabs, a 'Recent Task History' list, a 'Project Completion Rate' bars and 'Team Utilization', with left nav (Dashboard, Projects, Team, Calendar, Documents, Analytics, Settings). A dense HR dashboard; the gauges are the colour accents.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "data-dense"
+   ],
+   "tags": [
+    "analytics",
+    "kpi",
+    "gauge",
+    "table"
+   ],
+   "quality": "Clean capture; figures legible."
+  },
+  "IMG-0528": {
+   "id": "IMG-0528",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "InsightPanel dashboard with calendar",
+   "description": "An 'InsightPanel' SaaS dashboard in blue: 'Dashboard Overview' KPI cards (87, 267, 27, 185), two gauges (74, 58), a 'Calendar' grid (May 2025), a 'Monthly Sales' bar chart, a 'Client Satisfaction Trend' line chart, left nav (Dashboard, Customers, Orders, Reports, Settings, Support). A dashboard that folds in a calendar; the blue is the only saturated hue.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "data-dense"
+   ],
+   "tags": [
+    "analytics",
+    "kpi",
+    "calendar",
+    "chart"
+   ],
+   "quality": "Clean capture; figures legible."
+  },
+  "IMG-0529": {
+   "id": "IMG-0529",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Studio Sphere music DAW",
+   "description": "A dark card 'Studio Sphere' (a music DAW): a large '1.35:22' timer + 'Stop', tabs (Overdub, Timeline, Projects), 'Manual' (Bassify, Drive, StudioUG, Solo, 'New project') and a waveform timeline at the bottom. A music production/record app; the timer and waveform are the hero elements.",
+   "roles": [
+    "editor",
+    "media"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "music",
+    "audio",
+    "dark-ui"
+   ],
+   "quality": "Clean capture; labels legible."
+  },
+  "IMG-0530": {
+   "id": "IMG-0530",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Music stats on angled device",
+   "description": "A dark tablet/phone angled on a dark background (device mockup): a music stats screen '53:32' + 'Overdub', a bar chart of sessions (Mon–Sun: 2h, 1.5h…), 'Top Apps' with colourful pills (StudioUG, Drive, '12h 45m'). A dark music app shown as a device mockup; the angle adds depth.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "music",
+    "stats",
+    "dark-ui",
+    "chart",
+    "device-frame"
+   ],
+   "quality": "Angled device shot; screen text small."
+  },
+  "IMG-0531": {
+   "id": "IMG-0531",
+   "category": "website",
+   "type": "screen",
+   "title": "Reports workspace with notifications",
+   "description": "A light panel 'My Workspace / Reports': four report cards ('Q4 Sales Report…', 'Inventory Report…', 'Marketing Performance…', 'Customer Feedback…'), document cards ('Marketing Proposal', 'Revenue Overview…'), 'Share / Download' buttons, and coloured notification cards (green 'Meeting… 4pm', red 'Invoice… overdue'). A reports/workspace panel; the coloured notifications are the only accents.",
+   "roles": [
+    "list",
+    "notification"
+   ],
+   "style": [
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "document",
+    "report",
+    "card"
+   ],
+   "quality": "Clean capture; card labels legible."
+  },
+  "IMG-0532": {
+   "id": "IMG-0532",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Connect business bank accounts",
+   "description": "A light 'Connect your business bank accounts' screen (Plaid style): a bank list (Chase, 'Business Checking…', Plaid logo), 'Connected Accounts' (green 'Bank… •••3492', 'Checking •••1029'), 'Automatic Sync', an account card 'Bank… •••3492' and a 'Continue' button. A bank-account onboarding flow; the green 'connected' states do the status work.",
+   "roles": [
+    "onboarding",
+    "auth"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "banking",
+    "account",
+    "cta"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0533": {
+   "id": "IMG-0533",
+   "category": "design-system",
+   "type": "component",
+   "title": "Ace Studio prompt menu with MCP",
+   "description": "A 'What we should work on' (Ace Studio, with a green star) prompt screen: an 'Ask, space anything…' input, a 'Start new project' menu (with a 'GPT-6.5 Ultra Lite' badge), 'Recent' (Plan: turn page mocks into…, Debug: pinpoint the root cause…, Mocking: mock multiple stakeholders…, Ask: answer questions…), 'Files' and 'MCP'. An AI IDE prompt surface; the menu is the interaction.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "ai",
+    "ai-agent",
+    "assistant",
+    "mcp",
+    "menu"
+   ],
+   "quality": "Clean capture; menu labels legible.",
+   "pair_with": "IMG-0534"
+  },
+  "IMG-0534": {
+   "id": "IMG-0534",
+   "category": "design-system",
+   "type": "component",
+   "title": "Ace Studio project menu expanded",
+   "description": "The same 'What we should work on' screen with the 'Start new project' dropdown expanded: 'Recent / On this Mac / Remote / From scratch / Use existing / New folder' options. The menu-open state of the prompt surface; the dropdown is the only change between the two screens.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "ai",
+    "menu",
+    "dropdown"
+   ],
+   "quality": "Clean capture; menu labels legible.",
+   "pair_with": "IMG-0533"
+  },
+  "IMG-0535": {
+   "id": "IMG-0535",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "Dark CRM contacts table",
+   "description": "A dark CRM 'Accounts / Contacts' (Salesforce style): a left sidebar (Dashboard, Contacts, Leads, Opportunities…), a 'New Contact' button, a table (name, phone, owner, amount, close date), a '2201' record count and a pagination bar. A dark CRM table; the rows are the content, the sidebar is the nav.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "table",
+    "data-table",
+    "contacts",
+    "dark-ui"
+   ],
+   "quality": "Clean capture; table text small.",
+   "pair_with": "IMG-0536"
+  },
+  "IMG-0536": {
+   "id": "IMG-0536",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "Dark CRM row context menu",
+   "description": "The same dark CRM table with a row's context menu open: 'Edit Contact', 'Clone', 'Report a Problem', 'Add to Campaign', 'Deactivate', 'View All', 'View 50/100/250'. The menu-open state; the table is identical to the other card, only the popover differs.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "table",
+    "context-menu",
+    "dark-ui"
+   ],
+   "quality": "Clean capture; menu labels legible.",
+   "pair_with": "IMG-0535"
+  },
+  "IMG-0537": {
+   "id": "IMG-0537",
+   "category": "website",
+   "type": "screen",
+   "title": "Receviewe — French contact CRM",
+   "description": "A light CRM 'Receviewe' in French: a left sidebar (Receviewe, Dashboard, Contacts, Messages, Tâches, Documents, Paramètres, Rapports, Journal, Exporter), a search bar, a filter row (Tous les clients, Actifs, Inactifs, Nouveaux, VIP…), a 'Nouveau' button, and a contacts table (Sacha Laurent, Alex Fournier, Léa Gauthier, Marc Lefebvre, Chloé Petit, Hugo Bernard…). A French contact-management CRM; the filter row is the interaction.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "data-dense"
+   ],
+   "tags": [
+    "table",
+    "data-table",
+    "contacts",
+    "localised"
+   ],
+   "quality": "Clean capture; French UI legible."
+  },
+  "IMG-0538": {
+   "id": "IMG-0538",
+   "category": "website",
+   "type": "screen",
+   "title": "AI Replacement — wider response view",
+   "description": "A desktop 'AI Replacement — Wider Response' tool: a top bar with a 'Wider' toggle, '1:1', '$3.20' and a 'Generate' button; a chat panel 'AI replacement — wider response' (8.45 pm–2:20 pm, 'Wider Response' mode) with steps ('Replace a paragraph', 'Insert a bullet', 'Use a simpler phrase', 'Change tone'), an image thumbnail gallery, and a 'Share' button. An AI writing/translation tool with a wider-response view; the gallery is the media rail.",
+   "roles": [
+    "editor",
+    "chat"
+   ],
+   "style": [
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "ai",
+    "ai-agent"
+   ],
+   "quality": "Clean capture; panel text small."
+  },
+  "IMG-0539": {
+   "id": "IMG-0539",
+   "category": "website",
+   "type": "screen",
+   "title": "Content Writer — structured AI form",
+   "description": "A desktop 'Content Writer' AI tool: a left panel 'Content Writer / Start a new project' with steps ('Create a document', 'Write a post', 'Draft a document', 'Generate content') and a 'Generate / Prompt / Generate content' input; a right form: 'Topic', 'Audience', 'Key Points', a 'Tone' radio, 'Length', and a 'Generate Content' button, with an 'Approved' status card. An AI content writer organised as a structured form; the status card is the feedback.",
+   "roles": [
+    "editor",
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "ai",
+    "ai-agent",
+    "writing",
+    "document"
+   ],
+   "quality": "Clean capture; form labels legible."
+  },
+  "IMG-0540": {
+   "id": "IMG-0540",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Tennis tournament poster and app",
+   "description": "Three screens for a sports tournament. Left: a 'BADMINTON TOURNAMENT 2025' poster (a badminton player leaping, '$50', '11TH JULY 12:13', 'VIEW TOURS NOW' green button). Middle: 'Tennis Tournament' with 'Main Court' (Jordan Wilson vs Marcus Reed, 1:27, LIVE) and an 'Audio & Video' schedule (10:30–3:00). Right: 'Tennis League' (Jordan Wilson vs Marcus Reed, 2 sets, live) with a player (Marcus Yuki, 0:32/3:45, waveform). A sports tournament app plus its poster.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "playful"
+   ],
+   "tags": [
+    "event",
+    "live",
+    "schedule",
+    "multi-panel"
+   ],
+   "quality": "Clean capture; labels legible."
+  },
+  "IMG-0541": {
+   "id": "IMG-0541",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Dorcas smart home, voice-first",
+   "description": "A smart home assistant phone screen: '8:00 / Good morning, Dorcas 👋', a 'Keep your home running' dark card ('Low power, 4 devices at 11:32 AM'), a green 'Need something else?' search ('Tell us what you need…') and a 'What's running now?' with times (04:00, 01:00, 02:00, 03:00). A voice-first smart home app; the greeting and the running-list frame the day.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "voice-assistant",
+    "control",
+    "device"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0542": {
+   "id": "IMG-0542",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Smart home setup, illustrated",
+   "description": "A smart home setup screen: 'What needs attention?' with a 3D illustration of a house + tools (a robot arm) at the top, 'Select your location and watch it…' text, a green 'Setup' button, and a mic/chat/settings icon row at the bottom. A smart home setup with illustration; the illustration is the load-bearing element.",
+   "roles": [
+    "onboarding",
+    "settings"
+   ],
+   "style": [
+    "light-mode",
+    "illustration-led"
+   ],
+   "tags": [
+    "device",
+    "illustration",
+    "cta"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0543": {
+   "id": "IMG-0543",
+   "category": "website",
+   "type": "screen",
+   "title": "Sprint Planning PM dashboard",
+   "description": "A desktop 'Sprint Planning' PM tool: 'Dashboard / New Project / Team Plan / Data Export' tabs; KPI cards ('Total Spend $150,000.00 / 32%', 'Task Done $25,000.00 / 8.6%', 'Team Done 900', 'Total Income $145,000.00 / 9.3%'); a 'Meetings' table (Meeting Name, Project, Duration, Attendees, Status); a 'Task Board' list; a 'Team' list; and 'Sprint 1–4' columns with chips. A project-management dashboard; the KPI row is the top strip.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "data-dense"
+   ],
+   "tags": [
+    "project-management",
+    "kanban",
+    "table",
+    "kpi"
+   ],
+   "quality": "Clean capture; table text small."
+  }
+ }
+}

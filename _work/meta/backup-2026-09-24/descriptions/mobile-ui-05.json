@@ -1,0 +1,492 @@
+{
+ "note": "Review pass 5 of the undescribed mobile-app-ui images. Sheets review_06.jpg and review_07.jpg. Written from the processed web images. Palette, dimensions and contrast are measured elsewhere.",
+ "items": {
+  "IMG-0332": {
+   "id": "IMG-0332",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Settings - upgrade banner over a grouped list",
+   "description": "A settings screen with a pale blue-to-cream gradient wash behind a white card list. The top card is a promo: a headline, a one-line benefit and a small illustration, with a pill button at its foot. Beneath it a grouped list holds Username, Email ID, Subscription and Credit usage, each row a label with a muted value or chevron, separated by hairlines. The screen shows the standard settings-plus-upsell arrangement and keeps it calm by letting the promo card be the only coloured element above a strictly neutral list.",
+   "roles": [
+    "settings",
+    "pricing",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "gradient-heavy"
+   ],
+   "tags": [
+    "upgrade",
+    "account",
+    "subscription",
+    "cta",
+    "promo"
+   ],
+   "quality": "Clear capture; all row labels and values are legible."
+  },
+  "IMG-0333": {
+   "id": "IMG-0333",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Settings - dark upgrade card with a testimonial",
+   "description": "The same settings structure as IMG-0332 but with a dark promo card at the top carrying 'Upgrade to Pro', a one-line benefit, a small portrait photograph and a pill button. Below it the same neutral grouped list: Notification, Schedule Report, Analyze preferences, Language, Theme Preference. The comparison with the light variant is the useful part - the dark card reads as a paid tier and the light list as free functionality, and the hierarchy is achieved with surface alone, without a badge or a border.",
+   "roles": [
+    "settings",
+    "pricing",
+    "list",
+    "notification"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "outlined"
+   ],
+   "tags": [
+    "upgrade",
+    "subscription",
+    "cta",
+    "testimonial"
+   ],
+   "quality": "Clear capture; row labels legible."
+  },
+  "IMG-0334": {
+   "id": "IMG-0334",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Settings - 'Plant AI' discount card on sage green",
+   "description": "A settings screen with a soft sage-green background. The top card promotes a paid tier: a bold headline, a line offering a discount for an annual plan, a lime-green primary button and a secondary text link reading 'Claim offer'. Below it sits a short grouped list - Language, Restore Purchase, Rate us, Email Us, Share App, Privacy Policy - each a plain label with a chevron. The design point is the offer block: 'Claim offer' as a secondary link rather than a second button keeps one clear primary action while still giving the hesitant user a way in.",
+   "roles": [
+    "settings",
+    "pricing",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "upgrade",
+    "promo",
+    "subscription",
+    "cta"
+   ],
+   "quality": "Clear capture; the offer copy and list rows are legible."
+  },
+  "IMG-0335": {
+   "id": "IMG-0335",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Settings - the same offer on a neutral surface",
+   "description": "Nearly identical to IMG-0334 but on a white rather than sage background, showing the same upgrade card, the same lime button and 'Claim offer' link, and the same short utility list underneath (Language, Restore Purchase, Rate us, Email Us, Share App, Privacy Policy). Filed alongside its pair because the two together are a useful demonstration that a card's internal design does not depend on the page colour: the card survives a background swap unchanged, so the surface can be tuned independently.",
+   "roles": [
+    "settings",
+    "pricing",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "flat"
+   ],
+   "tags": [
+    "upgrade",
+    "promo",
+    "subscription",
+    "cta",
+    "comparison"
+   ],
+   "quality": "Clear capture; the offer copy and list rows are legible."
+  },
+  "IMG-0336": {
+   "id": "IMG-0336",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Focus timer - three screens, monochrome and halftone",
+   "description": "Three light phone screens from a focus-timer app, arranged side by side on white. The first is a stat panel with a large figure and a small bar chart; the second centres on a very large ring timer with a time in the middle and a single control beneath; the third is almost entirely a halftone dot pattern with a small label. The set is a strong monochrome study - no colour at all, with hierarchy carried entirely by scale, and the halftone screen proving that a texture can substitute for an illustration.",
+   "roles": [
+    "dashboard",
+    "detail"
+   ],
+   "style": [
+    "monochrome",
+    "minimal",
+    "brutalist"
+   ],
+   "tags": [
+    "focus-timer",
+    "timer",
+    "progress-ring",
+    "halftone",
+    "chart",
+    "multi-panel"
+   ],
+   "quality": "Clear capture; the timer and figures are legible."
+  },
+  "IMG-0340": {
+   "id": "IMG-0340",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Budget app - 'Today' overview with category rows",
+   "description": "A light budget screen headed 'Today' with a large balance figure at the top, a thin progress meter beneath it and a row of quick-action buttons. The body is a list of category rows, each with a coloured leading icon, a category name, a short supporting line and a right-aligned figure; a bottom tab bar closes the screen. The screen is a clean example of a daily-money overview: one hero figure, one meter showing position against plan, and everything else reduced to a scannable list.",
+   "roles": [
+    "home",
+    "dashboard",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "budget",
+    "balance",
+    "category",
+    "progress",
+    "quick-actions",
+    "tab-bar"
+   ],
+   "quality": "Clear capture; the balance and category rows are legible."
+  },
+  "IMG-0341": {
+   "id": "IMG-0341",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Promos - spend progress with a redemption list",
+   "description": "A light screen headed 'Promos' showing the user's progress against a spend threshold. The top block is a large percentage figure over a horizontal progress bar with the target amount beside it; beneath sits a list of promotion rows, each with a merchant name, a short requirement line, an expiry date and a small status chip, closing with a secondary button. The screen is a good reference for a rewards-with-a-threshold layout - the meter states the goal, the list states the ways to reach it, and the two are visually separate but adjacent.",
+   "roles": [
+    "list",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "outlined"
+   ],
+   "tags": [
+    "promo",
+    "rewards",
+    "progress",
+    "merchant",
+    "expiry",
+    "badges"
+   ],
+   "quality": "Clear capture; the percentage and promotion rows are legible."
+  },
+  "IMG-0342": {
+   "id": "IMG-0342",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Creator profiles - Payout and Promos reporting panels",
+   "description": "Several overlapping light panels showing a creator-earnings back end. One is headed 'Payout' and lists rows of figures with labels and small trend indicators; another is headed 'Promos' with a stacked list of campaign rows carrying amounts and status; a third shows a 'Creator Profile' block with an avatar and a set of summary figures. The panels are information-dense but stay readable because every number sits in the same left-aligned column and every label uses the same small grey size, so the eye can scan one column of figures without reading the labels.",
+   "roles": [
+    "dashboard",
+    "profile"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense",
+    "card-based"
+   ],
+   "tags": [
+    "creator",
+    "payout",
+    "earning",
+    "promo",
+    "revenue"
+   ],
+   "quality": "Clear capture; the figures and labels are legible."
+  },
+  "IMG-0343": {
+   "id": "IMG-0343",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Smart Alarms - 'No Alarm Active' state",
+   "description": "A soft blue-grey alarm app screen showing the inactive state. A card near the top states 'No Alarm Active' with a small line beneath it, and a pill button invites the user to set one. Below sit two rows of small circular action buttons with labels, then a wide empty card explaining that no alarms are set, and a bottom tab bar. The design lesson is the empty state: rather than blank space, the screen keeps its full structure and fills the central card with an explanation and a quiet clock glyph, so the layout does not change shape when an alarm exists.",
+   "roles": [
+    "empty-state",
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "card-based"
+   ],
+   "tags": [
+    "cta",
+    "quick-actions",
+    "tab-bar",
+    "status"
+   ],
+   "quality": "Clear capture; the state text and labels are legible."
+  },
+  "IMG-0344": {
+   "id": "IMG-0344",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Focus timer - large countdown with mode tiles",
+   "description": "A light productivity screen centred on a very large countdown figure - '00:23' - set in a heavy weight inside a thin circular progress track. Beneath the ring sit a Start control and a row of mode tiles (Focus, Flow, Deep Work, Awake) each with a small icon, and below those a column of short rows with times and chevrons, closing on a tab bar. The screen demonstrates the countdown-hero pattern: one enormous figure communicates everything, and every other control is deliberately small so nothing competes with the remaining time.",
+   "roles": [
+    "dashboard",
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "focus-timer",
+    "timer",
+    "countdown",
+    "progress-ring",
+    "modes",
+    "tiles",
+    "tab-bar"
+   ],
+   "quality": "Clear capture; the countdown and mode labels are legible."
+  },
+  "IMG-0345": {
+   "id": "IMG-0345",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Quantum Rush - three staged app screens",
+   "description": "Three light phone screens presented as a row on white, all from a single product. The first is a minimal splash with a centred wordmark and a small tagline; the second shows a portrait photograph of a person with a headline over it and a button below; the third is a content card with a title, a two-line body, a small illustration and an action row. The staging is the technique worth noting: three screens at the same scale, each with generous white margin, read as a considered product tour rather than three loose screenshots.",
+   "roles": [
+    "landing-section",
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "splash",
+    "photo",
+    "multi-panel"
+   ],
+   "quality": "Clear capture; all three screens are distinguishable."
+  },
+  "IMG-0346": {
+   "id": "IMG-0346",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Social app - a full screen-sheet contact sheet",
+   "description": "A large sheet assembling roughly a dozen small screens from a social product: video cards, profile headers, message lists, story rings and settings panels, all on white with black type. It functions as a design system overview rather than an individual screen. Its value is showing the whole surface area of a product at one scale, which makes the internal consistency obvious - every screen uses the same type ramp, the same corner radius and the same single accent, so the family is unmistakable.",
+   "roles": [
+    "feed",
+    "profile"
+   ],
+   "style": [
+    "light-mode",
+    "flat",
+    "monochrome"
+   ],
+   "tags": [
+    "social"
+   ],
+   "quality": "Clear capture; the sheet reads as a whole despite small individual tiles."
+  },
+  "IMG-0347": {
+   "id": "IMG-0347",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Restaurant app - invite friends to a table",
+   "description": "A light ordering screen focused on a dashed-outline panel reading '+ Invite friends'. Inside the dashed border sit a row of overlapping avatar circles and a short line stating how many people are at the table, with an invite action. A dark pill button labelled 'Create table' anchors the foot. The dashed panel is the interesting choice: it signals 'not yet filled' without any message, and it turns an empty slot into the screen's most obvious call to action.",
+   "roles": [
+    "form",
+    "social-proof"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "outlined"
+   ],
+   "tags": [
+    "restaurant",
+    "invite",
+    "avatar",
+    "panel",
+    "cta",
+    "dashed-border",
+    "table"
+   ],
+   "quality": "Clear capture; the invite label and table count are legible."
+  },
+  "IMG-0348": {
+   "id": "IMG-0348",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Mobile AI - agents tab over a dusk gradient",
+   "description": "A dark AI-assistant screen set on a dusk gradient running from deep blue at the top to a warm horizon near the middle. A greeting and a short status line sit in the upper half, and the lower half is a card panel with a segmented control - Agents, Assist, History - and a large circular control with a small star glyph. The gradient is doing the atmospheric work, and the content sits entirely in the darker lower band, so the screen feels like a place rather than a page.",
+   "roles": [
+    "home",
+    "chat"
+   ],
+   "style": [
+    "dark-mode",
+    "gradient-heavy",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "assistant",
+    "segmented-control",
+    "greeting",
+    "gradient",
+    "history"
+   ],
+   "quality": "Clear capture; the tab labels are legible."
+  },
+  "IMG-0349": {
+   "id": "IMG-0349",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Agent card - $1,000.21 balance over a horizon glow",
+   "description": "A near-black screen from an agent-based finance product. A large monetary figure sits inside a soft circular gradient that glows from the middle of the frame like a horizon, with a small label beneath it. Lower down, two rows name the agents in use - one titled 'Reward', one 'Withdraw' - each with a small status line, and a small pill control sits at the bottom right. The glow behind the number is the whole design: it gives a single figure depth and focus without a card, a border or an illustration.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "gradient-heavy",
+    "bold-typography"
+   ],
+   "tags": [
+    "ai",
+    "balance",
+    "glow",
+    "numeral",
+    "fintech"
+   ],
+   "quality": "Clear capture; the balance and agent rows are legible."
+  },
+  "IMG-0350": {
+   "id": "IMG-0350",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Poster app - artwork cards beside an editor toolbar",
+   "description": "A dark mockup pair showing a poster-making tool. The left frame holds a slim phone with a single image on a black field; the right holds a wider canvas view with an artwork title and description, surrounded by a dense grid of small monochrome toolbar buttons - shapes, text, alignment, colour, layer controls - laid out in rows. The right panel is the useful reference: a professional editor's toolbar shown as a uniform grid of icon-only buttons, which is the only way to fit that many controls without a menu.",
+   "roles": [
+    "editor",
+    "media"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "monochrome"
+   ],
+   "tags": [
+    "toolbar",
+    "poster",
+    "artwork",
+    "icon-button",
+    "layer"
+   ],
+   "quality": "Clear capture; the toolbar structure is legible even at small scale."
+  },
+  "IMG-0351": {
+   "id": "IMG-0351",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Finance app - crypto, prediction market and balance views",
+   "description": "Three light finance screens shown side by side. The first is a portfolio view with a chart, a holdings list and small coloured asset icons; the second is a prediction-market screen with a chart, two outcome rows showing percentages and a trade action; the third is a balance view with a figure, a set of action pills and a transactions list. The set is a compact survey of the current trading-app idiom: charts, percentage rows and pill actions, all in the same restrained palette so the different instruments read as one product.",
+   "roles": [
+    "dashboard",
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "data-dense"
+   ],
+   "tags": [
+    "fintech",
+    "crypto",
+    "trading",
+    "chart",
+    "portfolio",
+    "balance",
+    "transaction"
+   ],
+   "quality": "Clear capture; figures and percentages are legible."
+  },
+  "IMG-0352": {
+   "id": "IMG-0352",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Habit tracker - three radial gauges in neon",
+   "description": "A dark habit-tracking screen built around three radial gauges arranged in a row. Each gauge is a dense ring of short neon dashes - violet, pink and teal - with a percentage and a habit name inside, and a progress bar and count beneath. A legend row and a top-of-screen header frame the composition. The screen is the strongest data-visualisation piece in the collection: the dashed ring reads as a dial rather than a bar, three habits can be compared at once, and the neon palette is only used inside the gauges, keeping the rest of the screen black.",
+   "roles": [
+    "dashboard",
+    "detail"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "high-contrast"
+   ],
+   "tags": [
+    "habit-tracker",
+    "progress-ring",
+    "gauge",
+    "neon",
+    "chart"
+   ],
+   "quality": "Clear capture; the gauge percentages are legible."
+  },
+  "IMG-0353": {
+   "id": "IMG-0353",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Habit tracker - stacked 3D columns with a goal line",
+   "description": "A dark analytics screen showing a small 3D bar scene: three rounded cylindrical columns in teal, violet and magenta standing on a grid floor, with faint guide lines behind them. A label states the percentage of goals met this month, and small tick rows with times sit beneath. The column heights are written next to them. The notable idea is the mock-3D chart - it sacrifices some precision for a sense of physical progress, which suits a motivational screen better than a flat bar chart would.",
+   "roles": [
+    "dashboard",
+    "detail"
+   ],
+   "style": [
+    "dark-mode",
+    "high-contrast",
+    "data-dense"
+   ],
+   "tags": [
+    "habit-tracker",
+    "chart",
+    "3d",
+    "columns",
+    "goal-selection",
+    "progress"
+   ],
+   "quality": "Clear capture; the percentage and column labels are legible."
+  },
+  "IMG-0354": {
+   "id": "IMG-0354",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Habit analytics - multi-series activity chart",
+   "description": "A dark analytics panel with a wide multi-series chart across the middle: many thin vertical bars in green, violet and pink, grouped by theme, over a faint grid, with axis labels along the bottom and a small stat row above. The chart is dense but readable because the series are separated by hue and the bars are narrow enough that their grouping is visible at a glance. Filed as a reference for compact data visualisation in a dark interface, where the grid has to be very faint to avoid noise.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "high-contrast"
+   ],
+   "tags": [
+    "habit-tracker",
+    "chart",
+    "series",
+    "analytics",
+    "grid"
+   ],
+   "quality": "Clear capture; the chart shape and stat labels are legible."
+  }
+ }
+}

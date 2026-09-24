@@ -1,0 +1,779 @@
+{
+ "items": {
+  "IMG-0465": {
+   "id": "IMG-0465",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Should I go outside — two outcomes, chip grid",
+   "description": "Two iPhone mockups for a playful decision app, 'Should I go outside?': one card answers 'No' in pink with a sub-line, the other 'Maybe' in yellow. Under each outcome is a dense grid of coloured word chips (Gold, High, Too much, Good, Fine, Some, Bad and more), each a pastel pill carrying one word. Cream backdrop, two cards side by side; the chips are the interaction and the colour-coding carries the hierarchy.",
+   "roles": [],
+   "style": [
+    "playful",
+    "card-based",
+    "light-mode"
+   ],
+   "tags": [
+    "chips",
+    "colourful",
+    "multi-panel",
+    "states",
+    "colour-coding"
+   ],
+   "quality": "Clean mockups; chip labels legible."
+  },
+  "IMG-0466": {
+   "id": "IMG-0466",
+   "category": "website",
+   "type": "screen",
+   "title": "Trips — travel planning board with map",
+   "description": "A desktop travel-planning web app ('Trips'): a map panel on the left with roads and location pins, a 'What to pack' checklist card and a numbered 'Upcoming' list of trips on the right, each row with a small icon, title and a coloured dot. A 'Plan a trip' button sits bottom-left. The list-plus-map pairing is the core pattern; grey backdrop keeps the panels flat.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "minimal"
+   ],
+   "tags": [
+    "travel",
+    "kanban",
+    "map",
+    "multi-panel",
+    "ai"
+   ],
+   "quality": "Clean capture; list labels legible."
+  },
+  "IMG-0467": {
+   "id": "IMG-0467",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Travel budget and split balances",
+   "description": "Two UI cards from a travel budgeting app. Left: 'Budget — €2,800 of €4,000' with horizontal per-category bars (Rent, Food, Fun, Transport, Activities) and a '13 people' pill. Right: 'Balances — Two transfers settle the whole trip' with a roster of people (Maria +150, Alex, Sam, John, Emma, Karl) each with a coloured avatar and a plus/minus amount, and a 'Settle up' button. Tabular numerals throughout.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "minimal"
+   ],
+   "tags": [
+    "budgeting",
+    "spending",
+    "progress",
+    "travel",
+    "multi-panel"
+   ],
+   "quality": "Clean capture; amounts legible."
+  },
+  "IMG-0468": {
+   "id": "IMG-0468",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Day plan list beside a pinned map",
+   "description": "A travel itinerary app: the left phone screen shows 'Day plan' with a Mon–Sun time-strip header (16:00) and a vertical list of stops (Museo del Oro, Museo da Casa, Baco 39, Cafe Raval, Gaudi House, Park de Sants) with time chips; the right panel is a city map with clustered pins and a blue route line, plus an 'Optimise route' button. The list + map pairing is the whole point of the layout.",
+   "roles": [
+    "detail",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "travel",
+    "itinerary",
+    "map",
+    "day-view",
+    "cta"
+   ],
+   "quality": "Clean capture; stop names legible."
+  },
+  "IMG-0469": {
+   "id": "IMG-0469",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Invite code and packing progress cards",
+   "description": "Two white cards from a trip/packing app ('Labex'). Top: 'Invite — Bring your crew into Labex' with a pill input showing a code, a 'Copy' button and a 'Share experience' ghost button. Bottom: 'Packing — 12 of 18 packed. Two days to go.' with per-category rows (Essentials, Electronics, Toiletries) each with a count and a progress bar, and a 'Suggest items' button. Rounded corners, warm greys.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "card-based",
+    "minimal"
+   ],
+   "tags": [
+    "travel",
+    "invite",
+    "checklist",
+    "progress",
+    "multi-panel"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0470": {
+   "id": "IMG-0470",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Galileo — 3D navigate on a dark phone",
+   "description": "A black iPhone mockup floating on a grey backdrop showing a 3D navigation app 'Galileo': 'Navigate to: Concerto in 3D' heading, a 3D map viewport with a marker, and a bottom sheet with a 'Clear session' button and a small compass control. Dark UI on a bright neutral backdrop; the device frame carries the composition.",
+   "roles": [
+    "home",
+    "navigation"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "map",
+    "3d",
+    "phone-mockup"
+   ],
+   "quality": "Mockup shot; screen text small but structure clear."
+  },
+  "IMG-0471": {
+   "id": "IMG-0471",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Home app onboarding — a place to call home",
+   "description": "Two phone screens for a home/real-estate app. First: 'HOME — A place to call home' with a family photo, a yellow 'Our home' CTA and an 'About me & my home' link. Second: the 'About me & my home' form with a yellow 'Save profile' button. Cream backdrop, warm photography, generous type; a classic onboarding/profile flow.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "real-estate",
+    "photo",
+    "cta"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0472": {
+   "id": "IMG-0472",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Stay onboarding with avatar tiles",
+   "description": "Two phone screens for 'STAY' onboarding. First: 'Stay that Creatively Within the World' heading, a 2×2 grid of colourful circular avatars, a 'Get started' CTA and a 'What's the week?' sub-line. Second: 'Welcome, Ava' with a single avatar and a checkmark. An avatar-picker step with pastel tiles on a cream backdrop.",
+   "roles": [
+    "onboarding",
+    "auth"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "playful"
+   ],
+   "tags": [
+    "avatar",
+    "avatar-picker",
+    "welcome"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0473": {
+   "id": "IMG-0473",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "SENDOE — multi-currency money, dark",
+   "description": "A dark phone mockup of a multi-currency fintech app 'SENDOE': 'Your money, in every currency' heading, two card tiles (one light, one black) with currency amounts, and a 'Login' button. Near-black UI with white type; the cards are the only saturated elements on the screen.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "fintech",
+    "finance",
+    "dark-ui",
+    "cards",
+    "cta"
+   ],
+   "quality": "Mockup shot; small text on the cards."
+  },
+  "IMG-0474": {
+   "id": "IMG-0474",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Quick note — note list to editor",
+   "description": "A notes app in two screens. First: a 'Quick note' card with a blue 'Hello World' block, a Notes list with two photo thumbnails (a mountain and a landscape), a 'Tap to add a new note' hint and a blue 'Start a new note' button. Second: the note editor with a text area and a 'Save' button. Clean, light, list-driven layout.",
+   "roles": [
+    "home",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "notes",
+    "photo",
+    "text-input",
+    "cta"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0475": {
+   "id": "IMG-0475",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "City of London — bottom sheet over photo",
+   "description": "A dark phone screen with a full-bleed building photo behind a bottom sheet titled 'City of London': a row of date chips (4th, 1st, 15th, 2nd…) and a camera button bottom-right. A photo/location capture app; the sheet lifts the content off the image so both can read at once.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "photo",
+    "sheet",
+    "camera",
+    "chips",
+    "location"
+   ],
+   "quality": "Mockup shot; sheet text legible."
+  },
+  "IMG-0476": {
+   "id": "IMG-0476",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "On-walkthrough settings with check states",
+   "description": "An 'on-walkthrough' phone screen: a vertical list of setup rows (Notifications, Location, '100 m walk alert', 'Update every minute'…) each with a blue check, and a 'Continue' button at the bottom. A second screen shows the same list with a progress indicator. A settings/onboarding walkthrough built around check states.",
+   "roles": [
+    "settings",
+    "onboarding",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "progress",
+    "checklist"
+   ],
+   "quality": "Clean capture; row labels legible."
+  },
+  "IMG-0477": {
+   "id": "IMG-0477",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Fintech dashboards, two dark panels",
+   "description": "Two dark dashboard screens side by side. Left: a balance '€5,020.00' with two card tiles (€699.05, €1,500.00) and a 'Credit card spending' bar block. Right: a balance '€4,180.00' with a card (€90.00) and spending bars. Near-black cards on dark grey with orange/yellow accent bars; the two panels read as before/after or A/B.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based"
+   ],
+   "tags": [
+    "fintech",
+    "finance",
+    "dark-ui",
+    "multi-panel",
+    "balance",
+    "spending"
+   ],
+   "quality": "Clean capture; figures legible."
+  },
+  "IMG-0478": {
+   "id": "IMG-0478",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Manage balance — sell today, delivered tonight",
+   "description": "A 'Manage' phone screen for a quick-sell delivery service: a green bank-card visual showing a balance (€4,320 / €9,750 variants), the line 'Sell today. Delivered tonight.', a sub-line 'We'll help you sell your item fast and get paid…', and a primary button. The card is the hero element; the two screens differ only in the balance state.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "delivery",
+    "card",
+    "cta"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0479": {
+   "id": "IMG-0479",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "New Delivery — details, address, time slot",
+   "description": "A 'New Delivery' flow in screens: 'Personal details' (name/phone fields), 'Address' (street/city fields), and 'Delivery Time Slot' with a row of time-slot pills (09:00–11:00, 11:00–13:00, 13:00–15:00…), ending in a 'Confirm delivery' button. A linear form flow with slot selection; each step is one question.",
+   "roles": [
+    "form",
+    "checkout"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "delivery",
+    "date-picker",
+    "time-slot",
+    "cta"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0480": {
+   "id": "IMG-0480",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Storage account — card, chart, items",
+   "description": "A 'Storage' phone screen: a green card showing €9,750, a line '€30 per month for unlimited storage', a 'This week' mini bar chart (Mon–Sat) and a list of stored items (T-shirts, Shirts, Trousers…) with a €1,050/month total. A storage/escrow service combining card + chart + list on one screen.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "card",
+    "stats",
+    "bar-chart",
+    "weekly",
+    "balance"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0481": {
+   "id": "IMG-0481",
+   "category": "website",
+   "type": "marketing",
+   "title": "$250 cloud sessions credit card",
+   "description": "A white marketing card on a blue gradient: 'Limited time — You've been gifted $250 in credits for cloud sessions', a three-step numbered list (choose a model, start a session, get results), a 'How cloud sessions work' link and a 'Continue' button. A product-credit offer that explains itself in three steps; gradient backdrop, card carries the message.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "gradient-heavy"
+   ],
+   "tags": [
+    "offer",
+    "cta",
+    "ai",
+    "gradient",
+    "steps"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0482": {
+   "id": "IMG-0482",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Twelve phone states in a numbered grid",
+   "description": "A 3×4 grid of twelve phone screens numbered 01–12, each a different app state (a pink screen, an orange ring, a dark list, a green '5:04' lock face, a food app, a watch face…) with small captions under some ('Watch face', 'Food app'). A multi-screen mockup set showing the breadth of one design system across screens.",
+   "roles": [],
+   "style": [
+    "card-based"
+   ],
+   "tags": [
+    "mockup-grid",
+    "multi-panel",
+    "phone-mockup",
+    "dark-ui"
+   ],
+   "quality": "Small screens in a sheet; captions legible, per-screen text not."
+  },
+  "IMG-0483": {
+   "id": "IMG-0483",
+   "category": "website",
+   "type": "screen",
+   "title": "Kundenportal — German SaaS CRM",
+   "description": "A desktop SaaS CRM web app 'Kundenportal' in German: a left sidebar (Kunden, Dokumente, Zahlungsplan, Rechnungen, Follow-ups…), a main 'Kundendetails' form panel, and a right rail 'Unverbindliche Absage — Schritt 1' with explanatory text and a 'Schritt-Buchse' control. A three-pane admin layout, all UI copy in German.",
+   "roles": [
+    "dashboard",
+    "settings",
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "localised",
+    "table",
+    "sidebar"
+   ],
+   "quality": "Clean capture; German UI legible."
+  },
+  "IMG-0484": {
+   "id": "IMG-0484",
+   "category": "website",
+   "type": "screen",
+   "title": "Schrift-Buchse — German type tool",
+   "description": "A desktop typography/font tool 'Schrift-Buchse' in German: a top bar 'AI/SG', a black tag 'Schrift Zeichen', a 'Texte' text input and a 'Variation 3' slider with 'Tags'. A font/design tool organised around a text field plus a variation control; the type specimen is the hero.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "typography",
+    "design-tool",
+    "tool",
+    "localised",
+    "input"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0485": {
+   "id": "IMG-0485",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Buy a gift — referral rewards, dark",
+   "description": "A dark phone screen with social share icons (WhatsApp, Instagram, phone) up top, a 'Buy a Gift — Give the gift… for 1 year' card with a 3D gift-box render, and a 'Referral Rewards' caption below. A referral/gift flow where the 3D render is the product shot and the icons are the share rail.",
+   "roles": [
+    "social-proof"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "referral",
+    "rewards",
+    "social",
+    "sharing",
+    "3d"
+   ],
+   "quality": "Mockup shot; caption legible."
+  },
+  "IMG-0486": {
+   "id": "IMG-0486",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Food trust-and-recommendation flow",
+   "description": "Three phone screens for a food/social app. 'Whom to trust?' with a row of circular avatars and a 'Start Trust' button; 'Today' with a calendar day and food photos; 'What are you hungry?' with options 'Food first / I'd love to cook / Surprise me' and a 'Recommend meal' chat box. A trust/recommendation flow built from avatars plus a chat surface.",
+   "roles": [
+    "feed",
+    "chat"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "playful"
+   ],
+   "tags": [
+    "food",
+    "recommendation",
+    "social",
+    "multi-panel"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0487": {
+   "id": "IMG-0487",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Watch analytics, two KPI cards",
+   "description": "Two watch-analytics phone screens. Left: 'Analytics — Weather' with a pink card, a moon icon, a '02' date, a sun glyph '24°' and a gauge. Right: 'Data' with a purple card, a '22' figure and a matching gauge. Two small KPI cards side by side; a watch data app pairing weather and screen-time numbers.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "analytics",
+    "gauge",
+    "multi-panel",
+    "kpi"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0488": {
+   "id": "IMG-0488",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Watch face gallery, grid to detail",
+   "description": "Two iPhone screens showing a watch face gallery: a grid of colourful watch faces (24, 6, 22:20…) with small labels, and a second screen zooming a single colourful blurred face '22:20'. A watch face picker using the grid-then-detail pattern; the faces are the content, the chrome is minimal.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "card-based"
+   ],
+   "tags": [
+    "grid",
+    "multi-panel",
+    "colourful"
+   ],
+   "quality": "Clean capture; face labels small."
+  },
+  "IMG-0489": {
+   "id": "IMG-0489",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "WatchKit weather and record screens",
+   "description": "Two watch-style phone screens. Left: an 'Analytics — Weather' card (pink) with a moon, a '02', a sun '24°' and a gauge. Right: a 'Screens' card with two 09:50 watch faces and a red record button. Small KPI cards plus gauges; a watch data demo with an 'AI' annotation in the margin.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based"
+   ],
+   "tags": [
+    "analytics",
+    "weather",
+    "gauge",
+    "multi-panel"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0490": {
+   "id": "IMG-0490",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "GenoGrowthMann Kids — smart garden",
+   "description": "A kids' gardening app 'GenoGrowthMann Kids', two screens: 'Smart Garden' with tabs (Grow, Harvest, Water, Soil…) and a 'Grow & Harvest' view holding 'Harvests coming up', 'Ready to harvest', 'Tips' and 'Water & Fertilize' cards. Playful, illustrated, bright; a kids' plant-care dashboard with harvest and care tasks.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "illustration-led",
+    "playful"
+   ],
+   "tags": [
+    "plant",
+    "checklist",
+    "progress",
+    "multi-panel"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0491": {
+   "id": "IMG-0491",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Ulu Plus membership tiers, dark",
+   "description": "A dark phone screen 'Ulu Plus — Membership' with a vertical list of membership tiers (Ulu Plus, Ulu Premium, Ulu Pro, Ulu Range…), each a card row with a price and a small badge, and a 'Support $5,000/yr earn' button. A dark tier list; the selected row is the only highlighted one.",
+   "roles": [
+    "pricing"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based"
+   ],
+   "tags": [
+    "membership",
+    "subscription",
+    "cards",
+    "dark-ui"
+   ],
+   "quality": "Clean capture; tier labels legible.",
+   "pair_with": "IMG-0492"
+  },
+  "IMG-0492": {
+   "id": "IMG-0492",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Ulu Plus membership tiers, light",
+   "description": "A light phone screen 'Ulu Plus — Membership', the same tier list as the dark version (Ulu Plus, Ulu Premium, Ulu Pro, Ulu Range…) on a white background, with the 'Support $5,000/yr earn' button. The light/dark pair of the membership tier list — same structure, inverted palette.",
+   "roles": [
+    "pricing"
+   ],
+   "style": [
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "membership",
+    "subscription",
+    "cards"
+   ],
+   "quality": "Clean capture; legible.",
+   "pair_with": "IMG-0491"
+  },
+  "IMG-0493": {
+   "id": "IMG-0493",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Dashr splash — one word, one colour",
+   "description": "A green phone screen with just the word 'Dashr' centred — a single colour field, no other elements. A splash/brand moment for a delivery app; the emptiness is the design, reserving the whole screen for one wordmark.",
+   "roles": [],
+   "style": [
+    "minimal",
+    "flat"
+   ],
+   "tags": [
+    "splash",
+    "brand-mark",
+    "single-colour"
+   ],
+   "quality": "Clean capture."
+  },
+  "IMG-0494": {
+   "id": "IMG-0494",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Dashr — deliver faster, earn smarter",
+   "description": "A white card: 'Deliver faster, earn smarter with Dashr' heading, a sub-line 'Real-time route optimization and instant access to pay…', a green 'Get on the Road' button, and an 'Already a Dashr rider? Login' link. A delivery-driver app marketing card; one headline, one CTA, one supporting line.",
+   "roles": [
+    "hero",
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "delivery",
+    "cta",
+    "card"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0495": {
+   "id": "IMG-0495",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Tara — fashion discovery and product",
+   "description": "Two screens for a fashion app 'Tara'. Left: 'Discover' with a green-dress product card, a price, 'Sellers' and 'Trends' chips, and a 'Belle +10' seller card. Right: a model photo of the green dress with a 'Review' block and a bottom bar. A fashion discovery-to-product flow; the photo is the hero on each screen.",
+   "roles": [
+    "feed",
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "e-commerce",
+    "product-detail",
+    "multi-panel",
+    "photo"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0496": {
+   "id": "IMG-0496",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Checkout — payment then delivery options",
+   "description": "Two checkout screens. Left: 'First Trip Payment' with a 'Tara' card, 'Pay…' and 'Card details' fields. Right: 'Compare Delivery Options' with Standard/Express/Economy rows each carrying a 'Free shipping' / 'Fastest' / 'Cheapest' badge and a 'Continue to Checkout' button. A payment-then-delivery-options checkout; badges do the comparison work.",
+   "roles": [
+    "checkout"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "payment",
+    "e-commerce",
+    "multi-panel",
+    "cta"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0497": {
+   "id": "IMG-0497",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Capture, project, visual direction",
+   "description": "Three dark phone screens for a creative capture app. 'Capture what matters.' with a camera viewfinder (red dot) and a 'My Places' list; 'Project Ideas' with a red heart card, 'My Places', 'Share' and 'Add to Project' and photos; 'Visual Direction' with 'Red: Bold energy, Warmth…' and a photo grid plus 'Confirm'. A capture-to-project-to-direction flow built on dark cards.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based"
+   ],
+   "tags": [
+    "camera",
+    "capture",
+    "photo",
+    "multi-panel",
+    "cta"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0498": {
+   "id": "IMG-0498",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Smart Garden AI — weather, voice, field",
+   "description": "Three screens for a smart farming app with AI. 'Weather 20°' with a sun glyph, 'Wind 26', 'Rain 0%' and 'Crop Health 97%'; 'Welcome to Smart Garden AI' with a field photo, 'I want a better…' and Voice/Chat buttons; 'My Green House 95%' with crop rows and '87%'. An AI-plus-voice farming dashboard over field photography.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "illustration-led"
+   ],
+   "tags": [
+    "plant",
+    "ai",
+    "voice",
+    "analytics",
+    "multi-panel"
+   ],
+   "quality": "Clean capture; legible."
+  },
+  "IMG-0499": {
+   "id": "IMG-0499",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "GrowSmart Lab — growth KPIs and metrics",
+   "description": "A 'GrowSmart Lab' dashboard in green: 'Good morning, LabHead', KPI cards (Yield 204%, 97, 5,000, 68), a 'Growth Metrics' bar chart, a 'Resource Usage' block (CO2, pH, Nutrients, 92%), 'System Health' (Soil 88%, Light) and a 'Recent Activity' feed. A dense multi-panel lab/growth dashboard; every panel has one number or one list.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "data-dense"
+   ],
+   "tags": [
+    "analytics",
+    "kpi",
+    "bar-chart",
+    "chart"
+   ],
+   "quality": "Clean capture; figures legible."
+  },
+  "IMG-0500": {
+   "id": "IMG-0500",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "AquaVision — agricultural analytics",
+   "description": "An 'AquaVision' agri-analytics dashboard in blue/purple: a 'Property View' table, a 'Yield by Month' bar chart, a 'Total $51,500' donut, 'Stock Levels' and 'Water Usage' blocks. A multi-panel KPI-plus-chart layout for agriculture; the donut is the single saturated element against a light grid.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "data-dense"
+   ],
+   "tags": [
+    "analytics",
+    "kpi",
+    "chart",
+    "data-viz"
+   ],
+   "quality": "Clean capture; figures legible."
+  }
+ }
+}

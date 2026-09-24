@@ -1,0 +1,187 @@
+{
+ "batch": "palette-tooling-and-beforeafter-stills",
+ "note": "The non-palette-card assets that still carry unusually high reuse value: the tool UI for authoring colour, music-player component detail, and the still-frame before/after comparisons. Each was read at native resolution.",
+ "items": [
+  {
+   "id": "IMG-0065",
+   "category": "design-system",
+   "type": "component",
+   "title": "Add New Element — animation authoring panel",
+   "description": "A phone screen from a design-tool app titled 'Add New Element', presenting a dense vertical form. Fields run down in a single column: Element Name, Element Type (a dropdown reading 'Function'), Start Time (ms) and Duration (ms) with numeric steppers, Function Type set to 'Linear', then Origin Y/X, Scale, Opacity and a Color field showing the hex value '#FF03A8F4' as inline coloured text. The whole panel is white with hairline dashed row separators and small right-aligned chevrons. Worth studying because it is the opposite of the usual minimal mobile screen: everything is visible, nothing is hidden behind progressive disclosure, and it stays readable because the row rhythm is absolutely consistent and the type sizes are locked to two values.",
+   "roles": [
+    "editor",
+    "form",
+    "list"
+   ],
+   "style": [
+    "minimal",
+    "light-mode",
+    "outlined"
+   ],
+   "tags": [
+    "design-tools",
+    "developer-tools",
+    "animation"
+   ],
+   "quality": "Clear capture; hex value and field labels legible."
+  },
+  {
+   "id": "IMG-0066",
+   "category": "mobile-app-ui",
+   "type": "component",
+   "title": "Music player with waveform scrubber",
+   "description": "A media-player surface on a vivid violet-to-magenta gradient. A white rounded card floats in the centre carrying an audio scrubber: a waveform in pink, a time readout '0:15 / 0:60', a circular play button, and a tick-marked timeline ruled in 0.05 increments from 0.00 to 0.40. Below sits a row of album artwork thumbnails with a pink 'Free Bird · Lynyrd Skynyrd' label and an add button. The design demonstrates a strong technique: rather than one progress bar, three levels of time information coexist — elapsed, remaining, and a fine-grained ruler. The gradient behind is doing the work of setting energy so the card can stay completely plain white.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "gradient-heavy",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "music",
+    "podcast",
+    "audio",
+    "gradient",
+    "cards",
+    "player"
+   ],
+   "quality": "Good capture. Scrubber detail is legible at native resolution."
+  },
+  {
+   "id": "IMG-0050",
+   "category": "illustration",
+   "type": "reference",
+   "title": "Cinematic character-and-creature composition",
+   "description": "A wide, dark, high-contrast illustration: a figure in a black jacket mid-strike with a luminous purple blade, confronting a large biomechanical creature against a desaturated grey environment. Cinematic lighting, strong rim light on both subjects, heavy atmospheric haze. Retained as a reference for tonal depth and focal separation rather than for interface work — the technique worth stealing is that the brightest saturated element in a near-monochrome scene becomes the focal point instantly, which is the same principle as an accent colour on a dark UI.",
+   "roles": [],
+   "style": [
+    "high-contrast",
+    "dark-mode"
+   ],
+   "tags": [
+    "3d",
+    "dark-ui",
+    "glow"
+   ],
+   "quality": "High-resolution image, not a UI capture. Filed as illustration reference.",
+   "source_note": "AI-generated artwork present in the collection. Kept for the lighting lesson, not as design provenance."
+  },
+  {
+   "id": "IMG-0019",
+   "category": "before-after",
+   "type": "comparison",
+   "title": "Light vs dark document theme (still frame)",
+   "description": "Two document pages presented side by side. The left is a pale sage-cream page with dense small text and a brick-red bookmark strip down the right edge; the right is the same document in a dark theme with white body text, a highlighted heading, and the bookmark strip retained. Both keep identical measure and type sizing, which is the right call: changing the column width between themes would make the dark version feel like a different document rather than the same one at night.",
+   "roles": [],
+   "style": [
+    "editorial",
+    "dark-mode",
+    "light-mode"
+   ],
+   "tags": [
+    "reading",
+    "theme-switch"
+   ],
+   "quality": "Text too small to read at this size; the layout and theme delta are what is legible."
+  },
+  {
+   "id": "IMG-0169",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Nepali-language app menu screen",
+   "description": "A portrait phone screen with a DejaVu-style Devanagari heading ('फेन्द्री') and a list of detailed service rows, each with small-print descriptions beneath the label. A horizontally scrolling tab row sits near the top with two segment buttons, one filled solid orange and one outlined, and the list below shows paired label/value rows. Notable because it is one of the few genuinely localised interfaces in the collection — the type is set for Devanagari rather than a Latin face with localised text dropped in, and the row heights have been increased to accommodate the taller script.",
+   "roles": [
+    "list",
+    "settings"
+   ],
+   "style": [
+    "minimal",
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "nepali",
+    "localised",
+    "cards",
+    "tabs"
+   ],
+   "quality": "Readable at native resolution; the small-print descriptions are borderline.",
+   "source_note": "Localised Nepali interface. Useful as evidence for how line-height must change with script."
+  },
+  {
+   "id": "IMG-0194",
+   "category": "app-store-screens",
+   "type": "marketing",
+   "title": "Money-tracking store panel — $48.60 total card",
+   "description": "An App Store style panel: a phone mockup on a light grey field showing a finance screen. A white card dominates with a large '$48.60' total, small category chips beneath ('Groceries', 'Transport', 'Food'), and a segmented All/In/Out row. Below the card, three module tiles appear — one pink, one green, one neutral — each carrying a small icon and label, before a recent-transactions list. The composition is the standard store-panel formula: one hero figure, three supporting modules, list preview at the fold, with enough white space that the phone reads as an object rather than a window.",
+   "roles": [
+    "dashboard",
+    "home"
+   ],
+   "style": [
+    "minimal",
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "fintech",
+    "budgeting",
+    "app-store",
+    "cards",
+    "charts"
+   ],
+   "quality": "Clean store capture at native resolution."
+  },
+  {
+   "id": "IMG-0195",
+   "category": "app-store-screens",
+   "type": "marketing",
+   "title": "Spending app store panel — $55 category card",
+   "description": "A store panel pairing. The primary phone shows a rounded card settled on a warm yellow field with a large '$55' figure, a small star rating, and two pill buttons; behind it a second phone shows a 'More Pages' grid of colourful module tiles (pink, blue, green, orange) each carrying an icon and label. Strong example of the module-grid home screen: instead of a feed, the app is a set of destinations, which works when the product's value is a collection of discrete tools rather than a stream.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "playful",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "fintech",
+    "budgeting",
+    "app-store",
+    "cards",
+    "grid",
+    "colourful"
+   ],
+   "quality": "Clean capture; module labels legible."
+  },
+  {
+   "id": "IMG-0196",
+   "category": "app-store-screens",
+   "type": "marketing",
+   "title": "Payments app store panel — $24 transfer card",
+   "description": "Two overlapping phone mockups on white. The nearer screen shows a transfer summary centred on a single '$24' figure with a purple 'Send' button below and a light summary row; the further screen shows an activity list with colour-coded entries. The layout makes a clear choice: the amount is the screen, with everything else — recipient, note, method — demoted to small muted rows. That is the correct hierarchy for a payment confirmation, where the user's only question is 'is the number right'.",
+   "roles": [
+    "checkout",
+    "detail"
+   ],
+   "style": [
+    "minimal",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "fintech",
+    "payments",
+    "app-store",
+    "cta-button",
+    "cards"
+   ],
+   "quality": "Clean capture."
+  }
+ ]
+}

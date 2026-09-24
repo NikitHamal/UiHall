@@ -1,0 +1,397 @@
+{
+ "note": "Review pass 4 of the undescribed mobile-app-ui images. Sheets review_05.jpg and review_06.jpg. Written from the processed web images. Palette, dimensions and contrast are measured elsewhere.",
+ "items": {
+  "IMG-0258": {
+   "id": "IMG-0258",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Gym tracker - session summary with stat tiles",
+   "description": "A pale pink fitness screen summarising a gym session. A 'Topics'-style tab bar sits at the top, then a row of three large figures - Reps, Short break, Long break - each set in a big numeral with a small label above. Below that a 'Session length' slider shows a value with a handle, followed by a stack of settings rows, each with a label and an inline value, and a dark primary button at the foot. The screen is a clean study in a light warm surface: the pastel pink carries the whole page and the only dark element is the button, so the eye lands on it immediately.",
+   "roles": [
+    "form",
+    "settings"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "fitness",
+    "gym",
+    "stat-display",
+    "slider",
+    "cta",
+    "session"
+   ],
+   "quality": "Clear capture; the stat figures and rows are legible."
+  },
+  "IMG-0304": {
+   "id": "IMG-0304",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Calendar day picker with a morning-run event",
+   "description": "A phone screen showing a month date strip across the top - a scrollable row of day numbers with the selected date marked by a filled circle - followed by a single calendar event card. The card carries a small green activity glyph, an event title and a time range, set on a soft mint panel against the near-white page. The restrained colour choice is the point: one event, one tint, and the date strip stays colourless so the selected day is the only strong mark in the header.",
+   "roles": [
+    "list",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "calendar",
+    "date-picker",
+    "event",
+    "running-route",
+    "timeline",
+    "health"
+   ],
+   "quality": "Clear capture; the date and event are legible."
+  },
+  "IMG-0306": {
+   "id": "IMG-0306",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Loyalty card app - clean wallet screens",
+   "description": "Two near-white wallet screens presented side by side on a pale background. The left shows a scannable membership card with a code area, a balance figure and a short list of recent entries; the right shows a rewards view with a progress meter, a points total and a small grid of redeemable items. Both screens use the same thin grey dividers. The pair demonstrates the loyalty-card convention done plainly: one card is the identity, the other is the benefit, and neither screen needs more than two type sizes.",
+   "roles": [
+    "profile",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "outlined"
+   ],
+   "tags": [
+    "loyalty",
+    "rewards",
+    "wallet",
+    "membership",
+    "points",
+    "qr-code",
+    "comparison"
+   ],
+   "quality": "Clear capture; both screens legible."
+  },
+  "IMG-0307": {
+   "id": "IMG-0307",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Mello - dark account dashboard with a balance hero",
+   "description": "A near-black finance screen carrying a large white balance figure at the top, followed by a row of quick-action tiles, a horizontal list of cards, and grouped transaction rows with small coloured category dots and signed amounts. A bottom tab bar closes the screen. The interesting move is in the hero: the balance is set in a very large light weight with generous letter-spacing, which makes a plain number feel premium without any card, gradient or illustration behind it.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "bold-typography"
+   ],
+   "tags": [
+    "fintech",
+    "balance",
+    "card",
+    "transaction",
+    "quick-actions",
+    "tab-bar"
+   ],
+   "quality": "Clear capture; the balance and rows are legible."
+  },
+  "IMG-0308": {
+   "id": "IMG-0308",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Marcus - three tappable panels in motion",
+   "description": "A light personal-banking screen headed 'Three panels in motion'. The body is exactly three stacked rounded panels, each with its own tinted background, a title and a subtitle, plus a small leading illustration; the middle one is dark and carries a pill button, marking it as the recommended action. A balance figure and a 'Send money' row sit below, above a tab bar. The screen is a tidy example of a three-up choice layout where emphasis is created purely by inverting one panel's surface, with no borders or badges needed.",
+   "roles": [
+    "home",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "fintech",
+    "banking",
+    "card",
+    "balance",
+    "transfer",
+    "tab-bar",
+    "emphasis"
+   ],
+   "quality": "Clear capture; panel titles legible."
+  },
+  "IMG-0309": {
+   "id": "IMG-0309",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Music app home - blue header over a mixed feed",
+   "description": "A music-app home screen with a bright blue header carrying the greeting, a small avatar cluster and a row of small header icons. Below it sits a horizontal 'Made for you' shelf of square artwork cards, then a list of tracks with small thumbnails and artist lines, and a bottom tab bar. The composition is the standard streaming layout, and its strength is the strict separation: colour lives only in the header and the artwork, while every list row stays white and neutral so the page never competes with its own covers.",
+   "roles": [
+    "home",
+    "feed"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "flat"
+   ],
+   "tags": [
+    "music",
+    "shelf",
+    "album-art",
+    "track-list",
+    "avatar",
+    "tab-bar"
+   ],
+   "quality": "Clear capture; titles and artist lines legible."
+  },
+  "IMG-0310": {
+   "id": "IMG-0310",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Map search with a route summary sheet",
+   "description": "A map-first screen: a light map fills the frame with a pinned route drawn as a coloured line, and a white search field floats at the top with a 'Destination' placeholder. The lower third is a sheet with the route summary and a primary action row. The screen demonstrates the standard map-plus-sheet arrangement and, more usefully, restraint in the map style - roads, water and parks are all muted greys, so the single coloured route is unmistakably the subject.",
+   "roles": [
+    "navigation",
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "flat"
+   ],
+   "tags": [
+    "map",
+    "route",
+    "sheet",
+    "location"
+   ],
+   "quality": "Clear capture; the route and sheet content are legible."
+  },
+  "IMG-0311": {
+   "id": "IMG-0311",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Reading app - a labelled before/after paywall comparison",
+   "description": "A side-by-side comparison graphic with the words 'Before' and 'After' printed as headers. Under 'Before' sit three cards labelled with pain points - 'Don't know what to read' - rendered in muted purple and grey with small icons. Under 'After' sit three matching cards describing the improvement - 'Read your 1st book in 10 lessons' - in brighter blue and yellow with more confident artwork. The pair is a marketing asset rather than a screen, and a good one: the same three slots are used on both sides, so the contrast is unambiguous.",
+   "roles": [
+    "pricing",
+    "landing-section"
+   ],
+   "style": [
+    "flat",
+    "illustration-led",
+    "high-contrast"
+   ],
+   "tags": [
+    "comparison",
+    "paywall",
+    "education",
+    "reading",
+    "multi-panel"
+   ],
+   "quality": "Clear capture; the labels on both sides are legible."
+  },
+  "IMG-0312": {
+   "id": "IMG-0312",
+   "category": "mobile-app-ui",
+   "type": "component",
+   "title": "Avatar cluster - overlapping faces at three densities",
+   "description": "Three specimen panels on plain white, each demonstrating an overlapping avatar row at a different density. The first shows a loose cluster with generous overlap and visible name chips beside some faces; the second packs the circles closer with no labels; the third shows a single group of five. The set is a component study rather than a screen, and the useful part is seeing the same idea scaled - the overlap ratio and the removal of labels are what let the row survive when the count grows.",
+   "roles": [
+    "social-proof",
+    "profile"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "flat"
+   ],
+   "tags": [
+    "avatar",
+    "specimen",
+    "people"
+   ],
+   "quality": "Clear capture; the three densities are distinguishable."
+  },
+  "IMG-0325": {
+   "id": "IMG-0325",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Music player - full-bleed artist photo with lyrics",
+   "description": "A dark music player where a photograph of a performer fills the entire frame behind everything. The track title and artist sit low on the image, a lyric line appears over it in a large light weight, and the transport controls float just above the home indicator as bare glyphs with no background. The whole design relies on the photograph, and it works because every element is white and generously spaced, so nothing needs a panel to stay readable.",
+   "roles": [
+    "media",
+    "detail"
+   ],
+   "style": [
+    "dark-mode",
+    "editorial",
+    "bold-typography"
+   ],
+   "tags": [
+    "music",
+    "player",
+    "lyrics",
+    "photo",
+    "full-bleed"
+   ],
+   "quality": "Clear capture; the track title and lyric are legible."
+  },
+  "IMG-0326": {
+   "id": "IMG-0326",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Music player - portrait artwork with a comment layer",
+   "description": "A dark player screen built on a tall portrait photograph of a singer. The title and artist sit in the lower middle, and above the transport controls are two small comment rows - a tiny avatar, a name and a short reaction line - which overlay the image directly. The notable decision is putting social proof on the player itself: rather than a separate comments tab, two short lines are enough to signal that other people are listening, and they cost almost no vertical space.",
+   "roles": [
+    "media",
+    "chat"
+   ],
+   "style": [
+    "dark-mode",
+    "editorial",
+    "card-based"
+   ],
+   "tags": [
+    "music",
+    "player",
+    "comment",
+    "avatar",
+    "photo",
+    "social"
+   ],
+   "quality": "Clear capture; the title and comment rows are legible."
+  },
+  "IMG-0327": {
+   "id": "IMG-0327",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Music player - concert photo with a waveform",
+   "description": "A dark player screen over a photograph of a performance lit by blue and white stage light. The title and artist sit above a thin waveform scrubber that spans the full width, and the play controls sit beneath it as white glyphs. Using a waveform instead of a plain progress bar is the whole idea - it gives the same information but reads as content, so the scrubber doubles as artwork rather than being a necessary piece of chrome.",
+   "roles": [
+    "media",
+    "detail"
+   ],
+   "style": [
+    "dark-mode",
+    "editorial",
+    "monochrome"
+   ],
+   "tags": [
+    "music",
+    "player",
+    "waveform",
+    "photo",
+    "scrubber",
+    "concert"
+   ],
+   "quality": "Clear capture; the title and waveform are legible."
+  },
+  "IMG-0328": {
+   "id": "IMG-0328",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Audiobook player - 'I Love My Computer' with a playlist",
+   "description": "A dark audiobook or podcast player. A square cover image sits at the top, followed by the title and a short description, then a wide pill-shaped play control with a chapter-progress readout, and finally a 'Chapters' header over a scrolling list of chapters each with a number and a duration. The screen is a good reference for long-form audio: a single large play target, progress stated in both time and chapter, and the chapter list visible without leaving the player.",
+   "roles": [
+    "media",
+    "list"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "audiobook",
+    "podcast",
+    "player",
+    "chapter",
+    "playlist",
+    "progress"
+   ],
+   "quality": "Clear capture; the title and chapter rows are legible."
+  },
+  "IMG-0329": {
+   "id": "IMG-0329",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Library - dark audio library with recent additions",
+   "description": "A dark library screen headed 'Library' with a grid of small icon-and-label tiles across the top (Artists, Albums, Playlists, Genres and so on), followed by a 'Recently Added' shelf of square artwork cards and a compact track list. The screen is dense but calm, because the icon tiles are monochrome, the artwork supplies all the colour, and every row uses the same height. It is the textbook streaming-library structure and worth keeping as a reference for how much can fit without a scroll feeling long.",
+   "roles": [
+    "list",
+    "media"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based",
+    "flat"
+   ],
+   "tags": [
+    "music",
+    "library",
+    "shelf",
+    "album-art",
+    "track-list",
+    "tiles"
+   ],
+   "quality": "Clear capture; the tile labels are legible."
+  },
+  "IMG-0330": {
+   "id": "IMG-0330",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Classical music - Beethoven featured player card",
+   "description": "A dark music screen built around a large featured-player card: a portrait painting of Beethoven fills the card with the title 'Ludwig van Beethoven' set over it in a decorative script, and a circular play button and favourite star float at the card's lower edge. Beneath the card sit a 'Featured Playlist' row, a 'Top Songs' header and a short list of tracks with artwork, artist and duration, plus a thin now-playing strip at the very bottom. The card is the lesson - a full-bleed artwork with a script overlay treats a composer's portrait as an album cover, which is exactly how a classical catalogue should be sold.",
+   "roles": [
+    "media",
+    "detail"
+   ],
+   "style": [
+    "dark-mode",
+    "editorial",
+    "luxury"
+   ],
+   "tags": [
+    "music",
+    "classical",
+    "featured",
+    "cover",
+    "playlist",
+    "now-playing"
+   ],
+   "quality": "Clear capture; the title and track rows are legible."
+  },
+  "IMG-0331": {
+   "id": "IMG-0331",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Contacts app - searchable list on sage green",
+   "description": "A light contacts screen on a pale sage background. A rounded search field sits at the top, followed by a grouped list of contacts, each row showing a small circular avatar, a name and a short relationship or status line, separated by hairline rules. There is no other chrome at all - no tab bar, no header icons. The screen is a clean study in list-only layout: with one neutral background, one accent-free list and generous row height, a plain contacts view reads as considered rather than unfinished.",
+   "roles": [
+    "list",
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "flat"
+   ],
+   "tags": [
+    "contacts",
+    "avatar",
+    "people"
+   ],
+   "quality": "Clear capture; names and status lines legible."
+  }
+ }
+}

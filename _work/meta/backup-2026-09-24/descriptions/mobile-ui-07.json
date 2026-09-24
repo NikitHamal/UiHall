@@ -1,0 +1,298 @@
+{
+ "note": "Review pass 7 of the undescribed mobile-app-ui images. Sheet review_09.jpg. Written from the processed web images. Palette, dimensions and contrast are measured elsewhere.",
+ "items": {
+  "IMG-0367": {
+   "id": "IMG-0367",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "High rise - rose gradient insights screen",
+   "description": "A light analytics screen titled 'High rise this week', built on a pink-to-cream vertical gradient. The top third carries the headline over a small badge and a short date range, followed by a line chart card and a short list of insight rows, each with an icon, a bold claim and a supporting sentence. A dark band and a row of two buttons close the screen. The interesting decision is stating the finding in the headline - 'High rise this week' - so the chart confirms a conclusion the user has already read, rather than asking them to interpret it.",
+   "roles": [
+    "dashboard",
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "gradient-heavy",
+    "card-based"
+   ],
+   "tags": [
+    "analytics",
+    "chart",
+    "insights",
+    "trends",
+    "gradient",
+    "cta",
+    "weekly"
+   ],
+   "quality": "Clear capture; the headline and insight rows are legible."
+  },
+  "IMG-0368": {
+   "id": "IMG-0368",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "High rise - the same insights plus an explainer card",
+   "description": "The same rose-gradient analytics screen as IMG-0367, extended downward with an additional explainer card. That card states how the user's score works, carries a small diagram and a sentence of method, and closes with a soft button. The screen is worth pairing with its sibling because it shows the honest addition: rather than only showing the number, the product explains how the number is produced, placed directly beneath the evidence rather than buried in a help centre.",
+   "roles": [
+    "dashboard",
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "gradient-heavy",
+    "card-based"
+   ],
+   "tags": [
+    "analytics",
+    "chart",
+    "insights",
+    "explainer",
+    "gradient",
+    "methodology",
+    "cta"
+   ],
+   "quality": "Clear capture; the explainer copy is legible."
+  },
+  "IMG-0369": {
+   "id": "IMG-0369",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Clean laundry app - single phone on a white field",
+   "description": "A minimal presentation shot: one phone showing a clean light list screen, centred on a large white field with wide margins, and a very faint oversized watermark behind it. The app screen itself is a simple service list with rows carrying an icon, a name and a chevron. The value of the image is its restraint as a marketing asset - one device, one screen, one small mark - which lets the product's own tidiness be the argument.",
+   "roles": [
+    "landing-section",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "flat"
+   ],
+   "tags": [
+    "laundry",
+    "service"
+   ],
+   "quality": "Clear capture; the list rows are legible."
+  },
+  "IMG-0370": {
+   "id": "IMG-0370",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Order detail - laundry basket with a bill breakdown",
+   "description": "A light order-detail screen from a laundry service. The top card holds a product thumbnail, an order number, a status pill marking the order as picked up, and a short date line. Beneath it a 'Service Breakup' section lists each line item with a small icon, a name and a right-aligned amount, followed by a total row and two action buttons - a primary and an outlined secondary. The screen is a clean example of a receipt layout: items first, total last, actions pinned immediately below so paying is always the next step.",
+   "roles": [
+    "detail",
+    "checkout",
+    "pricing"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "outlined"
+   ],
+   "tags": [
+    "order",
+    "receipt",
+    "laundry",
+    "itemised",
+    "status",
+    "cta"
+   ],
+   "quality": "Clear capture; the order number, items and total are legible."
+  },
+  "IMG-0371": {
+   "id": "IMG-0371",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Order detail - timeline of pickup and return slots",
+   "description": "The same order screen as IMG-0370 but with an expanded timeline section in place of the receipt. It shows 'Delivery Details' as a vertical sequence of dated rows: confirmed, scheduled and to be scheduled, each with a small circular status marker and a timestamp, followed by a wide outlined button. The screen demonstrates the timeline-plus-status convention: using one colour for completed steps, hollow markers for pending ones and a date on every row, so the user can tell both what has happened and what is still missing.",
+   "roles": [
+    "detail",
+    "notification"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "outlined"
+   ],
+   "tags": [
+    "order",
+    "timeline",
+    "laundry",
+    "status",
+    "delivery",
+    "cta",
+    "schedule"
+   ],
+   "quality": "Clear capture; the timeline rows are legible."
+  },
+  "IMG-0372": {
+   "id": "IMG-0372",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Laundry home - wallet, hero offer and status card",
+   "description": "A light laundry-service home screen. The header row carries an avatar, a greeting naming the user and a coin balance beside it. Below sits a wide hero card with a pale blue wash, a short offer headline and a small illustration; then a single 'Order Status' card with a thumbnail and progress; then a dark 'What's Inside' summary row; and finally a list of category tiles for services, each with an icon and a label, above a tab bar. The screen is busy but well ordered, with each block clearly a different kind of thing: balance, offer, live order, services.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "laundry",
+    "avatar",
+    "wallet",
+    "offer",
+    "status",
+    "tab-bar"
+   ],
+   "quality": "Clear capture; the greeting, balance and tile labels are legible."
+  },
+  "IMG-0373": {
+   "id": "IMG-0373",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Laundry app - in-hand mockup over a teal field",
+   "description": "A staged photograph in which a hand holds a phone showing the laundry home screen, set against a flat teal-green wall. The screen itself is a daily-summary view with a greeting, a date strip, a highlighted card titled 'Move today's load!' and a short service list beneath. Filed as a staging reference: the real hand and the flat coloured wall make the mockup read as a product in use rather than a floating render, at the cost of some screen detail.",
+   "roles": [
+    "landing-section",
+    "home"
+   ],
+   "style": [
+    "flat",
+    "minimal",
+    "editorial"
+   ],
+   "tags": [
+    "laundry",
+    "photo",
+    "greeting"
+   ],
+   "quality": "Clear enough to read the greeting and card title."
+  },
+  "IMG-0374": {
+   "id": "IMG-0374",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Usage stats - subscription progress and bar chart",
+   "description": "A light account screen headed 'Usage stats'. A small 'Progress' pill and a date range sit at the top-right of a card carrying a large percentage figure in a huge weight. Beneath it sit three tall rounded bar columns with figures above them and month labels below, then a series of progress meters with labels and values, and a dark button at the foot. The screen is a concise reference for a usage dashboard: one big number for the headline, one small chart for shape, then meters for the detail.",
+   "roles": [
+    "dashboard",
+    "profile"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "bold-typography"
+   ],
+   "tags": [
+    "usage",
+    "subscription",
+    "progress",
+    "chart",
+    "bars",
+    "numeral",
+    "cta"
+   ],
+   "quality": "Clear capture; the percentage and bar labels are legible."
+  },
+  "IMG-0375": {
+   "id": "IMG-0375",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Wash and Fold - service detail beside an info sheet",
+   "description": "Two light screens from a laundry service. The left is a service detail: a large product photograph of folded towels on a card, a title and price line, a short description, and a steps list explaining how the service works, closing with an action button. The right is a supporting information sheet with grouped rows covering pricing and terms. The pair is useful because the detail page carries the persuasion and the second page carries the small print, so neither screen has to be dense.",
+   "roles": [
+    "detail",
+    "pricing"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "outlined"
+   ],
+   "tags": [
+    "laundry",
+    "service",
+    "photo",
+    "steps",
+    "comparison"
+   ],
+   "quality": "Clear capture; the title, price and steps are legible."
+  },
+  "IMG-0376": {
+   "id": "IMG-0376",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Laundry app - three-panel order and support spread",
+   "description": "Three light screens arranged side by side: a home view with a service grid, an order-status card with a timeline, and a service-detail card with an action button. Together they show the core loop of the product - browse a service, track an order, view its detail - with a consistent card style across all three. The spread is a good reference for showing a complete flow in one image, where each screen is a distinct step rather than a variation of the same screen.",
+   "roles": [
+    "home",
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "flat"
+   ],
+   "tags": [
+    "laundry",
+    "status",
+    "multi-panel",
+    "service"
+   ],
+   "quality": "Clear capture; all three panels legible."
+  },
+  "IMG-0377": {
+   "id": "IMG-0377",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Service card - about, options, provider and reviews",
+   "description": "A light service card stacked with four labelled sections separated by hairlines. 'About this Service' carries a short description; 'Service Options' lists named options with amounts right-aligned; 'Service Provider' gives a name and a rating figure; 'Reviews' shows a short testimonial with stars. A solid blue button sits at the foot. The card is a strong example of the long-form service page on mobile: four clearly labelled bands, no accordions, and one action - which works because each band is short and the labels do the navigating.",
+   "roles": [
+    "detail",
+    "pricing"
+   ],
+   "style": [
+    "light-mode",
+    "outlined",
+    "flat"
+   ],
+   "tags": [
+    "service",
+    "testimonial",
+    "rating-stars",
+    "cta"
+   ],
+   "quality": "Clear capture; the section labels and figures are legible."
+  },
+  "IMG-0378": {
+   "id": "IMG-0378",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Service pages - three overlapping detail cards",
+   "description": "Three light detail screens fanned so that they overlap, each showing a service page of the kind in IMG-0377: a header with a provider row, a stack of labelled sections, option rows with amounts, and a primary button. Because the three are offset rather than aligned, the eye reads them as a stack of pages from one product and the shared structure becomes the message - the same template carries three different services with only the content changing.",
+   "roles": [
+    "detail",
+    "list",
+    "pricing"
+   ],
+   "style": [
+    "light-mode",
+    "outlined",
+    "flat"
+   ],
+   "tags": [
+    "service",
+    "template",
+    "multi-panel",
+    "testimonial",
+    "comparison"
+   ],
+   "quality": "Clear capture; the three cards are distinguishable."
+  }
+ }
+}

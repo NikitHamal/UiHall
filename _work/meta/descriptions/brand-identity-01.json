@@ -1,0 +1,767 @@
+{
+ "note": "Brand-identity review. Sheets review_brand-identity_01..03.jpg. These are logo marks, lockups and app-icon variants rather than screens, so the descriptions read the construction of the mark and record its colour values as observed from the image. Palette values are measured elsewhere.",
+ "items": {
+  "IMG-0067": {
+   "id": "IMG-0067",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "AstroWeb mark: crossed capsules on a dark app-icon tile",
+   "description": "A rounded-square app-icon tile in a deep navy, holding a mark made of two thick rounded capsules crossing at the centre: one running from lower-left to upper-right in a warm orange-red gradient, the other from upper-left to lower-right in a cyan-to-blue gradient. The crossing is drawn as a woven knot, so one capsule visibly passes over the other at the centre. A small green dot sits at each capsule's tip, and a pair of soft blue and green arcs curve behind the crossing as an orbit device. The mark is bold, symmetrical and reads clearly at tile size, which is what an app icon needs.",
+   "roles": [],
+   "style": [
+    "bold-typography",
+    "dark-mode",
+    "gradient-heavy",
+    "rounded"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "app-icon",
+    "gradient",
+    "orbit",
+    "symmetry",
+    "capsule"
+   ],
+   "quality": "Crisp vector-grade rendering; the gradients band slightly at full size."
+  },
+  "IMG-0068": {
+   "id": "IMG-0068",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "AstroWeb mark on a construction grid",
+   "description": "The same crossed-capsule AstroWeb mark as its app-icon sibling, but presented on a working background: a faint square grid with a diagonal construction line running through the centre, drawn in thin grey strokes on near-black. The two capsules cross in the middle with their gradients intact, the tip dots are present, and the orbit arcs curve behind the junction. Showing the mark over its grid is the presentation style a designer uses to prove the geometry rather than just the artwork - the grid here mainly serves to demonstrate that the crossing is exactly centred.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "gradient-heavy",
+    "high-contrast"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "construction",
+    "grid",
+    "gradient",
+    "symmetry",
+    "glyph"
+   ],
+   "quality": "Crisp; the construction grid is faint but visible."
+  },
+  "IMG-0073": {
+   "id": "IMG-0073",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "AstroWeb wordmark inside a glowing orbital sphere",
+   "description": "A cinematic logo lockup: a spherical planet rendered in a deep gold and amber palette sits at the centre, its surface lit from the upper left, with a thin elliptical ring crossing it at an angle - the orbit - and a smaller body resting on the ring to the right. The wordmark 'AstroWeb' is set beneath the planet in a soft rounded sans in a warm gold, with a small tagline below it in a much lighter weight and letter-spaced. The whole composition is lit and has depth: the planet glows, the background is a dark gradient, and the type has a subtle outer glow so it sits in the same space. It is the opposite approach to the flat icon: an atmospheric key visual rather than a scalable mark.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "gradient-heavy",
+    "luxury",
+    "dark-mode"
+   ],
+   "tags": [
+    "logo",
+    "wordmark",
+    "orbit",
+    "cosmic",
+    "glow",
+    "gold",
+    "lockup",
+    "typography"
+   ],
+   "quality": "Clear rendering; the wordmark and tagline are legible."
+  },
+  "IMG-0074": {
+   "id": "IMG-0074",
+   "category": "brand-identity",
+   "type": "reference",
+   "title": "AstroWeb brand sheet: icon variants in light and dark",
+   "description": "A tall brand-presentation sheet on a white ground. A header row carries a small logo and the brand name, followed by two lines of small grey supporting copy and a pair of small controls. Descending below are five or six stacked presentation strips, each a wide rounded panel showing the same orbital mark at a different size and treatment: a dark variant with the planet centred and the wordmark beneath, a lighter variant, a small horizontal lockup with the mark at the leading edge and the name beside it, and further rows receding into a softer glow. Read downwards, the sheet demonstrates that one mark holds up across sizes and grounds - which is the actual purpose of a brand sheet.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "gradient-heavy",
+    "rounded"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "lockup",
+    "specimen",
+    "variants",
+    "orbit",
+    "cosmic",
+    "presentation"
+   ],
+   "quality": "Clear capture; the wordmarks in each strip are legible."
+  },
+  "IMG-0091": {
+   "id": "IMG-0091",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "NEBians mark: a mountain rising from an open book",
+   "description": "A single mark on a white ground: a book shown open, its pages forming a shallow V, with a two-peak mountain rising out of the spine. The mountain peaks are white with a subtle grey facet on the shaded side, and the book's pages are a mid blue - the left page a slightly deeper tone than the right - with a darker blue rendered along the outer edge as the thickness of the pages. The silhouette is compact and reads as one object rather than two, which is what makes a book-plus-mountain lockup work: the V of the pages and the V between the peaks share a line. No wordmark, no container - just the mark, centred, with plenty of margin.",
+   "roles": [],
+   "style": [
+    "flat",
+    "illustration-led",
+    "minimal"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "book",
+    "mountain",
+    "blue",
+    "centred",
+    "education"
+   ],
+   "quality": "Crisp; the page shading is clean and the edges are sharp."
+  },
+  "IMG-0092": {
+   "id": "IMG-0092",
+   "category": "brand-identity",
+   "type": "reference",
+   "title": "NEBians lockup sheet: mark, wordmark and dark reverse",
+   "description": "A two-by-two brand sheet on white, presenting the NEBians identity in four combinations. The mark is a stylised 'N' built from an open-book form: three nested blue panels, the innermost a pale tint, giving the letter depth without a gradient. Top left pairs the mark with the wordmark 'NEBians' to its right on white; top right repeats the lockup at a smaller scale; bottom left shows the mark alone; bottom right reverses the lockup onto a deep navy panel with the wordmark set in white. Small grey caption lines under each cell name the variant. The sheet's restraint is the point - one mark, one wordmark, two grounds.",
+   "roles": [],
+   "style": [
+    "flat",
+    "minimal",
+    "corporate"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "wordmark",
+    "lockup",
+    "specimen",
+    "variants",
+    "blue",
+    "layered"
+   ],
+   "quality": "Clear capture; wordmarks and caption lines are legible."
+  },
+  "IMG-0093": {
+   "id": "IMG-0093",
+   "category": "brand-identity",
+   "type": "reference",
+   "title": "NEBians mark in monochrome, white and black",
+   "description": "A four-cell sheet showing the same open-book 'N' mark reduced to single colour. Top left is the mark in solid black on white, paired with the wordmark in black; top right repeats the lockup smaller; bottom left shows the bare mark in black; bottom right reverses everything - a white mark and a white wordmark on a solid black panel. The nested panels of the mark are still visible as three distinct areas, but they are now told apart by tone alone rather than by hue, which is what a monochrome test is for: if the mark survives without colour, the form is doing the work. Small captions label each cell.",
+   "roles": [],
+   "style": [
+    "flat",
+    "high-contrast",
+    "minimal",
+    "monochrome"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "lockup",
+    "specimen",
+    "variants",
+    "layered"
+   ],
+   "quality": "Clear capture; the wordmark is legible in all four cells."
+  },
+  "IMG-0094": {
+   "id": "IMG-0094",
+   "category": "brand-identity",
+   "type": "reference",
+   "title": "NEBians mark family: blue, white-tile and navy-tile variants",
+   "description": "A four-cell sheet presenting the mark at varying contrast. Top left and top right are the blue mark on white at two sizes; the bottom left places the blue mark inside a white rounded-square tile on a pale ground, which is the app-icon treatment; the bottom right places a white mark on a solid deep-navy square, the inverse. Seeing the tile and the inverse next to the plain marks makes the icon logic explicit: the container is what changes, not the mark. The sheet has no wordmark at all, so the emphasis is entirely on the symbol holding up under these conditions.",
+   "roles": [],
+   "style": [
+    "flat",
+    "minimal",
+    "corporate"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "app-icon",
+    "tiles",
+    "specimen",
+    "variants",
+    "blue",
+    "inverse"
+   ],
+   "quality": "Clear capture; the mark's nested panels are distinguishable at every size."
+  },
+  "IMG-0095": {
+   "id": "IMG-0095",
+   "category": "brand-identity",
+   "type": "reference",
+   "title": "NEBians mascot: a small astronaut in a nebula field",
+   "description": "A character illustration on a deep violet ground scattered with stars and a soft nebula wash. The subject is a small rounded astronaut built from a blue-violet suit, a large glass helmet through which a spiral galaxy is visible, a pair of antennae tipped with glowing stars, and small orange boots. The figure stands with a friendly closed-eye smile and a small golden book or scroll held at its side, lit in warm yellow. The palette is cool violet and blue with only the book and the star tips in warm tones, which makes those two accents the points the eye lands on.",
+   "roles": [],
+   "style": [
+    "illustration-led",
+    "gradient-heavy",
+    "playful"
+   ],
+   "tags": [
+    "artwork",
+    "astrology",
+    "character",
+    "cosmic",
+    "figurative",
+    "gradient",
+    "illustration",
+    "mascot",
+    "nebula"
+   ],
+   "quality": "Clean illustration; the character detail and the book are sharp."
+  },
+  "IMG-0096": {
+   "id": "IMG-0096",
+   "category": "brand-identity",
+   "type": "reference",
+   "title": "NEBians mascot on a lighter violet field",
+   "description": "The same nebula astronaut as its sibling, on a lilac-violet ground rather than a deep one. The suit reads a shade lighter here, the helmet's spiral galaxy is still visible, and the antenna stars and the golden book still carry the only warm colour. The surrounding field is busier with stars and soft cloud, so the figure sits in a slightly hazier space. Shown beside the darker version it is effectively the same mascot presented for a light ground - which is the comparison a brand system needs before it commits to one.",
+   "roles": [],
+   "style": [
+    "illustration-led",
+    "gradient-heavy",
+    "playful"
+   ],
+   "tags": [
+    "artwork",
+    "astrology",
+    "character",
+    "cosmic",
+    "figurative",
+    "gradient",
+    "illustration",
+    "mascot",
+    "nebula"
+   ],
+   "quality": "Clean illustration; character detail is sharp."
+  },
+  "IMG-0097": {
+   "id": "IMG-0097",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "NEBians mark rendered in white on black",
+   "description": "The open-book 'N' mark shown alone, large, in white on a solid black ground. Because the mark is drawn as three nested panels, the monochrome treatment leaves them separated by a thin gap of ground rather than by a change of hue, so the fold reads as an edge of light. There is no wordmark and no container: the symbol is given a whole frame. This is the most reductive presentation of the mark in the set and the one that best shows its underlying geometry - three angled planes, two long diagonals, one narrow counter.",
+   "roles": [],
+   "style": [
+    "monochrome",
+    "high-contrast",
+    "minimal"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "inverse",
+    "centred",
+    "layered",
+    "glyph"
+   ],
+   "quality": "Crisp; the thin gaps between the mark's panels are clean."
+  },
+  "IMG-0098": {
+   "id": "IMG-0098",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "NEBians mark shown large in blue on black",
+   "description": "The open-book 'N' mark at a very large size on a black ground, and this time the panels carry three distinct blue tones - a pale tint for the inner face, a mid blue for the main body, and a deeper blue for the receding edge. At this scale the construction becomes obvious: the letter is a single ribbon folded three times, with each fold given its own value so the form reads as an object with thickness. Enlarging the mark on a dark ground is how a designer proves the folds actually resolve rather than relying on the small size to hide them.",
+   "roles": [],
+   "style": [
+    "bold-typography",
+    "dark-mode",
+    "flat",
+    "high-contrast"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "layered",
+    "blue",
+    "centred",
+    "construction",
+    "glyph"
+   ],
+   "quality": "Crisp; the three blue values are clearly distinct."
+  },
+  "IMG-0099": {
+   "id": "IMG-0099",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "NEBians mark alone at large scale on white",
+   "description": "The open-book 'N' mark presented on its own, large, on a plain white ground with wide margins. The three blue panels are clearly separated - a light blue inner face, a saturated mid blue for the body, and a deeper blue for the third plane - and the letter's negative space forms a narrow counter down its centre. With no wordmark, no caption and no container, this is the mark stripped to its test conditions: does the form read at size on a plain field, and does the fold survive without shadow or gradient to help it. It does, which is the argument for building the letter from planes rather than outlines.",
+   "roles": [],
+   "style": [
+    "flat",
+    "minimal",
+    "bold-typography"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "layered",
+    "blue",
+    "centred",
+    "specimen",
+    "glyph"
+   ],
+   "quality": "Crisp; the panel edges and the central counter are clean."
+  },
+  "IMG-0157": {
+   "id": "IMG-0157",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "Owl-book character reduced to its two brightest features",
+   "description": "A character mark on a white ground: an open book whose two pages have become two large eyes with dark blue irises, with a matching pair of eyebrows and a small beak implied between them; the lower edge of the book forms a rounded base in a slightly deeper blue, and small marks at the outer corners suggest feather tufts. The illustration is built from a very small number of flat shapes in two blues plus white, with no outline. The idea is efficient: the book's two pages are already a pair of eyes, so the character emerges from the object rather than being drawn onto it.",
+   "roles": [],
+   "style": [
+    "flat",
+    "illustration-led",
+    "minimal"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "book",
+    "owl",
+    "figurative",
+    "blue",
+    "centred",
+    "education"
+   ],
+   "quality": "Crisp flat shapes; the eye detail is clean."
+  },
+  "IMG-0158": {
+   "id": "IMG-0158",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "Owl-book mascot on a dark ground with orange feet",
+   "description": "The owl-book character presented on a near-black ground, now fully formed: a pair of large white eyes with dark blue irises sits above a small golden beak, the two book pages have become folded wings that curve down and out, a small crest of feathers rises from the top of the head, and two small orange feet rest below. The palette is white, two blues and a single warm orange used only for the feet and beak, so the face and the small warm accents carry the whole character. A dark ground suits this mark because the white eye field and the page wings then read as light shapes.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "flat",
+    "high-contrast",
+    "illustration-led"
+   ],
+   "tags": [
+    "artwork",
+    "book",
+    "education",
+    "figurative",
+    "illustration",
+    "mascot",
+    "owl"
+   ],
+   "quality": "Crisp; the eye and feather detail is clean."
+  },
+  "IMG-0159": {
+   "id": "IMG-0159",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "Smiling book mascot with hands, the friendlier variant",
+   "description": "The same owl-book idea taken in a softer, more cartoon direction. The book pages now carry a full smiling face - two large eyes with highlights, eyebrows, a small open smile and pink cheek dots - and two rounded hands wave from the outer corners, one raised. A small fold at the top right of the book reads as a dog-eared page. The character is set on both a dark ground and a light one across the set, and the palette is again white and two blues with the smile and cheeks in a light warm tone. Compared with its owl sibling this version leads with friendliness rather than watchfulness.",
+   "roles": [],
+   "style": [
+    "illustration-led",
+    "playful",
+    "flat"
+   ],
+   "tags": [
+    "artwork",
+    "book",
+    "education",
+    "figurative",
+    "illustration",
+    "mascot",
+    "smile"
+   ],
+   "quality": "Crisp; the face and hand detail is clean."
+  },
+  "IMG-0160": {
+   "id": "IMG-0160",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "Book mascot with a star crown",
+   "description": "A further variant of the book character, this time on a black ground with a small four-pointed star rising from the top edge and a scattering of small stars around it. The pages hold two large eyes and a small smile, the lower edge of the book is a deeper blue, and there are no hands. A tiny bow or tie sits at the base of the star, which gives the star the feel of an ornament pinned to the book rather than a separate object. The surrounding stars are drawn in two sizes, which is what stops a sparse black ground from feeling empty.",
+   "roles": [],
+   "style": [
+    "illustration-led",
+    "playful",
+    "dark-mode"
+   ],
+   "tags": [
+    "artwork",
+    "book",
+    "education",
+    "figurative",
+    "illustration",
+    "mascot",
+    "star"
+   ],
+   "quality": "Crisp; the star and surrounding sparkles are clean."
+  },
+  "IMG-0162": {
+   "id": "IMG-0162",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "Minimal face mark: two eyes over a blue band",
+   "description": "An extremely reduced mark on a black ground: a pale blue circle occupying most of the frame, its lower third given over to a solid deeper blue band, and two small dark ellipses placed as eyes in the upper area. Criss-crossing fine lines across the whole circle suggest a woven or glass texture. There is no other detail at all - no mouth, no outline, no shading. It reads as a helmet, a globe or a face depending on what the viewer brings, which is the point of taking reduction this far: the mark becomes a container for the brand's own context.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "flat",
+    "high-contrast",
+    "minimal"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "circle",
+    "figurative",
+    "blue",
+    "glyph"
+   ],
+   "quality": "Crisp; the fine criss-cross texture is visible."
+  },
+  "IMG-0163": {
+   "id": "IMG-0163",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "Two-eye face mark cleaned up",
+   "description": "The same two-eye-over-blue-band mark as its sibling, with the fine criss-cross texture removed. What is left is three flat areas: a large pale blue disc, a solid deeper blue band along its lower edge, and two dark ellipses as eyes, set on a black ground. Without the texture the mark is cleaner but also more neutral - the eyes are simple vertical ovals now rather than implied by a pattern, so the mark reads as more deliberate and more scale-tolerant. Placing it beside the textured version is a useful demonstration of how much a single surface treatment changes a mark's character.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "flat",
+    "high-contrast",
+    "minimal"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "circle",
+    "figurative",
+    "blue",
+    "glyph"
+   ],
+   "quality": "Crisp; the flat shapes have clean edges."
+  },
+  "IMG-0164": {
+   "id": "IMG-0164",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "ZEUS wordmark on a still-life brand scene",
+   "description": "A photographic brand scene rather than a flat logo: a light plaster ground with a tablet or slate slab lying at a slight angle, an olive branch in a slim vase to the left, and soft daylight falling across the arrangement from the right. The wordmark 'ZEUS' is set in a high-contrast serif with generous letter-spacing, centred in the upper half in a dark ink, with a small letter-spaced tagline beneath it in a much lighter weight. The product is barely visible in the arrangement and the type is doing the branding - a typical pattern for a luxury identity presented as a lifestyle photograph rather than as a logo file.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "luxury",
+    "editorial",
+    "photographic"
+   ],
+   "tags": [
+    "logo",
+    "wordmark",
+    "serif",
+    "photographic",
+    "still-life",
+    "typography",
+    "lockup"
+   ],
+   "quality": "Sharp photograph; the wordmark and tagline are legible."
+  },
+  "IMG-0165": {
+   "id": "IMG-0165",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "NEBians wordmark staged in a lab at dusk",
+   "description": "A photographic brand scene lit like a film still: a laboratory bench in the foreground holds glassware and a dark bottle, a window in the background frames a mountain range at sunset, and the room is warm amber on the left fading to blue on the right. The wordmark 'NEBians' is set in a high-contrast serif across the centre with a thin rule over it, and a small letter-spaced tagline sits beneath. The type is a light warm off-white so it holds against both the lit interior and the window, which is the real problem this kind of scene has to solve.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "cinematic",
+    "editorial",
+    "dark-mode"
+   ],
+   "tags": [
+    "logo",
+    "wordmark",
+    "serif",
+    "photographic",
+    "laboratory",
+    "cinematic",
+    "typography",
+    "lockup"
+   ],
+   "quality": "Sharp photograph; the wordmark and tagline are legible against the busy scene."
+  },
+  "IMG-0166": {
+   "id": "IMG-0166",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "ZEUS wordmark over a warm desktop arrangement",
+   "description": "A second photographic ZEUS scene, warmer than its sibling: a cream plaster ground, a laptop showing a dark interface at the left, a black phone with a lightning-bolt glyph on its screen, a wooden pencil lying diagonally at the lower right, and an olive branch entering the frame from the top right. The wordmark sits centred near the top in a high-contrast serif with wide letter-spacing, in dark ink, with the tagline beneath. Including a device screen with a mark on it is what makes this read as a product brand rather than as a stationery shot.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "luxury",
+    "editorial",
+    "photographic"
+   ],
+   "tags": [
+    "logo",
+    "wordmark",
+    "serif",
+    "photographic",
+    "still-life",
+    "laptop",
+    "desk",
+    "typography"
+   ],
+   "quality": "Sharp photograph; the wordmark and the phone glyph are legible."
+  },
+  "IMG-0167": {
+   "id": "IMG-0167",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "Avatar Labs wordmark over a glossy sphere with eyes",
+   "description": "A very dark brand lockup. The wordmark 'Avatar Labs' is set in a high-contrast serif across two lines, centred, in a pale grey-white. Beneath it sits a small glossy sphere or pebble rendered in soft neutral grey with two darker hollows placed as eyes, lit from the upper left so it reads as a rounded object with weight. The rest of the frame is empty near-black. The pairing of a formal serif wordmark with a single toy-like object is the whole idea: the type supplies the seriousness and the object supplies the playfulness, and neither would work alone.",
+   "roles": [],
+   "style": [
+    "minimal",
+    "dark-mode",
+    "editorial"
+   ],
+   "tags": [
+    "logo",
+    "wordmark",
+    "serif",
+    "figurative",
+    "sphere",
+    "lockup"
+   ],
+   "quality": "Crisp; the wordmark is legible and the sphere's shading is smooth."
+  },
+  "IMG-0314": {
+   "id": "IMG-0314",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "NEBians app icon at very small scale",
+   "description": "A single app icon presented on a black ground: a white rounded-square tile holding the blue open-book 'N' mark, shown at a very small size relative to the frame. At this scale the three nested panels of the mark compress into one blue shape and only the outer silhouette survives - which is precisely what a small-size test is meant to reveal. The tile keeps a generous margin, so the mark is not crowded by its container even when the container is tiny. It is the smallest end of the icon-size ladder for this identity.",
+   "roles": [],
+   "style": [
+    "flat",
+    "minimal",
+    "high-contrast"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "app-icon",
+    "tiles",
+    "small-size",
+    "blue",
+    "specimen",
+    "glyph"
+   ],
+   "quality": "Small but crisp; the mark reads as a silhouette at this size."
+  },
+  "IMG-0316": {
+   "id": "IMG-0316",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "NEBians app icon, medium tile with soft shadow",
+   "description": "The NEBians app icon at presentation size: a white rounded-square tile on a black ground, holding the blue open-book 'N' mark, with a soft drop shadow beneath the tile so it appears to float slightly above the ground. At this size the mark's three blue panels are individually distinguishable again - a pale inner face, a saturated body and a deeper fold - so the icon reads as the letter rather than as a blob. The shadow is what elevates it from a flat asset to a product shot.",
+   "roles": [],
+   "style": [
+    "flat",
+    "minimal",
+    "soft-shadow"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "app-icon",
+    "tiles",
+    "blue",
+    "specimen",
+    "layered"
+   ],
+   "quality": "Crisp; the mark's panels and the shadow are clean."
+  },
+  "IMG-0317": {
+   "id": "IMG-0317",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "NEBians app icon at favicon scale",
+   "description": "The smallest presentation in the set: the blue mark alone on a white rounded tile, occupying a tiny fraction of a large black frame. At this size there is no container shadow, no label and nothing else in the frame, so the tile and mark are reduced to their absolute minimum - the tile is roughly the size a browser tab or a home-screen shortcut would render it. Including an image of an icon this small is a deliberate stress test: if the silhouette is still recognisable here, it will survive any real deployment.",
+   "roles": [],
+   "style": [
+    "flat",
+    "minimal",
+    "high-contrast"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "app-icon",
+    "favicon",
+    "small-size",
+    "blue",
+    "specimen",
+    "glyph"
+   ],
+   "quality": "Very small; the silhouette is still readable."
+  },
+  "IMG-0318": {
+   "id": "IMG-0318",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "NEBians app icon, second medium tile",
+   "description": "Essentially the same presentation as its medium-size sibling - a white rounded tile holding the blue mark on a black ground, with a soft shadow - captured at a slightly different scale or crop. The three panels of the mark are visible in the same order, and the tile's corner radius reads as continuous rather than stepped. Its value in the set is as the repeat: a brand sheet shows the same asset more than once at the same size to prove the rendering is consistent rather than a one-off export.",
+   "roles": [],
+   "style": [
+    "flat",
+    "minimal",
+    "soft-shadow"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "app-icon",
+    "tiles",
+    "blue",
+    "specimen",
+    "layered"
+   ],
+   "quality": "Crisp; the tile edge and shadow are clean."
+  },
+  "IMG-0319": {
+   "id": "IMG-0319",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "NEBians icon on a pale blue tile, small scale",
+   "description": "A variation rather than a repeat: this small tile carries a pale blue ground instead of white, with the mark rendered in a deeper blue and white, so the icon's own field now participates in the brand's colour range. The tile sits on the usual black frame. Introducing a tinted tile at a small size is a meaningful test, because the mark's outer edge and the tile's field are closer in value than they are on white - the silhouette has to separate them without the help of high contrast.",
+   "roles": [],
+   "style": [
+    "flat",
+    "minimal",
+    "soft"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "app-icon",
+    "tiles",
+    "small-size",
+    "blue",
+    "specimen",
+    "variants"
+   ],
+   "quality": "Small but crisp; the mark separates from the tinted field."
+  },
+  "IMG-0320": {
+   "id": "IMG-0320",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "NEBians mark on an oversized rounded tile",
+   "description": "The mark presented inside a white rounded-square tile at a large size, filling most of a black frame. At this scale the tile's corner radius is generous and continuous, and the mark's three blue panels are each clearly readable - a pale inner face, a mid blue body and a deeper receding fold. The tile has no shadow and no label, so the composition is purely the container and the mark. This is the size at which the mark is usually shown in a store listing, and it is shown here as part of the same ladder as the very small variants.",
+   "roles": [],
+   "style": [
+    "flat",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "app-icon",
+    "tiles",
+    "large-size",
+    "blue",
+    "specimen",
+    "layered"
+   ],
+   "quality": "Crisp; the tile radius and mark panels are clean."
+  },
+  "IMG-0321": {
+   "id": "IMG-0321",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "NEBians mark on a black tile",
+   "description": "The inverse treatment: a black rounded-square tile set on a black ground, holding the open-book 'N' mark in blues. Because the tile and the ground are the same colour, the only thing distinguishing the container from the frame is a very subtle edge or a slight change of black - so the tile effectively disappears and the mark floats alone. Of all the icon variants this is the one that depends most on the mark's own contrast, and it is the one a dark-mode home screen would actually use.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "flat",
+    "high-contrast"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "app-icon",
+    "tiles",
+    "inverse",
+    "blue",
+    "specimen"
+   ],
+   "quality": "Crisp; the tile edge is subtle but present."
+  },
+  "IMG-0322": {
+   "id": "IMG-0322",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "NEBians favicon on a white tile",
+   "description": "The smallest icon in the set: a very small white rounded tile carrying the blue mark, placed centrally in a large black frame. At this size the mark is close to a single blue mass with a lighter notch, and the tile's radius is only a few pixels across. The image is a straightforward small-size test - the same asset as the larger tiles, captured at the scale at which a favicon or a notification badge would actually render, with all the detail loss that implies.",
+   "roles": [],
+   "style": [
+    "flat",
+    "minimal",
+    "high-contrast"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "app-icon",
+    "favicon",
+    "small-size",
+    "blue",
+    "specimen",
+    "glyph"
+   ],
+   "quality": "Very small; the mark reduces to a readable silhouette."
+  },
+  "IMG-0323": {
+   "id": "IMG-0323",
+   "category": "brand-identity",
+   "type": "brand-mark",
+   "title": "NEBians favicon on a tinted tile",
+   "description": "A small tile carrying the mark, with the tile ground appearing very slightly tinted rather than pure white and the mark in blue. Placed centrally in a large black frame, it duplicates the smallest-size test but under a marginally softer contrast. In a brand sheet, a near-duplicate at this scale exists to confirm that the asset exports consistently across the tint range rather than to introduce a new idea, and it is included here on those terms.",
+   "roles": [],
+   "style": [
+    "flat",
+    "minimal",
+    "soft"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "app-icon",
+    "favicon",
+    "small-size",
+    "blue",
+    "specimen",
+    "variants"
+   ],
+   "quality": "Very small; the mark remains readable against the tinted tile."
+  }
+ }
+}

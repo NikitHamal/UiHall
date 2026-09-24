@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Northloop Wallet</title>
+<style>
+/* Poppins self-hosted from UI Hall — latin only on most pages (~8KB/weight) */
+@font-face{font-family:Poppins;font-style:normal;font-weight:400;font-display:swap;src:url(../../ui-hall/assets/fonts/poppins/poppins-400-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:Poppins;font-style:normal;font-weight:500;font-display:swap;src:url(../../ui-hall/assets/fonts/poppins/poppins-500-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:Poppins;font-style:normal;font-weight:600;font-display:swap;src:url(../../ui-hall/assets/fonts/poppins/poppins-600-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:Poppins;font-style:normal;font-weight:700;font-display:swap;src:url(../../ui-hall/assets/fonts/poppins/poppins-700-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+/* TOKENS — measured IMG-0307/IMG-0219. Type scale + tracking from UI Hall tokens.css
+   (Poppins wants gentle tracking: display -0.012em only, small caps +0.075em). */
+:root{
+--bg:#090809;--surface:#17171A;--surface2:#1E1E22;--line:#26262B;--line2:#34343C;
+--text:#F2F2F4;--text2:#A8A8B3;--text3:#74747F;
+--accent:#F5B544;--accent-ink:#2A1D00;--good:#4EC98A;--bad:#F2635C;
+--t-2xs:.6875rem;--t-xs:.75rem;--t-sm:.8125rem;--t-md:.875rem;--t-lg:1rem;--t-xl:1.25rem;--t-2xl:1.625rem;--t-3xl:2.125rem;
+--ls-tight:-.012em;--ls-snug:-.005em;--ls-flat:0;--ls-wide:.04em;--ls-wider:.075em;
+--lh-tight:1.2;--lh-snug:1.4;--lh-body:1.65;
+--ease:cubic-bezier(.2,0,0,1);--dur:160ms;
+--r:20px;--r-in:14px;--max:1060px;
+}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Poppins,system-ui,"Segoe UI",Roboto,sans-serif;font-size:var(--t-md);line-height:var(--lh-body);letter-spacing:var(--ls-flat);font-feature-settings:"tnum" 0,"cv05" 0;-webkit-font-smoothing:antialiased}
+.num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
+button{font:inherit;min-height:48px;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:8px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.top{position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line);background:rgba(9,8,9,.88);backdrop-filter:blur(10px)}
+.top-in{max-width:var(--max);margin:0 auto;padding:0 20px;height:56px;display:flex;align-items:center;gap:16px}
+.brand{font-size:var(--t-lg);font-weight:600;letter-spacing:var(--ls-snug);display:flex;gap:10px;align-items:center}
+.mark{width:28px;height:28px;border-radius:8px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-weight:700;font-size:var(--t-md)}
+.nav{margin-left:auto;display:flex;gap:2px}
+.nav button{background:none;border:0;color:var(--text2);font-size:var(--t-sm);font-weight:500;padding:10px 14px;border-radius:10px;cursor:pointer;transition:color var(--dur) var(--ease),background var(--dur) var(--ease)}
+.nav button[aria-current="page"]{color:var(--text);background:var(--surface2)}
+.nav button:active{transform:scale(.96)}
+.wrap{max-width:var(--max);margin:0 auto;padding:32px 20px 120px}
+/* TYPE: exactly two levels per block — display + label. Nothing in between. */
+.kicker{font-size:var(--t-2xs);font-weight:600;letter-spacing:var(--ls-wider);text-transform:uppercase;color:var(--text3)}
+.display{font-size:var(--t-3xl);font-weight:600;letter-spacing:var(--ls-tight);line-height:var(--lh-tight);margin:6px 0 2px}
+@media(min-width:700px){.display{font-size:3rem}}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;margin-top:14px}
+@media(max-width:860px){.hero{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px;box-shadow:0 1px 2px rgba(0,0,0,.5)}
+.eye{background:none;border:0;color:var(--text3);font-size:var(--t-sm);cursor:pointer;padding:8px;min-height:44px;border-radius:8px}
+.eye:hover{color:var(--text)}
+.delta{font-size:var(--t-sm);color:var(--good);margin-top:2px}
+.delta.down{color:var(--bad)}
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px}
+.quick button{background:var(--surface2);border:1px solid var(--line);border-radius:var(--r-in);padding:14px 6px 12px;cursor:pointer;font-size:var(--t-xs);font-weight:500;color:var(--text2);transition:transform var(--dur) var(--ease),border-color var(--dur) var(--ease),color var(--dur) var(--ease)}
+.quick button b{display:block;font-size:var(--t-xl);font-weight:500;color:var(--text);line-height:1.2}
+.quick button:hover{border-color:var(--line2);color:var(--text)}
+.quick button:active{transform:scale(.96)}
+.sect{font-size:var(--t-lg);font-weight:600;letter-spacing:var(--ls-snug);line-height:var(--lh-snug);margin:0}
+.dek{font-size:var(--t-sm);color:var(--text3);margin:2px 0 0}
+.range{display:flex;gap:6px;margin:14px 0 4px}
+.range button{flex:none;display:inline-flex;align-items:center;justify-content:center;height:40px;min-height:40px;min-width:64px;padding:0 18px;border:1px solid var(--line);background:none;color:var(--text2);border-radius:999px;font-size:var(--t-xs);font-weight:600;letter-spacing:var(--ls-wide);cursor:pointer;transition:all var(--dur) var(--ease)}
+.range button[aria-pressed="true"]{background:var(--text);border-color:var(--text);color:#0A0A0B}
+.bars{display:flex;align-items:flex-end;gap:6px;height:128px;margin-top:10px}
+.bars i{flex:1;border-radius:5px 5px 3px 3px;background:#33333B;min-height:6px;transition:height 260ms var(--ease),background var(--dur) var(--ease)}
+.bars i.hot{background:var(--accent)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+@media(max-width:860px){.grid2{grid-template-columns:1fr}}
+.chips{display:flex;gap:8px;margin:14px 0 4px;overflow-x:auto;padding-bottom:6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.chips::-webkit-scrollbar{display:none}
+.chips button{flex:none;display:inline-flex;align-items:center;justify-content:center;height:44px;min-height:44px;min-width:92px;padding:0 22px;white-space:nowrap;border:1px solid var(--line);background:none;color:var(--text2);border-radius:999px;font-size:var(--t-sm);font-weight:500;cursor:pointer;transition:all var(--dur) var(--ease)}
+.chips button[aria-pressed="true"]{background:var(--text);border-color:var(--text);color:#0A0A0B;font-weight:600}
+.tx{list-style:none;margin:6px 0 0;padding:0}
+.tx li{display:flex;align-items:baseline;gap:12px;padding:13px 2px;border-top:1px solid var(--line);animation:rise 260ms var(--ease) backwards}
+.tx li:nth-child(2){animation-delay:50ms}.tx li:nth-child(3){animation-delay:100ms}.tx li:nth-child(4){animation-delay:150ms}.tx li:nth-child(5){animation-delay:200ms}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.tx .who{font-size:var(--t-md);font-weight:500}
+.tx .when{font-size:var(--t-xs);color:var(--text3);margin-top:1px}
+.tx .amt{margin-left:auto;font-size:var(--t-md);font-weight:600}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;align-self:center}
+.pos{color:var(--good)}.neg{color:var(--text)}
+.strip{display:flex;gap:12px;overflow-x:auto;padding:14px 2px 6px;scroll-snap-type:x mandatory}
+.strip .mini{flex:0 0 208px;background:var(--surface2);border:1px solid var(--line);border-radius:var(--r-in);padding:18px;scroll-snap-align:start}
+.mini .kicker{font-size:11px}.mini b{font-size:var(--t-xl);font-weight:600;letter-spacing:var(--ls-snug);display:block;margin:4px 0}
+.cta{width:100%;background:var(--accent);color:var(--accent-ink);border:0;border-radius:14px;padding:15px;font-weight:600;font-size:var(--t-md);margin-top:16px;cursor:pointer;transition:transform var(--dur) var(--ease),filter var(--dur) var(--ease)}
+.cta:hover{filter:brightness(1.06)}.cta:active{transform:scale(.96)}
+.status{font-size:var(--t-xs);color:var(--text3);margin:10px 0 0;min-height:20px}
+.tabbar{position:fixed;left:0;right:0;bottom:0;background:#100F10;border-top:1px solid var(--line);display:none}
+@media(max-width:720px){.nav{display:none}.tabbar{display:grid;grid-template-columns:repeat(4,1fr);padding-bottom:env(safe-area-inset-bottom)}}
+.tabbar button{background:none;border:0;color:var(--text3);font-size:var(--t-2xs);font-weight:600;letter-spacing:var(--ls-wide);padding:12px 4px 14px;cursor:pointer}
+.tabbar button[aria-current="page"]{color:var(--accent)}
+details.src{margin-top:20px;color:var(--text3);font-size:var(--t-xs)}details.src summary{cursor:pointer;padding:12px 0}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-in">
+<div class="brand"><span class="mark">N</span>Northloop</div>
+<nav class="nav" aria-label="Primary"><button aria-current="page">Overview</button><button data-goto="cards">Cards</button><button data-goto="tx">Activity</button></nav>
+</div></header>
+<main class="wrap">
+<section class="hero" aria-label="Balance">
+<div class="card">
+<div style="display:flex;align-items:center;justify-content:space-between"><span class="kicker">Total balance</span><button class="eye" id="eye" aria-pressed="false" aria-label="Hide balance">Hide</button></div>
+<div class="display num" id="balance">$24,806.12</div>
+<div class="delta num" id="delta">▲ $1,204.30 (5.1%) this month</div>
+<div class="quick" role="group" aria-label="Quick actions">
+<button><b>↗</b>Send</button><button><b>↙</b>Request</button><button><b>+</b>Top up</button><button><b>⇄</b>Swap</button>
+</div>
+</div>
+<div class="card">
+<h2 class="sect">Activity</h2><p class="dek">Orange bars are this week — the IMG-0219 move.</p>
+<div class="range" role="group" aria-label="Time range" id="range"><button aria-pressed="true" data-r="1M">1M</button><button aria-pressed="false" data-r="6M">6M</button><button aria-pressed="false" data-r="1Y">1Y</button></div>
+<div class="bars" id="bars" role="img" aria-label="Monthly activity chart"></div>
+</div>
+</section>
+<section class="grid2">
+<div class="card" id="tx">
+<h2 class="sect">Transactions</h2><p class="dek">Dot + signed amount, grouped. Filter actually filters.</p>
+<div class="chips" role="group" aria-label="Filter" id="fChips"><button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="in">Money in</button><button aria-pressed="false" data-f="out">Money out</button></div>
+<ul class="tx num" id="txList"></ul>
+</div>
+<div class="card" id="cards">
+<h2 class="sect">Cards</h2><p class="dek">Snap-scroll row. One action below.</p>
+<div class="strip">
+<div class="mini"><span class="kicker">Physical ·· 4412</span><b class="num">$8,210.00</b><span class="dek">Active</span></div>
+<div class="mini"><span class="kicker">Virtual ·· 8819</span><b class="num">$2,340.55</b><span class="dek">Online</span></div>
+<div class="mini"><span class="kicker">Vault · BTC</span><b class="num">0.412 BTC</b><span class="dek">≈ $14,255.57</span></div>
+</div>
+<button class="cta" id="move">Move $500 to Vault</button>
+<p class="status" id="msg" role="status">Balance updates in place when you move money.</p>
+</div>
+</section>
+<details class="src"><summary>Evidence (measured, not invented)</summary>
+Structure: one hero number · dark + single amber accent · bottom tabs — IMG-0307 / IMG-0219 / VID-0240. Colours literal palette_detail values. Type scale, tracking, tabular numerals and 160ms press physics from UI Hall tokens + better-ui / emil skills. Terracotta of v1 replaced: amber #F5B544 is the measured accent that survives dark mode.</details>
+</main>
+<nav class="tabbar" aria-label="Mobile"><button aria-current="page">Home</button><button>Cards</button><button>Activity</button><button>More</button></nav>
+<script>
+const TX=[
+{n:"Salary — Northloop Labs",w:"Income · Yesterday",a:4200,k:"in",c:"#4EC98A"},
+{n:"USDC reward",w:"Rewards · Jun 27",a:12.06,k:"in",c:"#4EC98A"},
+{n:"Blue Bottle Coffee",w:"Food · Today 09:41",a:-6.40,k:"out",c:"#F5B544"},
+{n:"MRT top-up",w:"Transport · Yesterday",a:-50,k:"out",c:"#6AA9F5"},
+{n:"0.002 BTC buy",w:"Crypto · Jun 28",a:-132.18,k:"out",c:"#F5B544"}];
+let bal=24806.12,hidden=false,filter="all";
+const list=document.getElementById('txList'),balEl=document.getElementById('balance');
+function money(v){return (v<0?"−$":"$")+Math.abs(v).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});}
+function drawTx(){list.innerHTML="";TX.filter(t=>filter==="all"||t.k===filter).forEach(t=>{
+const li=document.createElement('li');li.innerHTML=`<span class="dot" style="background:${t.c}"></span><span><span class="who">${t.n}</span><div class="when">${t.w}</div></span><span class="amt ${t.a>0?'pos':'neg'}">${t.a>0?'+':''}${money(t.a)}</span>`;list.appendChild(li);});
+if(!list.children.length)list.innerHTML='<li><span class="dek">Nothing here — try another filter.</span></li>';}
+function setBal(v){const from=bal;bal=v;const t0=performance.now(),red=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(red||hidden){balEl.textContent=hidden?"••••••":money(v);return;}
+(function f(t){const p=Math.min(1,(t-t0)/420),e=1-Math.pow(1-p,3);balEl.textContent=money(from+(v-from)*e);if(p<1)requestAnimationFrame(f);})(t0);}
+document.getElementById('fChips').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;document.querySelectorAll('#fChips button').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');filter=b.dataset.f;drawTx();});
+document.getElementById('eye').addEventListener('click',e=>{hidden=!hidden;e.currentTarget.textContent=hidden?"Show":"Hide";e.currentTarget.setAttribute('aria-pressed',String(hidden));balEl.textContent=hidden?"••••••":money(bal);});
+document.getElementById('move').addEventListener('click',e=>{setBal(bal-500);TX.unshift({n:"Vault transfer",w:"Just now",a:-500,k:"out",c:"#F5B544"});drawTx();const m=document.getElementById('msg');m.textContent='Moved $500 — new balance '+money(bal)+'.';e.currentTarget.textContent='Moved ✓';setTimeout(()=>e.currentTarget.textContent='Move $500 to Vault',1600);});
+const BARS={"1M":[34,48,42,55,50,62,58,88,96,78],"6M":[40,36,52,48,60,55,66,58,74,88],"1Y":[28,34,32,44,50,47,58,62,70,88]};
+const bars=document.getElementById('bars');
+function drawBars(k){bars.innerHTML="";BARS[k].forEach((h,i,arr)=>{const b=document.createElement('i');b.style.height="6px";requestAnimationFrame(()=>requestAnimationFrame(()=>b.style.height=h+"%"));if(i>=arr.length-3)b.classList.add('hot');bars.appendChild(b);});}
+document.getElementById('range').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;document.querySelectorAll('#range button').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');drawBars(b.dataset.r);});
+document.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click',()=>document.getElementById(b.dataset.goto).scrollIntoView({behavior:'smooth',block:'start'})));
+drawTx();drawBars('1M');
+</script>
+</body>
+</html>

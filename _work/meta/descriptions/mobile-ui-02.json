@@ -1,0 +1,536 @@
+{
+ "note": "Review pass 2 of the undescribed mobile-app-ui images. Sheets review_02.jpg and review_03.jpg. Written from the processed web images. Palette, dimensions and contrast are measured elsewhere.",
+ "items": {
+  "IMG-0208": {
+   "id": "IMG-0208",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Money app - spending summary with category cards",
+   "description": "A personal-finance home screen. The top card is a deep-green panel carrying the account balance in large numerals over a faint line chart, with a small 'See all' affordance. Beneath it sits a row of three compact category cards, each in its own saturated colour - orange, green, dark - showing a category name and a spend figure. A short transactions list follows, then a bottom tab bar. The design lesson is the colour-coded category row: it converts a dry list of numbers into something scannable by shape and hue alone, and the single dark balance card above gives the screen one clear focal point.",
+   "roles": [
+    "dashboard",
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "fintech",
+    "finance",
+    "balance",
+    "transaction",
+    "category",
+    "chart",
+    "tab-bar"
+   ],
+   "quality": "Clear capture; figures legible."
+  },
+  "IMG-0209": {
+   "id": "IMG-0209",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Money app - payment setup with a progress rail",
+   "description": "A payment-configuration screen showing a vertical progress rail down the left edge, with each completed step marked and the current step highlighted. To the right of each node sits a grouped white card: a selected recipient chip, a linked-account row, a limit row and an amount row, each with a value and a chevron. A green primary button reading 'Continue' is pinned at the bottom. The screen is a strong reference for multi-step setup: the rail makes position in the flow obvious without a separate step counter, and the cards keep each decision visually separate.",
+   "roles": [
+    "form",
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "outlined"
+   ],
+   "tags": [
+    "fintech",
+    "payments",
+    "steps",
+    "cta",
+    "account"
+   ],
+   "quality": "Clear capture; step labels legible."
+  },
+  "IMG-0210": {
+   "id": "IMG-0210",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Banking app - booking confirmation with a lime banner",
+   "description": "A confirmation screen from a banking app. A large lime-green banner occupies the top third with a bold headline confirming a booking and a filled pill button reading 'Add to home screen'. Below it a 'Next steps' block lists three colour-coded rows, each with a small circular icon, a short instruction and a sub-line. The rest of the screen is white. The design point is the banner-as-confirmation: instead of a modal that must be dismissed, success is stated inline at full width and colour, and the follow-up actions sit immediately beneath it in the same reading order.",
+   "roles": [
+    "detail",
+    "notification"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "high-contrast"
+   ],
+   "tags": [
+    "fintech",
+    "banking",
+    "confirmation",
+    "cta",
+    "status",
+    "checklist",
+    "steps"
+   ],
+   "quality": "Clear capture; headline and step rows legible."
+  },
+  "IMG-0215": {
+   "id": "IMG-0215",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Shihab finance - ledger and schedule pair",
+   "description": "Two phone screens presented side by side from a personal-finance app. The left screen is a scrollable ledger: a greeting header, a total with a trend figure, then dated transaction groups each showing a category chip, a merchant name and a signed amount, with the running category totals on the right. The right screen is a schedule view with a month grid at the top and a day's agenda beneath, each row carrying a time, a label and a small badge. The pair is worth studying for how the same data is re-cut twice - by category on one screen and by date on the other - without repeating a single component.",
+   "roles": [
+    "list",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "outlined"
+   ],
+   "tags": [
+    "fintech",
+    "transaction",
+    "calendar",
+    "ledger",
+    "badges",
+    "chips"
+   ],
+   "quality": "Clear capture; both screens legible."
+  },
+  "IMG-0216": {
+   "id": "IMG-0216",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Orbit - dark hero with a wildflower meadow",
+   "description": "A near-black marketing screen for a product called Orbit. The top-left holds a short wordmark and a one-line positioning statement; across the top-right sit three navigation labels (Product, Social, Legal). The bottom two-thirds is a photographic strip of dense wildflowers - pink, blue, orange - running edge to edge with a soft mask that fades it into the black. It is the strongest example in the collection of dark mode used editorially rather than technically: the photograph is the only light source, and every text element sits in the black field above it, so contrast is never in question.",
+   "roles": [
+    "landing-section",
+    "hero",
+    "navigation"
+   ],
+   "style": [
+    "dark-mode",
+    "editorial",
+    "high-contrast"
+   ],
+   "tags": [
+    "photo",
+    "flowers"
+   ],
+   "quality": "Clear capture; wordmark and nav labels legible."
+  },
+  "IMG-0217": {
+   "id": "IMG-0217",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Travel app - 'Rome' destination card over a photo",
+   "description": "A travel destination screen where a tall photograph of a Roman temple with red poppies in the foreground fills the frame. A frosted translucent card floats over the lower third carrying the destination name 'Rome' in a large serif, a small flag and country label, and a short line of copy. Below the card sit two pill buttons. The image is the product here, and the single translucent panel is the only piece of UI over it - a clean demonstration that one well-placed scrim panel can carry all the text a destination needs without dimming the photograph behind it.",
+   "roles": [
+    "detail",
+    "media",
+    "hero"
+   ],
+   "style": [
+    "editorial",
+    "glassmorphism",
+    "bold-typography"
+   ],
+   "tags": [
+    "travel",
+    "photo",
+    "card",
+    "serif",
+    "cta",
+    "destination"
+   ],
+   "quality": "Clear capture; the serif headline is legible."
+  },
+  "IMG-0218": {
+   "id": "IMG-0218",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "TikTok passkey - QR scan prompt on metal",
+   "description": "A minimal passkey-authentication screen. Almost the whole frame is a brushed-metal surface; a single short instruction line sits at the top, and a black QR code is centred with a small TikTok glyph inside it. A 'Cancel' label sits bottom-left and a muted close control bottom-right. There is no other chrome at all. The screen is the clearest example in the set of a single-purpose auth step: one instruction, one object, two ways out, no branding beyond the code itself.",
+   "roles": [
+    "auth"
+   ],
+   "style": [
+    "minimal",
+    "monochrome",
+    "high-contrast"
+   ],
+   "tags": [
+    "qr-code",
+    "authentication",
+    "passkey",
+    "security"
+   ],
+   "quality": "Clear capture; instruction and QR code legible."
+  },
+  "IMG-0219": {
+   "id": "IMG-0219",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Wallet app - light and dark balance views compared",
+   "description": "Two screens from the same wallet app, one in light mode and one in dark, both showing the same account. Each has a total balance figure in very large numerals, a compact bar chart of the month's activity in orange, a row of quick-action pills (Send, Receive, Top up, More) and a short recent-activity list with named counterparties. Because the two are shown together they make the comparison explicit: the layout, spacing and accent are identical, and only the surface colours change, which is what a dark mode should be.",
+   "roles": [
+    "dashboard",
+    "home"
+   ],
+   "style": [
+    "card-based",
+    "rounded",
+    "high-contrast",
+    "dark-mode",
+    "light-mode"
+   ],
+   "tags": [
+    "fintech",
+    "wallet",
+    "balance",
+    "chart",
+    "quick-actions"
+   ],
+   "quality": "Clear capture; both variants legible."
+  },
+  "IMG-0220": {
+   "id": "IMG-0220",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Activity tracker - calendar heat map in two modes",
+   "description": "Two screens showing a contribution-style calendar heat map of tracked activity. The left is light-themed: a month label, a day grid of coloured cells graded by intensity, a legend strip and a few summary rows underneath. The right is the dark variant carrying the same grid plus a floating detail card that appears to show one selected day's entries. The pair demonstrates the heat-map convention applied to personal data: five intensity steps are enough to show rhythm, the legend removes all ambiguity about what a colour means, and the dark version adds a detail card rather than a new page.",
+   "roles": [
+    "dashboard",
+    "list"
+   ],
+   "style": [
+    "data-dense",
+    "card-based",
+    "high-contrast",
+    "dark-mode",
+    "light-mode"
+   ],
+   "tags": [
+    "heat-map",
+    "calendar",
+    "tracker",
+    "chart",
+    "legend"
+   ],
+   "quality": "Clear capture; grid and legend legible."
+  },
+  "IMG-0221": {
+   "id": "IMG-0221",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Reading app - shelf grid beside a quiz card",
+   "description": "Two screens from a book-tracking app. The left shows a browse shelf: a collage of cover thumbnails arranged irregularly, the headline 'Which book is on your mind?', a row of filter chips and a list of titled cards beneath. The right screen is a quiz or recommendation card with a centred question, a large soft illustration and a two-button answer row, all on a warm off-white background. The interesting detail is the collage header - covers are deliberately overlapped and rotated slightly rather than gridded, which signals 'collection' instead of 'catalogue'.",
+   "roles": [
+    "list",
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "playful",
+    "card-based"
+   ],
+   "tags": [
+    "books",
+    "reading",
+    "grid",
+    "quiz",
+    "recommendation",
+    "chips"
+   ],
+   "quality": "Clear capture; both screens legible."
+  },
+  "IMG-0222": {
+   "id": "IMG-0222",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Fitness rings - dark dashboard with vertical bars",
+   "description": "A dark-mode fitness home screen. A greeting and date sit at the top, then three tall rounded progress bars in different colours run vertically beside their labels, each showing a percentage. Below that a row of rounded metric tiles carries small figures for distance, pace and time, and a card offer ('Try 90 days free') closes the screen above the tab bar. The vertical-bar treatment is the notable choice: three bars of equal height but different fills let progress in three unrelated metrics be compared in one glance, which a ring layout cannot do as cleanly.",
+   "roles": [
+    "dashboard",
+    "home"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "rounded"
+   ],
+   "tags": [
+    "fitness",
+    "progress",
+    "chart",
+    "metric-tile",
+    "tab-bar",
+    "streak"
+   ],
+   "quality": "Clear capture; percentages legible."
+  },
+  "IMG-0223": {
+   "id": "IMG-0223",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Fitness app - streak hero with a large numeral",
+   "description": "A dark fitness screen built around one enormous numeral: a count of active days set in a very large weight, with smaller supporting labels above and below it. To the right of the numeral sits a small circular progress ring with a percentage. A labelled card below holds 'Today's Case Plan' and a list of short workout rows, each with a duration and a chevron. The whole screen is black with a single blue-to-violet gradient accent. It is the reference for the single-number hero: one figure carries the screen, everything else is subordinate and much smaller.",
+   "roles": [
+    "dashboard",
+    "home",
+    "hero"
+   ],
+   "style": [
+    "dark-mode",
+    "bold-typography",
+    "gradient-heavy"
+   ],
+   "tags": [
+    "fitness",
+    "streak",
+    "progress",
+    "plan",
+    "numeral"
+   ],
+   "quality": "Clear capture; the hero numeral is legible."
+  },
+  "IMG-0224": {
+   "id": "IMG-0224",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Duolingo-upgrade style - three dark paywall panels",
+   "description": "Three dark phone panels presenting progressively richer versions of the same product story. The first leads with a very large percentage figure and a short claim over a coloured glow, with a bright green call-to-action at the foot. The second replaces the figure with an illustration and a benefit line, keeping the same green button. The third continues the pattern with a different illustration and claim. The set is worth studying as a paywall sequence: the same button, the same footer position and the same dark canvas across three different arguments, so the only thing that changes is the selling point.",
+   "roles": [
+    "pricing",
+    "onboarding"
+   ],
+   "style": [
+    "dark-mode",
+    "playful",
+    "high-contrast"
+   ],
+   "tags": [
+    "paywall",
+    "subscription",
+    "cta"
+   ],
+   "quality": "Clear capture; the panel claims are legible."
+  },
+  "IMG-0225": {
+   "id": "IMG-0225",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Wallet-card app - monochrome card grid",
+   "description": "A dense grid of small card mockups, each showing a compact stack: a small character or logo at the top, a card-like block beneath it, then a short row of labels. The whole sheet is monochrome - off-white, grey and black - with no accent colour anywhere. It reads as an exploration sheet rather than a shipped screen, and is useful precisely because of that: with colour removed, the differences between the layouts are purely structural, so it is easy to see that the cards vary in information order rather than in styling.",
+   "roles": [
+    "list",
+    "media"
+   ],
+   "style": [
+    "monochrome",
+    "minimal",
+    "flat"
+   ],
+   "tags": [
+    "cards",
+    "grid",
+    "exploration",
+    "wallet"
+   ],
+   "quality": "Clear capture; card structure legible despite small size."
+  },
+  "IMG-0226": {
+   "id": "IMG-0226",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Fitness vs running - two summary screens compared",
+   "description": "Two phone screens compared directly. The left is a sleep or general-health summary dominated by a large circular ring with a value in the centre, a small legend and a row of stat pills beneath. The right is a run summary: a big distance numeral, a route map with a coloured trace, then a row of metric tiles for duration and pace. Showing them together makes the contrast clear - a ring suits a single bounded score, while a map plus tiles suits an activity with a place and a route.",
+   "roles": [
+    "dashboard",
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "fitness",
+    "health",
+    "running-route",
+    "map",
+    "progress",
+    "metric-tile",
+    "comparison"
+   ],
+   "quality": "Clear capture; both summaries legible."
+  },
+  "IMG-0227": {
+   "id": "IMG-0227",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "News app - streak banner and reading cards",
+   "description": "A light news-screen from a reading app. The header is a pale peach gradient with a congratulatory line about a reading streak and a small fire glyph; below sits a card containing a progress note over a thin bar. The body is a two-card row - a large '128 News' tile with a source row, and a smaller '12 Folkes' tile - followed by a short list of articles with thumbnails and a tab bar. The screen is a good example of gamification kept secondary: the streak is a single line of colour at the top rather than a modal or a badge on every row.",
+   "roles": [
+    "feed",
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "gradient-heavy"
+   ],
+   "tags": [
+    "news",
+    "reading",
+    "streak",
+    "progress",
+    "card",
+    "tab-bar"
+   ],
+   "quality": "Clear capture; headline and card labels legible."
+  },
+  "IMG-0228": {
+   "id": "IMG-0228",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Delivery app - order tracking with a photo card",
+   "description": "A white delivery-tracking screen. The header carries an order reference and a title line. The centre is a single wide photo card showing the destination building, with a location pin glyph overlaid and a 'Find your next home' style prompt beneath. Below it a grouped list holds the delivery address and an order reference row, each with an icon and a value. The screen's one notable decision is using an actual photograph of the destination as the proof-of-place, which removes the ambiguity that a pin on a map often leaves.",
+   "roles": [
+    "detail",
+    "profile",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "delivery",
+    "tracking",
+    "photo",
+    "location",
+    "address",
+    "map"
+   ],
+   "quality": "Clear capture; address rows legible."
+  },
+  "IMG-0230": {
+   "id": "IMG-0230",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Podcast app - episode cards with chapter art",
+   "description": "Three dark phone screens from a podcast or audio app. Each centres on a large square episode artwork with a title over it and a play control, and beneath sit rows for chapters or related items, each row carrying a small thumbnail and a duration. The header area uses a soft colour wash drawn from the artwork itself. The interesting technique is deriving the page's ambient colour from the artwork: it ties the chrome to the content and means every episode looks bespoke without any extra design work.",
+   "roles": [
+    "media",
+    "detail"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based",
+    "gradient-heavy"
+   ],
+   "tags": [
+    "podcast",
+    "audio",
+    "player",
+    "artwork",
+    "chapter"
+   ],
+   "quality": "Clear capture; episode titles legible."
+  },
+  "IMG-0231": {
+   "id": "IMG-0231",
+   "category": "mobile-app-ui",
+   "type": "reference",
+   "title": "Iris - pastel sky streak illustration",
+   "description": "A full-bleed illustrated screen, entirely painterly: a soft blue and cream sky with a low sun, and a curving arc of small white flowers or petals rising through the frame. There is no interface on it at all. Filed as a reference because it is the cleanest colour study in the collection - a narrow pastel ramp from cool blue through cream to warm highlight, with the arc giving the composition a direction. Useful as a palette source for a calm or reflective screen.",
+   "roles": [
+    "hero",
+    "media"
+   ],
+   "style": [
+    "illustration-led",
+    "gradient-heavy",
+    "soft"
+   ],
+   "tags": [
+    "pastel",
+    "gradient",
+    "sky",
+    "atmospheric"
+   ],
+   "quality": "Clear capture; a pure illustration with no text."
+  },
+  "IMG-0232": {
+   "id": "IMG-0232",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Automotive app - black screens on a lavender field",
+   "description": "A presentation image in which two phone screens sit on a flat lavender background. The left screen is almost entirely black with a small icon centred; the right carries a dark map view with a route drawn and a small control cluster at the bottom. Both are minimal dark UIs with very little text. The value here is the staging rather than the screens: a coloured field behind a black mockup is the cheapest way to make a dark interface look intentional, because the flat colour gives the black an edge to read against.",
+   "roles": [
+    "dashboard",
+    "navigation"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "flat"
+   ],
+   "tags": [
+    "automotive",
+    "map"
+   ],
+   "quality": "Clear capture; the two screens are legible."
+  },
+  "IMG-0233": {
+   "id": "IMG-0233",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Luma - four-screen product flow montage",
+   "description": "A montage of four phone screens from an app called Luma, arranged as a two-by-two grid of devices against a pale blue background, with a few floating text callouts around them. The screens progress from a discovery view with a grid of small tiles, through a detail view with a large image and a title block, to a booking panel with date and attendee rows, and finally a confirmation with a check and a summary. It is the clearest 'flow montage' in the collection: four steps are shown at once so the shape of the whole journey is readable in a single glance, which is exactly what a product-market image needs to do.",
+   "roles": [
+    "onboarding",
+    "landing-section"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "booking",
+    "grid"
+   ],
+   "quality": "Clear capture; the four screens are distinguishable."
+  },
+  "IMG-0234": {
+   "id": "IMG-0234",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Education app - course flow montage in green",
+   "description": "A montage of phone screens from a learning app, staged on a soft green-to-cream gradient. The screens step through a course catalogue with card rows, a lesson detail with a progress bar and a video thumbnail, and a quiz with selectable answer rows. Floating handwritten-style labels annotate some of the steps. The montage is useful because the screens share one restrained palette and one card shape, so even at mockup scale the sequence reads as a single product rather than four unrelated shots.",
+   "roles": [
+    "onboarding",
+    "landing-section"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "education",
+    "course",
+    "quiz"
+   ],
+   "quality": "Clear capture; the sequence is readable."
+  }
+ }
+}

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Drift — sleep is a rhythm</title>
+<style>
+@font-face{font-family:Poppins;font-weight:400;font-display:swap;src:url(../../ui-hall/assets/fonts/poppins/poppins-400-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:Poppins;font-weight:500;font-display:swap;src:url(../../ui-hall/assets/fonts/poppins/poppins-500-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:Poppins;font-weight:600;font-display:swap;src:url(../../ui-hall/assets/fonts/poppins/poppins-600-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:Poppins;font-weight:700;font-display:swap;src:url(../../ui-hall/assets/fonts/poppins/poppins-700-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+/* Revamp — measured VID-0236 (sleep cards #F7F8F9/#C7E3F0/#212229) + IMG-0161 (Grove green #18544E, peach #F4C98D) + VID-0197 (cream #F6EBDF).
+   One job per screen. Two type levels per block. No fake controls. */
+:root{--bg:#F7F8F9;--cream:#F6EBDF;--surface:#FFF;--line:#E7E4DE;--line2:#D8D4C9;
+--ink:#14141A;--muted:#5C5C68;--faint:#8B8B96;--accent:#18544E;--accent-ink:#FFF;
+--blue:#C7E3F0;--blue-deep:#2E5A78;--peach:#F4C98D;
+--t-2xs:.6875rem;--t-xs:.75rem;--t-sm:.8125rem;--t-md:.875rem;--t-lg:1rem;--t-xl:1.25rem;--t-2xl:1.625rem;--t-3xl:2.125rem;
+--ls-tight:-.012em;--ls-snug:-.005em;--ls-wide:.04em;--ls-wider:.075em;
+--ease:cubic-bezier(.2,0,0,1);--dur:160ms;--r:20px;--max:1060px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Poppins,system-ui,"Segoe UI",sans-serif;font-size:var(--t-md);line-height:1.65;-webkit-font-smoothing:antialiased}
+.num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
+button{font:inherit}:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:10px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+/* topbar */
+.top{position:sticky;top:0;z-index:10;background:rgba(246,235,223,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top-in{max-width:var(--max);margin:0 auto;height:60px;padding:0 20px;display:flex;align-items:center;gap:20px}
+.wordmark{font-weight:700;font-size:var(--t-lg);letter-spacing:var(--ls-snug);display:flex;align-items:center;gap:9px}
+.wordmark i{font-style:normal;width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:14px}
+.links{margin-left:auto;display:flex;gap:4px}
+.links a{color:var(--muted);text-decoration:none;font-size:var(--t-sm);font-weight:500;padding:10px 14px;border-radius:10px;min-height:44px;display:inline-flex;align-items:center}
+.links a:hover{color:var(--ink)}
+@media(max-width:640px){.links{display:none}}
+.cta-sm{background:var(--accent);color:var(--accent-ink);border:0;border-radius:999px;padding:0 22px;height:44px;font-weight:600;font-size:var(--t-sm);cursor:pointer;transition:transform var(--dur) var(--ease),filter var(--dur) var(--ease);white-space:nowrap}
+.cta-sm:hover{filter:brightness(1.07)}.cta-sm:active{transform:scale(.96)}
+/* hero */
+.hero{background:var(--cream);border-bottom:1px solid var(--line)}
+.hero-in{max-width:var(--max);margin:0 auto;padding:64px 20px 52px;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+@media(max-width:900px){.hero-in{grid-template-columns:1fr;padding:44px 20px 40px}}
+.kicker{font-size:var(--t-2xs);font-weight:600;letter-spacing:var(--ls-wider);text-transform:uppercase;color:var(--accent)}
+h1{font-size:var(--t-3xl);font-weight:600;letter-spacing:var(--ls-tight);line-height:1.14;margin:10px 0}
+@media(min-width:700px){h1{font-size:3.1rem;line-height:1.06}}
+.lede{color:#3D4653;font-size:var(--t-lg);margin:0;max-width:42ch}
+.cta-row{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap;align-items:center}
+.btn{border-radius:999px;height:52px;padding:0 30px;border:0;cursor:pointer;font-weight:600;font-size:var(--t-md);display:inline-flex;align-items:center;transition:transform var(--dur) var(--ease),filter var(--dur) var(--ease);text-decoration:none}
+.btn:active{transform:scale(.96)}.btn-p{background:var(--accent);color:var(--accent-ink)}.btn-p:hover{filter:brightness(1.07)}
+.btn-s{background:transparent;border:1.5px solid var(--accent);color:var(--accent)}
+.proof{font-size:var(--t-xs);color:var(--muted);margin-top:14px}
+/* night card — the one real product surface */
+.night{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:26px;box-shadow:0 24px 60px -30px rgba(24,84,78,.35);outline:1px solid rgba(0,0,0,.05)}
+.night-top{display:flex;align-items:baseline;justify-content:space-between}
+.score{font-size:3.4rem;font-weight:600;letter-spacing:var(--ls-tight);line-height:1}
+.times{display:flex;justify-content:space-between;font-size:var(--t-sm);margin-top:6px}
+.times b{font-weight:600}.times span{color:var(--muted);display:block;font-size:var(--t-xs)}
+.hypno{margin:16px 0 6px;display:block;width:100%;height:96px}
+.hypno .grid{stroke:var(--line);stroke-width:1}
+.stage{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.stage span{font-size:var(--t-2xs);font-weight:500;color:var(--muted);display:inline-flex;align-items:center;gap:6px}
+.stage i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.pill{display:inline-block;background:#EAF3F7;border:1px solid #D5E5EC;color:var(--blue-deep);border-radius:999px;padding:6px 14px;font-size:var(--t-xs);font-weight:600;margin-top:12px}
+/* sections */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px 100px}
+h2{font-size:var(--t-xl);font-weight:600;letter-spacing:var(--ls-snug);line-height:1.4;margin:48px 0 2px}
+.dek{color:var(--muted);font-size:var(--t-sm);margin:0;max-width:62ch}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+@media(max-width:760px){.cards3{grid-template-columns:1fr}}
+.metric{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.metric b{font-size:var(--t-2xl);font-weight:600;letter-spacing:var(--ls-snug);display:block;line-height:1.2}
+.metric .lab{font-size:var(--t-sm);font-weight:600;margin-top:2px}
+.metric .sub{font-size:var(--t-xs);color:var(--muted)}
+.seg{display:inline-flex;background:#ECE9E1;border-radius:999px;padding:4px;margin-top:16px}
+.seg button{border:0;background:none;border-radius:999px;height:40px;padding:0 24px;font-size:var(--t-xs);font-weight:600;letter-spacing:var(--ls-wide);color:var(--muted);cursor:pointer;transition:all var(--dur) var(--ease);white-space:nowrap}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 4px rgba(0,0,0,.15)}
+.chart{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px 22px 14px;margin-top:12px}
+.bars{display:flex;align-items:flex-end;gap:10px;height:170px}
+.bar{flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;min-width:0}
+.bar i{width:100%;max-width:44px;border-radius:8px;background:var(--blue);min-height:8px;transition:height 320ms var(--ease)}
+.bar.best i{background:var(--accent)}
+.bar span{font-size:var(--t-2xs);font-weight:500;color:var(--muted);white-space:nowrap}
+.bar b{font-size:var(--t-2xs);font-weight:600}
+.howto{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+@media(max-width:760px){.howto{grid-template-columns:1fr}}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.step .n{font-size:var(--t-2xs);font-weight:700;letter-spacing:var(--ls-wider);color:var(--accent)}
+.step h3{margin:6px 0 4px;font-size:var(--t-lg);font-weight:600;letter-spacing:var(--ls-snug)}
+.step p{margin:0;font-size:var(--t-sm);color:var(--muted)}
+.remind{margin-top:12px;background:var(--ink);color:#F4F2EC;border-radius:var(--r);padding:26px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.remind h3{margin:0;font-size:var(--t-lg);font-weight:600}
+.remind p{margin:2px 0 0;font-size:var(--t-sm);color:#B9B6AC}
+.switch{margin-left:auto;display:inline-flex;align-items:center;gap:12px;background:none;border:0;cursor:pointer;color:inherit;padding:8px;min-height:48px}
+.track{width:56px;height:32px;border-radius:999px;background:#3A3A42;position:relative;transition:background var(--dur) var(--ease);flex:none}
+.track::after{content:"";position:absolute;top:4px;left:4px;width:24px;height:24px;border-radius:50%;background:#fff;transition:transform var(--dur) var(--ease)}
+.switch[aria-checked="true"] .track{background:var(--accent)}
+.switch[aria-checked="true"] .track::after{transform:translateX(24px)}
+footer{margin-top:40px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:var(--t-xs)}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-in">
+<div class="wordmark"><i>☾</i>Drift</div>
+<nav class="links" aria-label="Site"><a href="#tonight">Tonight</a><a href="#rhythm">Rhythm</a><a href="#setup">Setup</a></nav>
+<button class="cta-sm" data-scroll="#setup">Begin setup</button>
+</div></header>
+<div class="hero"><div class="hero-in">
+<div>
+<div class="kicker">Sleep tracker · no wearable · Android + iOS</div>
+<h1>Sleep is a rhythm, not a score to win.</h1>
+<p class="lede">Phone on the mattress. Drift finds your rhythm in a week, then protects it with one quiet reminder.</p>
+<div class="cta-row"><button class="btn btn-p" data-scroll="#setup">Start sleeping better</button><a class="btn btn-s" href="#rhythm">See a real week</a></div>
+<p class="proof num">4.8 ★ · 40,000 nights tracked · regularity beats duration</p>
+</div>
+<article class="night" aria-label="Last night">
+<div class="night-top"><span class="kicker">Last night</span><span class="kicker num" style="color:var(--faint)">Score 92 · Excellent</span></div>
+<div class="score num" id="score">92</div>
+<div class="times num"><span><b>22:41</b><span>Lights out</span></span><span style="text-align:center"><b>7h 48m</b><span>Asleep</span></span><span style="text-align:right"><b>06:29</b><span>Wake</span></span></div>
+<svg class="hypno" viewBox="0 0 400 96" role="img" aria-label="Sleep stages through the night: deep early, REM late">
+<line class="grid" x1="0" y1="24" x2="400" y2="24"/><line class="grid" x1="0" y1="48" x2="400" y2="48"/><line class="grid" x1="0" y1="72" x2="400" y2="72"/>
+<path d="M0,72 L50,72 L60,48 L110,48 L120,72 L170,72 L180,24 L230,24 L240,48 L290,48 L300,24 L350,24 L360,48 L400,48" fill="none" stroke="#18544E" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="350" cy="24" r="5" fill="#18544E"/>
+</svg>
+<div class="stage"><span><i style="background:#18544E"></i>Deep</span><span><i style="background:#5E9A93"></i>Core</span><span><i style="background:#C7E3F0"></i>REM</span><span><i style="background:#F4C98D"></i>Awake</span></div>
+<span class="pill num">Consistent ±18 min · no caffeine after 2pm ✓</span>
+</article>
+</div></div>
+<main class="wrap">
+<section id="tonight"><h2>Tonight, in three numbers</h2><p class="dek">Equal weight, one label each. Nothing to tap — these are read, not operated.</p>
+<div class="cards3 num">
+<div class="metric"><b>7h 48m</b><div class="lab">Time asleep</div><div class="sub">Goal 7h 30m · +18 min</div></div>
+<div class="metric"><b>94%</b><div class="lab">Consistency</div><div class="sub">Bedtime variance ±18 min</div></div>
+<div class="metric"><b>1h 32m</b><div class="lab">Deep + REM</div><div class="sub">Restorative share 20%</div></div>
+</div></section>
+<section id="rhythm"><h2>Your rhythm</h2><p class="dek">Friday is the anchor. Switch ranges — the chart re-draws, nothing else moves.</p>
+<div class="seg num" role="group" aria-label="Range" id="seg"><button aria-pressed="true" data-r="week">Week</button><button aria-pressed="false" data-r="month">Month</button></div>
+<div class="chart"><div class="bars num" id="bars"></div><p class="dek" id="chartNote" role="status" style="margin-top:10px">7 nights · avg 7h 24m · best Fri 8h 05m</p></div></section>
+<section id="setup"><h2>Setup in three steps</h2><p class="dek">One idea per step. Permission is primed here, requested by the OS only at the end.</p>
+<div class="howto">
+<div class="step"><div class="n">01</div><h3>Track sleep</h3><p>Phone on the mattress, nothing to wear. Headline kept from VID-0236 store card.</p></div>
+<div class="step"><div class="n">02</div><h3>Learn why</h3><p>Regularity beats duration. Two lines, so it survives translation.</p></div>
+<div class="step"><div class="n">03</div><h3>One reminder</h3><p>A single bedtime nudge below. No account, no survey, no tour.</p></div>
+</div>
+<div class="remind"><div><h3>Bedtime reminder</h3><p class="num" id="remStatus">Off — turn it on for 22:30.</p></div>
+<button class="switch" id="rem" role="switch" aria-checked="false" aria-label="Bedtime reminder"><span class="track"></span><span style="font-size:var(--t-sm);font-weight:600" id="remLabel">Off</span></button></div></section>
+<footer><details><summary style="cursor:pointer;padding:10px 0">Evidence — measured, not invented</summary>Cream #F6EBDF / blue #C7E3F0 / ink #212229 from VID-0236 · green #18544E + peach #F4C98D from IMG-0161 Grove · layout: illustration-led cover → metric grid → flow strip (PATTERN_DEFS). Green-on-white ≈ 8.2:1, AA body. What v2 got wrong and v3 removed: tappable metrics driving a fake score, dual step controllers, letter-only chart days, contradictory empty state.</details></footer>
+</main>
+<script>
+document.querySelectorAll('[data-scroll]').forEach(b=>b.addEventListener('click',()=>document.querySelector(b.dataset.scroll).scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})));
+// count-up once on load, never again
+(function(){const el=document.getElementById('score'),red=matchMedia('(prefers-reduced-motion: reduce)').matches;if(red)return;const t0=performance.now();(function f(t){const p=Math.min(1,(t-t0)/700);el.textContent=Math.round(92*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f);})(t0);})();
+const DATA={week:[["Mon","7h10"],["Tue","7h42"],["Wed","6h58"],["Thu","7h36"],["Fri","8h05"],["Sat","7h50"],["Sun","6h30"]],month:[["W1","7h12"],["W2","7h31"],["W3","7h44"],["W4","7h28"]]};
+const H={week:[66,76,58,74,100,80,52],month:[62,74,84,68]};
+const bars=document.getElementById('bars'),note=document.getElementById('chartNote');
+function draw(k){bars.innerHTML="";DATA[k].forEach((d,i)=>{const w=document.createElement('div');w.className='bar'+(d[1]==="8h05"||d[1]==="7h44"?' best':'');w.innerHTML=`<b>${d[1]}</b><i style="height:8px"></i><span>${d[0]}</span>`;bars.appendChild(w);requestAnimationFrame(()=>requestAnimationFrame(()=>w.querySelector('i').style.height=H[k][i]+'px'));});
+note.textContent=k==='week'?'7 nights · avg 7h 24m · best Fri 8h 05m':'4 weeks · avg 7h 29m · best W3 7h 44m';}
+document.getElementById('seg').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;document.querySelectorAll('#seg button').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');draw(b.dataset.r);});
+draw('week');
+document.getElementById('rem').addEventListener('click',e=>{const b=e.currentTarget,v=b.getAttribute('aria-checked')!=='true';b.setAttribute('aria-checked',String(v));document.getElementById('remLabel').textContent=v?'On':'Off';document.getElementById('remStatus').textContent=v?'On · every night 22:30. The OS will ask once.':'Off — turn it on for 22:30.';});
+</script>
+</body>
+</html>

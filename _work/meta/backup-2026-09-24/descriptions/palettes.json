@@ -1,0 +1,178 @@
+{
+ "batch": "palettes",
+ "note": "The named two-tone palette cards. Every hex value here is printed on the card itself, so these are read directly rather than measured. They are the most immediately reusable artefacts in the collection: ten complete two-colour schemes with designer-given names.",
+ "items": [
+  {
+   "id": "IMG-0055",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Raspberry Red / Deep Space Blue",
+   "description": "A vertical two-band colour card. Top band is a saturated pink-red (#EE005A) with the label RASPBERRY RED and its hex printed beneath in dark ink. Bottom band is a near-black navy (#012641) carrying DEEP SPACE BLUE in the same pink-red as the upper band. The labels are set in a heavy geometric sans, all caps, centred. The card demonstrates a deliberate cross-reading: each name is printed in the *other* colour of the pair, so the card teaches itself as a contrast specimen. High-energy accent against a dark anchor - the classic dark-UI-plus-one-hot-accent move.",
+   "roles": [],
+   "style": [
+    "high-contrast",
+    "monochrome",
+    "bold-typography"
+   ],
+   "tags": [
+    "vibrant",
+    "dark-ui"
+   ],
+   "quality": "Clean capture, all text legible. Hex values read directly from the card, not inferred."
+  },
+  {
+   "id": "IMG-0056",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Shadow Grey / Sandy Clay",
+   "description": "Two-band colour card. Upper band is a neutral charcoal (#272727) labelled SHADOW GREY in warm tan; lower band is a soft desaturated camel (#D4AA7D) labelled SANDY CLAY in dark grey. Warm neutral against cool neutral - a pairing for editorial or wellness surfaces where the accent should feel tactile rather than loud.",
+   "roles": [],
+   "style": [
+    "minimal",
+    "monochrome"
+   ],
+   "tags": [
+    "earth-tones"
+   ],
+   "quality": "Clean capture, hex values legible."
+  },
+  {
+   "id": "IMG-0057",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Electric Rose / Chartreuse",
+   "description": "Two-band colour card with the most confrontational pairing in the set. Upper band is hot magenta (#FE00AE) labelled ELECTRIC ROSE in acid yellow-green; lower band is near-neon chartreuse (#C1FE1A) labelled CHARTREUSE in magenta. Maximum simultaneous contrast, both bands fully saturated. Suited to music, nightlife or youth-fitness products that want to feel synthetic on purpose.",
+   "roles": [],
+   "style": [
+    "high-contrast",
+    "playful",
+    "bold-typography"
+   ],
+   "tags": [
+    "neon",
+    "vibrant"
+   ],
+   "quality": "Clean capture, hex values legible."
+  },
+  {
+   "id": "IMG-0058",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Lime Cream / Vintage Grape",
+   "description": "Two-band colour card. Upper band is a pale acidic lime (#DDEA78) labelled LIME CREAM in deep plum; lower band is a muted aubergine-grey (#433455) labelled VINTAGE GRAPE in lime. A softer, more retro-feeling version of the raw neon pairing - the same hue axis, dropped in saturation so it can carry more surface area.",
+   "roles": [],
+   "style": [
+    "retro",
+    "monochrome"
+   ],
+   "tags": [
+    "pastel"
+   ],
+   "quality": "Clean capture, hex values legible."
+  },
+  {
+   "id": "IMG-0059",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Celadon / Chocolate Plum",
+   "description": "Two-band colour card. Upper band is a pale desaturated sage (#A8D3A8) labelled CELADON in dark brown; lower band is a warm mid-brown (#553832) labelled CHOCOLATE PLUM in pale sage. An organic, food-and-nature palette - the green reads as ingredient, the brown as soil or roast.",
+   "roles": [],
+   "style": [
+    "minimal",
+    "monochrome"
+   ],
+   "tags": [
+    "earth-tones",
+    "food"
+   ],
+   "quality": "Clean capture, hex values legible."
+  },
+  {
+   "id": "IMG-0060",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Cherry Blossom / Deep Twilight",
+   "description": "Two-band colour card. Upper band is a soft candy pink (#F9A8B8) labelled CHERRY BLOSSOM in deep indigo; lower band is a saturated dark indigo (#1A1265) labelled DEEP TWILIGHT in pink. The pair reads as dusk: warm light above, cold depth below. Widely adaptable - the indigo is dark enough to be a page background while the pink carries emphasis.",
+   "roles": [],
+   "style": [
+    "monochrome",
+    "soft-shadow"
+   ],
+   "tags": [
+    "pastel",
+    "dark-ui"
+   ],
+   "quality": "Clean capture, hex values legible."
+  },
+  {
+   "id": "IMG-0061",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Coffee Bean / Morning Butter",
+   "description": "Two-band colour card. Upper band is a very dark warm brown, almost black, (#20130D) labelled COFFEE BEAN in pale gold; lower band is a soft butter yellow (#F3D98F) labelled MORNING BUTTER in dark brown. The single most product-ready pair in the set: dark enough for dark mode, warm enough to avoid the cold-blue corporate default.",
+   "roles": [],
+   "style": [
+    "monochrome",
+    "high-contrast"
+   ],
+   "tags": [
+    "earth-tones",
+    "food",
+    "dark-ui"
+   ],
+   "quality": "Clean capture, hex values legible."
+  },
+  {
+   "id": "IMG-0062",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Regal Navy / Lemon Chiffon",
+   "description": "Two-band colour card. Upper band is a confident mid navy (#0D3B66) labelled REGAL NAVY in pale cream; lower band is a near-white lemon (#FAF0CA) labelled LEMON CHIFFON in navy. A reassuring, trustworthy pairing - the navy carries authority, the chiffon keeps it from feeling institutional. Immediately usable for finance, legal or education.",
+   "roles": [],
+   "style": [
+    "corporate",
+    "monochrome"
+   ],
+   "tags": [
+    "pastel"
+   ],
+   "quality": "Clean capture, hex values legible."
+  },
+  {
+   "id": "IMG-0063",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Espresso / Peony",
+   "description": "Two-band colour card. Upper band is a rich dark cocoa (#3E2723) labelled ESPRESSO in pink; lower band is a soft blush pink (#F4C9D6) labelled PEONY in dark brown. Warm dark against cool light - the same structural move as Coffee Bean / Morning Butter but with the accent rotated from yellow to pink.",
+   "roles": [],
+   "style": [
+    "monochrome",
+    "high-contrast"
+   ],
+   "tags": [
+    "pastel",
+    "earth-tones",
+    "dark-ui"
+   ],
+   "quality": "Clean capture, hex values legible."
+  },
+  {
+   "id": "IMG-0064",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Deep Mocha / Powder Petal",
+   "description": "Two-band colour card. Upper band is a dark warm taupe (#3D2E2B) labelled DEEP MOCHA in pale cream; lower band is an off-white blush (#E1D0C9) labelled POWDER PETAL in dark brown. The most muted and 'quiet luxury' of the ten - both bands sit close in value, so the pairing is about texture and warmth rather than contrast.",
+   "roles": [],
+   "style": [
+    "luxury",
+    "minimal",
+    "monochrome"
+   ],
+   "tags": [
+    "earth-tones",
+    "pastel"
+   ],
+   "quality": "Clean capture, hex values legible."
+  }
+ ]
+}

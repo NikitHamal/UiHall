@@ -1,0 +1,607 @@
+{
+ "note": "Review pass 11 of the undescribed mobile-app-ui images. Sheets review_14.jpg and review_15.jpg. Written from the processed web images. Palette, dimensions and contrast are measured elsewhere, not asserted here.",
+ "items": {
+  "IMG-0427": {
+   "id": "IMG-0427",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Dark browse-by-mood grid over a developer screenshot",
+   "description": "A wide promotional composition on a near-black ground. Across the upper two thirds, a grid of small square tiles shows paired app screens or rounded gradient thumbnails - mauve, sand, charcoal, pale grey - each tile sitting inside its own thin frame so the wall reads as a catalogue. Small labels sit at the top left and right corners. In the lower portion, a large glossy screenshot of a desktop editor with a device frame is layered on top, its own light surfaces contrasting hard with the black ground. The image is a marketing board: many possibilities at the top, one concrete tool at the bottom.",
+   "roles": [
+    "hero",
+    "editor"
+   ],
+   "style": [
+    "dark-mode",
+    "dense-content",
+    "gradient"
+   ],
+   "tags": [
+    "gradient",
+    "grid",
+    "tiles",
+    "promo",
+    "multi-panel",
+    "catalogue"
+   ],
+   "quality": "Clear capture; the tile grid is legible, corner labels small."
+  },
+  "IMG-0428": {
+   "id": "IMG-0428",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Hand-held finance home with a large pale figure",
+   "description": "A photograph of a hand holding a phone in a bright interior with soft green foliage behind it. The phone is angled and lit from the front, and the screen shows a light finance home: a very large pale-gold figure - a headline monetary total - sitting inside a rounded card that fills the upper half, with a small label above it and a compact row of controls beneath. Below the card, a dense list of transaction rows with small coloured badges runs down the screen. The large numeral inside one big card is the app's whole identity, and the photograph simply gives it a context.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "photographic"
+   ],
+   "tags": [
+    "fintech",
+    "numeral",
+    "card",
+    "hand",
+    "balance",
+    "transaction",
+    "photographic"
+   ],
+   "quality": "Sharp capture; the headline figure and row labels are legible."
+  },
+  "IMG-0429": {
+   "id": "IMG-0429",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Install-prompt screen staged on a desk with a laptop",
+   "description": "A photograph of a phone propped upright on a desk in front of a laptop, the laptop screen out of focus behind. The phone shows a bright blue-and-white screen with a rendered app icon centred and a heading above a pair of buttons - a solid primary and a quieter secondary. The bottom third of the composition is the empty desk and the phone's own reflection, which gives the shot its product-photography feel. The image works as an install or first-run screen presented as a real moment rather than a flat export.",
+   "roles": [
+    "hero",
+    "onboarding"
+   ],
+   "style": [
+    "bold-typography",
+    "photographic",
+    "rounded"
+   ],
+   "tags": [
+    "install",
+    "photographic",
+    "desk",
+    "device-frame",
+    "call-to-action",
+    "banner"
+   ],
+   "quality": "Clear capture; the app name and button labels are legible."
+  },
+  "IMG-0430": {
+   "id": "IMG-0430",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Headline typography over a laptop-and-phone product shot",
+   "description": "A marketing frame with a deep blue ground. Across the top, a large display line runs left to right - a promotional claim about building and shipping faster. Below it, a phone is propped on a dark laptop keyboard, the phone's screen a pale wireframe or document view with a light grey placeholder layout. The blue headline, the dark hardware and the pale screen form three clean bands. It is a typical developer-tool advertisement: one big claim, one honest product shot, no interface chrome.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "bold-typography",
+    "minimal",
+    "photographic"
+   ],
+   "tags": [
+    "promo",
+    "headline",
+    "photographic",
+    "developer",
+    "laptop",
+    "wireframe"
+   ],
+   "quality": "Clear capture; the headline is legible, the screen content is deliberately abstract."
+  },
+  "IMG-0431": {
+   "id": "IMG-0431",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Phone on a warm desk showing a portrait feed",
+   "description": "A photograph of a phone held low over a wooden desk, lit warmly from the left. The screen shows a dark social feed: a rounded post card with a photographic portrait and an overlaid caption block, beneath a header row and above a reaction row. The image's composition is loose and real - the phone is the subject, the desk and keyboard its setting - which suits a feed whose product is other people's pictures rather than its own interface.",
+   "roles": [
+    "hero",
+    "feed"
+   ],
+   "style": [
+    "dark-mode",
+    "photographic",
+    "rounded"
+   ],
+   "tags": [
+    "social",
+    "photographic",
+    "portrait",
+    "reaction",
+    "caption",
+    "card"
+   ],
+   "quality": "Clear capture; the caption text is small but legible."
+  },
+  "IMG-0432": {
+   "id": "IMG-0432",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Light finance portfolio with a large balance and token rows",
+   "description": "A white screen opening with an identity row - a small avatar, a greeting, a pair of icon controls on the trailing edge. Below it sits a very large black figure, the portfolio balance, with a small green change indicator beside it and a sparkline underneath. A row of icon-and-label shortcut tiles follows, then a list of holdings: each row has a small circular token badge in a distinct hue, a name with a ticker beneath, a right-aligned value and a small change figure in green or red. The screen is bright and orderly, and the token badges are the only colour on it.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "balance",
+    "crypto",
+    "fintech",
+    "icon-button",
+    "numeral",
+    "portfolio",
+    "sparkline",
+    "token",
+    "trading"
+   ],
+   "quality": "Clear capture; figures, tickers and percentages are legible."
+  },
+  "IMG-0433": {
+   "id": "IMG-0433",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Dark finance portfolio, the night-mode sibling",
+   "description": "The dark counterpart to the light finance portfolio: the same information architecture on black. An identity row with an avatar and greeting, a large white balance figure with a violet change pill and a sparkline, a pair of secondary lines, then a row of icon shortcuts and the same holdings list - circular token badges, name and ticker, right-aligned value and change. The token badges now read as the only saturated objects against the black. Shown beside its light twin it is the cleanest possible demonstration of a dual-theme system.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "crypto",
+    "fintech",
+    "icon-button",
+    "numeral",
+    "portfolio",
+    "sparkline",
+    "token",
+    "trading"
+   ],
+   "quality": "Clear capture; figures and tickers are legible."
+  },
+  "IMG-0434": {
+   "id": "IMG-0434",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "Two-step token transfer with a green confirm sheet",
+   "description": "Two light screens on a grey ground. The left is a transfer form: a header, a large balance block, a pair of paired input rows - one for the amount with a unit toggle, one for an address - and a wide green button at the foot. The right is the confirmation sheet that follows: a summary card listing the recipient, the network and the amount as labelled rows, with a green submit button beneath. Read together they show the two-beat pattern for irreversible money actions: collect, then restate everything on one card before the commit.",
+   "roles": [
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "confirmation",
+    "crypto",
+    "fintech",
+    "green",
+    "input",
+    "multi-panel",
+    "summary",
+    "transfer"
+   ],
+   "quality": "Clear capture; field labels and the review rows are legible."
+  },
+  "IMG-0435": {
+   "id": "IMG-0435",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Property booking detail with a photographic hero and a blue call to action",
+   "description": "A light screen with a back chevron header, then a title and a location line. The upper half is a photographic hero of a pale stucco house with a red-tiled roof against a blue sky, and a row of small circular controls floats over its corner. Below the image, a bold price line sits with a small secondary label, then a description block in dimmed text, and a 'Location' label above a map crop. A wide blue button occupies the foot of the screen. The hierarchy is deliberately conventional: picture, price, words, map, commit.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "photographic",
+    "rounded"
+   ],
+   "tags": [
+    "booking",
+    "call-to-action",
+    "map",
+    "photographic",
+    "price",
+    "product-detail",
+    "property",
+    "real-estate"
+   ],
+   "quality": "Clear capture; the price and body copy are legible."
+  },
+  "IMG-0436": {
+   "id": "IMG-0436",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Property filters sheet with a blue price histogram",
+   "description": "A light sheet headed 'Filters' with a small search field under the header. The view is a stack of labelled control rows: a pair of segmented pills for a mode choice, a row of chips for a category, then a field for a number, then a chart block whose histogram bars are drawn in a strong blue - the distribution of prices, each bar a selectable range. Further down, chips for room counts, an input for a location, and a row of bedrooms and other numeric pickers. At the foot sit a quiet reset and a solid blue apply button. It is a dense filter sheet that earns its length by visualising the data being filtered.",
+   "roles": [
+    "form",
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "real-estate",
+    "filters",
+    "histogram",
+    "chart",
+    "blue",
+    "chip",
+    "input",
+    "segmented-control",
+    "call-to-action"
+   ],
+   "quality": "Clear capture; control labels are legible."
+  },
+  "IMG-0437": {
+   "id": "IMG-0437",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Dark booking detail with a white price label over the hero",
+   "description": "A dark screen with a photographic hero of a white villa filling the top half, a rounded white pill carrying the price sitting at the image's lower right corner, and a small circular back control at the upper left. Below the image, a dark content area gives the title, a location line with a pin, and a pair of meta rows. A description block in dimmed text follows, then a location label, then a wide blue button at the foot. The white price pill floating over the photograph is the screen's one clever move: the number is legible against any image without a scrim.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "dark-mode",
+    "photographic",
+    "rounded"
+   ],
+   "tags": [
+    "booking",
+    "call-to-action",
+    "photographic",
+    "price",
+    "product-detail",
+    "property",
+    "real-estate"
+   ],
+   "quality": "Clear capture; the price and heading are legible."
+  },
+  "IMG-0438": {
+   "id": "IMG-0438",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Finance app triptych on a pale grey ground",
+   "description": "Three light phone frames arranged left to right on a soft grey background, each showing a different part of one finance app. The left frame is a welcome screen with a wordmark, a short headline and a rendered card graphic, over a pair of buttons. The centre frame is the home: a large balance figure, a transaction list and a small chart. The right frame is an analytics view: a big percentage figure, a set of charted bars and a category breakdown. The set is a clean marketing triptych - the same product shown as pitch, daily use, and insight, which is the standard three-frame story.",
+   "roles": [
+    "hero",
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "fintech",
+    "multi-panel",
+    "numeral",
+    "chart",
+    "transaction",
+    "analytics"
+   ],
+   "quality": "Clear capture; the headline figures and labels are legible."
+  },
+  "IMG-0439": {
+   "id": "IMG-0439",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "To-do app pitch with the live screen beneath the claim",
+   "description": "A vertical marketing panel on a near-black ground. The upper third is a large white headline set over two lines - a contrast between 'someday' and 'today' - with the key phrase highlighted. Below it, a phone frame holds the app's real interface: a light screen headed 'Today' with a stack of task cards, each carrying a small coloured square, a title and a subtitle, and a pair of tab controls at the top. The lower half of the panel is empty black. The composition's confidence is in leaving that space blank while the headline and one real screen do all the work.",
+   "roles": [
+    "hero",
+    "list"
+   ],
+   "style": [
+    "bold-typography",
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "promo",
+    "headline",
+    "task",
+    "productivity",
+    "card"
+   ],
+   "quality": "Clear capture; the headline and task titles are legible."
+  },
+  "IMG-0440": {
+   "id": "IMG-0440",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Reminder app pitch with a pink accent button",
+   "description": "A vertical promotional panel, cream at the top fading to a deeper tan at the foot. The upper third carries a compact app icon and a headline in a heavy weight - a claim about everything being rememberable - above two lines of small grey supporting copy. The lower two thirds hold a phone frame showing the app's light interface: a small heading, a vertical list of reminder rows with checkbox controls, and a pink pill button near the foot. The pink is the only saturated colour in the whole panel, so it reads as the product's signature.",
+   "roles": [
+    "hero",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "promo",
+    "headline",
+    "reminder",
+    "pink",
+    "checkbox",
+    "productivity"
+   ],
+   "quality": "Clear capture; the headline and row labels are legible."
+  },
+  "IMG-0441": {
+   "id": "IMG-0441",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Calendar app pitch pairing a friendly mark with a date grid",
+   "description": "A vertical panel split into two grounds. The upper half is a warm cream field carrying a simple character mark - a small rounded face - above a yellow pill label reading 'New Smarter Navigation'. A hand-drawn curved arrow points down from the pill into the lower half. The lower half is a dark phone screen showing a real calendar: a month strip, a day column with times down the left edge and event blocks placed against them. The arrow is doing real work, carrying the eye from the claim to the evidence.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "dark-mode",
+    "soft",
+    "minimal"
+   ],
+   "tags": [
+    "calendar",
+    "promo",
+    "yellow",
+    "arrow",
+    "schedule",
+    "day-view",
+    "mark"
+   ],
+   "quality": "Clear capture; the pill label and event titles are legible."
+  },
+  "IMG-0442": {
+   "id": "IMG-0442",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Calendar pitch with a headline band above a month grid",
+   "description": "A dark promotional panel. The top band carries a small app icon, then a two-line headline in a bright weight - a claim that the user's calendar is already in place - above a line of small grey copy. The lower two thirds are given over to a full month grid in dark mode: a tab row with the active item marked, a weekday strip, and a calendar body where a handful of dates carry coloured event bars. The colour is confined to those bars, so the eye scans the month for the events rather than the grid.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "bold-typography",
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "calendar",
+    "promo",
+    "month-view",
+    "headline",
+    "schedule",
+    "event"
+   ],
+   "quality": "Clear capture; headline and date numerals are legible."
+  },
+  "IMG-0443": {
+   "id": "IMG-0443",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Shared-list pitch with illustrated member rows",
+   "description": "A tall light panel. The top carries a light-pink field holding an app icon, a two-line headline about shared categories, and two short lines of supporting copy. Below, a white card overlaps the pink band with a small heading and a pair of member rows: each row has a circular avatar - one a photographic portrait, one a pale illustrated one - a name, a status line and a small pencil control on the trailing edge. A second section repeats the pattern with a different member. Soft pastel grounds with photographic detail kept strictly in the small circular frames is the whole visual idea.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "pastel",
+    "soft"
+   ],
+   "tags": [
+    "promo",
+    "sharing",
+    "avatar",
+    "list-row",
+    "pink",
+    "collaboration",
+    "member"
+   ],
+   "quality": "Clear capture; headlines and member names are legible."
+  },
+  "IMG-0444": {
+   "id": "IMG-0444",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Colour-coded list pitch with a floating phone",
+   "description": "A panel on a soft gradient ground, warm at the top fading to grey. The upper third carries a small pink list glyph, a headline about a command that captures everything, and two lines of small copy. A phone frame is placed at an angle across the lower half, its screen showing a light list interface: a heading, a vertical stack of rows each with a coloured square on the leading edge - coral, teal, violet, pink - and a title and subtitle beside it, with a small control on the trailing edge. The colour squares give an otherwise plain list a strong vertical rhythm.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "soft",
+    "gradient",
+    "rounded"
+   ],
+   "tags": [
+    "promo",
+    "list-row",
+    "gradient",
+    "colour-coding",
+    "task",
+    "pink",
+    "productivity"
+   ],
+   "quality": "Clear capture; row titles are legible."
+  },
+  "IMG-0445": {
+   "id": "IMG-0445",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Photo-memory pitch with a torn-edge photo stack",
+   "description": "A tall light panel on a pale grey ground. The upper portion carries a compact app icon, a two-line headline about saving moments, and three lines of small dimmed copy. The lower half is the interesting part: a collage of three photographs, each rotated slightly off-axis and given a soft drop shadow so they read as physical prints scattered on a surface - a snow-covered mountain at the tallest, a pair of dogs, then a coastal scene. The phone frame sits to the right, partly behind the prints. Tilting the images and letting them overlap is what makes the collage feel hand-arranged.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "photographic",
+    "soft"
+   ],
+   "tags": [
+    "promo",
+    "photo",
+    "collage",
+    "photographic",
+    "memories",
+    "headline",
+    "gallery"
+   ],
+   "quality": "Clear capture; the headline and photo detail are legible."
+  },
+  "IMG-0446": {
+   "id": "IMG-0446",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Light-and-dark-mode feature list with a split face",
+   "description": "A promotional panel split vertically down the middle: white on the left, black on the right. A heavy two-line headline sits across the top, the first line dark on the white side and the second light on the black, so the type itself demonstrates the feature. On the right, a phone screen in dark mode shows a settings or menu sheet with a list of labelled rows and small leading icons. The split is the entire composition - no other device, no other decoration - which is a direct and effective way to advertise a theme.",
+   "roles": [
+    "hero",
+    "settings"
+   ],
+   "style": [
+    "bold-typography",
+    "dark-mode",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "promo",
+    "theme",
+    "headline",
+    "list-row"
+   ],
+   "quality": "Clear capture; the headline and row labels are legible."
+  },
+  "IMG-0447": {
+   "id": "IMG-0447",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Inbox-capture pitch with a headline split above and below the phone",
+   "description": "A tall panel with a near-black ground. A heavy white headline sits across the top - about dumping ideas into an inbox - with a small pink list glyph beside it and a pink pill marker under the first line. A phone frame occupies the middle, showing a light list screen with a heading, a stack of rows carrying coloured squares and paired titles, and a small control column at the foot. A second heavy headline caps the composition below the phone. Splitting the sentence around the device is the device's own argument: everything above goes in, everything below has been organised.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "bold-typography",
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "promo",
+    "headline",
+    "inbox",
+    "list-row",
+    "pink",
+    "capture",
+    "colour-coding"
+   ],
+   "quality": "Clear capture; both headlines and the row titles are legible."
+  },
+  "IMG-0449": {
+   "id": "IMG-0449",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Three-screen travel app wall, list to detail",
+   "description": "Three phone frames standing side by side on a grey ground, shown with a slight vertical offset so the middle one reads as the centre of the story. The left frame is a light explore screen: a header with a search field, a photographic hero card, a row of category shortcuts and a vertical feed of destination cards below. The middle frame is a browsing or saved screen with a list of photographic cards and small meta rows. The right frame is a destination detail with a large hero image, a title and body copy. Across the three, the same photographic cards move from small summary to full hero, which is exactly the transition the app is built around.",
+   "roles": [
+    "feed",
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "photographic",
+    "rounded"
+   ],
+   "tags": [
+    "travel",
+    "multi-panel",
+    "photographic",
+    "destination",
+    "card"
+   ],
+   "quality": "Clear capture; frame labels and card titles are legible."
+  },
+  "IMG-0450": {
+   "id": "IMG-0450",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "Four-screen dark wallet walkthrough",
+   "description": "Four phone frames in a row on a grey ground, each dark, each showing a successive stage of a wallet flow. The first is a spending or home screen with a headline figure, a chart and shortcut rows. The second is a token or asset list with circular badges and right-aligned values. The third is a transfer form with paired input rows and a unit toggle. The fourth is a confirmation or settings sheet with label-and-value rows and a pair of buttons at the foot. The four frames are spaced evenly and share one visual system, so the row reads as a single product walked through rather than four unrelated screens.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "crypto",
+    "fintech",
+    "multi-panel",
+    "token",
+    "transfer",
+    "wallet"
+   ],
+   "quality": "Clear capture; figures and row labels are legible at full size."
+  },
+  "IMG-0451": {
+   "id": "IMG-0451",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Savings goals screen with a leading number column",
+   "description": "A light screen with a back chevron header, then a pair of top-level counts - a goal total and a completed count - shown as large figures with small labels beside them. Below, a vertical list of savings goals: each row has a large grey numeral in a left-hand column, a goal name and a small meta line in the middle, and a pair of values on the trailing edge - a shortfall figure and a progress percentage, the latter in a muted tone. A thin trend line runs across a section lower down. Aligning the goals behind a column of big numerals is what makes a plain list feel like a scoreboard.",
+   "roles": [
+    "list",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "fintech",
+    "savings",
+    "goal",
+    "numeral",
+    "progress",
+    "list-row",
+    "budget",
+    "percentage"
+   ],
+   "quality": "Clear capture; goal names, figures and percentages are legible."
+  }
+ }
+}

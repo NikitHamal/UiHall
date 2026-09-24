@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="UI Hall">
+  <rect width="64" height="64" rx="14" fill="#12141a"/>
+  <rect x="10" y="12" width="18" height="18" rx="4" fill="#6aa9ff"/>
+  <rect x="36" y="12" width="18" height="8"  rx="4" fill="#e0574f"/>
+  <rect x="36" y="24" width="18" height="6"  rx="3" fill="#3aa9a0"/>
+  <rect x="10" y="36" width="44" height="6"  rx="3" fill="#c9ced9"/>
+  <rect x="10" y="48" width="28" height="6"  rx="3" fill="#7c8698"/>
+</svg>

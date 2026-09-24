@@ -1,0 +1,287 @@
+{
+ "note": "Review pass 3 of the undescribed mobile-app-ui images. Sheets review_04.jpg and review_05.jpg. Written from the processed web images. Palette, dimensions and contrast are measured elsewhere.",
+ "items": {
+  "IMG-0244": {
+   "id": "IMG-0244",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Music app shelf - long scroll of cover artwork",
+   "description": "A tall montage of many music-app screens stacked in a continuous scroll, each a card with a full-bleed cover photograph, a title and a small play affordance. The covers range from moody red-lit portraits to pale pastel landscapes, and the app chrome stays black throughout. Because the whole column is shown at once, it works as a study in cover-driven hierarchy: the artwork carries all the colour, brand and mood, and the interface contributes nothing but a scrim and two lines of type.",
+   "roles": [
+    "media",
+    "feed"
+   ],
+   "style": [
+    "dark-mode",
+    "editorial",
+    "card-based"
+   ],
+   "tags": [
+    "music",
+    "album-art",
+    "cover",
+    "player",
+    "playlist",
+    "photo"
+   ],
+   "quality": "Clear capture; cover titles legible on most cards."
+  },
+  "IMG-0245": {
+   "id": "IMG-0245",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Neon magenta smile logo",
+   "description": "A flat logo mark: a black smiling face with a small notch cut from the top of its head, sitting on a solid neon-magenta field that bleeds to all edges. There is no text. It is the boldest single-colour asset in the collection and a useful palette reference - one saturated magenta against pure black, with the shape doing all the work. The notch is the only asymmetry, which is what stops it reading as a generic smiley.",
+   "roles": [
+    "landing-section",
+    "hero"
+   ],
+   "style": [
+    "flat",
+    "high-contrast",
+    "brutalist"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "single-colour"
+   ],
+   "quality": "Clear capture; a flat vector mark."
+  },
+  "IMG-0246": {
+   "id": "IMG-0246",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Budget app - chartreuse advert grid",
+   "description": "A grid of six promotional phone panels for a budgeting app, all sharing one loud chartreuse-and-black palette. Each panel pairs a short imperative headline ('Turn your money stress into a plan', 'Invest in your future') with a mockup of the app showing a savings figure, a chart or a card. The same button style, the same corner radius and the same type scale appear on every panel. The set is an excellent template study: with the colour and layout locked, six different value propositions can be produced by swapping only the headline and the mockup.",
+   "roles": [
+    "landing-section",
+    "pricing"
+   ],
+   "style": [
+    "flat",
+    "bold-typography",
+    "high-contrast"
+   ],
+   "tags": [
+    "grid",
+    "budget"
+   ],
+   "quality": "Clear capture; headlines legible across the panels."
+  },
+  "IMG-0247": {
+   "id": "IMG-0247",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Sleep tracker - constellation chart and report card",
+   "description": "An illustrated sleep-report graphic on an off-white field. The upper area is a hand-drawn star chart: a fine circular grid with a small moon at the top and a couple of tiny figures at the edges, drawn in thin black line. Below it sits a real interface card listing three sleep factors, each with a small icon, a name and a short status line, and a filled button at the foot. The charm is the contrast between the loose illustrated sky above and the tight structured card below - one is decoration, the other is data, and they never compete.",
+   "roles": [
+    "dashboard",
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "illustration-led",
+    "illustration-led"
+   ],
+   "tags": [
+    "sleep",
+    "health",
+    "chart",
+    "line-art",
+    "report",
+    "constellation"
+   ],
+   "quality": "Clear capture; the report rows are legible."
+  },
+  "IMG-0248": {
+   "id": "IMG-0248",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Taurus - dark cosmic login beside a cream profile",
+   "description": "Two astrology-app screens compared. The left is a near-black sign-in: a small constellation glyph at the top, a two-line welcome ('Join us and let's gaze at the stars'), an email field and a pill button, all on black with tiny star specks in the background. The right is a cream-coloured profile page carrying the current sign's name in a large serif, a short description and a small list of traits. The pair is the clearest example in the collection of a duotone system: the same product switches between deep black and warm cream, and the serif is the thread that keeps it coherent.",
+   "roles": [
+    "auth",
+    "profile"
+   ],
+   "style": [
+    "duotone",
+    "editorial",
+    "bold-typography"
+   ],
+   "tags": [
+    "astrology",
+    "cosmic",
+    "serif",
+    "constellation",
+    "comparison"
+   ],
+   "quality": "Clear capture; both screens legible."
+  },
+  "IMG-0249": {
+   "id": "IMG-0249",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Horoscope app - cream reading and detail stack",
+   "description": "Three cream-toned screens from a horoscope app staged on an ivory background. The first is a full-bleed reading panel with a title, a large illustration and a body of text; the second is a detail view with a circular emblem and a labelled metric row; the third is a structured profile with a list of grouped rows and a segmented control. All three share one warm neutral palette, one serif for headings and one sans for body. The set demonstrates how far a single cream tone can carry a product when the type pairing is strict.",
+   "roles": [
+    "detail",
+    "profile"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "bold-typography"
+   ],
+   "tags": [
+    "astrology",
+    "horoscope",
+    "serif",
+    "reading",
+    "segmented-control"
+   ],
+   "quality": "Clear capture; the three screens are distinguishable."
+  },
+  "IMG-0250": {
+   "id": "IMG-0250",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Astrology app - three dark screens with orange accent",
+   "description": "Three dark screens from an astrology product, each built on near-black with a single warm orange accent. The first is a home view with a circular chart rendered as fine radial lines and small glyph markers; the second is a detail panel with descriptive copy and a labelled row; the third is a 'Small works' list with small circular thumbnails and short entries. The orange is used only for the chart linework and one active state, never for text, which is what keeps the dark screens from feeling busy.",
+   "roles": [
+    "dashboard",
+    "list"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "high-contrast"
+   ],
+   "tags": [
+    "astrology",
+    "chart",
+    "radial",
+    "glyph"
+   ],
+   "quality": "Clear capture; the chart and list rows are legible."
+  },
+  "IMG-0251": {
+   "id": "IMG-0251",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Astrology app - violet greeting and night highlights",
+   "description": "Two deep-violet screens from a personalised astrology app. The left opens with a greeting containing the user's name, a small moon image and a short line of copy, with a reading card and a bold link beneath it. The right is a 'More' panel: a week-ahead line, then an illustrated card showing a polygon chart with labelled points, and a short highlights list. The pair is notable for using violet as the entire surface rather than as an accent - unusual, and it works because the type is set almost entirely in white and one pale yellow.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based",
+    "gradient-heavy"
+   ],
+   "tags": [
+    "astrology",
+    "greeting",
+    "chart",
+    "highlights",
+    "moon"
+   ],
+   "quality": "Clear capture; both panels legible."
+  },
+  "IMG-0252": {
+   "id": "IMG-0252",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Soulmate astrology - stacked dark nebula panels",
+   "description": "Three dark mobile panels arranged in a broken stack, each showing a different part of an astrology reading. All three use the same background treatment: a soft nebula-like glow in orange and violet behind near-black, with the interface floating on top. Content varies from a wide chart to a descriptive block to a list of short entries. The screens are a good reference for atmospheric dark UI - the gradient glow is subtle enough to read as depth rather than decoration, and every piece of text sits on the darker portion.",
+   "roles": [
+    "detail",
+    "feed"
+   ],
+   "style": [
+    "dark-mode",
+    "gradient-heavy",
+    "card-based"
+   ],
+   "tags": [
+    "astrology",
+    "nebula",
+    "gradient",
+    "reading",
+    "glow"
+   ],
+   "quality": "Clear capture; content blocks legible."
+  },
+  "IMG-0253": {
+   "id": "IMG-0253",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Zodiac reading - 'Today's Guidance' with a balance scale",
+   "description": "A dark reading screen titled with a date and 'Today's Guidance'. The centre holds a small illustration of a set of balance scales with a heart on one pan, drawn in thin gold lines against black. Beneath it sits a short paragraph of guidance and a filled pill button reading 'Unlock'. The composition is almost entirely empty black space with one gold-drawn object. It is a strong example of restraint: a single symbolic illustration, one paragraph, one action, and the emptiness doing the work that decoration usually would.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "dark-mode",
+    "luxury",
+    "minimal"
+   ],
+   "tags": [
+    "astrology",
+    "zodiac",
+    "guidance",
+    "balance"
+   ],
+   "quality": "Clear capture; the paragraph and button are legible."
+  },
+  "IMG-0254": {
+   "id": "IMG-0254",
+   "category": "mobile-app-ui",
+   "type": "component",
+   "title": "Status chips - five coloured pill states",
+   "description": "A near-empty white canvas carrying five small pill-shaped status chips in a loose cluster: 'Pending' in amber, 'In Review' in blue, 'In Progress' in violet, 'Get started' in teal with a check, 'Cancelled' in red and 'Approved' in green. Each chip is a small filled rounded rectangle with white text and, on three of them, a leading dot. This is a component specimen rather than a screen, and a useful one: it shows the full state vocabulary of an order system in one place, with hue carrying the meaning and the label confirming it.",
+   "roles": [
+    "notification"
+   ],
+   "style": [
+    "flat",
+    "rounded",
+    "minimal"
+   ],
+   "tags": [
+    "badges",
+    "status",
+    "chips",
+    "states",
+    "colour-coding",
+    "semantic-colour"
+   ],
+   "quality": "Clear capture; every chip label is legible."
+  },
+  "IMG-0256": {
+   "id": "IMG-0256",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Topics - green lesson tracker with a streak counter",
+   "description": "A light screen titled 'Topics' listing three subjects as stacked rounded cards, each with a small leading icon, a name and a one-line subtitle. A segmented control near the top switches between two groupings. At the bottom sits a sticky progress bar: a 'Level' label, a large number, a green meter and a streak figure with a small flame glyph. The screen is a clean example of a learning dashboard - the subject cards are the content, and the persistent level strip is the motivation, kept visually separate so it never competes with the list.",
+   "roles": [
+    "list",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "education",
+    "streak",
+    "level",
+    "segmented-control",
+    "progress"
+   ],
+   "quality": "Clear capture; the topic names and level are legible."
+  }
+ }
+}

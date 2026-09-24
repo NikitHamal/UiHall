@@ -1,0 +1,304 @@
+{
+ "note": "Review pass 8 of the undescribed mobile-app-ui images. Sheets review_09.jpg and review_10.jpg. Written from the processed web images. Palette, dimensions and contrast are measured elsewhere.",
+ "items": {
+  "IMG-0379": {
+   "id": "IMG-0379",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Banking home - balance and transactions in light mode",
+   "description": "A light personal-banking home screen. The header has a small avatar, a chevron and a pair of icon controls; beneath it a large balance figure sits with an eye toggle. A row of small action pills follows, then a compact 'Transactions' section with grouped entries - each a name, a date and a signed amount - and a tab bar at the foot. The composition is deliberately plain, and that is the reference: with one large numeral, one row of pills and one list, the screen communicates the three things a banking home must, in strict order of importance.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "fintech",
+    "banking",
+    "balance",
+    "transaction",
+    "quick-actions",
+    "tab-bar",
+    "avatar"
+   ],
+   "quality": "Clear capture; the balance and transaction rows are legible."
+  },
+  "IMG-0380": {
+   "id": "IMG-0380",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Banking home - dark variant of the same layout",
+   "description": "The dark counterpart of IMG-0379, showing the identical structure - avatar header, large balance with an eye toggle, action pills, grouped transactions, tab bar - rendered on a near-black surface with a soft violet glow behind the balance. Filed as its pair because the two together demonstrate what a dark mode should actually change: surfaces and glow only, with every dimension, label and order of elements held constant between the two.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "fintech",
+    "banking",
+    "balance",
+    "transaction",
+    "quick-actions",
+    "comparison"
+   ],
+   "quality": "Clear capture; the balance and transaction rows are legible."
+  },
+  "IMG-0381": {
+   "id": "IMG-0381",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Travel app - three screens with an orange accent",
+   "description": "Three light travel screens shown side by side, unified by a single orange accent. The left is a home view with a greeting, a search block and a list of feature rows; the middle is a details screen with a photograph of a destination and an information card floating over it; the right repeats the home structure with different content. The set is a good demonstration of accent discipline: orange appears only on the primary buttons, one active tab and a single highlight per screen, so the three views feel related without any of them looking orange.",
+   "roles": [
+    "home",
+    "detail",
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "flat"
+   ],
+   "tags": [
+    "travel",
+    "photo",
+    "accent",
+    "multi-panel",
+    "tab-bar"
+   ],
+   "quality": "Clear capture; the three screens are legible."
+  },
+  "IMG-0382": {
+   "id": "IMG-0382",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Orange app - a twelve-screen screen-sheet",
+   "description": "A sheet of roughly a dozen screens from one product, all sharing a warm orange-and-white palette. The screens cover a home view, list views, a detail page, a form, a profile, a settings panel and several modal states, each labelled beneath. The sheet is a reference for range: it shows the same design language applied across the whole surface area of a product, which makes it easy to check whether the type ramp, corner radius and accent are genuinely reused or merely similar.",
+   "roles": [
+    "home",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "flat",
+    "card-based"
+   ],
+   "tags": [
+    "sheets",
+    "overview",
+    "template",
+    "multi-panel"
+   ],
+   "quality": "Clear capture; individual screens are small but the structure is readable."
+  },
+  "IMG-0383": {
+   "id": "IMG-0383",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Fitness app - a seventeen-screen screen-sheet",
+   "description": "A large sheet assembling seventeen screens from a single fitness product, arranged in a grid of five columns with each screen labelled underneath. The set spans onboarding, workout logging, progress charts, a medication or dose tracker, profile and settings. Filed as a completeness reference: at this scale you can see whether the product has one consistent card style across every surface, and whether the accent is used for meaning or merely for colour.",
+   "roles": [
+    "dashboard",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "flat",
+    "card-based"
+   ],
+   "tags": [
+    "sheets",
+    "overview",
+    "fitness",
+    "multi-panel",
+    "template"
+   ],
+   "quality": "Clear capture; the grid is dense but each screen is identifiable."
+  },
+  "IMG-0384": {
+   "id": "IMG-0384",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Dose Logged - a green confirmation with a burst badge",
+   "description": "A pale green confirmation screen centred on a starburst badge containing a check, with the words 'Dose Logged' above it and a short encouraging line beneath. A row of small reaction buttons follows - including a green check - and a large solid 'Done' button closes the screen. The screen is a clean example of a positive confirmation: a single symbol, one sentence and one way out, with the soft green wash stating success before any text has been read.",
+   "roles": [
+    "notification",
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "health",
+    "medication",
+    "confirmation",
+    "success",
+    "badges",
+    "cta",
+    "feedback"
+   ],
+   "quality": "Clear capture; the headline and button label are legible."
+  },
+  "IMG-0385": {
+   "id": "IMG-0385",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Vitals app - 'Vitals Logged' on a green field",
+   "description": "A light vitals-tracking screen headed with a back control, a title and a search icon. The body centres on a large green starburst badge holding a check, with a short congratulatory line beneath it, followed by a row of small circular reaction buttons and a large green primary button at the foot. The screen is nearly identical in structure to IMG-0384 but on a tinted field rather than a coloured card, which shows how far a background wash alone can carry the same confirmation pattern.",
+   "roles": [
+    "notification",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "flat"
+   ],
+   "tags": [
+    "health",
+    "vitals",
+    "confirmation",
+    "success",
+    "badges",
+    "cta",
+    "tracker"
+   ],
+   "quality": "Clear capture; the badge and button label are legible."
+  },
+  "IMG-0386": {
+   "id": "IMG-0386",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Health monitor - blood pressure, blood sugar and ECG",
+   "description": "Three light health-monitoring screens shown side by side. The first is a blood-pressure view with a reading, a line chart over a date range, a small annotation and a short parameter list; the second is a blood-sugar view with a reading, a soft blue illustration and a set of reference ranges; the third is an ECG trace rendered as a bright waveform on a pale blue field with accompanying text. The set is a strong reference for clinical data presentation: consistent header, one large reading, one chart, and restrained colour reserved for the trace itself.",
+   "roles": [
+    "dashboard",
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense",
+    "flat"
+   ],
+   "tags": [
+    "health",
+    "vitals",
+    "chart",
+    "ecg",
+    "waveform",
+    "monitoring",
+    "clinical"
+   ],
+   "quality": "Clear capture; the readings and chart shapes are legible."
+  },
+  "IMG-0387": {
+   "id": "IMG-0387",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Shop smarter - three-screen violet onboarding",
+   "description": "Three light screens from a shopping product, staged as a row over a violet gradient backdrop with soft floating 3D shapes in the corners. The left is a splash with a headline and a violet button; the middle is a profile or account screen with grouped rows and a violet action; the right is a checklist of tips under a heading, each row with an icon and a label. The staging is the notable part - the lavender field and the small 3D props give an otherwise plain set of utility screens a distinct mood.",
+   "roles": [
+    "onboarding",
+    "profile"
+   ],
+   "style": [
+    "light-mode",
+    "gradient-heavy",
+    "soft"
+   ],
+   "tags": [
+    "shopping",
+    "splash",
+    "3d",
+    "checklist",
+    "multi-panel"
+   ],
+   "quality": "Clear capture; the three screens and their labels are legible."
+  },
+  "IMG-0388": {
+   "id": "IMG-0388",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Amazon Prime - dark perks screen with a yellow banner",
+   "description": "A dark Amazon Prime perks screen. The header carries a greeting and a date. A wide banner card in bright yellow states a renewal date with a bold line and a pill button, and is the only saturated element on the page. Below it sit grouped sections - a 'Favourite carousel' shelf and a 'Watchlist' shelf - each with small square thumbnails and short labels, above a tab bar. The screen is a textbook example of a single high-contrast banner used to carry the one piece of transactional information, with everything else kept dark and quiet.",
+   "roles": [
+    "home",
+    "feed"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based",
+    "high-contrast"
+   ],
+   "tags": [
+    "subscription",
+    "perks",
+    "banner",
+    "shelf",
+    "watchlist",
+    "tab-bar"
+   ],
+   "quality": "Clear capture; the banner text and shelf labels are legible."
+  },
+  "IMG-0389": {
+   "id": "IMG-0389",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Ride app - $30.00 charge with saved places",
+   "description": "A dark ride-hailing screen showing a receipt or account view. A balance-style figure of $30.00 sits at the top with a small icon row beside it, followed by a card naming the user's personal details and a 'Saved Places' list - Home, Work and a named address - each with an icon, a label and an address line. A payment method row closes the list above a tab bar. The screen is a useful reference for a saved-places pattern: three persistent rows with clear labels remove almost all address typing from the ordering flow.",
+   "roles": [
+    "profile",
+    "settings"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "ride-hailing",
+    "saved-places",
+    "address",
+    "payment",
+    "tab-bar"
+   ],
+   "quality": "Clear capture; the figure and place labels are legible."
+  },
+  "IMG-0390": {
+   "id": "IMG-0390",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Social feed - dark post with a photographic card",
+   "description": "A dark social feed screen. A header row carries an avatar, a name and a time; beneath it a short block of post text, then a large rounded photo card showing a city street at dusk, followed by a row of engagement counts and a short comment list with small avatars. A composer bar is fixed at the bottom. The screen is a solid reference for a media-first feed item: the photograph is given a generous corner radius and full column width, while every piece of text around it is small and low-contrast so the image remains the item.",
+   "roles": [
+    "feed",
+    "social-proof"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based",
+    "editorial"
+   ],
+   "tags": [
+    "social",
+    "post",
+    "photo",
+    "comment",
+    "avatar",
+    "composer"
+   ],
+   "quality": "Clear capture; the post text and photo card are legible."
+  }
+ }
+}

@@ -1,0 +1,2777 @@
+{
+ "items": [
+  {
+   "id": "VID-0049",
+   "relevant": false,
+   "reason": "Comedy sketch teaser (Gilly and Keeves) — two people talking, no interface"
+  },
+  {
+   "id": "VID-0050",
+   "relevant": false,
+   "reason": "Personal clip of two men at a table (labelled 'Balem vs Ravi'), no interface"
+  },
+  {
+   "id": "VID-0051",
+   "relevant": false,
+   "reason": "Photo of a decorative tapestry/textile hanging on a wall, no interface"
+  },
+  {
+   "id": "VID-0052",
+   "relevant": true,
+   "title": "Light mobile messaging/reading screen with purple CTA",
+   "description": "A portrait phone screen showing a single-column app view on white: a top bar with a timestamp ('1:14'), a small avatar row with a name label, a bold heading, a block of grey body copy that appears to mention being in a rush, and a second short question line. A large rounded purple button sits near the bottom of the layout. Text is small, so only the structure and colour usage are certain.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "messaging",
+    "chat",
+    "onboarding",
+    "single-column"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#7C5CFF",
+    "#1C1C1E"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0053",
+   "relevant": false,
+   "reason": "NEBians brand logo intro animation on a grid canvas — branding asset, no interface"
+  },
+  {
+   "id": "VID-0054",
+   "relevant": false,
+   "reason": "Indie game gameplay footage (top-down scene with fire effects) — game asset"
+  },
+  {
+   "id": "VID-0055",
+   "relevant": false,
+   "reason": "WhatsApp birthday greeting card graphic ('HAPPY BIRTHDAY TO YOU' with balloons)"
+  },
+  {
+   "id": "VID-0056",
+   "relevant": true,
+   "title": "AI assistant app — topic management and alerts list",
+   "description": "A grey iPhone mockup on white showing a list-based app screen: a profile row with a name and a 'Today / No calls' summary, followed by grouped rows for managing topics, an 'Alerts Learning' item, a card inviting the user to create with new words, and a section with small explanatory copy about topic intelligence. Light grey background, white cards, dark text and a small green accent indicator.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "ai",
+    "settings",
+    "list",
+    "onboarding"
+   ],
+   "palette": [
+    "#F2F2F2",
+    "#FFFFFF",
+    "#111111",
+    "#34C759"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0057",
+   "relevant": true,
+   "title": "Same AI assistant app — notification/settings list (second shot)",
+   "description": "A second frame from the same grey iPhone mockup: an identical list layout with a profile row and a 'Today / No calls' summary, a group of settings rows (topic management, alerts learning, personalisation) and small caption text under each. Same light grey and white palette with dark typography and a green accent, shown as a scroll/screen transition.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "ai",
+    "settings",
+    "list",
+    "notifications"
+   ],
+   "palette": [
+    "#F2F2F2",
+    "#FFFFFF",
+    "#111111",
+    "#34C759"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0058",
+   "relevant": false,
+   "reason": "Personal WhatsApp clip of people writing at a desk, no interface"
+  },
+  {
+   "id": "VID-0059",
+   "relevant": false,
+   "reason": "TikTok-style personal video of a woman outdoors with a shopping bag"
+  },
+  {
+   "id": "VID-0060",
+   "relevant": true,
+   "title": "Animated black blob logo mark with coloured ribbons",
+   "description": "A plain white frame containing a single organic black blob shape from which thin green, red and purple ribbon-like strokes curl outward. Appears to be a morphing brand mark / icon animation rendered on a flat white background, with no other UI elements present.",
+   "platform": "unknown",
+   "kind": "design-system",
+   "style": [
+    "minimal",
+    "flat",
+    "motion"
+   ],
+   "tags": [
+    "logo",
+    "iconography",
+    "animation",
+    "branding"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#000000",
+    "#2BB673",
+    "#E23A2E"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0061",
+   "relevant": true,
+   "title": "AI agent promo — iPhone mockup with 30:00 timer and dog illustration",
+   "description": "A white marketing frame in which a hand holds a black iPhone; the screen shows a very large '30:00' countdown in heavy type above a stylised cartoon dog, with a flat blue hand shape rising behind the device. Clean product-marketing composition with no app chrome visible, just the promo artwork on the screen.",
+   "platform": "ios",
+   "kind": "promo-reel",
+   "style": [
+    "minimal",
+    "flat",
+    "bold-typography"
+   ],
+   "tags": [
+    "ai-agent",
+    "promo",
+    "mockup",
+    "countdown"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#1A1A1A",
+    "#2F6BFF"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0062",
+   "relevant": false,
+   "reason": "Animated black blob mascot on a white background, no interface"
+  },
+  {
+   "id": "VID-0063",
+   "relevant": true,
+   "title": "Dark AI agent 'thinking states' component showcase",
+   "description": "A near-black screen showing a stack of rounded pill/bubble components labelled 'Thinking…', 'Listening…', 'Agent sharing', 'Thinking' and 'Planning…', each with a small circular icon at the left. A caption at the side reads 'Thinking arts — Animated thinking state components'. Grey-on-black surfaces with soft gradients, presented as a design-system demo of AI status animations.",
+   "platform": "unknown",
+   "kind": "design-system",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded",
+    "motion"
+   ],
+   "tags": [
+    "ai",
+    "component",
+    "loading-state",
+    "animation"
+   ],
+   "palette": [
+    "#0A0A0A",
+    "#1C1C1E",
+    "#8E8E93"
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "VID-0064",
+   "relevant": true,
+   "title": "Abstract motion study — orbiting arcs on a dark dotted grid",
+   "description": "A dark canvas with a faint dotted grid over which several thin purple and blue circles and arcs orbit around anchor points, alongside small blue rounded rectangles. There is no readable interface chrome; it reads as an abstract motion-design / prototype animation experiment rather than a product screen.",
+   "platform": "unknown",
+   "kind": "motion-demo",
+   "style": [
+    "dark-mode",
+    "geometric",
+    "motion"
+   ],
+   "tags": [
+    "animation",
+    "prototype",
+    "abstract"
+   ],
+   "palette": [
+    "#0D0D12",
+    "#7C5CFF",
+    "#3B6CFF"
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "VID-0065",
+   "relevant": true,
+   "title": "AI companion profile card — 'Neby' on purple gradient",
+   "description": "A phone-sized card with a violet gradient header containing a rounded blob avatar, a back arrow and a menu glyph; below on white, the name 'Neby' in large bold type, the handle '@neby' in grey, and an 'AI Companion' chip with a sparkle icon. Reads as an iOS profile/settings sheet with a clean, friendly visual style.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "gradient",
+    "rounded",
+    "light-mode"
+   ],
+   "tags": [
+    "ai",
+    "profile",
+    "settings",
+    "companion"
+   ],
+   "palette": [
+    "#7B5CF0",
+    "#A98BFF",
+    "#FFFFFF",
+    "#111111"
+   ],
+   "confidence": 0.65
+  },
+  {
+   "id": "VID-0066",
+   "relevant": true,
+   "title": "Web 'Promise Wall' board with sticky notes and composer",
+   "description": "A light web app: a header titled 'Promises' with filter chips, a masonry-style board of pastel sticky notes carrying short handwritten-style promise texts, and a rounded comment composer pinned at the bottom with a send button. Soft off-white background, rounded cards and thin grey borders.",
+   "platform": "web",
+   "kind": "website",
+   "style": [
+    "light-mode",
+    "playful",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "community",
+    "sticky-notes",
+    "comment-input",
+    "web-app"
+   ],
+   "palette": [
+    "#F7F5F0",
+    "#FDE68A",
+    "#A7F3D0",
+    "#111827"
+   ],
+   "confidence": 0.65
+  },
+  {
+   "id": "VID-0067",
+   "relevant": false,
+   "reason": "Pixel-art game scene with characters and buildings — game footage"
+  },
+  {
+   "id": "VID-0068",
+   "relevant": false,
+   "reason": "Game footage of a cart and items on a map with 'Lv 1' labels"
+  },
+  {
+   "id": "VID-0069",
+   "relevant": true,
+   "title": "Dark notes web app — scattered note cards and 'add your note' composer",
+   "description": "A dark canvas headed 'the thought' with several small charcoal note cards laid out across the surface, one holding an image thumbnail, plus a white pill input labelled 'add your note'. Muted near-black surfaces with white type, giving a quiet editorial mood.",
+   "platform": "web",
+   "kind": "website",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "editorial"
+   ],
+   "tags": [
+    "notes",
+    "canvas",
+    "input",
+    "web-app"
+   ],
+   "palette": [
+    "#101010",
+    "#1B1B1B",
+    "#FFFFFF"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0070",
+   "relevant": true,
+   "title": "Mobile magazine/reading app — 'July' issue card",
+   "description": "An iPhone mockup on white showing a magazine-style reading view: a bold red cover image, the label 'July', and body copy beginning 'GA launched her new chap book Spoils…'. Large heading, generous margins and an editorial single-column layout with a small image inset.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "editorial",
+    "light-mode"
+   ],
+   "tags": [
+    "reading",
+    "magazine",
+    "typography"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#E63946",
+    "#111111"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0071",
+   "relevant": true,
+   "title": "Dark 'Project Folder' dashboard with colour-coded folder cards",
+   "description": "A dark web page with a centred title 'Project Folder' and subtitle, a cluster of overlapping pastel folder/cover cards (mint, cream, light blue), small metadata rows beside them and a 'Sign in' pill button on the right. Near-black background with soft pastel accents and rounded corners.",
+   "platform": "web",
+   "kind": "dashboard",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "project-management",
+    "folders",
+    "auth",
+    "web-app"
+   ],
+   "palette": [
+    "#0B0B0B",
+    "#C9E4D0",
+    "#E8E0C8",
+    "#6FA8DC"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0072",
+   "relevant": true,
+   "title": "Dark iOS messaging screen with calendar banner and image cards",
+   "description": "An iOS phone in dark mode with a rounded notification banner reading 'Scheduled — 1 meeting', followed by chat content: a left-aligned paragraph ('It touches a chord…'), short replies, and small rounded photo thumbnail cards. Black background, white and grey text in an iMessage-style bubble layout.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "rounded",
+    "minimal"
+   ],
+   "tags": [
+    "messaging",
+    "notifications",
+    "calendar",
+    "attachments"
+   ],
+   "palette": [
+    "#000000",
+    "#1C1C1E",
+    "#FFFFFF"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0073",
+   "relevant": true,
+   "title": "In-hand iPhone app with rounded 'Setting' pill button",
+   "description": "A photograph of a hand holding a phone at an angle; the screen shows a very dark interface with a small rounded grey pill button labelled 'Setting' and a soft gradient glow at the top. The oblique angle and small scale make the rest of the interface unreadable.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "settings",
+    "in-hand",
+    "mockup"
+   ],
+   "palette": [
+    "#0A0A0A",
+    "#2C2C2E",
+    "#8E8E93"
+   ],
+   "confidence": 0.35
+  },
+  {
+   "id": "VID-0074",
+   "relevant": true,
+   "title": "Grok Bot icon animation — code-driven morphing icon",
+   "description": "A screenshot of an X/Twitter post: an iOS status bar reading '9:41', a large black rounded-square app icon containing an abstract white face/mask shape, and a caption from Benji Taylor (@benjitaylor, Aug 11) explaining that the new Grok Bot icon is made entirely in code, with every state, shape and expression able to morph smoothly. Useful iconography/animation reference material.",
+   "platform": "ios",
+   "kind": "design-system",
+   "style": [
+    "minimal",
+    "flat",
+    "monochrome",
+    "motion"
+   ],
+   "tags": [
+    "iconography",
+    "logo",
+    "animation",
+    "ai"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#000000",
+    "#7C5CFF"
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "VID-0075",
+   "relevant": true,
+   "title": "Drawing/annotation tool — floating bottom toolbar with highlighter and eraser",
+   "description": "A white canvas sheet with a rounded floating bottom toolbar containing a plus icon, a highlighter glyph, a pen glyph, a divider, a large orange circular eraser button, a colour swatch and the text labels 'highlighter' and 'eraser'. Minimal iOS-style annotation UI on an off-white page with a red edge.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "toolbar",
+    "drawing",
+    "annotation",
+    "canvas"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#FF6B35",
+    "#111111"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0076",
+   "relevant": true,
+   "title": "AI app screen — trash illustration with undo prompt",
+   "description": "A white-framed iPhone mockup showing an almost empty light screen: a centred line-drawn trash can illustration, a small green pill label above it and caption text 'AI deleted this item. Undo?'. Extremely minimal with a lot of whitespace and a single accent colour.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "line-art"
+   ],
+   "tags": [
+    "ai",
+    "empty-state",
+    "undo",
+    "whitespace"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#34C759"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0077",
+   "relevant": true,
+   "title": "Light vs dark document layout comparison",
+   "description": "Two portrait document pages side by side on white: the left is a pale green/cream layout with small dense text blocks and a red bookmark strip down one side; the right is the same document rendered in a dark theme with white text and a highlighted heading. Reads as a light/dark theme or before-after document design comparison.",
+   "platform": "web",
+   "kind": "before-after",
+   "style": [
+    "editorial",
+    "light-mode",
+    "dark-mode"
+   ],
+   "tags": [
+    "document",
+    "theme-comparison",
+    "typography"
+   ],
+   "palette": [
+    "#E8F0E0",
+    "#0E0E0E",
+    "#FFFFFF",
+    "#C0392B"
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "VID-0078",
+   "relevant": true,
+   "title": "Dark mobile profile/settings screen with grouped account menu",
+   "description": "A dark mobile UI showing a profile header with an avatar and a person's name, a row mentioning '36 recommended profiles', and a grouped settings list: 'Your Business', 'Analytics', 'Manage App', 'Customer Support', 'Rate this app', 'Privacy Policy', 'Rate & Review'. Near-black background, white text and thin dividers, typical of an Android app settings page.",
+   "platform": "android",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "list"
+   ],
+   "tags": [
+    "settings",
+    "profile",
+    "account",
+    "menu"
+   ],
+   "palette": [
+    "#121212",
+    "#1E1E1E",
+    "#FFFFFF"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0079",
+   "relevant": true,
+   "title": "Light web dashboard inside a browser window",
+   "description": "A desktop browser window containing a light web app: a left sidebar, a header with a small blue pill, and a main area of white cards, a large chart/graph block and a highlighted light-blue row. The window is framed over a green field background, indicating a screen recording.",
+   "platform": "web",
+   "kind": "dashboard",
+   "style": [
+    "light-mode",
+    "card-based",
+    "minimal"
+   ],
+   "tags": [
+    "dashboard",
+    "browser",
+    "charts",
+    "sidebar"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#E8F0FE",
+    "#4A90D9",
+    "#2E7D32"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0080",
+   "relevant": true,
+   "title": "App promo mockup — 'Made for your everyday' icon grid",
+   "description": "A dark iPhone mockup floating on black showing a promotional screen: the headline 'Made for your everyday' above a grid of glossy app icons with small labels (Comms, Notes, Social, Pay, Home, Weather and similar) and a rounded button at the bottom. Marketing / app-store-screenshot styling with a soft glow behind the device.",
+   "platform": "ios",
+   "kind": "promo-reel",
+   "style": [
+    "dark-mode",
+    "promo",
+    "rounded",
+    "glow"
+   ],
+   "tags": [
+    "app-icon",
+    "marketing",
+    "home-screen",
+    "mockup"
+   ],
+   "palette": [
+    "#000000",
+    "#1A1A1A",
+    "#4DA3FF",
+    "#F5F5F5"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0081",
+   "relevant": true,
+   "title": "White canvas with 'K' presence badges and cursor",
+   "description": "A plain white canvas containing three small brown circular badges each marked with a 'K', plus a black mouse cursor and a small '1' counter indicator. Looks like a collaborative-canvas or multiplayer cursor/presence animation demo, with no other interface chrome visible.",
+   "platform": "web",
+   "kind": "motion-demo",
+   "style": [
+    "minimal",
+    "flat",
+    "motion"
+   ],
+   "tags": [
+    "cursor",
+    "collaboration",
+    "presence",
+    "animation"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#6B4A2F",
+    "#111111"
+   ],
+   "confidence": 0.35
+  },
+  {
+   "id": "VID-0082",
+   "relevant": true,
+   "title": "Photo card carousel on a white canvas",
+   "description": "A white canvas with a central rounded photo card showing an autumn forest scene, flanked by blurred ghosted duplicate cards and a small black dot indicator underneath. Reads as a photo-gallery carousel or a UI mockup of a media card, presented on a bare canvas.",
+   "platform": "unknown",
+   "kind": "other",
+   "style": [
+    "minimal",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "carousel",
+    "gallery",
+    "photo",
+    "card"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#7A5C3E",
+    "#111111"
+   ],
+   "confidence": 0.35
+  },
+  {
+   "id": "VID-0083",
+   "relevant": true,
+   "title": "Light web page with cards and presenter webcam bubble",
+   "description": "A browser-sized light page with a header, a row of rounded cards containing small images and text, and a circular webcam bubble of a person in the bottom-right corner, indicating a screen-share or demo recording. Soft grey and white palette with small blue accents.",
+   "platform": "web",
+   "kind": "website",
+   "style": [
+    "light-mode",
+    "card-based",
+    "minimal"
+   ],
+   "tags": [
+    "landing-page",
+    "cards",
+    "screen-share"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F3F4F6",
+    "#3B82F6"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0084",
+   "relevant": true,
+   "title": "Light iOS form screen with 'Continue with Apple' row",
+   "description": "A white iPhone mockup showing an app screen: a small header row with a title and icon, a paragraph of grey body copy, a rounded primary button and a secondary 'Continue with Apple'-style row, with a black cursor overlay moving across. Parts of the layout are low-resolution or blurred.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "form",
+    "signup",
+    "onboarding",
+    "button"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#F2F2F2"
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "VID-0085",
+   "relevant": false,
+   "reason": "Screen recording of a written article/document with a hand on a trackpad — no interface design value"
+  },
+  {
+   "id": "VID-0086",
+   "relevant": true,
+   "title": "iOS mail/inbox app 'Electro' with search and message list",
+   "description": "A light iOS app showing a mail-style interface: a header titled 'Electro' with an avatar, a search field, and a list of message rows with avatars, subject lines and preview text (including a 'Google Verification Code' item), one row selected with a pale blue highlight. Rounded cards, system typography and a blue accent.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "list",
+    "rounded"
+   ],
+   "tags": [
+    "email",
+    "inbox",
+    "search",
+    "list"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#EAF1FB",
+    "#3B7DD8"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0087",
+   "relevant": true,
+   "title": "iOS home screen with finance and birthday widgets",
+   "description": "A light iOS home screen with a large widget headed 'Upcoming' showing 'Mon 24 August' and a 'Stay Birthday 13.24$' entry, a 'Transactions 25.00$' widget and additional tiles, plus a row of app icons at the bottom. Rounded white widget cards on a soft grey wallpaper with a green accent.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "widgets",
+    "rounded",
+    "minimal"
+   ],
+   "tags": [
+    "home-screen",
+    "widgets",
+    "finance",
+    "calendar"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#E8E8ED",
+    "#34C759"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0088",
+   "relevant": false,
+   "reason": "3D game terrain scene with an 'Lv 0.7' UI chip — game footage"
+  },
+  {
+   "id": "VID-0089",
+   "relevant": true,
+   "title": "Date-range picker component with blue selection state",
+   "description": "A white canvas showing a date-picker component: a 'Trip Dates' panel with a start date ('Sep 16'), a traveller name field, a 'September 2026' month grid with weekday columns and a blue-filled selected range plus a lighter secondary range, and 'Today' / 'Done' controls. Clean modern component design with a blue accent and clear grid spacing.",
+   "platform": "web",
+   "kind": "design-system",
+   "style": [
+    "minimal",
+    "light-mode",
+    "rounded",
+    "clean"
+   ],
+   "tags": [
+    "date-picker",
+    "component",
+    "calendar",
+    "form"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#2563EB",
+    "#D6E4FF",
+    "#111827"
+   ],
+   "confidence": 0.75
+  },
+  {
+   "id": "VID-0090",
+   "relevant": true,
+   "title": "Onboarding step — 'Select your goal' option list",
+   "description": "An iPhone mockup on white showing an onboarding step: the heading 'Select your goal', a list of tappable rows with icons (Study, Workout, Habits, Reading, Custom), one row highlighted in a soft tan/beige, and a dark 'Continue' button at the bottom. Very minimal with generous whitespace.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "onboarding",
+    "goal-selection",
+    "list",
+    "cta"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#E6D9C8"
+   ],
+   "confidence": 0.75
+  },
+  {
+   "id": "VID-0091",
+   "relevant": true,
+   "title": "Generative flower artwork with 'enzo.fyi' caption",
+   "description": "A white canvas containing a flower/plant form built from small purple, pink and green pixel blocks, with a caption URL 'https://enzo.fyi' beneath it. A portfolio / generative-art hero rather than a functional product interface.",
+   "platform": "web",
+   "kind": "website",
+   "style": [
+    "generative",
+    "playful",
+    "pixel-art"
+   ],
+   "tags": [
+    "portfolio",
+    "generative-art",
+    "hero"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#9B5DE5",
+    "#F15BB5",
+    "#00BB77"
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "VID-0092",
+   "relevant": false,
+   "reason": "Near-black frame containing only a yellow question-mark glyph; no usable interface content"
+  },
+  {
+   "id": "VID-0093",
+   "relevant": true,
+   "title": "Designer portfolio site — intro copy and project card grid",
+   "description": "A light web page with a text block beginning 'Hello, I'm Alex, a passionate designer…' containing bold inline highlights, followed by a small grid of project thumbnail cards (colourful app icons, a dark dashboard screen). Clean editorial layout: black type on white with thin rules and plenty of whitespace.",
+   "platform": "web",
+   "kind": "website",
+   "style": [
+    "minimal",
+    "light-mode",
+    "editorial"
+   ],
+   "tags": [
+    "portfolio",
+    "landing-page",
+    "project-grid",
+    "typography"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#F5F5F5"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0094",
+   "relevant": true,
+   "title": "Dark AI assistant ask-bar with 'Ask Aurelius' and 'Write with Siri'",
+   "description": "A dark UI showing a chat thread: a timestamped user line ('You · 10:05 PM') with the query 'What stretches do I need before ride…', a highlighted assistant name 'Ask Aurelius' with a small avatar, and an input row prompting 'Write with Siri' at the bottom. Black surfaces, white type and a red accent, with iOS-style assistant styling.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "assistant"
+   ],
+   "tags": [
+    "ai",
+    "chat",
+    "input-bar",
+    "voice"
+   ],
+   "palette": [
+    "#0B0B0B",
+    "#1C1C1E",
+    "#FFFFFF",
+    "#FF453A"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0095",
+   "relevant": true,
+   "title": "Deck/document page — 'Email Analytics' with vertical nav",
+   "description": "A white document or slide with a left-hand vertical navigation list ('Transactional Email', 'Email Analytics', 'Metrics', 'Engagement & clicks', 'Bounces & Diagnostics', 'AI Email') and a large heading 'Email Analytics'. Minimal black-on-white typography with thin rules — reads as a design-system or presentation page.",
+   "platform": "web",
+   "kind": "design-system",
+   "style": [
+    "minimal",
+    "light-mode",
+    "editorial"
+   ],
+   "tags": [
+    "navigation",
+    "documentation",
+    "typography",
+    "deck"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#9CA3AF"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0096",
+   "relevant": false,
+   "reason": "Hardware/retail promo footage (people and laptops in a showroom); on-screen content not legible"
+  },
+  {
+   "id": "VID-0097",
+   "relevant": true,
+   "title": "Line-art diagram of overlapping concentric circles",
+   "description": "A white canvas with a thin purple line-art diagram: overlapping concentric circles divided into segments and annotated with small handwritten-style captions and short labels. Reads as an infographic or diagram study rather than a product screen.",
+   "platform": "unknown",
+   "kind": "other",
+   "style": [
+    "minimal",
+    "line-art",
+    "geometric"
+   ],
+   "tags": [
+    "diagram",
+    "infographic",
+    "illustration"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#7C5CFF",
+    "#4B3FA8"
+   ],
+   "confidence": 0.35
+  },
+  {
+   "id": "VID-0098",
+   "relevant": true,
+   "title": "Floating mobile tab bar component in blue and white",
+   "description": "A white canvas showing a rounded floating bottom navigation bar mockup: a blue-tinted left section with a menu icon, then a row of small monochrome icons (home, compass/search, add, grid, profile) and a circular close/expand button at the right. Presented as a component showcase on a plain white artboard.",
+   "platform": "ios",
+   "kind": "design-system",
+   "style": [
+    "minimal",
+    "light-mode",
+    "rounded",
+    "component"
+   ],
+   "tags": [
+    "tab-bar",
+    "bottom-nav",
+    "icons",
+    "component"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#2D6BE5",
+    "#E8EEFB"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0099",
+   "relevant": true,
+   "title": "Desktop design-app window with macOS controls and layer sidebar",
+   "description": "A light desktop app window with red/yellow/green window controls and the title 'Paper', a left sidebar of layers labelled 'Design', 'Pages', 'moodboard', 'next' and 'not light', and a canvas area with a floating colour-picker circle in pink and blue. Looks like a Figma-style design-tool interface.",
+   "platform": "desktop",
+   "kind": "design-system",
+   "style": [
+    "light-mode",
+    "minimal",
+    "tool-ui"
+   ],
+   "tags": [
+    "design-tool",
+    "layers",
+    "sidebar",
+    "figma-like"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F5F5F5",
+    "#F06292",
+    "#42A5F5"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0100",
+   "relevant": true,
+   "title": "Dark data-viz dashboard with spatial and neural panels",
+   "description": "A dark blue dashboard with panels headed 'Bayesian Spatial Positioning' and 'Neural Cognitive Profile', a timeline/schedule chart with coloured bars and a grid of plotted points, plus explanatory body copy beginning 'A spreadsheet is a rectangle, two-dimensional structure…'. Technical labels, cyan and amber data accents on navy.",
+   "platform": "web",
+   "kind": "dashboard",
+   "style": [
+    "dark-mode",
+    "data-viz",
+    "technical"
+   ],
+   "tags": [
+    "dashboard",
+    "charts",
+    "ai",
+    "analytics"
+   ],
+   "palette": [
+    "#0E1524",
+    "#1B2740",
+    "#38BDF8",
+    "#F59E0B"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0101",
+   "relevant": true,
+   "title": "Dark AI agent configuration dashboard",
+   "description": "A dark navy web app with a left column of settings groups ('Voice Agent', configuration fields, toggles and a 'Generate' action), and a right panel containing a code/timeline block and a yellow bar chart. A note reads 'AI Agent Configuration'. Dense developer-tool aesthetic with blue and amber accents on deep navy.",
+   "platform": "web",
+   "kind": "dashboard",
+   "style": [
+    "dark-mode",
+    "technical",
+    "data-viz"
+   ],
+   "tags": [
+    "ai-agent",
+    "configuration",
+    "settings",
+    "charts"
+   ],
+   "palette": [
+    "#0B1220",
+    "#16233A",
+    "#F5C542",
+    "#3B82F6"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0102",
+   "relevant": true,
+   "title": "Travel/explore mobile app with nature photography cards",
+   "description": "A phone screen showing a travel content app: a green-tinted hero image, a stack of rounded cards with photos and short captions, and a bottom navigation; a second phone screen sits behind showing a similar feed with yellow and cream cards. Photography-led design with rounded corners and soft colour.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded",
+    "photography"
+   ],
+   "tags": [
+    "travel",
+    "feed",
+    "cards",
+    "bottom-nav"
+   ],
+   "palette": [
+    "#2F6B4F",
+    "#F4EFE2",
+    "#E8C547"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0103",
+   "relevant": true,
+   "title": "Tasks and Notes mobile app in light mode",
+   "description": "A white iPhone mockup showing a two-section app: a 'Tasks' list with checkboxes ('Go to gym', 'Meal prep', 'Finish task'), a small progress bar and a timer chip, then a 'Notes' section with pale yellow sticky cards ('Weekly plan', 'Work', 'Content'). Very clean, with generous whitespace and soft pastel accents.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "tasks",
+    "notes",
+    "todo",
+    "productivity"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#FDF3D0",
+    "#E8E8ED",
+    "#111111"
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "VID-0104",
+   "relevant": false,
+   "reason": "Personal outdoor video of people playing lawn games, no interface"
+  },
+  {
+   "id": "VID-0105",
+   "relevant": true,
+   "title": "iOS voice-message player with waveform scrubber",
+   "description": "A dark iOS screen in a rounded device frame with a large audio waveform scrubber, a '00:02' timestamp, a horizontal control row (rewind, play, forward, shuffle/repeat) and short message text above reading 'will catch you later' and 'meet me at 8:30'. Black background, white waveform and a subtle red accent.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "audio-player",
+    "voice-message",
+    "waveform",
+    "control"
+   ],
+   "palette": [
+    "#0A0A0A",
+    "#1C1C1E",
+    "#FFFFFF",
+    "#FF453A"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0106",
+   "relevant": true,
+   "title": "Editor screen with beta checklist, palm illustration and July calendar",
+   "description": "A light UI with an 'Editor' heading, a 'Beta checklist' card containing bullet rows and an 'Add text' link, a warm beige palm-tree illustration, and a calendar card headed 'July 2026' with a day marker. Soft cream, beige and green palette with rounded cards.",
+   "platform": "web",
+   "kind": "website",
+   "style": [
+    "light-mode",
+    "warm",
+    "card-based",
+    "editorial"
+   ],
+   "tags": [
+    "editor",
+    "calendar",
+    "checklist",
+    "illustration"
+   ],
+   "palette": [
+    "#F6F1E7",
+    "#4C7A5A",
+    "#E8D9B5"
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "VID-0107",
+   "relevant": false,
+   "reason": "NEBIans logo card on a light blue background — brand asset, no interface"
+  },
+  {
+   "id": "VID-0108",
+   "relevant": false,
+   "reason": "NEBIans 'NI' logo intro on a white card — brand asset, no interface"
+  },
+  {
+   "id": "VID-0109",
+   "relevant": true,
+   "title": "Book-to-tablet morph animation revealing an app skeleton",
+   "description": "A light blue frame in which a rounded white card displays a simple wireframe/skeleton app screen — a small header bar, a menu '…' and several placeholder list rows with grey bars — as part of a 'book transforms into tablet app' morph animation. Very minimal, monochrome placeholder shapes.",
+   "platform": "desktop",
+   "kind": "motion-demo",
+   "style": [
+    "minimal",
+    "light-mode",
+    "skeleton",
+    "motion"
+   ],
+   "tags": [
+    "skeleton-screen",
+    "animation",
+    "wireframe",
+    "morph"
+   ],
+   "palette": [
+    "#CFE4F5",
+    "#FFFFFF",
+    "#B8C4D0"
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "VID-0110",
+   "relevant": false,
+   "reason": "NEBIans logo intro animation on a card — brand asset, no interface"
+  },
+  {
+   "id": "VID-0111",
+   "relevant": true,
+   "title": "Dark AI agent chat with steering and queue controls",
+   "description": "A dark chat interface: a right-aligned bubble reading 'wait 50 seconds pls', a status line 'Waited 20 seconds.', a tool row 'Working 0:22 — Using browser' with a stop control, a 'queue' entry with 'Steer' and edit/trash icons, and a user message 'cool' above a camera and send button. Developer-tool aesthetic, near-black with grey text.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "technical",
+    "chat"
+   ],
+   "tags": [
+    "ai-agent",
+    "chat",
+    "status",
+    "queue"
+   ],
+   "palette": [
+    "#0D0D0D",
+    "#1C1C1E",
+    "#8E8E93",
+    "#FFFFFF"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0112",
+   "relevant": true,
+   "title": "Calendar app with May 2026 grid and colour-coded events",
+   "description": "A light mobile UI showing a calendar month grid for May 2026 with a highlighted date, a list of all-day event rows and colour-coded dots beside entries, plus a header row of small controls. Clean white cards, system typography and multi-colour event dots.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "calendar",
+    "event",
+    "schedule",
+    "colour-coding"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#FF6B6B",
+    "#4D96FF"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0113",
+   "relevant": true,
+   "title": "Text-formatting motion demo with bold, underline and arrow annotation",
+   "description": "A white rounded card on a dark background showing a line of text in which one word is emphasised as bold and another is underlined, with a red arrow annotation pointing at the underlined word and a red circle highlighting part of the line. Appears to be a typography/text-editing motion demo rather than a full app screen.",
+   "platform": "unknown",
+   "kind": "motion-demo",
+   "style": [
+    "minimal",
+    "light-mode",
+    "typography"
+   ],
+   "tags": [
+    "typography",
+    "text-editing",
+    "annotation",
+    "animation"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#E53935"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0114",
+   "relevant": true,
+   "title": "Learning app onboarding with mascot and topic buttons",
+   "description": "A white iPhone mockup showing an app screen: a small top bar, a large heading asking what the user would like to learn about, a text field hinting at a topic, pill buttons including 'Start a new topic' and 'Finish my streak', and a friendly red/orange mascot character above. Rounded white cards with a red accent.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "rounded",
+    "playful"
+   ],
+   "tags": [
+    "onboarding",
+    "education",
+    "mascot",
+    "pill"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#E63946",
+    "#111111"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0115",
+   "relevant": true,
+   "title": "Dark AI coding agent conversation with live status lines",
+   "description": "A dark screen showing an AI coding assistant conversation: a highlighted code block, status lines such as an error-handling message and a 'Thinking… 15 sec' indicator, and a hint to press to enter a chat message, with a black blob mascot peeking over a rounded window edge. Terminal/IDE aesthetic with white and grey text.",
+   "platform": "desktop",
+   "kind": "website",
+   "style": [
+    "dark-mode",
+    "technical",
+    "terminal"
+   ],
+   "tags": [
+    "ai",
+    "coding",
+    "terminal",
+    "status"
+   ],
+   "palette": [
+    "#0B0B0B",
+    "#1A1A1A",
+    "#7C5CFF",
+    "#FFFFFF"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0116",
+   "relevant": false,
+   "reason": "Marketing poster graphic for AI agents (sunflower and book imagery) — no interface"
+  },
+  {
+   "id": "VID-0117",
+   "relevant": true,
+   "title": "'rivet' landing page with red dot-matrix hero graphic",
+   "description": "A light landing page: a header with a red square logo mark and 'rivet' wordmark, nav items (Product, Blog, Contact) and a 'Contact' button; the hero shows a large red dot-matrix/particle illustration dissolving toward the right beside oversized red 'rivet' display type. Off-white background with a strong red accent.",
+   "platform": "web",
+   "kind": "website",
+   "style": [
+    "minimal",
+    "bold-typography",
+    "light-mode"
+   ],
+   "tags": [
+    "landing-page",
+    "hero",
+    "branding",
+    "particles"
+   ],
+   "palette": [
+    "#F7F5F2",
+    "#E23A2E",
+    "#111111"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0118",
+   "relevant": true,
+   "title": "In-hand iPhone showing camera/photo app slider",
+   "description": "A hand holding an iPhone, shot through a reflective surface, with a dark screen showing a yellow-and-black horizontal slider with a zoom-style label ('0.5x…') and small UI text — appears to be a camera or photo-editing app. The reflection and angle make the rest of the interface hard to read.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "camera",
+    "slider",
+    "photo",
+    "in-hand"
+   ],
+   "palette": [
+    "#111111",
+    "#FFD400",
+    "#7A7A7A"
+   ],
+   "confidence": 0.3
+  },
+  {
+   "id": "VID-0119",
+   "relevant": true,
+   "title": "Social feed app 'Poplife' with For You tab",
+   "description": "A light iPhone screen showing a social app: the app name 'Poplife' with a 'For You' tab and a search icon, a story-style avatar row, a post caption over a photo ('Lizzo is getting to the final round with Album five') and a colourful stylised image card below. Rounded cards and system typography.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded",
+    "vibrant"
+   ],
+   "tags": [
+    "social",
+    "feed",
+    "story",
+    "profile"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#FF5CA8",
+    "#7C4DFF",
+    "#111111"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0120",
+   "relevant": true,
+   "title": "Design moodboard — 'Delicate Linework' reference cards",
+   "description": "A design reference sheet on a light dotted background with two side-by-side image cards labelled 'Delicate Linework' and 'Flowers Delicate Details' — one a pale purple botanical illustration, the other a black-and-white textured photograph — each with small caption blocks beneath. Reads as a moodboard/inspiration card layout.",
+   "platform": "web",
+   "kind": "design-system",
+   "style": [
+    "minimal",
+    "light-mode",
+    "editorial",
+    "moodboard"
+   ],
+   "tags": [
+    "moodboard",
+    "grid",
+    "art-direction"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#C9B6E4",
+    "#1A1A1A"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0121",
+   "relevant": true,
+   "title": "Video-editing demo with sentence-focus and gestural editing captions",
+   "description": "A screen recording of a video-editing workflow: a person on camera in the lower half of the frame with overlaid caption text reading 'FOCUS BY SENTENCE / clause-by-clause, word-by-word' and 'GESTURAL EDITING / WRITING', plus a yellow dot marker over the image. The editing-app chrome is minimal and the frame is dominated by the demo footage and captions.",
+   "platform": "desktop",
+   "kind": "motion-demo",
+   "style": [
+    "dark-mode",
+    "bold-typography",
+    "overlay"
+   ],
+   "tags": [
+    "video-editing",
+    "captions",
+    "typography"
+   ],
+   "palette": [
+    "#111111",
+    "#F5C518",
+    "#FFFFFF"
+   ],
+   "confidence": 0.35
+  },
+  {
+   "id": "VID-0122",
+   "relevant": true,
+   "title": "'MEOW AI AGENT' landing page with pixel-art cat",
+   "description": "A white landing page with a top nav (Home, Documentation, Pricing, Sign In), a large condensed 'MEOW AI AGENT' headline, a pixel-art cat illustration with a striped offset shadow, and supporting copy describing an agentic coding CLI plus a small call to action. Monochrome with fine dotted texture and hard-edged type.",
+   "platform": "web",
+   "kind": "website",
+   "style": [
+    "minimal",
+    "bold-typography",
+    "pixel-art",
+    "monochrome"
+   ],
+   "tags": [
+    "landing-page",
+    "developer-tool",
+    "hero",
+    "nav"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#D6D6D6"
+   ],
+   "confidence": 0.65
+  },
+  {
+   "id": "VID-0123",
+   "relevant": false,
+   "reason": "Isometric game village scene with houses and a pond — game art"
+  },
+  {
+   "id": "VID-0124",
+   "relevant": true,
+   "title": "Dark mobile biography/reading screen with portrait",
+   "description": "A dark iPhone screen with a portrait photograph of a man occupying the upper half and, below it, a white block of several lines of biography text beginning 'From his early life and journey in California…'. Black background with an editorial single-column reading layout.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "editorial",
+    "minimal"
+   ],
+   "tags": [
+    "reading",
+    "biography",
+    "portrait"
+   ],
+   "palette": [
+    "#000000",
+    "#FFFFFF",
+    "#2C2C2E"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0125",
+   "relevant": true,
+   "title": "Designer portfolio page — 'How I make my living as a designer'",
+   "description": "A light web page with the heading 'How I make my living as a designer and my toolkit…', a colourful hand-drawn illustration of hands and objects, body copy set in two columns and a small dark 'Discover more' pill button. Off-white background with a playful illustrated editorial style.",
+   "platform": "web",
+   "kind": "website",
+   "style": [
+    "light-mode",
+    "editorial",
+    "illustrated"
+   ],
+   "tags": [
+    "portfolio",
+    "blog",
+    "illustration",
+    "typography"
+   ],
+   "palette": [
+    "#FAF7F2",
+    "#E4572E",
+    "#2A9D8F",
+    "#111111"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0126",
+   "relevant": true,
+   "title": "Quote page on lavender background — 'no right or wrong'",
+   "description": "A minimal web page: a pale lavender panel with a small header wordmark, a large centred quote beginning 'If you start from the position that there is no right or wrong, no good or bad, and creativity is just free play with no rules…' and a small author line below. Generous whitespace with large serif-like type.",
+   "platform": "web",
+   "kind": "website",
+   "style": [
+    "minimal",
+    "editorial",
+    "light-mode"
+   ],
+   "tags": [
+    "quote",
+    "typography",
+    "landing-page",
+    "whitespace"
+   ],
+   "palette": [
+    "#E8E4F5",
+    "#111111",
+    "#FFFFFF"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0127",
+   "relevant": true,
+   "title": "Personal portfolio page for 'Pratham Yadav'",
+   "description": "A clean white portfolio page with a top nav (Home, Projects, About, Contact), a large 'PRATHAM' wordmark, a circular avatar, the name 'Pratham Yadav' with the role 'Growth & GTM', a 'Book a Call' primary button, a 'Download Resume' action and a 'Copy Email' field. Minimal black-on-white with a dark-mode toggle.",
+   "platform": "web",
+   "kind": "website",
+   "style": [
+    "minimal",
+    "light-mode",
+    "clean"
+   ],
+   "tags": [
+    "portfolio",
+    "personal-site",
+    "cta",
+    "nav"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#E8E8E8"
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "VID-0128",
+   "relevant": true,
+   "title": "Design tool with three generative gradient panels",
+   "description": "A desktop design-tool window with a left sidebar containing a list of text items and a main canvas showing three tall panels filled with colourful generative gradients and pixel-pattern textures (green/blue, teal, orange). Looks like a Figma-style plugin or art-generator interface.",
+   "platform": "desktop",
+   "kind": "design-system",
+   "style": [
+    "tool-ui",
+    "generative",
+    "colourful"
+   ],
+   "tags": [
+    "design-tool",
+    "generative-art",
+    "canvas",
+    "sidebar"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#2E7D5B",
+    "#2AA5A0",
+    "#E8A33D"
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "VID-0129",
+   "relevant": false,
+   "reason": "Hand-drawn paper doodle of a stick figure — no interface"
+  },
+  {
+   "id": "VID-0130",
+   "relevant": true,
+   "title": "In-hand iPhone showing app with abstract red artwork",
+   "description": "A hand holding an iPhone above a desk with a keyboard; the screen shows a dark UI containing a red and black abstract image with a row of small controls or thumbnails along the bottom. Glare and the small scale make the interface details unreadable.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "in-hand",
+    "mockup",
+    "media"
+   ],
+   "palette": [
+    "#111111",
+    "#E23A2E",
+    "#4A4A4A"
+   ],
+   "confidence": 0.3
+  },
+  {
+   "id": "VID-0131",
+   "relevant": true,
+   "title": "Dark AI assistant — 'Hello Raunak. May I help you?'",
+   "description": "A dark iPhone screen with a soft blue glow at the top: the greeting 'Hello Raunak. May I help you?' in white, a prompt input labelled 'Message' with a microphone icon, and a toggle row labelled 'Temporary chat'. Gemini-style assistant UI with black surfaces and a blue accent.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "assistant",
+    "glow"
+   ],
+   "tags": [
+    "ai",
+    "chat",
+    "input-bar",
+    "onboarding"
+   ],
+   "palette": [
+    "#000000",
+    "#1C1C1E",
+    "#4A8CFF",
+    "#FFFFFF"
+   ],
+   "confidence": 0.75
+  },
+  {
+   "id": "VID-0132",
+   "relevant": true,
+   "title": "'Lens Chat' app with photo grid and dark panel",
+   "description": "A light UI with a header labelled 'Lens Chat', a dark rounded panel or dialog centred over the content, and behind it a grid of yellow, cream and green photo cards (one showing a map-like image). Reads as an image-search or lens-chat app surface.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "image-search",
+    "gallery",
+    "dialog"
+   ],
+   "palette": [
+    "#F4F1E4",
+    "#111111",
+    "#E8C547"
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "VID-0133",
+   "relevant": false,
+   "reason": "Desert Order game footage — game scene and HUD"
+  },
+  {
+   "id": "VID-0134",
+   "relevant": false,
+   "reason": "Black-and-white interview clip with a 'COULD YOU PATENT THE SUN?' caption — news/media"
+  },
+  {
+   "id": "VID-0135",
+   "relevant": true,
+   "title": "Dark welcome screen — 'Your world is ready'",
+   "description": "A minimal dark phone screen with a single line of white text, 'Your world is ready', centred with a small dot detail, and a pill-shaped 'Enter' button below. Near-black background and an extremely sparse onboarding/welcome layout.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "whitespace"
+   ],
+   "tags": [
+    "welcome",
+    "onboarding",
+    "empty-state",
+    "cta"
+   ],
+   "palette": [
+    "#0A0A0A",
+    "#FFFFFF",
+    "#2C2C2E"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0136",
+   "relevant": true,
+   "title": "iOS collage app — 'browse, gather, rearrange'",
+   "description": "An iPhone mockup on light grey showing an image-collage app: a grid of photo tiles, a floating 'Rearrange' label with a reorder handle, and body copy about how travel aids used to be paintings. Clean white UI with rounded image corners and small caption text.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "grid",
+    "rounded"
+   ],
+   "tags": [
+    "collage",
+    "photo",
+    "drag-reorder",
+    "editorial"
+   ],
+   "palette": [
+    "#F2F2F2",
+    "#FFFFFF",
+    "#111111",
+    "#6BA3C8"
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "VID-0137",
+   "relevant": true,
+   "title": "Design tool with phone artboard and layers panel",
+   "description": "A desktop design-tool window (Figma-like) with a left layers/pages panel, a right properties panel and a central iPhone artboard showing a colourful abstract UI made of rounded blobs and shapes. A standard product-design workspace view.",
+   "platform": "desktop",
+   "kind": "design-system",
+   "style": [
+    "light-mode",
+    "tool-ui",
+    "colourful"
+   ],
+   "tags": [
+    "design-tool",
+    "artboard",
+    "layers",
+    "workspace"
+   ],
+   "palette": [
+    "#F5F5F5",
+    "#FFFFFF",
+    "#7C5CFF",
+    "#2BB673"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0138",
+   "relevant": true,
+   "title": "Kids' learning app promo in app-store screenshot style",
+   "description": "A light layout with the heading 'Only learning games for kids', a row of colourful app icons, and an iPhone mockup at the right showing a purple app screen with the text 'Fun learning for kids' and illustrated characters. A marketing / app-store-screenshot composition.",
+   "platform": "ios",
+   "kind": "promo-reel",
+   "style": [
+    "light-mode",
+    "playful",
+    "promo",
+    "colourful"
+   ],
+   "tags": [
+    "education",
+    "kids",
+    "app-icon",
+    "marketing"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#7C4DFF",
+    "#F5C518",
+    "#E23A2E"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0139",
+   "relevant": true,
+   "title": "In-hand iPhone with circular camera-style control",
+   "description": "A hand holding an iPhone against a blurred green background; the screen shows an image or camera view with a large white circular control (shutter/record) and a small red indicator. The hand covers part of the layout, so only the general capture-app pattern is visible.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "capture"
+   ],
+   "tags": [
+    "camera",
+    "capture",
+    "in-hand"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#E23A2E",
+    "#2E5B3A"
+   ],
+   "confidence": 0.3
+  },
+  {
+   "id": "VID-0140",
+   "relevant": true,
+   "title": "Dark hero — 'Build the app you wished existed.'",
+   "description": "A near-black frame with the headline 'Build the app you wished existed.', a faint photographic image of a keyboard in the middle and a small product label at the top. Reads as a marketing hero or promo composition for a developer product.",
+   "platform": "web",
+   "kind": "promo-reel",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "promo"
+   ],
+   "tags": [
+    "hero",
+    "marketing",
+    "headline",
+    "developer-tool"
+   ],
+   "palette": [
+    "#0A0A0A",
+    "#1E1E1E",
+    "#FFFFFF"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0141",
+   "relevant": true,
+   "title": "Three-screen mobile app flow — mentor match and route map",
+   "description": "Three iPhone screens side by side: one showing a '3 Days' streak/progress view, one titled 'Hey Genie' with a checklist ('First match', 'Edit your profile', 'Find a mentor') and a green indicator, and one showing a pale blue map with a winding route line. Consistent rounded, soft-blue design language across the flow.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "rounded",
+    "flow"
+   ],
+   "tags": [
+    "onboarding",
+    "checklist",
+    "map",
+    "mentorship"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#DCEBFB",
+    "#2D6BE5",
+    "#111111"
+   ],
+   "confidence": 0.65
+  },
+  {
+   "id": "VID-0142",
+   "relevant": true,
+   "title": "Pink 'Afterglow' social/community app profile",
+   "description": "An iPhone mockup on pink showing a profile-style app screen: a large pink card with an avatar and handle, a 'Gaming & Fitness' badge, sections headed 'The Story' and 'Recent', a row of app icons and a 'My Tips & Tricks' area, with small tooltip labels pointing at individual elements. Playful pink palette with dark type.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "playful",
+    "card-based",
+    "rounded",
+    "light-mode"
+   ],
+   "tags": [
+    "profile",
+    "social",
+    "tooltips",
+    "community"
+   ],
+   "palette": [
+    "#F9C9D6",
+    "#FFFFFF",
+    "#111111",
+    "#7C4DFF"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0143",
+   "relevant": false,
+   "reason": "3D anime-style character animation ('IN THE MOOCH!') — no interface"
+  },
+  {
+   "id": "VID-0144",
+   "relevant": true,
+   "title": "Garden planner — butterfly-shaped planting layout",
+   "description": "A green-toned illustrated layout in which plants, flowers and vegetables are arranged into a butterfly shape, with small green pill buttons labelled 'New Plant' at the corners and a title bar across the top. Reads as a garden-design or planting-planner app screen rather than a game scene.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "illustrated",
+    "playful",
+    "green"
+   ],
+   "tags": [
+    "planner",
+    "button"
+   ],
+   "palette": [
+    "#2E7D32",
+    "#A5D6A7",
+    "#F5F5F5"
+   ],
+   "confidence": 0.35
+  },
+  {
+   "id": "VID-0145",
+   "relevant": false,
+   "reason": "Abstract dark dot-grid/particle visual with an orange glow — no recognisable interface"
+  },
+  {
+   "id": "VID-0146",
+   "relevant": true,
+   "title": "Product designer portfolio — Harold Bernard bio page",
+   "description": "A white web page with a paragraph beginning 'I'm a product designer that specializes in crafting interactions…', a name card reading 'Harold Bernard — San Francisco, CA', a second bio paragraph about making things from scratch and tinkering, a small pixel-art character and a bottom nav ('Work Play Notes Other'). Minimal editorial layout with generous whitespace.",
+   "platform": "web",
+   "kind": "website",
+   "style": [
+    "minimal",
+    "light-mode",
+    "editorial"
+   ],
+   "tags": [
+    "portfolio",
+    "bio",
+    "navigation",
+    "typography"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#E8E8E8"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0147",
+   "relevant": true,
+   "title": "Design board of pastel UI component cards",
+   "description": "A white canvas containing a cluster of pastel-coloured UI panels (pink, mint, pale yellow, lavender), each holding small interface pieces — chat bubbles, a list, an input field, a header — arranged like a design-system or component-exploration board. Soft low-contrast colours with rounded corners.",
+   "platform": "web",
+   "kind": "design-system",
+   "style": [
+    "pastel",
+    "light-mode",
+    "component",
+    "rounded"
+   ],
+   "tags": [
+    "component",
+    "design-system",
+    "board",
+    "ui-kit"
+   ],
+   "palette": [
+    "#FDF2F8",
+    "#E8F5E9",
+    "#FFF8E1",
+    "#E8EAF6"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0148",
+   "relevant": true,
+   "title": "Phone mockup — dark shoe shopping app on a painted backdrop",
+   "description": "An iPhone mockup standing in front of a framed landscape painting: the screen shows a dark e-commerce app with a large product photo of a red and blue sneaker, headings such as 'Shoes' and 'Best Sellers', and rounded product cards. A product-marketing composition rather than a raw screen capture.",
+   "platform": "ios",
+   "kind": "promo-reel",
+   "style": [
+    "dark-mode",
+    "promo",
+    "card-based",
+    "mockup"
+   ],
+   "tags": [
+    "ecommerce",
+    "product-page",
+    "marketing"
+   ],
+   "palette": [
+    "#111111",
+    "#E23A2E",
+    "#3B6CFF",
+    "#E8DCC8"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0149",
+   "relevant": true,
+   "title": "Health/fitness app dashboard with radial stats and mint palette",
+   "description": "A light UI on a soft mint-white background: a large numeric figure, a radial arc chart, stat cards (a percentage, 'New Meal', 'Warm Up', 'Sleep'), a bar-chart block and a calendar strip, with an iPhone mockup at the right showing a companion screen. Rounded white cards with green accents.",
+   "platform": "ios",
+   "kind": "dashboard",
+   "style": [
+    "light-mode",
+    "card-based",
+    "minimal",
+    "data-viz"
+   ],
+   "tags": [
+    "health",
+    "fitness",
+    "stats",
+    "charts"
+   ],
+   "palette": [
+    "#F2F7F2",
+    "#34C759",
+    "#FFFFFF",
+    "#111111"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0150",
+   "relevant": true,
+   "title": "Cursor smoothing motion demo — spring vs none",
+   "description": "A white canvas divided into labelled rows: 'Your cursor' with a small arrow, 'Without smoothing' and 'With spring smoothing', each showing a purple pill tag ('Design team') being dragged, plus a 'Show overlays' control. A clear motion-design demo comparing cursor interpolation and spring easing.",
+   "platform": "web",
+   "kind": "motion-demo",
+   "style": [
+    "minimal",
+    "light-mode",
+    "motion",
+    "diagram"
+   ],
+   "tags": [
+    "cursor",
+    "animation",
+    "prototype"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#7C5CFF",
+    "#111111"
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "VID-0151",
+   "relevant": true,
+   "title": "Portfolio mockup — 'designer. artist. human.'",
+   "description": "A white canvas with an iPhone mockup showing a page headed 'designer. artist. human.' in large type over an image of a drawing tablet, with a small caption block beneath. A minimal personal-site design presentation.",
+   "platform": "ios",
+   "kind": "website",
+   "style": [
+    "minimal",
+    "light-mode",
+    "editorial"
+   ],
+   "tags": [
+    "portfolio",
+    "hero",
+    "typography",
+    "mockup"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#D6D6D6"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0152",
+   "relevant": false,
+   "reason": "Abstract pink generative-art loop graphic on white — no interface"
+  },
+  {
+   "id": "VID-0153",
+   "relevant": true,
+   "title": "Onboarding — 'Welcome to Offhop' with 3D gradient blobs",
+   "description": "A dark iPhone screen with a colourful cluster of glossy 3D blobs (pink, green, blue) at the top, the headline 'Welcome to Offhop' in white, and a form area with a phone-number field and a 'Continue' button below. Dark mode with vibrant gradient artwork and rounded controls.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "gradient",
+    "rounded",
+    "3d"
+   ],
+   "tags": [
+    "onboarding",
+    "welcome",
+    "form",
+    "signup"
+   ],
+   "palette": [
+    "#0A0A0A",
+    "#FF5CA8",
+    "#2BB673",
+    "#4A8CFF"
+   ],
+   "confidence": 0.65
+  },
+  {
+   "id": "VID-0154",
+   "relevant": true,
+   "title": "'Support the Developer' donation screen",
+   "description": "A light iPhone screen with a small wordmark at the top, a monochrome line illustration of a person at a laptop, the heading 'Support the Developer', explanatory copy noting the contribution is optional and goes into building the product, and a primary button. Clean black-and-white minimal UI.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "monochrome",
+    "light-mode",
+    "line-art"
+   ],
+   "tags": [
+    "paywall",
+    "illustration",
+    "cta"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#E8E8E8"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0155",
+   "relevant": true,
+   "title": "'Clockwork' sticker pack screen",
+   "description": "A dark iPhone screen with a header row reading 'Clockwork' and a count of '5 stickers', and large sticker graphics — a gold pyramid, a Statue of Liberty figure and a person — presented on a dark card with a small caption area. A sticker/iMessage-app style interface.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "sticker",
+    "imessage-app",
+    "gallery",
+    "illustration"
+   ],
+   "palette": [
+    "#111111",
+    "#E8C547",
+    "#2C2C2E"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0156",
+   "relevant": true,
+   "title": "In-hand iPhone — social feed of profile cards",
+   "description": "A hand holding an iPhone showing a light social app screen: a grid or feed of profile cards with avatars, names and a year label ('Deferred 2026/27'), plus a top bar with search and filter chips. The hand obscures parts of the layout.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "card-based",
+    "grid"
+   ],
+   "tags": [
+    "social",
+    "profile",
+    "feed",
+    "filters"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#E8E8ED",
+    "#111111"
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "VID-0157",
+   "relevant": true,
+   "title": "Dark mobile settings/profile list (small mockup)",
+   "description": "A dark iPhone mockup on a light background showing a list-based screen with grouped rows, section headings and small grey labels. The text is too small to read reliably, but the structure is a settings/profile list with dividers and grouped sections.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "list",
+    "minimal"
+   ],
+   "tags": [
+    "settings",
+    "profile",
+    "list"
+   ],
+   "palette": [
+    "#1A1A1A",
+    "#0D0D0D",
+    "#8E8E93"
+   ],
+   "confidence": 0.3
+  },
+  {
+   "id": "VID-0158",
+   "relevant": true,
+   "title": "Dark mobile context menu — rename, move to trash, payment method",
+   "description": "A dark iPhone screen showing a floating context-menu popover with rows including 'Shared with me', 'Rename', 'Move to Trash' and 'Payment Method', with one row highlighted in red. Black surfaces, white text and thin separators in a standard iOS menu pattern.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "menu"
+   ],
+   "tags": [
+    "context-menu",
+    "popover",
+    "destructive-action",
+    "settings"
+   ],
+   "palette": [
+    "#0A0A0A",
+    "#1C1C1E",
+    "#FF453A"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0159",
+   "relevant": false,
+   "reason": "Animated 'DD' monogram logo on black — brand asset, no interface"
+  },
+  {
+   "id": "VID-0160",
+   "relevant": true,
+   "title": "Chat app mockup set — 'What are you thinking this afternoon?'",
+   "description": "Three light iPhone screens side by side showing a chat experience: a prompt reading 'What are you thinking this afternoon?', a soft rainbow/glassmorphism blob illustration, message bubbles with reactions, a text input and small emoji-style buttons. Soft pastel, rounded and slightly glassy styling.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "pastel",
+    "glassmorphism",
+    "rounded",
+    "light-mode"
+   ],
+   "tags": [
+    "chat",
+    "ai",
+    "mockup-set",
+    "onboarding"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#FFD6E8",
+    "#B8E0FF",
+    "#111111"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0161",
+   "relevant": true,
+   "title": "Onboarding — 'Work. Earn. Enjoy'",
+   "description": "A white iPhone mockup showing a light onboarding screen: a small logo, the headline 'Work. Earn. Enjoy', a scatter of small yellow and orange rounded icons around the layout, and a blue primary button near the bottom. Minimal and airy with a strong blue accent.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "rounded",
+    "whitespace"
+   ],
+   "tags": [
+    "onboarding",
+    "splash",
+    "cta",
+    "illustration"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#FFC53D",
+    "#2D6BE5",
+    "#111111"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0162",
+   "relevant": true,
+   "title": "Habit app 'Commitment' with envelope illustration",
+   "description": "A cream iPhone screen with a small header, the title 'Commitment', a line-drawn envelope illustration, a short affirmation line and a green circular confirm button at the bottom. Warm off-white palette, thin line art and a very minimal layout.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "warm",
+    "line-art",
+    "light-mode"
+   ],
+   "tags": [
+    "habit",
+    "commitment",
+    "illustration",
+    "confirmation"
+   ],
+   "palette": [
+    "#F7F2E8",
+    "#2E7D5B",
+    "#111111"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0163",
+   "relevant": true,
+   "title": "'CADU' splash screen with playful characters",
+   "description": "A light iPhone screen with a large 'CADU' wordmark in the centre, surrounded by colourful cartoon blobs and emoji-like characters (hearts, faces, simple shapes) and a 'Get Started' button at the bottom. High-saturation, playful illustration style.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "playful",
+    "vibrant",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "splash",
+    "onboarding",
+    "mascot",
+    "cta"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#FF6B9D",
+    "#FFD166",
+    "#6BCB77"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0164",
+   "relevant": true,
+   "title": "Gamified leaderboard — 'Climb the Global Rankings'",
+   "description": "A light iPhone screen with the heading 'Climb the Global Rankings', a ranked list (entries such as '1 Kaito 12,550' and '2 Kanae 8,352') with yellow avatar icons and a highlighted current-user row, plus tab labels along the bottom (Home, Contest, Global). Warm cream background with yellow accents.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "playful",
+    "list",
+    "gamified"
+   ],
+   "tags": [
+    "leaderboard",
+    "ranking",
+    "gamification",
+    "tabs"
+   ],
+   "palette": [
+    "#FBF6E8",
+    "#F5C518",
+    "#111111"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0165",
+   "relevant": true,
+   "title": "Dark music app — playlist and track list",
+   "description": "A dark iPhone screen showing a music app: a square album-art tile, tabs labelled 'Design' and 'Playlists', a track list with rows, and a 'Dismiss' action. Black background, white type and subtle grey separators with a purple accent.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "list"
+   ],
+   "tags": [
+    "music",
+    "playlist",
+    "album-art",
+    "tabs"
+   ],
+   "palette": [
+    "#0A0A0A",
+    "#1C1C1E",
+    "#FFFFFF",
+    "#7C5CFF"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0166",
+   "relevant": true,
+   "title": "Minimal mobile screen with a single input field",
+   "description": "A white iPhone mockup showing an almost empty light screen: a thin header row and one blue-accented text field with a blinking cursor, with nothing else on the page. An extreme-minimalist layout useful mainly as a spacing and whitespace reference.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "whitespace"
+   ],
+   "tags": [
+    "input",
+    "empty-state",
+    "form"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#2D6BE5",
+    "#E8E8E8"
+   ],
+   "confidence": 0.35
+  },
+  {
+   "id": "VID-0167",
+   "relevant": true,
+   "title": "Signup screen — 'Enter your name' with iOS keyboard",
+   "description": "A light iPhone screen showing a name-entry step: the heading 'Enter your name', a text field containing the name 'Renu' with a visible cursor, a 'Next' button, and the full iOS QWERTY keyboard occupying the lower half. Clean white layout with a blue accent.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "form"
+   ],
+   "tags": [
+    "signup",
+    "text-input",
+    "keyboard",
+    "onboarding"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#D1D5DB",
+    "#2D6BE5",
+    "#111111"
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "VID-0168",
+   "relevant": false,
+   "reason": "Stylised 3D isometric game scene with characters at a campfire — game art"
+  },
+  {
+   "id": "VID-0169",
+   "relevant": false,
+   "reason": "Abstract black and orange graphic animation on white — logo/graphic, no interface"
+  },
+  {
+   "id": "VID-0170",
+   "relevant": true,
+   "title": "Dark account/settings screen with grouped rows",
+   "description": "A dark iPhone screen with a small header and a grouped list of rows: 'You're a…', 'Grow Guide', 'Account Settings', 'Profile & Account', 'Analytics', 'Notifications' and 'Redeem Code'. Black background with slightly lighter row surfaces, white text and clear grouping.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "list"
+   ],
+   "tags": [
+    "settings",
+    "account",
+    "menu",
+    "list"
+   ],
+   "palette": [
+    "#0A0A0A",
+    "#1C1C1E",
+    "#FFFFFF"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0171",
+   "relevant": true,
+   "title": "Survey question screen — time spent sitting or resting outside",
+   "description": "A cream/off-white iPhone screen with a single large centred question: 'How much space do you usually spend sitting or resting outside?' set in dark type, with no other controls visible in the frame. A minimal survey or onboarding question layout.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "warm",
+    "whitespace",
+    "light-mode"
+   ],
+   "tags": [
+    "survey",
+    "question",
+    "onboarding",
+    "typography"
+   ],
+   "palette": [
+    "#F5EFE6",
+    "#111111"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0172",
+   "relevant": true,
+   "title": "Survey question screen — sitting/resting outside (duplicate)",
+   "description": "A duplicate of the previous cell: the same cream iPhone screen with the single centred question 'How much space do you usually spend sitting or resting outside?' and no other visible controls. Same minimal warm-toned survey styling.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "warm",
+    "whitespace",
+    "light-mode"
+   ],
+   "tags": [
+    "survey",
+    "question",
+    "onboarding",
+    "duplicate"
+   ],
+   "palette": [
+    "#F5EFE6",
+    "#111111"
+   ],
+   "confidence": 0.65
+  },
+  {
+   "id": "VID-0173",
+   "relevant": true,
+   "title": "Health app onboarding with radial 'Overview' chart",
+   "description": "A white iPhone screen showing an onboarding card: a step indicator reading '1 of 3 · Discover · Set a Goal', the heading 'Get An Overview of Your Longterm Health', supporting copy about adding a few details, a colourful radial ring made of segments with small icons, and a 'Next' button. Bright, friendly health-app styling.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "colourful",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "health",
+    "onboarding",
+    "chart",
+    "steps"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#FF6B6B",
+    "#4D96FF",
+    "#34C759"
+   ],
+   "confidence": 0.65
+  },
+  {
+   "id": "VID-0174",
+   "relevant": true,
+   "title": "Pixel-art editor UI with palette and tool rail",
+   "description": "A pixel-art creation tool: a checkerboard canvas showing a blue crystal/shard illustration, a colour palette strip and timeline along the bottom, a vertical tool rail on the right and a small info panel at the top. A classic sprite-editor interface rather than gameplay.",
+   "platform": "desktop",
+   "kind": "design-system",
+   "style": [
+    "dark-mode",
+    "tool-ui",
+    "pixel-art"
+   ],
+   "tags": [
+    "pixel-art",
+    "editor",
+    "palette",
+    "tool"
+   ],
+   "palette": [
+    "#1E1E1E",
+    "#3B6CFF",
+    "#7CC7E8",
+    "#FFFFFF"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0175",
+   "relevant": false,
+   "reason": "Pixel-art RPG scene with dialogue boxes — game footage"
+  },
+  {
+   "id": "VID-0176",
+   "relevant": false,
+   "reason": "Pixel-art underwater scene with fish — game art"
+  },
+  {
+   "id": "VID-0177",
+   "relevant": false,
+   "reason": "Isometric pixel-art 'LAB' room with machines — game asset"
+  },
+  {
+   "id": "VID-0178",
+   "relevant": false,
+   "reason": "Pixel-art room interior — game asset"
+  },
+  {
+   "id": "VID-0179",
+   "relevant": false,
+   "reason": "Two isometric pixel-art scenes (room and map) — game art"
+  },
+  {
+   "id": "VID-0180",
+   "relevant": false,
+   "reason": "iPhone mockup displaying a full-screen underwater illustration; no UI chrome visible"
+  },
+  {
+   "id": "VID-0181",
+   "relevant": false,
+   "reason": "Pixel-art game scene with a 'Wishlist now!' promo overlay — game footage"
+  },
+  {
+   "id": "VID-0182",
+   "relevant": false,
+   "reason": "Pixel-art room interior with a TV — game asset"
+  },
+  {
+   "id": "VID-0183",
+   "relevant": false,
+   "reason": "Pixel-art forest/field scene — game art"
+  },
+  {
+   "id": "VID-0184",
+   "relevant": true,
+   "title": "Tile/level editor with tileset palette",
+   "description": "A pixel-art tilemap editor: a large canvas showing a blue water and green terrain map with a dark path, a bottom strip of selectable tiles in different materials and colours, and small tool buttons. A level/tileset editor interface rather than a game scene.",
+   "platform": "desktop",
+   "kind": "design-system",
+   "style": [
+    "tool-ui",
+    "pixel-art"
+   ],
+   "tags": [
+    "level-editor",
+    "tileset",
+    "palette",
+    "canvas"
+   ],
+   "palette": [
+    "#4A90D9",
+    "#2E7D32",
+    "#8B5E3C",
+    "#E8E8E8"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0185",
+   "relevant": false,
+   "reason": "Pixel-art game scene with a character and a HUD bar — game footage"
+  },
+  {
+   "id": "VID-0186",
+   "relevant": false,
+   "reason": "Pixel-art dungeon scene with characters — game footage"
+  },
+  {
+   "id": "VID-0187",
+   "relevant": true,
+   "title": "Tilemap editor with tile palette sidebar",
+   "description": "A pixel-art map editor showing a top-down dark map with buildings and a path on a grid, tool buttons along the top and a tile palette panel on the right-hand side. Reads as a level-editor workspace rather than gameplay footage.",
+   "platform": "desktop",
+   "kind": "design-system",
+   "style": [
+    "dark-mode",
+    "tool-ui",
+    "pixel-art"
+   ],
+   "tags": [
+    "level-editor",
+    "tilemap",
+    "palette",
+    "grid"
+   ],
+   "palette": [
+    "#2B2B2B",
+    "#6B7A4F",
+    "#C9A227"
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "VID-0188",
+   "relevant": true,
+   "title": "Light mobile app mockup with product cards",
+   "description": "A light iPhone mockup on white showing an app screen with a header and a list of rounded cards, one containing a product-style grid with small buttons, with a second screen partially visible behind it. Details are small but the layout is a standard card-list mobile UI.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded",
+    "minimal"
+   ],
+   "tags": [
+    "list",
+    "cards",
+    "mockup",
+    "commerce"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F2F2F2",
+    "#111111"
+   ],
+   "confidence": 0.35
+  },
+  {
+   "id": "VID-0189",
+   "relevant": true,
+   "title": "App mockup set — 'Artifact' calendar and list screens",
+   "description": "Three light-grey iPhone mockups side by side showing an app: one with a large numeric display, one headed 'Artifact' with a small calendar grid and list rows, and one with a simple list. Muted grey-on-white minimal styling with small type.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "monochrome",
+    "mockup"
+   ],
+   "tags": [
+    "calendar",
+    "list",
+    "mockup-set"
+   ],
+   "palette": [
+    "#EDEDED",
+    "#FFFFFF",
+    "#111111"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0190",
+   "relevant": false,
+   "reason": "Pixel-art night-time room scene — game asset"
+  },
+  {
+   "id": "VID-0191",
+   "relevant": false,
+   "reason": "Pixel-art landscape with mountains, water and fog — game art"
+  },
+  {
+   "id": "VID-0192",
+   "relevant": false,
+   "reason": "Pixel-art castle city at sunset — game art"
+  }
+ ]
+}

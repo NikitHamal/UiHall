@@ -1,0 +1,213 @@
+{
+ "batch": "brand-icons-and-misc",
+ "note": "App icon families, brand marks captured across their full size ladder, and the three assets the first triage pass left unclassified. Icon work is where a design language is most compressed — a single rounded square has to carry the whole identity — so these are unusually high-signal per byte.",
+ "items": [
+  {
+   "id": "IMG-0315",
+   "category": "brand-identity",
+   "type": "marketing",
+   "title": "N logomark — complete icon size ladder",
+   "description": "A seven-file icon family captured as a whole set: IMG-0317 (16px), IMG-0314 (32px), IMG-0319 (48px), IMG-0316 (180px), IMG-0318 (192px), IMG-0320 (512px) and this 1024px master. The mark is a bold geometric 'N' whose right stem is extruded into a stack of offset planes, giving it a folded-ribbon appearance without literal 3D rendering. Two blues do the work — a confident royal on the front faces, a pale tint on the rear planes — set on plain white. The set is worth keeping entire because it documents the central problem of icon design: the fold detail that reads beautifully at 1024px turns to mush at 16px, so the small sizes have been simplified rather than naively downscaled. Putting n-logo-16 next to n-logo-1024 is the fastest way to see that simplification happen, and it is the reference to consult when deciding what an icon set must cover.",
+   "roles": [],
+   "style": [
+    "flat",
+    "monochrome",
+    "rounded"
+   ],
+   "tags": [
+    "branding",
+    "logo",
+    "app-icon",
+    "iconography",
+    "mockup-set"
+   ],
+   "quality": "Clean captures at each size, saved as separate files, so the ladder is directly comparable.",
+   "source_note": "Files IMG-0314 through IMG-0320 are the same mark at seven sizes."
+  },
+  {
+   "id": "IMG-0036",
+   "category": "brand-identity",
+   "type": "marketing",
+   "title": "AstroWeb monogram — gold A on deep space",
+   "description": "A square app-icon-shaped mark: a heavy slab-ish gold 'A' standing on a deep navy-purple disc, which itself sits on a darker field. Faint orbital arcs sweep across the disc and a scatter of small light points reads as stars or satellites, with one bright pinpoint above the apex of the A. The mark is built from three colours only — near-black navy, a mid violet, and a warm gold — and gets its depth from the gold being the sole high-chroma element on an otherwise cold field. A clean example of 'one warm element on a cold ground' operating at icon scale, where there is no room for a second idea.",
+   "roles": [],
+   "style": [
+    "luxury",
+    "dark-mode",
+    "gradient-heavy"
+   ],
+   "tags": [
+    "branding",
+    "logo",
+    "app-icon",
+    "gradient",
+    "glow"
+   ],
+   "quality": "Clean, high resolution."
+  },
+  {
+   "id": "IMG-0211",
+   "category": "app-store-screens",
+   "type": "marketing",
+   "title": "Store panel trio — balance, insights, and a plain list",
+   "description": "A light-grey store panel carrying three overlapping phone mockups. The lead screen shows a large total balance with a weekly delta beneath it, then a trend row, category pills and a horizontal card carousel. The second screen is a spend breakdown built around a donut chart with a colour-coded legend. The third is a plain list of rows with an inline search field. The panel is a good study in store-panel sequencing: hero figure first to establish the category, data-viz second to demonstrate capability, utilitarian list third to prove it is a real tool rather than a dashboard demo. All three screens share one type ramp, which is what makes them read as a family rather than three screenshots.",
+   "roles": [
+    "dashboard",
+    "home"
+   ],
+   "style": [
+    "minimal",
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "fintech",
+    "budgeting",
+    "app-store",
+    "chart",
+    "cards"
+   ],
+   "quality": "Clean store capture, legible at native resolution."
+  },
+  {
+   "id": "IMG-0212",
+   "category": "app-store-screens",
+   "type": "marketing",
+   "title": "Store panel with before/after education comparison",
+   "description": "A marketing panel headed 'Before' and 'After' in a bold display face, each column holding phone mockups of a children's reading app. The 'Before' side is a plain title screen with a single track listing; the 'After' side introduces illustrated character avatars, a lesson-count badge reading '10 lessons', and a progress row. This is marketing copy rather than a UI reference, but it is worth keeping because it shows the standard conversion argument for learning products: the before state offers no evidence of progress, the after state makes progress the visual subject. The illustration style is flat soft-shape with rounded everything and a warm palette.",
+   "roles": [
+    "onboarding",
+    "pricing"
+   ],
+   "style": [
+    "playful",
+    "illustration-led",
+    "bold-typography"
+   ],
+   "tags": [
+    "app-store",
+    "education",
+    "kids"
+   ],
+   "quality": "Good capture; the framing copy is legible, the text inside the mockups is not."
+  },
+  {
+   "id": "IMG-0035",
+   "category": "brand-identity",
+   "type": "marketing",
+   "title": "Dami Treats — grand opening poster",
+   "description": "A tall promotional poster for a Nepali dessert shop, built as a dense vertical stack of bands: a script logotype over a framed illustration of a dessert counter, a bulleted list of offerings, boxed detail rows for location, date and opening hours, three offer callouts, then contact details. Saturated ice-cream pastels — pink, mint, peach — against cream, with primary-coloured accent text. Kept because it is the clearest example in the collection of maximum-density layout: no whitespace at all, every band filled, and hierarchy carried entirely by colour and band boundaries rather than by spacing. That is the opposite of the minimal convention and it is a legitimate approach when a poster has to be read at a distance and in passing.",
+   "roles": [
+    "hero",
+    "social-proof"
+   ],
+   "style": [
+    "playful",
+    "bold-typography",
+    "illustration-led"
+   ],
+   "tags": [
+    "food",
+    "nepali",
+    "localised",
+    "poster"
+   ],
+   "quality": "Clean capture; all bands legible. Nepali and English are set side by side.",
+   "source_note": "Local print design rather than an app. Retained as a counter-example to the minimal-only tendency."
+  },
+  {
+   "id": "IMG-0260",
+   "category": "illustration",
+   "type": "reference",
+   "title": "Soft-shape character portrait",
+   "description": "A flat character illustration: head and shoulders of a figure with large dark tousled hair, a face rendered in just a few marks, and a bright cobalt-blue top against a solid mint-green ground. There are no outlines — every shape is defined purely by fill against a contrasting field. The palette is deliberately tiny (two hues plus near-black hair and a warm skin tone), and that restriction is what gives it confidence. Useful as a reference for illustration *inside* an app: this is the level of complexity that still reads at 48px in an empty state, unlike the detailed character work elsewhere in the collection.",
+   "roles": [
+    "empty-state"
+   ],
+   "style": [
+    "playful",
+    "flat",
+    "illustration-led"
+   ],
+   "tags": [
+    "mascot",
+    "avatar",
+    "colourful"
+   ],
+   "quality": "Clean vector-style capture, high resolution.",
+   "source_note": "Character reference. Same family as the sprite sets elsewhere in the collection."
+  },
+  {
+   "id": "IMG-0305",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Balance home — gradient card treatment",
+   "description": "A three-up phone composition on a soft grey-violet gradient field. The centre screen carries 'Total Balance $12,750' over a pink-to-navy gradient card, a spend breakdown with a multi-colour donut, and a small carousel of light cards beneath. To the left a smaller screen shows the same data compressed into a summary list; to the right a tooltip-style card reads 'Hi Lola, let's manage money smarter.' The notable technique is the gradient card: it blends from warm pink top-left to deep navy bottom-right, which lets it read as pinned above the page without needing a border or a shadow. The donut uses six saturated hues and just about gets away with it because nothing else on the screen is coloured.",
+   "roles": [
+    "dashboard",
+    "home"
+   ],
+   "style": [
+    "gradient-heavy",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "fintech",
+    "budgeting",
+    "cards",
+    "chart",
+    "gradient"
+   ],
+   "quality": "Good capture; the balance figure and donut are legible, the list rows are not."
+  },
+  {
+   "id": "IMG-0257",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "New topic — icon picker sheet",
+   "description": "A bottom sheet on a soft pink-tinted surface. A 'Topics' header sits above an outlined 'New topic' field, then a Name input, then a Type segmented control with one option filled near-black, then a grid of roughly twenty rounded-square icon tiles — one of which is selected and marked with a coral-pink ring. A large dark circular confirm button anchors the bottom. This is the clearest example in the collection of a picker done properly: the choices are shown as a grid of the actual values rather than a dropdown of labels, the current selection is marked with a ring rather than a fill so the icon stays visible underneath, and the sheet does exactly one thing.",
+   "roles": [
+    "editor",
+    "form",
+    "onboarding"
+   ],
+   "style": [
+    "playful",
+    "rounded",
+    "soft-shadow"
+   ],
+   "tags": [
+    "picker",
+    "icons",
+    "sheet",
+    "colourful"
+   ],
+   "quality": "Clean capture at native resolution; the icon tiles are distinguishable."
+  },
+  {
+   "id": "IMG-0259",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Focus timer — hairline ring around a large number",
+   "description": "A light screen built around a large thin-stroke circular progress ring enclosing a huge '120:00' countdown. Above the ring a small tab row selects between Focus, Reading, Social and Default; below it, small text gives the session start time. The controls sit as three small circles arranged low and slightly off-centre rather than in a symmetrical bar, with a single pill-shaped card floating at the bottom. The key move is the restraint of the ring: it is drawn as a hairline rather than a thick arc, so the number stays the subject and the ring only supports it. Most timer apps invert that and draw a heavy arc, which then competes with the figure it exists to frame.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "minimal",
+    "light-mode",
+    "monochrome"
+   ],
+   "tags": [
+    "productivity",
+    "focus-timer",
+    "progress-ring",
+    "whitespace",
+    "health"
+   ],
+   "quality": "Clean capture, high resolution. Among the clearest type treatments in the corpus."
+  }
+ ]
+}

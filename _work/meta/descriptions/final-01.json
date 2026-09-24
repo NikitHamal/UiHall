@@ -1,0 +1,774 @@
+{
+ "note": "Final coverage pass: the last undescribed assets across website, app-store-screens, design-system, typography and illustration. Sheets review_website_01, review_app-store-screens_01, review_design-system_01, review_typography_01, review_illustration_01. Palette, dimensions and contrast are measured elsewhere.",
+ "items": {
+  "IMG-0100": {
+   "id": "IMG-0100",
+   "category": "website",
+   "type": "screen",
+   "title": "Marketing landing page with a run of pastel gradient tiles",
+   "description": "A wide light web page captured at desktop width. In the browser chrome at the top a small logo sits at the left and a row of plain text links at the right, with a single dark pill button at the far right. The hero is centred and restrained: a small heading, a single line of supporting copy, and one blue button, with no image at all. Below the fold line a horizontal row of four large cards fills the width, each a rounded rectangle carrying a soft pink-to-lilac gradient, a small heading and a line of copy. The page's restraint is the point - one idea in the hero, then four equal tiles carrying the detail.",
+   "roles": [
+    "landing-section",
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "gradient-heavy",
+    "minimal"
+   ],
+   "tags": [
+    "landing-page",
+    "gradient",
+    "card",
+    "grid",
+    "tiles",
+    "pastel",
+    "call-to-action"
+   ],
+   "quality": "Clear capture; the headline and card headings are legible."
+  },
+  "IMG-0101": {
+   "id": "IMG-0101",
+   "category": "website",
+   "type": "screen",
+   "title": "Legal page with a narrow measure and one inline decision",
+   "description": "A light web page holding a document. The browser chrome carries a logo and a nav row. The body is a single narrow column of body text in a small dark grey, broken into several paragraphs with clear gaps between them, and the whole column is left-aligned with a short measure so lines stay readable. About halfway down, one small block interrupts the prose: a compact inline control, a pair of buttons or a decision request, set in a tinted container so it separates from the surrounding text. The page demonstrates the unglamorous but important case - a long-text surface where the only interface is the one moment the reader has to decide something.",
+   "roles": [
+    "landing-section",
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "minimal"
+   ],
+   "tags": [
+    "legal",
+    "document",
+    "clause",
+    "column",
+    "typography",
+    "consent"
+   ],
+   "quality": "Clear capture; the body text is legible though small."
+  },
+  "IMG-0102": {
+   "id": "IMG-0102",
+   "category": "website",
+   "type": "screen",
+   "title": "Settings and billing page with paired plan cards",
+   "description": "A light web page headed by its own in-page navigation: a small logo, a horizontal row of section tabs, and an account control on the trailing edge. The body opens with a heading and a short line of copy, then a pair of plan cards side by side, each a rounded container in a soft pink-to-lilac gradient carrying a plan name, a price, a short feature list and a button at the foot. The two cards are identical in size and aligned, which makes the comparison the content. Beneath them, further blocks continue down the page in the same single-column rhythm.",
+   "roles": [
+    "pricing",
+    "settings"
+   ],
+   "style": [
+    "light-mode",
+    "gradient-heavy",
+    "card-based"
+   ],
+   "tags": [
+    "plan",
+    "card",
+    "gradient",
+    "billing",
+    "upgrade",
+    "exploration"
+   ],
+   "quality": "Clear capture; the plan names and prices are legible."
+  },
+  "IMG-0150": {
+   "id": "IMG-0150",
+   "category": "website",
+   "type": "marketing",
+   "title": "Analytics landing page over a photographic field of green",
+   "description": "A wide web hero on a photographic ground: a field of tall green grass rising to a soft sky, with a warm bunch of orange flowers at the left edge. Across the upper half a large headline runs over three lines, mixing a serif and an italic face, with the key phrase in a saturated green - the type is set directly on the photograph rather than on a panel. Below it a single green pill button sits centred, and in the lower third a wide product mockup is placed at an angle: a light dashboard with a sidebar, a headline figure and a small chart, presented as a floating window with rounded corners. Setting the product shot at an angle over the photograph is what stops it reading as a flat screenshot.",
+   "roles": [
+    "dashboard",
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "light-mode",
+    "photographic",
+    "gradient-heavy"
+   ],
+   "tags": [
+    "landing-page",
+    "photographic",
+    "green",
+    "typography",
+    "overlay"
+   ],
+   "quality": "Clear capture; the headline and the dashboard content are legible."
+  },
+  "IMG-0183": {
+   "id": "IMG-0183",
+   "category": "website",
+   "type": "screen",
+   "title": "Travel hero illustrated with a city skyline of landmarks",
+   "description": "A light web hero with a small wordmark in the upper left and a compact nav row in the upper right. The centre holds a short two-line headline set above a single input field with an inline submit button, so the primary action is the search itself rather than a call to action. The lower third of the frame is the illustration: a continuous skyline of stylised landmarks painted in a flat, warm palette - a pagoda with a green tiled roof, then European spires, domes and a tower, then a domed palace - sitting on a band of colour that runs the full width. Setting the illustration as a continuous horizon rather than as a set of separate icons is what makes it read as one destination-scape.",
+   "roles": [
+    "hero",
+    "landing-section",
+    "search"
+   ],
+   "style": [
+    "illustration-led",
+    "flat",
+    "playful"
+   ],
+   "tags": [
+    "travel",
+    "illustration",
+    "skyline",
+    "input",
+    "landmark"
+   ],
+   "quality": "Clear capture; the headline and the illustration detail are legible."
+  },
+  "IMG-0184": {
+   "id": "IMG-0184",
+   "category": "website",
+   "type": "screen",
+   "title": "Health app home on a light ground with a dense column chart",
+   "description": "A light phone screen with a status row at the top and a small heading above a very large figure - a step or health count - with a unit label beneath it. The centre of the screen is given over to a tall column chart in a strong pink: a dozen thin bars of varying height, tightly packed, filling the full width of the content area, with the current day's bar picked out in a darker tone and a small value label over it. Below the chart, a couple of labelled rows give related measures, and a tab bar with pink active states closes the screen. The chart is the screen: everything else is small and grey.",
+   "roles": [
+    "dashboard",
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense",
+    "bold-typography"
+   ],
+   "tags": [
+    "health",
+    "chart",
+    "columns",
+    "pink",
+    "numeral",
+    "statistics",
+    "nav-bar"
+   ],
+   "quality": "Clear capture; the figure and chart labels are legible."
+  },
+  "IMG-0185": {
+   "id": "IMG-0185",
+   "category": "website",
+   "type": "flow-walkthrough",
+   "title": "Three-step blur-and-shape tutorial on a dark ground",
+   "description": "A dark horizontal board presenting three numbered stages of one visual effect. Small captions above each step read 'Shapes', 'Blur effect' and 'Final Design', with thin dotted arrows drawn between them to carry the eye left to right. Each stage is a phone-shaped frame: the first shows two large soft blue circles overlapping on a black field; the second softens and enlarges those shapes into a hazy gradient; the third renders the result as a finished splash screen with a wordmark, a small caption and a white button. The board is a technique explainer rather than a product shot, and the dotted arrows are what make the three frames read as a sequence.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "dark-mode",
+    "gradient-heavy",
+    "minimal"
+   ],
+   "tags": [
+    "tutorial",
+    "gradient",
+    "blur",
+    "arrow",
+    "multi-panel",
+    "construction"
+   ],
+   "quality": "Clear capture; the step captions and the final button label are legible."
+  },
+  "IMG-0186": {
+   "id": "IMG-0186",
+   "category": "website",
+   "type": "marketing",
+   "title": "Education landing page built on a diagonal blue field",
+   "description": "A light web hero split by a strong diagonal: a deep blue wedge sweeps from the lower left up to the upper right, carrying a white display serif headline that reads across two lines, a small caption line beneath it, and a dark outlined button. The logo sits in the upper right corner. In the lower left, against the white ground, an arrangement of illustrated objects is laid out: a stack of books, a spiral notepad, a tablet standing upright, a lidded cup and a set of pencils, drawn in the same blue and white with soft shadows. The diagonal is doing the compositional work, and it lets one page hold both a formal serif headline and a playful illustrated still life without the two fighting.",
+   "roles": [
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "light-mode",
+    "bold-typography",
+    "editorial"
+   ],
+   "tags": [
+    "landing-page",
+    "education",
+    "diagonal",
+    "serif",
+    "illustration",
+    "books",
+    "blue"
+   ],
+   "quality": "Clear capture; the headline and the illustrated objects are legible."
+  },
+  "IMG-0187": {
+   "id": "IMG-0187",
+   "category": "website",
+   "type": "marketing",
+   "title": "Dark hero with a phrase split by a large feathered sphere",
+   "description": "A dark web hero that uses one object to break its own headline. A two-line display serif reading 'The world can wait.' sits across the upper half, the first line above the object and the second below it, so the sphere sits in the gap the type leaves. The object itself is a large ball rendered with a soft feathery or fur-like texture in warm cream and sand tones, lit from the left, floating on the near-black ground. A small pill centred below the second line carries a quiet call to action, and the wordmark sits at the foot with a small caption beside it. The composition is a demonstration of letting one object and two lines of type carry an entire page.",
+   "roles": [
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "dark-mode",
+    "editorial",
+    "minimal"
+   ],
+   "tags": [
+    "landing-page",
+    "serif",
+    "sphere",
+    "centred",
+    "typography",
+    "texture"
+   ],
+   "quality": "Clear capture; the display headline is legible."
+  },
+  "IMG-0188": {
+   "id": "IMG-0188",
+   "category": "website",
+   "type": "marketing",
+   "title": "Focus-app landing section with a floating schedule card",
+   "description": "A light web section on a soft sage ground that fades to pale grey at the foot, with a small wordmark and a compact nav row at the top and a pill button at the upper right. The left half carries a two-line heading in a large serif with a single italicised word, then two short lines of grey copy, then two buttons - one solid dark, one quiet outlined. The right half holds a floating white card, lifted with a soft shadow and rotated very slightly, showing a list of scheduled focus blocks: each row has a time, a title, a small duration label and a leading coloured dot. Small decorative marks are scattered in the corners. The card is the only element with weight, so the eye goes there - which is the right order for a product page.",
+   "roles": [
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "editorial",
+    "light-mode",
+    "soft",
+    "soft-shadow"
+   ],
+   "tags": [
+    "landing-page",
+    "card",
+    "schedule",
+    "serif",
+    "featured",
+    "tilt",
+    "call-to-action"
+   ],
+   "quality": "Clear capture; the heading and the schedule rows are legible."
+  },
+  "IMG-0189": {
+   "id": "IMG-0189",
+   "category": "website",
+   "type": "marketing",
+   "title": "Wellbeing landing section with a newsletter capture card",
+   "description": "A light web section on a pale ground with a low horizon illustration - soft hills in very light blue-grey across the lower third - and a small nav row at the top right. The left half carries a two-line serif headline and a single italic line of copy directly beneath it. The right half holds a white card with a soft shadow, headed by a small illustrated mark and a two-line question, with a short description and a row of small controls made of an input field and a pair of buttons; a small note sits at the foot. The card is the only substantial object on the page, and the illustration is kept low and quiet so it frames rather than competes.",
+   "roles": [
+    "form",
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "illustration-led",
+    "light-mode",
+    "soft",
+    "soft-shadow"
+   ],
+   "tags": [
+    "landing-page",
+    "newsletter",
+    "card",
+    "serif",
+    "illustration",
+    "input"
+   ],
+   "quality": "Clear capture; the headline and card text are legible."
+  },
+  "IMG-0114": {
+   "id": "IMG-0114",
+   "category": "app-store-screens",
+   "type": "brand-mark",
+   "title": "NEBians mark at a very large presentation size",
+   "description": "The open-book 'N' mark presented at a very large size on a plain white ground, with wide margins on every side. The three blue panels of the letter are each clearly distinguishable - a pale inner face, a saturated mid-blue body and a deeper fold at the trailing edge - and at this scale the construction is unmistakable: a single ribbon folded three times, with the counter forming a narrow vertical slot down the centre. Presented with no wordmark and no container, this is the mark's own large-size test, and it is the kind of asset an app-store listing leads with rather than a screenshot.",
+   "roles": [],
+   "style": [
+    "flat",
+    "minimal",
+    "bold-typography"
+   ],
+   "tags": [
+    "logo",
+    "brand-mark",
+    "layered",
+    "blue",
+    "large-size",
+    "centred",
+    "app-store",
+    "glyph"
+   ],
+   "quality": "Crisp; the panel edges and the central counter are clean."
+  },
+  "IMG-0115": {
+   "id": "IMG-0115",
+   "category": "app-store-screens",
+   "type": "marketing",
+   "title": "App-store listing banner on a blue field with fanned screens",
+   "description": "A store-listing banner in a strong blue. A small app icon and the wordmark sit at the upper left with a short line of supporting copy beneath them and a white pill button below that, all left-aligned against roughly two thirds of the width. The right third holds three phone frames arranged in a fan, each tilted slightly and overlapping the next, showing white app screens with rows and cards. The blue ground carries a soft radial gradient so the right side lifts behind the fan. The layout is the standard store-banner division: claim and action on the left, evidence on the right.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "bold-typography",
+    "gradient-heavy",
+    "card-based"
+   ],
+   "tags": [
+    "app-store",
+    "banner",
+    "blue",
+    "multi-panel",
+    "tilt",
+    "education",
+    "call-to-action"
+   ],
+   "quality": "Clear capture; the wordmark and button label are legible."
+  },
+  "IMG-0116": {
+   "id": "IMG-0116",
+   "category": "app-store-screens",
+   "type": "marketing",
+   "title": "A second store banner in the same blue family",
+   "description": "A near-duplicate of its sibling banner - the same blue ground, the same left-hand stack of icon, wordmark, supporting copy and white pill button, and the same fan of three tilted white phone frames on the right - captured at a slightly different scale or with a marginally different frame arrangement. Including both in the corpus is honest: store listings are shipped in sets of near-identical banners at different crops, and the value of the pair is the consistency of the lockup and the type rather than any difference between them.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "bold-typography",
+    "gradient-heavy",
+    "card-based"
+   ],
+   "tags": [
+    "app-store",
+    "banner",
+    "blue",
+    "multi-panel",
+    "tilt",
+    "education",
+    "variants"
+   ],
+   "quality": "Clear capture; the wordmark and button label are legible."
+  },
+  "IMG-0147": {
+   "id": "IMG-0147",
+   "category": "app-store-screens",
+   "type": "marketing",
+   "title": "Play Store launch announcement with a centred phone and QR code",
+   "description": "A launch announcement on a white ground. A small caption sits at the top, then a two-line display headline in a heavy sans, the final line in a saturated blue, followed by a short centred description. A phone frame is centred below it, showing a light app screen with rows and cards, and it is flanked by small playful accents - a circle, a triangular flag, a couple of small shapes and a pair of soft blobs at the right and left. At the foot, a small 'Download now' label sits above a Google Play badge beside a QR code. A faint dotted grid fills the upper left corner as a texture.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "bold-typography",
+    "playful"
+   ],
+   "tags": [
+    "app-store",
+    "announcement",
+    "qr-code",
+    "install",
+    "centred",
+    "education"
+   ],
+   "quality": "Clear capture; the headline and the store badge are legible."
+  },
+  "IMG-0148": {
+   "id": "IMG-0148",
+   "category": "app-store-screens",
+   "type": "marketing",
+   "title": "Play Store launch announcement, second crop",
+   "description": "The same announcement asset as its sibling - identical headline, blue final line, centred phone frame with playful accents, and the Google Play badge with a QR code at the foot - presented at a slightly different scale and with the decorative shapes in marginally different positions. As with the other repeated pairs in this set, the point is that store and launch assets ship as a family at several crops, and cataloguing both makes that family visible rather than implying one canonical file.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "bold-typography",
+    "playful"
+   ],
+   "tags": [
+    "app-store",
+    "announcement",
+    "qr-code",
+    "install",
+    "centred",
+    "variants"
+   ],
+   "quality": "Clear capture; the headline and store badge are legible."
+  },
+  "IMG-0149": {
+   "id": "IMG-0149",
+   "category": "app-store-screens",
+   "type": "marketing",
+   "title": "Play Store launch announcement, third crop",
+   "description": "A third take on the same launch announcement. The structure is unchanged again - caption, heavy two-line headline with a blue second line, a short description, a centred phone frame flanked by small playful accents, and the Play badge with a QR code at the foot - but the surrounding white space is distributed differently, giving the phone frame a little more room and the foot block slightly more separation. Three near-identical crops of one asset is exactly what a store-listing working folder looks like, and keeping them all documents the shippable range.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "bold-typography",
+    "playful"
+   ],
+   "tags": [
+    "app-store",
+    "announcement",
+    "qr-code",
+    "install",
+    "centred",
+    "variants"
+   ],
+   "quality": "Clear capture; the headline and store badge are legible."
+  },
+  "IMG-0240": {
+   "id": "IMG-0240",
+   "category": "app-store-screens",
+   "type": "multi-screen",
+   "title": "Eight-panel store gallery in a dark green system",
+   "description": "A two-by-four grid of marketing panels on a light grey ground, all sharing one dark green and cream palette. The first row introduces the product: a panel with a photographic dish, one titled 'Create and Join' with a circular cream illustration, a panel headed 'AI conversation' with a small illustration and a caption, and a panel asking a question over a single button. The second row is more practical: two panels that present a numbered list of benefits in small cream rows against the green, one panel showing a stack of photographic or illustrated cards, and a final panel with a chart-like circle and a pair of captions. Each panel is self-contained but the shared palette and the recurring circular illustration make the set read as one family.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "illustration-led",
+    "card-based"
+   ],
+   "tags": [
+    "app-store",
+    "multi-panel",
+    "green",
+    "grid",
+    "illustration",
+    "benefit-list",
+    "template",
+    "promo"
+   ],
+   "quality": "Clear capture; panel headings are legible, body copy small."
+  },
+  "IMG-0337": {
+   "id": "IMG-0337",
+   "category": "app-store-screens",
+   "type": "multi-screen",
+   "title": "Eight-panel store gallery built on vivid circular graphics",
+   "description": "A two-by-four grid of store panels on a plain ground, each panel a dark or photographic card carrying a centred circular graphic or a photographic image with a short headline above it in white. The graphics vary: a tight spiral, a petal shape in vivid colour, a topographic contour line, a photographic portrait, a bright logo-like ring, a circular landscape, and a dark panel with a small illustration. Headlines are short and set in a light face. The repeated circular graphic gives the whole set a consistent visual anchor, so eight very different panels still read as one product's gallery.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "photographic",
+    "bold-typography"
+   ],
+   "tags": [
+    "app-store",
+    "multi-panel",
+    "grid",
+    "circle",
+    "spiral",
+    "photographic",
+    "template",
+    "promo"
+   ],
+   "quality": "Clear capture; the headlines are legible."
+  },
+  "IMG-0338": {
+   "id": "IMG-0338",
+   "category": "app-store-screens",
+   "type": "marketing",
+   "title": "Playful dark store panel with a scribbled illustration",
+   "description": "A single store panel on a black ground. A short slogan sits at the top in a small light face above a line of fine script, and the centre is given over to a playful illustrated scene: a rounded yellow character with a small crown and a cheeky face, a hand-drawn speech bubble beside it, a couple of small stars, and a loose scribbled circle drawn behind the figure to anchor it. A white pill button sits at the foot. The drawing is deliberately rough - visible stroke ends, uneven outlines - which is what gives the panel its energy; cleaning it up would remove the whole effect.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "dark-mode",
+    "playful",
+    "illustration-led"
+   ],
+   "tags": [
+    "app-store",
+    "illustration",
+    "scribble",
+    "character",
+    "yellow",
+    "call-to-action"
+   ],
+   "quality": "Clear capture; the slogan and button label are legible."
+  },
+  "IMG-0339": {
+   "id": "IMG-0339",
+   "category": "app-store-screens",
+   "type": "multi-screen",
+   "title": "Sixteen-panel store gallery in cream and green",
+   "description": "A four-by-four grid of small store panels on a single canvas, tightly packed with thin gutters. The palette is uniform - cream grounds, deep green blocks, and small amounts of accent yellow and terracotta - and most panels pair a short headline with a small illustration, an icon row, or a miniature of an app screen. Several panels repeat the same layout with only the copy and the drawing swapped, which is exactly how a large store gallery is produced: one or two templates, filled many times. At this size the grid reads as a style sheet for the whole listing rather than as individual panels.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "illustration-led",
+    "card-based"
+   ],
+   "tags": [
+    "app-store",
+    "multi-panel",
+    "grid",
+    "cream",
+    "green",
+    "template",
+    "specimen",
+    "illustration"
+   ],
+   "quality": "Panels are small; headlines are readable but body copy is not."
+  },
+  "IMG-0109": {
+   "id": "IMG-0109",
+   "category": "design-system",
+   "type": "reference",
+   "title": "Concept map on a hand-drawn paper ground",
+   "description": "A diagram that deliberately looks sketched rather than produced. A pale textured paper background carries a set of boxes drawn as sticky notes: a large central pill on the left reading 'CONCEPT MAP' with one edge folded like a cloth banner, surrounded by a ring of five framed boxes - 'INNOVATIVE IDEA' twice in different widths, 'SOCIAL IMPACT', 'CREATIVE IDEA' and 'VENTURE IDEA' - each with a short paragraph of small text beneath its title. Thin straight lines with flat arrowheads connect the central banner outward to each box. The hand-drawn paper texture and the folded-corner detail are what make a plain tree diagram feel like a working document.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "illustration-led",
+    "playful",
+    "flat"
+   ],
+   "tags": [
+    "diagram",
+    "concept-map",
+    "node",
+    "arrow",
+    "sketch",
+    "paper",
+    "structure"
+   ],
+   "quality": "Clear capture; the box titles are legible, the small descriptions less so."
+  },
+  "IMG-0110": {
+   "id": "IMG-0110",
+   "category": "design-system",
+   "type": "reference",
+   "title": "Dark decision tree in a technical node style",
+   "description": "A vertical decision tree drawn on a black ground in a strict technical style. A single root node sits at the left in a blue-tinted rounded rectangle, and from it a trunk line runs right into a stack of branch nodes in the same blue, each labelled with a project type. From each branch, thin lines fan out to a right-hand column of pale pills - the outcomes or tools - stacked vertically with even spacing and connected by short horizontal segments. Every node is the same height and the same corner radius, and the connectors are all orthogonal, so the whole diagram resolves into a clean grid. This is the opposite approach to the sketched concept map: identical components, rigid alignment, no decoration.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "data-dense"
+   ],
+   "tags": [
+    "diagram",
+    "decision-tree",
+    "node",
+    "structure",
+    "grid",
+    "alignment"
+   ],
+   "quality": "Clear capture; node labels are legible."
+  },
+  "IMG-0173": {
+   "id": "IMG-0173",
+   "category": "design-system",
+   "type": "reference",
+   "title": "Annotated flow on a pale grid canvas",
+   "description": "A light diagram on a white canvas with a faint dot grid. Small rounded cards are scattered across the surface at varying positions rather than in a line: a couple of labelled blocks near the left, a stack of small white cards in the middle where each carries a line or two of tiny grey text and a small tag at its corner, and a further card at the right with a numbered dot. Thin grey connector lines join some of the cards, and a small toolbar of controls sits at the upper right of the canvas - the canvas is a design tool's own view. It is a useful reference for a canvas that has to hold messy in-progress thinking rather than a finished, aligned diagram.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "soft"
+   ],
+   "tags": [
+    "diagram",
+    "canvas",
+    "dot-grid",
+    "node",
+    "card",
+    "toolbar",
+    "annotated",
+    "structure"
+   ],
+   "quality": "Clear capture; card labels are legible, the fine body text is small."
+  },
+  "IMG-0180": {
+   "id": "IMG-0180",
+   "category": "design-system",
+   "type": "reference",
+   "title": "Colour treatment ladder: shapes, blur, texture, design",
+   "description": "A process strip on a black ground showing four stages of one visual treatment, each a rounded vertical swatch. Small captions above the strip read 'Shapes', 'Blur', 'Texture' and 'Design', with thin curved arrows drawn between them. The swatches build: the first is crisp overlapping bold shapes in magenta and violet on a black field; the second softens those shapes into a haze; the third adds a sprayed or grainy texture over the gradient; the fourth resolves into a finished card with a wordmark, a fine subscript and a small icon at the foot. Reading left to right, the strip is a recipe, and the arrows make that explicit.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "dark-mode",
+    "gradient-heavy",
+    "bold-typography"
+   ],
+   "tags": [
+    "colour-ladder",
+    "gradient",
+    "blur",
+    "texture",
+    "swatch",
+    "arrow",
+    "process",
+    "magenta"
+   ],
+   "quality": "Clear capture; the stage captions are legible."
+  },
+  "IMG-0197": {
+   "id": "IMG-0197",
+   "category": "design-system",
+   "type": "reference",
+   "title": "System architecture diagram with a numbered layer stack",
+   "description": "A light technical diagram headed by a titled label reading 'The 750 Hour community' with a small grey subtitle, on a plain white ground. Three stages run left to right: a small pink block on the left labelled as a source; then the main body, a large lavender outlined container holding a vertically stacked set of equal-height rows - a small header block, then four labelled layers, then a footer row - each a rounded rectangle with a thin border; then a pair of stacked blocks on the right labelled as processing steps; then a final green block on the right. Each arrowhead carries a tiny label describing the handoff. The numbered, layered container is the interesting part: it shows a stack whose order is the content.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "flat"
+   ],
+   "tags": [
+    "diagram",
+    "architecture",
+    "layer",
+    "node",
+    "arrow",
+    "sequence",
+    "structure"
+   ],
+   "quality": "Clear capture; block labels are legible."
+  },
+  "IMG-0170": {
+   "id": "IMG-0170",
+   "category": "typography",
+   "type": "reference",
+   "title": "Type-specimen poster with a decomposed masthead",
+   "description": "A dense typographic poster on a white ground, built as a pastiche of a magazine masthead laid over a diagram of a page's structure. Large words repeat across the sheet at different sizes and crops - a run of 'Kingdom' and an 'i' set at enormous scale - with smaller serif words and a set of fine hairline rules running vertically and horizontally, plus small boxes and circles positioned at grid intersections as markers. Blocks of very small text fill the remaining areas, some rotated, and a column of dates and numbers in a larger condensed face runs down the left. The effect is of a specimen sheet that is also an information graphic: the letters are treated as objects to be measured and positioned rather than as words to be read.",
+   "roles": [],
+   "style": [
+    "editorial",
+    "dense-content",
+    "high-contrast"
+   ],
+   "tags": [
+    "artwork",
+    "dense-content",
+    "grid",
+    "masthead",
+    "rule",
+    "serif",
+    "specimen",
+    "typography"
+   ],
+   "quality": "Clear capture; the large words are legible, the fine text is intentionally small."
+  },
+  "IMG-0213": {
+   "id": "IMG-0213",
+   "category": "typography",
+   "type": "reference",
+   "title": "Sans wordmark over a pastoral landscape painting",
+   "description": "A single wordmark placed over a classical landscape painting. The canvas is a soft, light landscape in the Dutch or Romantic manner - a valley with a low building, a body of water, a bank of trees, and a large, billowing white cloud mass filling the sky. The wordmark 'Aktiv Grotesk' is set in a clean grotesque sans, medium weight, in pure white, centred in the lower-middle of the composition, with a generous size and letter-spacing so it reads at a glance. The exercise is a contrast test: a neutral modern sans set against a busy, tonal, old painting, and the white type holds because the painting's lower area is quiet and even.",
+   "roles": [],
+   "style": [
+    "editorial",
+    "high-contrast",
+    "luxury",
+    "minimal"
+   ],
+   "tags": [
+    "artwork",
+    "overlay",
+    "photographic",
+    "serif",
+    "typography",
+    "wordmark"
+   ],
+   "quality": "Clear; the wordmark is crisp against the painting."
+  },
+  "IMG-0214": {
+   "id": "IMG-0214",
+   "category": "typography",
+   "type": "reference",
+   "title": "Serif-cased wordmark over a stormy maritime painting",
+   "description": "A second type-over-painting test, this one far busier than its pastoral sibling. The canvas is a maritime scene: a large ship of the line with rigging and masts in the right half, a smaller vessel and figures in a rowing boat in the foreground, and a turbulent sea and clouded sky. The wordmark is set in white, centred in the upper-middle third, in the same grotesque sans with wide letter-spacing, and it maps to a different typeface name. Because the painting's mid-tone sky is busier than its sibling's, the type has less quiet space to sit in - which is exactly what the pair is demonstrating: the same neutral white sans holds over a calm passage and struggles over a mottled one.",
+   "roles": [],
+   "style": [
+    "editorial",
+    "high-contrast",
+    "luxury",
+    "photographic"
+   ],
+   "tags": [
+    "artwork",
+    "overlay",
+    "photographic",
+    "serif",
+    "typography",
+    "wordmark"
+   ],
+   "quality": "Clear; the wordmark is crisp though the ground behind it is busy."
+  },
+  "IMG-0156": {
+   "id": "IMG-0156",
+   "category": "illustration",
+   "type": "reference",
+   "title": "Editorial illustration of a group raising a glowing heart",
+   "description": "A horizontal editorial illustration on a cream ground. A large group of people - a dozen or more, varied in age, dress and skin tone - stand in a rough circle, their arms raised inward toward a large heart at the centre that radiates short orange and gold rays. The figures are drawn in a flat, bold style with simple shapes: solid blocks of teal, orange, yellow, terracotta and navy, some wearing glasses, one with grey hair, one in a wheelchair, a couple of small children at the front. Around the group, tall flat plant forms in teal and orange rise on both sides, and small marks are scattered as confetti. The palette is warm and tight, and the circle of arms is what makes the group read as one gesture rather than as separate people.",
+   "roles": [],
+   "style": [
+    "bold-typography",
+    "editorial",
+    "flat",
+    "illustration-led"
+   ],
+   "tags": [
+    "artwork",
+    "community",
+    "figurative",
+    "heart",
+    "illustration",
+    "orange",
+    "people"
+   ],
+   "quality": "Clean flat shapes; the figure detail is crisp."
+  },
+  "IMG-0229": {
+   "id": "IMG-0229",
+   "category": "illustration",
+   "type": "reference",
+   "title": "Open book floating above a bank of clouds at dawn",
+   "description": "A vertical illustration centred on an open book suspended in mid-air above a bank of clouds. The sky behind it runs from a soft blue at the top through a pale warm haze to a cream-pink near the horizon, all painted softly, with a large cloud mass in the lower half catching light on its upper edges. The book is small in the frame and perfectly centred, its pages open and lit from below so the spread is the brightest object in the image, with a few thin specks - birds or sparks - arcing across the sky to either side. The composition is almost entirely sky, and the smallness of the book is what makes it read as a symbol rather than as a subject.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "illustration-led",
+    "soft",
+    "gradient-heavy"
+   ],
+   "tags": [
+    "artwork",
+    "book",
+    "centred",
+    "clouds",
+    "cosmic",
+    "dawn",
+    "illustration",
+    "sky"
+   ],
+   "quality": "Clean rendering; the gradients are smooth and the book is crisp."
+  }
+ }
+}

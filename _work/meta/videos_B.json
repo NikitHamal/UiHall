@@ -1,0 +1,2392 @@
+{
+ "items": [
+  {
+   "id": "VID-0193",
+   "relevant": false,
+   "reason": "close-up of a phone lying on a wooden floor displaying a dark photo; no interface visible"
+  },
+  {
+   "id": "VID-0194",
+   "relevant": false,
+   "reason": "top-down pixel game map footage, not UI design"
+  },
+  {
+   "id": "VID-0195",
+   "relevant": false,
+   "reason": "sci-fi cinematic scene with glowing ring, no interface"
+  },
+  {
+   "id": "VID-0196",
+   "relevant": false,
+   "reason": "anime character game scene with dialogue box, not UI design reference"
+  },
+  {
+   "id": "VID-0197",
+   "relevant": true,
+   "title": "Cream-toned 'Path of Abundance' onboarding welcome screen",
+   "description": "A single iOS phone mockup on a white backdrop showing a warm cream onboarding screen. A soft circular illustration sits above centred body copy, with a small avatar chip and a light rounded pill button ('Welcome') pinned at the bottom above the home indicator. Typography is small, centred and serif-ish, giving a calm wellness/self-improvement feel.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "soft",
+    "editorial"
+   ],
+   "tags": [
+    "onboarding",
+    "welcome-screen",
+    "wellness",
+    "cta-button"
+   ],
+   "palette": [
+    "#F6EFE4",
+    "#E8DCC9",
+    "#8C7B6B",
+    "#FFFFFF"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0198",
+   "relevant": false,
+   "reason": "printed text spread / notebook pages with a product photo, no interface"
+  },
+  {
+   "id": "VID-0199",
+   "relevant": false,
+   "reason": "abstract black particle scatter on a white field, no interface elements"
+  },
+  {
+   "id": "VID-0200",
+   "relevant": true,
+   "title": "Collage of six app-store screenshot cards (fitness, coffee, routes)",
+   "description": "A grid montage of app-store-style promo screens: a light fitness screen with a '3 Days' streak badge, a dark screen with a coffee cup product shot, a dark 'discover the world' screen, a blue promo card with a phone, a phone showing an S-shaped route path, and a dark wallet-style screen. Mixed light and dark palettes with bold headline type over each screenshot.",
+   "platform": "unknown",
+   "kind": "promo-reel",
+   "style": [
+    "mixed",
+    "marketing",
+    "bold-typography"
+   ],
+   "tags": [
+    "app-store",
+    "screenshot",
+    "fitness",
+    "ecommerce",
+    "collage"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111827",
+    "#2563EB",
+    "#22C55E"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0201",
+   "relevant": false,
+   "reason": "pixel farm game gameplay"
+  },
+  {
+   "id": "VID-0202",
+   "relevant": true,
+   "title": "Light-mode fintech app with Habit / Growth plan / Mutual funds tabs",
+   "description": "A mobile screen with a large near-empty white card holding a single orange rounded square in the middle, sitting above a four-item bottom tab bar labelled 'Habit', 'Growth plan', 'Learn' and 'Mutual funds' with small icons. Very sparse, whitespace-heavy layout with one warm orange accent.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "minimal",
+    "light-mode",
+    "whitespace"
+   ],
+   "tags": [
+    "fintech",
+    "investing",
+    "bottom-nav",
+    "empty-state",
+    "tabs"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F2F2F7",
+    "#FF7A45",
+    "#111111"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0203",
+   "relevant": true,
+   "title": "Two phone mockups with abstract graphic-art screens",
+   "description": "Two white phone mockups side by side on a white background, each displaying a screen made of abstract graphic artwork rather than conventional app UI: scattered dots, blobs and organic shapes with small blocks of text and a wordmark near the top. Reads as an art-direction or brand-screen showcase rather than a functional interface.",
+   "platform": "unknown",
+   "kind": "other",
+   "style": [
+    "minimal",
+    "abstract",
+    "art-direction",
+    "light-mode"
+   ],
+   "tags": [
+    "mockup",
+    "abstract-art",
+    "typography",
+    "branding"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#E8E4DE",
+    "#C9C2B6"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0204",
+   "relevant": true,
+   "title": "Dark splash screen with a bright green app-icon reveal",
+   "description": "A dark phone screen dominated by near-black, with a single vivid green rounded-square app icon centred and a small '60' numeral in the lower-right corner. Looks like an app icon or splash reveal animation; no other UI chrome is visible.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "bold-colour"
+   ],
+   "tags": [
+    "splash-screen",
+    "app-icon",
+    "animation",
+    "health"
+   ],
+   "palette": [
+    "#0B0B0B",
+    "#141414",
+    "#4ADE80",
+    "#2B2B2B"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0205",
+   "relevant": false,
+   "reason": "crowd-runner game gameplay"
+  },
+  {
+   "id": "VID-0206",
+   "relevant": false,
+   "reason": "pixel fishing/farming game gameplay"
+  },
+  {
+   "id": "VID-0207",
+   "relevant": true,
+   "title": "'No skills' vs 'MCP + Skills' phone comparison",
+   "description": "A side-by-side comparison of two phone mockups on white. The left light screen shows short placeholder copy and a blue pill button; the right dark screen shows a dark card with smaller centred copy. Bold labels 'No skills' and 'MCP + Skills' sit above each device, making this an explicit original-vs-upgraded comparison.",
+   "platform": "unknown",
+   "kind": "before-after",
+   "style": [
+    "light-mode",
+    "dark-mode",
+    "comparison",
+    "minimal"
+   ],
+   "tags": [
+    "ai",
+    "mcp",
+    "comparison",
+    "onboarding",
+    "side-by-side"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#2563EB",
+    "#E5E7EB"
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "VID-0208",
+   "relevant": true,
+   "title": "Dark health app form with green header and Start Now button",
+   "description": "A dark-mode mobile screen with a green rounded header card titled 'Get Health Life' plus a small number badge, followed by a stack of list rows with chevrons and checkboxes (labelled items such as Sleep, Steps, Workout). A white 'Start Now' pill button sits at the bottom of the card, with a small avatar row above it.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "health",
+    "form",
+    "checklist",
+    "cta-button",
+    "fitness"
+   ],
+   "palette": [
+    "#0D0F0E",
+    "#1B2A1F",
+    "#22C55E",
+    "#FFFFFF"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0209",
+   "relevant": true,
+   "title": "Very dark phone mockup, UI unreadable",
+   "description": "A portrait phone mockup on a black background with an extremely dark screen; only a faint circular element and dim UI hints are visible. Too dark to identify the app or its components \u2014 flagged as low confidence rather than described in detail.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "mockup",
+    "unclear"
+   ],
+   "palette": [
+    "#000000",
+    "#0D0D0D",
+    "#1F1F1F"
+   ],
+   "confidence": 0.25
+  },
+  {
+   "id": "VID-0210",
+   "relevant": false,
+   "reason": "top-down pixel game interior footage"
+  },
+  {
+   "id": "VID-0211",
+   "relevant": true,
+   "title": "Dark-green social fitness screen with step leaderboard",
+   "description": "A dark mobile screen with a deep green header containing a large smiley avatar, then a two-tab segmented control reading 'For you' and 'Friends'. Below, a card titled 'Who hits more steps?' lists ranked friends (Finn, Jake) with step counts such as '9,204' and '8,421', each with a small avatar. Accent colour is a soft mint green on near-black.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "rounded",
+    "friendly"
+   ],
+   "tags": [
+    "fitness",
+    "steps",
+    "leaderboard",
+    "tabs",
+    "social"
+   ],
+   "palette": [
+    "#0F1F17",
+    "#163B2A",
+    "#7DE2A8",
+    "#FFFFFF"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0212",
+   "relevant": false,
+   "reason": "creature-collector game gameplay"
+  },
+  {
+   "id": "VID-0213",
+   "relevant": true,
+   "title": "Six-screen app collage with fitness and rating screens",
+   "description": "A montage of six phone screens arranged in a grid on a light backdrop: dark fitness/health screens with charts, light social screens with photos, a screen showing a '3.9k' figure, and copy such as 'Convert your taste into ratings'. Mixed light and dark UI with green and pink accents, presented as app-store promo art.",
+   "platform": "unknown",
+   "kind": "promo-reel",
+   "style": [
+    "mixed",
+    "marketing",
+    "collage"
+   ],
+   "tags": [
+    "app-store",
+    "screenshot",
+    "fitness",
+    "social",
+    "ratings"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#0F172A",
+    "#22C55E",
+    "#F472B6"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0214",
+   "relevant": true,
+   "title": "Illustration/drawing tool with brush panel and colour swatches",
+   "description": "A landscape creative-tool interface: a character illustration (blonde hair, anime style) occupies the left canvas while the right side shows a tool panel with colour swatches, opacity/size sliders and small layer controls. A bottom toolbar holds a row of sticker or emoji buttons. Clean white UI chrome around a pastel canvas.",
+   "platform": "web",
+   "kind": "other",
+   "style": [
+    "light-mode",
+    "minimal",
+    "tool-ui"
+   ],
+   "tags": [
+    "drawing",
+    "toolbar",
+    "color-picker",
+    "creative-tool",
+    "canvas"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F7D9C4",
+    "#E8C39E",
+    "#5B5B5B"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0215",
+   "relevant": false,
+   "reason": "top-down pixel game scene with plants and coins"
+  },
+  {
+   "id": "VID-0216",
+   "relevant": true,
+   "title": "Near-black screen with faint list rows, content unreadable",
+   "description": "A very dark frame containing faint horizontal rows of small coloured marks and dim text-like lines, suggesting a dark-mode list or menu but far too dark and small to identify. No readable labels; classification is uncertain.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "unclear",
+    "list",
+    "dark-mode"
+   ],
+   "palette": [
+    "#0A0A0A",
+    "#141414",
+    "#3A3A3A"
+   ],
+   "confidence": 0.25
+  },
+  {
+   "id": "VID-0217",
+   "relevant": true,
+   "title": "Light onboarding list with three colour-coded action rows",
+   "description": "A light iOS screen showing three stacked list rows, each with a small coloured rounded icon and two lines of text: an orange 'Upload your file or image' row, a blue 'Request and receive' row and a green 'Get online' style row. Rows sit in soft grey cards above the home indicator, with generous whitespace and dark grey text.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "onboarding",
+    "list",
+    "icons",
+    "upload",
+    "action"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F5F5F5",
+    "#FF6B35",
+    "#2F80ED"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0218",
+   "relevant": false,
+   "reason": "game gameplay on a phone screen with dock icons; no app interface design"
+  },
+  {
+   "id": "VID-0219",
+   "relevant": false,
+   "reason": "'Past vs Present' comparison of game art assets, not interface design"
+  },
+  {
+   "id": "VID-0220",
+   "relevant": true,
+   "title": "Dark ticket/pass screen with barcode and YBI / YAY labels",
+   "description": "A dark phone screen on a black background showing a minimal pass or ticket card: two short uppercase labels ('YBI', 'YAY') above a barcode-like block of thin vertical lines, with faint small print beneath. Near-monochrome black-and-white treatment with one subtle accent.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "monochrome"
+   ],
+   "tags": [
+    "ticket",
+    "barcode",
+    "wallet"
+   ],
+   "palette": [
+    "#000000",
+    "#111111",
+    "#FFFFFF",
+    "#4ADE80"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0221",
+   "relevant": true,
+   "title": "Warm light app with large '15h 00m' timer and Recently played list",
+   "description": "A light cream mobile screen dominated by a very large '15h 00m' figure, with a 'Recently played' section listing small rounded artwork tiles and titles, a dark 'Start' pill button, and a bottom navigation bar with four icons. Warm off-white background with an orange accent and soft shadows.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "soft",
+    "minimal",
+    "large-type"
+   ],
+   "tags": [
+    "focus-timer",
+    "reading",
+    "bottom-nav",
+    "list",
+    "stat-display"
+   ],
+   "palette": [
+    "#FBF7F0",
+    "#FFFFFF",
+    "#1A1A1A",
+    "#FF7A00"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0222",
+   "relevant": false,
+   "reason": "abstract dark blue underwater/glow visual, no interface"
+  },
+  {
+   "id": "VID-0223",
+   "relevant": false,
+   "reason": "top-down pixel game terrain footage"
+  },
+  {
+   "id": "VID-0224",
+   "relevant": false,
+   "reason": "pixel map game footage"
+  },
+  {
+   "id": "VID-0225",
+   "relevant": true,
+   "title": "Phone showing 'Create poll' web view with on-screen keyboard",
+   "description": "A light iOS phone mockup against a sky-blue backdrop displaying a web page headed 'Create poll' with a small URL chip, a large circular emoji/globe illustration and text-entry content. The lower half of the screen is filled by the iOS keyboard, with a blue button in the input area. Soft blue and white palette.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "webview"
+   ],
+   "tags": [
+    "poll",
+    "keyboard",
+    "messaging",
+    "input",
+    "browser"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#EAF2FF",
+    "#4A90E2",
+    "#F2F2F7"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0226",
+   "relevant": false,
+   "reason": "phone showing a dark photo/landscape; no interface visible"
+  },
+  {
+   "id": "VID-0227",
+   "relevant": true,
+   "title": "Minimal text-heavy web page with logo and body copy",
+   "description": "A light web page on a white background with a large heading, several paragraphs of grey body text and a small logo/image block in the upper-right corner. Layout is plain and editorial, resembling a blog post or documentation page with wide margins.",
+   "platform": "web",
+   "kind": "website",
+   "style": [
+    "minimal",
+    "light-mode",
+    "editorial"
+   ],
+   "tags": [
+    "blog",
+    "documentation",
+    "typography",
+    "text-layout"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#D1D5DB"
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "VID-0228",
+   "relevant": false,
+   "reason": "pixel-art character sprite animation (idle/walk), game asset"
+  },
+  {
+   "id": "VID-0229",
+   "relevant": true,
+   "title": "Light 'Collections' screen with photo grid and info card",
+   "description": "A light mobile screen headed 'Collections' with a small filter row and a two-column grid of small thumbnail tiles, followed by a white card containing a title ('Composite Node 101') and small metadata lines. Soft grey background, thin dividers and a light-blue accent.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "grid"
+   ],
+   "tags": [
+    "gallery",
+    "collection",
+    "grid",
+    "cards",
+    "metadata"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#EFEFEF",
+    "#111111",
+    "#9CA3AF"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0230",
+   "relevant": false,
+   "reason": "pixel game scene with trees and character"
+  },
+  {
+   "id": "VID-0231",
+   "relevant": true,
+   "title": "Light screen with 3D-tilted photo card stack and barcode",
+   "description": "A light mobile screen showing a stack of rounded photo cards tilted in 3D perspective, each holding small imagery and a caption, with a barcode block near the bottom and a small pill label ('iPhone') below. Cream-white palette with soft shadows and a subtle motion/parallax feel.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "soft",
+    "3d",
+    "cards"
+   ],
+   "tags": [
+    "gallery",
+    "cards",
+    "3d-tilt",
+    "motion",
+    "barcode"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F4F1EA",
+    "#111111",
+    "#D9C7A7"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0232",
+   "relevant": true,
+   "title": "'Crafting ideas in sync.' minimal studio landing page",
+   "description": "A white landing page with a top navigation (WORKS, NOTES, CONTACT), a large centred serif headline reading 'Crafting ideas in sync.', a small subtitle line, and a black line-art illustration of houses and trees along the bottom edge. Extremely restrained monochrome typographic layout with lots of whitespace.",
+   "platform": "web",
+   "kind": "website",
+   "style": [
+    "minimal",
+    "light-mode",
+    "editorial",
+    "line-art"
+   ],
+   "tags": [
+    "landing-page",
+    "studio",
+    "typography",
+    "hero",
+    "illustration"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#000000"
+   ],
+   "confidence": 0.65
+  },
+  {
+   "id": "VID-0233",
+   "relevant": true,
+   "title": "Dark security-key onboarding screen with lock glyph",
+   "description": "A dark phone mockup on black showing a centred lock icon above white copy explaining that the user's security key protects their access, a short caption line, and a white 'Sign in' pill button with a smaller secondary text link below. High-contrast black/white typography with rounded cards.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "high-contrast"
+   ],
+   "tags": [
+    "security",
+    "onboarding",
+    "passkey",
+    "sign-in",
+    "lock"
+   ],
+   "palette": [
+    "#0A0A0A",
+    "#1C1C1E",
+    "#FFFFFF",
+    "#8E8E93"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0234",
+   "relevant": true,
+   "title": "'Pick your vibe' illustrated avatar picker",
+   "description": "A light mobile screen with an avatar bubble at the top, a centred bold heading 'Pick your vibe', and a 3x3 grid of illustrated cartoon faces (each a different hair/expression style) drawn as circular outlined icons. Clean off-white background with black line art and a soft card shadow.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "illustration",
+    "playful"
+   ],
+   "tags": [
+    "onboarding",
+    "avatar-picker",
+    "grid",
+    "personalisation"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F0EFEA",
+    "#111111",
+    "#E4D9C3"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0235",
+   "relevant": true,
+   "title": "White screen with blurred rainbow motion streaks",
+   "description": "A phone screen showing a white surface with heavy horizontal motion blur \u2014 smeared rainbow bars of orange, blue and green \u2014 plus a small wordmark near the top. Appears to be a transition or motion-blur design demo, but the underlying interface is not identifiable.",
+   "platform": "unknown",
+   "kind": "motion-demo",
+   "style": [
+    "light-mode",
+    "motion-blur",
+    "abstract"
+   ],
+   "tags": [
+    "motion",
+    "transition",
+    "blur",
+    "unclear"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#E8E8E8",
+    "#FF8A65",
+    "#7C4DFF"
+   ],
+   "confidence": 0.3
+  },
+  {
+   "id": "VID-0236",
+   "relevant": true,
+   "title": "Sleep-app app-store screenshot set (Track sleep, Why it works)",
+   "description": "A set of light app-store screenshot cards for a sleep/health app: cards headed 'Track sleep', 'Why it works', 'How we track sleep' and 'Reminders for consistent sleep', each pairing a bold headline with a phone mockup or an illustrated character. Palette is soft white and pale blue with a friendly rounded type style.",
+   "platform": "unknown",
+   "kind": "promo-reel",
+   "style": [
+    "light-mode",
+    "friendly",
+    "marketing",
+    "rounded"
+   ],
+   "tags": [
+    "app-store",
+    "screenshot",
+    "sleep",
+    "health",
+    "onboarding"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#DCEBFF",
+    "#1E6FD9",
+    "#0F172A"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0237",
+   "relevant": false,
+   "reason": "abstract pastel confetti pattern on white, no interface"
+  },
+  {
+   "id": "VID-0238",
+   "relevant": true,
+   "title": "Peach-toned reading/feed card with illustration and action bar",
+   "description": "A light mobile screen showing a content card with a soft illustrated character (a person reading) and several lines of body text, framed by a peach/cream background. A bottom action bar with small emoji-style icons and a button sits above the home indicator. Warm, gentle editorial feel.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "soft",
+    "editorial",
+    "illustration"
+   ],
+   "tags": [
+    "social",
+    "reading",
+    "post",
+    "bottom-bar",
+    "feed"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#FDF3E7",
+    "#F2A65A",
+    "#111111"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0239",
+   "relevant": true,
+   "title": "Clean month-view calendar screen with Today pill",
+   "description": "A light mobile calendar screen showing a month grid (labelled September 2027) with a weekday header row and dates laid out in a seven-column grid; a small 'today' pill button and a segmented control appear above the grid. Black type on white with light grey grid lines.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "grid"
+   ],
+   "tags": [
+    "calendar",
+    "month-view",
+    "date-picker",
+    "productivity"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F5F5F5",
+    "#111111",
+    "#2563EB"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0240",
+   "relevant": true,
+   "title": "'Before ($10k/mo)' vs 'After (MCP + Skills)' wallet comparison",
+   "description": "An explicit before/after pair of phone screens with bold headings above each device. The 'Before ($10k/mo)' screen has a green header card with checklist rows and a white button; the 'After (MCP + Skills)' screen is dark showing a balance ('$6,861.76 USD') and transaction rows with a green 'Connect Wallet' button.",
+   "platform": "unknown",
+   "kind": "before-after",
+   "style": [
+    "comparison",
+    "dark-mode",
+    "light-mode",
+    "fintech"
+   ],
+   "tags": [
+    "mcp",
+    "ai",
+    "comparison",
+    "wallet",
+    "fintech"
+   ],
+   "palette": [
+    "#0E1512",
+    "#22C55E",
+    "#FFFFFF",
+    "#6B7280"
+   ],
+   "confidence": 0.65
+  },
+  {
+   "id": "VID-0241",
+   "relevant": true,
+   "title": "Dark sports prediction screen with chart and score card",
+   "description": "A dark mobile screen asking 'Will Turkey or Australia win today's match?' with a headline over a green line chart, plus a match card showing team names and a win-probability bar. A bottom tab bar and a pill toggle sit at the foot of the screen. Deep charcoal background with a mint-green data accent.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "data-viz",
+    "card-based"
+   ],
+   "tags": [
+    "prediction",
+    "chart",
+    "bottom-nav"
+   ],
+   "palette": [
+    "#0B0F0C",
+    "#1A1F1B",
+    "#4ADE80",
+    "#FFFFFF"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0242",
+   "relevant": true,
+   "title": "Dark iOS picker sheet with categories and time wheel",
+   "description": "A dark mobile screen showing a modal picker: a list of category rows (Food & drink with Alcohol, Burgers, Chicken), a selected time row reading 'Time 7:00 pm', and a blue 'Cancel all' action above a full-width blue 'Done' button. Classic iOS sheet styling in dark grey with rounded row separators.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "system-ui",
+    "list"
+   ],
+   "tags": [
+    "picker",
+    "settings",
+    "list",
+    "modal",
+    "button"
+   ],
+   "palette": [
+    "#0B0B0B",
+    "#1C1C1E",
+    "#3B82F6",
+    "#FFFFFF"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0243",
+   "relevant": true,
+   "title": "Cream-toned stats dashboard with 'Digital flock' mastery card",
+   "description": "A light mobile screen headed 'Bookmarker: Done' with a row of large stat figures ('$800k', '200k', '1.3k'), a date label '17 September 2026', and a card titled 'Digital flock / Collection Mastery' showing a boost rate, an image grid and a call-to-action. Warm off-white palette with dark green and amber accents.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "card-based",
+    "editorial"
+   ],
+   "tags": [
+    "dashboard",
+    "stats",
+    "crypto",
+    "cards",
+    "metric"
+   ],
+   "palette": [
+    "#FBF9F4",
+    "#FFFFFF",
+    "#1B4332",
+    "#E9C46A"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0244",
+   "relevant": true,
+   "title": "Dark notification list with blue toggle buttons",
+   "description": "A dark mobile screen showing a stack of list rows, each with small text (including a location line such as 'San Francisco, California') and a bright blue pill-shaped toggle/action button on the right. Deep navy-black background with blue accents and thin separators.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "list",
+    "rounded"
+   ],
+   "tags": [
+    "notifications",
+    "list",
+    "toggle",
+    "settings"
+   ],
+   "palette": [
+    "#0A0E1A",
+    "#1B2233",
+    "#3B82F6",
+    "#FFFFFF"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0245",
+   "relevant": true,
+   "title": "Indigo water-tracking app with 88% and 250ml counter",
+   "description": "A vivid indigo/violet mobile screen with a product render of a water bottle at the top, a large '88%' progress figure, a rounded white card showing '250ml' with a '+ add' pill, a row of small quantity icons and a segmented bar chart at the bottom. Bold saturated gradient background with a bottom tab bar.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "gradient",
+    "bold-colour",
+    "card-based"
+   ],
+   "tags": [
+    "health",
+    "tracker",
+    "chart",
+    "progress"
+   ],
+   "palette": [
+    "#1B1464",
+    "#3A2FD0",
+    "#5B8DEF",
+    "#FFFFFF"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0246",
+   "relevant": true,
+   "title": "Payment amount entry with keypad plus coffee promo screens",
+   "description": "A montage: a dark phone screen showing a negative amount '-$6,969' with a numeric keypad and category rows beneath, next to a light app-store promo card with a coffee cup and headline copy, and a further phone screen showing a coffee product shot. Mixed dark and light promotional presentation.",
+   "platform": "unknown",
+   "kind": "promo-reel",
+   "style": [
+    "mixed",
+    "marketing",
+    "collage"
+   ],
+   "tags": [
+    "payments",
+    "keypad",
+    "app-store",
+    "ecommerce",
+    "screenshot"
+   ],
+   "palette": [
+    "#0B0B0B",
+    "#FFFFFF",
+    "#C08457",
+    "#2563EB"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0247",
+   "relevant": true,
+   "title": "Bare white screen with search bar and blue Publish button",
+   "description": "A near-empty white mobile screen with a rounded search field containing a magnifier icon, and a blue pill button labelled 'Publish' in the lower-right area. Almost no other content \u2014 reads as an empty state or a blank canvas state in a publishing/creation app.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "whitespace",
+    "empty-state"
+   ],
+   "tags": [
+    "search",
+    "empty-state",
+    "cta-button",
+    "publish"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F2F2F2",
+    "#2563EB",
+    "#111111"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0248",
+   "relevant": false,
+   "reason": "3D rendered game/asset scene with trees and rocks"
+  },
+  {
+   "id": "VID-0249",
+   "relevant": true,
+   "title": "Collections screen with colour-palette dots and photo cards",
+   "description": "A light mobile screen headed 'Collections' with a row of five coloured dots representing a palette, a block of descriptive text about illustration/palette, and a row of small photo cards of people with captions underneath. White background, black type and saturated accent dots.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "editorial"
+   ],
+   "tags": [
+    "collection",
+    "palette",
+    "gallery",
+    "photo-grid"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F4F4F4",
+    "#F59E0B",
+    "#111111"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0250",
+   "relevant": true,
+   "title": "Card/mail app screen with letter card and envelope imagery",
+   "description": "A light mobile screen titled around 'Letters' showing a large rounded card with a printed letter/photo collage on a beige surface and a small envelope thumbnail above it. Palette is warm grey and cream with soft shadows, resembling a mail, stationery or greeting-card app.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "soft",
+    "editorial",
+    "skeuomorphic"
+   ],
+   "tags": [
+    "mail",
+    "cards",
+    "editorial"
+   ],
+   "palette": [
+    "#EFEFEF",
+    "#FFFFFF",
+    "#D9C7A7",
+    "#8B5E3C"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0251",
+   "relevant": false,
+   "reason": "game HUD footage with red glowing circle and 'Bot' label"
+  },
+  {
+   "id": "VID-0252",
+   "relevant": true,
+   "title": "Photo-journal screen with circular week collage",
+   "description": "A light phone screen showing a circular arrangement of small photos around a ring, with a caption block beneath reading a short poetic line about a week of city days and coastal quiet, plus a small link. White background with fine black type and a centred, airy layout.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "editorial",
+    "whitespace"
+   ],
+   "tags": [
+    "photo-journal",
+    "circular-layout",
+    "diary",
+    "typography"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F5F5F5",
+    "#111111"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0253",
+   "relevant": true,
+   "title": "Document reader with text-selection context menu",
+   "description": "A light mobile screen showing a document headed 'Documentary' with several lines of body text, with an iOS-style context menu or action popover visible over the text (items such as Edit, Copy, Look Up, Share). White page with grey type and a system-blue accent.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "system-ui"
+   ],
+   "tags": [
+    "reading",
+    "context-menu",
+    "document"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F2F2F7",
+    "#111111",
+    "#2563EB"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0254",
+   "relevant": true,
+   "title": "Locket brand logo animation on amber background",
+   "description": "A flat amber/yellow frame containing a large rounded-square app icon with a heart glyph and the bold wordmark 'Locket' in black to its right. Reads as a brand or app-icon reveal animation; no other interface elements are present.",
+   "platform": "unknown",
+   "kind": "other",
+   "style": [
+    "flat",
+    "bold-colour",
+    "branding"
+   ],
+   "tags": [
+    "logo",
+    "branding",
+    "app-icon",
+    "animation"
+   ],
+   "palette": [
+    "#F2C14E",
+    "#FFD966",
+    "#111111",
+    "#FFC93C"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0255",
+   "relevant": true,
+   "title": "Dark analytics screen with vertical bar chart",
+   "description": "A dark mobile screen dominated by a white vertical bar chart on a black background, with a small title row and tab labels above the chart and list rows below. High-contrast monochrome data-viz treatment with thin grey gridlines.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "data-viz",
+    "minimal",
+    "high-contrast"
+   ],
+   "tags": [
+    "analytics",
+    "bar-chart",
+    "metric",
+    "tabs"
+   ],
+   "palette": [
+    "#0B0B0B",
+    "#171717",
+    "#FFFFFF",
+    "#4B5563"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0256",
+   "relevant": true,
+   "title": "Chat thread with colour-highlighted message lines",
+   "description": "A light chat interface shown as a vertical conversation with each message highlighted in a different pastel colour (pink, green, blue) as if annotated or categorised, with a small plus button at the bottom-left. Cream background with handwritten-style and sans-serif text mixed.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "soft",
+    "colour-coded"
+   ],
+   "tags": [
+    "chat",
+    "highlighting",
+    "conversation",
+    "annotation"
+   ],
+   "palette": [
+    "#FDF6E3",
+    "#F8BBD0",
+    "#A5D6A7",
+    "#90CAF9"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0257",
+   "relevant": true,
+   "title": "Dark promo with pink phone card and 'Leave your mark.' overlay",
+   "description": "A dark promotional composition: a pink phone screen showing a profile-style card is overlaid on a deep purple/black background, with large white type reading 'Leave your mark.' A second dark UI layer below shows 'For you' and 'Next' pills and a small 'Meet' label, suggesting a dating or social product reel.",
+   "platform": "unknown",
+   "kind": "promo-reel",
+   "style": [
+    "dark-mode",
+    "marketing",
+    "gradient",
+    "bold-typography"
+   ],
+   "tags": [
+    "promo",
+    "phone-mockup",
+    "social",
+    "dating",
+    "overlay-text"
+   ],
+   "palette": [
+    "#0D0713",
+    "#E85D9E",
+    "#F5C6D8",
+    "#FFFFFF"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0258",
+   "relevant": true,
+   "title": "Long list screen with colour-dot category rows",
+   "description": "A light mobile screen (framed in a phone mockup) showing a long vertical list of categories \u2014 Headcount, Projects, Support, Company, Food, Recruiting, Business Development, Board, Cash Flow, Items, Bills \u2014 each preceded by a small coloured dot or emoji icon. Clean white rows with light dividers, reminiscent of a workspace/database app.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "list",
+    "colour-coded"
+   ],
+   "tags": [
+    "list",
+    "category",
+    "productivity",
+    "workspace",
+    "icons"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F7F7F7",
+    "#EF4444",
+    "#3B82F6"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0259",
+   "relevant": true,
+   "title": "Dark 'Featured On' carousel with large app dock",
+   "description": "A dark, TV-like interface showing a 'Featured On' carousel of wide cards with logos and imagery (streaming-style tiles), with an overlaid title and a circular avatar badge. A row of large rounded-square app icons forms a dock across the bottom over a yellow-to-pink gradient glow.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "tv-ui",
+    "carousel",
+    "gradient"
+   ],
+   "tags": [
+    "carousel",
+    "dock",
+    "streaming",
+    "media"
+   ],
+   "palette": [
+    "#0A0A0A",
+    "#FACC15",
+    "#EC4899",
+    "#FFFFFF"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0260",
+   "relevant": true,
+   "title": "Music player with album art held in hand outdoors",
+   "description": "A phone held in a hand against an outdoor backdrop showing a music player: album artwork, track/artist text and a transport control bar with a large play/pause pill. A desktop window with a 'Nostalgia' title is visible in the background, and the phone UI uses dark chrome with warm album colours.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "media",
+    "rounded"
+   ],
+   "tags": [
+    "music-player",
+    "now-playing",
+    "album-art",
+    "transport-controls"
+   ],
+   "palette": [
+    "#1A1A1A",
+    "#C9A227",
+    "#FFFFFF",
+    "#4A4A4A"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0261",
+   "relevant": false,
+   "reason": "game title screen and gameplay (AWAKEROOTS)"
+  },
+  {
+   "id": "VID-0262",
+   "relevant": true,
+   "title": "December 2026 calendar sheet with Today and Select buttons",
+   "description": "A light mobile calendar sheet showing a full month grid for December 2026 with weekday headers and muted dates, a small 'Today' pill on the left and a blue 'Select' pill button on the right. Rounded card with soft shadow on a pale grey background.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based",
+    "grid"
+   ],
+   "tags": [
+    "calendar",
+    "month-view",
+    "date-picker",
+    "button"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F5F5F5",
+    "#111111",
+    "#2563EB"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0263",
+   "relevant": true,
+   "title": "Dark 'Let's get you set up' three-step onboarding",
+   "description": "A dark onboarding layout headed \"Let's get you set up\" with a numbered step list on the left (steps 1, 2, 3 with small copy) and phone mockups on the right, including one showing a location/calendar style screen. A caption reads 'Earn Local Cash in your neighborhood' alongside small app icons (Gmail, Calendar, delivery).",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "step-by-step"
+   ],
+   "tags": [
+    "onboarding",
+    "steps",
+    "fintech",
+    "integration"
+   ],
+   "palette": [
+    "#0A0A0A",
+    "#111111",
+    "#FFFFFF",
+    "#22C55E"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0264",
+   "relevant": true,
+   "title": "'good' vs 'better' context-menu UX comparison",
+   "description": "A side-by-side UX critique of a desktop context menu, labelled 'good' and 'better' at the top. Both panels list the same actions (Crop image, Move folder, Copy to clipboard, Delete image) but the right version reorders them and highlights 'Delete image' in red with a leading icon, illustrating a usability improvement.",
+   "platform": "desktop",
+   "kind": "before-after",
+   "style": [
+    "light-mode",
+    "system-ui",
+    "comparison",
+    "minimal"
+   ],
+   "tags": [
+    "context-menu",
+    "ux-comparison",
+    "desktop",
+    "usability",
+    "menu"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F2F2F2",
+    "#111111",
+    "#EF4444"
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "VID-0265",
+   "relevant": true,
+   "title": "'Select a project' dropdown with request-approval action",
+   "description": "A very minimal light interface showing a dropdown card titled 'Select a project' with placeholder text 'Start by typing\u2026' and a list row reading 'Request approval' with a small icon and an arrow. Lots of empty white space, thin grey borders and a single blue accent on the dropdown label.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "whitespace"
+   ],
+   "tags": [
+    "dropdown",
+    "form",
+    "project-picker",
+    "modal"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F7F7F7",
+    "#111111",
+    "#9CA3AF"
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "VID-0266",
+   "relevant": true,
+   "title": "Dark 'Apps' list with Spotify, App Store and notification rows",
+   "description": "A dark mobile screen headed 'Apps' listing rounded app icons with names (Spotify, App Store, a Subscription Day Calendar), then a 'Watching' section and notification rows for apps such as Amazon, Venmo and Re/Max with small red badges. Near-black background with colourful icon tiles.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "list",
+    "icons"
+   ],
+   "tags": [
+    "app-list",
+    "notifications",
+    "icons",
+    "settings",
+    "dark-mode"
+   ],
+   "palette": [
+    "#0B0B0B",
+    "#161616",
+    "#1DB954",
+    "#FFFFFF"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0267",
+   "relevant": true,
+   "title": "Glowing 'New' pill button animation on deep blue",
+   "description": "A dark navy/purple frame containing a single wide pill-shaped control labelled 'New' with a plus icon and a chevron, rendered with a soft neon glow and a glassy highlight along its edge. Reads as a focused motion demo of a button hover/creation interaction.",
+   "platform": "unknown",
+   "kind": "motion-demo",
+   "style": [
+    "dark-mode",
+    "glassmorphism",
+    "glow",
+    "neon"
+   ],
+   "tags": [
+    "button",
+    "animation",
+    "hover",
+    "glass"
+   ],
+   "palette": [
+    "#0A0A2A",
+    "#1E1B4B",
+    "#7C3AED",
+    "#C4B5FD"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0268",
+   "relevant": true,
+   "title": "'Morning routine' settings panel with frequency controls",
+   "description": "A light settings panel headed 'Morning routine' with grouped rows: a 'Contents' group showing 'Uncategorized', a 'Frequency' group with 'Specific days' selected and a 'Flexible' alternative, and a 'More options' row. Notion-like panel styling with white background, grey labels and a green selected chip.",
+   "platform": "unknown",
+   "kind": "other",
+   "style": [
+    "light-mode",
+    "minimal",
+    "panel",
+    "settings"
+   ],
+   "tags": [
+    "settings",
+    "panel",
+    "frequency",
+    "form",
+    "productivity"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F7F7F5",
+    "#111111",
+    "#22C55E"
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "VID-0269",
+   "relevant": true,
+   "title": "Black screen with '62%' label and dot-grid progress",
+   "description": "A dark phone mockup on white showing an almost entirely black screen: a small '62%' figure in the upper area, a grid of small dots across the middle, a thin progress bar near the bottom and a minimal bottom navigation row. Extreme high-contrast minimalism with a single accent colour.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "high-contrast",
+    "monochrome"
+   ],
+   "tags": [
+    "progress",
+    "dot-grid",
+    "tracker",
+    "bottom-nav"
+   ],
+   "palette": [
+    "#000000",
+    "#0D0D0D",
+    "#FFFFFF",
+    "#4B5563"
+   ],
+   "confidence": 0.45
+  },
+  {
+   "id": "VID-0270",
+   "relevant": false,
+   "reason": "abstract dot/particle cluster on black, no interface"
+  },
+  {
+   "id": "VID-0271",
+   "relevant": false,
+   "reason": "incidental small system download-progress dialog on a dark screen; negligible interface design value"
+  },
+  {
+   "id": "VID-0272",
+   "relevant": false,
+   "reason": "underwater game scene footage"
+  },
+  {
+   "id": "VID-0273",
+   "relevant": false,
+   "reason": "dark dungeon game gameplay"
+  },
+  {
+   "id": "VID-0274",
+   "relevant": true,
+   "title": "Dark habit tracker showing 'DAY 14' with empty-day state",
+   "description": "A dark mobile screen headed 'DAY 14' with a date line 'SEPTEMBER 2026', a small outlined sun icon and centred copy reading 'No goals for this day' above a small button. Pure black background with white type and a thin border \u2014 a minimal empty state in a habit/goal app.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "high-contrast",
+    "empty-state"
+   ],
+   "tags": [
+    "habit-tracker",
+    "calendar",
+    "empty-state",
+    "dark-mode"
+   ],
+   "palette": [
+    "#0A0A0A",
+    "#141414",
+    "#FFFFFF",
+    "#FACC15"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0275",
+   "relevant": true,
+   "title": "Dark release-notes screen for version 4.7.0",
+   "description": "A dark phone screen with a very large '4.7.0' version number at the top, followed by small centred bullet lines of changelog copy (mentioning previously animated menus, a new animation engine by default and animating gradients). Deep navy background with white text and a small accent colour.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "large-type"
+   ],
+   "tags": [
+    "changelog",
+    "release-notes",
+    "version",
+    "animation",
+    "developer"
+   ],
+   "palette": [
+    "#0B1020",
+    "#151B33",
+    "#FFFFFF",
+    "#7C5CFF"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0276",
+   "relevant": true,
+   "title": "Light 'Application status' screen with circular gauge",
+   "description": "A light mobile screen headed 'Application status' showing a small circular progress gauge in the centre with a congratulatory line beneath it and a status badge. White background with a red/coral accent and a thin bottom nav or footer bar.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "fitness",
+    "status",
+    "progress-ring",
+    "achievement"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F5F5F5",
+    "#EF4444",
+    "#111111"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0277",
+   "relevant": true,
+   "title": "'Original / Opus 5 / Opus 5.5' three-way app comparison",
+   "description": "Three phone mockups side by side labelled 'Original', 'Opus 5' and 'Opus 5.5', all showing the same finance-style app in different states. The Original is a plain light screen, Opus 5 adds a card with a balance ('$6,861.76 USD') and transaction rows, and Opus 5.5 shows a further refined layout \u2014 a model-version before/after comparison.",
+   "platform": "unknown",
+   "kind": "before-after",
+   "style": [
+    "light-mode",
+    "comparison",
+    "fintech",
+    "minimal"
+   ],
+   "tags": [
+    "ai-comparison",
+    "model-versions",
+    "fintech",
+    "side-by-side"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F5F5F5",
+    "#111111",
+    "#22C55E"
+   ],
+   "confidence": 0.7
+  },
+  {
+   "id": "VID-0278",
+   "relevant": true,
+   "title": "'Fable 5.1' vs 'GPT-6 Astra' app-store screen comparison",
+   "description": "Two phone mockups compared side by side: the left, labelled 'Fable 5.1', is light with scattered blue app icons and copy about creating and discovering with tools; the right, labelled 'GPT-6 Astra', is dark with scattered white icons and similar copy. Both show a bottom CTA button, making it a direct model-output comparison.",
+   "platform": "unknown",
+   "kind": "before-after",
+   "style": [
+    "comparison",
+    "dark-mode",
+    "light-mode",
+    "marketing"
+   ],
+   "tags": [
+    "ai-comparison",
+    "app-store",
+    "icons",
+    "cta-button"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#0B0B0B",
+    "#2563EB",
+    "#E5E7EB"
+   ],
+   "confidence": 0.65
+  },
+  {
+   "id": "VID-0279",
+   "relevant": true,
+   "title": "'Plan Every Stop, Effortlessly.' travel route screen",
+   "description": "A light mobile screen with a pale blue route card showing a map path with numbered stop pins, above a bold headline 'Plan Every Stop, Effortlessly.' and body copy. A dark full-width 'Start' button sits at the bottom, with soft blue/white colouring and rounded corners.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "soft",
+    "card-based",
+    "marketing"
+   ],
+   "tags": [
+    "travel",
+    "map",
+    "landing",
+    "cta-button"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#DCEBFF",
+    "#1E6FD9",
+    "#0F172A"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0280",
+   "relevant": true,
+   "title": "Editorial spread 'Designed to be read, then re-read'",
+   "description": "A document-style spread with the headline 'Designed to be read, then re-read' over columns of small body text, paired with small image blocks and geometric shapes on the right page. Clean white pages, tight serif/sans typography and thin rules \u2014 a magazine or report layout rather than an app screen.",
+   "platform": "unknown",
+   "kind": "other",
+   "style": [
+    "editorial",
+    "minimal",
+    "typography",
+    "print-layout"
+   ],
+   "tags": [
+    "editorial",
+    "typography",
+    "magazine",
+    "document"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#111111",
+    "#E5E7EB",
+    "#9CA3AF"
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "VID-0281",
+   "relevant": true,
+   "title": "Project/kanban workspace panel on pink-orange gradient",
+   "description": "A light workspace UI floating over a pink-to-orange gradient background: a left sidebar headed 'My Project' with 'Boards', a search field, 'Board 1', a 'Lists' section with 'Home 1' and 'Page 1'. Rounded white panels with soft shadows and a warm gradient backdrop.",
+   "platform": "web",
+   "kind": "website",
+   "style": [
+    "light-mode",
+    "gradient",
+    "card-based",
+    "web-app"
+   ],
+   "tags": [
+    "kanban",
+    "workspace",
+    "sidebar",
+    "project-management",
+    "gradient"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#FB7185",
+    "#F97316",
+    "#111111"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0282",
+   "relevant": true,
+   "title": "Four app-store screenshot cards (boost, ratings, rewards, tour)",
+   "description": "Four phone mockups presented as app-store screenshot cards on white, each with a bold headline: a 'Get 15% Boost' offer, a five-star rating prompt, a 'New Rewards & Tips' announcement and a 'Try Our Tour' onboarding prompt. Consistent light style with green and blue accents and a bottom CTA button on each.",
+   "platform": "unknown",
+   "kind": "promo-reel",
+   "style": [
+    "light-mode",
+    "marketing",
+    "consistent-system"
+   ],
+   "tags": [
+    "app-store",
+    "screenshot",
+    "rewards",
+    "onboarding",
+    "cta-button"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#DCFCE7",
+    "#2563EB",
+    "#111111"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0283",
+   "relevant": true,
+   "title": "Desktop calendar dashboard with event month grid",
+   "description": "A desktop web app showing a large month grid calendar filled with event chips, a left sidebar listing months, and a top toolbar with view switchers and small controls. White and light-grey surface with blue event accents and dense, data-rich layout.",
+   "platform": "desktop",
+   "kind": "dashboard",
+   "style": [
+    "light-mode",
+    "data-dense",
+    "web-app",
+    "grid"
+   ],
+   "tags": [
+    "calendar",
+    "dashboard",
+    "sidebar",
+    "scheduling",
+    "desktop"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F3F4F6",
+    "#111111",
+    "#3B82F6"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0284",
+   "relevant": true,
+   "title": "Dark 'Get Health Life' checklist screen with Start Now",
+   "description": "A dark mobile screen with a green rounded header card titled 'Get Health Life' containing a small badge, followed by list rows with chevrons and a white 'Start Now' pill button at the bottom. Same design family as the light/green health screens seen elsewhere in the batch, rendered in dark mode.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "health",
+    "checklist",
+    "cta-button",
+    "fitness",
+    "dark-mode"
+   ],
+   "palette": [
+    "#0E1512",
+    "#111111",
+    "#22C55E",
+    "#FFFFFF"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0285",
+   "relevant": true,
+   "title": "Two light wellness screens with gradient orb and plan list",
+   "description": "Two light app screens shown side by side: the left features a soft blue-green gradient orb with small text beneath and a bottom pill button; the right shows a 'My plan' style screen with tabs, a small list of items and a bottom navigation bar. Pale lavender and mint palette with lots of whitespace.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "soft",
+    "minimal",
+    "gradient"
+   ],
+   "tags": [
+    "wellness",
+    "plan",
+    "tabs",
+    "bottom-nav",
+    "onboarding"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#E6E1F5",
+    "#B8E0D2",
+    "#111111"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0286",
+   "relevant": true,
+   "title": "Phone in hand showing a pastel illustrated sticker card",
+   "description": "A hand holds a phone whose screen is filled with a pastel pink-and-gold illustrated card covered in small stickers and decorative shapes, with a short line of text near the bottom. Reads as a greeting-card or sticker-creation app screen, though the specific app and controls are not clearly legible.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "playful",
+    "pastel",
+    "illustration",
+    "in-hand"
+   ],
+   "tags": [
+    "sticker",
+    "card",
+    "illustration",
+    "unclear"
+   ],
+   "palette": [
+    "#F7D6C4",
+    "#E8B4A0",
+    "#D4AF37",
+    "#FFFFFF"
+   ],
+   "confidence": 0.35
+  },
+  {
+   "id": "VID-0287",
+   "relevant": true,
+   "title": "'How episodic sharing works' social explainer screen",
+   "description": "A light mobile screen showing a photo card with a timestamp ('10:33:38') and small thumbnails, above a white explainer card headed 'How episodic sharing works' with numbered step rows (Stories, Spotlights, Spaces). Clean white UI with green accents, small circular avatars and a rounded card stack.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based",
+    "explainer"
+   ],
+   "tags": [
+    "social",
+    "story",
+    "explainer",
+    "steps",
+    "onboarding"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#EAF7EE",
+    "#22C55E",
+    "#111111"
+   ],
+   "confidence": 0.55
+  },
+  {
+   "id": "VID-0288",
+   "relevant": true,
+   "title": "Split view: code editor beside a 'Dark Environment' phone",
+   "description": "A two-panel composition: on the left a dark code editor shows a snippet of source code with syntax colouring and a small header (documentation-style), while on the right a phone screen sits on black with the words 'Dark Environment' in white. Reads as a developer-tool or theming demo rather than a consumer app screen.",
+   "platform": "unknown",
+   "kind": "other",
+   "style": [
+    "dark-mode",
+    "developer",
+    "high-contrast"
+   ],
+   "tags": [
+    "code-editor",
+    "developer-tool",
+    "theming",
+    "dark-mode",
+    "documentation"
+   ],
+   "palette": [
+    "#0D1117",
+    "#161B22",
+    "#FFFFFF",
+    "#58A6FF"
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "VID-0289",
+   "relevant": true,
+   "title": "Journal app screen held in hand with warm morning light",
+   "description": "A hand holds a phone displaying a light blue journal/quote screen with a small heading, an illustration and lines of text, with a soft warm-lit interior behind it. The screen uses a calm pale-blue palette with white cards and small rounded buttons.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "soft",
+    "in-hand",
+    "calm"
+   ],
+   "tags": [
+    "journal",
+    "daily",
+    "quote",
+    "wellness",
+    "in-hand"
+   ],
+   "palette": [
+    "#DCEBFF",
+    "#F5E6D3",
+    "#2563EB",
+    "#FFFFFF"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0290",
+   "relevant": true,
+   "title": "Minimal story screen with a single narrative line",
+   "description": "A light phone/tablet screen showing a single line of story text ('Look at you riding like that across the bar. What a fun adventure we're about to go on.') with a small plus icon at the bottom-left and a speaker/audio control at the bottom-right. Extremely sparse white layout with black type \u2014 likely a story-generation or reading interface.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "whitespace",
+    "editorial"
+   ],
+   "tags": [
+    "story",
+    "writing",
+    "prompt",
+    "reading",
+    "ai"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F5F5F5",
+    "#111111",
+    "#E5E7EB"
+   ],
+   "confidence": 0.4
+  },
+  {
+   "id": "VID-0291",
+   "relevant": true,
+   "title": "App Store product page for 'The Legend of Zelda: The Wind Waker'",
+   "description": "A dark iOS App Store product page showing a game hero image at the top with the title and subtitle, a blue 'Get' style button, an in-app purchases line, a 'What's New' section with version notes and a 'Game details' block with screenshot thumbnails. Standard Apple store chrome in dark mode over deep navy artwork.",
+   "platform": "ios",
+   "kind": "mobile-app-ui",
+   "style": [
+    "dark-mode",
+    "system-ui",
+    "product-page"
+   ],
+   "tags": [
+    "app-store",
+    "product-page",
+    "gaming",
+    "screenshot",
+    "dark-mode"
+   ],
+   "palette": [
+    "#0B0B0B",
+    "#1B2A4A",
+    "#F5C542",
+    "#FFFFFF"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0292",
+   "relevant": true,
+   "title": "Abstract glowing orbs animation on a black screen",
+   "description": "A dark screen containing four soft glowing orbs (purple, pink, blue and violet) floating on pure black, with a faint caption line near the bottom edge. Suggests an AI voice-assistant or ambient animation demo, though no conventional UI controls are visible.",
+   "platform": "unknown",
+   "kind": "motion-demo",
+   "style": [
+    "dark-mode",
+    "glow",
+    "abstract",
+    "ambient"
+   ],
+   "tags": [
+    "voice-assistant",
+    "orbs",
+    "animation",
+    "ai",
+    "unclear"
+   ],
+   "palette": [
+    "#000000",
+    "#8B5CF6",
+    "#EC4899",
+    "#3B82F6"
+   ],
+   "confidence": 0.35
+  },
+  {
+   "id": "VID-0293",
+   "relevant": true,
+   "title": "'Your coffee, fast.' e-commerce hero with product and phone mockup",
+   "description": "A warm cream e-commerce landing page with a large serif headline 'Your coffee, fast.', a top navigation row (Home, Blog, Reviews), two dark rounded buttons, and a hero image of a coffee maker on a wooden surface beside a phone mockup. Muted beige and brown palette with editorial serif typography.",
+   "platform": "web",
+   "kind": "website",
+   "style": [
+    "light-mode",
+    "editorial",
+    "warm",
+    "ecommerce"
+   ],
+   "tags": [
+    "ecommerce",
+    "hero",
+    "landing-page",
+    "product-shot"
+   ],
+   "palette": [
+    "#F3EDE3",
+    "#FFFFFF",
+    "#111111",
+    "#C89F7B"
+   ],
+   "confidence": 0.65
+  },
+  {
+   "id": "VID-0294",
+   "relevant": true,
+   "title": "Chat screen with colour-highlighted messages over a photo",
+   "description": "A phone held against an outdoor photo background showing a chat thread where individual message lines are highlighted in pink, green and blue (annotated or categorised), with a blue 'Search' button near the bottom. Cream message bubbles with dark text and a small circular avatar.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "soft",
+    "colour-coded",
+    "in-hand"
+   ],
+   "tags": [
+    "chat",
+    "highlighting",
+    "search",
+    "conversation",
+    "annotation"
+   ],
+   "palette": [
+    "#FDF6E3",
+    "#F8BBD0",
+    "#90CAF9",
+    "#2563EB"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0295",
+   "relevant": true,
+   "title": "Desktop analytics dashboard with sidebar and bar charts",
+   "description": "A light desktop analytics dashboard with a dense left sidebar of navigation items, a top bar with a date-range control and search, KPI figures across the top (values such as 3,486 / 2,533 / 4,799 / 4,750) and a large vertical bar chart in the main panel. Clean white surface with blue chart accents and thin grey dividers.",
+   "platform": "web",
+   "kind": "dashboard",
+   "style": [
+    "light-mode",
+    "data-dense",
+    "web-app",
+    "charts"
+   ],
+   "tags": [
+    "analytics",
+    "bar-chart",
+    "sidebar",
+    "kpi",
+    "desktop"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F3F4F6",
+    "#111111",
+    "#3B82F6"
+   ],
+   "confidence": 0.65
+  },
+  {
+   "id": "VID-0296",
+   "relevant": true,
+   "title": "Dark network-graph data visualisation with sidebar",
+   "description": "A dark analytics interface with a left sidebar of navigation labels and a large radial network graph on the right, where nodes fan out with coloured connecting lines against a black canvas. Small metric labels sit around the graph. Deep black background with green, purple and orange accents.",
+   "platform": "web",
+   "kind": "dashboard",
+   "style": [
+    "dark-mode",
+    "data-viz",
+    "graph",
+    "web-app"
+   ],
+   "tags": [
+    "network-graph",
+    "data-viz",
+    "sidebar",
+    "analytics",
+    "dark-mode"
+   ],
+   "palette": [
+    "#0A0A0A",
+    "#111111",
+    "#4ADE80",
+    "#A78BFA"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "id": "VID-0297",
+   "relevant": true,
+   "title": "Light 'Top Goals' habit screen with streak and month grid",
+   "description": "A light mobile screen headed 'Top Goals' showing a 'Streak 55' figure, a 'Total completions' stat, and a month grid for September 2026 with small dots marking completed days, plus a weekday header row and a bottom navigation bar. Soft grey-on-white styling with blue and green accent chips.",
+   "platform": "unknown",
+   "kind": "mobile-app-ui",
+   "style": [
+    "light-mode",
+    "minimal",
+    "grid",
+    "card-based"
+   ],
+   "tags": [
+    "habit-tracker",
+    "calendar",
+    "streak",
+    "bottom-nav",
+    "stats"
+   ],
+   "palette": [
+    "#FFFFFF",
+    "#F5F5F5",
+    "#111111",
+    "#2563EB"
+   ],
+   "confidence": 0.6
+  },
+  {
+   "id": "VID-0298",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0299",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0300",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0301",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0302",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0303",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0304",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0305",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0306",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0307",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0308",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0309",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0310",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0311",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0312",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0313",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0314",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0315",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0316",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0317",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0318",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0319",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0320",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0321",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0322",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0323",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0324",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0325",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0326",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0327",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0328",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0329",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0330",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0331",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0332",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  },
+  {
+   "id": "VID-0333",
+   "relevant": true,
+   "reason": "new UI batch UI"
+  }
+ ]
+}

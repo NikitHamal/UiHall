@@ -1,0 +1,602 @@
+{
+ "note": "Review pass 10 of the undescribed mobile-app-ui images. Sheets review_12.jpg and review_13.jpg. Written from the processed web images. Palette, dimensions and contrast are measured elsewhere, not asserted here.",
+ "items": {
+  "IMG-0403": {
+   "id": "IMG-0403",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Ambient-motion onboarding triptych on a lilac ground",
+   "description": "Three iPhone frames arranged left to right on a soft lilac backdrop, each showing a different step of a meditation-style onboarding. The first frame is a white card with a rounded-square rendered illustration - a dark mass with a bright orange gradient bleeding across it - above the heading 'Hi Nikita! What's on your mind right now?'. The second frame tints the whole card a warm stone colour with a large orange-to-pink gradient ring at its centre, like a bloom seen close up. The third is a dark screen with a grid of mood tiles and a hairline progress bar, leading into a call to action. The set is a good reference for a three-step emotional onboarding: each step keeps one composition but swaps the ground colour and the imagery, so the sequence reads as a change of mood rather than a change of page.",
+   "roles": [
+    "onboarding",
+    "hero"
+   ],
+   "style": [
+    "soft",
+    "rounded",
+    "illustration-led"
+   ],
+   "tags": [
+    "gradient",
+    "meditation",
+    "multi-panel",
+    "mood",
+    "progress",
+    "pastel",
+    "wellness-coach"
+   ],
+   "quality": "Clear capture; body copy is small but legible at full size."
+  },
+  "IMG-0404": {
+   "id": "IMG-0404",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Empty-state clause list under a stack icon",
+   "description": "A single light screen titled 'Clause' beneath a small wordmark at the top left. The middle of the screen is dominated by a line-art illustration of two offset stacked cards with a small check mark, drawn in a thin grey stroke with no fill. Under it, a single line of centred grey body copy reads 'No clauses found'. The whole view is one centred column on an otherwise empty page, with nothing else competing for attention. It is a textbook empty state: illustration, one sentence, nothing more.",
+   "roles": [
+    "empty-state"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "line-art"
+   ],
+   "tags": [
+    "line-art",
+    "grey",
+    "centred",
+    "clause"
+   ],
+   "quality": "Clear capture; the illustration stroke weight is visible."
+  },
+  "IMG-0405": {
+   "id": "IMG-0405",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Pastel avatar story-bubble list",
+   "description": "A light screen headed 'Avatar'. A vertical list of rounded rows fills the view, each with a circular avatar on the left and two lines of text on the right. The avatars are illustration-style character portraits in pastel fills - pink, mint, lilac, peach and pale blue - and several rows carry a small circular status badge on the trailing edge. The header sits above the list with the title on the left and a compact control on the right. Rows are separated by hairlines rather than by cards, so a long list stays compact. The repeated pastel-avatar motif is what gives the list its rhythm.",
+   "roles": [
+    "list",
+    "profile"
+   ],
+   "style": [
+    "light-mode",
+    "pastel",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "avatar",
+    "pastel",
+    "badge",
+    "people",
+    "list-row"
+   ],
+   "quality": "Clear capture; row text is legible."
+  },
+  "IMG-0406": {
+   "id": "IMG-0406",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Orange music-promo panel with three tilted screens",
+   "description": "A wide promotional panel on a flat orange ground. The left third is a large dark poster card with a magenta-to-violet gradient headline reading 'Come For The Nostalgia, Stay For The Beats', a pair of dancers in silhouette below it, and a solid white pill button at the bottom. To the right, three iPhone frames are tilted in parallel down to the left, each showing a different music screen: a dark profile page with a circular avatar and a stats row, a dark feed of square album cards in a two-column grid, and a lighter detail page with a large cover. The tilt is uniform, so the three frames read as one fanned object rather than three separate phones. A strong reference for presenting an app as a product shot inside a marketing banner.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "bold-typography",
+    "dark-mode",
+    "gradient"
+   ],
+   "tags": [
+    "music",
+    "gradient",
+    "promo",
+    "multi-panel",
+    "magenta",
+    "poster",
+    "album"
+   ],
+   "quality": "Clear capture; the poster headline is legible."
+  },
+  "IMG-0407": {
+   "id": "IMG-0407",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Hand-held phone over a delivery tracking home",
+   "description": "A photograph of a hand holding a phone against a plain warm-lit wall, the phone angled slightly toward the camera. The screen shows a light logistics home: a large heading 'Precision in Every Delivery', a photographic crop of a white box truck, a location row with a pin and an address, then a card of delivery details and a status list below. Under the phone, the app continues past the visible area, implying a long scroll. The prop-like staging - hand, shallow depth of field, soft neutral background - is the point of the image: it presents the interface as a physical object rather than a flat screenshot.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "photographic",
+    "rounded"
+   ],
+   "tags": [
+    "delivery",
+    "logistics",
+    "photographic",
+    "tracking",
+    "location",
+    "hand"
+   ],
+   "quality": "Sharp capture; the on-screen labels are legible."
+  },
+  "IMG-0408": {
+   "id": "IMG-0408",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Spend-tracker dark screen with mint bars and a segmented ring",
+   "description": "A dark charcoal screen headed 'Spending'. A mint-green bar chart spans the top, with five or six rounded columns of differing heights and a small value label above the tallest. Below it, a 'Spending Limit' block pairs a figure in a large weight with a horizontal segmented progress bar - the filled portion mint, the remainder a dim grey - and an inline percentage. A third block explains the limit in a small grey paragraph. The palette is strictly two-tone: near-black ground, mint accent, with grey for secondary text only. The vertical rhythm of the three stacked blocks is even, giving a dashboard feel on a phone.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "analytics",
+    "bar-chart",
+    "budget",
+    "fintech",
+    "limit",
+    "mint",
+    "progress",
+    "spending"
+   ],
+   "quality": "Clear capture; the axis labels are small but present."
+  },
+  "IMG-0409": {
+   "id": "IMG-0409",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Team roster with inline status pills",
+   "description": "A dark navy screen headed 'Team' with a subtitle line underneath. A vertical roster of rows follows: each row has a circular avatar on the left, a name and a secondary line in the middle, and a small pill on the trailing edge whose label varies by state - 'Pending' in a warm amber, 'Active' in a mid blue, 'Invited' in grey. A tab bar sits at the foot with the active tab marked in a brighter tint. The screen is a compact reference for showing a member list where each person's state matters more than their details, so the state gets the only strong colour on the row.",
+   "roles": [
+    "list"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "minimal"
+   ],
+   "tags": [
+    "avatar",
+    "call-to-action",
+    "nav-bar",
+    "pill",
+    "roster",
+    "states",
+    "status",
+    "team"
+   ],
+   "quality": "Clear capture; the pill labels are legible."
+  },
+  "IMG-0410": {
+   "id": "IMG-0410",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "Two-step delivery-confirm sheet with a dimmed backdrop",
+   "description": "A dark screen shown twice, or as a before-and-after pair within one image. The upper state is a dimmed version of a map or confirmation view with a white card lifted near the foot of the screen, carrying a location name, an address line and a pair of buttons - a wide outlined 'Cancel' and a solid 'Confirm' on the right. The lower state repeats the same card un-dimmed and seated at the base, with the buttons now on the trailing edge of the content. The composition is a reference for the confirm-before-you-commit pattern: dim the page, raise one card, keep the reversible action quieter than the decisive one.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "minimal"
+   ],
+   "tags": [
+    "call-to-action",
+    "confirmation",
+    "delivery",
+    "location",
+    "modal",
+    "scrim",
+    "sheet"
+   ],
+   "quality": "Clear capture; button labels are legible."
+  },
+  "IMG-0411": {
+   "id": "IMG-0411",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Dark shop-ordering list under an order heading",
+   "description": "A near-black screen headed 'Ordering'. Beneath the title sits a white-outlined card carrying a section label and an order summary line, then a longer list of item rows, each with a small leading thumbnail, a two-line label and a trailing price or quantity. A prominent circular button floats at the bottom right, its ring in a warm coral that is the only saturated colour in the view. The hairlines between rows are barely lighter than the ground, so the list reads as a single floating sheet. It is a dense but calm ordering screen - information heavy, chromatically restrained.",
+   "roles": [
+    "list"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "outlined"
+   ],
+   "tags": [
+    "commerce",
+    "coral",
+    "floating-action-button",
+    "ordering",
+    "price",
+    "thumbnail"
+   ],
+   "quality": "Clear capture; row text is legible."
+  },
+  "IMG-0412": {
+   "id": "IMG-0412",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Dark portfolio with a large numeral and a red alert strip",
+   "description": "A black screen opening with a very large white figure - a dollar amount rendered as the focal point of the view - above a small secondary line and a sparkline. Under it sits a red horizontal strip carrying an alert or limit notice, its saturation unmatched anywhere else on the screen. Below that, a row of icon-and-label shortcuts in a two-column grid, then a vertical list of holdings, each row with a small token badge, a name, a ticker and a right-aligned value. The dark ground lets the single red strip carry the whole screen's sense of urgency.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "alert",
+    "balance",
+    "fintech",
+    "icon-button",
+    "numeral",
+    "portfolio",
+    "sparkline",
+    "trading"
+   ],
+   "quality": "Clear capture; figures and tickers are legible."
+  },
+  "IMG-0413": {
+   "id": "IMG-0413",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Pet-shop home with photographic product cards",
+   "description": "A light shopping screen in a violet-to-blue system. A header block carries a search field, a banner strip and a row of circular category shortcuts with pastel line-art icons. Below, a two-column grid of photographic pet-supply cards - bags of food, toys, a grooming set - each with a name and a price, the images cut out on white so the grid stays even. A tab bar sits at the foot with the active tab tinted. The pastel category circles against the photographic grid give the screen two distinct registers: soft and illustrated at the top, product-real below.",
+   "roles": [
+    "home",
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "pastel",
+    "rounded"
+   ],
+   "tags": [
+    "banner",
+    "category",
+    "commerce",
+    "e-commerce",
+    "nav-bar",
+    "pet",
+    "price",
+    "product-grid"
+   ],
+   "quality": "Clear capture; product names and prices are legible."
+  },
+  "IMG-0414": {
+   "id": "IMG-0414",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Streak-calendar screen with a magenta emphasis row",
+   "description": "A near-black screen carrying a weekly calendar grid near the top - seven small day cells, the current one marked - above a list of habit or story rows. One row is filled solid magenta with white text, clearly the selected or emphatic item, and the rows around it are plain. A magenta pill button sits above the list, and a tab bar closes the view at the foot with the active tab in the same magenta. The screen's whole hierarchy runs on one accent: everything is grey on black until something needs to be the answer.",
+   "roles": [
+    "list"
+   ],
+   "style": [
+    "bold-typography",
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "streak",
+    "calendar",
+    "magenta",
+    "emphasis",
+    "nav-bar",
+    "habit",
+    "call-to-action"
+   ],
+   "quality": "Clear capture; cell labels are legible."
+  },
+  "IMG-0415": {
+   "id": "IMG-0415",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Dense dark audit table with twin value columns",
+   "description": "A dark analytics screen holding a genuinely dense table. A left column of labels runs down the view - several dozen rows of small grey text - with two right-hand numeric columns aligned to the trailing edge, each figure in an amber or orange tint against the black. Thin vertical rules separate the three columns, and the alignment is strict, so the eye can scan a column of figures without the rows' text interrupting. There is no chart and no decoration: this is the information-dense end of the dashboard range, and it is useful precisely because it does not simplify.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "dense-content",
+    "minimal"
+   ],
+   "tags": [
+    "amber",
+    "analytics",
+    "audit",
+    "columns",
+    "data-table",
+    "dense-content",
+    "report",
+    "table"
+   ],
+   "quality": "Fine text; rows are individually legible at full size, though a tight crop is needed to read a full column."
+  },
+  "IMG-0416": {
+   "id": "IMG-0416",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Yellow-accent stats home with a progress summary card",
+   "description": "A light screen on a soft off-white ground, topped by a status row and a compact header. The focal element is a large rounded card in a saturated yellow carrying a very large percentage figure - '8.6%' in a heavy weight - with a short caption beneath it. Below the yellow card, a white card holds a small bar or step chart and a row of inline statistics with a percentage pill on the trailing edge. A tab bar sits at the foot, the active item in the same yellow. The yellow does all the emphasis work; every other surface is white or pale grey.",
+   "roles": [
+    "dashboard",
+    "home"
+   ],
+   "style": [
+    "bold-typography",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "yellow",
+    "stats",
+    "percentage",
+    "card",
+    "chart",
+    "nav-bar",
+    "metric-tile",
+    "summary"
+   ],
+   "quality": "Clear capture; the large figure and captions are legible."
+  },
+  "IMG-0417": {
+   "id": "IMG-0417",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Yellow-accent vertical feed of photographic cards",
+   "description": "A light screen showing a single-column feed. At the top sits a header with a small avatar on the left and a pair of controls on the right. Below, full-width cards repeat down the view, each holding a photographic image with a label block overlaid or beneath it: a crochet-textured shot, a pale abstract surface, a dark blue patterned tile. Each card carries a short caption and, in some cases, a small percentage or progress figure on the leading edge. A tab bar closes the screen with the active tab in yellow. The repeated large image plus short caption is the whole rhythm of the page.",
+   "roles": [
+    "feed"
+   ],
+   "style": [
+    "light-mode",
+    "photographic",
+    "rounded"
+   ],
+   "tags": [
+    "avatar",
+    "caption",
+    "card",
+    "gallery",
+    "nav-bar",
+    "photographic",
+    "yellow"
+   ],
+   "quality": "Clear capture; captions are legible."
+  },
+  "IMG-0418": {
+   "id": "IMG-0418",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Streak tracker with a large day numeral and a yellow call to action",
+   "description": "A light screen on off-white, headed by a status row and a short title. A set of small outlined chips sits near the top as a choice row, one of them in a pale yellow fill to mark it selected. The centre of the screen is a tall white card carrying a very large numeral - a day count, '22' or similar - above a small caption, with a horizontal week strip beneath it marking the completed days, each in a small green tick or circle. A solid yellow pill button sits above the tab bar. The screen is built around one number and one commitment, and everything else supports that pair.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "rounded",
+    "minimal"
+   ],
+   "tags": [
+    "call-to-action",
+    "card",
+    "chip",
+    "habit",
+    "numeral",
+    "streak",
+    "tracker",
+    "week-strip",
+    "yellow"
+   ],
+   "quality": "Clear capture; the numeral and week strip are legible."
+  },
+  "IMG-0419": {
+   "id": "IMG-0419",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Hand-held travel app with a green search pill",
+   "description": "A photograph of two hands holding a phone in a dim interior, the screen bright against the scene. The interface is a light travel-booking home: a green-outlined search field at the top reading a destination, a row of filter chips beneath it, and a photographic card showing a mountain landscape with a title and a small label. A solid green search pill floats low on the screen, unmistakably the primary action. The image's value is the contrast between the dark physical surround and the bright lit screen - the interface reads as a lit object in a dark room.",
+   "roles": [
+    "hero",
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "photographic",
+    "rounded"
+   ],
+   "tags": [
+    "travel",
+    "green",
+    "photographic",
+    "chip-filter",
+    "booking"
+   ],
+   "quality": "Sharp capture; on-screen text is legible."
+  },
+  "IMG-0420": {
+   "id": "IMG-0420",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Travel triptych over an aerial-coast photograph",
+   "description": "A wide composition with an aerial coastline photograph as the ground - pale sand at the lower left curving into deep teal water at the upper right, with a fringe of surf. Three iPhone frames are arranged across it in a descending stagger. The left frame is a deep-teal itinerary card with a large white headline reading 'Plan, book and receive Seamless Travel', a row of chips and a pair of buttons. The centre frame is a light route screen with an illustrated map, a route line and a pair of location rows with dates. The right frame is a booking detail with a route row, a price block and a passenger list. The frames sit directly on the photograph rather than on panels, so the product and the destination share one image.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "photographic",
+    "rounded",
+    "minimal"
+   ],
+   "tags": [
+    "travel",
+    "route",
+    "multi-panel",
+    "photographic",
+    "itinerary",
+    "booking",
+    "map"
+   ],
+   "quality": "Clear capture; the headline and route labels are legible."
+  },
+  "IMG-0421": {
+   "id": "IMG-0421",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Black notifications list with coloured category pills",
+   "description": "A pure black screen with a header row, then a vertical stack of notification cards. Each card is a slightly lifted dark surface with a small tinted icon on the leading edge, a title and a two-line body, and a timestamp aligned to the trailing edge. Two of the cards carry a saturated pill each - one magenta, one violet-blue - as an inline label or action, and a third card carries a smaller outlined pill. A single green circular action button floats at the bottom right, the brightest element on the screen. It is a good reference for a dark list where colour is rationed to status and to one action.",
+   "roles": [
+    "list"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "floating-action-button",
+    "magenta",
+    "notifications",
+    "pill",
+    "status",
+    "timestamp"
+   ],
+   "quality": "Clear capture; card titles are legible."
+  },
+  "IMG-0422": {
+   "id": "IMG-0422",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Location-sharing sheet over a body-map figure",
+   "description": "A near-black screen headed 'Share Location'. The centre of the view is a small anatomical figure - a simple human silhouette - drawn in pale grey linework, with a glowing dot or marker placed at its middle, suggesting a position on the body. Copy sits above the figure explaining the sheet's purpose. At the foot, a solid lime-green pill spans the width of the content, with a dim secondary line of text beneath it. The composition is almost entirely negative space; the figure and the single green button are the only two things the eye lands on.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "line-art"
+   ],
+   "tags": [
+    "body-map",
+    "call-to-action",
+    "consent",
+    "lime",
+    "location",
+    "modal",
+    "privacy",
+    "sheet"
+   ],
+   "quality": "Clear capture; headings and fine print are legible."
+  },
+  "IMG-0423": {
+   "id": "IMG-0423",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Dose calculator with a gauge-headed result",
+   "description": "A black screen headed 'Dose Calculator'. A thin outlined pill sits near the top as a unit switch. The centre of the view holds a rendered illustration of a syringe or vial drawn in a warm amber-to-white gradient, with a gauge-like arc beneath it and a dose figure labelled in a large weight - the result of the calculation. Below the result, a short list of labelled input rows lets the user adjust the parameters, each with a small value on the trailing edge. The screen is clinical and dark, and it keeps one accent colour for the rendered object so the calculation's output reads as the subject.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "amber",
+    "calculator",
+    "dosage",
+    "gauge",
+    "input",
+    "medical",
+    "result",
+    "tool",
+    "unit"
+   ],
+   "quality": "Clear capture; the dose figure and row labels are legible."
+  },
+  "IMG-0424": {
+   "id": "IMG-0424",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Dark product detail with a lime buy bar",
+   "description": "A near-black commerce screen. The upper half is a photographic product shot - a bottle, cut out and lit against the dark ground. Below it, a short product block gives a title and a price, with a small category or variant label in a dim tint. At the foot sits a wide lime-green bar labelled with a purchase action, unmistakably the primary control, with a small secondary figure aligned inside it on the right. The screen's restraint is the point: a dark ground, one lit object, one accent button, and nothing else competing.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "call-to-action",
+    "commerce",
+    "e-commerce",
+    "lime",
+    "photographic",
+    "price",
+    "product-detail"
+   ],
+   "quality": "Clear capture; the title, price and button label are legible."
+  },
+  "IMG-0425": {
+   "id": "IMG-0425",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "Green-accent listings screen, empty state then filled",
+   "description": "A pair of light screens shown side by side, both headed 'My Listings'. The left is an empty state: a small line-art house illustration centred in the upper third, a short headline, a paragraph of grey copy, and a solid green button beneath it - the only colour on the screen. The right is the same screen once populated: a vertical list of property cards, each with a photographic exterior image, a title and a price line, and a green label or pill on the trailing edge of some rows. Reading the two together shows how the empty state's single button becomes the list's single green accent.",
+   "roles": [
+    "list",
+    "empty-state"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "real-estate",
+    "listings",
+    "green",
+    "property",
+    "card",
+    "price",
+    "multi-panel"
+   ],
+   "quality": "Clear capture; property titles and prices are legible."
+  },
+  "IMG-0426": {
+   "id": "IMG-0426",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Listings screen with an inline search field and a green status pill",
+   "description": "A light screen headed 'My Listings' with a back chevron on the leading edge. Immediately below the header is a compact search field, then a vertical list of property cards. Each card pairs a photographic exterior with a title, a price line in a heavier weight, and a small meta row. One card carries a green pill on the trailing edge marking its state, and the others carry a lighter outlined pill. A tab bar sits at the foot with the active item tinted. It is the populated sibling of the empty-state screen, and the difference between the two is entirely in the card list.",
+   "roles": [
+    "list",
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "real-estate",
+    "listings",
+    "green",
+    "property",
+    "card",
+    "status",
+    "nav-bar"
+   ],
+   "quality": "Clear capture; card text is legible."
+  }
+ }
+}

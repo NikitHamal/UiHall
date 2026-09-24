@@ -1,0 +1,717 @@
+{
+ "note": "Before/after review, first pass. Sheets review_before-after_01..03.jpg. Every record here is a comparison asset, so the description names what changed, not just what is on screen. Palette, dimensions and contrast are measured elsewhere.",
+ "items": {
+  "IMG-0182": {
+   "id": "IMG-0182",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Two date pickers judged side by side",
+   "description": "A white editorial card headed 'Which One Looks Better?' with two phone screens placed under it as option A and option B, each labelled 'Tooth profile' with a small check. Both show the same task - setting a viewing date for a property - but they divide it differently. Option A puts a photographic property card above a date range block, so the thing being booked stays visible while the date is chosen. Option B leads with the date and drops the property to a thin row at the top. Small A and B markers sit below each phone with a short caption. The value of the image is the framing: the same content, two information orders, one question asked.",
+   "roles": [
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "editorial"
+   ],
+   "tags": [
+    "before-after",
+    "booking",
+    "card",
+    "comparison",
+    "date-picker",
+    "exploration",
+    "multi-panel"
+   ],
+   "quality": "Clear capture; both options' labels and captions are legible.",
+   "pair_with": "IMG-0277"
+  },
+  "IMG-0277": {
+   "id": "IMG-0277",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Vibecoded versus Revoop: the same screen with and without structure",
+   "description": "Two light phones side by side, labelled 'Vibecoded' on the left and 'Revoop' on the right, comparing the same app home built two ways. The left has headings floating over a plain background, rows without clear containers, mixed type weights and a couple of saturated blue and yellow blocks where a banner or a call to action should be - busy, but without rhythm. The right keeps the same content but gives it structure: aligned card containers, one consistent row height, a single accent used only for the active item, and generous margins around each block. Read as a pair it makes the argument for containment and one-accent discipline rather than for any particular style.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "alignment",
+    "before-after",
+    "card",
+    "comparison",
+    "exploration",
+    "multi-panel",
+    "redesign",
+    "structure"
+   ],
+   "quality": "Clear capture; both versions' headings and rows are legible.",
+   "pair_with": "IMG-0182"
+  },
+  "IMG-0278": {
+   "id": "IMG-0278",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "LIFE/CTRL three-screen concept on a cream ground",
+   "description": "A light presentation panel with a mono-spaced title at the top left and a small mono label reading 'COMING SOON' at the top right, both on a warm cream ground. Three phone frames sit below with even gutters: the first is a calendar or schedule view with a month strip and dated blocks; the middle is a plain daily list with times down the leading edge; the third is a dense, almost grid-like control screen of small rounded tiles, each a date or day cell, filling the frame edge to edge with a dark bar at the foot. Running the three together shows a product building from a familiar calendar to an unfamiliar tile wall without ever changing its type or its colours.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "monochrome",
+    "editorial"
+   ],
+   "tags": [
+    "calendar",
+    "mono-typography",
+    "multi-panel",
+    "grid",
+    "tiles",
+    "day-view",
+    "concept"
+   ],
+   "quality": "Clear capture; the mono labels and tile contents are legible."
+  },
+  "IMG-0279": {
+   "id": "IMG-0279",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Two app-store screens before and after a media-led redesign",
+   "description": "Two tall phones side by side on a plain ground, each an app-store style listing page. The left version is text-first and flat: a small icon, a title, a short line of copy, a single button, then a cramped block of small screenshots that barely read at this size. The right version leads with media: a large photographic hero card at the top, then a horizontally scrolling shelf of game or content covers in saturated colour, then a tab bar with photographic thumbnails. The before is organising by category; the after is organising by desire.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "photographic",
+    "card-based"
+   ],
+   "tags": [
+    "app-store",
+    "before-after",
+    "comparison",
+    "cover",
+    "multi-panel",
+    "photographic",
+    "redesign",
+    "shelf",
+    "thumbnail"
+   ],
+   "quality": "Clear capture; headings and cards are legible, the before screenshots deliberately small."
+  },
+  "IMG-0280": {
+   "id": "IMG-0280",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Food app before and after, from cluttered to warm",
+   "description": "Two phones side by side against a pale cream ground, labelled 'Vibe coded' and 'Revoop'. Both show a cafe or takeaway app welcoming the user. The left is busy: a title, a subheading, a photographic collage of dishes pressed to the top of the screen, a small button and a dense navigation row, with warm orange but little hierarchy. The right tidies the same content into a warm ground with a single photographic card of a plated dish, a clear heading over two lines, one solid orange button, and a clean tab bar - the collage has become one image, and the type has been given room. The pairing argues for choosing one image and letting it be big.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "photographic",
+    "rounded"
+   ],
+   "tags": [
+    "before-after",
+    "comparison",
+    "food",
+    "hierarchy",
+    "multi-panel",
+    "photographic",
+    "redesign",
+    "restaurant"
+   ],
+   "quality": "Clear capture; both versions' headings and buttons are legible.",
+   "pair_with": "IMG-0281"
+  },
+  "IMG-0281": {
+   "id": "IMG-0281",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Social profile before and after, feed to grid",
+   "description": "Two light phones side by side labelled 'Vibe coded' and 'Revoop', both showing the same personal profile. The left is a feed-first layout: a stack of facial avatars across the top, a large photographic post taking most of the screen, a caption block, and a tab row at the foot - dense and hard to scan. The right replaces the feed with a grid: a header with a small avatar and a stats row, then a clean three-column wall of small photographic thumbnails with even gutters. The change is from one-image dominance to many-image overview, which is exactly the decision every profile screen has to make.",
+   "roles": [
+    "profile"
+   ],
+   "style": [
+    "light-mode",
+    "photographic",
+    "rounded"
+   ],
+   "tags": [
+    "avatar",
+    "before-after",
+    "comparison",
+    "grid",
+    "multi-panel",
+    "photographic",
+    "redesign",
+    "social"
+   ],
+   "quality": "Clear capture; the header and grid are legible.",
+   "pair_with": "IMG-0280"
+  },
+  "IMG-0282": {
+   "id": "IMG-0282",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Profile revamp with a drawn arrow from old to new",
+   "description": "Two dark phones on a white ground, the left labelled 'Vibe code' and the right 'AFTER REVAMP', with a thin hand-drawn curved arrow connecting the top of one to the top of the other. The left is a social post view: a portrait photograph filling the screen, a small caption under it, and a row of facial thumbnails across the top, with a text block at the foot. The right is the same screen reworked: the portrait is now a circular avatar inside a stained-glass panel, and the type below is set much larger and looser, in a light condensed face, with a small pill label at the foot of the image. The arrow does the explaining - the two states are almost identical in structure, and the improvement is entirely in type scale and cropping.",
+   "roles": [
+    "profile"
+   ],
+   "style": [
+    "dark-mode",
+    "photographic",
+    "editorial"
+   ],
+   "tags": [
+    "arrow",
+    "before-after",
+    "comparison",
+    "multi-panel",
+    "portrait",
+    "redesign",
+    "typography"
+   ],
+   "quality": "Clear capture; the arrow labels and before/after text are legible."
+  },
+  "IMG-0283": {
+   "id": "IMG-0283",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Readiness ring with a resetting countdown",
+   "description": "A single light phone on a soft grey ground. A large circular progress ring in a pale lilac sits in the upper half, filled to about three quarters, with a percentage at its centre. Below it, a small heading and a two-line caption explain a five-day interval, and a row of small outlined circles underneath appears to track which of those days are complete - one or two marked, the rest empty. A segmented bar and a small tab row close the screen. The screen is a clean study of a radial gauge used for a soft commitment rather than a hard score.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "gauge",
+    "pastel",
+    "percentage",
+    "progress",
+    "radial",
+    "streak",
+    "tracker",
+    "week-strip",
+    "wellness"
+   ],
+   "quality": "Clear capture; the percentage and caption are legible."
+  },
+  "IMG-0284": {
+   "id": "IMG-0284",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Story-viewer dark screen with a four-tile category grid",
+   "description": "A near-black phone screen headed 'Your feeds' with a small secondary line beneath it. The body is a two-by-two grid of rounded tiles, each carrying a small illustrated or photographic scene - a figure, a brush or tool, a plant, a drink - with a short label under each tile. A small outlined pill sits at the lower left as a secondary action, and a minimal tab bar closes the screen with one item marked. The four tiles are generous rather than dense, which suits using them as entry points to separate content sets rather than as a menu.",
+   "roles": [
+    "home",
+    "navigation"
+   ],
+   "style": [
+    "dark-mode",
+    "illustration-led",
+    "rounded"
+   ],
+   "tags": [
+    "tiles",
+    "category",
+    "illustration",
+    "grid",
+    "figurative",
+    "nav-bar"
+   ],
+   "quality": "Clear capture; the labels under each tile are legible."
+  },
+  "IMG-0285": {
+   "id": "IMG-0285",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Recent-activity ledger with an inline ad unit",
+   "description": "A dark phone screen headed 'Recent activity' with a settings row beneath it. The body is a vertical ledger of dated entries: each group has a small grey date label, then rows with a leading icon, a title, a secondary line and a right-aligned amount, separated by hairlines. One group is interrupted by a distinctly different block - a small advertisement carrying a yellow label, a line of copy and a small product thumbnail, with a rounded button. A floating circular action button sits at the bottom right. It is a useful study of how an ad can sit inside a financial ledger without being mistaken for a transaction, by changing its shape rather than only its colour.",
+   "roles": [
+    "list"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "ad",
+    "banner",
+    "floating-action-button",
+    "ledger",
+    "list-row",
+    "table",
+    "timestamp",
+    "transaction"
+   ],
+   "quality": "Clear capture; entries and the ad copy are legible."
+  },
+  "IMG-0286": {
+   "id": "IMG-0286",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Activity history with a highlighted deposit row",
+   "description": "A dark phone screen headed 'Recent activity' with a smaller secondary heading above the list. The list runs as dated groups of rows, each with a leading circular icon, a title, a supporting line and a right-aligned figure; separators are hairlines only. Midway down, one row is given a subtle lifted surface and a coloured accent on its leading icon, marking it as the event the user was brought there for, and a small pill sits on its trailing edge. A floating circular action button closes the screen. The technique worth taking is the single emphasised row inside an otherwise uniform list.",
+   "roles": [
+    "list"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "emphasis",
+    "floating-action-button",
+    "ledger",
+    "list-row",
+    "pill",
+    "table",
+    "timestamp",
+    "transaction"
+   ],
+   "quality": "Clear capture; row titles and figures are legible."
+  },
+  "IMG-0287": {
+   "id": "IMG-0287",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Book-app before and after, from list to cover-forward",
+   "description": "Two light phones on an off-white ground, labelled 'before' and 'after', showing a reading recommendation app. The before leads with a headline and a vertical list of small book rows, each a tiny thumbnail with a title - the covers are too small to register. The after cuts the text and makes the cover the subject: a large photographic or illustrated book cover fills the upper half of the screen, a short line of type sits over it, and the list below now shows full-size covers in a horizontally scrolling shelf. The same content, moved from a text list to a cover shelf, which is the whole argument of the redesign.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "photographic",
+    "card-based"
+   ],
+   "tags": [
+    "before-after",
+    "book",
+    "comparison",
+    "cover",
+    "multi-panel",
+    "photographic",
+    "redesign",
+    "shelf",
+    "typography"
+   ],
+   "quality": "Clear capture; the before/after labels and titles are legible."
+  },
+  "IMG-0288": {
+   "id": "IMG-0288",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Dark dashboard with a stacked accent-budget bar",
+   "description": "A near-black phone screen headed 'Good afternoon' over a small subtitle. The focal element is a tall rounded bar or column chart in the upper half, built as a stack of coloured segments - blue, magenta, orange, violet - against a dim track, with a legend of small labelled rows beneath giving each colour a name and a value. Further down, small paired figures report two totals, and a wide pill-shaped bar with an icon and a label sits above a minimal tab bar. The palette is doing real work: the stacked bar is the only saturated object, and the legend is the only place those hues reappear.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "rounded"
+   ],
+   "tags": [
+    "analytics",
+    "budget",
+    "chart",
+    "columns",
+    "fintech",
+    "legend",
+    "spending"
+   ],
+   "quality": "Clear capture; the legend values and totals are legible."
+  },
+  "IMG-0289": {
+   "id": "IMG-0289",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Large balance figure over a plan card and quick actions",
+   "description": "A black phone screen with a greeting row and an avatar at the top right. The centre is dominated by a very large white figure - the headline monetary total - with a small caption above it and a small chip beside it. Below the figure, a rounded card explains a daily limit or plan, with a line of copy, a small progress indicator and a pair of trailing figures. Then a row of icon-and-label quick actions, a list of recent entries, and a tab bar at the foot. The screen's hierarchy is entirely carried by the scale jump between the headline figure and everything else.",
+   "roles": [
+    "dashboard",
+    "home"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "balance",
+    "numeral",
+    "fintech",
+    "quick-actions",
+    "progress",
+    "limit",
+    "chip"
+   ],
+   "quality": "Clear capture; the headline figure and supporting labels are legible."
+  },
+  "IMG-0290": {
+   "id": "IMG-0290",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Three-slide reward walkthrough on a lime accent",
+   "description": "A light presentation card holding three dark phone frames side by side, introduced by a heading above them. Each frame is a step in a rewards or referral flow: the first gives a large percentage figure as a headline with a short caption and a solid lime pill button at the foot; the second shows a referral block with a row of small elements being shared and the same lime call to action; the third explains a completion state with a compact figure and a lime button. The lime is the only saturated colour across all three frames, so the sequence reads as one product even though the content differs.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "dark-mode",
+    "bold-typography",
+    "rounded"
+   ],
+   "tags": [
+    "lime",
+    "reward",
+    "referral",
+    "percentage",
+    "multi-panel",
+    "call-to-action"
+   ],
+   "quality": "Clear capture; the figures and button labels are legible."
+  },
+  "IMG-0291": {
+   "id": "IMG-0291",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Travel triptych, one destination per frame",
+   "description": "Three phone frames on a plain ground, each given over almost entirely to a landscape photograph: a deep green valley with a river, a golden field with a single figure, and a blue sea with a swimmer. Each frame overlays a small amount of interface on the image - a title, a short metadata row, and a pair of small circular controls in the corner - and one frame carries a large figure or rating as the single piece of data. The set is a study in letting a full-bleed photograph be the interface and accepting that the text must sit on the image.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "photographic",
+    "full-bleed",
+    "minimal"
+   ],
+   "tags": [
+    "travel",
+    "full-bleed",
+    "photographic",
+    "destination",
+    "multi-panel",
+    "overlay",
+    "rating"
+   ],
+   "quality": "Clear capture; the overlaid titles are small but legible."
+  },
+  "IMG-0292": {
+   "id": "IMG-0292",
+   "category": "before-after",
+   "type": "flow-walkthrough",
+   "title": "Three-screen social study, grid to map to confirmation",
+   "description": "Three light phones in a row, each a different stage. The first is a profile or collection view with a small avatar row, a pair of tabs and a two-column wall of photographic cards plus a text post. The second is a map: a folded paper-style terrain map with scattered pins, and a bottom sheet lifted over its lower third carrying a title and a row of controls. The third is a booking confirmation with a large orange price block, a pair of labelled summary rows and a small outlined action. Running the three together shows a product that moves from browsing people, to browsing places, to committing - with the map's bottom sheet as the hinge.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "photographic",
+    "rounded"
+   ],
+   "tags": [
+    "confirmation",
+    "grid",
+    "map",
+    "multi-panel",
+    "price",
+    "sheet",
+    "social",
+    "travel"
+   ],
+   "quality": "Clear capture; card titles and the price block are legible."
+  },
+  "IMG-0293": {
+   "id": "IMG-0293",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Health tracker triptych built on a large ring",
+   "description": "Three dark phones side by side. The first is dominated by a large circular progress ring drawn in a green gradient with a prominent figure at its centre, plus a pair of small statistics inside the ring and a couple of labelled rows below - the ring is the screen. The second replaces the ring with a tall vertical stack of small coloured bars or pills, each a measure, with labels beside them. The third leans on a different treatment again: a rounded card with a value, a chart, and a row of small circular avatar or badge thumbnails, with a dark bar at the foot. Three ways of presenting the same body of measurements, which makes the set useful as a comparison of gauge forms.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "rounded"
+   ],
+   "tags": [
+    "health",
+    "progress",
+    "radial",
+    "gauge",
+    "chart",
+    "session",
+    "multi-panel",
+    "statistics"
+   ],
+   "quality": "Clear capture; the central figures are legible."
+  },
+  "IMG-0294": {
+   "id": "IMG-0294",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Dating profile after a portrait-forward revamp",
+   "description": "Three dark phones in a row. The first and third are profile views given almost entirely to a portrait photograph, with a display name set over the image in a light condensed weight, a short row of metadata, and a small circular control in the corner; small caption lines sit directly on the picture. The middle phone is the same profile in a different register: a compact card of labelled rows - a location, a pair of counts, a short description - with a small avatar at the top and nothing photographic. The middle frame shows what the profile knows, and the outer two show what it wants you to feel, which is a fair summary of how dating profiles split their content.",
+   "roles": [
+    "profile"
+   ],
+   "style": [
+    "dark-mode",
+    "photographic",
+    "editorial"
+   ],
+   "tags": [
+    "portrait",
+    "photographic",
+    "social",
+    "typography",
+    "multi-panel",
+    "full-bleed",
+    "statistics"
+   ],
+   "quality": "Clear capture; display names and metadata rows are legible."
+  },
+  "IMG-0295": {
+   "id": "IMG-0295",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Contact list in dark and light, dark winning on legibility",
+   "description": "Two phones side by side showing the same contacts screen under two themes. The left is dark: a roster of rows, each with a small circular avatar, a name and a short status line, with a large count, a set of alphabet markers down the side, and a minimal tab bar - the rows are tight but the contrast is low and the names sit close in weight to their status lines. The right is light: the same roster on white, and immediately clearer - the names read as the strong element and the status lines recede. The comparison makes the point that a dark theme needs a wider weight gap between primary and secondary text, not just inverted colours.",
+   "roles": [
+    "list"
+   ],
+   "style": [
+    "dark-mode",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "avatar",
+    "before-after",
+    "comparison",
+    "contacts",
+    "list-row",
+    "multi-panel",
+    "roster",
+    "theme",
+    "typography"
+   ],
+   "quality": "Clear capture; names and counts are legible in both themes.",
+   "pair_with": "IMG-0295"
+  },
+  "IMG-0296": {
+   "id": "IMG-0296",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Scan-to-pay screen with a centred QR code",
+   "description": "A black phone screen devoted to a single QR code. An interface header sits at the top with a small back control and a short title. The code itself is large, white, and perfectly centred in the middle third of the screen, with a small line of instruction above it and a rounded button below. The lower area holds a compact row of small controls and a minimal tab bar. The whole design is a lesson in doing one thing: the QR is the only large object, and everything around it is deliberately quiet so the camera has nothing else to find.",
+   "roles": [
+    "auth"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "high-contrast"
+   ],
+   "tags": [
+    "qr-code",
+    "scan",
+    "payment",
+    "authentication",
+    "centred",
+    "single-colour"
+   ],
+   "quality": "Clear capture; the instruction line and button label are legible."
+  },
+  "IMG-0297": {
+   "id": "IMG-0297",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Referral reward screen before and after, from empty to earned",
+   "description": "Two dark phones on a white ground, labelled 'Original' and 'Revamp'. The left explains a referral programme: a heading about sharing a position, a row of three empty star or progress slots, a paragraph of small copy, and two side-by-side buttons - one outlined and one filled in a muted green - with a small disclaimer beneath. The right is the same screen once progress exists: the heading leads with an earned amount, the progress slots are replaced by a rising bar chart, the copy is tighter, and the primary button is now full-width and solid. The pair shows how a reward screen should change when the user has something to lose.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "bold-typography",
+    "rounded"
+   ],
+   "tags": [
+    "before-after",
+    "call-to-action",
+    "comparison",
+    "green",
+    "invite",
+    "multi-panel",
+    "progress",
+    "referral",
+    "reward"
+   ],
+   "quality": "Clear capture; headings and button labels are legible in both states."
+  },
+  "IMG-0298": {
+   "id": "IMG-0298",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Social post before and after, from cluttered to split-view",
+   "description": "Two light phones on a white ground labelled 'Original' and 'Revamp'. The left is a conventional social post: a header row with an avatar and a caption, a portrait photograph filling the middle, a row of small action counts beneath it, and a comment box at the foot - functional, but the text sits in a narrow band under a tall image. The right divides the screen instead: the upper portion is a photographic or product block, and the lower portion is given over to a comments and reactions panel with a clear heading, a row of filter chips and a stack of comment rows, so reading and looking each get their own half. The change is from one long column to two competing halves.",
+   "roles": [
+    "feed"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "editorial"
+   ],
+   "tags": [
+    "before-after",
+    "chip-filter",
+    "comment",
+    "comparison",
+    "multi-panel",
+    "photographic",
+    "redesign",
+    "social"
+   ],
+   "quality": "Clear capture; headings and comment text are legible."
+  },
+  "IMG-0299": {
+   "id": "IMG-0299",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Three-screen reading app wall built on depth",
+   "description": "Three dark phone frames in a row, each tilted slightly and overlapping so they read as a small stack rather than a flat row. Each frame shows a reading or listening screen built on the same device: a dark ground, a large photographic or illustrated panel, a light condensed title over it, and a compact control row at the foot. One frame carries a pair of stacked cards to suggest a queue; another has a supplementary panel with receding layers. The set is a study in using shadow, tilt and layering to give flat screens a sense of depth.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "photographic",
+    "editorial"
+   ],
+   "tags": [
+    "depth",
+    "gallery",
+    "layered",
+    "multi-panel",
+    "photographic",
+    "queue",
+    "reading",
+    "tilt",
+    "typography"
+   ],
+   "quality": "Clear capture; the titles and control rows are legible."
+  },
+  "IMG-0300": {
+   "id": "IMG-0300",
+   "category": "before-after",
+   "type": "reference",
+   "title": "Flat illustrated portrait on a magenta ground",
+   "description": "A square illustration of a person - dark wavy hair, a plain face with two dots for eyes and a small blush, a dark blue top - set against a flat magenta background. The drawing is deliberately reductive: there is no linework, no shading and no outline; the hair, face, shirt and ground are four flat shapes with crisp edges and generous empty space around the head. The palette is three hues plus the ground, and the composition is a single centred bust. Useful as a reference for exactly how little a recognisable character needs.",
+   "roles": [],
+   "style": [
+    "flat",
+    "illustration-led",
+    "bold-typography"
+   ],
+   "tags": [
+    "artwork",
+    "avatar",
+    "figurative",
+    "illustration",
+    "magenta",
+    "portrait",
+    "single-colour"
+   ],
+   "quality": "Clean flat shapes; the image is crisp."
+  },
+  "IMG-0301": {
+   "id": "IMG-0301",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Profile before and after, from loud to contained",
+   "description": "Two light phones side by side labelled 'Vibecoded' and 'Revoop'. The left is crowded: a saturated banner block at the top carrying a large score in a heavy weight, a photograph pressed under it, a stats row, a horizontal shelf of images and a tab bar, with several competing fonts and no clear margins. The right keeps the same information but reorders it - a plain header with a small avatar and name, a set of outlined statistic rows under headings, a quieter photograph, and a single accent used only for the active tab. The argument is for a calmer header and for putting the numbers in labelled rows rather than in a coloured slab.",
+   "roles": [
+    "profile"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "outlined"
+   ],
+   "tags": [
+    "before-after",
+    "comparison",
+    "hierarchy",
+    "multi-panel",
+    "redesign",
+    "shelf",
+    "statistics",
+    "typography"
+   ],
+   "quality": "Clear capture; both versions' headings and figures are legible."
+  },
+  "IMG-0302": {
+   "id": "IMG-0302",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Feed before and after, from a stats bar to inline progress",
+   "description": "Two light phones side by side labelled 'Vibecoded' and 'Redesigned'. Both show a social feed with a leading post. The left opens with a heavy dark statistics bar - a large score, two smaller figures and a label - sitting above a photographic post card with its own caption and action row. The right removes the bar and moves the same data inline: the post is now a white card whose metadata sits in the margin beside a thinner progress line, and the score appears as an inline pill rather than as a block. The redesign trades a dominant header for a flatter, more scannable list.",
+   "roles": [
+    "feed"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "before-after",
+    "card",
+    "comparison",
+    "multi-panel",
+    "pill",
+    "progress",
+    "redesign",
+    "statistics"
+   ],
+   "quality": "Clear capture; post text and figures are legible.",
+   "pair_with": "IMG-0301"
+  },
+  "IMG-0303": {
+   "id": "IMG-0303",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Dashboard before and after, from scattered tiles to a grid",
+   "description": "Two light phones side by side labelled 'Vibecoded' and 'Revoop', both a personal metrics screen. The left scatters the content: a header, then a large tile, a chart, a stack of small labels and two numeric blocks at differing widths, with the chart bleeding close to the edges and several small elements crowded near the foot. The right aligns everything to one column and one gutter: a clean tab row, then a uniform two-column grid of equally sized rounded cards - a chart card, a calendar card, a pair of numeric cards - each with its title in the same place. The improvement is purely one of alignment and equal sizing, which is why it reads so easily as a pair.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "minimal"
+   ],
+   "tags": [
+    "alignment",
+    "before-after",
+    "chart",
+    "comparison",
+    "grid",
+    "multi-panel",
+    "redesign",
+    "tiles"
+   ],
+   "quality": "Clear capture; card titles and figures are legible."
+  }
+ }
+}

@@ -1,0 +1,259 @@
+{
+ "note": "Review pass 12 of the undescribed mobile-app-ui images. Sheet review_16.jpg. Written from the processed web images. Palette, dimensions and contrast are measured elsewhere, not asserted here.",
+ "items": {
+  "IMG-0452": {
+   "id": "IMG-0452",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Eight-screen app wall from onboarding to feed",
+   "description": "A grid of eight phone frames, two rows of four, on a plain white ground. The first two frames are dark onboarding slides, each with a photographic hero, a short headline and a small control row. The third is a light profile or detail screen with a heading and a portrait. The fourth is a light feed with a search field and a grid of photographic cards. The second row opens with a light grid of portrait cards, then a screen pairing a pale illustration of a person with a name and short copy, then two dark music or player screens carrying bold magenta and violet artwork. The set is a breadth sample - one product shown across onboarding, profile, browse and play - which is what an app-store gallery or a design-critique board needs.",
+   "roles": [
+    "onboarding",
+    "profile",
+    "feed"
+   ],
+   "style": [
+    "dark-mode",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "music",
+    "portrait",
+    "multi-panel",
+    "catalogue"
+   ],
+   "quality": "Clear capture; each frame's headline and card titles are legible at full size."
+  },
+  "IMG-0453": {
+   "id": "IMG-0453",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "Two surfaces of one music app: dense library beside a full-bleed player",
+   "description": "Two phone frames side by side. The left shows a dense dark library: a greeting line, a pair of headings, a large illustrated or photographic hero panel tinted deep green, then a wall of small square album tiles arranged four across with tight gutters, each tile carrying its own artwork. A slim pill bar sits near the foot with playback controls. The right frame is the player: a full-bleed portrait photograph with a large display title set in a condensed light weight over it, small caption lines above and below, and a minimal control row at the top. The pair is a textbook contrast between a browsing surface, which maximises items per screen, and a player, which maximises one image.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "photographic",
+    "dense-content"
+   ],
+   "tags": [
+    "album",
+    "cover",
+    "full-bleed",
+    "gallery",
+    "grid",
+    "library",
+    "multi-panel",
+    "music",
+    "player"
+   ],
+   "quality": "Clear capture; the player's display title is legible."
+  },
+  "IMG-0454": {
+   "id": "IMG-0454",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "Music library and player with a circular scrubber",
+   "description": "Two dark phone frames on a light grey ground. The left is a library or home: a small heading, a couple of text rows with leading thumbnails, and a row of circular album covers across the middle. A rounded pill player bar sits low on the screen, its ring in a warm accent, with a small circular progress control inside it. The right frame is the expanded player: a large portrait image filling the upper portion with a display title beneath it, then a horizontal progress bar with elapsed and remaining times at either end, and a row of transport controls including a filled circular pause button. The circle is the app's signature shape - it appears in the cover row, the pill player and the transport row, tying the two screens into one system.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "photographic",
+    "minimal"
+   ],
+   "tags": [
+    "album",
+    "circle",
+    "cover",
+    "gallery",
+    "multi-panel",
+    "music",
+    "player",
+    "progress",
+    "scrubber"
+   ],
+   "quality": "Clear capture; track titles and timings are legible."
+  },
+  "IMG-0455": {
+   "id": "IMG-0455",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Analytics dashboard with pastel metric tiles and a monthly bar chart",
+   "description": "A light web-view dashboard. The top row carries a header with a breadcrumb and a set of small controls, then a row of four metric tiles, each a pastel-tinted rounded rectangle - pale yellow, pale green, pale pink, pale violet - holding a large percentage or count with a short label beneath and a tiny trend indicator. A toolbar row of small outlined chips sits below. The lower half is a white card carrying a grouped bar chart: paired monthly columns in two tones with a light gridline and axis labels, plus a compact legend and a couple of small summary figures on the trailing side. The pastel tile row against the restrained chart card is a good balance between a dashboard's two jobs - glanceable status and analysable detail.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "pastel",
+    "rounded"
+   ],
+   "tags": [
+    "analytics",
+    "bar-chart",
+    "chart",
+    "columns",
+    "data-table",
+    "legend",
+    "metric-tile",
+    "pastel",
+    "percentage"
+   ],
+   "quality": "Clear capture; the tile figures and axis labels are legible."
+  },
+  "IMG-0456": {
+   "id": "IMG-0456",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Checkout screen with a scheduled delivery slot and an order summary",
+   "description": "A light checkout screen with a back chevron header. A delivery block gives an address line with a small edit control, then a labelled time slot rendered as a rounded outlined pill - a scheduled window rather than a free-text field - with a small icon at its leading edge. Below, an order summary card holds a merchant row with an avatar, then item rows where each line pairs a name with a quantity, followed by a totals block. At the foot, a wide dark-green button spans the content width. The highlighted delivery-time pill is the interesting element: it turns an easily-botched field into a single tappable object.",
+   "roles": [
+    "checkout",
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "delivery",
+    "time-slot",
+    "order",
+    "summary",
+    "green",
+    "list-row",
+    "call-to-action"
+   ],
+   "quality": "Clear capture; labels, item names and totals are legible."
+  },
+  "IMG-0457": {
+   "id": "IMG-0457",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Order checkout with a promo-code call to action and a mobile-money method",
+   "description": "A light checkout screen on a soft sage ground. A header carries the title and a small promo-code action on the trailing edge, rendered as an outlined pill. A summary block lists labelled rows down the screen - subtotal, delivery fee, taxes and other fees, promo discount - with figures aligned to the right and the discount shown in a distinct tone with a leading minus. A bold total row closes the block with a thicker rule above it. Below, a payment-method row pairs a small brand mark with a method name and a chevron. A wide dark-green button fills the foot. It is a well-built receipt: every line right-aligned, every label quiet, and only the total and the discount carrying weight.",
+   "roles": [
+    "checkout"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "discount",
+    "green",
+    "order",
+    "payment",
+    "promo",
+    "summary",
+    "totals"
+   ],
+   "quality": "Clear capture; every line label and figure is legible."
+  },
+  "IMG-0458": {
+   "id": "IMG-0458",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Checkout with an inline address list rather than a summary card",
+   "description": "A light checkout screen, closely related to its sibling but with a different information order. A back chevron header is followed immediately by a delivery address block: a small avatar or icon, a name, a two-line address and a small change control on the trailing edge. Beneath it, a list of ordered products, each row with a thumbnail, a name and a price. A totals block sits under the list with labelled rows and a bold total, and a wide dark-green button closes the screen. Slightly longer and plainer than its sibling, it is the version you use when the address matters more than the basket - the address is given its own block at the top rather than being squeezed into the summary.",
+   "roles": [
+    "checkout",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "address",
+    "delivery",
+    "list-row",
+    "summary",
+    "green",
+    "totals",
+    "order"
+   ],
+   "quality": "Clear capture; address lines and prices are legible."
+  },
+  "IMG-0459": {
+   "id": "IMG-0459",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Three feature slides built on one shared card template",
+   "description": "Three light phones in a row on a white ground, each showing a feature-explainer slide with an identical structure: a small icon badge at the upper left, a photographic image with rounded corners filling the middle, then a short headline and a line of supporting copy, and finally a quiet outlined button at the foot reading as a next or skip control. The images differ - a warm red-orange scene with a play badge, a portrait with a small label, a sound or waveform visual - as do the headlines, which describe watching, understanding a word in context, and turning input into speech. Reusing one template across three slides with only the image and the copy swapped is what makes a feature tour feel like a sequence rather than three posters.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "photographic"
+   ],
+   "tags": [
+    "feature-tour",
+    "photographic",
+    "multi-panel",
+    "template",
+    "headline",
+    "play",
+    "audio"
+   ],
+   "quality": "Clear capture; headlines and buttons are legible."
+  },
+  "IMG-0460": {
+   "id": "IMG-0460",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Wellness app wall with pastel progress rings",
+   "description": "Three light phones across a pale ground showing one habit or wellbeing app. The left frame is a home or summary: a large circular progress ring in a soft gradient with a value at its centre, a small ring smaller again beneath it, and a row of rounded tiles below. The middle frame is a report or stats view: a header, a compact chart, and a vertical list of rows each carrying a small coloured icon and a value. The right frame is a detail screen with a large illustration of a character, a card with a rating or state, and a group of pastel chips. Soft gradient rings over white cards, with pastel accents only inside the rings and chips, is the whole visual language.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "pastel",
+    "soft"
+   ],
+   "tags": [
+    "wellness",
+    "progress",
+    "radial",
+    "pastel",
+    "gradient",
+    "multi-panel",
+    "chart",
+    "chip"
+   ],
+   "quality": "Clear capture; ring values and row labels are legible."
+  },
+  "IMG-0461": {
+   "id": "IMG-0461",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Profile screen with a warm gradient portrait and a stats row",
+   "description": "A dark screen carried almost entirely by one warm image: a portrait rendered against a deep amber-to-black gradient, filling the upper two thirds of the view. Near the top, a display name is set in a light condensed weight with a small caption beneath it, and a horizontal row of three or four statistics sits over the lower part of the image, each a bold figure with a small label under it. Below the portrait, small circular avatar thumbnails are arranged in a row, and a quiet outlined button sits at the foot. The image is the interface; the type and the numbers are laid directly onto it rather than onto panels.",
+   "roles": [
+    "profile",
+    "hero"
+   ],
+   "style": [
+    "bold-typography",
+    "dark-mode",
+    "photographic"
+   ],
+   "tags": [
+    "portrait",
+    "gradient",
+    "amber",
+    "statistics",
+    "avatar",
+    "full-bleed"
+   ],
+   "quality": "Clear capture; the display name and figures are legible."
+  }
+ }
+}

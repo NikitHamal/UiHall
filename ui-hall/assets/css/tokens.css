@@ -1,0 +1,205 @@
+/* ==========================================================================
+   UI Hall — design tokens
+   A dark-first interface. The gallery is the content; the chrome gets out of
+   the way. Two themes, both driven from this single set of variables.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Type: Poppins (SIL OFL 1.1). The @font-face rules live in fonts.css, which
+   tools/fetch_poppins.py generates.
+
+   Poppins is a geometric sans with circular bowls and a single-storey 'a', and
+   it ships no variable axis - so it arrives as four static weights, each split
+   by unicode-range. That split is why a normal page only pulls ~31 KB of latin
+   rather than the whole family, and why the Devanagari file is fetched only
+   when the page actually contains a Devanagari glyph (the corpus has a few,
+   which Poppins covers natively).
+
+   Two consequences for the scale below, both tuned for this face rather than
+   inherited from a neo-grotesque:
+     - It is already generously spaced, so display tracking is only mildly
+       negative. The tighter values a grotesque wants close up Poppins's round
+       forms badly.
+     - Its x-height is small relative to the em, so text reads a little smaller
+       at a given size, and the round forms want more leading.
+   -------------------------------------------------------------------------- */
+
+:root {
+  /* ---- type ---- */
+  --font-ui: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+             "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-ui);
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas,
+               "Liberation Mono", monospace;
+
+  /* a tight, screen-first scale */
+  --t-2xs: 0.6875rem;  /* 11 */
+  --t-xs:  0.75rem;    /* 12 */
+  --t-sm:  0.8125rem;  /* 13 */
+  --t-md:  0.875rem;   /* 14 */
+  --t-lg:  1rem;       /* 16 */
+  --t-xl:  1.25rem;    /* 20 */
+  --t-2xl: 1.625rem;   /* 26 */
+  --t-3xl: 2.125rem;   /* 34 */
+
+  --w-normal: 400;
+  --w-medium: 500;
+  --w-semi: 600;
+  --w-bold: 700;
+
+  --lh-tight: 1.2;
+  --lh-snug: 1.4;
+  --lh-body: 1.65;
+
+  /* Tracking is size-dependent: large type needs negative tracking to avoid
+     looking loose, small type needs a little positive tracking to stay legible.
+     One value for the whole page is the most common typographic mistake.
+     These are Poppins values - gentler than a neo-grotesque would take. */
+  --ls-tight: -0.012em;   /* display / page titles */
+  --ls-snug: -0.005em;    /* headings */
+  --ls-flat: 0em;         /* body */
+  --ls-wide: 0.04em;      /* small caps-ish labels */
+  --ls-wider: 0.075em;    /* the smallest uppercase labels */
+
+  /* ---- space ---- */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+
+  /* ---- radius ---- */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-xl: 20px;
+  --r-pill: 999px;
+
+  /* ---- motion ---- */
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-1: 90ms;
+  --dur-2: 160ms;
+  --dur-3: 260ms;
+  --dur-4: 420ms;
+
+  /* ---- focus ----
+     One ring for every interactive element, so keyboard users get a consistent
+     signal. Defined once here because a per-component focus style drifts. */
+  --focus-w: 2px;
+  --focus-offset: 2px;
+  --focus: var(--accent);
+
+  /* ---- layout ---- */
+  --sidebar-w: 268px;
+  --topbar-h: 56px;
+  --gutter: var(--s-5);
+  --card-size: 280px;
+  --max-shell: 2200px;
+}
+
+/* --------------------------------------------------------------------------
+   Dark — the default. Surfaces are near-neutral and slightly cool; the accent
+   is a single warm amber so that the interface never competes with the
+   artwork it is displaying.
+   -------------------------------------------------------------------------- */
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg:          #0a0a0b;
+  --bg-raised:   #121214;
+  --surface:     #17171a;
+  --surface-2:   #1e1e22;
+  --surface-3:   #26262c;
+  --surface-hi:  #30303a;
+
+  --line:        #26262b;
+  --line-strong: #34343c;
+
+  --text:        #f2f2f4;
+  --text-2:      #a8a8b3;
+  --text-3:      #74747f;
+  --text-inv:    #0a0a0b;
+
+  --accent:      #f5b544;
+  --accent-2:    #f5b544;
+  --accent-ink:  #2a1d00;
+  --accent-soft: rgba(245, 181, 68, 0.14);
+  --accent-line: rgba(245, 181, 68, 0.38);
+
+  --good:  #4ec98a;
+  --warn:  #f5b544;
+  --bad:   #f2635c;
+  --info:  #6aa9f5;
+
+  --shadow-1: 0 1px 2px rgba(0,0,0,.5);
+  --shadow-2: 0 4px 16px rgba(0,0,0,.45);
+  --shadow-3: 0 16px 48px rgba(0,0,0,.6);
+
+  --scrim: rgba(4, 4, 6, 0.82);
+  --checker: #101013;
+}
+
+/* --------------------------------------------------------------------------
+   Light — same structure, values inverted for the artwork's sake. The accent
+   shifts to a deeper amber so it still reads against white.
+   -------------------------------------------------------------------------- */
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg:          #fbfbfc;
+  --bg-raised:   #ffffff;
+  --surface:     #ffffff;
+  --surface-2:   #f4f4f6;
+  --surface-3:   #ebebef;
+  --surface-hi:  #e2e2e8;
+
+  --line:        #e6e6ea;
+  --line-strong: #d2d2d9;
+
+  --text:        #14141a;
+  --text-2:      #5c5c68;
+  --text-3:      #8b8b96;
+  --text-inv:    #ffffff;
+
+  --accent:      #b8730a;
+  --accent-2:    #b8730a;
+  --accent-ink:  #ffffff;
+  --accent-soft: rgba(184, 115, 10, 0.10);
+  --accent-line: rgba(184, 115, 10, 0.34);
+
+  --good:  #16854b;
+  --warn:  #b8730a;
+  --bad:   #c0392f;
+  --info:  #2563c4;
+
+  --shadow-1: 0 1px 2px rgba(20,20,30,.07);
+  --shadow-2: 0 4px 16px rgba(20,20,30,.10);
+  --shadow-3: 0 16px 48px rgba(20,20,30,.16);
+
+  --scrim: rgba(250, 250, 252, 0.86);
+  --checker: #f0f0f3;
+}
+
+/* ---- category hues: one tint per category, used only for the small label ---- */
+:root {
+  --cat-mobile-app-ui:    #6aa9f5;
+  --cat-app-store-screens:#c08af0;
+  --cat-before-after:     #f2635c;
+  --cat-website:          #4ec9c0;
+  --cat-design-system:    #f5b544;
+  --cat-color-palette:    #f095c0;
+  --cat-brand-identity:   #8fb0d8;
+  --cat-typography:       #d6c78f;
+  --cat-illustration:     #a0d67a;
+  --cat-dashboard:        #7fd1a8;
+  --cat-motion-demo:      #f58a5c;
+  --cat-promo-reel:       #b0a0f0;
+  --cat-other:            #8b8b96;
+}

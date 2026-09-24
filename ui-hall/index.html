@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UI Hall</title>
+<meta name="description" content="A curated, visual catalogue of mobile and web interface design collected from real product work.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="#/" data-link>
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__name">UI&nbsp;Hall</span>
+    </a>
+
+    <nav class="nav" aria-label="Sections">
+      <a href="#/" data-link data-nav="gallery">Gallery</a>
+        <a href="#/palettes" data-link data-nav="palettes">Palettes</a>
+        <a href="#/typography" data-link data-nav="typography">Typography</a>
+        <a href="#/patterns" data-link data-nav="patterns">Patterns</a>
+      <a href="#/before-after" data-link data-nav="before-after">Before / after</a>
+      <a href="#/motion" data-link data-nav="motion">Motion</a>
+      <a href="#/about" data-link data-nav="about">About</a>
+    </nav>
+
+    <div class="topbar__tools">
+      <button class="iconbtn" id="themeToggle" type="button" aria-label="Toggle light and dark theme" title="Toggle theme">
+        <span class="iconbtn__glyph" aria-hidden="true"></span>
+      </button>
+      <button class="iconbtn iconbtn--filters" id="filterToggle" type="button" aria-controls="sidebar" aria-expanded="true" aria-label="Toggle filters" title="Toggle filters">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M6 10h8M8 15h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="shell" id="shell">
+
+  <aside class="sidebar" id="sidebar" aria-label="Filters">
+    <form class="filters" id="filters" role="search" onsubmit="return false">
+      <div class="filters__group filters__group--search">
+        <label class="sr-only" for="q">Search</label>
+        <div class="searchfield">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="5.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M13 13l4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <input id="q" name="q" type="search" placeholder="Search title, tags, roles…" autocomplete="off" spellcheck="false">
+          <button class="searchfield__clear" id="qClear" type="button" hidden aria-label="Clear search">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 6l8 8M14 6l-8 8" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="filters__group">
+        <div class="filters__head">
+          <h2 class="filters__title">Kind</h2>
+        </div>
+        <div class="seg" id="fKind" role="group" aria-label="Kind">
+          <button type="button" class="seg__btn is-on" data-kind="all">All</button>
+          <button type="button" class="seg__btn" data-kind="image">Images</button>
+          <button type="button" class="seg__btn" data-kind="video">Video</button>
+        </div>
+      </div>
+
+      <div class="filters__group">
+        <div class="filters__head">
+          <h2 class="filters__title">Category</h2>
+          <button class="filters__reset" type="button" data-reset="category">clear</button>
+        </div>
+        <div class="chips" id="fCategory"></div>
+      </div>
+
+      <div class="filters__group">
+        <div class="filters__head">
+          <h2 class="filters__title">Role</h2>
+          <button class="filters__reset" type="button" data-reset="role">clear</button>
+        </div>
+        <div class="chips chips--scroll" id="fRole"></div>
+      </div>
+
+      <div class="filters__group">
+        <div class="filters__head">
+          <h2 class="filters__title">Style</h2>
+          <button class="filters__reset" type="button" data-reset="style">clear</button>
+        </div>
+        <div class="chips chips--scroll" id="fStyle"></div>
+      </div>
+
+      <details class="filters__group filters__group--details">
+        <summary class="filters__title">More filters <span class="filters__count" id="moreCount"></span></summary>
+        <div class="filters__body">
+          <div class="filters__sub">
+            <div class="filters__head">
+              <h3 class="filters__title filters__title--sm">Orientation</h3>
+            </div>
+            <div class="chips" id="fOrientation"></div>
+          </div>
+          <div class="filters__sub">
+            <div class="filters__head">
+              <h3 class="filters__title filters__title--sm">Hue family</h3>
+              <button class="filters__reset" type="button" data-reset="hue">clear</button>
+            </div>
+            <div class="chips" id="fHue"></div>
+          </div>
+          <div class="filters__sub">
+            <div class="filters__head">
+              <h3 class="filters__title filters__title--sm">Surface</h3>
+            </div>
+            <div class="chips" id="fSurface"></div>
+          </div>
+          <div class="filters__sub">
+            <div class="filters__head">
+              <h3 class="filters__title filters__title--sm">Has motion clip</h3>
+            </div>
+            <div class="chips" id="fClip"></div>
+          </div>
+          <div class="filters__sub">
+            <div class="filters__head">
+              <h3 class="filters__title filters__title--sm">App sets</h3>
+              <button class="filters__reset" type="button" data-reset="group">clear</button>
+            </div>
+            <div class="chips chips--wrap" id="fGroup"></div>
+          </div>
+
+          <div class="filters__sub">
+            <div class="filters__head">
+              <h3 class="filters__title filters__title--sm">Tags</h3>
+              <button class="filters__reset" type="button" data-reset="tag">clear</button>
+            </div>
+            <div class="chips chips--wrap" id="fTag"></div>
+            <button class="moretags" type="button" id="moreTags">Show all tags</button>
+          </div>
+        </div>
+      </details>
+
+      <div class="filters__group filters__group--actions">
+        <button class="btn btn--ghost" id="resetAll" type="button">Reset all</button>
+      </div>
+    </form>
+  </aside>
+
+  <main class="main" id="main">
+    <div class="main__head">
+      <div class="main__headline">
+        <h1 class="page-title" id="pageTitle">Gallery</h1>
+        <p class="page-sub" id="pageSub"></p>
+      </div>
+      <div class="main__tools">
+        <div class="select">
+          <span class="select__label" id="sortLabel">Sort</span>
+          <select id="sort" aria-labelledby="sortLabel">
+            <option value="curated">Curated</option>
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="title">A → Z</option>
+            <option value="motion">Most motion</option>
+          </select>
+        </div>
+        <div class="viewswitch seg" id="viewSwitch" role="group" aria-label="Layout">
+          <button type="button" class="seg__btn is-on" data-view="masonry" title="Masonry">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="3" width="6" height="9" rx="1.2" fill="currentColor"/><rect x="11" y="3" width="6" height="5" rx="1.2" fill="currentColor"/><rect x="3" y="14" width="6" height="3" rx="1.2" fill="currentColor"/><rect x="11" y="10" width="6" height="7" rx="1.2" fill="currentColor"/></svg>
+          </button>
+          <button type="button" class="seg__btn" data-view="grid" title="Grid">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1.2" fill="currentColor"/><rect x="11" y="3" width="6" height="6" rx="1.2" fill="currentColor"/><rect x="3" y="11" width="6" height="6" rx="1.2" fill="currentColor"/><rect x="11" y="11" width="6" height="6" rx="1.2" fill="currentColor"/></svg>
+          </button>
+          <button type="button" class="seg__btn" data-view="list" title="List">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="4" width="3" height="3" rx="1" fill="currentColor"/><rect x="3" y="9" width="3" height="3" rx="1" fill="currentColor"/><rect x="3" y="14" width="3" height="3" rx="1" fill="currentColor"/><rect x="8" y="4.6" width="9" height="1.8" rx=".9" fill="currentColor"/><rect x="8" y="9.6" width="9" height="1.8" rx=".9" fill="currentColor"/><rect x="8" y="14.6" width="9" height="1.8" rx=".9" fill="currentColor"/></svg>
+          </button>
+        </div>
+        <label class="select select--size" for="cardSize">
+          <span class="select__label">Size</span>
+          <input id="cardSize" type="range" min="180" max="460" step="10" value="280" aria-label="Thumbnail size">
+        </label>
+      </div>
+    </div>
+
+    <div class="activefilters" id="activeFilters" hidden></div>
+
+    <div class="resultsbar">
+      <p class="resultsbar__count" id="resultCount" role="status" aria-live="polite"></p>
+      <button class="btn btn--ghost btn--sm" id="shuffle" type="button">Shuffle</button>
+    </div>
+
+    <section class="results" id="results" aria-label="Results"></section>
+    <div class="sentinel" id="sentinel" aria-hidden="true"></div>
+    <p class="empty" id="emptyState" hidden>
+      <span class="empty__title">Nothing matches those filters</span>
+      <span class="empty__hint">Try removing a filter, or search a different term.</span>
+    </p>
+  </main>
+</div>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Asset detail">
+  <div class="lightbox__backdrop" data-close></div>
+  <div class="lightbox__panel" role="document">
+    <button class="lightbox__close" type="button" data-close aria-label="Close">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+    </button>
+    <div class="lightbox__media" id="lbMedia"></div>
+    <div class="lightbox__info" id="lbInfo"></div>
+  </div>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/listbox.js"></script>
+<script src="assets/js/filters.js"></script>
+<script src="assets/js/patterns.js"></script>
+<script src="assets/js/typography.js"></script>
+<script src="assets/js/render.js"></script>
+<script src="assets/js/pages.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

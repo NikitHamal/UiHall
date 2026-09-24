@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Saffron Cart</title>
+<style>
+@font-face{font-family:Poppins;font-weight:400;font-display:swap;src:url(../../ui-hall/assets/fonts/poppins/poppins-400-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:Poppins;font-weight:500;font-display:swap;src:url(../../ui-hall/assets/fonts/poppins/poppins-500-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:Poppins;font-weight:600;font-display:swap;src:url(../../ui-hall/assets/fonts/poppins/poppins-600-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:Poppins;font-weight:700;font-display:swap;src:url(../../ui-hall/assets/fonts/poppins/poppins-700-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+/* Measured cream #FEFBE7 / ink #14120F (IMG-0280). Accent terracotta authored+disclosed, 5.9:1 on cream. */
+:root{--bg:#FEFBE7;--surface:#FFF;--surface2:#F6F1E3;--line:#E5DCC8;--line2:#D2C7AC;--ink:#14120F;--muted:#6B5F52;--faint:#9A8D7B;
+--accent:#9A3B1E;--accent-ink:#FFF9F0;--green:#2E7D4F;
+--t-2xs:.6875rem;--t-xs:.75rem;--t-sm:.8125rem;--t-md:.875rem;--t-lg:1rem;--t-xl:1.25rem;--t-2xl:1.625rem;--t-3xl:2.125rem;
+--ls-tight:-.012em;--ls-snug:-.005em;--ls-wide:.04em;--ls-wider:.075em;
+--ease:cubic-bezier(.2,0,0,1);--dur:160ms;--r:18px;--max:1120px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Poppins,system-ui,sans-serif;font-size:var(--t-md);line-height:1.65;-webkit-font-smoothing:antialiased}
+.num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
+button{font:inherit;min-height:48px}:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:10px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.top{position:sticky;top:0;z-index:20;background:rgba(254,251,231,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top-in{max-width:var(--max);margin:0 auto;padding:10px 20px;display:flex;gap:12px;align-items:center}
+.brand{font-weight:700;font-size:var(--t-lg);letter-spacing:var(--ls-snug);white-space:nowrap}.brand i{font-style:normal;background:var(--accent);color:var(--accent-ink);border-radius:8px;padding:1px 8px;margin-right:8px}
+.search{flex:1;display:flex;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 5px 5px 16px;align-items:center;gap:8px}
+.search input{flex:1;border:0;background:none;font:inherit;font-size:var(--t-md);min-height:38px;min-width:0}.search input:focus{outline:none}
+.search button{background:var(--ink);color:#fff;border:0;border-radius:999px;padding:10px 20px;font-weight:600;font-size:var(--t-sm);cursor:pointer}
+.cartbtn{background:var(--accent);color:var(--accent-ink);border:0;border-radius:999px;padding:12px 20px;font-weight:600;font-size:var(--t-sm);cursor:pointer;transition:transform var(--dur) var(--ease)}
+.cartbtn:active{transform:scale(.96)}
+.wrap{max-width:var(--max);margin:0 auto;padding:32px 20px 120px}
+.kicker{font-size:var(--t-2xs);font-weight:600;letter-spacing:var(--ls-wider);text-transform:uppercase;color:var(--accent)}
+h1{font-size:var(--t-3xl);font-weight:600;letter-spacing:var(--ls-tight);line-height:1.15;margin:8px 0;max-width:14ch}
+@media(min-width:700px){h1{font-size:3rem;line-height:1.06}}
+.lede{color:var(--muted);font-size:var(--t-lg);max-width:52ch;margin:0}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:18px 0 6px;scrollbar-width:none}
+.chips button{flex:none;display:inline-flex;align-items:center;justify-content:center;height:44px;min-height:44px;min-width:84px;padding:0 20px;border:1.5px solid var(--line);background:var(--surface);border-radius:999px;font-size:var(--t-sm);font-weight:500;cursor:pointer;transition:all var(--dur) var(--ease)}
+.chips button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink);font-weight:600}
+.chips button:active{transform:scale(.96)}
+.count{font-size:var(--t-xs);color:var(--muted);margin:10px 0 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:10px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;animation:rise 260ms var(--ease) backwards}
+.card:nth-child(2){animation-delay:50ms}.card:nth-child(3){animation-delay:100ms}.card:nth-child(4){animation-delay:150ms}.card:nth-child(5){animation-delay:200ms}.card:nth-child(6){animation-delay:250ms}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.photo{height:148px;position:relative;outline:1px solid rgba(0,0,0,.08);outline-offset:-1px}
+.photo span{position:absolute;left:12px;bottom:12px;background:rgba(20,18,15,.85);color:#fff;font-size:var(--t-2xs);font-weight:500;border-radius:999px;padding:4px 12px}
+.card-b{padding:16px 18px 18px}.card-b h3{margin:0;font-size:var(--t-lg);font-weight:600;letter-spacing:var(--ls-snug)}.card-b p{margin:4px 0 12px;color:var(--muted);font-size:var(--t-sm)}
+.card-f{display:flex;align-items:center;gap:10px}.price{font-weight:700;font-size:var(--t-lg)}
+.stepper{margin-left:auto;display:flex;align-items:center;gap:10px}
+.stepper button{width:44px;height:44px;min-height:44px;border-radius:50%;border:1.5px solid var(--ink);background:none;font-size:var(--t-lg);font-weight:600;cursor:pointer;transition:all var(--dur) var(--ease);display:grid;place-items:center}
+.stepper button:hover{background:var(--ink);color:#fff}.stepper button:active{transform:scale(.96)}
+.stepper b{min-width:20px;text-align:center}
+.drawer{position:fixed;inset:auto 0 0 0;z-index:30;background:var(--surface);border-top:1px solid var(--line);border-radius:20px 20px 0 0;box-shadow:0 -16px 48px rgba(20,18,15,.2);transform:translateY(105%);transition:transform 300ms var(--ease);max-height:82vh;display:flex;flex-direction:column}
+.drawer.open{transform:none}
+.scrim{position:fixed;inset:0;background:rgba(20,18,15,.45);opacity:0;pointer-events:none;transition:opacity 200ms var(--ease);z-index:25}
+.scrim.open{opacity:1;pointer-events:auto}
+.drawer-in{max-width:640px;margin:0 auto;width:100%;padding:12px 20px 28px;overflow:auto}
+.grab{width:44px;height:5px;border-radius:99px;background:var(--line);margin:6px auto 14px}
+.trow{display:flex;gap:10px;padding:10px 0;border-top:1px solid var(--line);font-size:var(--t-md)}.trow b{margin-left:auto}
+.total{display:flex;font-size:var(--t-xl);font-weight:700;padding:14px 0 2px}.total b{margin-left:auto}
+.slot{display:inline-block;border:1.5px solid var(--accent);color:var(--accent);border-radius:999px;padding:8px 16px;font-weight:600;font-size:var(--t-sm);margin:4px 8px 4px 0;cursor:pointer;background:none;transition:all var(--dur) var(--ease)}
+.slot[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.cta{width:100%;background:var(--accent);color:var(--accent-ink);border:0;border-radius:14px;padding:15px;font-weight:600;font-size:var(--t-md);margin-top:12px;cursor:pointer;transition:transform var(--dur) var(--ease)}
+.cta:active{transform:scale(.96)}
+.track{margin-top:14px;background:var(--surface2);border-radius:14px;padding:16px 18px;font-size:var(--t-sm)}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-in">
+<div class="brand"><i>S</i>Saffron Cart</div>
+<label class="search"><span aria-hidden="true">⌕</span><input id="q" type="search" placeholder="Search biryani, momo, thali…" aria-label="Search dishes" autocomplete="off"><button id="qBtn">Search</button></label>
+<button class="cartbtn num" id="openCart">Cart · <span id="cartN">0</span></button>
+</div></header>
+<main class="wrap">
+<div class="kicker">Pokhara · 25 min avg · free dal top-up</div>
+<h1>Dinner that still feels like home.</h1>
+<p class="lede">Type leads, photo supports. One accent only — everything else is cream, white and ink.</p>
+<div class="chips" role="group" aria-label="Cuisine" id="chips"><button aria-pressed="true">All</button><button aria-pressed="false">Thali</button><button aria-pressed="false">Biryani</button><button aria-pressed="false">Momo</button><button aria-pressed="false">Veg</button></div>
+<p class="count num" id="count" role="status"></p>
+<div class="grid num" id="grid"></div>
+<div class="track" id="track"><b>Order #SC-1042 · Preparing</b><div style="color:var(--muted)">Confirmed → On the flame → <b style="color:var(--ink)">On the way · 25 min</b> → Delivered</div></div>
+<details style="margin-top:16px;color:var(--muted);font-size:var(--t-xs)"><summary style="cursor:pointer;padding:10px 0">Evidence</summary>Warm cream ground + quiet rows IMG-0280 / IMG-0456 / IMG-0228. Terracotta is authored + disclosed; neutrals measured. Slot pill from IMG-0456 checkout.</details>
+</main>
+<div class="scrim" id="scrim"></div>
+<section class="drawer" id="drawer" aria-label="Cart" role="dialog" aria-modal="false">
+<div class="drawer-in"><div class="grab"></div>
+<div style="display:flex;align-items:baseline"><h2 style="margin:0;font-size:var(--t-xl);letter-spacing:var(--ls-snug)">Your cart</h2><button id="close" style="margin-left:auto;background:none;border:0;cursor:pointer;font-weight:600">Close ✕</button></div>
+<div style="margin:10px 0">Delivery window<br><button class="slot" aria-pressed="true">Today · 6:30–7:00 PM</button><button class="slot" aria-pressed="false">Tomorrow · 12:00 PM</button></div>
+<div id="lines"></div>
+<div class="total num"><span>Total</span><b id="total">Rs 0</b></div>
+<button class="cta" id="order">Place order</button>
+<p class="count" id="orderMsg" role="status">Empty → filled → placed. Long names truncate; small screens stack.</p>
+</div></section>
+<script>
+const MENU=[{n:"Chicken Thali Set",d:"Rice · dal · 2 sabzi · achar · papad",p:420,t:"Thali",c:"linear-gradient(135deg,#C96F2E,#8A3B1E)",m:"4.8 · 25 min"},{n:"Veg Biryani Handi",d:"Saffron rice · raita · salan",p:350,t:"Biryani",c:"linear-gradient(135deg,#D9A441,#9A3B1E)",m:"4.7 · 30 min"},{n:"Buff Momo (10 pc)",d:"Sesame-tomato chutney · jhol",p:280,t:"Momo",c:"linear-gradient(135deg,#E8C98F,#B98A4A)",m:"4.9 · 20 min"},{n:"Dal Bhat Power",d:"Unlimited rice · gundruk · ghee",p:320,t:"Thali",c:"linear-gradient(135deg,#7A9B5A,#3E5A2E)",m:"4.8 · 22 min"},{n:"Paneer Tikka Bowl",d:"Smoked paneer · mint rice",p:390,t:"Veg",c:"linear-gradient(135deg,#4FA08A,#18544E)",m:"4.6 · 28 min"},{n:"Egg Curry + Rice",d:"Home-style · potato · coriander",p:260,t:"Veg",c:"linear-gradient(135deg,#C25E3C,#6E2A16)",m:"4.5 · 18 min"}];
+let cart={},filter="All",q="";
+const grid=document.getElementById('grid');
+function render(){grid.innerHTML="";const items=MENU.filter(m=>(filter==="All"||m.t===filter)&&m.n.toLowerCase().includes(q));document.getElementById('count').textContent=items.length+" of "+MENU.length+" dishes"+(q?` for “${q}”`:"");
+items.forEach(m=>{const n=cart[m.n]||0,el=document.createElement('article');el.className='card';el.innerHTML=`<div class="photo" style="background:${m.c}" role="img" aria-label="${m.n}"><span>${m.m}</span></div><div class="card-b"><h3>${m.n}</h3><p>${m.d}</p><div class="card-f"><span class="price">Rs ${m.p}</span><span class="stepper">${n?`<button data-a="dec" data-n="${m.n}" aria-label="Remove one">−</button><b>${n}</b><button data-a="inc" data-n="${m.n}" aria-label="Add one">+</button>`:`<button data-a="inc" data-n="${m.n}" style="border-radius:999px;width:auto;padding:8px 22px;font-size:var(--t-sm)" aria-label="Add ${m.n}">Add +</button>`}</span></div></div>`;grid.appendChild(el);});
+if(!items.length)grid.innerHTML='<div class="card"><div class="card-b"><h3>No matches</h3><p>Clear the search or pick another cuisine — empty state, not an error.</p></div></div>';}
+grid.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const n=b.dataset.n;cart[n]=(cart[n]||0)+(b.dataset.a==="inc"?1:-1);if(cart[n]<=0)delete cart[n];render();drawCart();});
+function drawCart(){const n=Object.values(cart).reduce((s,v)=>s+v,0);document.getElementById('cartN').textContent=n;const box=document.getElementById('lines');const keys=Object.keys(cart);
+box.innerHTML=keys.length?keys.map(k=>{const m=MENU.find(x=>x.n===k);return `<div class="trow"><span>${cart[k]}× ${k}</span><b class="num">Rs ${m.p*cart[k]}</b></div>`;}).join('')+'<div class="trow"><span>Delivery</span><b class="num">Rs 60</b></div>':'<div class="trow"><span>Cart is empty — add something delicious.</span></div>';
+document.getElementById('total').textContent='Rs '+(keys.reduce((s,k)=>s+MENU.find(x=>x.n===k).p*cart[k],0)+(keys.length?60:0));}
+const drawer=document.getElementById('drawer'),scrim=document.getElementById('scrim');
+function setCart(o){drawer.classList.toggle('open',o);scrim.classList.toggle('open',o);drawer.setAttribute('aria-modal',String(o));}
+document.getElementById('openCart').addEventListener('click',()=>setCart(true));
+document.getElementById('close').addEventListener('click',()=>setCart(false));
+scrim.addEventListener('click',()=>setCart(false));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')setCart(false);});
+document.getElementById('chips').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;document.querySelectorAll('#chips button').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');filter=b.textContent;render();});
+const qi=document.getElementById('q');qi.addEventListener('input',()=>{q=qi.value.trim().toLowerCase();render();});
+document.getElementById('qBtn').addEventListener('click',()=>{q=qi.value.trim().toLowerCase();render();});
+document.querySelectorAll('.slot').forEach(s=>s.addEventListener('click',()=>{document.querySelectorAll('.slot').forEach(x=>x.setAttribute('aria-pressed','false'));s.setAttribute('aria-pressed','true');}));
+document.getElementById('order').addEventListener('click',()=>{const m=document.getElementById('orderMsg');if(!Object.keys(cart).length){m.textContent='Cart is empty — add a dish first.';return;}m.textContent=`Placed: ${document.getElementById('total').textContent}. Kitchen confirmed.`;document.getElementById('track').innerHTML='<b>Order #SC-1043 · Confirmed</b><div style="color:var(--muted)">Just placed — tracking starts here.</div>';cart={};render();drawCart();setCart(false);});
+render();drawCart();
+</script>
+</body>
+</html>

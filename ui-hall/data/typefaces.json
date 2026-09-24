@@ -1,0 +1,198 @@
+{
+ "_note": "Typeface reference for the Typography tab. Every family is SIL Open Font License 1.1, so self-hosting is permitted; the only obligation is to keep the licence file, which sits next to each family in assets/fonts/. Weights are the files actually present in this repo, not a wish list.",
+ "families": [
+  {
+   "id": "inter",
+   "name": "Inter",
+   "stack": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
+   "class": "Neo-grotesque sans",
+   "weights": [400, 500, 600, 700],
+   "cssFamily": "Inter",
+   "blurb": "The default choice for product UI. Tall x-height, open apertures, a true italic, and tabular figures that actually line up in tables. Designed by Rasmus Andersson for a screen first.",
+   "bestFor": ["Dashboards", "Forms and inputs", "Data tables", "Anything dense"],
+   "watch": "At 12px and under on a light background it can feel slightly cold. Bump letter-spacing to +0.01em rather than going heavier.",
+   "metrics": { "xHeight": "tall", "contrast": "low", "width": "normal" },
+   "sample": "Handgloves 0123"
+  },
+  {
+   "id": "manrope",
+   "name": "Manrope",
+   "stack": "'Manrope', system-ui, sans-serif",
+   "class": "Geometric sans",
+   "weights": [400, 500, 700, 800],
+   "cssFamily": "Manrope",
+   "blurb": "A geometric sans with a slightly squared-off terminal and generous width. Reads friendly at display sizes without turning childish, which is why it keeps showing up in fintech and health branding.",
+   "bestFor": ["Marketing headlines", "Fintech and health products", "Pricing pages"],
+   "watch": "The 800 is heavy enough to be a display weight. Do not use it for body copy — the colour count is high and small sizes get congested.",
+   "metrics": { "xHeight": "high", "contrast": "medium", "width": "wide" },
+   "sample": "Handgloves 0123"
+  },
+  {
+   "id": "space-grotesk",
+   "name": "Space Grotesk",
+   "stack": "'Space Grotesk', system-ui, sans-serif",
+   "class": "Grotesque sans",
+   "weights": [400, 500, 700],
+   "cssFamily": "SpaceGrotesk",
+   "blurb": "A proportional take on Space Mono — the letterforms keep the typewriter DNA but the spacing is modern. Distinctive enough to carry a brand, neutral enough to live in a product.",
+   "bestFor": ["Developer tools", "Startup branding", "Technical products"],
+   "watch": "The quirky details (the angled leg on the R, the flat-topped 3) stop reading as character below about 16px.",
+   "metrics": { "xHeight": "medium", "contrast": "medium", "width": "normal" },
+   "sample": "Handgloves 0123"
+  },
+  {
+   "id": "dm-sans",
+   "name": "DM Sans",
+   "stack": "'DM Sans', system-ui, sans-serif",
+   "class": "Geometric sans",
+   "weights": [400, 500, 700],
+   "cssFamily": "DMSans",
+   "blurb": "Low-contrast and compact, optimised for small sizes. A very efficient workhorse when you need a lot of words inside a small card and the page must not feel dense.",
+   "bestFor": ["Cards and lists", "Small UI", "Landing pages with lots of copy"],
+   "watch": "Being compact, it needs slightly more line-height than Inter to stay comfortable — 1.6 rather than 1.5.",
+   "metrics": { "xHeight": "high", "contrast": "low", "width": "narrow" },
+   "sample": "Handgloves 0123"
+  },
+  {
+   "id": "sora",
+   "name": "Sora",
+   "stack": "'Sora', system-ui, sans-serif",
+   "class": "Geometric sans",
+   "weights": [400, 600, 700],
+   "cssFamily": "Sora",
+   "blurb": "A geometric sans with a wide, confident rhythm and flat terminals. Built for headings, where its wide apertures hold up at large sizes without hinting artefacts.",
+   "bestFor": ["Hero headlines", "Section titles", "Brand display type"],
+   "watch": "No 500 weight ships in this repo. If you need medium, use 600 — do not fake it with 400 and opacity, which thins the strokes unevenly.",
+   "metrics": { "xHeight": "high", "contrast": "low", "width": "wide" },
+   "sample": "Handgloves 0123"
+  },
+  {
+   "id": "bricolage-grotesque",
+   "name": "Bricolage Grotesque",
+   "stack": "'Bricolage Grotesque', system-ui, sans-serif",
+   "class": "Grotesque with optical size axis",
+   "weights": [400, 600, 800],
+   "cssFamily": "BricolageGrotesque",
+   "blurb": "A variable grotesque with a real optical-size axis: the 800 is drawn for 48px+ and the 400 for small text, so one family covers display through body without looking like two.",
+   "bestFor": ["Editorial layouts", "Brand systems", "Hero + body from one family"],
+   "watch": "Because the optical axis is the point, do not set the 800 below 32px — the display cut has too much contrast for small text.",
+   "metrics": { "xHeight": "medium", "contrast": "variable", "width": "normal" },
+   "sample": "Handgloves 0123"
+  },
+  {
+   "id": "playfair-display",
+   "name": "Playfair Display",
+   "stack": "'Playfair Display', Georgia, serif",
+   "class": "Transitional serif",
+   "weights": [400, 600, 700],
+   "cssFamily": "PlayfairDisplay",
+   "blurb": "High-contrast Didone-adjacent serif with hairline serifs and very fine joins. The most recognisable 'premium editorial' face on Google Fonts, and it earns it at display sizes.",
+   "bestFor": ["Editorial headlines", "Luxury and fashion", "Pull quotes"],
+   "watch": "Hairlines vanish below 24px and the thin strokes disappear on low-DPI screens. Never use it for body copy or on a dark background without increasing the weight to at least 600.",
+   "metrics": { "xHeight": "medium", "contrast": "high", "width": "normal" },
+   "sample": "Handgloves 0123"
+  },
+  {
+   "id": "fraunces",
+   "name": "Fraunces",
+   "stack": "'Fraunces', Georgia, serif",
+   "class": "Soft-serif with wonky axis",
+   "weights": [400, 600, 700],
+   "cssFamily": "Fraunces",
+   "blurb": "A soft-serif with an optical 'wonk' and 'soft' axis, so you can dial the terminals from crisp to friendly without changing families. Excellent for brands that want personality but not eccentricity.",
+   "bestFor": ["Brand display type", "Food and lifestyle", "Warm editorial"],
+   "watch": "It is a display face. At body sizes use the 400 and raise the size to at least 17px, or the wonk reads as noise.",
+   "metrics": { "xHeight": "medium", "contrast": "medium", "width": "normal" },
+   "sample": "Handgloves 0123"
+  },
+  {
+   "id": "source-serif-4",
+   "name": "Source Serif 4",
+   "stack": "'Source Serif 4', Georgia, serif",
+   "class": "Transitional serif",
+   "weights": [400, 600, 700],
+   "cssFamily": "SourceSerif4",
+   "blurb": "Adobe's reading serif, designed for long-form legibility on screens. The most boring choice on this list and the correct one for documentation, policy pages and anything a person has to read to the end.",
+   "bestFor": ["Documentation", "Legal and policy pages", "Long-form reading"],
+   "watch": "It genuinely is unremarkable as a logo. That is the point — reserve it for text and let the brand live elsewhere.",
+   "metrics": { "xHeight": "medium", "contrast": "medium", "width": "normal" },
+   "sample": "Handgloves 0123"
+  },
+  {
+   "id": "lora",
+   "name": "Lora",
+   "stack": "'Lora', Georgia, serif",
+   "class": "Contemporary serif",
+   "weights": [400, 600, 700],
+   "cssFamily": "Lora",
+   "blurb": "A brushed-contrast serif with a calligraphic root. Warmer than Source Serif and less severe than Playfair, so it bridges body and display better than either.",
+   "bestFor": ["Blog and magazine layouts", "Quotations", "Mid-weight editorial"],
+   "watch": "The 600 sits between a text and a display cut. It is the most useful weight here for subheads.",
+   "metrics": { "xHeight": "medium", "contrast": "medium", "width": "normal" },
+   "sample": "Handgloves 0123"
+  },
+  {
+   "id": "jetbrains-mono",
+   "name": "JetBrains Mono",
+   "stack": "'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace",
+   "class": "Monospace",
+   "weights": [400, 500, 700],
+   "cssFamily": "JetBrainsMono",
+   "blurb": "A code-first monospace with a tall x-height and a slashed zero. The extra height is what makes it readable next to a UI sans at the same nominal size.",
+   "bestFor": ["Code blocks", "Terminals", "Numeric and ID columns"],
+   "watch": "It is wide. In a narrow table it will eat the column, so set tabular numbers only where alignment actually matters.",
+   "metrics": { "xHeight": "tall", "contrast": "low", "width": "wide" },
+   "sample": "const x = 0O1Il;"
+  },
+  {
+   "id": "space-mono",
+   "name": "Space Mono",
+   "stack": "'Space Mono', ui-monospace, Menlo, monospace",
+   "class": "Monospace",
+   "weights": [400, 700],
+   "cssFamily": "SpaceMono",
+   "blurb": "A quirky monospace with the proportions of an old typewriter. Only two weights ship here, which is fine — it belongs in branding and display, not in long code listings.",
+   "bestFor": ["Code-themed branding", "Technical display type", "Retro terminal aesthetics"],
+   "watch": "Only 400 and 700. There is no medium, so do not reach for faux-medium in body text.",
+   "metrics": { "xHeight": "low", "contrast": "medium", "width": "wide" },
+   "sample": "const x = 0O1Il;"
+  }
+ ],
+ "guides": [
+  {
+   "title": "Self-host, do not hotlink",
+   "body": "Every family here ships as woff2 in assets/fonts/<family>/<weight>.woff2. Load them from your own origin. A Google Fonts <link> means a third-party request on every page load, a privacy disclosure you now owe your users, and a layout that shifts if fonts.googleapis.com is slow or blocked.",
+   "code": "@font-face {\n  font-family: 'Inter';\n  src: url('/fonts/inter/400.woff2') format('woff2');\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n}"
+  },
+  {
+   "title": "Subset before you ship",
+   "body": "These files are already latin-only, which is most of the win. If your product has a non-latin audience, add that subset explicitly rather than loading the full family — a Devanagari or Cyrillic cut is 5-10x the bytes.",
+   "code": "/* unicode-range lets the browser fetch only what it needs */\n@font-face {\n  font-family: 'Inter';\n  src: url('/fonts/inter-400.woff2') format('woff2');\n  font-weight: 400;\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153;\n}"
+  },
+  {
+   "title": "Pair one sans with one serif",
+   "body": "The reliable pattern is a UI sans for everything functional and a serif for long-form or brand voice. Two sans families need a strong size or weight difference to avoid looking like a mistake; two serifs almost never work without one being a clear display cut.",
+   "code": "/* functional */\nbody { font-family: 'Inter', system-ui, sans-serif; }\n\n/* long-form or brand voice */\n.prose { font-family: 'Source Serif 4', Georgia, serif; }"
+  },
+  {
+   "title": "Set a real type scale, not one size",
+   "body": "Give each step its own size, line-height and tracking. Display sizes need negative tracking because large letterforms look loose; small labels need positive tracking because they lose their shape.",
+   "code": ":root {\n  --t-xs:  0.75rem;  line-height: 1.4;  letter-spacing: 0;\n  --t-sm:  0.875rem; line-height: 1.5;  letter-spacing: 0;\n  --t-lg:  1.25rem;  line-height: 1.3;  letter-spacing: -0.005em;\n  --t-xl:  2rem;     line-height: 1.15; letter-spacing: -0.015em;\n  --t-display: 3.5rem; line-height: 1.05; letter-spacing: -0.025em;\n}"
+  },
+  {
+   "title": "Always pair a system fallback",
+   "body": "font-family must end in a real fallback. If the webfont fails, the layout should still be readable on the system stack rather than falling back to the browser default serif.",
+   "code": "font-family: 'Sora', system-ui, -apple-system, 'Segoe UI', sans-serif;"
+  },
+  {
+   "title": "Make numbers line up",
+   "body": "Any figure that updates, animates or sits in a column needs tabular figures, or the digits change width and the whole layout jitters.",
+   "code": ".num, table, [data-count] {\n  font-variant-numeric: tabular-nums;\n  font-feature-settings: 'tnum' 1;\n}"
+  },
+  {
+   "title": "Check the licence before you ship",
+   "body": "Every family in this tab is SIL Open Font License 1.1: use it commercially, embed it, modify it, no permission needed. Keep the LICENSE.txt that sits beside each family and do not sell the font file on its own. That is the entire obligation.",
+   "code": "OFL 1.1 — what you may do:\n  • use commercially, any project\n  • self-host, subset, modify\n  • use in a paid product\n\nWhat you must do:\n  • keep the licence with the font files\n\nWhat you may not do:\n  • sell the font by itself\n  • use the reserved font names in a modified version"
+  }
+ ]
+}

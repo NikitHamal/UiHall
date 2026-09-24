@@ -1,0 +1,301 @@
+{
+ "note": "Review pass 9 of the undescribed mobile-app-ui images. Sheets review_10.jpg and review_11.jpg. Written from the processed web images. Palette, dimensions and contrast are measured elsewhere.",
+ "items": {
+  "IMG-0391": {
+   "id": "IMG-0391",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Add Card - card entry form with grouped fields",
+   "description": "A light card-entry form headed 'Add Card'. A small card graphic sits at the top, then grouped input rows: a card-number field, a paired row with an expiry field and a CVV field, and an address block underneath. Each group is a white rounded container with hairline dividers, and the labels sit above their fields in a small grey size. The screen is a clean reference for financial form design - short field groups separated by whitespace, with the CVV paired beside the expiry so the row count stays low.",
+   "roles": [
+    "form",
+    "checkout"
+   ],
+   "style": [
+    "light-mode",
+    "outlined",
+    "rounded"
+   ],
+   "tags": [
+    "fintech",
+    "payment",
+    "card",
+    "input",
+    "address"
+   ],
+   "quality": "Clear capture; the field labels and values are legible."
+  },
+  "IMG-0392": {
+   "id": "IMG-0392",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Add Card - nickname and work-card fields only",
+   "description": "A near-empty white form screen with just two fields visible: a nickname field and a 'Work card' row, followed by a large green 'Add Card' button pinned near the bottom. The rest of the screen is empty. Filed because it shows the deliberate way card forms are first presented: the optional fields are the only ones shown when the card is saved automatically, so the form appears trivial rather than intimidating.",
+   "roles": [
+    "form",
+    "checkout"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "fintech",
+    "payment",
+    "card",
+    "input",
+    "cta"
+   ],
+   "quality": "Clear capture; the two field labels and the button are legible."
+  },
+  "IMG-0393": {
+   "id": "IMG-0393",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Add Card - grouped card form in a light shell",
+   "description": "A light card-entry screen presented inside a phone shell with a visible bezel. The form is a single rounded white container holding several labelled rows - card details and billing details - each with a small grey label and a value line, followed by a green button at the foot. The screen is the middle point between IMG-0391 and IMG-0392: enough fields to be a real form, but grouped into one block so it still reads as a single decision.",
+   "roles": [
+    "form",
+    "checkout"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "outlined"
+   ],
+   "tags": [
+    "fintech",
+    "payment",
+    "card",
+    "input",
+    "cta",
+    "shell"
+   ],
+   "quality": "Clear capture; the row labels are legible."
+  },
+  "IMG-0394": {
+   "id": "IMG-0394",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Cart - three dishes with quantities and prices",
+   "description": "A light food-ordering cart headed by a back chevron and the title 'Cart'. A card holds three line items, each with a small circular dish photo, a name, a quantity stepper and a right-aligned price in the local currency; a delete control sits at the right of each row. A total row reads 'Total Amount' with a figure, and a solid green 'Checkout' button closes the screen. The layout is a good reference for a compact cart: photograph, name, stepper and price in a single row, with the total and the commit action pinned below.",
+   "roles": [
+    "checkout",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "food",
+    "cart",
+    "stepper",
+    "price",
+    "photo",
+    "cta"
+   ],
+   "quality": "Clear capture; the item names and prices are legible."
+  },
+  "IMG-0395": {
+   "id": "IMG-0395",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Cart - a single item with the checkout summary",
+   "description": "The same cart layout as IMG-0394 reduced to one line item, with the quantity stepper, the dish photo, the name and the price, and the same total row and green checkout button beneath. Because there is only one item, the summary block and the button dominate the lower half of the screen. Worth keeping alongside its fuller sibling as a demonstration that the cart structure does not change with item count - the summary simply rises up the page as the list shortens.",
+   "roles": [
+    "checkout",
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "food",
+    "cart",
+    "stepper",
+    "price",
+    "summary",
+    "cta"
+   ],
+   "quality": "Clear capture; the item row and total are legible."
+  },
+  "IMG-0396": {
+   "id": "IMG-0396",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Cart - three-item list with a sticky total bar",
+   "description": "A light cart screen with three dish rows, each carrying a circular photo, a name, a quantity stepper and a price, and a delete control at the row's right edge. A sticky footer bar spans the full width carrying the total amount on the left and a green checkout button on the right. The sticky bar is the pattern to take: on a cart that can grow, pinning the total and the action means the user never has to scroll to find out what they owe or how to pay.",
+   "roles": [
+    "checkout",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "food",
+    "cart",
+    "stepper",
+    "price",
+    "sticky",
+    "cta"
+   ],
+   "quality": "Clear capture; the rows and the sticky total are legible."
+  },
+  "IMG-0397": {
+   "id": "IMG-0397",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Banking home - green header with transactions and move money",
+   "description": "A light banking home screen with a mint-green top section carrying a greeting, an avatar and a large balance figure with a small growth indicator. Below it sit four action tiles, then a 'Top Merchants' block with rounded amount chips and small merchant logos, and a 'Recent Actions' list of transaction rows with names, dates and amounts, above a dark tab bar. The screen is a compact reference for a money home in a light palette: colour reserved for the header and the tiles, everything else neutral.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "fintech",
+    "banking",
+    "balance",
+    "merchant",
+    "transaction",
+    "tiles",
+    "tab-bar"
+   ],
+   "quality": "Clear capture; the balance and transaction rows are legible."
+  },
+  "IMG-0398": {
+   "id": "IMG-0398",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Banking home - the same screen seen from a distance",
+   "description": "The same mint-green banking home as IMG-0397, photographed or rendered smaller within a large white frame so the phone occupies only the middle third of the image. Because the screen is small, the image works as a composition study rather than a UI reference: it shows how the balance, the tile row and the list read as three tonal bands from a distance, which is a useful way to sanity-check whether a home screen has a clear hierarchy.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "fintech",
+    "banking",
+    "balance",
+    "staging",
+    "composition"
+   ],
+   "quality": "Clear enough to read the balance and the section bands."
+  },
+  "IMG-0399": {
+   "id": "IMG-0399",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Banking home - allocation blocks and payment history",
+   "description": "A light finance home screen showing money split into three rounded blocks - each with a category label and an amount, in green, blue and grey - followed by a row of two action pills and a collapsed account row. Below sits a 'Payment History' section with a few grouped rows, and a dark floating tab bar overlays the bottom edge. The allocation blocks are the notable element: three equal containers state the split of funds at a glance without any chart at all.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "fintech",
+    "banking",
+    "allocation",
+    "balance",
+    "payment",
+    "history",
+    "tab-bar"
+   ],
+   "quality": "Clear capture; the block amounts and history rows are legible."
+  },
+  "IMG-0400": {
+   "id": "IMG-0400",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "L'hiver est a toi - three type-led winter tiles",
+   "description": "Three dark poster tiles displayed side by side, each built the same way: a monochrome winter photograph as the ground, a short French headline set in a heavy condensed face across the top two-thirds, a small circular badge, and a small outlined pill button at the bottom. Headlines vary - 'L'hiver est a toi', 'Tu veux changer quoi?', 'Un peu. Chaque jour.' The set is a strong reference for typographic campaign work: one treatment, three messages, with the badge and button held in identical positions so the tiles read as a series.",
+   "roles": [
+    "landing-section"
+   ],
+   "style": [
+    "dark-mode",
+    "bold-typography",
+    "editorial"
+   ],
+   "tags": [
+    "poster",
+    "photo",
+    "campaign",
+    "series",
+    "badges",
+    "winter"
+   ],
+   "quality": "Clear capture; all three headlines are legible."
+  },
+  "IMG-0401": {
+   "id": "IMG-0401",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Wallet app - three dark screens with a soft glow",
+   "description": "Three dark wallet screens shown together on a mid-grey backdrop. Each has a near-black surface with a soft violet radial glow behind the header, a balance figure with a small action row, and a set of grouped list rows with thin dividers; one screen expands to a card-management panel with more rows. The set is a useful reference for dark fintech: the glow supplies depth where a light UI would use a shadow, and the list dividers stay extremely faint so the surface reads as one sheet.",
+   "roles": [
+    "dashboard",
+    "list"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "fintech",
+    "wallet",
+    "balance",
+    "glow",
+    "multi-panel"
+   ],
+   "quality": "Clear capture; the balances and row labels are legible."
+  },
+  "IMG-0402": {
+   "id": "IMG-0402",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "ChatGPT Design vs Figma Design - two colour directions",
+   "description": "Two light screens presented side by side under the labels 'ChatGPT Design' and 'Figma Design', showing the same kind of finance content in two different visual treatments. The left uses a soft white card stack with a pale green accent and rounded pills; the right uses warmer tones with a cream card, a peach gradient and darker type. Placed together they function as a direct comparison of two design languages applied to one brief, which makes the differences in warmth, contrast and corner treatment easy to judge.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "card",
+    "comparison",
+    "exploration",
+    "fintech",
+    "gradient",
+    "multi-panel"
+   ],
+   "quality": "Clear capture; both panels are legible."
+  }
+ }
+}

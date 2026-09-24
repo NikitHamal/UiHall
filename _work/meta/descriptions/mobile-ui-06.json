@@ -1,0 +1,294 @@
+{
+ "note": "Review pass 6 of the undescribed mobile-app-ui images. Sheets review_07.jpg and review_08.jpg. Written from the processed web images. Palette, dimensions and contrast are measured elsewhere.",
+ "items": {
+  "IMG-0355": {
+   "id": "IMG-0355",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Code editor settings - dark panel with sliders",
+   "description": "A dark settings panel from a code-editor app. A short header row sits at the top, then a column of labelled rows each carrying an inline numeric value or a stepper: font size, indentation and similar. Below those, a set of segmented toggles and a slider block with a filled track and a round handle, followed by dropdown rows with small chevrons. Two buttons close the panel. It is a dense control surface and stays readable because every row is the same height, every label sits left and every value right, with a single accent reserved for the slider fill.",
+   "roles": [
+    "settings",
+    "editor"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "outlined"
+   ],
+   "tags": [
+    "developer-tools",
+    "slider",
+    "stepper",
+    "segmented-control",
+    "dropdown"
+   ],
+   "quality": "Clear capture; the row labels and values are legible."
+  },
+  "IMG-0356": {
+   "id": "IMG-0356",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "MyHealth - daily plan with an orange floating action",
+   "description": "A light health-planner screen headed 'My Health Plan'. The top block carries a row of day chips with one selected, a greeting figure and a small avatar. The body is a day plan: stacked card groups for meals, medication and activity, each row with a leading icon, a title, a time and a completion state, some rows tinted amber to mark what is due. A bright orange pill button floats above the tab bar. The screen is a good reference for a schedule that mixes content types - the cards group by activity, not by time, which keeps each list short.",
+   "roles": [
+    "home",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "health",
+    "plan",
+    "calendar",
+    "chips",
+    "medication",
+    "meal",
+    "tab-bar"
+   ],
+   "quality": "Clear capture; the plan rows are legible."
+  },
+  "IMG-0357": {
+   "id": "IMG-0357",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Wellness check-in - pale green panel with a scale",
+   "description": "A near-white screen with a pale green wash, showing a wellness check-in. A heading sits over a large illustration of a weighing scale drawn in loose line work, with a small hand-drawn accent beneath it. Below the illustration is a slider track with a value label and a bold dark button at the foot. The screen is mostly empty and quite tall, which is the point - the illustration and one input have the whole page, so the single question feels unhurried rather than squeezed.",
+   "roles": [
+    "form",
+    "detail",
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "illustration-led",
+    "soft"
+   ],
+   "tags": [
+    "health",
+    "check-in",
+    "slider",
+    "line-art",
+    "cta"
+   ],
+   "quality": "Clear capture; the heading and slider value are legible."
+  },
+  "IMG-0358": {
+   "id": "IMG-0358",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Zelt - welcome dialog over a desktop-style list",
+   "description": "A muted green screen showing a list with a small toolbar across the top - a leading pill, two small icon buttons and a trailing button - and a short list of rows beneath. Over the middle sits a centred white dialog headed 'Welcome to Zelt', carrying two short lines of copy, a primary green button and a secondary text link over a faint decorative glow. The dialog is the reference: a first-run message delivered as a floating card over real content, so the user sees what they are being welcomed into rather than a blank backdrop.",
+   "roles": [
+    "onboarding",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "welcome",
+    "modal",
+    "cta",
+    "dialog",
+    "glow"
+   ],
+   "quality": "Clear capture; the dialog copy and buttons are legible."
+  },
+  "IMG-0359": {
+   "id": "IMG-0359",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Empty list - drawn scale illustration as placeholder",
+   "description": "A tall near-white list screen with a small toolbar at the top and a single faint row at the bottom. The middle of the screen is empty except for a large, very light line drawing of a weighing scale, tilted slightly. There is no explanatory text and no call to action. Filed as a reference for illustration-as-emptiness: the drawing gives the blank area a shape and a subject without adding information or demanding an action, which suits a screen a user has simply not populated yet.",
+   "roles": [
+    "empty-state",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "illustration-led"
+   ],
+   "tags": [
+    "line-art",
+    "placeholder"
+   ],
+   "quality": "Clear capture; the faint illustration is visible."
+  },
+  "IMG-0360": {
+   "id": "IMG-0360",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Settings - record rows with toggles and a pen accent",
+   "description": "A pale green settings screen headed 'Settings'. A back chevron sits top-left and a pill button top-right. The body is a short list of rows - a name field, an email field, a toggled row with a switch set to on, and a small amount row - each separated by hairlines. A large, very light line drawing of a fountain pen occupies the lower half of the screen, overlapping the empty area without obscuring any control. The playful detail is the decorative object placed in dead space, which turns a five-row settings list into something with a subject.",
+   "roles": [
+    "settings",
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "outlined"
+   ],
+   "tags": [
+    "toggle",
+    "line-art",
+    "cta"
+   ],
+   "quality": "Clear capture; the row labels and toggle state are legible."
+  },
+  "IMG-0361": {
+   "id": "IMG-0361",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Device pairing - 'Pair Your Account' with an illustration",
+   "description": "A white screen centred on a pairing step. A small heading and a two-line explanation sit at the top, followed by a large illustration of a phone and a pair of hands drawn in flat colour, and a single blue pill button reading 'Pair Now' beneath it. A tab bar closes the screen. The composition is a clean example of a one-action interstitial: heading, reason, illustration, button - in that order - with nothing else on the page and no navigation above it to suggest there is more to do.",
+   "roles": [
+    "onboarding",
+    "auth"
+   ],
+   "style": [
+    "light-mode",
+    "illustration-led",
+    "minimal"
+   ],
+   "tags": [
+    "pairing",
+    "cta",
+    "device",
+    "tab-bar"
+   ],
+   "quality": "Clear capture; the heading and button label are legible."
+  },
+  "IMG-0362": {
+   "id": "IMG-0362",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Rajdhani Express - live train tracking on a map",
+   "description": "A train-tracking screen. The header gives the service name in large type with the coach and date beneath, and a small share control at the right. The main field is a map with the route drawn as a red line between two station pins, labelled boxes marking the origin and destination, and a live position marker roughly halfway. A 'Upcoming Platforms' list with a section link sits below. The screen is a strong reference for route tracking: the map carries the progress, and the header and list supply the detail without repeating the geometry.",
+   "roles": [
+    "navigation",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "flat",
+    "card-based"
+   ],
+   "tags": [
+    "travel",
+    "train",
+    "map",
+    "route",
+    "tracking",
+    "station",
+    "live"
+   ],
+   "quality": "Clear capture; the service name and station labels are legible."
+  },
+  "IMG-0363": {
+   "id": "IMG-0363",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Banking app - four carved-glass marketing screens",
+   "description": "Four light phone panels from a banking app, each staged as a floating screen over a pastel gradient background - yellow, peach, lilac, mint - with heavy soft shadows giving the devices a carved-glass quality. The screens themselves are simple: a welcome back panel with a summary, a card graphic with a headline, a 'Take Control of Your Money' statement, and a savings goal panel with an action. The set is a marketing-staging study: the gradient fields and the deep drop shadows do all the mood work, and the screens stay plain.",
+   "roles": [
+    "landing-section"
+   ],
+   "style": [
+    "light-mode",
+    "gradient-heavy",
+    "soft-shadow"
+   ],
+   "tags": [
+    "fintech",
+    "banking",
+    "multi-panel",
+    "gradient"
+   ],
+   "quality": "Clear capture; the four panels are distinguishable."
+  },
+  "IMG-0364": {
+   "id": "IMG-0364",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Finance app - add-card and transfer forms compared",
+   "description": "Two white finance screens side by side, both dominated by form fields. The left is a card-entry or account-details form with several labelled input rows, a couple of inline pickers and a note row; the right is a transfer form with rounded input boxes, a large amount field and a green primary button at the foot. The pair is a useful form study: both use the same label-above-field convention and the same row height, so the only differences are how many fields each task genuinely needs and where the commit button sits.",
+   "roles": [
+    "form",
+    "checkout"
+   ],
+   "style": [
+    "light-mode",
+    "outlined",
+    "rounded"
+   ],
+   "tags": [
+    "fintech",
+    "input",
+    "transfer",
+    "card",
+    "cta",
+    "comparison"
+   ],
+   "quality": "Clear capture; the field labels are legible."
+  },
+  "IMG-0365": {
+   "id": "IMG-0365",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Brokerage - $8,500 balance with a prediction market",
+   "description": "Two dark screens from a brokerage product. The left carries a large balance figure at the top, a promo strip promoting a fixed-rate deposit, and a set of quick-action tiles; the right shows a prediction market with a question headline, a dark 3D globe illustration, three outcome rows each with a probability figure and a coloured indicator, and a trade button. The pair is a good example of a brokerage layout that mixes two instruments - holdings and predictions - while keeping one visual language, with colour reserved for probability rather than for decoration.",
+   "roles": [
+    "dashboard",
+    "detail"
+   ],
+   "style": [
+    "dark-mode",
+    "gradient-heavy",
+    "data-dense"
+   ],
+   "tags": [
+    "fintech",
+    "trading",
+    "balance",
+    "prediction",
+    "3d",
+    "promo"
+   ],
+   "quality": "Clear capture; the balance and outcome percentages are legible."
+  },
+  "IMG-0366": {
+   "id": "IMG-0366",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Finance trends - rose-tinted chart card with filters",
+   "description": "A light dashboard screen set on a pale rose gradient, headed 'Your Trends'. A row of filter chips sits under the header, each with a small icon and a label. Below that is a series of chart cards: a line chart with axis labels, a couple of smaller stat cards with sparklines, and a short insights list with figures, closing on a tab bar. The screen is a neat example of a theming trick - the same dry financial charts become approachable purely by changing the background and chip tints, with no change to the chart structure itself.",
+   "roles": [
+    "dashboard",
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "gradient-heavy"
+   ],
+   "tags": [
+    "fintech",
+    "chart",
+    "sparkline",
+    "chips",
+    "trends",
+    "insights",
+    "tab-bar"
+   ],
+   "quality": "Clear capture; the chart cards and chip labels are legible."
+  }
+ }
+}
