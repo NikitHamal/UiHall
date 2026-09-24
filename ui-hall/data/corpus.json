@@ -2,11 +2,11 @@
  "version": "1.0.0",
  "generated_from": "E:\\Downloads",
  "totals": {
-  "assets": 517,
-  "images": 311,
-  "videos": 206,
-  "clips": 175,
-  "described": 517
+  "assets": 511,
+  "images": 310,
+  "videos": 201,
+  "clips": 170,
+  "described": 511
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 343
+   "count": 339
   },
   {
    "id": "app-store-screens",
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 39
+   "count": 38
   },
   {
    "id": "design-system",
@@ -70,7 +70,7 @@
    "label": "Motion demo",
    "blurb": "Clips whose whole point is the transition, not the static screen.",
    "icon": "play",
-   "count": 10
+   "count": 9
   },
   {
    "id": "promo-reel",
@@ -96,12 +96,12 @@
   {
    "id": "flow-walkthrough",
    "label": "flow-walkthrough",
-   "count": 207
+   "count": 202
   },
   {
    "id": "marketing",
    "label": "marketing",
-   "count": 31
+   "count": 30
   },
   {
    "id": "mockup",
@@ -145,7 +145,7 @@
   },
   {
    "id": "hero",
-   "count": 46
+   "count": 45
   },
   {
    "id": "home",
@@ -165,7 +165,7 @@
   },
   {
    "id": "landing-section",
-   "count": 17
+   "count": 16
   },
   {
    "id": "editor",
@@ -227,39 +227,39 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 307
+   "count": 303
   },
   {
    "id": "minimal",
-   "count": 235
+   "count": 232
   },
   {
    "id": "dark-mode",
-   "count": 165
-  },
-  {
-   "id": "card-based",
-   "count": 134
+   "count": 163
   },
   {
    "id": "rounded",
-   "count": 133
+   "count": 132
+  },
+  {
+   "id": "card-based",
+   "count": 132
   },
   {
    "id": "editorial",
-   "count": 45
+   "count": 44
   },
   {
    "id": "data-dense",
    "count": 40
   },
   {
-   "id": "bold-typography",
+   "id": "soft",
    "count": 33
   },
   {
-   "id": "soft",
-   "count": 33
+   "id": "bold-typography",
+   "count": 31
   },
   {
    "id": "flat",
@@ -340,10 +340,6 @@
    "count": 30
   },
   {
-   "id": "ai",
-   "count": 30
-  },
-  {
    "id": "progress",
    "count": 28
   },
@@ -352,7 +348,7 @@
    "count": 28
   },
   {
-   "id": "typography",
+   "id": "ai",
    "count": 27
   },
   {
@@ -360,11 +356,11 @@
    "count": 27
   },
   {
-   "id": "photo",
+   "id": "typography",
    "count": 26
   },
   {
-   "id": "onboarding",
+   "id": "photo",
    "count": 26
   },
   {
@@ -372,12 +368,12 @@
    "count": 25
   },
   {
-   "id": "comparison",
-   "count": 24
+   "id": "onboarding",
+   "count": 25
   },
   {
-   "id": "illustration",
-   "count": 21
+   "id": "comparison",
+   "count": 24
   },
   {
    "id": "avatar",
@@ -386,6 +382,10 @@
   {
    "id": "balance",
    "count": 21
+  },
+  {
+   "id": "illustration",
+   "count": 20
   },
   {
    "id": "grid",
@@ -448,10 +448,6 @@
    "count": 14
   },
   {
-   "id": "list",
-   "count": 14
-  },
-  {
    "id": "animation",
    "count": 14
   },
@@ -476,14 +472,6 @@
    "count": 13
   },
   {
-   "id": "settings",
-   "count": 13
-  },
-  {
-   "id": "landing-page",
-   "count": 12
-  },
-  {
    "id": "numeral",
    "count": 12
   },
@@ -493,6 +481,10 @@
   },
   {
    "id": "green",
+   "count": 11
+  },
+  {
+   "id": "landing-page",
    "count": 11
   },
   {
@@ -512,6 +504,10 @@
    "count": 11
   },
   {
+   "id": "list",
+   "count": 11
+  },
+  {
    "id": "delivery",
    "count": 10
   },
@@ -521,6 +517,10 @@
   },
   {
    "id": "price",
+   "count": 10
+  },
+  {
+   "id": "settings",
    "count": 10
   },
   {
@@ -553,10 +553,6 @@
   },
   {
    "id": "nav-bar",
-   "count": 8
-  },
-  {
-   "id": "education",
    "count": 8
   },
   {
@@ -628,6 +624,10 @@
    "count": 7
   },
   {
+   "id": "education",
+   "count": 7
+  },
+  {
    "id": "template",
    "count": 7
   },
@@ -672,10 +672,6 @@
    "count": 7
   },
   {
-   "id": "dark-mode",
-   "count": 7
-  },
-  {
    "id": "motion",
    "count": 7
   },
@@ -693,10 +689,6 @@
   },
   {
    "id": "statistics",
-   "count": 6
-  },
-  {
-   "id": "serif",
    "count": 6
   },
   {
@@ -792,10 +784,6 @@
    "count": 6
   },
   {
-   "id": "profile",
-   "count": 6
-  },
-  {
    "id": "empty-state",
    "count": 6
   },
@@ -805,6 +793,10 @@
   },
   {
    "id": "screenshot",
+   "count": 6
+  },
+  {
+   "id": "dark-mode",
    "count": 6
   },
   {
@@ -825,6 +817,10 @@
   },
   {
    "id": "pink",
+   "count": 5
+  },
+  {
+   "id": "serif",
    "count": 5
   },
   {
@@ -904,10 +900,6 @@
    "count": 5
   },
   {
-   "id": "notifications",
-   "count": 5
-  },
-  {
    "id": "design-tool",
    "count": 5
   },
@@ -916,11 +908,11 @@
    "count": 5
   },
   {
-   "id": "button",
+   "id": "profile",
    "count": 5
   },
   {
-   "id": "unclear",
+   "id": "button",
    "count": 5
   },
   {
@@ -937,10 +929,6 @@
   },
   {
    "id": "exploration",
-   "count": 4
-  },
-  {
-   "id": "books",
    "count": 4
   },
   {
@@ -1012,6 +1000,10 @@
    "count": 4
   },
   {
+   "id": "notifications",
+   "count": 4
+  },
+  {
    "id": "property",
    "count": 4
   },
@@ -1076,6 +1068,10 @@
    "count": 4
   },
   {
+   "id": "unclear",
+   "count": 4
+  },
+  {
    "id": "blur",
    "count": 3
   },
@@ -1113,6 +1109,10 @@
   },
   {
    "id": "legend",
+   "count": 3
+  },
+  {
+   "id": "books",
    "count": 3
   },
   {
@@ -1349,10 +1349,6 @@
   },
   {
    "id": "texture",
-   "count": 2
-  },
-  {
-   "id": "blue",
    "count": 2
   },
   {
@@ -1864,10 +1860,6 @@
    "count": 1
   },
   {
-   "id": "diagonal",
-   "count": 1
-  },
-  {
    "id": "sphere",
    "count": 1
   },
@@ -2260,6 +2252,10 @@
    "count": 1
   },
   {
+   "id": "blue",
+   "count": 1
+  },
+  {
    "id": "histogram",
    "count": 1
   },
@@ -2317,10 +2313,6 @@
   },
   {
    "id": "abstract",
-   "count": 1
-  },
-  {
-   "id": "companion",
    "count": 1
   },
   {
@@ -2433,14 +2425,6 @@
   },
   {
    "id": "moodboard",
-   "count": 1
-  },
-  {
-   "id": "captions",
-   "count": 1
-  },
-  {
-   "id": "video-editing",
    "count": 1
   },
   {
@@ -4269,78 +4253,6 @@
    "quality": "Clear capture; the step captions and the final button label are legible.",
    "src": "assets/img/IMG-0185.webp",
    "thumb": "assets/thumb/IMG-0185.webp"
-  },
-  {
-   "id": "IMG-0186",
-   "kind": "image",
-   "category": "website",
-   "type": "marketing",
-   "title": "Education landing page built on a diagonal blue field",
-   "description": "A light web hero split by a strong diagonal: a deep blue wedge sweeps from the lower left up to the upper right, carrying a white display serif headline that reads across two lines, a small caption line beneath it, and a dark outlined button. The logo sits in the upper right corner. In the lower left, against the white ground, an arrangement of illustrated objects is laid out: a stack of books, a spiral notepad, a tablet standing upright, a lidded cup and a set of pencils, drawn in the same blue and white with soft shadows. The diagonal is doing the compositional work, and it lets one page hold both a formal serif headline and a playful illustrated still life without the two fighting.",
-   "roles": [
-    "hero",
-    "landing-section"
-   ],
-   "style": [
-    "bold-typography",
-    "editorial",
-    "light-mode"
-   ],
-   "tags": [
-    "blue",
-    "books",
-    "diagonal",
-    "education",
-    "illustration",
-    "landing-page",
-    "serif"
-   ],
-   "palette": [
-    "#F9FBFC",
-    "#08276C",
-    "#4684EA",
-    "#AABEDE",
-    "#0E52DB",
-    "#5E7399"
-   ],
-   "palette_detail": [
-    {
-     "hex": "#F9FBFC",
-     "pct": 53.9
-    },
-    {
-     "hex": "#08276C",
-     "pct": 19.3
-    },
-    {
-     "hex": "#4684EA",
-     "pct": 9.1
-    },
-    {
-     "hex": "#AABEDE",
-     "pct": 7.4
-    },
-    {
-     "hex": "#0E52DB",
-     "pct": 7.1
-    },
-    {
-     "hex": "#5E7399",
-     "pct": 3.2
-    }
-   ],
-   "w": 1080,
-   "h": 1350,
-   "orientation": "portrait",
-   "aspect": 0.8,
-   "synthetic": false,
-   "origin": {
-    "path": "E:\\Downloads\\NEBians learning community post.png",
-    "bytes": 1953234
-   },
-   "quality": "Clear capture; the headline and the illustrated objects are legible.",
-   "src": "assets/img/IMG-0186.webp",
-   "thumb": "assets/thumb/IMG-0186.webp"
   },
   {
    "id": "IMG-0187",
@@ -24954,158 +24866,6 @@
    }
   },
   {
-   "id": "VID-0056",
-   "kind": "video",
-   "category": "mobile-app-ui",
-   "type": "flow-walkthrough",
-   "title": "AI assistant app — topic management and alerts list",
-   "description": "A grey iPhone mockup on white showing a list-based app screen: a profile row with a name and a 'Today / No calls' summary, followed by grouped rows for managing topics, an 'Alerts Learning' item, a card inviting the user to create with new words, and a section with small explanatory copy about topic intelligence. Light grey background, white cards, dark text and a small green accent indicator.",
-   "roles": [],
-   "style": [
-    "card-based",
-    "light-mode",
-    "minimal"
-   ],
-   "tags": [
-    "ai",
-    "list",
-    "onboarding",
-    "settings"
-   ],
-   "palette": [
-    "#BEBDC0",
-    "#000000",
-    "#B0AFB4",
-    "#282828",
-    "#757581",
-    "#254B99"
-   ],
-   "palette_detail": [
-    {
-     "hex": "#BEBDC0",
-     "pct": 57.4
-    },
-    {
-     "hex": "#000000",
-     "pct": 17.5
-    },
-    {
-     "hex": "#B0AFB4",
-     "pct": 13.3
-    },
-    {
-     "hex": "#282828",
-     "pct": 5.2
-    },
-    {
-     "hex": "#757581",
-     "pct": 3.4
-    },
-    {
-     "hex": "#254B99",
-     "pct": 3.2
-    }
-   ],
-   "w": 478,
-   "h": 850,
-   "orientation": "portrait",
-   "aspect": 0.5624,
-   "synthetic": false,
-   "origin": {
-    "path": "E:\\Downloads\\WhatsApp Video 2026-07-20 at 9.27.33 PM.mp4",
-    "bytes": 26280022
-   },
-   "src": "assets/vid/VID-0056.webp",
-   "thumb": "assets/thumb/VID-0056.webp",
-   "motion": 12.37,
-   "duration_s": 105.9,
-   "fps": 60.0,
-   "clip": "assets/vid/VID-0056.webm",
-   "clip_meta": {
-    "w": 478,
-    "h": 850,
-    "fps": 24,
-    "duration_s": 20.0,
-    "bytes": 3312379
-   }
-  },
-  {
-   "id": "VID-0057",
-   "kind": "video",
-   "category": "mobile-app-ui",
-   "type": "flow-walkthrough",
-   "title": "Same AI assistant app — notification/settings list (second shot)",
-   "description": "A second frame from the same grey iPhone mockup: an identical list layout with a profile row and a 'Today / No calls' summary, a group of settings rows (topic management, alerts learning, personalisation) and small caption text under each. Same light grey and white palette with dark typography and a green accent, shown as a scroll/screen transition.",
-   "roles": [],
-   "style": [
-    "card-based",
-    "light-mode",
-    "minimal"
-   ],
-   "tags": [
-    "ai",
-    "list",
-    "notifications",
-    "settings"
-   ],
-   "palette": [
-    "#BDBCBF",
-    "#000000",
-    "#272727",
-    "#B2AFB5",
-    "#9293A0",
-    "#646363"
-   ],
-   "palette_detail": [
-    {
-     "hex": "#BDBCBF",
-     "pct": 73.3
-    },
-    {
-     "hex": "#000000",
-     "pct": 16.9
-    },
-    {
-     "hex": "#272727",
-     "pct": 5.6
-    },
-    {
-     "hex": "#B2AFB5",
-     "pct": 2.6
-    },
-    {
-     "hex": "#9293A0",
-     "pct": 0.8
-    },
-    {
-     "hex": "#646363",
-     "pct": 0.8
-    }
-   ],
-   "w": 478,
-   "h": 850,
-   "orientation": "portrait",
-   "aspect": 0.5624,
-   "synthetic": false,
-   "origin": {
-    "path": "E:\\Downloads\\New project.mp4",
-    "bytes": 407657
-   },
-   "src": "assets/vid/VID-0057.webp",
-   "thumb": "assets/thumb/VID-0057.webp",
-   "motion": 3.96,
-   "duration_s": 7.4,
-   "fps": 60.0,
-   "clip": "assets/vid/VID-0057.webm",
-   "clip_meta": {
-    "w": 478,
-    "h": 850,
-    "fps": 24,
-    "duration_s": 7.4,
-    "bytes": 832263
-   }
-  },
-  {
    "id": "VID-0060",
    "kind": "video",
    "category": "design-system",
@@ -25403,82 +25163,6 @@
     "fps": 24,
     "duration_s": 12.8,
     "bytes": 1253739
-   }
-  },
-  {
-   "id": "VID-0065",
-   "kind": "video",
-   "category": "mobile-app-ui",
-   "type": "flow-walkthrough",
-   "title": "AI companion profile card — 'Neby' on purple gradient",
-   "description": "A phone-sized card with a violet gradient header containing a rounded blob avatar, a back arrow and a menu glyph; below on white, the name 'Neby' in large bold type, the handle '@neby' in grey, and an 'AI Companion' chip with a sparkle icon. Reads as an iOS profile/settings sheet with a clean, friendly visual style.",
-   "roles": [],
-   "style": [
-    "light-mode",
-    "minimal",
-    "rounded"
-   ],
-   "tags": [
-    "ai",
-    "companion",
-    "profile",
-    "settings"
-   ],
-   "palette": [
-    "#F8F8FA",
-    "#6003DA",
-    "#7829ED",
-    "#8D58F1",
-    "#CBD3F0",
-    "#324EA5"
-   ],
-   "palette_detail": [
-    {
-     "hex": "#F8F8FA",
-     "pct": 51.8
-    },
-    {
-     "hex": "#6003DA",
-     "pct": 16.6
-    },
-    {
-     "hex": "#7829ED",
-     "pct": 14.0
-    },
-    {
-     "hex": "#8D58F1",
-     "pct": 9.2
-    },
-    {
-     "hex": "#CBD3F0",
-     "pct": 6.5
-    },
-    {
-     "hex": "#324EA5",
-     "pct": 1.9
-    }
-   ],
-   "w": 1080,
-   "h": 1080,
-   "orientation": "square",
-   "aspect": 1.0,
-   "synthetic": false,
-   "origin": {
-    "path": "E:\\Downloads\\nebybot.mp4",
-    "bytes": 5165209
-   },
-   "src": "assets/vid/VID-0065.webp",
-   "thumb": "assets/thumb/VID-0065.webp",
-   "motion": 7.08,
-   "duration_s": 30.7,
-   "fps": 55.0,
-   "clip": "assets/vid/VID-0065.webm",
-   "clip_meta": {
-    "w": 720,
-    "h": 720,
-    "fps": 24,
-    "duration_s": 20.0,
-    "bytes": 3696894
    }
   },
   {
@@ -28672,80 +28356,6 @@
     "fps": 24,
     "duration_s": 10.0,
     "bytes": 6652163
-   }
-  },
-  {
-   "id": "VID-0121",
-   "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Video-editing demo with sentence-focus and gestural editing captions",
-   "description": "A screen recording of a video-editing workflow: a person on camera in the lower half of the frame with overlaid caption text reading 'FOCUS BY SENTENCE / clause-by-clause, word-by-word' and 'GESTURAL EDITING / WRITING', plus a yellow dot marker over the image. The editing-app chrome is minimal and the frame is dominated by the demo footage and captions.",
-   "roles": [],
-   "style": [
-    "bold-typography",
-    "dark-mode"
-   ],
-   "tags": [
-    "captions",
-    "typography",
-    "video-editing"
-   ],
-   "palette": [
-    "#0A0A0A",
-    "#605C5B",
-    "#443F3E",
-    "#252222",
-    "#877D7C",
-    "#D7D6D4"
-   ],
-   "palette_detail": [
-    {
-     "hex": "#0A0A0A",
-     "pct": 31.8
-    },
-    {
-     "hex": "#605C5B",
-     "pct": 27.1
-    },
-    {
-     "hex": "#443F3E",
-     "pct": 17.4
-    },
-    {
-     "hex": "#252222",
-     "pct": 16.2
-    },
-    {
-     "hex": "#877D7C",
-     "pct": 5.8
-    },
-    {
-     "hex": "#D7D6D4",
-     "pct": 1.8
-    }
-   ],
-   "w": 1280,
-   "h": 720,
-   "orientation": "landscape",
-   "aspect": 1.7778,
-   "synthetic": false,
-   "origin": {
-    "path": "E:\\Downloads\\uQbvKF2Yq0LB86np.mp4",
-    "bytes": 2972388
-   },
-   "src": "assets/vid/VID-0121.webp",
-   "thumb": "assets/thumb/VID-0121.webp",
-   "motion": 21.9,
-   "duration_s": 25.4,
-   "fps": 30.0,
-   "clip": "assets/vid/VID-0121.webm",
-   "clip_meta": {
-    "w": 720,
-    "h": 404,
-    "fps": 24,
-    "duration_s": 20.0,
-    "bytes": 6162953
    }
   },
   {
@@ -32859,79 +32469,6 @@
     "fps": 24,
     "duration_s": 10.2,
     "bytes": 2426445
-   }
-  },
-  {
-   "id": "VID-0216",
-   "kind": "video",
-   "category": "mobile-app-ui",
-   "type": "flow-walkthrough",
-   "title": "Near-black screen with faint list rows, content unreadable",
-   "description": "A very dark frame containing faint horizontal rows of small coloured marks and dim text-like lines, suggesting a dark-mode list or menu but far too dark and small to identify. No readable labels; classification is uncertain.",
-   "roles": [],
-   "style": [
-    "dark-mode"
-   ],
-   "tags": [
-    "dark-mode",
-    "list",
-    "unclear"
-   ],
-   "palette": [
-    "#171F28",
-    "#24282D",
-    "#161418",
-    "#3B2019",
-    "#504134",
-    "#9E6E50"
-   ],
-   "palette_detail": [
-    {
-     "hex": "#171F28",
-     "pct": 63.8
-    },
-    {
-     "hex": "#24282D",
-     "pct": 20.5
-    },
-    {
-     "hex": "#161418",
-     "pct": 5.8
-    },
-    {
-     "hex": "#3B2019",
-     "pct": 4.9
-    },
-    {
-     "hex": "#504134",
-     "pct": 4.0
-    },
-    {
-     "hex": "#9E6E50",
-     "pct": 1.0
-    }
-   ],
-   "w": 3024,
-   "h": 1900,
-   "orientation": "landscape",
-   "aspect": 1.5916,
-   "synthetic": false,
-   "origin": {
-    "path": "E:\\Downloads\\EuDClrCsO8nySy0v.mp4",
-    "bytes": 85030453
-   },
-   "src": "assets/vid/VID-0216.webp",
-   "thumb": "assets/thumb/VID-0216.webp",
-   "motion": 10.62,
-   "duration_s": 61.2,
-   "fps": 57.53,
-   "clip": "assets/vid/VID-0216.webm",
-   "clip_meta": {
-    "w": 720,
-    "h": 452,
-    "fps": 24,
-    "duration_s": 20.0,
-    "bytes": 13180583
    }
   },
   {

@@ -81,6 +81,12 @@
   "VID-0187": "Game tooling (tilemap editor), off-topic for product UI",
   "VID-0254": "Standalone logo animation, not interface design",
   "VID-0299": "Raw pixel-art gameplay, not an interface demo",
-  "VID-0303": "Standalone book cover, no interface on it"
+   "VID-0303": "Standalone book cover, no interface on it",
+   "IMG-0186": "Own brand work (NEBians)",
+   "VID-0056": "Promo-style AI assistant screens, no interface pattern worth studying",
+   "VID-0057": "Promo-style AI assistant screens, second shot of the same promo",
+   "VID-0065": "Branded AI-companion promo card ('Neby'), not interface design",
+   "VID-0121": "Talking-head editing demo, the subject is a person not an interface",
+   "VID-0216": "Raw gameplay footage, content unreadable"
  }
 }
