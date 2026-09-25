@@ -1,10 +1,10 @@
 /**
  * Zero-dependency static file server for UI Hall.
  *
- *   node tools/serve.mjs            -> http://127.0.0.1:8788
- *   node tools/serve.mjs 9000       -> http://127.0.0.1:9000
+ *   node tools/serve.mjs            -> http://0.0.0.0:8788
+ *   node tools/serve.mjs 9000       -> http://0.0.0.0:9000
  *
- * Serves E:/Stormy/ui-hall so relative asset paths resolve the way they will
+ * Serves ui-hall/ so relative asset paths resolve the way they will
  * when the folder is deployed. Range requests are supported because the browser
  * issues them for <video> playback.
  */
@@ -79,7 +79,7 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, "127.0.0.1", () => {
-  console.log(`UI Hall  ->  http://127.0.0.1:${PORT}/`);
+server.listen(PORT, "0.0.0.0", () => {
+  console.log(`UI Hall  ->  http://0.0.0.0:${PORT}/`);
   console.log(`root: ${ROOT}`);
 });

@@ -72,6 +72,20 @@ asset_image(id="IMG-0XXX")
 tells you the proportions, the rhythm, and whether it looks good. This is the step agents
 skip and it is the step that matters.
 
+### 2b. Pull the whole app, not one screen
+
+Many assets belong to a verified set — several screens of one product, confirmed by looking
+at every member. When the brief touches an app that has a group, design against the group:
+
+```
+list_groups(query="crm")          # MCP
+get_asset(id="IMG-0518")          # the record includes its group + sibling screens
+```
+
+Consistency across an app's screens is visible to users instantly; a redesign that nails
+one screen and contradicts its siblings reads as careless. Groups marked `verified` are
+facts; the rest come from title prefixes and are only a hint.
+
 ### 3. Steal structure, not skin
 
 The most common mistake is copying a screen's *surface* — its gradient, its illustration —
@@ -169,28 +183,29 @@ These matter more than looking confident:
 `scripts/stormy.mjs` drives the corpus directly when the MCP is not connected:
 
 ```bash
-NODE="C:/Users/Acer/.workbuddy-ai/binaries/node/versions/22.22.2-3/node.exe"
-
 # what can the corpus speak to
-"$NODE" scripts/stormy.mjs facets --limit 30
+node skills/stormy-design/scripts/stormy.mjs facets --limit 30
 
 # search
-"$NODE" scripts/stormy.mjs search "dark crypto wallet balance" --surface dark --limit 5
+node skills/stormy-design/scripts/stormy.mjs search "dark crypto wallet balance" --surface dark --limit 5
 
 # the full write-up for one asset
-"$NODE" scripts/stormy.mjs asset IMG-0055 --markdown
+node skills/stormy-design/scripts/stormy.mjs asset IMG-0055 --markdown
 
 # a synthesised brief
-"$NODE" scripts/stormy.mjs brief "onboarding for a sleep tracker" --platform ios
+node skills/stormy-design/scripts/stormy.mjs brief "onboarding for a sleep tracker" --platform ios
 
 # palettes
-"$NODE" scripts/stormy.mjs palette "warm and quiet" --surface dark
+node skills/stormy-design/scripts/stormy.mjs palette "warm and quiet" --surface dark
 
 # comparison evidence
-"$NODE" scripts/stormy.mjs compare "wallet"
+node skills/stormy-design/scripts/stormy.mjs compare "wallet"
+
+# verified same-app sets
+node skills/stormy-design/scripts/stormy.mjs groups --query crm
 
 # where the files are
-"$NODE" scripts/stormy.mjs image IMG-0055
+node skills/stormy-design/scripts/stormy.mjs image IMG-0055
 ```
 
 `scripts/corpus_stats.mjs` prints a summary of what the corpus contains and how much of it
@@ -206,8 +221,8 @@ The server speaks stdio and needs no install:
 {
   "mcpServers": {
     "stormy": {
-      "command": "C:/Users/Acer/.workbuddy-ai/binaries/node/versions/22.22.2-3/node.exe",
-      "args": ["E:/Stormy/stormy-mcp/server.js"]
+      "command": "node",
+      "args": ["/path/to/checkout/stormy-mcp/server.js"]
     }
   }
 }
@@ -216,7 +231,7 @@ The server speaks stdio and needs no install:
 Verify it before relying on it:
 
 ```bash
-"C:/Users/Acer/.workbuddy-ai/binaries/node/versions/22.22.2-3/node.exe" E:/Stormy/stormy-mcp/selftest.js
+node stormy-mcp/selftest.js
 ```
 
 ---

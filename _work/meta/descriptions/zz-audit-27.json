@@ -1,0 +1,412 @@
+{
+ "items": [
+  {
+   "id": "IMG-0512",
+   "category": "illustration",
+   "type": "component",
+   "title": "Six flat avatar portraits on pastel circles",
+   "description": "A 2x3 grid of flat-illustration avatar portraits in pastel circles: an afro with purple hoodie, green curls with yellow tee, green braids with coral top, a blue bucket hat with purple jacket, a blue cap and beard with blue tee, and an orange headwrap with tan top. A diverse avatar set.",
+   "roles": [
+    "component"
+   ],
+   "style": [
+    "light-mode",
+    "playful"
+   ],
+   "tags": [
+    "avatar",
+    "illustration",
+    "portrait",
+    "people",
+    "character",
+    "artwork"
+   ]
+  },
+  {
+   "id": "VID-0302",
+   "category": "illustration",
+   "type": "flow-walkthrough",
+   "title": "Transit-map lines forming a human silhouette",
+   "description": "A transit-map-style generative animation: dozens of coloured metro lines run vertically and bend at angles to form a person's bust (round head, sloping shoulders) on a cream grid-paper field, with thinner route lines and station ticks around it. A line-art morph.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "transit",
+    "line-art",
+    "generative-art",
+    "animation",
+    "motion",
+    "map"
+   ]
+  },
+  {
+   "id": "IMG-0499",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "WorkStation dashboard - productivity KPIs and project timeline",
+   "description": "A blue 'WorkStation' dashboard: 'Good Morning, Lukmon!', KPI tiles (206 Total Work Hour, 97 Tasks Completed, 34 Total Active Projects, $5,000 Budget Allocation), Daily Productivity 986 with Mon-Fri bars, a Project Timeline, a Project Summary donut (620), calendar and Upcoming Schedules list. A productivity overview.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "analytics",
+    "kpi",
+    "bar-chart",
+    "calendar",
+    "timeline",
+    "productivity",
+    "sidebar"
+   ]
+  },
+  {
+   "id": "IMG-0526",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "Owo budget dashboard - naira totals and spending flow",
+   "description": "A green 'Owo' budgeting dashboard: Total Budget N23,565.00, Income N40,295.00, Expenses N23,560.00, a segmented strip, 'Budget Spending Flow' monthly bars with July 2025 highlighted, a Last 6 Months shape and a Budget Spending Breakdown table (Dining, Entertainment, Groceries, Miscellaneous). A naira personal-finance view.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "budget",
+    "spending",
+    "finance",
+    "naira",
+    "bar-chart",
+    "table",
+    "analytics"
+   ]
+  },
+  {
+   "id": "IMG-0528",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "HealthFirst hospital dashboard - patients, beds and trends",
+   "description": "A blue 'HealthFirst' hospital dashboard: KPIs (97 Doctors, 207 Patients, 27 Appointments, 118 Bed Occupancy), an August 2025 appointments calendar, a 'Patients by Age' rainbow gauge (Total 794), a Disease Trends radar, a Routine Heart Checkup list and a Patients Trend step chart. A clinical overview.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "medical",
+    "health",
+    "kpi",
+    "calendar",
+    "gauge",
+    "analytics",
+    "chart"
+   ]
+  },
+  {
+   "id": "IMG-0500",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "Payrolls dashboard - cost overview and payroll list",
+   "description": "A purple payrolls dashboard: a due-in-3-days submission banner, KPIs (Payrolls Cost $10,500, Total Expense $2,560, Pending payments $8,600, Total Payroles 329), 'Payroll Cost Overview' stacked bars with May 2026 highlighted, a 'Bonuses and Incentives' donut ($12,000) and a Payroll list with pun names (Hazel Nutt, Simon Cyrene, Alda Bugg, Peg Legge) in Completed/Pending states.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "payments",
+    "kpi",
+    "bar-chart",
+    "table",
+    "status",
+    "analytics",
+    "earnings"
+   ]
+  },
+  {
+   "id": "IMG-0525",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "Profile Performance report - cross-network social analytics",
+   "description": "A 'Reports / Profile Performance' social analytics page: KPIs (89,670 Impressions, 874 Engagements, 95% Engagement Rate, 91 Post Link Clicks), Audience Demographics (age bands, gender, Top Locations: Nigeria 44%), a multi-line Engagement Rate chart across X (Twitter), Facebook, LinkedIn and Instagram, Hashtag Performance and a rate-metrics table.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "social",
+    "analytics",
+    "report",
+    "chart",
+    "table",
+    "kpi"
+   ]
+  },
+  {
+   "id": "IMG-0527",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "ShipFaster logistics dashboard - deliveries, gauge and tracking",
+   "description": "An orange 'ShipFaster' logistics dashboard: KPIs (98% On-Time Deliveries, 2,983 Total Deliveries, 203 Total Vehicles, 95% Driver Behavior Score), a revenue gauge (Total $140,000D), a Shipment Tracking map with a status timeline (Order Confirmed, In Sorting Center, In Transit), Shipment Statistics lines and a shipments table. A delivery-ops view.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "logistics",
+    "tracking",
+    "map",
+    "gauge",
+    "kpi",
+    "chart",
+    "table",
+    "delivery"
+   ]
+  },
+  {
+   "id": "IMG-0518",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "CloseCRM analytics - revenue trend, funnel and targets",
+   "description": "A 'CloseCRM' analytics screen: KPIs (425 Deals Won, 1,847 Active Leads, 32.8% Win Rate, $350,000 Total Revenue), a Revenue Trend bar chart with April highlighted ($27,832), an Activity Breakdown donut (2,122: calls, emails, meetings, tasks), a Last Month Sales Funnel (Leads 820, Qualified 425, Proposal 212) and a Monthly Revenue Target bar (84.3%).",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "crm",
+    "analytics",
+    "kpi",
+    "bar-chart",
+    "funnel",
+    "sidebar"
+   ]
+  },
+  {
+   "id": "IMG-0521",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "CloseCRM contacts table - company logos and statuses",
+   "description": "A 'CloseCRM' contacts table: rows (Mason Thompson/Stripe, Logan Mitchell/Open.ru, Lucas Andersson/Invision, Jackson Brooks/Halo Collar, Aiden Parker/Patreon, Caleb Reed/Google, plus Discord, TikTok, LinkedIn, Notion, Pinterest) with company logos, emails, phones, Active/Lead/Lost status chips and Last Contacted dates.",
+   "roles": [
+    "dashboard",
+    "list"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "crm",
+    "contacts",
+    "table",
+    "data-table",
+    "status"
+   ]
+  },
+  {
+   "id": "IMG-0520",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "CloseCRM companies table - revenue, status, industry",
+   "description": "A 'CloseCRM' companies table: rows for Stripe $70.0M, Open.ru $24.0M, Invision $2.0M, Halo Collar $55.0M, Patreon $13.0M, Google $12.0B, Ok, Discord, Foursquare, Loom, TikTok, LinkedIn, Notion and Pinterest with Revenue, Partner/Prospect/Customer status, Employees, Industry chips and owner John Smith.",
+   "roles": [
+    "dashboard",
+    "list"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "crm",
+    "table",
+    "data-table",
+    "revenue",
+    "status"
+   ]
+  },
+  {
+   "id": "IMG-0519",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "CloseCRM dashboard - deals, upcoming and activity feed",
+   "description": "A 'CloseCRM' dashboard: KPIs (377 Total Leads, 467 Active Deals, 122 Won Deals), Recently Updated Deals (Security Audit & Implementation $35k, Training & Support Contract $18k, Cloud Infrastructure Setup $85k, Annual Software License $45k), Upcoming This Week (Mason Thompson, Emily Rodriguez) and a Recent Activity feed (Call, Meeting, Note, Follow-up).",
+   "roles": [
+    "dashboard",
+    "list"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "crm",
+    "kpi",
+    "activity",
+    "timeline"
+   ]
+  },
+  {
+   "id": "IMG-0536",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "Structurely contacts - light row context menu",
+   "description": "A light 'Structurely' contacts/leads table: filter tabs (Responded, Qualified, Appointment Request, Live Transferred, Live Transfer Successful), rows (Thomas Anderson, Kevin O'Connor, Sarah Mitchell, Laura Chen, Marcus Webb, Diane Foster...) with campaigns (FHA Refi Outreach, VA IRRRL Streamline, Conventional Refi Alert, Rate Drop) and an open light context menu (Message, Add task, Add tags, Bulk AI dial, Enroll in campaign).",
+   "roles": [
+    "dashboard",
+    "list"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "crm",
+    "contacts",
+    "table",
+    "context-menu",
+    "campaign"
+   ]
+  },
+  {
+   "id": "IMG-0535",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "Structurely contacts - dark bulk menu and action bar",
+   "description": "The same light 'Structurely' contacts table with a dark context menu open (Add task, Add tags, Bulk AI dial, Enroll in campaign) and a bottom bulk-action bar (Assign user, Close, Open, Mute, Unmute, Assign agent, More). The selection state of the lead list.",
+   "roles": [
+    "dashboard",
+    "list"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "crm",
+    "contacts",
+    "table",
+    "context-menu",
+    "action"
+   ]
+  },
+  {
+   "id": "IMG-0522",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "Support analytics - ticket volume and SLA breaches",
+   "description": "A light support 'Analytics' dashboard in yellow: KPIs (1,284 New Tickets, 326 Open, 42m First Response Time, 91.4% SLA Attainment), a yellow ticket-volume area chart, SLA status bars (Met/Within/Breached), a 'Tickets contributing to SLA breaches' table (Acme Company, Globex, Initech, Umbrella Corporation, Soyent) plus resolution-time and CSAT blocks.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "analytics",
+    "kpi",
+    "chart",
+    "table",
+    "yellow",
+    "ticket"
+   ]
+  },
+  {
+   "id": "IMG-0523",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "LeaseFlow analytics - leasing funnel and AI performance",
+   "description": "A beige 'LeaseFlow' leasing analytics screen: sidebar (Harborline, 6 properties; Leads 128, Conversations 38, Tours 12, Applications 24, Renewals 17), a hatched 'Leasing funnel' (Leads to Leased) with stage conversions (35.8%, 52.0%, 46.4%), 'AI performance' cards (97% response rate, 11% handoff, 42 sec) and a LeaseFlow AI toggle 'On - 38 chats, 4 need your review'.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "leasing",
+    "funnel",
+    "ai",
+    "kpi",
+    "analytics",
+    "sidebar",
+    "yellow"
+   ]
+  },
+  {
+   "id": "IMG-0524",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "LeaseFlow conversion - 8.6% hero and operations cards",
+   "description": "The right half of the 'LeaseFlow' analytics page: a yellow 'Overall lease conversion 8.6%' hero card (+1.2 pts, AI on since Jun 1, 128 leases from 1,482 leads) with an Apr-Sep line, funnel counts (1,482/918/531/276/172/128) and 'Leasing operations' cards (Tour no-show rate 9%, Application completion 81%, Renewal rate 72%, 42 sec response). Same product as IMG-0523.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "leasing",
+    "conversion",
+    "percentage",
+    "kpi",
+    "yellow",
+    "chart"
+   ]
+  },
+  {
+   "id": "IMG-0507",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "Crypto wallet - balance, actions and top assets",
+   "description": "A white crypto wallet in browser chrome (user Onipio Sajbur): an Ethereum $1,040.50 card, 'My Balance $102,540.00' on BNB Chain, an orange Deposit button with Withdraw/Swap/Transfer, a price chart with a June 2025 tooltip (44,008 BTC, +23.48%), Top Assets (Electroneum, Solana, Bitcoin, Ethereum, Ripple) and Top Gainers. A wallet overview.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "crypto",
+    "wallet",
+    "balance",
+    "fintech",
+    "chart",
+    "table",
+    "orange"
+   ]
+  },
+  {
+   "id": "IMG-0506",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "Raxon crypto management - market leaders and portfolio",
+   "description": "An orange 'Raxon' crypto-management screen in browser chrome (raxon.com): nav (Dashboard, Trade, Market, Analytics, Portfolio, OTC), coin cards (Bitcoin $12,540.00, Litecoin $135.10, Ripple $0.72), Market Leaders bars, Portfolio Value $83,727.90 with a line chart, and a Recent transactions table (Bitcoin +34.5%, Solana +36.7%).",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "crypto",
+    "fintech",
+    "portfolio",
+    "kpi",
+    "chart",
+    "table",
+    "orange"
+   ]
+  }
+ ]
+}

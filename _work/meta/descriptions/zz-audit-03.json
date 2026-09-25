@@ -1,0 +1,135 @@
+{
+  "items": [
+    {
+      "id": "IMG-0368",
+      "category": "mobile-app-ui",
+      "type": "screen",
+      "title": "Wellness explainer sheet - 'How your usual works' over a rose screen",
+      "description": "The rose wellness screen (blurred, 'High for the last three weeks') with a white bottom sheet titled 'How \"your usual\" works'. The sheet shows a small pink line chart labelled 'Your usual range' and three numbered steps: it starts from your first six check-ins and follows your last 12 weeks; it moves slowly, so one hard week doesn't reset it; only you see it and it is never compared with anyone. A soft pink 'Got it' button closes it. A methodology explainer that builds trust before the insight.",
+      "roles": ["onboarding", "detail"],
+      "style": ["gradient-heavy", "soft", "light-mode", "rounded"],
+      "tags": ["wellness", "explainer", "bottom-sheet", "steps", "mood", "privacy"],
+      "group": "GRP-wellness-rose"
+    },
+    {
+      "id": "IMG-0340",
+      "category": "mobile-app-ui",
+      "type": "screen",
+      "title": "Invoicing home - 'Needs you today' total with a chase list",
+      "description": "A freelance receivables 'Today' screen (Tuesday 22 September). A lead card states 'Needs you today $184,200 - $126,400 of it is realistically recoverable this week' with a tri-colour severity bar (3 high / 4 medium / 1 low) and a '6 accounts' chip. A 'Chase first / See all 6' list ranks overdue clients (Acme Corporation $42,800 18 days overdue, Nova Retail Group $28,900, Northstar Labs $18,400, Harbour & Lane $48,600). A green 'COLLECTAI' banner and a bottom nav (Today, Invoices, Customers, Inbox, Cash) close it. The screen prioritises by recoverability, not by age.",
+      "roles": ["dashboard", "home", "list"],
+      "style": ["card-based", "light-mode", "rounded"],
+      "tags": ["invoicing", "accounts-receivable", "balance", "list"],
+      "group": "GRP-invoicing"
+    },
+    {
+      "id": "IMG-0341",
+      "category": "mobile-app-ui",
+      "type": "screen",
+      "title": "Invoicing promises - kept-rate progress over a client list",
+      "description": "A 'Promises' screen in the same receivables app: '$128,400 promised across 14 accounts'. A white card leads with 'Kept rate 78% / Up 6 points' and a green progress bar. Filter chips (This week, Missed, All) sit above a client list (Vela Systems $14,200 On track, Acme Corporation $42,800, Cobalt Interactive $11,300, Harbour & Lane $12,400) and a 'Missed / Call both' section flagging Nova Retail Group $8,200. The bottom nav matches IMG-0340 (Today, Invoices, Customers, Inbox, Cash). It turns payment promises into a score you can keep.",
+      "roles": ["dashboard", "list"],
+      "style": ["card-based", "light-mode", "outlined"],
+      "tags": ["invoicing", "accounts-receivable", "progress", "badges", "list"],
+      "group": "GRP-invoicing"
+    },
+    {
+      "id": "IMG-0503",
+      "category": "mobile-app-ui",
+      "type": "mockup",
+      "title": "Sony WH-1000XM4 product page on a campus marketplace",
+      "description": "A clean product-detail mockup for Sony WH-1000XM4 headphones, priced ৳240,000 with 'Brand New. Available for pickup or campus delivery'. Sections: 'Sold by Campus Tech Store (Verified 4.8)', 'Delivery & Pickup' (Campus delivery 30-40 min / Pickup Go Building), and 'Reviews' with two five-star student reviews, ending in a full-width blue 'Add to Cart' button. A product photo on a neutral card heads the page. The currency is Bangladeshi taka and the context a campus marketplace.",
+      "roles": ["detail", "checkout"],
+      "style": ["card-based", "light-mode"],
+      "tags": ["e-commerce", "product-detail", "rating", "reviews"],
+      "group": "GRP-sony-headphones"
+    },
+    {
+      "id": "IMG-0357",
+      "category": "mobile-app-ui",
+      "type": "screen",
+      "title": "Android code editor with an open language picker",
+      "description": "An Android code/text editor on a sage background (Android Authority watermark). The editor shows 'Untitled-1' tabs, a 'Start typing...' canvas and a left icon rail. An open settings dropdown offers a 'Line numbers' toggle and a language list with 'Plaintext' ticked above Markdown, Kotlin, JavaScript and TypeScript. A bottom status bar reads 'Draft / INS Ln1 Col1' with a dark 'View' button. The language picker is the focal interaction.",
+      "roles": ["editor", "settings"],
+      "style": ["light-mode", "minimal"],
+      "tags": ["code-editor", "language-picker", "android", "dropdown"],
+      "quality": "Phone render on coloured backdrop; labels legible."
+    },
+    {
+      "id": "IMG-0361",
+      "category": "mobile-app-ui",
+      "type": "screen",
+      "title": "AI app-builder empty state - 'Turn your ideas into apps'",
+      "description": "A 'Your creations' screen with a small flat illustration (camera, triangle, shapes) and the pitch 'Turn your ideas into apps - Describe any perfect app in simple words, and AI builds it for you. No coding required.' above a blue 'Try it now' pill. A five-item bottom nav (Games, Apps, Search, Books, You) marks Apps active. A classic empty state for an AI no-code builder inside a broader store app.",
+      "roles": ["empty-state", "onboarding"],
+      "style": ["light-mode", "minimal", "illustration-led"],
+      "tags": ["ai-builder", "no-code", "empty-state", "cta"]
+    },
+    {
+      "id": "IMG-0223",
+      "category": "mobile-app-ui",
+      "type": "screen",
+      "title": "Dosebank home - health score hero with a care-plan list",
+      "description": "A dark health-app home greeting 'Good afternoon, Isaac Ayo'. The hero states 'Your health score 203 /300' in a huge white numeral, flanked by tiles '7h 52m Good' (blue) and '68bpm Stable' (red). A 'Today's Care Plan' list follows - Check Evening Glucose (8:00 PM), Exercise Routine (9:30 PM), Review Diet Plan - each with a 'Check in' pill. A floating pill nav (Today plus two round actions) closes it. The single composite score gives the screen one unambiguous focal number.",
+      "roles": ["home", "dashboard"],
+      "style": ["dark-mode", "bold-typography", "rounded", "gradient-heavy"],
+      "tags": ["health-score", "care-plan", "numeral", "metrics", "dark-ui"],
+      "group": "GRP-dosebank"
+    },
+    {
+      "id": "IMG-0222",
+      "category": "mobile-app-ui",
+      "type": "screen",
+      "title": "Dosebank dashboard - vertical metric bars with a to-do",
+      "description": "The same dark health app ('Good afternoon, Isaac Ayo') as a dashboard: a week strip (W 22 active) sits over three tall vertical bars - magenta heart-rate 68bpm, blue sleep 79% 7h 52m, orange steps 8,230 - with a legend on the right. A 'To-do' card lists 'Check Evening Glucose / Due at 8:00 PM' with a Check in button; a floating pill nav (Today plus actions) closes the screen. Vertical bars with rounded caps make three vitals scannable at a glance.",
+      "roles": ["dashboard", "home"],
+      "style": ["dark-mode", "data-dense", "rounded"],
+      "tags": ["health-score", "bar-chart", "metrics", "streak", "dark-ui"],
+      "group": "GRP-dosebank"
+    },
+    {
+      "id": "IMG-0421",
+      "category": "mobile-app-ui",
+      "type": "screen",
+      "title": "Dosebank action sheet - log dose, log health, add supply",
+      "description": "The dark app dimmed behind a stacked set of coloured action pills, right-aligned: 'Log dose' (purple), 'Log health' (amber), 'Add supply' (pink) and 'Create new plan' (blue), with a green circular X dismiss button bottom-right. The blurred header reads 'Dosebank'. A quick-add pattern: four primary verbs as saturated pills over the dimmed context, one thumb-reachable dismiss.",
+      "roles": ["navigation", "home"],
+      "style": ["dark-mode", "minimal", "rounded", "high-contrast"],
+      "tags": ["action", "quick-actions", "pill", "dark-ui", "fab"],
+      "group": "GRP-dosebank"
+    },
+    {
+      "id": "IMG-0422",
+      "category": "mobile-app-ui",
+      "type": "screen",
+      "title": "Dosebank dose-location sheet - body map with injection site",
+      "description": "A dark 'Dose Location' sheet over a dimmed 'Log dose' screen. A Front/Back segmented toggle sits above a line-drawn human figure whose left shoulder is highlighted in pink, captioned 'Left delt'. A lime 'Save' button pins the foot. The body map turns an injection-site choice into a direct-manipulation selection rather than a dropdown.",
+      "roles": ["form", "editor"],
+      "style": ["dark-mode", "minimal", "rounded", "high-contrast"],
+      "tags": ["body-map", "injection", "dosing", "lime"],
+      "group": "GRP-dosebank"
+    },
+    {
+      "id": "IMG-0423",
+      "category": "mobile-app-ui",
+      "type": "screen",
+      "title": "Dosebank dose calculator - syringe draw-to with inputs",
+      "description": "A dark 'Dose Calculator' screen centred on a glowing syringe illustration with 'Draw to 10 units' and 'Conc. 2.50 mg/mL / Vol. 0.10 mL'. Editable rows below: Desired dose 250 mcg, Vial amount 5 mg, Diluent added 2 ml, Syringe size 0.5 ml - each with a pencil affordance. The calculator converts a desired dose into a draw volume and shows it on the syringe itself.",
+      "roles": ["editor", "form"],
+      "style": ["dark-mode", "minimal", "rounded"],
+      "tags": ["dosing", "syringe", "calculator", "medical", "peptide"],
+      "group": "GRP-dosebank"
+    },
+    {
+      "id": "IMG-0424",
+      "category": "mobile-app-ui",
+      "type": "screen",
+      "title": "Dosebank supply - BPC-157 vial with a vial-size stepper",
+      "description": "A dark 'BPC-157' supply screen showing a rendered purple vial. Rows read 'Vial size 5.0 mg' and 'Vials to add 1 vial'. A lower sheet, 'Vial size', presents a big stepper numeral '2 mg' over a tick ruler with a lime 'Save' button. The screen manages peptide inventory; the lime save and dark ground match the rest of the app.",
+      "roles": ["form", "detail"],
+      "style": ["dark-mode", "minimal", "rounded", "high-contrast"],
+      "tags": ["vial", "peptide", "stepper", "dosing", "lime"],
+      "group": "GRP-dosebank"
+    }
+  ]
+}

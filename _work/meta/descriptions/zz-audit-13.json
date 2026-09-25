@@ -1,0 +1,507 @@
+{
+ "items": [
+  {
+   "id": "IMG-0351",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Creator-commerce triptych - browse videos, trending products, tools",
+   "description": "Three light screens of a creator-commerce app: 'Browse videos' (creator clips with sales sparklines), 'Trending products' (product cards with revenue/sold stats) and 'Tools' (Sandbox 'create a board', Script Viewer 'view the transcript or AI summary of a TikTok'). A video-to-shop analytics suite, not a finance app.",
+   "roles": [
+    "home",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "creator",
+    "commerce",
+    "video",
+    "analytics"
+   ]
+  },
+  {
+   "id": "IMG-0387",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "'Shop smarter' violet onboarding - splash, account, sign-up",
+   "description": "Three violet onboarding screens: a SALE illustration of headphones/sneakers with 'Shop smarter and save every time.', an 'Aiden Scott' account screen (Active Rides, Hotel Compare, Refer & Earn, Support, FAQs), and a 'Shop smarter' sign-up (Continue with Google/Apple, Full name/Email/Password, Create Account).",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "shopping",
+    "signup",
+    "violet",
+    "illustration"
+   ]
+  },
+  {
+   "id": "IMG-0305",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Personal finance triptych - balance, analytics donut, AI coach",
+   "description": "Three soft-gradient finance screens for Abdullah Al Mamun: 'Total Balance $12,750' with overview tiles and transaction history, 'Analytics $3,480' with a spending donut and trend line, and 'AI Finance Coach - Hi Lois, let's manage money smarter.' with prompt chips and a voice bar.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "finance",
+    "balance",
+    "analytics"
+   ]
+  },
+  {
+   "id": "IMG-0420",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "Travel triptych over an aerial-coast photograph",
+   "description": "Three frosted screens over a turquoise aerial coastline: 'Plan Book and Experience Seamless Travel!' topo panel, a Dhaka Bangladesh search home with destination stack, and 'Ticket Reservation - Select Flight' (Emirates CDG→DXB 7:25-15:35, Skyway LAX→JFK 8:45-16:20).",
+   "roles": [
+    "onboarding",
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "photographic",
+    "glassmorphism"
+   ],
+   "tags": [
+    "travel",
+    "booking"
+   ],
+   "group": "GRP-travel-triptych"
+  },
+  {
+   "id": "IMG-0381",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "'Ask a Question' homework scanner - type, scan, submit",
+   "description": "Three screens of an AI study helper: 'Ask a Question' with a robot mascot and orange compose bar, 'AI Scanner - Scan Your Question' over a photographed maths sheet at 75%, and a full form (Subject, Additional Notes, orange Submit Question). A homework-scanning flow, not a travel app.",
+   "roles": [
+    "form",
+    "media"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "playful"
+   ],
+   "tags": [
+    "education",
+    "ai",
+    "camera"
+   ]
+  },
+  {
+   "id": "IMG-0336",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Monochrome focus/spending trio - bars, block ring, dot year",
+   "description": "Three stark black-on-white screens: 'Total Spending $120.38' with a bar chart and latest transactions (Spotify, Groceries, Uber, Dining out), 'You've been blocking for 1h 41m 1s' ring with Unblock Apps, and a '72% 2026' halftone dot-grid year view. A monochrome screen-time/spending concept.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "mono"
+   ],
+   "tags": [
+    "spending",
+    "halftone"
+   ],
+   "group": "GRP-focus-timer"
+  },
+  {
+   "id": "IMG-0438",
+   "category": "mobile-app-ui",
+   "type": "marketing",
+   "title": "VELTO finance triptych - login, balance bars, analytics",
+   "description": "Three VELTO screens: 'Smart Finance for a better tomorrow' with Google/Apple buttons, 'Welcome back' Total Balance $1,9298.79 over a bar chart with Send/Receive/Top Up and Accounts (Main $25,640, Savings $17,200), and 'Analytics' with net-worth figures and a colourful Spending Overview. A banking marketing trio.",
+   "roles": [
+    "onboarding",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "finance",
+    "balance",
+    "analytics",
+    "bars"
+   ],
+   "group": "GRP-finance-app"
+  },
+  {
+   "id": "IMG-0455",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "ResolveAI support dashboard - resolution rates and knowledge gaps",
+   "description": "A light 'ResolveAI' dashboard: green '84.8% Resolution rate', blue '72.4% AI resolution', yellow '18.6% Human handoff', 143 Unresolved, 142 Knowledge gaps, 'Handoff reasons 4,821' bar list, an Improvement loop funnel and Top knowledge gaps chips. An AI-support ops board.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense",
+    "rounded"
+   ],
+   "tags": [
+    "analytics",
+    "ai",
+    "kpi"
+   ]
+  },
+  {
+   "id": "IMG-0311",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Reading-app paywall - 'Before' dense vs 'After' friendly revamp",
+   "description": "A labelled Before/After of a kids' reading app store page: Before shows dense purple/yellow screens ('Teach Your Child to Read', 'From ABC to I Can Read!'); After shows airy blue screens with a monster mascot ('Teach your child to read', 'Read your 1st book in 10 lessons', 'Loved by over 2 million parents'). A store-listing revamp comparison.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "before-after",
+    "reading",
+    "paywall",
+    "kids"
+   ]
+  },
+  {
+   "id": "IMG-0224",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Doseback onboarding - 30% pricing, ready state, invite friends",
+   "description": "Three dark-green Doseback screens: '30% - Get 12 months for the price of 6' (Yearly $2.49/mo, Monthly $12.99, Continue), 'Your Doseback is ready!' (Set up my first plan), and 'Invite Friends' (Share, shows your invite). The same onboarding trio as IMG-0290 in the Dosebank family.",
+   "roles": [
+    "onboarding",
+    "pricing"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "high-contrast"
+   ],
+   "tags": [
+    "referral",
+    "lime",
+    "paywall"
+   ],
+   "group": "GRP-dosebank"
+  },
+  {
+   "id": "IMG-0541",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Dorcas smart home - 'Keep your home running' voice-first",
+   "description": "A light home-services screen: 'Good morning, Dorcas', a black 'Keep your home running - Water, power, gas & repairs all in one place' card with green orbs, a mint 'Need something else? Tell us what you need' search row and 'What's running low?'. A voice-first household hub.",
+   "roles": [
+    "home",
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "smart-home",
+    "voice"
+   ]
+  },
+  {
+   "id": "IMG-0450",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "Dark wallet walkthrough - markets, buy, sell, send",
+   "description": "Four light-on-dark wallet screens: a Markets coin list, 'Buy' (Amount $11,122.20, You buy 0.12 BTC, Select payment option $24,002.30, Confirm purchase), 'Sell' (You are selling 0.00 BTC, You will get $0.00) and 'Send' (Choose & paste your address, Enter your email). A complete trade flow.",
+   "roles": [
+    "form",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "crypto",
+    "wallet"
+   ]
+  },
+  {
+   "id": "IMG-0415",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Voice-model audit table - included models with usage columns",
+   "description": "A dark 'Included models' table (Kai v1.1, Metabio M5, GSAI 0.2 Plus, DeepGram v4 Flash, Maya+Q 3 Flash...) with per-model orange/yellow usage bars and twin value columns (minutes, price), a Usage Limits button and 'View all 30 models'. The pricing/models screen of the dubbing studio.",
+   "roles": [
+    "list",
+    "table",
+    "pricing"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "mono"
+   ],
+   "tags": [
+    "voice",
+    "table",
+    "usage"
+   ],
+   "group": "GRP-voice-studio"
+  },
+  {
+   "id": "IMG-0352",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Cloned voices - three radial voice cards with speaking share",
+   "description": "A dark 'Voices - Ep. 14 - 3 cloned - en-MX' screen: three radial-burst cards (Ana Reyes Ndoa-warm 4:38, Marco Vidal Niños-deep 3:52, Yuki Sato Lumina-bright 2:26), an 'Add voice' button and a Speaking share bar (Ana 38%, Marco 32%, Yuki 20%, Narrator 10%). A voice-casting board, not a habit tracker.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "data-dense"
+   ],
+   "tags": [
+    "voice",
+    "radial"
+   ],
+   "group": "GRP-voice-studio"
+  },
+  {
+   "id": "IMG-0354",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Dubbing output analytics - 412 minutes across 3 languages",
+   "description": "A dark 'Output - minutes delivered last 14 days' board: 412 minutes (+18%), Languages 3 all live, Avg Turnaround 6m, and a stacked 'Minutes per day' bar chart (Spanish 188, French 142, Japanese 82, 412 total, target 20m). Delivery analytics for the dubbing studio.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "rounded"
+   ],
+   "tags": [
+    "voice",
+    "analytics",
+    "bar-chart"
+   ],
+   "group": "GRP-voice-studio"
+  },
+  {
+   "id": "IMG-0355",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Dub settings - lip sync, pace, targets and voice mode",
+   "description": "A dark 'Dub settings - Ep. 14 - 3 targets' panel with 128 credits: Lip Sync toggle, Pace 1.04, Keep background music 70%, Pitch -2 st, Smooth speech, Normalise loudness; Dub to Spanish/French/Japanese; Voice mode Clone/Library/Studio; Source language English; Start dub. A dubbing config sheet, not editor settings.",
+   "roles": [
+    "form",
+    "settings"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "data-dense"
+   ],
+   "tags": [
+    "voice"
+   ],
+   "group": "GRP-voice-studio"
+  },
+  {
+   "id": "IMG-0353",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Voice library - empty state with record/upload/from-video",
+   "description": "A dark 'Voice library - 0 of 5 stored voices' screen: three 3D cylinders on a dais, 'No cloned voices yet. Clone a voice once and reuse it across every language', and Record (30s in browser) / Upload (wav mp3 m4a) / From video options with a white Create voice button. A voice-capture empty state.",
+   "roles": [
+    "state",
+    "form",
+    "empty-state"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "minimal"
+   ],
+   "tags": [
+    "voice",
+    "library"
+   ],
+   "group": "GRP-voice-studio"
+  },
+  {
+   "id": "IMG-0508",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "'a@h' Episode 2 - near-empty white episode shell",
+   "description": "A mostly blank white screen with an 'a@h' wordmark, 'Episode 2' heading and three empty rounded placeholder cards. A sparse episode shell, likely a loading/empty state.",
+   "roles": [
+    "state",
+    "empty-state"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "flat"
+   ],
+   "tags": [
+    "placeholder",
+    "shell"
+   ]
+  },
+  {
+   "id": "IMG-0230",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Music-social triptych - creator profile, discover, artist page",
+   "description": "Three dark-red music-social screens: a home feed with 'Soul Waves' artwork cards, a 'Discover' page (Popular/Latest, Recommended For You), and 'Lukmon Olabode' artist profile (22.2K Posts, 2.3M Followers, 873K Shows, 220K) with photo grid and Follow/Message. A creator-led music community.",
+   "roles": [
+    "home",
+    "profile"
+   ],
+   "style": [
+    "dark-mode",
+    "photographic",
+    "rounded"
+   ],
+   "tags": [
+    "music",
+    "social",
+    "artist"
+   ]
+  },
+  {
+   "id": "IMG-0497",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Dark notes app - capture home, project folder, visual-direction note",
+   "description": "Three black screens of a notes app: 'Capture what matters.' with Quick Note/To-Do/Meetings/Project Ideas tiles and Recent Notes, 'Project Ideas - 12 notes' folder grid, and a 'Visual Direction' note (April 5 2026, Santos project, moodboard thumbnails, Design/Inspiration tags). A dense dark note-taking suite.",
+   "roles": [
+    "home",
+    "list",
+    "detail"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "data-dense"
+   ],
+   "tags": [
+    "notes",
+    "capture",
+    "folders",
+    "moodboard"
+   ]
+  },
+  {
+   "id": "IMG-0401",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Vanta Ride - search, rider details and weekly ride overview",
+   "description": "Three dark ride-booking screens: 'Vanta Ride - Hello, Alan!' From Madrid To Barcelona with Search and Best Rides, 'Rider details' (David Martinez, verified, 09:30 Madrid→10:45 Barcelona, 2h 15m, Book Seat) and 'Ride Overview' (Tue 16 June 2026 week strip, 32 rides available). A ride-sharing flow, not a wallet.",
+   "roles": [
+    "home",
+    "detail",
+    "list"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "booking",
+    "route",
+    "schedule"
+   ]
+  },
+  {
+   "id": "IMG-0253",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Daily horoscope - Libra scales on a dark field",
+   "description": "A dark 'Your daily horoscope' screen: week strip, a line-drawn Libra balance-scale glyph, 'Libra' reading copy ('Focus on one unresolved conversation...'), Discover more button, Share/Save and a Horoscope/Ask AI/Profile nav. A zodiac reading screen.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "horoscope",
+    "zodiac",
+    "reading"
+   ]
+  },
+  {
+   "id": "IMG-0498",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Smart Garden AI - sunrise field, welcome, tilted garden map",
+   "description": "Three garden-app screens over a grass field: 'Wheat Spike 20°C' sunrise hero with 'WELCOME TO GARDEN AI', 'Welcome to Smart Garden AI' with My Fields and carrot cards (Grow Healthy Carrots), and a tilted 'My Garden Field' map with Water Depth 80% / Soil 70% tiles. An agronomy assistant.",
+   "roles": [
+    "home",
+    "media"
+   ],
+   "style": [
+    "photographic",
+    "rounded",
+    "light-mode"
+   ],
+   "tags": [
+    "ai",
+    "map"
+   ]
+  },
+  {
+   "id": "IMG-0400",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "French winter onboarding - 'L'hiver est à toi' type-led tiles",
+   "description": "Three bold French onboarding tiles: 'L'hiver est à toi.' with a monochrome mountain photo and '90 jours pour toi' sticker, 'Tu veux changer quoi?' (Mon focus checked, Mon corps, Mes habitudes), and 'Un peu. Chaque jour.' with a yak mascot and 30/60/90 jours selector, each with a white CTA. A typography-led habit app.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "dark-mode",
+    "editorial",
+    "photographic"
+   ],
+   "tags": [
+    "winter",
+    "typography"
+   ]
+  }
+ ]
+}

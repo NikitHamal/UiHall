@@ -1,0 +1,516 @@
+{
+ "items": [
+  {
+   "id": "IMG-0395",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Food cart - one salmon line with a GHS 2,170 total",
+   "description": "A minimal cart: a single 'Pan-seared salmon' line (qty 1, GHS 400) with a round photo and trash icon, a 'Total Amount GHS 2,170' footer and a green Checkout button. Part of the Skybar GHS food flow.",
+   "roles": [
+    "list",
+    "checkout"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "cart",
+    "food",
+    "price",
+    "cta"
+   ],
+   "group": "GRP-food-skybar"
+  },
+  {
+   "id": "IMG-0457",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Food checkout - promo-code field and Mobile Money, GHS 2,140",
+   "description": "A checkout with a promo-code input beside a dark-green 'Promo Code' button, a bill (Subtotal GHS 2,100, Delivery Fee free, Taxes GHS 40, Promo -GHS 0, Total GHS 2,140), a 'Mobile Money' payment row and a green Place Order. Same Skybar GHS flow.",
+   "roles": [
+    "form",
+    "checkout"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "promo",
+    "payment"
+   ],
+   "group": "GRP-food-skybar"
+  },
+  {
+   "id": "IMG-0371",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Campus Laundry tracking - timeline to 'Ready for Delivery'",
+   "description": "A laundry order tracker: status timeline (Handed Over, In Service, Ready for Delivery 'being prepared and awaiting delivery'), 'Campus Laundry' provider 4.9, Delivery details (SU Building, Est Arrival Tomorrow 7:00 PM) and a muted 'Confirm Service Completion' button. Same order as IMG-0369/0370.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "laundry",
+    "tracking",
+    "timeline",
+    "status"
+   ],
+   "group": "GRP-laundry-campus"
+  },
+  {
+   "id": "IMG-0370",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Laundry order #2026-30759 - wash-and-fold service details",
+   "description": "An order header '#2026-30759' (Booked Aug 25, Returns Aug 26) over Service Details (Wash and fold, Handover Aug 25 9:00 AM, 24-hour Turnaround, Load Medium ₦7,000) and a Timeline starting 'Order Confirmed'. The top of the Campus Laundry order also in IMG-0369/0371.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "laundry",
+    "order",
+    "price",
+    "timeline"
+   ],
+   "group": "GRP-laundry-campus"
+  },
+  {
+   "id": "IMG-0398",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Banking home 'Jenny' - $3,482.17 with buy/sell/swap/receive",
+   "description": "'Good morning, Jenny' wallet home: Total Balance $3,482.17 (+12.4% 24h), four round actions (Buy/Sell/Swap/Receive) and a 'Top Movers' row of crypto tiles (BTC, ETH). The same account as IMG-0397/0399.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "banking",
+    "balance",
+    "crypto"
+   ],
+   "group": "GRP-banking-home"
+  },
+  {
+   "id": "IMG-0469",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Lisbon trip - crew invite card and packing progress card",
+   "description": "Two travel cards: 'Invite - Bring the crew into Lisbon.' (Can edit/View only, ana@ field, Invite, Copy link/QR/Message/More, Show expenses) and 'Packing - 12 of 18 packed. Two days to go.' (segmented bar, Passports/Chargers/Plug adapter/Sunscreen, Suggest items). Same Lisbon trip as IMG-0467/0468.",
+   "roles": [
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "travel",
+    "invite",
+    "checklist"
+   ],
+   "group": "GRP-travel-lisbon"
+  },
+  {
+   "id": "IMG-0467",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Lisbon trip - €2,900 budget card and settle-up balances",
+   "description": "Two cards: 'Budget €2,900 of €4,800, Day 3 of 6' with Stays/Flights/Food/Activities progress bars, and 'Balances - Two transfers settle the whole trip.' (Mara owes €188, Ana €92, Kofi all square) with a black Settle up button. Same Lisbon trip as IMG-0468/0469.",
+   "roles": [
+    "dashboard",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "travel",
+    "budget",
+    "progress"
+   ],
+   "group": "GRP-travel-lisbon"
+  },
+  {
+   "id": "IMG-0542",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "On-demand services - 'What needs attention?' with floating nav",
+   "description": "A floating rounded panel with two product thumbnails (generator, tool), a 'What needs attention? Select your location and we'll meet you' row, and a white pill nav (Home active in green, history, chat, profile). A services/rental home fragment.",
+   "roles": [
+    "home",
+    "navigation"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "floating"
+   ],
+   "tags": [
+    "location",
+    "bottom-nav",
+    "rental"
+   ]
+  },
+  {
+   "id": "IMG-0399",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Crypto holdings - four asset tiles and a recent-actions list",
+   "description": "A holdings grid (BTC $43,280 +3.10%, ETH $8,600 +1.35%, USDC $106, USDT $260) over 'Recent Actions' (Bought BTC ...240.00) with a black floating pill nav overlapping the list. Same account as IMG-0397/0398.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "crypto",
+    "tiles"
+   ],
+   "group": "GRP-banking-home"
+  },
+  {
+   "id": "IMG-0502",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Campus marketplace - Sony WH-1000XM4 at K240,000",
+   "description": "A hand-held phone listing 'Sony WH-1000XM4' (K240,000, 'Shared item. Available for pickup or campus delivery', Sold by Campus Tech Store, Delivery & Pickup options, Reviews) on a pale 'KONA' watermark field. A campus resale product page.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "marketplace",
+    "listing"
+   ],
+   "group": "GRP-sony-headphones"
+  },
+  {
+   "id": "IMG-0369",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Campus Laundry order - the full phone on a white field",
+   "description": "A single phone showing the Campus Laundry order '#2026-30759' with Service Details (Wash and fold), Timeline and provider footer - the complete view whose crops appear in IMG-0370/0371. Watermark lower right.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "laundry",
+    "order",
+    "service",
+    "timeline"
+   ],
+   "group": "GRP-laundry-campus"
+  },
+  {
+   "id": "IMG-0254",
+   "category": "mobile-app-ui",
+   "type": "component",
+   "title": "Status chips - six labelled pill states",
+   "description": "Six status pills on a white field: Pending (orange), In Review (blue), In Progress (purple), Not started (grey), Cancelled (red), Approved (green). A compact state legend, not five.",
+   "roles": [
+    "state"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "flat"
+   ],
+   "tags": [
+    "status",
+    "chips",
+    "legend"
+   ]
+  },
+  {
+   "id": "IMG-0494",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Dashr onboarding - 'Deliver faster, earn smarter'",
+   "description": "A lime-accented onboarding card: 'Deliver faster, earn smarter with Dashr', copy on route optimization and daily payouts, a lime 'Get on the Road' button and 'Already a Dashr rider? Log in'. A delivery-driver landing.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "delivery",
+    "cta",
+    "lime"
+   ]
+  },
+  {
+   "id": "IMG-0331",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Claude workspace switcher - sidebar plus accounts sheet",
+   "description": "A 'Claude' sidebar (Chats/Projects/Code/Artifacts, Pinned 'Garden redesign') behind an 'Accounts' sheet listing dannyhertzfeld@gmail.com (Personal, checked), danny.k.hertz@agency.com and workspaces (Vandelay Industries, Kramerica Industries, Pendant Publishing). An account/workspace picker, not a contacts list.",
+   "roles": [
+    "navigation",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "workspace",
+    "sidebar",
+    "sheet",
+    "menu"
+   ]
+  },
+  {
+   "id": "IMG-0397",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Banking home 'Jenny' - balance, movers and recent actions",
+   "description": "'Good morning, Jenny' with $3,482.17, Buy/Sell/Swap/Receive, Top Movers tiles and a Recent Actions list, partly covered by the black floating pill nav. Same account as IMG-0398/0399.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "banking",
+    "balance"
+   ],
+   "group": "GRP-banking-home"
+  },
+  {
+   "id": "IMG-0468",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Lisbon day plan - four-stop list beside a walking map",
+   "description": "'Day plan' for Alfama & Baixa (4 stops, 11 km): Miradouro da Graça, Tram 28, Pastéis de Belém, Torre de Belém with times and thumbnails, beside a pinned map with a dotted '41 min walking' route and a black 'Optimize route' button. Same Lisbon trip as IMG-0467/0469.",
+   "roles": [
+    "list",
+    "media"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "travel",
+    "itinerary",
+    "map",
+    "route"
+   ],
+   "group": "GRP-travel-lisbon"
+  },
+  {
+   "id": "IMG-0402",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Rental app in two directions - 'Chatgpt Design' vs 'Figma Design'",
+   "description": "Two labelled phones of a property app: both show 'Apartment 3B', €1,500 rent, an AI Property Assistant card, Quick Actions and Maintenance - left in white/mint, right in cream/black with an orange assistant. A same-brief, two-tool design comparison.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "rental",
+    "comparison",
+    "property"
+   ]
+  },
+  {
+   "id": "IMG-0219",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Sales overview dashboard in light and dark with orange bars",
+   "description": "'Sales Overview 701.34k +14.6%' rendered twice - light and dark - each with a month bar chart (Apr highlighted in orange), Your Revenue 5,726,450, Monthly Sales 1,264, Active Users and Conversion Rate tiles, plus a floating action cluster. A theme pair of one sales dashboard, not a wallet.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "dark-mode",
+    "data-dense",
+    "rounded"
+   ],
+   "tags": [
+    "bar-chart",
+    "theme-comparison",
+    "kpi"
+   ]
+  },
+  {
+   "id": "IMG-0456",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Food checkout - standard vs scheduled delivery and order summary",
+   "description": "A checkout with Delivery time (Standard 8:22-8:42 PM vs Schedule Mon 10:30-11:00 AM selected), an Order Summary 'Skybar 25' (sirloin x2, schnitzel x2) and a dark-green Promo Code button. Same Skybar GHS flow as the cart screens.",
+   "roles": [
+    "form",
+    "checkout"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "schedule",
+    "promo"
+   ],
+   "group": "GRP-food-skybar"
+  },
+  {
+   "id": "IMG-0391",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Add Card - grouped entry form with VISA hint",
+   "description": "An 'Add Card' form: Card Number with a VISA mark, Exp. Date (MM/YY) and CVV (123) side by side, Billing Address (Country or region) and Nick Name (optional, 'Work card'). Clean grouped inputs with generous spacing.",
+   "roles": [
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "payment",
+    "input",
+    "visa"
+   ],
+   "group": "GRP-add-card"
+  },
+  {
+   "id": "IMG-0394",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Food cart - three Skybar dishes with GHS prices",
+   "description": "A 'Cart' for Skybar 25: Grilled sirloin steak GHS 700 (qty 2), Chicken schnitzel GHS 150 (qty 2), Pan-seared salmon GHS 400 (qty 1), each with photo, stepper and trash icon. The multi-item cart of the Skybar GHS flow.",
+   "roles": [
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "cart",
+    "food",
+    "stepper",
+    "price"
+   ],
+   "group": "GRP-food-skybar"
+  },
+  {
+   "id": "IMG-0386",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Health monitor trio - BP log, insulin medication, AI heart chat",
+   "description": "Three health screens: Blood pressure '118/76 mmHg' with a 7-day line chart, Medication 'Insulin Aspart' (12 units, 2x daily, end 30 Jul 26) with logs, and an AI chat 'how has my heart rate been today?' answered with a bar chart and follow-ups. A monitoring suite.",
+   "roles": [
+    "dashboard",
+    "detail",
+    "chat"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "health",
+    "medication",
+    "chart"
+   ]
+  },
+  {
+   "id": "IMG-0221",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "memrbl reading app - home and the 'Practice Does' sheet",
+   "description": "Two phones of 'memrbl': the home 'Which book is on your mind?' with search and recommended covers (Steve Jobs, Educated, Subtle Art), and the same dimmed behind a sheet 'Books Don't Change You, Practice Does.' with 'Continue With Apple'. Same pair studied as a before-after in IMG-0287.",
+   "roles": [
+    "home",
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "rounded"
+   ],
+   "tags": [
+    "books",
+    "reading",
+    "bottom-sheet"
+   ],
+   "group": "GRP-reading-app"
+  },
+  {
+   "id": "IMG-0334",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Settings - dark-green 'Plant AI Pro' upsell over a grouped list",
+   "description": "A Settings screen with a 'Pro' badge and a dark-green 'Plant AI PRO' card ('Claim up to 80% off Pro, Limited time offer', Claim Offer, leaf mascot) above a grouped list (Language English, Restore Purchase, Rate us, Email Us, Share App).",
+   "roles": [
+    "navigation",
+    "settings",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "plant"
+   ],
+   "group": "GRP-settings"
+  }
+ ]
+}
