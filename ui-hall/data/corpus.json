@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 708
+  "described": 720
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 393
+   "count": 394
   },
   {
    "id": "app-store-screens",
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 116
+   "count": 120
   },
   {
    "id": "design-system",
@@ -63,14 +63,14 @@
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 64
+   "count": 66
   },
   {
    "id": "motion-demo",
    "label": "Motion demo",
    "blurb": "Clips whose whole point is the transition, not the static screen.",
    "icon": "play",
-   "count": 61
+   "count": 57
   },
   {
    "id": "promo-reel",
@@ -84,19 +84,19 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 36
+   "count": 33
   }
  ],
  "types": [
   {
    "id": "component",
    "label": "component",
-   "count": 32
+   "count": 35
   },
   {
    "id": "flow-walkthrough",
    "label": "flow-walkthrough",
-   "count": 281
+   "count": 271
   },
   {
    "id": "marketing",
@@ -126,7 +126,7 @@
   {
    "id": "screen",
    "label": "screen",
-   "count": 271
+   "count": 278
   },
   {
    "id": "token-sheet",
@@ -137,11 +137,11 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 128
+   "count": 130
   },
   {
    "id": "hero",
-   "count": 68
+   "count": 69
   },
   {
    "id": "list",
@@ -169,15 +169,15 @@
   },
   {
    "id": "chat",
-   "count": 21
+   "count": 22
   },
   {
    "id": "settings",
-   "count": 20
+   "count": 21
   },
   {
    "id": "editor",
-   "count": 20
+   "count": 21
   },
   {
    "id": "media",
@@ -227,19 +227,19 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 438
+   "count": 443
   },
   {
    "id": "minimal",
-   "count": 311
+   "count": 317
   },
   {
    "id": "rounded",
-   "count": 230
+   "count": 235
   },
   {
    "id": "dark-mode",
-   "count": 208
+   "count": 215
   },
   {
    "id": "card-based",
@@ -247,7 +247,7 @@
   },
   {
    "id": "data-dense",
-   "count": 70
+   "count": 72
   },
   {
    "id": "playful",
@@ -321,11 +321,11 @@
   },
   {
    "id": "ai",
-   "count": 60
+   "count": 61
   },
   {
    "id": "fintech",
-   "count": 57
+   "count": 58
   },
   {
    "id": "cta",
@@ -337,11 +337,11 @@
   },
   {
    "id": "analytics",
-   "count": 38
+   "count": 39
   },
   {
    "id": "landing",
-   "count": 38
+   "count": 39
   },
   {
    "id": "photographic",
@@ -452,6 +452,10 @@
    "count": 18
   },
   {
+   "id": "animation",
+   "count": 16
+  },
+  {
    "id": "before-after",
    "count": 15
   },
@@ -464,10 +468,6 @@
    "count": 15
   },
   {
-   "id": "animation",
-   "count": 15
-  },
-  {
    "id": "status",
    "count": 14
   },
@@ -477,6 +477,14 @@
   },
   {
    "id": "gallery",
+   "count": 14
+  },
+  {
+   "id": "crypto",
+   "count": 14
+  },
+  {
+   "id": "portfolio",
    "count": 14
   },
   {
@@ -504,14 +512,6 @@
    "count": 13
   },
   {
-   "id": "crypto",
-   "count": 13
-  },
-  {
-   "id": "portfolio",
-   "count": 13
-  },
-  {
    "id": "booking",
    "count": 12
   },
@@ -525,6 +525,10 @@
   },
   {
    "id": "stats",
+   "count": 12
+  },
+  {
+   "id": "sharing",
    "count": 12
   },
   {
@@ -545,10 +549,6 @@
   },
   {
    "id": "redesign",
-   "count": 11
-  },
-  {
-   "id": "sharing",
    "count": 11
   },
   {
@@ -688,6 +688,10 @@
    "count": 7
   },
   {
+   "id": "date-picker",
+   "count": 7
+  },
+  {
    "id": "exploration",
    "count": 7
   },
@@ -776,10 +780,6 @@
    "count": 7
   },
   {
-   "id": "date-picker",
-   "count": 6
-  },
-  {
    "id": "statistics",
    "count": 6
   },
@@ -789,6 +789,10 @@
   },
   {
    "id": "splash",
+   "count": 6
+  },
+  {
+   "id": "charts",
    "count": 6
   },
   {
@@ -917,10 +921,6 @@
   },
   {
    "id": "poster",
-   "count": 5
-  },
-  {
-   "id": "charts",
    "count": 5
   },
   {
@@ -1192,6 +1192,10 @@
    "count": 4
   },
   {
+   "id": "logo",
+   "count": 4
+  },
+  {
    "id": "component",
    "count": 4
   },
@@ -1209,6 +1213,10 @@
   },
   {
    "id": "feed",
+   "count": 4
+  },
+  {
+   "id": "generative-art",
    "count": 4
   },
   {
@@ -1432,10 +1440,6 @@
    "count": 3
   },
   {
-   "id": "logo",
-   "count": 3
-  },
-  {
    "id": "loading-state",
    "count": 3
   },
@@ -1461,10 +1465,6 @@
   },
   {
    "id": "story",
-   "count": 3
-  },
-  {
-   "id": "generative-art",
    "count": 3
   },
   {
@@ -1844,6 +1844,10 @@
    "count": 2
   },
   {
+   "id": "morph",
+   "count": 2
+  },
+  {
    "id": "mascot",
    "count": 2
   },
@@ -1864,6 +1868,10 @@
    "count": 2
   },
   {
+   "id": "personal-site",
+   "count": 2
+  },
+  {
    "id": "media",
    "count": 2
   },
@@ -1876,11 +1884,19 @@
    "count": 2
   },
   {
+   "id": "ranking",
+   "count": 2
+  },
+  {
    "id": "investing",
    "count": 2
   },
   {
    "id": "splash-screen",
+   "count": 2
+  },
+  {
+   "id": "screen-recording",
    "count": 2
   },
   {
@@ -1945,6 +1961,10 @@
   },
   {
    "id": "video-demo",
+   "count": 2
+  },
+  {
+   "id": "video-editing",
    "count": 2
   },
   {
@@ -2476,10 +2496,6 @@
    "count": 1
   },
   {
-   "id": "morph",
-   "count": 1
-  },
-  {
    "id": "skeleton-screen",
    "count": 1
   },
@@ -2505,10 +2521,6 @@
   },
   {
    "id": "biography",
-   "count": 1
-  },
-  {
-   "id": "personal-site",
    "count": 1
   },
   {
@@ -2568,10 +2580,6 @@
    "count": 1
   },
   {
-   "id": "ranking",
-   "count": 1
-  },
-  {
    "id": "duplicate",
    "count": 1
   },
@@ -2581,10 +2589,6 @@
   },
   {
    "id": "abstract-art",
-   "count": 1
-  },
-  {
-   "id": "screen-recording",
    "count": 1
   },
   {
@@ -2761,10 +2765,6 @@
   },
   {
    "id": "star",
-   "count": 1
-  },
-  {
-   "id": "video-editing",
    "count": 1
   },
   {
@@ -53471,13 +53471,18 @@
   {
    "id": "VID-0407",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0407",
-   "description": "",
+   "category": "other",
+   "type": "component",
+   "title": "Export dialog (dark)",
+   "description": "A small dark export dialog floating over dimmed content: one action, barely readable at poster size. Held as a dialog specimen, not a screen.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "sharing"
+   ],
    "palette": [
     "#FFFFFF",
     "#F8F8F8",
@@ -53521,7 +53526,8 @@
     "path": "E:\\Downloads\\UI\\7Dz2--hpziDqXMsX.mp4",
     "bytes": 1618683
    },
-   "source_note": "auto-draft 2026-09-26: motion median 7.93; needs a visual read-through",
+   "quality": "Dialog text small — flagged for a full-size second pass.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0407.webp",
    "thumb": "assets/thumb/VID-0407.webp",
    "motion": 7.93,
@@ -53539,13 +53545,20 @@
   {
    "id": "VID-0408",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0408",
-   "description": "",
+   "category": "website",
+   "type": "screen",
+   "title": "Engineer portfolio card",
+   "description": "A dark portfolio card: 'Hi, I'm Blake, Product Engineer' with bio and social links. A static personal-site still.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "personal-site",
+    "portfolio"
+   ],
    "palette": [
     "#1D1D1D",
     "#171717",
@@ -53589,7 +53602,8 @@
     "path": "E:\\Downloads\\UI\\vchG4yMRipa2lXLM.mp4",
     "bytes": 1190001
    },
-   "source_note": "auto-draft 2026-09-26: motion median 0.17; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0408.webp",
    "thumb": "assets/thumb/VID-0408.webp",
    "motion": 0.17,
@@ -53599,13 +53613,20 @@
   {
    "id": "VID-0409",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0409",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "screen",
+   "title": "AI chat prompt list",
+   "description": "A dark AI chat home: 'What would you like to work on?' prompt rows with suggestion chips. The empty state of an assistant, held still.",
+   "roles": [
+    "chat"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "ai"
+   ],
    "palette": [
     "#171D27",
     "#ECEBEA",
@@ -53649,7 +53670,8 @@
     "path": "E:\\Downloads\\UI\\3Y5hOByR39s8JSuq.mp4",
     "bytes": 516607
    },
-   "source_note": "auto-draft 2026-09-26: motion median 0.54; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0409.webp",
    "thumb": "assets/thumb/VID-0409.webp",
    "motion": 0.54,
@@ -53660,12 +53682,16 @@
    "id": "VID-0410",
    "kind": "video",
    "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0410",
-   "description": "",
+   "type": "screen",
+   "title": "SVG downloads capture",
+   "description": "A screen recording of SVG files landing in Downloads: a capture demo where the Finder window is the content. Tooling footage, not interface design.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "screen-recording"
+   ],
    "palette": [
     "#181818",
     "#272727",
@@ -53709,7 +53735,8 @@
     "path": "E:\\Downloads\\UI\\_E-K7_kwVrGIgYuf.mp4",
     "bytes": 27984168
    },
-   "source_note": "auto-draft 2026-09-26: motion median 2.47; needs a visual read-through",
+   "quality": "Niche capture footage; kept with reservations.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0410.webp",
    "thumb": "assets/thumb/VID-0410.webp",
    "motion": 2.47,
@@ -53729,11 +53756,18 @@
    "kind": "video",
    "category": "motion-demo",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0411",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Cut editor tour",
+   "description": "A phone video-editor tour: 'Cut / Start with Cut' over editing timelines. Fast-cut tool marketing.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "video-editing"
+   ],
    "palette": [
     "#F1F3F4",
     "#FEFEFE",
@@ -53777,7 +53811,8 @@
     "path": "E:\\Downloads\\UI\\_6Xe1pG_pVUBcwTW.mp4",
     "bytes": 21019436
    },
-   "source_note": "auto-draft 2026-09-26: motion median 48.06; needs a visual read-through",
+   "quality": "Fast frames blur detail; flow legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0411.webp",
    "thumb": "assets/thumb/VID-0411.webp",
    "motion": 48.06,
@@ -53796,12 +53831,19 @@
    "id": "VID-0412",
    "kind": "video",
    "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0412",
-   "description": "",
+   "type": "screen",
+   "title": "Morph logo animation",
+   "description": "A particle 'Morph' logo resolving from scatter: Touch, Scatter, Morph, Ship-it modes named below. Logo choreography as the clip.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "animation",
+    "logo",
+    "morph"
+   ],
    "palette": [
     "#121114",
     "#292A33",
@@ -53845,7 +53887,8 @@
     "path": "E:\\Downloads\\UI\\MbrGuoR80dQYDno5.mp4",
     "bytes": 4444642
    },
-   "source_note": "auto-draft 2026-09-26: motion median 30.2; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0412.webp",
    "thumb": "assets/thumb/VID-0412.webp",
    "motion": 30.2,
@@ -53863,13 +53906,22 @@
   {
    "id": "VID-0413",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0413",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "screen",
+   "title": "Fixed-yield DeFi landing",
+   "description": "A fixed-yield DeFi landing: 'pioneering fixed yield platform built for growth' with $4.2T+, 4M+ and sub-0.5s stats. Quiet institutional crypto marketing.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "crypto",
+    "fintech",
+    "landing"
+   ],
    "palette": [
     "#FBFBFB",
     "#97B3B8",
@@ -53913,7 +53965,8 @@
     "path": "E:\\Downloads\\UI\\LQCrFMtu8gw5JP0I.mp4",
     "bytes": 5526461
    },
-   "source_note": "auto-draft 2026-09-26: motion median 3.7; needs a visual read-through",
+   "quality": "Stat text small; headline legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0413.webp",
    "thumb": "assets/thumb/VID-0413.webp",
    "motion": 3.7,
@@ -53932,12 +53985,17 @@
    "id": "VID-0414",
    "kind": "video",
    "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0414",
-   "description": "",
+   "type": "screen",
+   "title": "Particle starburst",
+   "description": "A particle starburst on white, marked 7 and L: generative art frames with no interface on them. Kept as a motion specimen.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "generative-art"
+   ],
    "palette": [
     "#FFFFFF",
     "#EDEDED",
@@ -53981,7 +54039,8 @@
     "path": "E:\\Downloads\\UI\\zsDqZ2dCbdNb8YqO.mp4",
     "bytes": 620261
    },
-   "source_note": "auto-draft 2026-09-26: motion median 0.52; needs a visual read-through",
+   "quality": "Static clip of generative art; kept as motion, not UI.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0414.webp",
    "thumb": "assets/thumb/VID-0414.webp",
    "motion": 0.52,
@@ -53991,13 +54050,19 @@
   {
    "id": "VID-0415",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0415",
-   "description": "",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "App rankings tracker",
+   "description": "A 'Topify App Rankings' tracker: Moldova and South Korea chart rows with ranks over green aurora art. App-store watching as a dark phone screen.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "charts",
+    "ranking"
+   ],
    "palette": [
     "#F4F4F4",
     "#FFFFFF",
@@ -54041,7 +54106,8 @@
     "path": "E:\\Downloads\\UI\\GQP0CA6hLaoZWZt8.mp4",
     "bytes": 1144396
    },
-   "source_note": "auto-draft 2026-09-26: motion median 4.12; needs a visual read-through",
+   "quality": "Row text small; charts legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0415.webp",
    "thumb": "assets/thumb/VID-0415.webp",
    "motion": 4.12,
@@ -54059,12 +54125,17 @@
   {
    "id": "VID-0416",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "dashboard",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0416",
-   "description": "",
-   "roles": [],
-   "style": [],
+   "title": "Sales timeline scroll",
+   "description": "A dark 'Dolce Energy' sales timeline: activity feed with call/email rows and a $7.14K figure. CRM liveness as a scrolling feed.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense"
+   ],
    "tags": [],
    "palette": [
     "#020703",
@@ -54109,7 +54180,8 @@
     "path": "E:\\Downloads\\UI\\Qm6DSMmXl0X8GVSg.mp4",
     "bytes": 10856262
    },
-   "source_note": "auto-draft 2026-09-26: motion median 14.48; needs a visual read-through",
+   "quality": "Feed text small; flow legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0416.webp",
    "thumb": "assets/thumb/VID-0416.webp",
    "motion": 14.48,
@@ -54127,12 +54199,18 @@
   {
    "id": "VID-0417",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0417",
-   "description": "",
-   "roles": [],
-   "style": [],
+   "category": "website",
+   "type": "component",
+   "title": "Settings toggles panel",
+   "description": "A dark settings panel of toggle rows: compact switches with short labels. The toggle list as a complete pattern.",
+   "roles": [
+    "settings"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
    "tags": [],
    "palette": [
     "#111012",
@@ -54177,7 +54255,8 @@
     "path": "E:\\Downloads\\UI\\xwx-0C455P_XrWgC.mp4",
     "bytes": 37423499
    },
-   "source_note": "auto-draft 2026-09-26: motion median 12.53; needs a visual read-through",
+   "quality": "Labels small; pattern legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0417.webp",
    "thumb": "assets/thumb/VID-0417.webp",
    "motion": 12.53,
@@ -54195,13 +54274,21 @@
   {
    "id": "VID-0418",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0418",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "dashboard",
+   "type": "component",
+   "title": "Analytics date-range picker",
+   "description": "A referrer table with a September 2026 calendar picker: 'Occurred between' date-range selection with hour precision. The date-range picker is the component.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "analytics",
+    "date-picker"
+   ],
    "palette": [
     "#1A1A1A",
     "#282828",
@@ -54245,7 +54332,8 @@
     "path": "E:\\Downloads\\UI\\YN1yMOoRsUhaaM8F.mp4",
     "bytes": 860404
    },
-   "source_note": "auto-draft 2026-09-26: motion median 0.71; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0418.webp",
    "thumb": "assets/thumb/VID-0418.webp",
    "motion": 0.71,
