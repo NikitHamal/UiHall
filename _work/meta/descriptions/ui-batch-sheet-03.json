@@ -1,0 +1,258 @@
+{
+ "items": {
+  "IMG-0569": {
+   "category": "website",
+   "description": "Two more panels from the delivery brand: a runner illustration with 'Secure from start to finish' copy about verification, insurance and confirmation, each phone closed by a 'Continue' pill. Onboarding-as-storytelling inside device frames.",
+   "id": "IMG-0569",
+   "pair_with": "IMG-0568",
+   "quality": "Left panel edge cropped by the source; right panel fully legible.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "landing",
+    "delivery"
+   ],
+   "title": "Delivery secure-story phone panels",
+   "type": "mockup"
+  },
+  "IMG-0570": {
+   "category": "dashboard",
+   "description": "A payment-processor Customers admin table: customer IDs, emails and status pills across a wide light grid with sidebar nav (Products, Orders, Dashboard, Teams). A standard ops-console table; the status-pill column is the scannable device.",
+   "id": "IMG-0570",
+   "quality": "Dense but legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "table",
+    "finance"
+   ],
+   "title": "Payment-processor customers table",
+   "type": "screen"
+  },
+  "IMG-0571": {
+   "category": "before-after",
+   "description": "A labelled Before/After diet-app redesign: 'Bliss Diary' before (loose diary cards, 800/1500 kcal) against an After dashboard (1232-calorie dial, macro rings, food log with chicken-breast entry). The delta is the lesson — logging to quantified rings — presented as one comparison image.",
+   "id": "IMG-0571",
+   "quality": "Clean capture; both phones legible.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "before-after",
+    "redesign",
+    "health",
+    "fitness",
+    "comparison"
+   ],
+   "title": "Diet-app before/after redesign",
+   "type": "multi-screen"
+  },
+  "IMG-0572": {
+   "category": "website",
+   "description": "A Harvey legal-AI landing, 'Build a Frontier Legal Organization': serif headline, client-trust copy and a 'Whitehall Lane's Command Center' dashboard screenshot with a 49.5% chart. Institutional serif-plus-dashboard marketing for legal teams.",
+   "id": "IMG-0572",
+   "quality": "Dashboard screenshot small; headline and structure legible.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "corporate"
+   ],
+   "tags": [
+    "landing",
+    "ai"
+   ],
+   "title": "Harvey legal-AI landing",
+   "type": "screen"
+  },
+  "IMG-0573": {
+   "category": "website",
+   "description": "An AI-native documentation platform landing: product-window mockup ('Welcome to Acme') floating over a large orange-red abstract ribbon, with Talk-to-Docs style CTAs. Docs-tool marketing carried by one confident abstract shape.",
+   "id": "IMG-0573",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "landing",
+    "documentation",
+    "ai"
+   ],
+   "title": "AI-native docs platform landing",
+   "type": "screen"
+  },
+  "IMG-0574": {
+   "category": "website",
+   "description": "A dark Framer hero, 'Framer is the design agent for every step from idea to launch': a glowing 'New Chat' prompt box mid-typing ('Create a sleek black homepage for an AI well-being research lab…'). Chat-as-hero for a design tool; the glow frames the input as the product.",
+   "id": "IMG-0574",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "hero",
+    "chat"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "landing",
+    "ai",
+    "design-tool"
+   ],
+   "title": "Framer design-agent dark hero",
+   "type": "screen"
+  },
+  "IMG-0575": {
+   "category": "website",
+   "description": "A light AI-app landing, 'The AI App that Does the Work': headline over a chat-window product mockup with command-style suggestions. The same chat-as-product idiom as its dark Framer cousin, in daylight.",
+   "id": "IMG-0575",
+   "quality": "Chat text small; headline and structure legible.",
+   "roles": [
+    "hero",
+    "chat"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "landing",
+    "ai"
+   ],
+   "title": "AI-app chat landing",
+   "type": "screen"
+  },
+  "IMG-0576": {
+   "category": "dashboard",
+   "description": "A stat-card analytics dashboard: headline figures (12,430 / +1,230 / 243K / 5.2% / 78,100), a trend chart and dense side panels. KPI-cards-first layout; the most data-dense screen in this sheet.",
+   "id": "IMG-0576",
+   "quality": "Dense but legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense",
+    "card-based"
+   ],
+   "tags": [
+    "analytics",
+    "chart",
+    "kpi"
+   ],
+   "title": "Stat-card analytics dashboard",
+   "type": "screen"
+  },
+  "IMG-0577": {
+   "category": "website",
+   "description": "A Tailoor document-collaboration landing: 'Get intelligent suggestions' and 'Reference any file' feature columns over a product screenshot, with a customer-logo row (including Hulu) below. Feature-trio plus logo-wall SaaS marketing.",
+   "id": "IMG-0577",
+   "quality": "Feature copy small; structure fully legible.",
+   "roles": [
+    "landing-section",
+    "social-proof"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "landing",
+    "ai",
+    "collaboration",
+    "testimonial"
+   ],
+   "title": "Tailoor doc-collab landing",
+   "type": "screen"
+  },
+  "IMG-0578": {
+   "category": "website",
+   "description": "A booking price-filter card: Price / Type of place / Rooms tabs, a Nightly-Total histogram around $640, min/max inputs ($150–$450) and a 'Show 218 stays' CTA. Distribution-plus-bounds filtering in one compact card.",
+   "id": "IMG-0578",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "filters",
+    "booking",
+    "histogram"
+   ],
+   "title": "Booking price-filter card",
+   "type": "component"
+  },
+  "IMG-0579": {
+   "category": "mobile-app-ui",
+   "description": "An iPhone travel card for 'Palm Beach (Lagos)': Excellent rating with 10,000 reviews, 'Dirty December' package banner, amenity rows (Free WiFi, Fitness Centre), a mini map and a 'Stay + Set Package' photo strip. A complete book-a-stay card; the widest-patterned travel screen in the batch.",
+   "id": "IMG-0579",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "detail",
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "travel",
+    "booking",
+    "destination",
+    "rating"
+   ],
+   "title": "Palm Beach hotel booking card",
+   "type": "screen"
+  },
+  "IMG-0580": {
+   "category": "mobile-app-ui",
+   "description": "A tighter crop of the same Palm Beach hotel card: rating header, package banner and amenity rows fill the frame. No new layout information — kept as the legible-text companion to the full card.",
+   "id": "IMG-0580",
+   "pair_with": "IMG-0579",
+   "quality": "Close crop of IMG-0579; text fully legible.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "travel",
+    "booking"
+   ],
+   "title": "Palm Beach card (close crop)",
+   "type": "screen"
+  }
+ }
+}

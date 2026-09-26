@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 542
+  "described": 554
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 343
+   "count": 345
   },
   {
    "id": "app-store-screens",
@@ -28,14 +28,14 @@
    "label": "Before / after",
    "blurb": "Paired evidence: the same screen done badly and done well. Highest teaching value.",
    "icon": "compare",
-   "count": 33
+   "count": 34
   },
   {
    "id": "website",
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 56
+   "count": 63
   },
   {
    "id": "design-system",
@@ -63,7 +63,7 @@
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 37
+   "count": 39
   },
   {
    "id": "motion-demo",
@@ -84,14 +84,14 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 144
+   "count": 132
   }
  ],
  "types": [
   {
    "id": "component",
    "label": "component",
-   "count": 16
+   "count": 17
   },
   {
    "id": "flow-walkthrough",
@@ -106,12 +106,12 @@
   {
    "id": "mockup",
    "label": "mockup",
-   "count": 21
+   "count": 22
   },
   {
    "id": "multi-screen",
    "label": "multi-screen",
-   "count": 73
+   "count": 74
   },
   {
    "id": "pattern",
@@ -126,7 +126,7 @@
   {
    "id": "screen",
    "label": "screen",
-   "count": 253
+   "count": 250
   },
   {
    "id": "token-sheet",
@@ -137,7 +137,7 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 102
+   "count": 104
   },
   {
    "id": "list",
@@ -145,19 +145,19 @@
   },
   {
    "id": "hero",
-   "count": 51
+   "count": 55
+  },
+  {
+   "id": "detail",
+   "count": 44
   },
   {
    "id": "home",
    "count": 42
   },
   {
-   "id": "detail",
-   "count": 42
-  },
-  {
    "id": "onboarding",
-   "count": 33
+   "count": 34
   },
   {
    "id": "form",
@@ -165,7 +165,7 @@
   },
   {
    "id": "landing-section",
-   "count": 23
+   "count": 25
   },
   {
    "id": "editor",
@@ -197,15 +197,15 @@
   },
   {
    "id": "chat",
-   "count": 11
+   "count": 13
   },
   {
    "id": "search",
-   "count": 9
+   "count": 11
   },
   {
    "id": "social-proof",
-   "count": 9
+   "count": 10
   },
   {
    "id": "notification",
@@ -227,31 +227,31 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 322
+   "count": 333
   },
   {
    "id": "minimal",
-   "count": 250
+   "count": 254
   },
   {
    "id": "dark-mode",
-   "count": 170
+   "count": 171
   },
   {
    "id": "card-based",
-   "count": 141
+   "count": 147
   },
   {
    "id": "rounded",
-   "count": 140
+   "count": 146
   },
   {
    "id": "editorial",
-   "count": 46
+   "count": 47
   },
   {
    "id": "data-dense",
-   "count": 45
+   "count": 47
   },
   {
    "id": "soft",
@@ -262,12 +262,12 @@
    "count": 32
   },
   {
-   "id": "flat",
+   "id": "playful",
    "count": 31
   },
   {
-   "id": "playful",
-   "count": 29
+   "id": "flat",
+   "count": 31
   },
   {
    "id": "high-contrast",
@@ -303,7 +303,7 @@
   },
   {
    "id": "corporate",
-   "count": 2
+   "count": 3
   },
   {
    "id": "retro",
@@ -329,22 +329,22 @@
   },
   {
    "id": "chart",
-   "count": 43
+   "count": 44
   },
   {
    "id": "ai",
-   "count": 36
+   "count": 41
   },
   {
    "id": "card",
    "count": 33
   },
   {
-   "id": "photographic",
-   "count": 30
+   "id": "analytics",
+   "count": 31
   },
   {
-   "id": "analytics",
+   "id": "photographic",
    "count": 30
   },
   {
@@ -368,12 +368,12 @@
    "count": 26
   },
   {
-   "id": "onboarding",
+   "id": "comparison",
    "count": 25
   },
   {
-   "id": "comparison",
-   "count": 24
+   "id": "onboarding",
+   "count": 25
   },
   {
    "id": "avatar",
@@ -392,6 +392,10 @@
    "count": 21
   },
   {
+   "id": "kpi",
+   "count": 21
+  },
+  {
    "id": "illustration",
    "count": 20
   },
@@ -404,7 +408,7 @@
    "count": 20
   },
   {
-   "id": "kpi",
+   "id": "table",
    "count": 20
   },
   {
@@ -412,15 +416,19 @@
    "count": 19
   },
   {
-   "id": "table",
+   "id": "health",
    "count": 19
   },
   {
-   "id": "health",
+   "id": "travel",
    "count": 18
   },
   {
    "id": "app-store",
+   "count": 18
+  },
+  {
+   "id": "landing",
    "count": 18
   },
   {
@@ -432,16 +440,20 @@
    "count": 17
   },
   {
-   "id": "travel",
-   "count": 16
-  },
-  {
    "id": "call-to-action",
    "count": 15
   },
   {
    "id": "map",
    "count": 15
+  },
+  {
+   "id": "before-after",
+   "count": 14
+  },
+  {
+   "id": "finance",
+   "count": 14
   },
   {
    "id": "status",
@@ -460,15 +472,7 @@
    "count": 13
   },
   {
-   "id": "before-after",
-   "count": 13
-  },
-  {
    "id": "input",
-   "count": 13
-  },
-  {
-   "id": "finance",
    "count": 13
   },
   {
@@ -480,6 +484,10 @@
    "count": 13
   },
   {
+   "id": "fitness",
+   "count": 13
+  },
+  {
    "id": "list-row",
    "count": 13
   },
@@ -488,15 +496,11 @@
    "count": 12
   },
   {
-   "id": "fitness",
+   "id": "delivery",
    "count": 12
   },
   {
    "id": "portfolio",
-   "count": 12
-  },
-  {
-   "id": "landing",
    "count": 12
   },
   {
@@ -508,11 +512,11 @@
    "count": 11
   },
   {
-   "id": "delivery",
+   "id": "education",
    "count": 11
   },
   {
-   "id": "education",
+   "id": "redesign",
    "count": 11
   },
   {
@@ -528,16 +532,16 @@
    "count": 10
   },
   {
-   "id": "redesign",
-   "count": 10
-  },
-  {
    "id": "price",
    "count": 10
   },
   {
    "id": "settings",
    "count": 10
+  },
+  {
+   "id": "booking",
+   "count": 9
   },
   {
    "id": "steps",
@@ -692,10 +696,6 @@
    "count": 7
   },
   {
-   "id": "booking",
-   "count": 6
-  },
-  {
    "id": "date-picker",
    "count": 6
   },
@@ -756,6 +756,10 @@
    "count": 6
   },
   {
+   "id": "testimonial",
+   "count": 6
+  },
+  {
    "id": "yellow",
    "count": 6
   },
@@ -777,6 +781,10 @@
   },
   {
    "id": "camera",
+   "count": 6
+  },
+  {
+   "id": "design-tool",
    "count": 6
   },
   {
@@ -884,10 +892,6 @@
    "count": 5
   },
   {
-   "id": "testimonial",
-   "count": 5
-  },
-  {
    "id": "habit-tracker",
    "count": 5
   },
@@ -912,15 +916,19 @@
    "count": 5
   },
   {
+   "id": "filters",
+   "count": 5
+  },
+  {
    "id": "sharing",
    "count": 5
   },
   {
-   "id": "design-tool",
+   "id": "context-menu",
    "count": 5
   },
   {
-   "id": "context-menu",
+   "id": "documentation",
    "count": 5
   },
   {
@@ -969,6 +977,10 @@
   },
   {
    "id": "colourful",
+   "count": 4
+  },
+  {
+   "id": "destination",
    "count": 4
   },
   {
@@ -1048,10 +1060,6 @@
    "count": 4
   },
   {
-   "id": "filters",
-   "count": 4
-  },
-  {
    "id": "capture",
    "count": 4
   },
@@ -1069,10 +1077,6 @@
   },
   {
    "id": "metric",
-   "count": 4
-  },
-  {
-   "id": "documentation",
    "count": 4
   },
   {
@@ -1140,10 +1144,6 @@
    "count": 3
   },
   {
-   "id": "destination",
-   "count": 3
-  },
-  {
    "id": "legend",
    "count": 3
   },
@@ -1201,6 +1201,10 @@
   },
   {
    "id": "referral",
+   "count": 3
+  },
+  {
+   "id": "rating",
    "count": 3
   },
   {
@@ -1269,6 +1273,10 @@
   },
   {
    "id": "month-view",
+   "count": 3
+  },
+  {
+   "id": "collaboration",
    "count": 3
   },
   {
@@ -1449,10 +1457,6 @@
   },
   {
    "id": "reward",
-   "count": 2
-  },
-  {
-   "id": "rating",
    "count": 2
   },
   {
@@ -1652,11 +1656,11 @@
    "count": 2
   },
   {
-   "id": "task",
+   "id": "histogram",
    "count": 2
   },
   {
-   "id": "collaboration",
+   "id": "task",
    "count": 2
   },
   {
@@ -2289,10 +2293,6 @@
   },
   {
    "id": "blue",
-   "count": 1
-  },
-  {
-   "id": "histogram",
    "count": 1
   },
   {
@@ -26483,13 +26483,22 @@
   {
    "id": "IMG-0569",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0569",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "mockup",
+   "title": "Delivery secure-story phone panels",
+   "description": "Two more panels from the delivery brand: a runner illustration with 'Secure from start to finish' copy about verification, insurance and confirmation, each phone closed by a 'Continue' pill. Onboarding-as-storytelling inside device frames.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "delivery",
+    "landing"
+   ],
    "palette": [
     "#FCFCFB",
     "#080808",
@@ -26533,20 +26542,29 @@
     "path": "E:\\Downloads\\UI\\HS6_pZhXcAA4ElR.jpg",
     "bytes": 153123
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Left panel edge cropped by the source; right panel fully legible.",
+   "pair_with": "IMG-0568",
    "src": "assets/img/IMG-0569.webp",
    "thumb": "assets/thumb/IMG-0569.webp"
   },
   {
    "id": "IMG-0570",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0570",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Payment-processor customers table",
+   "description": "A payment-processor Customers admin table: customer IDs, emails and status pills across a wide light grid with sidebar nav (Products, Orders, Dashboard, Teams). A standard ops-console table; the status-pill column is the scannable device.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "finance",
+    "table"
+   ],
    "palette": [
     "#FFFFFF",
     "#FAFAF9",
@@ -26590,20 +26608,30 @@
     "path": "E:\\Downloads\\UI\\HS9BmOkWUAEuphr.jpg",
     "bytes": 126540
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Dense but legible.",
    "src": "assets/img/IMG-0570.webp",
    "thumb": "assets/thumb/IMG-0570.webp"
   },
   {
    "id": "IMG-0571",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0571",
-   "description": "",
+   "category": "before-after",
+   "type": "multi-screen",
+   "title": "Diet-app before/after redesign",
+   "description": "A labelled Before/After diet-app redesign: 'Bliss Diary' before (loose diary cards, 800/1500 kcal) against an After dashboard (1232-calorie dial, macro rings, food log with chicken-breast entry). The delta is the lesson — logging to quantified rings — presented as one comparison image.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "before-after",
+    "comparison",
+    "fitness",
+    "health",
+    "redesign"
+   ],
    "palette": [
     "#D4D4D5",
     "#F3F3F5",
@@ -26647,20 +26675,29 @@
     "path": "E:\\Downloads\\UI\\HS7k2zRWsAEXs6c.jpg",
     "bytes": 91335
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; both phones legible.",
    "src": "assets/img/IMG-0571.webp",
    "thumb": "assets/thumb/IMG-0571.webp"
   },
   {
    "id": "IMG-0572",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0572",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Harvey legal-AI landing",
+   "description": "A Harvey legal-AI landing, 'Build a Frontier Legal Organization': serif headline, client-trust copy and a 'Whitehall Lane's Command Center' dashboard screenshot with a 49.5% chart. Institutional serif-plus-dashboard marketing for legal teams.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "corporate",
+    "editorial",
+    "light-mode"
+   ],
+   "tags": [
+    "ai",
+    "landing"
+   ],
    "palette": [
     "#FAFAF9",
     "#444E4E",
@@ -26704,20 +26741,31 @@
     "path": "E:\\Downloads\\UI\\HS4lb39acAAuSCp.jpg",
     "bytes": 200107
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Dashboard screenshot small; headline and structure legible.",
    "src": "assets/img/IMG-0572.webp",
    "thumb": "assets/thumb/IMG-0572.webp"
   },
   {
    "id": "IMG-0573",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0573",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "AI-native docs platform landing",
+   "description": "An AI-native documentation platform landing: product-window mockup ('Welcome to Acme') floating over a large orange-red abstract ribbon, with Talk-to-Docs style CTAs. Docs-tool marketing carried by one confident abstract shape.",
+   "roles": [
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "documentation",
+    "landing"
+   ],
    "palette": [
     "#FEFDFE",
     "#FA662E",
@@ -26761,20 +26809,30 @@
     "path": "E:\\Downloads\\UI\\HS4ldrGaAAAZEkH.jpg",
     "bytes": 130998
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0573.webp",
    "thumb": "assets/thumb/IMG-0573.webp"
   },
   {
    "id": "IMG-0574",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0574",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Framer design-agent dark hero",
+   "description": "A dark Framer hero, 'Framer is the design agent for every step from idea to launch': a glowing 'New Chat' prompt box mid-typing ('Create a sleek black homepage for an AI well-being research lab…'). Chat-as-hero for a design tool; the glow frames the input as the product.",
+   "roles": [
+    "chat",
+    "hero"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "ai",
+    "design-tool",
+    "landing"
+   ],
    "palette": [
     "#000002",
     "#020236",
@@ -26818,20 +26876,30 @@
     "path": "E:\\Downloads\\UI\\HS4liS6b0AAUP9l.jpg",
     "bytes": 232128
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0574.webp",
    "thumb": "assets/thumb/IMG-0574.webp"
   },
   {
    "id": "IMG-0575",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0575",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "AI-app chat landing",
+   "description": "A light AI-app landing, 'The AI App that Does the Work': headline over a chat-window product mockup with command-style suggestions. The same chat-as-product idiom as its dark Framer cousin, in daylight.",
+   "roles": [
+    "chat",
+    "hero"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "ai",
+    "landing"
+   ],
    "palette": [
     "#FCFCFC",
     "#F8F8F6",
@@ -26875,20 +26943,30 @@
     "path": "E:\\Downloads\\UI\\HS4lrE4aUAA6K9X.jpg",
     "bytes": 149556
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Chat text small; headline and structure legible.",
    "src": "assets/img/IMG-0575.webp",
    "thumb": "assets/thumb/IMG-0575.webp"
   },
   {
    "id": "IMG-0576",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0576",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Stat-card analytics dashboard",
+   "description": "A stat-card analytics dashboard: headline figures (12,430 / +1,230 / 243K / 5.2% / 78,100), a trend chart and dense side panels. KPI-cards-first layout; the most data-dense screen in this sheet.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "card-based",
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "analytics",
+    "chart",
+    "kpi"
+   ],
    "palette": [
     "#FDFDFD",
     "#DEDEDE",
@@ -26932,20 +27010,31 @@
     "path": "E:\\Downloads\\UI\\HS1eQZtbcAQjPZX.jpg",
     "bytes": 220070
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Dense but legible.",
    "src": "assets/img/IMG-0576.webp",
    "thumb": "assets/thumb/IMG-0576.webp"
   },
   {
    "id": "IMG-0577",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0577",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Tailoor doc-collab landing",
+   "description": "A Tailoor document-collaboration landing: 'Get intelligent suggestions' and 'Reference any file' feature columns over a product screenshot, with a customer-logo row (including Hulu) below. Feature-trio plus logo-wall SaaS marketing.",
+   "roles": [
+    "landing-section",
+    "social-proof"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "ai",
+    "collaboration",
+    "landing",
+    "testimonial"
+   ],
    "palette": [
     "#FDFDFD",
     "#E6E6E8",
@@ -26989,20 +27078,31 @@
     "path": "E:\\Downloads\\UI\\HS8h1zmbsAALizf.jpg",
     "bytes": 132437
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Feature copy small; structure fully legible.",
    "src": "assets/img/IMG-0577.webp",
    "thumb": "assets/thumb/IMG-0577.webp"
   },
   {
    "id": "IMG-0578",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0578",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "component",
+   "title": "Booking price-filter card",
+   "description": "A booking price-filter card: Price / Type of place / Rooms tabs, a Nightly-Total histogram around $640, min/max inputs ($150–$450) and a 'Show 218 stays' CTA. Distribution-plus-bounds filtering in one compact card.",
+   "roles": [
+    "search"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "booking",
+    "filters",
+    "histogram"
+   ],
    "palette": [
     "#FAFAFA",
     "#E7E9EB",
@@ -27046,20 +27146,32 @@
     "path": "E:\\Downloads\\UI\\HS5zFHFWEAAMX7g.jpg",
     "bytes": 52820
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0578.webp",
    "thumb": "assets/thumb/IMG-0578.webp"
   },
   {
    "id": "IMG-0579",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0579",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Palm Beach hotel booking card",
+   "description": "An iPhone travel card for 'Palm Beach (Lagos)': Excellent rating with 10,000 reviews, 'Dirty December' package banner, amenity rows (Free WiFi, Fitness Centre), a mini map and a 'Stay + Set Package' photo strip. A complete book-a-stay card; the widest-patterned travel screen in the batch.",
+   "roles": [
+    "detail",
+    "search"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "booking",
+    "destination",
+    "rating",
+    "travel"
+   ],
    "palette": [
     "#FEFEFE",
     "#161711",
@@ -27103,20 +27215,29 @@
     "path": "E:\\Downloads\\UI\\HS9izUcXIAAqBm9.jpg",
     "bytes": 340752
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0579.webp",
    "thumb": "assets/thumb/IMG-0579.webp"
   },
   {
    "id": "IMG-0580",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0580",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Palm Beach card (close crop)",
+   "description": "A tighter crop of the same Palm Beach hotel card: rating header, package banner and amenity rows fill the frame. No new layout information — kept as the legible-text companion to the full card.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "booking",
+    "travel"
+   ],
    "palette": [
     "#FEFEFD",
     "#12120E",
@@ -27160,7 +27281,8 @@
     "path": "E:\\Downloads\\UI\\HS9i3lOWgAA9jNk.jpg",
     "bytes": 391612
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Close crop of IMG-0579; text fully legible.",
+   "pair_with": "IMG-0579",
    "src": "assets/img/IMG-0580.webp",
    "thumb": "assets/thumb/IMG-0580.webp"
   },
