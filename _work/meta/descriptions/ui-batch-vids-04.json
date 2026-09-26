@@ -1,0 +1,236 @@
+{
+ "items": {
+  "VID-0371": {
+   "category": "website",
+   "description": "A floor-plan editor resolving 'Close the gap in the wall': checklist, wall-segment controls and a 3D room with the gap highlighted blue. A static CAD-like working screen.",
+   "id": "VID-0371",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [
+    "editor"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "design-tool"
+   ],
+   "title": "Floor-plan gap editor",
+   "type": "screen"
+  },
+  "VID-0372": {
+   "category": "motion-demo",
+   "description": "A Layers panel tour: 'My Project / Board 1' with Frame 1–6 rows and a cursor travelling down the list over a purple dotted canvas. Layer navigation as motion.",
+   "id": "VID-0372",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "design-tool",
+    "layers"
+   ],
+   "title": "Layers panel demo",
+   "type": "flow-walkthrough"
+  },
+  "VID-0373": {
+   "category": "website",
+   "description": "An enterprise AI landing scroll: 'AI enablement, security, and control in one platform' over a server-rack illustration. Infrastructure made presentable.",
+   "id": "VID-0373",
+   "quality": "Scroll frames soft; headline legible.",
+   "roles": [
+    "hero"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "illustration-led"
+   ],
+   "tags": [
+    "landing",
+    "ai",
+    "security"
+   ],
+   "title": "AI platform landing scroll",
+   "type": "flow-walkthrough"
+  },
+  "VID-0374": {
+   "category": "website",
+   "description": "A very fast scroll through posts.design: 'Hiring social post designs' with category chips (Hiring, Content, Launch, Teaser, Meme) and a maroon 'Digital Designer' card. Gallery velocity as the whole point.",
+   "id": "VID-0374",
+   "quality": "Scroll blur throughout; cards legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "jobs",
+    "social",
+    "gallery"
+   ],
+   "title": "Social-post gallery scroll",
+   "type": "flow-walkthrough"
+  },
+  "VID-0375": {
+   "category": "mobile-app-ui",
+   "description": "A travel-guide scroll: 'Where it is' map with traveller bases, Highlights rail and a voice button. Place-first travel content in a phone.",
+   "id": "VID-0375",
+   "quality": "Scroll frames soft; map legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "travel",
+    "map"
+   ],
+   "title": "Travel guide scroll",
+   "type": "flow-walkthrough"
+  },
+  "VID-0376": {
+   "category": "website",
+   "description": "A browser start page: 'The Browser Company' row, Google Chrome and 'Start Fresh / Clean slate' options with a Continue CTA. Choosing a browser as a gentle questionnaire.",
+   "id": "VID-0376",
+   "quality": "Clean frames; fully legible.",
+   "roles": [
+    "onboarding"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "browser"
+   ],
+   "title": "Browser start page",
+   "type": "screen"
+  },
+  "VID-0377": {
+   "category": "website",
+   "description": "A dark 'Intelligence that remembers' landing: white tree-and-roots rendering over footer columns. Memory as a root system — the art is the argument.",
+   "id": "VID-0377",
+   "quality": "Footer text small; composition legible.",
+   "roles": [
+    "hero"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "landing",
+    "ai"
+   ],
+   "title": "Memory-AI dark landing",
+   "type": "screen"
+  },
+  "VID-0378": {
+   "category": "dashboard",
+   "description": "A CloseCRM analytics screen: Activity Breakdown bars, an 82.8% monthly-revenue-target ring and team rows. The metrics depth of the CRM series.",
+   "id": "VID-0378",
+   "quality": "Small text soft; charts legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "data-dense",
+    "card-based"
+   ],
+   "tags": [
+    "analytics"
+   ],
+   "title": "CRM analytics screen",
+   "type": "screen"
+  },
+  "VID-0379": {
+   "category": "website",
+   "description": "An access-and-security docs scroll: isolated Workspaces, Roles, Single sign-on, approved domains, MCP servers and Webhooks with lime highlights. Security documentation that reads like a checklist.",
+   "id": "VID-0379",
+   "quality": "Scroll frames soft; headings legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "documentation",
+    "security"
+   ],
+   "title": "Access-docs scroll",
+   "type": "flow-walkthrough"
+  },
+  "VID-0380": {
+   "category": "mobile-app-ui",
+   "description": "Floating 'Portfolio income' cards — Income Goal, Portfolio Review, Recommendation (49/51) — over a dark assistant orb. AI finance advice as a card fan.",
+   "id": "VID-0380",
+   "quality": "Card text small; composition legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "finance",
+    "ai"
+   ],
+   "title": "AI portfolio cards",
+   "type": "screen"
+  },
+  "VID-0381": {
+   "category": "website",
+   "description": "A Salesforce email-writing demo: a long brief for a 3-paragraph outbound email scrolled in an AI composer. Prompt-in, email-out, full length shown.",
+   "id": "VID-0381",
+   "quality": "Body text small; flow legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "ai",
+    "writing"
+   ],
+   "title": "Sales-email AI demo",
+   "type": "flow-walkthrough"
+  },
+  "VID-0382": {
+   "category": "dashboard",
+   "description": "A dark trading widget: €3,128,082.09 with Deposit and Withdraw buttons. One balance, two actions, nothing else.",
+   "id": "VID-0382",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "trading",
+    "crypto"
+   ],
+   "title": "Trading deposit widget",
+   "type": "component"
+  }
+ }
+}

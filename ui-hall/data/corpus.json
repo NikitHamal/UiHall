@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 673
+  "described": 685
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 382
+   "count": 384
   },
   {
    "id": "app-store-screens",
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 106
+   "count": 113
   },
   {
    "id": "design-system",
@@ -63,14 +63,14 @@
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 60
+   "count": 62
   },
   {
    "id": "motion-demo",
    "label": "Motion demo",
    "blurb": "Clips whose whole point is the transition, not the static screen.",
    "icon": "play",
-   "count": 81
+   "count": 71
   },
   {
    "id": "promo-reel",
@@ -84,19 +84,19 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 43
+   "count": 42
   }
  ],
  "types": [
   {
    "id": "component",
    "label": "component",
-   "count": 27
+   "count": 28
   },
   {
    "id": "flow-walkthrough",
    "label": "flow-walkthrough",
-   "count": 309
+   "count": 303
   },
   {
    "id": "marketing",
@@ -126,7 +126,7 @@
   {
    "id": "screen",
    "label": "screen",
-   "count": 250
+   "count": 255
   },
   {
    "id": "token-sheet",
@@ -137,11 +137,11 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 125
+   "count": 126
   },
   {
    "id": "hero",
-   "count": 66
+   "count": 68
   },
   {
    "id": "list",
@@ -157,7 +157,7 @@
   },
   {
    "id": "onboarding",
-   "count": 44
+   "count": 45
   },
   {
    "id": "landing-section",
@@ -173,7 +173,7 @@
   },
   {
    "id": "editor",
-   "count": 19
+   "count": 20
   },
   {
    "id": "chat",
@@ -227,27 +227,27 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 419
+   "count": 428
   },
   {
    "id": "minimal",
-   "count": 297
+   "count": 304
   },
   {
    "id": "rounded",
-   "count": 209
+   "count": 215
   },
   {
    "id": "card-based",
-   "count": 196
+   "count": 199
   },
   {
    "id": "dark-mode",
-   "count": 194
+   "count": 197
   },
   {
    "id": "data-dense",
-   "count": 69
+   "count": 70
   },
   {
    "id": "editorial",
@@ -255,7 +255,7 @@
   },
   {
    "id": "playful",
-   "count": 46
+   "count": 47
   },
   {
    "id": "soft",
@@ -283,7 +283,7 @@
   },
   {
    "id": "illustration-led",
-   "count": 23
+   "count": 24
   },
   {
    "id": "outlined",
@@ -320,6 +320,10 @@
    "count": 72
   },
   {
+   "id": "ai",
+   "count": 57
+  },
+  {
    "id": "cta",
    "count": 56
   },
@@ -328,20 +332,16 @@
    "count": 56
   },
   {
-   "id": "ai",
-   "count": 53
-  },
-  {
    "id": "chart",
    "count": 47
   },
   {
    "id": "analytics",
-   "count": 37
+   "count": 38
   },
   {
    "id": "landing",
-   "count": 36
+   "count": 38
   },
   {
    "id": "photographic",
@@ -364,6 +364,14 @@
    "count": 27
   },
   {
+   "id": "travel",
+   "count": 27
+  },
+  {
+   "id": "finance",
+   "count": 27
+  },
+  {
    "id": "promo",
    "count": 27
   },
@@ -380,19 +388,15 @@
    "count": 26
   },
   {
-   "id": "travel",
-   "count": 26
-  },
-  {
-   "id": "finance",
-   "count": 26
-  },
-  {
    "id": "onboarding",
    "count": 25
   },
   {
    "id": "avatar",
+   "count": 22
+  },
+  {
+   "id": "social",
    "count": 22
   },
   {
@@ -416,10 +420,6 @@
    "count": 21
   },
   {
-   "id": "social",
-   "count": 21
-  },
-  {
    "id": "kpi",
    "count": 21
   },
@@ -440,11 +440,11 @@
    "count": 19
   },
   {
-   "id": "app-store",
-   "count": 18
+   "id": "map",
+   "count": 19
   },
   {
-   "id": "map",
+   "id": "app-store",
    "count": 18
   },
   {
@@ -500,6 +500,14 @@
    "count": 13
   },
   {
+   "id": "gallery",
+   "count": 13
+  },
+  {
+   "id": "crypto",
+   "count": 13
+  },
+  {
    "id": "portfolio",
    "count": 13
   },
@@ -513,14 +521,6 @@
   },
   {
    "id": "delivery",
-   "count": 12
-  },
-  {
-   "id": "gallery",
-   "count": 12
-  },
-  {
-   "id": "crypto",
    "count": 12
   },
   {
@@ -572,6 +572,10 @@
    "count": 10
   },
   {
+   "id": "design-tool",
+   "count": 10
+  },
+  {
    "id": "settings",
    "count": 10
   },
@@ -601,6 +605,10 @@
   },
   {
    "id": "headline",
+   "count": 9
+  },
+  {
+   "id": "documentation",
    "count": 9
   },
   {
@@ -656,14 +664,6 @@
    "count": 8
   },
   {
-   "id": "design-tool",
-   "count": 8
-  },
-  {
-   "id": "documentation",
-   "count": 8
-  },
-  {
    "id": "mockup",
    "count": 8
   },
@@ -713,6 +713,10 @@
   },
   {
    "id": "authentication",
+   "count": 7
+  },
+  {
+   "id": "trading",
    "count": 7
   },
   {
@@ -829,10 +833,6 @@
   },
   {
    "id": "glow",
-   "count": 6
-  },
-  {
-   "id": "trading",
    "count": 6
   },
   {
@@ -1380,6 +1380,10 @@
    "count": 3
   },
   {
+   "id": "writing",
+   "count": 3
+  },
+  {
    "id": "project-management",
    "count": 3
   },
@@ -1412,11 +1416,19 @@
    "count": 3
   },
   {
+   "id": "browser",
+   "count": 3
+  },
+  {
    "id": "app-icon",
    "count": 3
   },
   {
    "id": "search",
+   "count": 3
+  },
+  {
+   "id": "layers",
    "count": 3
   },
   {
@@ -1433,6 +1445,10 @@
   },
   {
    "id": "workspace",
+   "count": 3
+  },
+  {
+   "id": "security",
    "count": 3
   },
   {
@@ -1772,10 +1788,6 @@
    "count": 2
   },
   {
-   "id": "writing",
-   "count": 2
-  },
-  {
    "id": "control",
    "count": 2
   },
@@ -1808,10 +1820,6 @@
    "count": 2
   },
   {
-   "id": "browser",
-   "count": 2
-  },
-  {
    "id": "cursor",
    "count": 2
   },
@@ -1821,10 +1829,6 @@
   },
   {
    "id": "navigation",
-   "count": 2
-  },
-  {
-   "id": "layers",
    "count": 2
   },
   {
@@ -2628,10 +2632,6 @@
    "count": 1
   },
   {
-   "id": "security",
-   "count": 1
-  },
-  {
    "id": "sign-in",
    "count": 1
   },
@@ -2769,6 +2769,10 @@
   },
   {
    "id": "atmospheric",
+   "count": 1
+  },
+  {
+   "id": "jobs",
    "count": 1
   },
   {
@@ -50787,13 +50791,20 @@
   {
    "id": "VID-0371",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0371",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "screen",
+   "title": "Floor-plan gap editor",
+   "description": "A floor-plan editor resolving 'Close the gap in the wall': checklist, wall-segment controls and a 3D room with the gap highlighted blue. A static CAD-like working screen.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "design-tool"
+   ],
    "palette": [
     "#FFFFFF",
     "#E3E3E6",
@@ -50837,7 +50848,8 @@
     "path": "E:\\Downloads\\UI\\zLT9rEqTU8SWQPaZ.mp4",
     "bytes": 1338858
    },
-   "source_note": "auto-draft 2026-09-26: motion median 1.14; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0371.webp",
    "thumb": "assets/thumb/VID-0371.webp",
    "motion": 1.14,
@@ -50849,11 +50861,18 @@
    "kind": "video",
    "category": "motion-demo",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0372",
-   "description": "",
+   "title": "Layers panel demo",
+   "description": "A Layers panel tour: 'My Project / Board 1' with Frame 1–6 rows and a cursor travelling down the list over a purple dotted canvas. Layer navigation as motion.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "design-tool",
+    "layers"
+   ],
    "palette": [
     "#E6E6E6",
     "#F8F8F8",
@@ -50897,7 +50916,8 @@
     "path": "E:\\Downloads\\UI\\hk7hQ6IqFF_YExw-.mp4",
     "bytes": 4057907
    },
-   "source_note": "auto-draft 2026-09-26: motion median 16.19; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0372.webp",
    "thumb": "assets/thumb/VID-0372.webp",
    "motion": 16.19,
@@ -50915,13 +50935,22 @@
   {
    "id": "VID-0373",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "website",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0373",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "AI platform landing scroll",
+   "description": "An enterprise AI landing scroll: 'AI enablement, security, and control in one platform' over a server-rack illustration. Infrastructure made presentable.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "illustration-led",
+    "light-mode"
+   ],
+   "tags": [
+    "ai",
+    "landing",
+    "security"
+   ],
    "palette": [
     "#FAFAF9",
     "#1F1A17",
@@ -50965,7 +50994,8 @@
     "path": "E:\\Downloads\\UI\\uv13GVSsYSzLtgYx.mp4",
     "bytes": 4722095
    },
-   "source_note": "auto-draft 2026-09-26: motion median 15.37; needs a visual read-through",
+   "quality": "Scroll frames soft; headline legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0373.webp",
    "thumb": "assets/thumb/VID-0373.webp",
    "motion": 15.37,
@@ -50983,13 +51013,21 @@
   {
    "id": "VID-0374",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "website",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0374",
-   "description": "",
+   "title": "Social-post gallery scroll",
+   "description": "A very fast scroll through posts.design: 'Hiring social post designs' with category chips (Hiring, Content, Launch, Teaser, Meme) and a maroon 'Digital Designer' card. Gallery velocity as the whole point.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "gallery",
+    "jobs",
+    "social"
+   ],
    "palette": [
     "#F9F9F9",
     "#4D1137",
@@ -51033,7 +51071,8 @@
     "path": "E:\\Downloads\\UI\\QAioQ6L_kciosGOI.mp4",
     "bytes": 3883775
    },
-   "source_note": "auto-draft 2026-09-26: motion median 96.16; needs a visual read-through",
+   "quality": "Scroll blur throughout; cards legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0374.webp",
    "thumb": "assets/thumb/VID-0374.webp",
    "motion": 96.16,
@@ -51051,13 +51090,20 @@
   {
    "id": "VID-0375",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "mobile-app-ui",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0375",
-   "description": "",
+   "title": "Travel guide scroll",
+   "description": "A travel-guide scroll: 'Where it is' map with traveller bases, Highlights rail and a voice button. Place-first travel content in a phone.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "map",
+    "travel"
+   ],
    "palette": [
     "#FEFEFD",
     "#DEE7DF",
@@ -51101,7 +51147,8 @@
     "path": "E:\\Downloads\\UI\\pQCHnQ_bXz_--7Qd.mp4",
     "bytes": 3693957
    },
-   "source_note": "auto-draft 2026-09-26: motion median 31.62; needs a visual read-through",
+   "quality": "Scroll frames soft; map legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0375.webp",
    "thumb": "assets/thumb/VID-0375.webp",
    "motion": 31.62,
@@ -51119,13 +51166,21 @@
   {
    "id": "VID-0376",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0376",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "screen",
+   "title": "Browser start page",
+   "description": "A browser start page: 'The Browser Company' row, Google Chrome and 'Start Fresh / Clean slate' options with a Continue CTA. Choosing a browser as a gentle questionnaire.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "browser"
+   ],
    "palette": [
     "#FFFFFF",
     "#F8F8F8",
@@ -51169,7 +51224,8 @@
     "path": "E:\\Downloads\\UI\\J1hmydf786hGh3-s.mp4",
     "bytes": 3744710
    },
-   "source_note": "auto-draft 2026-09-26: motion median 8.42; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0376.webp",
    "thumb": "assets/thumb/VID-0376.webp",
    "motion": 8.42,
@@ -51187,13 +51243,21 @@
   {
    "id": "VID-0377",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0377",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "screen",
+   "title": "Memory-AI dark landing",
+   "description": "A dark 'Intelligence that remembers' landing: white tree-and-roots rendering over footer columns. Memory as a root system — the art is the argument.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "ai",
+    "landing"
+   ],
    "palette": [
     "#000000",
     "#131313",
@@ -51237,7 +51301,8 @@
     "path": "E:\\Downloads\\UI\\hxaYnQcv8WHvxOFi.mp4",
     "bytes": 29125525
    },
-   "source_note": "auto-draft 2026-09-26: motion median 5.79; needs a visual read-through",
+   "quality": "Footer text small; composition legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0377.webp",
    "thumb": "assets/thumb/VID-0377.webp",
    "motion": 5.79,
@@ -51255,13 +51320,21 @@
   {
    "id": "VID-0378",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0378",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "dashboard",
+   "type": "screen",
+   "title": "CRM analytics screen",
+   "description": "A CloseCRM analytics screen: Activity Breakdown bars, an 82.8% monthly-revenue-target ring and team rows. The metrics depth of the CRM series.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "card-based",
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "analytics"
+   ],
    "palette": [
     "#EFEFF0",
     "#FCFCFC",
@@ -51305,7 +51378,8 @@
     "path": "E:\\Downloads\\UI\\4tAAfaxGVIYONCW4.mp4",
     "bytes": 8918266
    },
-   "source_note": "auto-draft 2026-09-26: motion median 6.64; needs a visual read-through",
+   "quality": "Small text soft; charts legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0378.webp",
    "thumb": "assets/thumb/VID-0378.webp",
    "motion": 6.64,
@@ -51323,13 +51397,19 @@
   {
    "id": "VID-0379",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "website",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0379",
-   "description": "",
+   "title": "Access-docs scroll",
+   "description": "An access-and-security docs scroll: isolated Workspaces, Roles, Single sign-on, approved domains, MCP servers and Webhooks with lime highlights. Security documentation that reads like a checklist.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "documentation",
+    "security"
+   ],
    "palette": [
     "#FFFFFE",
     "#D1F122",
@@ -51373,7 +51453,8 @@
     "path": "E:\\Downloads\\UI\\3rNekalyvT676ZP5.mp4",
     "bytes": 1332548
    },
-   "source_note": "auto-draft 2026-09-26: motion median 20.38; needs a visual read-through",
+   "quality": "Scroll frames soft; headings legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0379.webp",
    "thumb": "assets/thumb/VID-0379.webp",
    "motion": 20.38,
@@ -51391,13 +51472,20 @@
   {
    "id": "VID-0380",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0380",
-   "description": "",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "AI portfolio cards",
+   "description": "Floating 'Portfolio income' cards — Income Goal, Portfolio Review, Recommendation (49/51) — over a dark assistant orb. AI finance advice as a card fan.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "finance"
+   ],
    "palette": [
     "#FBFAFB",
     "#0E0E17",
@@ -51441,7 +51529,8 @@
     "path": "E:\\Downloads\\UI\\HS5_4HvXQAE6kMv.mp4",
     "bytes": 89843
    },
-   "source_note": "auto-draft 2026-09-26: motion median 4.46; needs a visual read-through",
+   "quality": "Card text small; composition legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0380.webp",
    "thumb": "assets/thumb/VID-0380.webp",
    "motion": 4.46,
@@ -51459,13 +51548,19 @@
   {
    "id": "VID-0381",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "website",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0381",
-   "description": "",
+   "title": "Sales-email AI demo",
+   "description": "A Salesforce email-writing demo: a long brief for a 3-paragraph outbound email scrolled in an AI composer. Prompt-in, email-out, full length shown.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "ai",
+    "writing"
+   ],
    "palette": [
     "#FEFEFE",
     "#ECEDF1",
@@ -51509,7 +51604,8 @@
     "path": "E:\\Downloads\\UI\\r46-6FcGy6lRCms-.mp4",
     "bytes": 115908
    },
-   "source_note": "auto-draft 2026-09-26: motion median 13.23; needs a visual read-through",
+   "quality": "Body text small; flow legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0381.webp",
    "thumb": "assets/thumb/VID-0381.webp",
    "motion": 13.23,
@@ -51527,13 +51623,20 @@
   {
    "id": "VID-0382",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0382",
-   "description": "",
+   "category": "dashboard",
+   "type": "component",
+   "title": "Trading deposit widget",
+   "description": "A dark trading widget: €3,128,082.09 with Deposit and Withdraw buttons. One balance, two actions, nothing else.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "crypto",
+    "trading"
+   ],
    "palette": [
     "#222222",
     "#090C0F",
@@ -51577,7 +51680,8 @@
     "path": "E:\\Downloads\\UI\\mRE5KZ133AydotUX.mp4",
     "bytes": 1868948
    },
-   "source_note": "auto-draft 2026-09-26: motion median 5.54; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0382.webp",
    "thumb": "assets/thumb/VID-0382.webp",
    "motion": 5.54,
