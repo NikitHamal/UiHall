@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 554
+  "described": 566
  },
  "categories": [
   {
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 63
+   "count": 70
   },
   {
    "id": "design-system",
@@ -63,7 +63,7 @@
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 39
+   "count": 44
   },
   {
    "id": "motion-demo",
@@ -84,14 +84,14 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 132
+   "count": 120
   }
  ],
  "types": [
   {
    "id": "component",
    "label": "component",
-   "count": 17
+   "count": 18
   },
   {
    "id": "flow-walkthrough",
@@ -126,7 +126,7 @@
   {
    "id": "screen",
    "label": "screen",
-   "count": 250
+   "count": 249
   },
   {
    "id": "token-sheet",
@@ -137,15 +137,15 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 104
+   "count": 109
+  },
+  {
+   "id": "hero",
+   "count": 57
   },
   {
    "id": "list",
    "count": 57
-  },
-  {
-   "id": "hero",
-   "count": 55
   },
   {
    "id": "detail",
@@ -165,7 +165,7 @@
   },
   {
    "id": "landing-section",
-   "count": 25
+   "count": 26
   },
   {
    "id": "editor",
@@ -173,6 +173,10 @@
   },
   {
    "id": "media",
+   "count": 16
+  },
+  {
+   "id": "pricing",
    "count": 16
   },
   {
@@ -192,10 +196,6 @@
    "count": 15
   },
   {
-   "id": "pricing",
-   "count": 14
-  },
-  {
    "id": "chat",
    "count": 13
   },
@@ -205,7 +205,7 @@
   },
   {
    "id": "social-proof",
-   "count": 10
+   "count": 11
   },
   {
    "id": "notification",
@@ -227,31 +227,31 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 333
+   "count": 344
   },
   {
    "id": "minimal",
-   "count": 254
+   "count": 257
   },
   {
    "id": "dark-mode",
-   "count": 171
+   "count": 172
   },
   {
    "id": "card-based",
-   "count": 147
+   "count": 152
   },
   {
    "id": "rounded",
-   "count": 146
-  },
-  {
-   "id": "editorial",
-   "count": 47
+   "count": 149
   },
   {
    "id": "data-dense",
-   "count": 47
+   "count": 52
+  },
+  {
+   "id": "editorial",
+   "count": 48
   },
   {
    "id": "soft",
@@ -283,7 +283,7 @@
   },
   {
    "id": "illustration-led",
-   "count": 20
+   "count": 21
   },
   {
    "id": "outlined",
@@ -325,27 +325,27 @@
   },
   {
    "id": "fintech",
-   "count": 49
+   "count": 54
   },
   {
    "id": "chart",
-   "count": 44
+   "count": 45
   },
   {
    "id": "ai",
-   "count": 41
+   "count": 42
   },
   {
    "id": "card",
    "count": 33
   },
   {
-   "id": "analytics",
+   "id": "photographic",
    "count": 31
   },
   {
-   "id": "photographic",
-   "count": 30
+   "id": "analytics",
+   "count": 31
   },
   {
    "id": "progress",
@@ -374,6 +374,14 @@
   {
    "id": "onboarding",
    "count": 25
+  },
+  {
+   "id": "table",
+   "count": 24
+  },
+  {
+   "id": "landing",
+   "count": 24
   },
   {
    "id": "avatar",
@@ -408,10 +416,6 @@
    "count": 20
   },
   {
-   "id": "table",
-   "count": 20
-  },
-  {
    "id": "gradient",
    "count": 19
   },
@@ -420,15 +424,15 @@
    "count": 19
   },
   {
+   "id": "finance",
+   "count": 19
+  },
+  {
    "id": "travel",
    "count": 18
   },
   {
    "id": "app-store",
-   "count": 18
-  },
-  {
-   "id": "landing",
    "count": 18
   },
   {
@@ -452,7 +456,7 @@
    "count": 14
   },
   {
-   "id": "finance",
+   "id": "transaction",
    "count": 14
   },
   {
@@ -473,10 +477,6 @@
   },
   {
    "id": "input",
-   "count": 13
-  },
-  {
-   "id": "transaction",
    "count": 13
   },
   {
@@ -509,6 +509,10 @@
   },
   {
    "id": "checklist",
+   "count": 11
+  },
+  {
+   "id": "subscription",
    "count": 11
   },
   {
@@ -552,7 +556,7 @@
    "count": 9
   },
   {
-   "id": "subscription",
+   "id": "productivity",
    "count": 9
   },
   {
@@ -589,10 +593,6 @@
   },
   {
    "id": "player",
-   "count": 8
-  },
-  {
-   "id": "productivity",
    "count": 8
   },
   {
@@ -652,6 +652,10 @@
    "count": 7
   },
   {
+   "id": "testimonial",
+   "count": 7
+  },
+  {
    "id": "modal",
    "count": 7
   },
@@ -677,6 +681,10 @@
   },
   {
    "id": "menu",
+   "count": 7
+  },
+  {
+   "id": "branding",
    "count": 7
   },
   {
@@ -753,10 +761,6 @@
   },
   {
    "id": "percentage",
-   "count": 6
-  },
-  {
-   "id": "testimonial",
    "count": 6
   },
   {
@@ -932,10 +936,6 @@
    "count": 5
   },
   {
-   "id": "branding",
-   "count": 5
-  },
-  {
    "id": "marketing",
    "count": 5
   },
@@ -1065,6 +1065,10 @@
   },
   {
    "id": "avatar-picker",
+   "count": 4
+  },
+  {
+   "id": "notes",
    "count": 4
   },
   {
@@ -1289,10 +1293,6 @@
   },
   {
    "id": "phone-mockup",
-   "count": 3
-  },
-  {
-   "id": "notes",
    "count": 3
   },
   {
@@ -2345,6 +2345,10 @@
   },
   {
    "id": "link-preview",
+   "count": 1
+  },
+  {
+   "id": "wordmark",
    "count": 1
   },
   {
@@ -27289,13 +27293,22 @@
   {
    "id": "IMG-0581",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0581",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "OneFin company dashboard",
+   "description": "A OneFin company dashboard in portrait: Active Companies 11, LTV 400.0%, a Market Rates table and a Cash Position list (Acme Solutions Srl, Global Enterprises Ltd). A light fintech command view; first of a three-screen OneFin series.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "finance",
+    "fintech",
+    "table"
+   ],
    "palette": [
     "#FDFEFE",
     "#A5AEBA",
@@ -27339,20 +27352,30 @@
     "path": "E:\\Downloads\\UI\\HS-o_BFWcAApeNv.jpg",
     "bytes": 408238
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Small figures soft; structure fully legible.",
    "src": "assets/img/IMG-0581.webp",
    "thumb": "assets/thumb/IMG-0581.webp"
   },
   {
    "id": "IMG-0582",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0582",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "OneFin cash-management view",
+   "description": "The OneFin Cash Management view: MSEK totals, 858K position, 804-day average maturity, a 1-day/7-day rate table and a Balance Trend sparkline. Same product language as the company dashboard — treasury detail rather than overview.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "chart",
+    "finance",
+    "fintech",
+    "table"
+   ],
    "palette": [
     "#FEFEFE",
     "#101012",
@@ -27396,20 +27419,30 @@
     "path": "E:\\Downloads\\UI\\HS-o_BKWQAA6SjL.jpg",
     "bytes": 335785
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Small figures soft; structure fully legible.",
+   "pair_with": "IMG-0581",
    "src": "assets/img/IMG-0582.webp",
    "thumb": "assets/thumb/IMG-0582.webp"
   },
   {
    "id": "IMG-0583",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0583",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "OneFin valuation view",
+   "description": "The OneFin valuation view: 24.77MSEK valuation, 2,320-day average capital maturity, the same rate table, and GBP transfer rows (€4,750 / €11,934). The third OneFin screen — one product, three depths.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "finance",
+    "fintech",
+    "table"
+   ],
    "palette": [
     "#FEFEFE",
     "#AA9984",
@@ -27453,20 +27486,30 @@
     "path": "E:\\Downloads\\UI\\HS-o_CSXIAA5uUk.jpg",
     "bytes": 389266
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Small figures soft; structure fully legible.",
+   "pair_with": "IMG-0582",
    "src": "assets/img/IMG-0583.webp",
    "thumb": "assets/thumb/IMG-0583.webp"
   },
   {
    "id": "IMG-0584",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0584",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "NorthLine Studio illustrated brand page",
+   "description": "A NorthLine Studio brand page: full-bleed blue engraving of a New York street canyon, small Studio/Work/Connect link columns, and a positioning line about ambitious brands. Illustration-as-identity in the same engraving idiom as the Answer series.",
+   "roles": [
+    "landing-section"
+   ],
+   "style": [
+    "editorial",
+    "illustration-led",
+    "light-mode"
+   ],
+   "tags": [
+    "branding",
+    "landing"
+   ],
    "palette": [
     "#F4F0FA",
     "#1D2E5B",
@@ -27510,20 +27553,28 @@
     "path": "E:\\Downloads\\UI\\HS7I4U1bEAALT4l.jpg",
     "bytes": 927617
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0584.webp",
    "thumb": "assets/thumb/IMG-0584.webp"
   },
   {
    "id": "IMG-0585",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0585",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Customer-quote testimonial wall",
+   "description": "'Discover What Our Customers Are Saying': four photo testimonial cards (Priya Nair, Elena Vasquez, Marcus Webb, Jordan Park) with pull quotes about onboarding speed and support, over a gradient band. A classic quote-wall social-proof module.",
+   "roles": [
+    "social-proof"
+   ],
+   "style": [
+    "card-based",
+    "light-mode"
+   ],
+   "tags": [
+    "landing",
+    "testimonial"
+   ],
    "palette": [
     "#F4F4F4",
     "#212122",
@@ -27567,20 +27618,26 @@
     "path": "E:\\Downloads\\UI\\HS7I6woakAAx1hY.jpg",
     "bytes": 385063
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Card body copy small; headlines and structure legible.",
    "src": "assets/img/IMG-0585.webp",
    "thumb": "assets/thumb/IMG-0585.webp"
   },
   {
    "id": "IMG-0586",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0586",
-   "description": "",
+   "category": "website",
+   "type": "component",
+   "title": "Lumen Studio footer with starfield",
+   "description": "A Lumen Studio footer treated as a brand moment: link columns over a black starfield with a glowing mountain ridge, closed by a giant 'Lumen Studio' wordmark. The footer as poster — the wordmark scale is the device.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "branding",
+    "wordmark"
+   ],
    "palette": [
     "#1F191D",
     "#F2E4D4",
@@ -27624,20 +27681,30 @@
     "path": "E:\\Downloads\\UI\\HS7I-FOaMAAi5sl.jpg",
     "bytes": 538342
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0586.webp",
    "thumb": "assets/thumb/IMG-0586.webp"
   },
   {
    "id": "IMG-0587",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0587",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Three-tier SaaS pricing",
+   "description": "'Simple Pricing, No Surprises': Starter $0 / Professional $19 (elevated, highlighted) / Business $49 with trial CTAs and a Monthly/Annual toggle. A three-tier SaaS pricing section done without a single footnote.",
+   "roles": [
+    "pricing"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "landing",
+    "subscription"
+   ],
    "palette": [
     "#F8F8F8",
     "#262626",
@@ -27681,20 +27748,31 @@
     "path": "E:\\Downloads\\UI\\HS7JAMTb0AASeHr.jpg",
     "bytes": 242583
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0587.webp",
    "thumb": "assets/thumb/IMG-0587.webp"
   },
   {
    "id": "IMG-0588",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0588",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Payouts money dashboard",
+   "description": "A payouts Money dashboard: $12,000 balance card, payout rails (Amex, Visa, USDC Wallet), $2,400/$0/$1,200 stat row and a September-2025 withdrawal history table with status pills. Balance-plus-rails-plus-history in one screen.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "card-based",
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "finance",
+    "fintech",
+    "table",
+    "transaction"
+   ],
    "palette": [
     "#FFFFFF",
     "#F9F9F9",
@@ -27738,20 +27816,28 @@
     "path": "E:\\Downloads\\UI\\HS6ZNb_bwAAEG5L.jpg",
     "bytes": 278883
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0588.webp",
    "thumb": "assets/thumb/IMG-0588.webp"
   },
   {
    "id": "IMG-0589",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0589",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Money balance view (crop)",
+   "description": "A narrower crop of the same Money product: 'Available balance $12,000' with the same rails and history. No new layout information — kept as the legible-text companion to the full dashboard.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "finance",
+    "fintech"
+   ],
    "palette": [
     "#FFFFFF",
     "#F9F9F9",
@@ -27795,7 +27881,8 @@
     "path": "E:\\Downloads\\UI\\HS6ZNb-bQAAPzAc.jpg",
     "bytes": 272541
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Crop of the same screen; text fully legible.",
+   "pair_with": "IMG-0588",
    "src": "assets/img/IMG-0589.webp",
    "thumb": "assets/thumb/IMG-0589.webp"
   },
@@ -27870,13 +27957,22 @@
   {
    "id": "IMG-0591",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0591",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Sunflower AI-builder hero",
+   "description": "'Start Building Without Limits' over a full-bleed sunflower field: a Subscribe pill CTA on photographic warmth, Trustline Tech footer below. An AI-builder hero that sells feeling first, product second.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "landing",
+    "photographic"
+   ],
    "palette": [
     "#FDFEFE",
     "#52674D",
@@ -27920,20 +28016,29 @@
     "path": "E:\\Downloads\\UI\\HS7BK0VaQAAHQrd.jpg",
     "bytes": 996483
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0591.webp",
    "thumb": "assets/thumb/IMG-0591.webp"
   },
   {
    "id": "IMG-0592",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0592",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Staged SaaS pricing columns",
+   "description": "'Simple pricing for every stage': three compact plan columns with feature checklists. The quiet counterpart to the bold pricing section — same job, no toggle, no highlight tier.",
+   "roles": [
+    "pricing"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "landing",
+    "subscription"
+   ],
    "palette": [
     "#FFFFFF",
     "#F2F2F2",
@@ -27977,20 +28082,30 @@
     "path": "E:\\Downloads\\UI\\HS7BK3YbMAAzhx1.jpg",
     "bytes": 469146
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Plan text small; structure fully legible.",
    "src": "assets/img/IMG-0592.webp",
    "thumb": "assets/thumb/IMG-0592.webp"
   },
   {
    "id": "IMG-0593",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0593",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Notes-app sky landing",
+   "description": "'All Your Ideas, Organized and Elevated': a notes-app landing under a blue-sky field, with an editor card and integration logos below. Sky-and-meadow calm as a productivity promise.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "landing",
+    "notes",
+    "productivity"
+   ],
    "palette": [
     "#FEFEFE",
     "#36BCEA",
@@ -28034,7 +28149,7 @@
     "path": "E:\\Downloads\\UI\\HS7Bd3kbgAAac8h.jpg",
     "bytes": 861244
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Card text small; headline and structure legible.",
    "src": "assets/img/IMG-0593.webp",
    "thumb": "assets/thumb/IMG-0593.webp"
   },

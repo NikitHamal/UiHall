@@ -1,0 +1,247 @@
+{
+ "items": {
+  "IMG-0581": {
+   "category": "dashboard",
+   "description": "A OneFin company dashboard in portrait: Active Companies 11, LTV 400.0%, a Market Rates table and a Cash Position list (Acme Solutions Srl, Global Enterprises Ltd). A light fintech command view; first of a three-screen OneFin series.",
+   "id": "IMG-0581",
+   "quality": "Small figures soft; structure fully legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "finance",
+    "fintech",
+    "table"
+   ],
+   "title": "OneFin company dashboard",
+   "type": "screen"
+  },
+  "IMG-0582": {
+   "category": "dashboard",
+   "description": "The OneFin Cash Management view: MSEK totals, 858K position, 804-day average maturity, a 1-day/7-day rate table and a Balance Trend sparkline. Same product language as the company dashboard — treasury detail rather than overview.",
+   "id": "IMG-0582",
+   "pair_with": "IMG-0581",
+   "quality": "Small figures soft; structure fully legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "finance",
+    "fintech",
+    "chart",
+    "table"
+   ],
+   "title": "OneFin cash-management view",
+   "type": "screen"
+  },
+  "IMG-0583": {
+   "category": "dashboard",
+   "description": "The OneFin valuation view: 24.77MSEK valuation, 2,320-day average capital maturity, the same rate table, and GBP transfer rows (€4,750 / €11,934). The third OneFin screen — one product, three depths.",
+   "id": "IMG-0583",
+   "pair_with": "IMG-0582",
+   "quality": "Small figures soft; structure fully legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "finance",
+    "fintech",
+    "table"
+   ],
+   "title": "OneFin valuation view",
+   "type": "screen"
+  },
+  "IMG-0584": {
+   "category": "website",
+   "description": "A NorthLine Studio brand page: full-bleed blue engraving of a New York street canyon, small Studio/Work/Connect link columns, and a positioning line about ambitious brands. Illustration-as-identity in the same engraving idiom as the Answer series.",
+   "id": "IMG-0584",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "landing-section"
+   ],
+   "style": [
+    "light-mode",
+    "illustration-led",
+    "editorial"
+   ],
+   "tags": [
+    "branding",
+    "landing"
+   ],
+   "title": "NorthLine Studio illustrated brand page",
+   "type": "screen"
+  },
+  "IMG-0585": {
+   "category": "website",
+   "description": "'Discover What Our Customers Are Saying': four photo testimonial cards (Priya Nair, Elena Vasquez, Marcus Webb, Jordan Park) with pull quotes about onboarding speed and support, over a gradient band. A classic quote-wall social-proof module.",
+   "id": "IMG-0585",
+   "quality": "Card body copy small; headlines and structure legible.",
+   "roles": [
+    "social-proof"
+   ],
+   "style": [
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "testimonial",
+    "landing"
+   ],
+   "title": "Customer-quote testimonial wall",
+   "type": "screen"
+  },
+  "IMG-0586": {
+   "category": "website",
+   "description": "A Lumen Studio footer treated as a brand moment: link columns over a black starfield with a glowing mountain ridge, closed by a giant 'Lumen Studio' wordmark. The footer as poster — the wordmark scale is the device.",
+   "id": "IMG-0586",
+   "quality": "Clean capture; fully legible.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "branding",
+    "wordmark"
+   ],
+   "title": "Lumen Studio footer with starfield",
+   "type": "component"
+  },
+  "IMG-0587": {
+   "category": "website",
+   "description": "'Simple Pricing, No Surprises': Starter $0 / Professional $19 (elevated, highlighted) / Business $49 with trial CTAs and a Monthly/Annual toggle. A three-tier SaaS pricing section done without a single footnote.",
+   "id": "IMG-0587",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "pricing"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "subscription",
+    "landing"
+   ],
+   "title": "Three-tier SaaS pricing",
+   "type": "screen"
+  },
+  "IMG-0588": {
+   "category": "dashboard",
+   "description": "A payouts Money dashboard: $12,000 balance card, payout rails (Amex, Visa, USDC Wallet), $2,400/$0/$1,200 stat row and a September-2025 withdrawal history table with status pills. Balance-plus-rails-plus-history in one screen.",
+   "id": "IMG-0588",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense",
+    "card-based"
+   ],
+   "tags": [
+    "finance",
+    "fintech",
+    "table",
+    "transaction"
+   ],
+   "title": "Payouts money dashboard",
+   "type": "screen"
+  },
+  "IMG-0589": {
+   "category": "dashboard",
+   "description": "A narrower crop of the same Money product: 'Available balance $12,000' with the same rails and history. No new layout information — kept as the legible-text companion to the full dashboard.",
+   "id": "IMG-0589",
+   "pair_with": "IMG-0588",
+   "quality": "Crop of the same screen; text fully legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "finance",
+    "fintech"
+   ],
+   "title": "Money balance view (crop)",
+   "type": "screen"
+  },
+  "IMG-0591": {
+   "category": "website",
+   "description": "'Start Building Without Limits' over a full-bleed sunflower field: a Subscribe pill CTA on photographic warmth, Trustline Tech footer below. An AI-builder hero that sells feeling first, product second.",
+   "id": "IMG-0591",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "photographic",
+    "rounded"
+   ],
+   "tags": [
+    "landing",
+    "ai"
+   ],
+   "title": "Sunflower AI-builder hero",
+   "type": "screen"
+  },
+  "IMG-0592": {
+   "category": "website",
+   "description": "'Simple pricing for every stage': three compact plan columns with feature checklists. The quiet counterpart to the bold pricing section — same job, no toggle, no highlight tier.",
+   "id": "IMG-0592",
+   "quality": "Plan text small; structure fully legible.",
+   "roles": [
+    "pricing"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "subscription",
+    "landing"
+   ],
+   "title": "Staged SaaS pricing columns",
+   "type": "screen"
+  },
+  "IMG-0593": {
+   "category": "website",
+   "description": "'All Your Ideas, Organized and Elevated': a notes-app landing under a blue-sky field, with an editor card and integration logos below. Sky-and-meadow calm as a productivity promise.",
+   "id": "IMG-0593",
+   "quality": "Card text small; headline and structure legible.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "landing",
+    "notes",
+    "productivity"
+   ],
+   "title": "Notes-app sky landing",
+   "type": "screen"
+  }
+ }
+}
