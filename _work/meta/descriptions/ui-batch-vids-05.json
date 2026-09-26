@@ -1,0 +1,231 @@
+{
+ "items": {
+  "VID-0383": {
+   "category": "promo-reel",
+   "description": "A very fast reel of app promo cards: Kyoto travel map, 9,240 fitness ring, koala meditation, $1,280 savings and a cooking app. Five apps per second — marketing sizzle, not interface study.",
+   "id": "VID-0383",
+   "quality": "Reel speed blurs detail; cards identifiable.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "playful",
+    "rounded"
+   ],
+   "tags": [],
+   "title": "App promo card reel",
+   "type": "flow-walkthrough"
+  },
+  "VID-0384": {
+   "category": "other",
+   "description": "A dark overlay with circular avatars and small dollar amounts ($544, $145): reads as tipping or gifting UI, but the content is unclear at poster size. Held, not claimed.",
+   "id": "VID-0384",
+   "quality": "Content unclear at poster size — flagged for a full-size second pass.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "payments"
+   ],
+   "title": "Dark tipping overlay",
+   "type": "screen"
+  },
+  "VID-0385": {
+   "category": "mobile-app-ui",
+   "description": "A 'Pick your vibe' avatar grid: twelve illustrated faces under a VB header with one selected. Identity-as-illustration onboarding.",
+   "id": "VID-0385",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [
+    "onboarding"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "playful",
+    "rounded",
+    "light-mode"
+   ],
+   "tags": [
+    "avatar",
+    "avatar-picker",
+    "personalisation"
+   ],
+   "title": "Vibe avatar picker",
+   "type": "screen"
+  },
+  "VID-0386": {
+   "category": "website",
+   "description": "A '4 models' selector: Claude Opus 5.5, GPT-6 Astra, Gemini 3.8 Flash and DeepSeek V4.1 checkboxes with an Open-weights row. Model names are aspirational; the multi-select-with-weights pattern is real.",
+   "id": "VID-0386",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "model-versions"
+   ],
+   "title": "Multi-model selector",
+   "type": "component"
+  },
+  "VID-0387": {
+   "category": "mobile-app-ui",
+   "description": "A GIF strip riding above an iOS keyboard: reaction GIFs one tap from the message field. The keyboard accessory as content.",
+   "id": "VID-0387",
+   "quality": "Fast frames soft; layout legible.",
+   "roles": [
+    "chat"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "keyboard"
+   ],
+   "title": "GIF keyboard panel",
+   "type": "screen"
+  },
+  "VID-0388": {
+   "category": "dashboard",
+   "description": "A writing-life dashboard: 1,190 headline figure, Deep-work/Writing-streak/Reading rings and a week of day dots. Quantified-self for words.",
+   "id": "VID-0388",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [
+    "dashboard"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "writing",
+    "stats",
+    "streak"
+   ],
+   "title": "Writing stats dashboard",
+   "type": "screen"
+  },
+  "VID-0389": {
+   "category": "mobile-app-ui",
+   "description": "An 'Extra Protection' 2FA enroll: authenticator app dial, plain-language promise and a blue Continue. Security onboarding without jargon.",
+   "id": "VID-0389",
+   "quality": "Clean frames; fully legible.",
+   "roles": [
+    "auth"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "authentication",
+    "security"
+   ],
+   "title": "2FA enroll screen",
+   "type": "screen"
+  },
+  "VID-0390": {
+   "category": "design-system",
+   "description": "An annotation-styles specimen: wavy, underline, double, dotted, line, arrow, highlight, circle, box, bracket, strikethrough and crossOut — twelve markups, one legend. A reference sheet, not a screen.",
+   "id": "VID-0390",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "annotation"
+   ],
+   "title": "Annotation styles board",
+   "type": "reference"
+  },
+  "VID-0391": {
+   "category": "mobile-app-ui",
+   "description": "A minimal voice recorder: live waveform pill and a red stop button on near-black. Two elements, one job.",
+   "id": "VID-0391",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "voice",
+    "audio"
+   ],
+   "title": "Voice recorder widget",
+   "type": "component"
+  },
+  "VID-0392": {
+   "category": "motion-demo",
+   "description": "A side-by-side AI video bake-off: 'Generic AI output' versus 'With Libraries.dev Skill', both generating with 00:02 voice pills. Comparison as the content.",
+   "id": "VID-0392",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "video",
+    "comparison"
+   ],
+   "title": "AI video-gen comparison",
+   "type": "screen"
+  },
+  "VID-0393": {
+   "category": "website",
+   "description": "A 'Sail' share card: pastel sky postcard with a copy-code affordance. Aesthetic referral minimalism.",
+   "id": "VID-0393",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "sharing",
+    "illustration"
+   ],
+   "title": "Sail share card",
+   "type": "screen"
+  },
+  "VID-0394": {
+   "category": "mobile-app-ui",
+   "description": "A fast-scrolling 'Birthplace' city picker: Dharan, Hetauda, Janakpur, Nepalgunj, Dhangadhi, Birtamod, Lumbini — Nepal-first ordering with London at the tail. Location search with a point of view.",
+   "id": "VID-0394",
+   "quality": "Scroll frames blur rows; cities legible.",
+   "roles": [
+    "form",
+    "search"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "location"
+   ],
+   "title": "Birthplace city picker",
+   "type": "screen"
+  }
+ }
+}

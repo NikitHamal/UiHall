@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 685
+  "described": 697
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 384
+   "count": 389
   },
   {
    "id": "app-store-screens",
@@ -35,14 +35,14 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 113
+   "count": 115
   },
   {
    "id": "design-system",
    "label": "Design system",
    "blurb": "Tokens, components, spacing, icon sets, tool panels.",
    "icon": "grid",
-   "count": 21
+   "count": 22
   },
   {
    "id": "color-palette",
@@ -63,40 +63,40 @@
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 62
+   "count": 63
   },
   {
    "id": "motion-demo",
    "label": "Motion demo",
    "blurb": "Clips whose whole point is the transition, not the static screen.",
    "icon": "play",
-   "count": 71
+   "count": 65
   },
   {
    "id": "promo-reel",
    "label": "Promo reel",
    "blurb": "Marketing video: app presented, not an interface to copy.",
    "icon": "film",
-   "count": 19
+   "count": 20
   },
   {
    "id": "other",
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 42
+   "count": 38
   }
  ],
  "types": [
   {
    "id": "component",
    "label": "component",
-   "count": 28
+   "count": 30
   },
   {
    "id": "flow-walkthrough",
    "label": "flow-walkthrough",
-   "count": 303
+   "count": 292
   },
   {
    "id": "marketing",
@@ -121,12 +121,12 @@
   {
    "id": "reference",
    "label": "reference",
-   "count": 2
+   "count": 3
   },
   {
    "id": "screen",
    "label": "screen",
-   "count": 255
+   "count": 263
   },
   {
    "id": "token-sheet",
@@ -137,7 +137,7 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 126
+   "count": 127
   },
   {
    "id": "hero",
@@ -157,7 +157,7 @@
   },
   {
    "id": "onboarding",
-   "count": 45
+   "count": 46
   },
   {
    "id": "landing-section",
@@ -165,7 +165,7 @@
   },
   {
    "id": "form",
-   "count": 29
+   "count": 30
   },
   {
    "id": "settings",
@@ -177,7 +177,7 @@
   },
   {
    "id": "chat",
-   "count": 19
+   "count": 20
   },
   {
    "id": "media",
@@ -192,24 +192,24 @@
    "count": 17
   },
   {
-   "id": "feed",
+   "id": "search",
    "count": 16
   },
   {
-   "id": "search",
-   "count": 15
+   "id": "feed",
+   "count": 16
   },
   {
    "id": "checkout",
    "count": 15
   },
   {
-   "id": "social-proof",
+   "id": "auth",
    "count": 13
   },
   {
-   "id": "auth",
-   "count": 12
+   "id": "social-proof",
+   "count": 13
   },
   {
    "id": "notification",
@@ -227,39 +227,39 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 428
+   "count": 433
   },
   {
    "id": "minimal",
-   "count": 304
+   "count": 308
   },
   {
    "id": "rounded",
-   "count": 215
-  },
-  {
-   "id": "card-based",
-   "count": 199
+   "count": 224
   },
   {
    "id": "dark-mode",
-   "count": 197
+   "count": 203
+  },
+  {
+   "id": "card-based",
+   "count": 200
   },
   {
    "id": "data-dense",
    "count": 70
   },
   {
+   "id": "playful",
+   "count": 49
+  },
+  {
    "id": "editorial",
    "count": 49
   },
   {
-   "id": "playful",
-   "count": 47
-  },
-  {
    "id": "soft",
-   "count": 39
+   "count": 40
   },
   {
    "id": "bold-typography",
@@ -321,7 +321,7 @@
   },
   {
    "id": "ai",
-   "count": 57
+   "count": 59
   },
   {
    "id": "cta",
@@ -356,12 +356,12 @@
    "count": 28
   },
   {
-   "id": "photo",
+   "id": "comparison",
    "count": 28
   },
   {
-   "id": "comparison",
-   "count": 27
+   "id": "photo",
+   "count": 28
   },
   {
    "id": "travel",
@@ -393,15 +393,15 @@
   },
   {
    "id": "avatar",
+   "count": 23
+  },
+  {
+   "id": "illustration",
    "count": 22
   },
   {
    "id": "social",
    "count": 22
-  },
-  {
-   "id": "illustration",
-   "count": 21
   },
   {
    "id": "balance",
@@ -524,6 +524,10 @@
    "count": 12
   },
   {
+   "id": "stats",
+   "count": 12
+  },
+  {
    "id": "green",
    "count": 11
   },
@@ -536,11 +540,15 @@
    "count": 11
   },
   {
+   "id": "streak",
+   "count": 11
+  },
+  {
    "id": "redesign",
    "count": 11
   },
   {
-   "id": "stats",
+   "id": "sharing",
    "count": 11
   },
   {
@@ -556,19 +564,11 @@
    "count": 10
   },
   {
-   "id": "streak",
-   "count": 10
-  },
-  {
    "id": "icons",
    "count": 10
   },
   {
    "id": "price",
-   "count": 10
-  },
-  {
-   "id": "sharing",
    "count": 10
   },
   {
@@ -648,6 +648,10 @@
    "count": 8
   },
   {
+   "id": "authentication",
+   "count": 8
+  },
+  {
    "id": "bar-chart",
    "count": 8
   },
@@ -692,6 +696,10 @@
    "count": 7
   },
   {
+   "id": "location",
+   "count": 7
+  },
+  {
    "id": "template",
    "count": 7
   },
@@ -709,10 +717,6 @@
   },
   {
    "id": "contacts",
-   "count": 7
-  },
-  {
-   "id": "authentication",
    "count": 7
   },
   {
@@ -788,15 +792,15 @@
    "count": 6
   },
   {
+   "id": "payments",
+   "count": 6
+  },
+  {
    "id": "badges",
    "count": 6
   },
   {
    "id": "tracker",
-   "count": 6
-  },
-  {
-   "id": "location",
    "count": 6
   },
   {
@@ -848,11 +852,19 @@
    "count": 6
   },
   {
+   "id": "avatar-picker",
+   "count": 6
+  },
+  {
    "id": "camera",
    "count": 6
   },
   {
    "id": "ai-agent",
+   "count": 6
+  },
+  {
+   "id": "annotation",
    "count": 6
   },
   {
@@ -905,10 +917,6 @@
   },
   {
    "id": "charts",
-   "count": 5
-  },
-  {
-   "id": "payments",
    "count": 5
   },
   {
@@ -992,19 +1000,11 @@
    "count": 5
   },
   {
-   "id": "avatar-picker",
-   "count": 5
-  },
-  {
    "id": "context-menu",
    "count": 5
   },
   {
    "id": "marketing",
-   "count": 5
-  },
-  {
-   "id": "annotation",
    "count": 5
   },
   {
@@ -1057,6 +1057,10 @@
   },
   {
    "id": "artwork",
+   "count": 4
+  },
+  {
+   "id": "audio",
    "count": 4
   },
   {
@@ -1164,6 +1168,10 @@
    "count": 4
   },
   {
+   "id": "writing",
+   "count": 4
+  },
+  {
    "id": "integration",
    "count": 4
   },
@@ -1208,6 +1216,10 @@
    "count": 4
   },
   {
+   "id": "security",
+   "count": 4
+  },
+  {
    "id": "sustainability",
    "count": 3
   },
@@ -1249,10 +1261,6 @@
   },
   {
    "id": "paywall",
-   "count": 3
-  },
-  {
-   "id": "audio",
    "count": 3
   },
   {
@@ -1372,6 +1380,10 @@
    "count": 3
   },
   {
+   "id": "voice",
+   "count": 3
+  },
+  {
    "id": "widgets",
    "count": 3
   },
@@ -1380,11 +1392,11 @@
    "count": 3
   },
   {
-   "id": "writing",
+   "id": "project-management",
    "count": 3
   },
   {
-   "id": "project-management",
+   "id": "model-versions",
    "count": 3
   },
   {
@@ -1448,7 +1460,11 @@
    "count": 3
   },
   {
-   "id": "security",
+   "id": "keyboard",
+   "count": 3
+  },
+  {
+   "id": "personalisation",
    "count": 3
   },
   {
@@ -1776,10 +1792,6 @@
    "count": 2
   },
   {
-   "id": "voice",
-   "count": 2
-  },
-  {
    "id": "product-shot",
    "count": 2
   },
@@ -1797,10 +1809,6 @@
   },
   {
    "id": "attachments",
-   "count": 2
-  },
-  {
-   "id": "model-versions",
    "count": 2
   },
   {
@@ -1864,10 +1872,6 @@
    "count": 2
   },
   {
-   "id": "keyboard",
-   "count": 2
-  },
-  {
    "id": "investing",
    "count": 2
   },
@@ -1881,10 +1885,6 @@
   },
   {
    "id": "barcode",
-   "count": 2
-  },
-  {
-   "id": "personalisation",
    "count": 2
   },
   {
@@ -2773,6 +2773,10 @@
   },
   {
    "id": "jobs",
+   "count": 1
+  },
+  {
+   "id": "video",
    "count": 1
   },
   {
@@ -51699,12 +51703,15 @@
   {
    "id": "VID-0383",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "promo-reel",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0383",
-   "description": "",
+   "title": "App promo card reel",
+   "description": "A very fast reel of app promo cards: Kyoto travel map, 9,240 fitness ring, koala meditation, $1,280 savings and a cooking app. Five apps per second — marketing sizzle, not interface study.",
    "roles": [],
-   "style": [],
+   "style": [
+    "playful",
+    "rounded"
+   ],
    "tags": [],
    "palette": [
     "#FCFBFA",
@@ -51749,7 +51756,8 @@
     "path": "E:\\Downloads\\UI\\GYUcl5c6Fyzlf9tU.mp4",
     "bytes": 14412090
    },
-   "source_note": "auto-draft 2026-09-26: motion median 84.09; needs a visual read-through",
+   "quality": "Reel speed blurs detail; cards identifiable.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0383.webp",
    "thumb": "assets/thumb/VID-0383.webp",
    "motion": 84.09,
@@ -51768,12 +51776,16 @@
    "id": "VID-0384",
    "kind": "video",
    "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0384",
-   "description": "",
+   "type": "screen",
+   "title": "Dark tipping overlay",
+   "description": "A dark overlay with circular avatars and small dollar amounts ($544, $145): reads as tipping or gifting UI, but the content is unclear at poster size. Held, not claimed.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "payments"
+   ],
    "palette": [
     "#000000",
     "#131413",
@@ -51817,7 +51829,8 @@
     "path": "E:\\Downloads\\UI\\mY7EtXs2qjsskvi1.mp4",
     "bytes": 4810228
    },
-   "source_note": "auto-draft 2026-09-26: motion median 2.93; needs a visual read-through",
+   "quality": "Content unclear at poster size — flagged for a full-size second pass.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0384.webp",
    "thumb": "assets/thumb/VID-0384.webp",
    "motion": 2.93,
@@ -51835,13 +51848,23 @@
   {
    "id": "VID-0385",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0385",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Vibe avatar picker",
+   "description": "A 'Pick your vibe' avatar grid: twelve illustrated faces under a VB header with one selected. Identity-as-illustration onboarding.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "avatar",
+    "avatar-picker",
+    "personalisation"
+   ],
    "palette": [
     "#FFFFFF",
     "#EFEDEE",
@@ -51885,7 +51908,8 @@
     "path": "E:\\Downloads\\UI\\8jXqClC9Ts_BewAA.mp4",
     "bytes": 268145
    },
-   "source_note": "auto-draft 2026-09-26: motion median 1.55; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0385.webp",
    "thumb": "assets/thumb/VID-0385.webp",
    "motion": 1.55,
@@ -51895,13 +51919,20 @@
   {
    "id": "VID-0386",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0386",
-   "description": "",
+   "category": "website",
+   "type": "component",
+   "title": "Multi-model selector",
+   "description": "A '4 models' selector: Claude Opus 5.5, GPT-6 Astra, Gemini 3.8 Flash and DeepSeek V4.1 checkboxes with an Open-weights row. Model names are aspirational; the multi-select-with-weights pattern is real.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "model-versions"
+   ],
    "palette": [
     "#171717",
     "#222222",
@@ -51945,7 +51976,8 @@
     "path": "E:\\Downloads\\UI\\IrqKUhpUNtO4L7gR.mp4",
     "bytes": 1261840
    },
-   "source_note": "auto-draft 2026-09-26: motion median 4.72; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0386.webp",
    "thumb": "assets/thumb/VID-0386.webp",
    "motion": 4.72,
@@ -51963,13 +51995,20 @@
   {
    "id": "VID-0387",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0387",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "GIF keyboard panel",
+   "description": "A GIF strip riding above an iOS keyboard: reaction GIFs one tap from the message field. The keyboard accessory as content.",
+   "roles": [
+    "chat"
+   ],
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "keyboard"
+   ],
    "palette": [
     "#F8F9FB",
     "#E5E5EA",
@@ -52013,7 +52052,8 @@
     "path": "E:\\Downloads\\UI\\JDNgKD_A6XwsFQig.mp4",
     "bytes": 4059291
    },
-   "source_note": "auto-draft 2026-09-26: motion median 18.8; needs a visual read-through",
+   "quality": "Fast frames soft; layout legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0387.webp",
    "thumb": "assets/thumb/VID-0387.webp",
    "motion": 18.8,
@@ -52031,13 +52071,23 @@
   {
    "id": "VID-0388",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0388",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "dashboard",
+   "type": "screen",
+   "title": "Writing stats dashboard",
+   "description": "A writing-life dashboard: 1,190 headline figure, Deep-work/Writing-streak/Reading rings and a week of day dots. Quantified-self for words.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "stats",
+    "streak",
+    "writing"
+   ],
    "palette": [
     "#F8F8F8",
     "#C2C7C6",
@@ -52081,7 +52131,8 @@
     "path": "E:\\Downloads\\UI\\Gu4PFbmpdKeVD8E9.mp4",
     "bytes": 1868664
    },
-   "source_note": "auto-draft 2026-09-26: motion median 1.67; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0388.webp",
    "thumb": "assets/thumb/VID-0388.webp",
    "motion": 1.67,
@@ -52091,13 +52142,21 @@
   {
    "id": "VID-0389",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0389",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "2FA enroll screen",
+   "description": "An 'Extra Protection' 2FA enroll: authenticator app dial, plain-language promise and a blue Continue. Security onboarding without jargon.",
+   "roles": [
+    "auth"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "authentication",
+    "security"
+   ],
    "palette": [
     "#F3F5FB",
     "#020308",
@@ -52141,7 +52200,8 @@
     "path": "E:\\Downloads\\UI\\X_9PP6Putt06YD1R.mp4",
     "bytes": 854947
    },
-   "source_note": "auto-draft 2026-09-26: motion median 5.6; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0389.webp",
    "thumb": "assets/thumb/VID-0389.webp",
    "motion": 5.6,
@@ -52159,13 +52219,18 @@
   {
    "id": "VID-0390",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0390",
-   "description": "",
+   "category": "design-system",
+   "type": "reference",
+   "title": "Annotation styles board",
+   "description": "An annotation-styles specimen: wavy, underline, double, dotted, line, arrow, highlight, circle, box, bracket, strikethrough and crossOut — twelve markups, one legend. A reference sheet, not a screen.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "annotation"
+   ],
    "palette": [
     "#161616",
     "#29312C",
@@ -52209,7 +52274,8 @@
     "path": "E:\\Downloads\\UI\\PrpYwAhVaab6SVHk.mp4",
     "bytes": 105988
    },
-   "source_note": "auto-draft 2026-09-26: motion median 0.96; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0390.webp",
    "thumb": "assets/thumb/VID-0390.webp",
    "motion": 0.96,
@@ -52219,13 +52285,20 @@
   {
    "id": "VID-0391",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0391",
-   "description": "",
+   "category": "mobile-app-ui",
+   "type": "component",
+   "title": "Voice recorder widget",
+   "description": "A minimal voice recorder: live waveform pill and a red stop button on near-black. Two elements, one job.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "audio",
+    "voice"
+   ],
    "palette": [
     "#171717",
     "#272627",
@@ -52269,7 +52342,8 @@
     "path": "E:\\Downloads\\UI\\3Y4MQYsClxVtrj49.mp4",
     "bytes": 365134
    },
-   "source_note": "auto-draft 2026-09-26: motion median 0.2; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0391.webp",
    "thumb": "assets/thumb/VID-0391.webp",
    "motion": 0.2,
@@ -52280,12 +52354,19 @@
    "id": "VID-0392",
    "kind": "video",
    "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0392",
-   "description": "",
+   "type": "screen",
+   "title": "AI video-gen comparison",
+   "description": "A side-by-side AI video bake-off: 'Generic AI output' versus 'With Libraries.dev Skill', both generating with 00:02 voice pills. Comparison as the content.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "comparison",
+    "video"
+   ],
    "palette": [
     "#030303",
     "#181415",
@@ -52329,7 +52410,8 @@
     "path": "E:\\Downloads\\UI\\6KCcMczVW8wXvOcg.mp4",
     "bytes": 2480320
    },
-   "source_note": "auto-draft 2026-09-26: motion median 4.09; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0392.webp",
    "thumb": "assets/thumb/VID-0392.webp",
    "motion": 4.09,
@@ -52347,13 +52429,20 @@
   {
    "id": "VID-0393",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0393",
-   "description": "",
+   "category": "website",
+   "type": "screen",
+   "title": "Sail share card",
+   "description": "A 'Sail' share card: pastel sky postcard with a copy-code affordance. Aesthetic referral minimalism.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "illustration",
+    "sharing"
+   ],
    "palette": [
     "#F5EFE8",
     "#B8B3C6",
@@ -52397,7 +52486,8 @@
     "path": "E:\\Downloads\\UI\\pnmJ986L0jja88NO.mp4",
     "bytes": 2654495
    },
-   "source_note": "auto-draft 2026-09-26: motion median 10.98; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0393.webp",
    "thumb": "assets/thumb/VID-0393.webp",
    "motion": 10.98,
@@ -52415,13 +52505,21 @@
   {
    "id": "VID-0394",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0394",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Birthplace city picker",
+   "description": "A fast-scrolling 'Birthplace' city picker: Dharan, Hetauda, Janakpur, Nepalgunj, Dhangadhi, Birtamod, Lumbini — Nepal-first ordering with London at the tail. Location search with a point of view.",
+   "roles": [
+    "form",
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "location"
+   ],
    "palette": [
     "#FBFDFA",
     "#A3A3A3",
@@ -52465,7 +52563,8 @@
     "path": "E:\\Downloads\\UI\\VnIF8P4WVRZmAuvy.mp4",
     "bytes": 1669254
    },
-   "source_note": "auto-draft 2026-09-26: motion median 39.91; needs a visual read-through",
+   "quality": "Scroll frames blur rows; cities legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0394.webp",
    "thumb": "assets/thumb/VID-0394.webp",
    "motion": 39.91,
