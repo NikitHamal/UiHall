@@ -20,6 +20,8 @@ const Lightbox = (() => {
     const box = root();
     box.hidden = false;
     document.body.style.overflow = 'hidden';
+    document.getElementById('lbPrev').onclick = () => step(-1);
+    document.getElementById('lbNext').onclick = () => step(1);
     document.querySelector('.lightbox__close')?.focus();
     document.addEventListener('keydown', onKey);
   }
@@ -145,6 +147,9 @@ const Lightbox = (() => {
 
   function render(asset) {
     media(asset);
+    const idx = order.indexOf(asset.id);
+    document.getElementById('lbCount').textContent =
+      idx >= 0 ? `${idx + 1} / ${order.length}` : '';
     const box = infoBox();
     box.innerHTML = '';
 

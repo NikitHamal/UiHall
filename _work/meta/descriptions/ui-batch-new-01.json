@@ -1,0 +1,155 @@
+{
+ "items": {
+  "IMG-0544": {
+   "category": "mobile-app-ui",
+   "description": "A light, minimal 'Share transcript' sheet from meetball.app: a paperclipped note card reading 'Opening copy needs a decision before Wednesday', an 'Add to' row with Drive, Notion, Linear, Jira and Slack targets, and a 'meetball.app/m/website-re…' link field with a 'Copy link' button. A restrained share/export sheet; the app-icon row is the pattern worth studying.",
+   "id": "IMG-0544",
+   "quality": "Clean capture; body copy under the note card is faded by design.",
+   "roles": [
+    "sharing"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded",
+    "soft-shadow"
+   ],
+   "tags": [
+    "sharing",
+    "modal",
+    "integration",
+    "link-preview"
+   ],
+   "title": "Meetball share-transcript sheet",
+   "type": "component"
+  },
+  "IMG-0590": {
+   "category": "website",
+   "description": "A website section headed 'Established Track Record for Caregiving Businesses' over three tall gradient cards (green, yellow, blue): two 'Shortcut Keys' cards showing a '⌘ + ⇧ = Gmail' pill, and a middle 'Active Integrations — 05 Integrations Live' card with a row of product icons. A confident gradient-card feature band; the headline/product mismatch (caregiving copy, shortcut-key visuals) suggests a template demo rather than a shipped page.",
+   "id": "IMG-0590",
+   "quality": "Clean capture; headline/product mismatch noted, kept for the card treatment.",
+   "roles": [
+    "landing-section",
+    "social-proof"
+   ],
+   "style": [
+    "gradient-heavy",
+    "card-based"
+   ],
+   "tags": [
+    "landing",
+    "landing-page",
+    "integration",
+    "gradient"
+   ],
+   "title": "Caregiving SaaS track-record band",
+   "type": "screen"
+  },
+  "IMG-0630": {
+   "category": "mobile-app-ui",
+   "description": "An iPhone 'Create Password' screen for Grocera: Password and Confirm Password fields with show/hide eyes, a five-rule checklist (8 characters, upper/lowercase, number, special symbols), a Terms of Use / Privacy Policy consent line, and a disabled grey 'Continue' button. A textbook auth-form layout: rules listed before the CTA, CTA disabled until they pass.",
+   "id": "IMG-0630",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "auth",
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "authentication",
+    "signup"
+   ],
+   "title": "Grocera create-password form",
+   "type": "screen"
+  },
+  "IMG-0666": {
+   "category": "website",
+   "description": "A landing card for 'Frank' WhatsApp integration: pixel-art city backdrop, an overlapping chat-window mockup, a green 'WHATSAPP INTEGRATION' eyebrow, the headline 'Rearch your WhatsApp audience via Frank' (sic — 'Rearch' typo is in the source), supporting copy about personalized messages and AI targeting, and a 'See how it works' button. Kept for the overlapping-mockup-over-art composition, typo and all.",
+   "id": "IMG-0666",
+   "quality": "Headline typo ('Rearch') is in the source asset, not a transcription error.",
+   "roles": [
+    "landing-section",
+    "hero",
+    "chat"
+   ],
+   "style": [
+    "playful",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "landing",
+    "landing-page",
+    "ai"
+   ],
+   "title": "Frank WhatsApp-integration card",
+   "type": "screen"
+  },
+  "VID-0334": {
+   "category": "mobile-app-ui",
+   "description": "A screen recording of a dark photo-feed prototype in an iPhone frame: waterfall and landscape photos, lorem-ipsum captions, page dots, a five-icon bottom tab bar, and a large cursor arrow pointing at the feed. A prototype walkthrough where the layout (dark feed, tab bar) is the reference — the copy is placeholder throughout.",
+   "id": "VID-0334",
+   "quality": "Placeholder lorem-ipsum copy throughout; layout still legible.",
+   "roles": [
+    "feed",
+    "media"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "prototype",
+    "video-demo",
+    "tab-bar",
+    "dark-ui"
+   ],
+   "title": "Dark photo-feed prototype walkthrough",
+   "type": "flow-walkthrough"
+  },
+  "VID-0400": {
+   "category": "mobile-app-ui",
+   "description": "A real-world screen recording: a finger taps colour dots on a 'pick a color — this is how your capsule will look on the shelf' screen, selecting 'Sage' for a 3D capsule preview, with a 'use this color' pill CTA below. A charming personalization moment; the photo-of-a-phone framing is the capture method, not the subject.",
+   "id": "VID-0400",
+   "quality": "Photo-of-a-phone capture; screen content legible.",
+   "roles": [
+    "personalisation"
+   ],
+   "style": [
+    "light-mode",
+    "playful",
+    "soft"
+   ],
+   "tags": [
+    "color-picker",
+    "picker",
+    "personalisation",
+    "video-demo"
+   ],
+   "title": "Capsule colour-picker tap-through",
+   "type": "flow-walkthrough"
+  },
+  "VID-0466": {
+   "category": "other",
+   "description": "A screen recording of 'LOOM 0.1 · PRESS LINE B': an isometric factory floor on graph paper with labelled stations (STOCK rack, PRESSA/PRESSB machines, QA bench, OUT bin), worker figures Ada/Cara/Boole with timed tasks, a 'PLAYING · 70.8 S' badge and a Rotate/Rig/Labels toolbar. A simulation/automation view — flagged for review against the game-tooling exclusion policy before it counts as a keeper.",
+   "id": "VID-0466",
+   "quality": "Dense fine print; station labels legible at full size.",
+   "roles": [],
+   "source_note": "Possible game/simulation tooling — review against dropped policy (cf. VID-0174/0184/0187).",
+   "style": [
+    "monochrome",
+    "minimal"
+   ],
+   "tags": [
+    "game-ui",
+    "monitoring",
+    "data-viz"
+   ],
+   "title": "Isometric press-line simulation",
+   "type": "screen"
+  }
+ }
+}

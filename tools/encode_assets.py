@@ -19,7 +19,7 @@ from concurrent.futures import ProcessPoolExecutor
 import cv2
 import numpy as np
 
-ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ROOT = r"E:\Stormy"
 META = os.path.join(ROOT, "_work", "meta")
 OUT = os.path.join(ROOT, "ui-hall", "assets")
 

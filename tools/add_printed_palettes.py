@@ -10,7 +10,7 @@ Read directly from the cards during the visual review. Do not guess these.
 import json
 import os
 
-CORPUS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ui-hall", "data", "corpus.json")
+CORPUS = r"E:\Stormy\ui-hall\data\corpus.json"
 
 # id -> (top band, bottom band)
 PRINTED = {

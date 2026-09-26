@@ -7,7 +7,7 @@ import os
 import re
 import urllib.request
 
-DEST = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ui-hall", "assets", "fonts")
+DEST = r"E:\Stormy\ui-hall\assets\fonts"
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/120.0 Safari/537.36")
 

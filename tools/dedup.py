@@ -3,7 +3,7 @@ import hashlib
 import json
 import os
 
-META = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "_work", "meta")
+META = r"E:\Stormy\_work\meta"
 
 
 def md5(path, chunk=1 << 20):

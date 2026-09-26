@@ -12,9 +12,9 @@ import sys
 
 from PIL import Image, ImageDraw, ImageFont
 
-META = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "_work", "meta", "inventory.json")
-SHEET_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "_work", "sheets")
-POSTER_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "_work", "vidframes")
+META = r"E:\Stormy\_work\meta\inventory.json"
+SHEET_DIR = r"E:\Stormy\_work\sheets"
+POSTER_DIR = r"E:\Stormy\_work\vidframes"
 
 CELL_W = 480
 IMG_H = 400

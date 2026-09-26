@@ -5,11 +5,10 @@ Usage:
     python tools/coverage.py --missing mobile-app-ui     # list undescribed ids
 """
 import json
-import os
 import sys
 from collections import Counter, defaultdict
 
-CORPUS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ui-hall", "data", "corpus.json")
+CORPUS = r"E:\Stormy\ui-hall\data\corpus.json"
 
 
 def main():

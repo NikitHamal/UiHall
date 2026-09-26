@@ -14,7 +14,7 @@ from concurrent.futures import ProcessPoolExecutor
 import cv2
 import numpy as np
 
-META = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "_work", "meta")
+META = r"E:\Stormy\_work\meta"
 OUT = os.path.join(META, "motion.json")
 SAMPLE = 6
 SIZE = 160

@@ -104,102 +104,102 @@
 }
 
 /* --------------------------------------------------------------------------
-   Dark — the default. A deep blue-slate "storm" base rather than neutral grey:
-   surfaces carry a cool cast so the gallery feels atmospheric, and the accent
-   is an electric sky blue with a violet second voice for gradients.
+   Dark — the default. Surfaces are near-neutral and slightly cool; the accent
+   is a single warm amber so that the interface never competes with the
+   artwork it is displaying.
    -------------------------------------------------------------------------- */
 :root,
 [data-theme="dark"] {
   color-scheme: dark;
 
-  --bg:          #0b0e13;
-  --bg-raised:   #10141b;
-  --surface:     #141922;
-  --surface-2:   #1a212c;
-  --surface-3:   #232c39;
-  --surface-hi:  #2d3846;
+  --bg:          #0a0a0b;
+  --bg-raised:   #121214;
+  --surface:     #17171a;
+  --surface-2:   #1e1e22;
+  --surface-3:   #26262c;
+  --surface-hi:  #30303a;
 
-  --line:        #202936;
-  --line-strong: #303c4c;
+  --line:        #26262b;
+  --line-strong: #34343c;
 
-  --text:        #edf2f7;
-  --text-2:      #a3b2c2;
-  --text-3:      #6b7d90;
-  --text-inv:    #0b0e13;
+  --text:        #f2f2f4;
+  --text-2:      #a8a8b3;
+  --text-3:      #74747f;
+  --text-inv:    #0a0a0b;
 
-  --accent:      #4cc3ff;
-  --accent-2:    #8f7bff;
-  --accent-ink:  #04202f;
-  --accent-soft: rgba(76, 195, 255, 0.13);
-  --accent-line: rgba(76, 195, 255, 0.42);
+  --accent:      #f5b544;
+  --accent-2:    #f5b544;
+  --accent-ink:  #2a1d00;
+  --accent-soft: rgba(245, 181, 68, 0.14);
+  --accent-line: rgba(245, 181, 68, 0.38);
 
-  --good:  #3ecf8e;
-  --warn:  #ffb45c;
-  --bad:   #ff6b5e;
-  --info:  #4cc3ff;
+  --good:  #4ec98a;
+  --warn:  #f5b544;
+  --bad:   #f2635c;
+  --info:  #6aa9f5;
 
-  --shadow-1: 0 1px 2px rgba(2,6,12,.5);
-  --shadow-2: 0 6px 20px rgba(2,6,12,.45);
-  --shadow-3: 0 18px 52px rgba(2,6,12,.6);
+  --shadow-1: 0 1px 2px rgba(0,0,0,.5);
+  --shadow-2: 0 4px 16px rgba(0,0,0,.45);
+  --shadow-3: 0 16px 48px rgba(0,0,0,.6);
 
-  --scrim: rgba(5, 8, 12, 0.82);
-  --checker: #0e1218;
+  --scrim: rgba(4, 4, 6, 0.82);
+  --checker: #101013;
 }
 
 /* --------------------------------------------------------------------------
-   Light — a cool porcelain paper. The accent deepens to an ink-friendly sky
-   blue; the violet second voice stays for gradients only.
+   Light — same structure, values inverted for the artwork's sake. The accent
+   shifts to a deeper amber so it still reads against white.
    -------------------------------------------------------------------------- */
 [data-theme="light"] {
   color-scheme: light;
 
-  --bg:          #f5f7fa;
+  --bg:          #fbfbfc;
   --bg-raised:   #ffffff;
   --surface:     #ffffff;
-  --surface-2:   #eef1f6;
-  --surface-3:   #e5eaf1;
-  --surface-hi:  #d9e1ea;
+  --surface-2:   #f4f4f6;
+  --surface-3:   #ebebef;
+  --surface-hi:  #e2e2e8;
 
-  --line:        #dde4ec;
-  --line-strong: #c3cfdb;
+  --line:        #e6e6ea;
+  --line-strong: #d2d2d9;
 
-  --text:        #0e1620;
-  --text-2:      #46586c;
-  --text-3:      #7e90a3;
+  --text:        #14141a;
+  --text-2:      #5c5c68;
+  --text-3:      #8b8b96;
   --text-inv:    #ffffff;
 
-  --accent:      #0870c2;
-  --accent-2:    #6a5cff;
+  --accent:      #b8730a;
+  --accent-2:    #b8730a;
   --accent-ink:  #ffffff;
-  --accent-soft: rgba(8, 112, 194, 0.10);
-  --accent-line: rgba(8, 112, 194, 0.38);
+  --accent-soft: rgba(184, 115, 10, 0.10);
+  --accent-line: rgba(184, 115, 10, 0.34);
 
-  --good:  #12855b;
-  --warn:  #b26a05;
-  --bad:   #c93a2e;
-  --info:  #0870c2;
+  --good:  #16854b;
+  --warn:  #b8730a;
+  --bad:   #c0392f;
+  --info:  #2563c4;
 
-  --shadow-1: 0 1px 2px rgba(14,22,32,.07);
-  --shadow-2: 0 6px 20px rgba(14,22,32,.10);
-  --shadow-3: 0 18px 52px rgba(14,22,32,.16);
+  --shadow-1: 0 1px 2px rgba(20,20,30,.07);
+  --shadow-2: 0 4px 16px rgba(20,20,30,.10);
+  --shadow-3: 0 16px 48px rgba(20,20,30,.16);
 
-  --scrim: rgba(248, 250, 252, 0.86);
-  --checker: #eef1f5;
+  --scrim: rgba(250, 250, 252, 0.86);
+  --checker: #f0f0f3;
 }
 
 /* ---- category hues: one tint per category, used only for the small label ---- */
 :root {
-  --cat-mobile-app-ui:    #58a6ff;
-  --cat-app-store-screens:#b78cff;
-  --cat-before-after:     #ff6b5e;
-  --cat-website:          #35c9bb;
-  --cat-design-system:    #ffc65c;
-  --cat-color-palette:    #ff8fb8;
-  --cat-brand-identity:   #7fa7d9;
-  --cat-typography:       #d9c58a;
-  --cat-illustration:     #9ed672;
-  --cat-dashboard:        #5fd1a5;
-  --cat-motion-demo:      #ff8a5c;
-  --cat-promo-reel:       #a89bff;
-  --cat-other:            #7e90a3;
+  --cat-mobile-app-ui:    #6aa9f5;
+  --cat-app-store-screens:#c08af0;
+  --cat-before-after:     #f2635c;
+  --cat-website:          #4ec9c0;
+  --cat-design-system:    #f5b544;
+  --cat-color-palette:    #f095c0;
+  --cat-brand-identity:   #8fb0d8;
+  --cat-typography:       #d6c78f;
+  --cat-illustration:     #a0d67a;
+  --cat-dashboard:        #7fd1a8;
+  --cat-motion-demo:      #f58a5c;
+  --cat-promo-reel:       #b0a0f0;
+  --cat-other:            #8b8b96;
 }

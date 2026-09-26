@@ -27,9 +27,9 @@ import json
 import os
 import sys
 
-ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ROOT = r"E:\Stormy"
 META = os.path.join(ROOT, "_work", "meta")
-SRC_DEFAULT = os.path.join(os.path.expanduser("~"), "Downloads", "UI")
+SRC_DEFAULT = r"E:\Downloads\UI"
 
 IMG_EXT = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".bmp", ".avif", ".heic"}
 VID_EXT = {".mp4", ".webm", ".mov", ".mkv", ".avi"}
@@ -88,7 +88,7 @@ def main():
         batch_md5[digest] = f
         st = os.stat(p)
         rec = {"path": p, "name": f,
-               "rel": os.path.relpath(p, os.path.join(os.path.expanduser("~"), "Downloads")),
+               "rel": os.path.relpath(p, r"E:\Downloads"),
                "ext": ext, "size": st.st_size, "mtime": st.st_mtime}
         (new_imgs if ext in IMG_EXT else new_vids).append(rec)
 

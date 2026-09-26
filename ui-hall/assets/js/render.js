@@ -4,6 +4,46 @@
 
 const Render = (() => {
 
+  /* Hover previews: motion clips play on hover, appllama-style. Gated behind
+     a fine pointer and no-preference for reduced motion — on touch or
+     reduced-motion the poster frame and its Motion badge are the whole story.
+     The video element is created on first hover and torn down on leave, so a
+     grid of 200 posters never holds 200 decoders. */
+  const hoverPreviewOK = () =>
+    window.matchMedia('(hover: hover) and (pointer: fine)').matches &&
+    !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function armHoverPreview(media, asset) {
+    if (!asset.clip || !hoverPreviewOK()) return;
+    let video = null;
+    const show = () => {
+      if (video || !media.isConnected) return;
+      video = el('video', {
+        class: 'is-preview',
+        src: asset.clip,
+        muted: true,
+        loop: true,
+        playsinline: true,
+        preload: 'auto',
+        'aria-hidden': 'true',
+      });
+      video.muted = true;
+      media.append(video);
+      const play = video.play();
+      if (play && play.catch) play.catch(() => {});
+    };
+    const hide = () => {
+      if (!video) return;
+      try { video.pause(); } catch (_) {}
+      video.remove();
+      video = null;
+    };
+    media.addEventListener('mouseenter', show);
+    media.addEventListener('mouseleave', hide);
+    media.addEventListener('focusin', show);
+    media.addEventListener('focusout', hide);
+  };
+
   /* ------------------------------------------------------------- cards --- */
 
   function cardStats(a) {
@@ -19,6 +59,9 @@ const Render = (() => {
       id: 'card-' + a.id,
       dataset: { id: a.id, view: opts.view || 'masonry', kind: a.kind, category: a.category },
     });
+    // Stagger index for the entrance cascade. Capped: past the first dozen
+    // the delay stops growing, or filtering a large result would feel slow.
+    if (opts.index != null) node.style.setProperty('--i', String(Math.min(opts.index, 12)));
 
     const media = el('button', {
       class: 'card__media',
@@ -45,6 +88,7 @@ const Render = (() => {
     if (a.kind === 'video') {
       media.append(el('span', { class: 'card__play', html: `<span>${ICON.play}</span>` }));
     }
+    armHoverPreview(media, a);
 
     const badges = el('div', { class: 'card__badges' });
     const left = el('div', { style: 'display:flex;gap:5px;flex-wrap:wrap' });
@@ -113,7 +157,7 @@ const Render = (() => {
       const frag = document.createDocumentFragment();
       const end = Math.min(i + CHUNK, items.length);
       for (; i < end; i++) {
-        frag.append(card(items[i], { view, eager: i < 12, ...opts }));
+        frag.append(card(items[i], { view, eager: i < 12, index: i, ...opts }));
       }
       container.append(frag);
       if (i < items.length) {

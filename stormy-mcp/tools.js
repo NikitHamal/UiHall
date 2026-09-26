@@ -241,22 +241,6 @@ export const TOOLS = [
       'styles. Useful to establish what evidence is available before making claims.',
     inputSchema: { type: 'object', properties: {} },
   },
-
-  {
-    name: 'list_groups',
-    description:
-      'List the same-app / same-set groups: screens verified as belonging to one product or one ' +
-      'exploration (e.g. all four screens of a CRM, both states of a contacts table). Use this ' +
-      'when a design must stay consistent across several screens of one app — pull the whole ' +
-      'group instead of one lucky example. An optional query filters by group or member title.',
-    inputSchema: {
-      type: 'object',
-      properties: {
-        query: { type: 'string', description: 'Optional text matched against group titles and member titles, e.g. "crm" or "lease".' },
-        limit: { type: 'integer', minimum: 1, maximum: 60, default: 20 },
-      },
-    },
-  },
 ];
 
 /* ------------------------------------------------------------ the impls --- */
@@ -355,25 +339,6 @@ export async function callTool(name, args, corpus, here) {
         web_image: a.src,
         thumbnail: a.thumb,
         motion_clip: a.clip,
-        group: a.group
-          ? (() => {
-              const g = (corpus.groups || []).find((x) => x.id === a.group);
-              if (!g) return undefined;
-              return {
-                id: g.id,
-                title: g.title,
-                verified: !!g.verified,
-                position: a.group_index + 1,
-                of: g.count,
-                siblings: g.members
-                  .filter((m) => m !== a.id)
-                  .map((m) => {
-                    const s = assets.find((x) => x.id === m);
-                    return { id: m, title: s ? s.title : m };
-                  }),
-              };
-            })()
-          : undefined,
       };
       if (args.include_markdown) {
         return renderAssetMarkdown(full);
@@ -690,50 +655,12 @@ export async function callTool(name, args, corpus, here) {
         top_roles: corpus.roles.slice(0, 12),
         top_styles: corpus.styles.slice(0, 12),
         top_tags: corpus.tags.slice(0, 20),
-        groups: {
-          total: (corpus.groups || []).length,
-          verified: (corpus.groups || []).filter((g) => g.verified).length,
-          grouped_assets: assets.filter((a) => a.group).length,
-        },
         corpus_file: corpus.__path,
         honesty: {
           described: `${described} of ${assets.length} assets carry a full hand-written visual description.`,
           clips: `${clips} assets ship a playable motion clip. The rest are video sources that were found to be static and are kept as poster frames only.`,
           measured: 'All palettes are k-means samples of the actual pixels, not estimates.',
-          groups: `${(corpus.groups || []).filter((g) => g.verified).length} same-app groups were verified by viewing every member; the remainder come from title prefixes and are suggestive, not certain.`,
         },
-      };
-    }
-
-    /* -------------------------------------------------------- groups ---- */
-    case 'list_groups': {
-      const q = (args.query || '').trim().toLowerCase();
-      const limit = Math.min(args.limit ?? 20, 60);
-      const rows = [];
-      for (const g of corpus.groups || []) {
-        const members = g.members
-          .map((m) => assets.find((x) => x.id === m))
-          .filter(Boolean);
-        if (members.length < 2) continue;
-        if (q) {
-          const text = (g.title + ' ' + members.map((m) => `${m.title} ${(m.tags || []).join(' ')} ${(m.category || '')}`).join(' ')).toLowerCase();
-          if (!text.includes(q)) continue;
-        }
-        rows.push({
-          id: g.id,
-          title: g.title,
-          verified: !!g.verified,
-          count: members.length,
-          members: members.map((m) => ({ id: m.id, title: m.title, category: m.category })),
-        });
-      }
-      rows.sort((a, b) => Number(b.verified) - Number(a.verified) || b.count - a.count);
-      return {
-        groups: (corpus.groups || []).length,
-        matched: rows.length,
-        showing: Math.min(limit, rows.length),
-        note: 'verified = every member was looked at and confirmed as one app/set.',
-        results: rows.slice(0, limit),
       };
     }
 

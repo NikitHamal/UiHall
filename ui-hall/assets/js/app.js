@@ -229,7 +229,7 @@ const App = (() => {
 
   /* ------------------------------------------------------------- routes -- */
 
-  const ROUTES = ['home', 'gallery', 'palettes', 'typography', 'patterns', 'before-after', 'motion', 'about'];
+  const ROUTES = ['gallery', 'sets', 'palettes', 'typography', 'patterns', 'before-after', 'motion', 'about'];
 
   function go(route) {
     Filters.setRoute(route);
@@ -272,29 +272,28 @@ const App = (() => {
     }
     document.getElementById('pageTitle').textContent = {
       gallery: 'Gallery',
+      sets: 'App sets',
       palettes: 'Palettes',
       typography: 'Typography',
       patterns: 'Patterns',
       'before-after': 'Before / after',
       motion: 'Motion',
       about: 'About',
-      home: 'Stormy',
-    }[route] || 'Stormy';
+    }[route] || 'Gallery';
 
     const sub = document.getElementById('pageSub');
     sub.textContent = {
       gallery: 'Every keeper from the collection — screens, mockups, brand work, store panels and clips. Filter by what a screen is for, how it looks, and what colours it is built from.',
+      sets: 'Screens that belong together: several shots of one app or one exploration, shown as a strip instead of scattered cards. The appllama-style way to browse.',
       palettes: 'Two-colour schemes with designer-given names, plus the palettes measured from the screens themselves.',
       typography: 'Twelve typefaces rendered from the actual woff2 files in this repo, with a live playground and copy-paste integration notes. All SIL Open Font License 1.1.',
       patterns: 'Layout idioms that recur often enough across the corpus to be worth naming.',
       'before-after': 'Paired evidence. The same brief executed twice, where the delta is the lesson.',
       motion: 'Clips that show a transition rather than a still screen. Static recordings are not included.',
       about: 'What this is, where the material came from, and how to read it.',
-      home: 'One corpus, three surfaces: a gallery, an MCP server and a skill.',
     }[route] || '';
 
     const isGallery = route === 'gallery';
-    document.body.classList.toggle('is-home', route === 'home');
 
     // The toolbar (sort, view, card size) and shuffle are gallery controls.
     // On the reference tabs they do nothing, so they are hidden rather than
@@ -309,24 +308,102 @@ const App = (() => {
     for (const n of galleryOnly) if (n) n.hidden = !showGalleryTools;
 
     if (route === 'palettes') return renderPalettes();
+    if (route === 'sets') return renderSets();
     if (route === 'typography') {
       document.getElementById('emptyState').hidden = true;
+      document.getElementById('hero').hidden = true;
       return Typography.render(document.getElementById('results'));
     }
     if (route === 'patterns') return renderPatterns();
     if (route === 'about') return renderAbout();
-    if (route === 'home') {
-      document.getElementById('emptyState').hidden = true;
-      return Home.render(document.getElementById('results'));
-    }
 
+    syncHero(route);
     renderResults();
+  }
+
+  /* ------------------------------------------------------------ hero ----- */
+
+  /** The gallery opens with an editorial hero — headline, shortcuts, live
+      counts — until the visitor starts filtering, at which point it steps
+      aside for the results. Other routes hide it unconditionally. */
+  function syncHero(route) {
+    const hero = document.getElementById('hero');
+    if (!hero) return;
+    const show = route === 'gallery' && Filters.activeCount() === 0;
+    hero.hidden = !show;
+    if (!show) return;
+    document.getElementById('heroEyebrow').textContent =
+      `A visual reference library · ${fmt.n(corpus.assets.length)} assets`;
+    const t = corpus.totals;
+    const stats = document.getElementById('heroStats');
+    stats.innerHTML = '';
+    for (const [n, label] of [
+      [t.assets, 'assets'],
+      [t.clips, 'motion clips'],
+      [(corpus.groups || []).length, 'app sets'],
+      [t.described, 'visually reviewed'],
+    ]) {
+      stats.append(el('div', { class: 'hero__stat' },
+        el('div', { class: 'hero__stat-n num', text: fmt.n(n) }),
+        el('div', { class: 'hero__stat-l', text: label })));
+    }
+  }
+
+  /* ------------------------------------------------------------ sets ----- */
+
+  /** App sets: every screen group as a horizontal strip, appllama-style. The
+      strip opens the lightbox with the set as its walk order, so prev/next
+      steps through the set rather than the whole corpus. */
+  function renderSets() {
+    const hero = document.getElementById('hero');
+    if (hero) hero.hidden = true;
+    const results = document.getElementById('results');
+    results.dataset.view = 'grid';
+    results.innerHTML = '';
+    document.getElementById('emptyState').hidden = true;
+    const groups = corpus.groups || [];
+    document.getElementById('resultCount').innerHTML =
+      `<b>${groups.length}</b> app sets · ${fmt.n(groups.reduce((n, g) => n + g.count, 0))} screens together`;
+
+    const wrap = el('div', { class: 'setrows', style: 'grid-column:1/-1' });
+    for (const g of groups) {
+      const members = g.members.map((id) => DATA.get(id)).filter(Boolean);
+      if (members.length < 2) continue;
+      const row = el('article', { class: 'setrow' });
+      const head = el('div', { class: 'setrow__head' });
+      head.append(el('div', {},
+        el('h3', { class: 'setrow__t', text: g.title }),
+        el('p', { class: 'setrow__m num', text: `${g.count} screens` })));
+      head.append(el('button', {
+        class: 'btn btn--ghost btn--sm', type: 'button',
+        onclick: () => {
+          Filters.setRoute('gallery');
+          Filters.state.group = [g.id];
+          Filters.writeUrl();
+          App.render();
+        },
+      }, el('span', { text: 'Open in gallery' })));
+      row.append(head);
+      const strip = el('div', { class: 'setrow__strip' });
+      for (const a of members) {
+        strip.append(el('button', {
+          class: 'setrow__item', type: 'button', title: a.title,
+          'aria-label': `Open ${a.title}`,
+          onclick: () => Lightbox.open(a.id, members.map((m) => m.id)),
+        }, el('img', { src: a.thumb, alt: '', loading: 'lazy', decoding: 'async' })));
+      }
+      row.append(strip);
+      wrap.append(row);
+    }
+    results.append(wrap);
+    document.dispatchEvent(new CustomEvent('uihall:results', { detail: [] }));
   }
 
   /* -------------------------------------------------------- palettes ----- */
 
   function renderPalettes() {
     const results = document.getElementById('results');
+    document.getElementById('hero').hidden = true;
     const assets = DATA.all();
     const cards = assets.filter((a) => a.category === 'color-palette');
     const printed = corpus.printed_palettes || {};
@@ -422,6 +499,7 @@ const App = (() => {
 
   function renderPatterns() {
     const results = document.getElementById('results');
+    document.getElementById('hero').hidden = true;
     results.dataset.view = 'grid';
     results.innerHTML = '';
     document.getElementById('resultCount').innerHTML = '';
@@ -454,6 +532,7 @@ const App = (() => {
 
   function renderAbout() {
     const results = document.getElementById('results');
+    document.getElementById('hero').hidden = true;
     results.dataset.view = 'grid';
     results.innerHTML = '';
     document.getElementById('resultCount').innerHTML = '';
@@ -618,12 +697,17 @@ const App = (() => {
       }
     });
 
-    // theme
+    // theme — suppress transitions for the swap so hundreds of elements do
+    // not crossfade at once and smear; force a reflow, restore next frame.
     const themeBtn = document.getElementById('themeToggle');
     themeBtn.addEventListener('click', () => {
-      const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-      document.documentElement.dataset.theme = next;
+      const rootEl = document.documentElement;
+      rootEl.classList.add('theming');
+      void rootEl.offsetWidth;
+      const next = rootEl.dataset.theme === 'dark' ? 'light' : 'dark';
+      rootEl.dataset.theme = next;
       try { localStorage.setItem('uihall.theme', next); } catch (_) {}
+      requestAnimationFrame(() => requestAnimationFrame(() => rootEl.classList.remove('theming')));
     });
 
     // lightbox close
@@ -632,14 +716,22 @@ const App = (() => {
     }
 
     // links that only change the route
-    for (const a of document.querySelectorAll('[data-link]')) {
-      a.addEventListener('click', (ev) => {
+    for (const a of document.querySelectorAll('[data-link]')) {a.addEventListener('click', (ev) => {
         ev.preventDefault();
-        const route = a.getAttribute('href').replace(/^#\/?/, '') || 'home';
+        const route = a.getAttribute('href').replace(/^#\/?/, '') || 'gallery';
         Filters.setRoute(route);
         Filters.writeUrl();
         App.render();
         if (window.innerWidth <= 960) shell.classList.remove('is-mobileopen');
+      });
+    }
+
+    // hero shortcuts jump straight to a route
+    for (const b of document.querySelectorAll('[data-hero-go]')) {
+      b.addEventListener('click', () => {
+        Filters.setRoute(b.dataset.heroGo);
+        Filters.writeUrl();
+        App.render();
       });
     }
 

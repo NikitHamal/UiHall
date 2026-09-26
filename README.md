@@ -46,7 +46,7 @@ Stormy/
 │       data/corpus.js          generated twin, so file:// also works
 ├── stormy-mcp/
 │   ├── server.js               stdio JSON-RPC, zero dependencies
-│   ├── tools.js                the ten design tools
+│   ├── tools.js                the nine design tools
 │   ├── taxonomy.json           the shared vocabulary
 │   ├── selftest.js             69 protocol-level assertions
 │   └── corpus.json             (symlink or copy — built at release)
@@ -69,18 +69,18 @@ list, so unknown tags are dropped and reported rather than quietly kept.
 ```bash
 # 1. build contact sheets from the PROCESSED images, so a description written
 #    off a sheet matches what the site actually shows
-python3 tools/review_sheets.py --category brand-identity      # or no flag for all undescribed
-python3 tools/remaining.py                                    # which sheets still have gaps
+"$PY" tools/review_sheets.py --category brand-identity      # or no flag for all undescribed
+"$PY" tools/remaining.py                                    # which sheets still have gaps
 
 # 2. write _work/meta/descriptions/<batch>.json, then check it against the vocabulary
-python3 tools/normalise_batch.py _work/meta/descriptions/mobile-ui-10.json
+"$PY" tools/normalise_batch.py _work/meta/descriptions/mobile-ui-10.json
 #    -> reports tags that belong in style/roles, and genuine vocabulary gaps
-python3 tools/taxonomy_add.py --apply        # register concepts nothing existing covers
-python3 tools/normalise_batch.py _work/meta/descriptions/mobile-ui-10.json --apply
+"$PY" tools/taxonomy_add.py --apply        # register concepts nothing existing covers
+"$PY" tools/normalise_batch.py _work/meta/descriptions/mobile-ui-10.json --apply
 
 # 3. rebuild and check coverage
-python3 tools/build_corpus.py                # must print 0 warnings
-python3 tools/coverage.py                    # per-category description coverage
+"$PY" tools/build_corpus.py                # must print 0 warnings
+"$PY" tools/coverage.py                    # per-category description coverage
 ```
 
 Note that `review_sheets.py` names its output by category. An earlier version wrote a bare
@@ -126,34 +126,33 @@ The pipeline is inspectable at every step, and re-runnable. It starts from a fol
 collected files and ends at `corpus.json`.
 
 ```bash
-# # 1. inventory every image and video, assign stable IDs
-python3 tools/inventory.py
+PY="C:/Users/Acer/.workbuddy-ai/binaries/python/envs/stormy/Scripts/python.exe"
+
+# 1. inventory every image and video, assign stable IDs
+"$PY" tools/inventory.py
 
 # 2. build labelled contact sheets so everything can be reviewed visually
-python3 tools/make_sheets.py images 4 4
-python3 tools/make_sheets.py posters 4 4
+"$PY" tools/make_sheets.py images 4 4
+"$PY" tools/make_sheets.py posters 4 4
 
 # 3. triage: record which items carry design value, and drop exact duplicates
-python3 tools/triage.py
-python3 tools/dedup.py
+"$PY" tools/triage.py
+"$PY" tools/dedup.py
 
 # 4. extract a poster frame + strip from every video
-python3 tools/extract_vid_frames.py
+"$PY" tools/extract_vid_frames.py
 
 # 5. measure how much each video actually moves
-python3 tools/motion_probe.py
+"$PY" tools/motion_probe.py
 
 # 6. encode web derivatives: webp images, webm clips, thumbnails
-python3 tools/encode_assets.py all
+"$PY" tools/encode_assets.py all
 
 # 7. merge measured data + hand-written reviews into the corpus
 #    Printed palettes are folded in by this step itself, from
 #    _work/meta/printed_palettes.json — running a separate script here would be
 #    lost the next time this file runs.
-python3 tools/build_corpus.py
-
-# 8. refresh the home page's live MCP samples (real tool outputs, embedded)
-node tools/build_showcase.mjs
+"$PY" tools/build_corpus.py
 ```
 
 ## Verifying it
@@ -163,10 +162,12 @@ install and no test framework. They start their own static server and tear it do
 so they work from a cold shell.
 
 ```bash
-# node tools/verify_ui.mjs          # 62 assertions: data, type, controls, filters, routes, lightbox
-node tools/verify_file_url.mjs    # 10 assertions: the file:// path, incl. video decode
-node tools/shoot.mjs              # 10 screenshots into _work/shots/
-cd stormy-mcp && node selftest.js # assertions against the real MCP server (stdio, live frames)
+NODE="C:/Users/Acer/.workbuddy-ai/binaries/node/versions/22.22.2-3/node.exe"
+
+"$NODE" tools/verify_ui.mjs          # 62 assertions: data, type, controls, filters, routes, lightbox
+"$NODE" tools/verify_file_url.mjs    # 10 assertions: the file:// path, incl. video decode
+"$NODE" tools/shoot.mjs              # 10 screenshots into _work/shots/
+cd stormy-mcp && "$NODE" selftest.js # 69 assertions against the real MCP server
 ```
 
 `shoot.mjs` refuses to write a screenshot if the page did not render. Without that guard a
@@ -226,8 +227,8 @@ Add to `~/.workbuddy-ai/mcp.json`:
 {
   "mcpServers": {
     "stormy": {
-      "command": "node",
-      "args": ["/path/to/checkout/stormy-mcp/server.js"]
+      "command": "C:/Users/Acer/.workbuddy-ai/binaries/node/versions/22.22.2-3/node.exe",
+      "args": ["E:/Stormy/stormy-mcp/server.js"]
     }
   }
 }
@@ -239,10 +240,10 @@ not activate on its own.
 Verify before trusting it:
 
 ```bash
-node stormy-mcp/selftest.js
+"$NODE" stormy-mcp/selftest.js
 ```
 
-### The ten tools
+### The nine tools
 
 | Tool | Question it answers |
 |---|---|
@@ -255,7 +256,6 @@ node stormy-mcp/selftest.js
 | `compare_pair` | "show me this done badly and well" |
 | `asset_image` | "where is the file so I can look at it" |
 | `corpus_stats` | "how much evidence is there" |
-| `list_groups` | "show me every screen of this app together" |
 
 ---
 

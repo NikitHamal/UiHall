@@ -6,8 +6,8 @@ CATEGORY overrides give a first-pass bucket; the detailed description pass refin
 import json
 import os
 
-META = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "_work", "meta", "inventory.json")
-OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "_work", "meta", "image_triage.json")
+META = r"E:\Stormy\_work\meta\inventory.json"
+OUT = r"E:\Stormy\_work\meta\image_triage.json"
 
 # Ranges / singles that carry no UI-UX design value.
 SKIP = [
@@ -135,7 +135,7 @@ def main():
     for c, n in Counter(k["category"] for k in keep).most_common():
         print(f"   {c:20s} {n}")
 
-    with open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "_work", "meta", "keep_images.txt"), "w", encoding="utf-8") as fh:
+    with open(r"E:\Stormy\_work\meta\keep_images.txt", "w", encoding="utf-8") as fh:
         for k in keep:
             fh.write(k["id"] + "\n")
 

@@ -12,9 +12,9 @@ from concurrent.futures import ProcessPoolExecutor
 import cv2
 import numpy as np
 
-META = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "_work", "meta", "inventory.json")
-POSTER_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "_work", "vidframes")
-STRIP_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "_work", "vidstrips")
+META = r"E:\Stormy\_work\meta\inventory.json"
+POSTER_DIR = r"E:\Stormy\_work\vidframes"
+STRIP_DIR = r"E:\Stormy\_work\vidstrips"
 POSTER_W = 720
 
 
@@ -109,7 +109,7 @@ def main():
                 results[vid] = res
             else:
                 bad.append((vid, res))
-    with open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "_work", "meta", "video_meta.json"), "w", encoding="utf-8") as fh:
+    with open(r"E:\Stormy\_work\meta\video_meta.json", "w", encoding="utf-8") as fh:
         json.dump(results, fh, indent=1)
     print("ok:", ok, "problem:", len(bad))
     for b in bad[:20]:

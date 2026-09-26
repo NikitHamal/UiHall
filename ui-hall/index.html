@@ -22,8 +22,8 @@
     </a>
 
     <nav class="nav" aria-label="Sections">
-      <a href="#/" data-link data-nav="home">Home</a>
-      <a href="#/gallery" data-link data-nav="gallery">Gallery</a>
+      <a href="#/" data-link data-nav="gallery">Gallery</a>
+      <a href="#/sets" data-link data-nav="sets">Sets</a>
         <a href="#/palettes" data-link data-nav="palettes">Palettes</a>
         <a href="#/typography" data-link data-nav="typography">Typography</a>
         <a href="#/patterns" data-link data-nav="patterns">Patterns</a>
@@ -147,6 +147,17 @@
   </aside>
 
   <main class="main" id="main">
+    <section class="hero" id="hero" hidden aria-label="About this library">
+      <p class="hero__eyebrow" id="heroEyebrow">A visual reference library</p>
+      <h2 class="hero__title">Interface design, <em>worth studying.</em></h2>
+      <p class="hero__sub">Real product screens, flows and clips — each one looked at, written up, and measured. Filter by what a screen is for, how it looks, and what colours it is actually made of.</p>
+      <div class="hero__actions">
+        <button class="btn" type="button" data-hero-go="motion"><span>Browse motion</span></button>
+        <button class="btn btn--ghost" type="button" data-hero-go="sets"><span>Browse app sets</span></button>
+      </div>
+      <div class="hero__stats" id="heroStats" aria-label="Library statistics"></div>
+    </section>
+
     <div class="main__head">
       <div class="main__headline">
         <h1 class="page-title" id="pageTitle">Gallery</h1>
@@ -203,15 +214,20 @@
     <button class="lightbox__close" type="button" data-close aria-label="Close">
       <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
     </button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" type="button" aria-label="Previous asset">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4.5L7 10l5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" type="button" aria-label="Next asset">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 4.5L13 10l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <p class="lightbox__count num" id="lbCount" aria-hidden="true"></p>
     <div class="lightbox__media" id="lbMedia"></div>
     <div class="lightbox__info" id="lbInfo"></div>
   </div>
 </div>
 
-<script src="data/showcase.js"></script>
 <script src="assets/js/data.js"></script>
 <script src="assets/js/util.js"></script>
-<script src="assets/js/home.js"></script>
 <script src="assets/js/listbox.js"></script>
 <script src="assets/js/filters.js"></script>
 <script src="assets/js/patterns.js"></script>

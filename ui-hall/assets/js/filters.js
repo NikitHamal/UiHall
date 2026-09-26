@@ -156,10 +156,10 @@ const Filters = (() => {
       }
     }
     const route = currentRoute();
-    return '#/' + (route === 'home' ? '' : route) + (parts.length ? '?' + parts.join('&') : '');
+    return '#/' + route + (parts.length ? '?' + parts.join('&') : '');
   }
 
-  let route = 'home';
+  let route = 'gallery';
   const currentRoute = () => route;
   const setRoute = (r) => { route = r; };
 
@@ -174,7 +174,7 @@ const Filters = (() => {
     const raw = location.hash.replace(/^#\/?/, '');
     const [path, query = ''] = raw.split('?');
     const seg = path.split('/').filter(Boolean);
-    route = seg[0] || 'home';
+    route = seg[0] || 'gallery';
     state.page = seg.slice(1).join('/');
 
     // reset the multi-value facets before applying what the URL actually says

@@ -15,7 +15,7 @@ import json
 import sys
 import os
 
-TAX = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "stormy-mcp", "taxonomy.json")
+TAX = r"E:\Stormy\stormy-mcp\taxonomy.json"
 
 STYLE_HINTS = {
     "light-mode", "dark-mode", "minimal", "high-contrast", "card-based", "rounded",
@@ -43,11 +43,7 @@ def main():
     payload = json.load(open(path, encoding="utf-8"))
     moved_to_style, moved_to_role, real = [], [], {}
 
-    items = payload.get("items", {})
-    if isinstance(items, list):
-        items = {it.get("id", f"#{i}"): it for i, it in enumerate(items)}
-
-    for k, it in items.items():
+    for k, it in payload.get("items", {}).items():
         fixed_tags = []
         for t in it.get("tags", []):
             if t in TYPE_HINTS:
@@ -96,7 +92,7 @@ def main():
 
     if apply:
         # drop any tag that is not in the taxonomy after normalisation
-        for k, it in items.items():
+        for k, it in payload.get("items", {}).items():
             it["tags"] = [t for t in it["tags"] if t in tags]
         json.dump(payload, open(path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
         print("\napplied: unknown tags removed from", os.path.basename(path))

@@ -8,10 +8,9 @@ tag already covers is reported as a near-duplicate so the description can be
 rewritten to use the canonical term instead of inventing a synonym.
 """
 import json
-import os
 import sys
 
-TAX = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "stormy-mcp", "taxonomy.json")
+TAX = r"E:\Stormy\stormy-mcp\taxonomy.json"
 
 # new tag -> one-line definition. Add only when nothing existing covers it.
 NEW_TAGS = {

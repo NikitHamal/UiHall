@@ -16,7 +16,7 @@ import re
 import sys
 from collections import Counter
 
-ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ROOT = r"E:\Stormy"
 META = os.path.join(ROOT, "_work", "meta")
 DESC = os.path.join(META, "descriptions")
 OUT = os.path.join(ROOT, "ui-hall", "data", "corpus.json")
@@ -225,57 +225,29 @@ def main():
     # step, for the same reason printed_palettes is folded in: a group that only
     # exists until the next rebuild is not a group.
     groups_payload = load(os.path.join(META, "groups.json"), {"groups": []}) or {"groups": []}
-    # Hand-verified groups from the audit pass. These are facts established by
-    # looking at every asset, so they outrank the title-prefix groups: an audit
-    # group steals members from any prefix group, and same-id entries override.
-    audit_payload = load(os.path.join(META, "groups-audit.json"), {}) or {}
-    audit_groups = audit_payload.get("groups", []) if isinstance(audit_payload, dict) else []
     live_ids = {a["id"] for a in assets}
-
-    owner = {}  # asset id -> audit group id (later audit entries win)
-    for g in audit_groups:
-        gid = g.get("id")
-        if not gid:
-            continue
-        for m in g.get("members", []):
-            if m in live_ids:
-                owner[m] = gid
-
     groups = []
     for g in groups_payload.get("groups", []):
-        kept = [m for m in g.get("members", []) if m in live_ids and owner.get(m) is None]
+        members = [m for m in g.get("members", []) if m in live_ids]
         # A group of one is not a group: either the siblings were dropped, or
         # the title prefix was a coincidence.
-        if len(kept) < 2:
+        if len(members) < 2:
             dropped_from = [m for m in g.get("members", []) if m not in live_ids]
             if dropped_from:
                 warnings.append(
-                    f"{g.get('id')}: {len(kept)} of {len(g['members'])} members "
+                    f"{g.get('id')}: {len(members)} of {len(g['members'])} members "
                     f"survive; dropped {','.join(dropped_from)}")
             continue
-        groups.append({"id": g["id"], "title": g.get("title") or g["id"],
-                       "count": len(kept), "members": kept})
-
-    for g in audit_groups:
-        gid = g.get("id")
-        if not gid:
-            continue
-        members = [m for m in g.get("members", []) if m in live_ids and owner.get(m) == gid]
-        if len(members) < 2:
-            continue
-        groups.append({"id": gid, "title": g.get("title") or gid,
-                       "count": len(members), "members": members, "verified": True})
-
-    by_id = {a["id"]: a for a in assets}
-    for g in groups:
-        for i, mid in enumerate(g["members"]):
-            a = by_id.get(mid)
-            if not a or (g.get("verified") is not True and a.get("group")):
-                continue
-            a["group"] = g["id"]
-            a["group_title"] = g["title"]
-            a["group_size"] = len(g["members"])
-            a["group_index"] = i
+        gid = g["id"]
+        title = g.get("title") or gid
+        groups.append({"id": gid, "title": title, "count": len(members), "members": members})
+        for i, mid in enumerate(members):
+            for a in assets:
+                if a["id"] == mid:
+                    a["group"] = gid
+                    a["group_title"] = title
+                    a["group_size"] = len(members)
+                    a["group_index"] = i
     groups.sort(key=lambda g: (-g["count"], g["id"]))
 
     # ---- categories present, with counts, for the nav
