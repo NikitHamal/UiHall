@@ -1,0 +1,210 @@
+{
+ "items": {
+  "VID-0395": {
+   "category": "mobile-app-ui",
+   "description": "Three chat phones side by side — 'No skills', 'Fable 5.1' over a dinner photo, 'GPT-6' messages with keyboard. Same dinner, three assistants: a chat-app comparison in one frame.",
+   "id": "VID-0395",
+   "quality": "Chat text small; comparison legible.",
+   "roles": [
+    "chat"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "comparison"
+   ],
+   "title": "Chat-app three-way",
+   "type": "multi-screen"
+  },
+  "VID-0396": {
+   "category": "mobile-app-ui",
+   "description": "A dark voice-memo action list: 00:00 with Restart and Delete rows. Recording aftermath reduced to two verbs.",
+   "id": "VID-0396",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "voice",
+    "audio"
+   ],
+   "title": "Voice memo actions",
+   "type": "component"
+  },
+  "VID-0397": {
+   "category": "mobile-app-ui",
+   "description": "A fanned 'Tiers' card stack: Visa cashback tiers with a Next CTA, cards mid-flourish. Tiered rewards as a card fan.",
+   "id": "VID-0397",
+   "quality": "Fast frames blur detail; fan legible.",
+   "roles": [
+    "onboarding"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "fintech",
+    "cards"
+   ],
+   "title": "Card tiers fan",
+   "type": "screen"
+  },
+  "VID-0398": {
+   "category": "dashboard",
+   "description": "A 'Router → Billing' spend control: 1.24M/256/$184 stats with a 'Freeze spend on this edge' toggle. One switch between the numbers and the money.",
+   "id": "VID-0398",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [
+    "dashboard"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "spending",
+    "limit"
+   ],
+   "title": "Spend-freeze toggle",
+   "type": "component"
+  },
+  "VID-0399": {
+   "category": "other",
+   "description": "A dark word grid — Leavening, Levitating, Manifesting, Metamorphosing: manifestation vocabulary as tiles. Kept for the typographic texture, not as interface.",
+   "id": "VID-0399",
+   "quality": "Words decorative; texture legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "wellness",
+    "typography"
+   ],
+   "title": "Manifestation word grid",
+   "type": "screen"
+  },
+  "VID-0401": {
+   "category": "mobile-app-ui",
+   "description": "A colour-dot track list: Redbone, Blinding Lights, Dreams, Motion Sickness and more with a bottom scrubber. Moods as dots, songs as rows.",
+   "id": "VID-0401",
+   "quality": "Row text blurred; list legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "music",
+    "playlist"
+   ],
+   "title": "Mood track list",
+   "type": "screen"
+  },
+  "VID-0402": {
+   "category": "website",
+   "description": "An 'Event planning' calendar with a Waters Partner Lunch side panel: month grid plus agenda. A static planning reference.",
+   "id": "VID-0402",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "calendar",
+    "scheduling"
+   ],
+   "title": "Event planning calendar",
+   "type": "screen"
+  },
+  "VID-0403": {
+   "category": "other",
+   "description": "An iOS concept note: Dynamic Island horse photo with 'Activity seam' and 'VisionKit capture idea' annotations about the photograph-then-type problem. A concept sketch, kept as one.",
+   "id": "VID-0403",
+   "quality": "Annotation text small; concept legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "concept",
+    "ios"
+   ],
+   "title": "VisionKit capture concept",
+   "type": "screen"
+  },
+  "VID-0404": {
+   "category": "other",
+   "description": "A fast photo-scatter: prints flying across white in heavy motion. No interface on it — kept as a motion specimen like the earlier photo scroll.",
+   "id": "VID-0404",
+   "quality": "Motion blur throughout; kept as motion, not UI.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "photographic"
+   ],
+   "tags": [
+    "photo",
+    "gallery",
+    "motion"
+   ],
+   "title": "Photo scatter motion",
+   "type": "screen"
+  },
+  "VID-0405": {
+   "category": "motion-demo",
+   "description": "A neon music player: concert art over chunky prev/play/next buttons with a cursor parked on next. Playback controls at poster scale.",
+   "id": "VID-0405",
+   "quality": "Clean frames; fully legible.",
+   "roles": [
+    "media"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "music",
+    "music-player"
+   ],
+   "title": "Neon music player",
+   "type": "screen"
+  },
+  "VID-0406": {
+   "category": "motion-demo",
+   "description": "Maker specimens in motion: bell, fountain-pen A, nib, screw and cube over 'Now I make small open-source to…' with a 工房 mark. Tools as a moving still life.",
+   "id": "VID-0406",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "logo",
+    "specimen"
+   ],
+   "title": "Tool specimens animation",
+   "type": "screen"
+  }
+ }
+}

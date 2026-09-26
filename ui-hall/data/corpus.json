@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 697
+  "described": 708
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 389
+   "count": 393
   },
   {
    "id": "app-store-screens",
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 115
+   "count": 116
   },
   {
    "id": "design-system",
@@ -63,14 +63,14 @@
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 63
+   "count": 64
   },
   {
    "id": "motion-demo",
    "label": "Motion demo",
    "blurb": "Clips whose whole point is the transition, not the static screen.",
    "icon": "play",
-   "count": 65
+   "count": 61
   },
   {
    "id": "promo-reel",
@@ -84,19 +84,19 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 38
+   "count": 36
   }
  ],
  "types": [
   {
    "id": "component",
    "label": "component",
-   "count": 30
+   "count": 32
   },
   {
    "id": "flow-walkthrough",
    "label": "flow-walkthrough",
-   "count": 292
+   "count": 281
   },
   {
    "id": "marketing",
@@ -111,7 +111,7 @@
   {
    "id": "multi-screen",
    "label": "multi-screen",
-   "count": 89
+   "count": 90
   },
   {
    "id": "pattern",
@@ -126,7 +126,7 @@
   {
    "id": "screen",
    "label": "screen",
-   "count": 263
+   "count": 271
   },
   {
    "id": "token-sheet",
@@ -137,7 +137,7 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 127
+   "count": 128
   },
   {
    "id": "hero",
@@ -152,12 +152,12 @@
    "count": 51
   },
   {
-   "id": "detail",
+   "id": "onboarding",
    "count": 47
   },
   {
-   "id": "onboarding",
-   "count": 46
+   "id": "detail",
+   "count": 47
   },
   {
    "id": "landing-section",
@@ -168,6 +168,10 @@
    "count": 30
   },
   {
+   "id": "chat",
+   "count": 21
+  },
+  {
    "id": "settings",
    "count": 20
   },
@@ -176,12 +180,8 @@
    "count": 20
   },
   {
-   "id": "chat",
-   "count": 20
-  },
-  {
    "id": "media",
-   "count": 18
+   "count": 19
   },
   {
    "id": "pricing",
@@ -227,23 +227,23 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 433
+   "count": 438
   },
   {
    "id": "minimal",
-   "count": 308
+   "count": 311
   },
   {
    "id": "rounded",
-   "count": 224
+   "count": 230
   },
   {
    "id": "dark-mode",
-   "count": 203
+   "count": 208
   },
   {
    "id": "card-based",
-   "count": 200
+   "count": 201
   },
   {
    "id": "data-dense",
@@ -321,14 +321,14 @@
   },
   {
    "id": "ai",
-   "count": 59
-  },
-  {
-   "id": "cta",
-   "count": 56
+   "count": 60
   },
   {
    "id": "fintech",
+   "count": 57
+  },
+  {
+   "id": "cta",
    "count": 56
   },
   {
@@ -345,23 +345,27 @@
   },
   {
    "id": "photographic",
-   "count": 35
+   "count": 36
   },
   {
    "id": "card",
    "count": 33
   },
   {
+   "id": "comparison",
+   "count": 29
+  },
+  {
+   "id": "photo",
+   "count": 29
+  },
+  {
    "id": "progress",
    "count": 28
   },
   {
-   "id": "comparison",
-   "count": 28
-  },
-  {
-   "id": "photo",
-   "count": 28
+   "id": "typography",
+   "count": 27
   },
   {
    "id": "travel",
@@ -384,10 +388,6 @@
    "count": 26
   },
   {
-   "id": "typography",
-   "count": 26
-  },
-  {
    "id": "onboarding",
    "count": 25
   },
@@ -400,6 +400,14 @@
    "count": 22
   },
   {
+   "id": "calendar",
+   "count": 22
+  },
+  {
+   "id": "music",
+   "count": 22
+  },
+  {
    "id": "social",
    "count": 22
   },
@@ -409,10 +417,6 @@
   },
   {
    "id": "tab-bar",
-   "count": 21
-  },
-  {
-   "id": "calendar",
    "count": 21
   },
   {
@@ -432,10 +436,6 @@
    "count": 20
   },
   {
-   "id": "music",
-   "count": 20
-  },
-  {
    "id": "gradient",
    "count": 19
   },
@@ -444,12 +444,12 @@
    "count": 19
   },
   {
-   "id": "app-store",
+   "id": "cards",
    "count": 18
   },
   {
-   "id": "cards",
-   "count": 17
+   "id": "app-store",
+   "count": 18
   },
   {
    "id": "before-after",
@@ -476,6 +476,10 @@
    "count": 14
   },
   {
+   "id": "gallery",
+   "count": 14
+  },
+  {
    "id": "pastel",
    "count": 13
   },
@@ -497,10 +501,6 @@
   },
   {
    "id": "list-row",
-   "count": 13
-  },
-  {
-   "id": "gallery",
    "count": 13
   },
   {
@@ -568,6 +568,10 @@
    "count": 10
   },
   {
+   "id": "spending",
+   "count": 10
+  },
+  {
    "id": "price",
    "count": 10
   },
@@ -592,7 +596,7 @@
    "count": 9
   },
   {
-   "id": "spending",
+   "id": "wellness",
    "count": 9
   },
   {
@@ -644,10 +648,6 @@
    "count": 8
   },
   {
-   "id": "wellness",
-   "count": 8
-  },
-  {
    "id": "authentication",
    "count": 8
   },
@@ -673,6 +673,10 @@
   },
   {
    "id": "bottom-nav",
+   "count": 8
+  },
+  {
+   "id": "motion",
    "count": 8
   },
   {
@@ -772,10 +776,6 @@
    "count": 7
   },
   {
-   "id": "motion",
-   "count": 7
-  },
-  {
    "id": "date-picker",
    "count": 6
   },
@@ -805,6 +805,10 @@
   },
   {
    "id": "cover",
+   "count": 6
+  },
+  {
+   "id": "playlist",
    "count": 6
   },
   {
@@ -932,11 +936,11 @@
    "count": 5
   },
   {
-   "id": "album-art",
+   "id": "audio",
    "count": 5
   },
   {
-   "id": "playlist",
+   "id": "album-art",
    "count": 5
   },
   {
@@ -1060,10 +1064,6 @@
    "count": 4
   },
   {
-   "id": "audio",
-   "count": 4
-  },
-  {
    "id": "podcast",
    "count": 4
   },
@@ -1149,6 +1149,10 @@
   },
   {
    "id": "notes",
+   "count": 4
+  },
+  {
+   "id": "voice",
    "count": 4
   },
   {
@@ -1276,6 +1280,10 @@
    "count": 3
   },
   {
+   "id": "concept",
+   "count": 3
+  },
+  {
    "id": "day-view",
    "count": 3
   },
@@ -1285,6 +1293,10 @@
   },
   {
    "id": "emphasis",
+   "count": 3
+  },
+  {
+   "id": "limit",
    "count": 3
   },
   {
@@ -1309,6 +1321,10 @@
   },
   {
    "id": "people",
+   "count": 3
+  },
+  {
+   "id": "specimen",
    "count": 3
   },
   {
@@ -1380,10 +1396,6 @@
    "count": 3
   },
   {
-   "id": "voice",
-   "count": 3
-  },
-  {
    "id": "widgets",
    "count": 3
   },
@@ -1417,6 +1429,10 @@
   },
   {
    "id": "leaderboard",
+   "count": 3
+  },
+  {
+   "id": "logo",
    "count": 3
   },
   {
@@ -1469,6 +1485,10 @@
   },
   {
    "id": "desktop",
+   "count": 3
+  },
+  {
+   "id": "scheduling",
    "count": 3
   },
   {
@@ -1536,10 +1556,6 @@
    "count": 2
   },
   {
-   "id": "concept",
-   "count": 2
-  },
-  {
    "id": "thumbnail",
    "count": 2
   },
@@ -1553,10 +1569,6 @@
   },
   {
    "id": "week-strip",
-   "count": 2
-  },
-  {
-   "id": "limit",
    "count": 2
   },
   {
@@ -1593,10 +1605,6 @@
   },
   {
    "id": "track-list",
-   "count": 2
-  },
-  {
-   "id": "specimen",
    "count": 2
   },
   {
@@ -1816,10 +1824,6 @@
    "count": 2
   },
   {
-   "id": "logo",
-   "count": 2
-  },
-  {
    "id": "magazine",
    "count": 2
   },
@@ -1900,6 +1904,10 @@
    "count": 2
   },
   {
+   "id": "music-player",
+   "count": 2
+  },
+  {
    "id": "micro-interaction",
    "count": 2
   },
@@ -1921,10 +1929,6 @@
   },
   {
    "id": "ai-comparison",
-   "count": 2
-  },
-  {
-   "id": "scheduling",
    "count": 2
   },
   {
@@ -2688,10 +2692,6 @@
    "count": 1
   },
   {
-   "id": "music-player",
-   "count": 1
-  },
-  {
    "id": "transport-controls",
    "count": 1
   },
@@ -2777,6 +2777,10 @@
   },
   {
    "id": "video",
+   "count": 1
+  },
+  {
+   "id": "ios",
    "count": 1
   },
   {
@@ -52582,13 +52586,21 @@
   {
    "id": "VID-0395",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0395",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Chat-app three-way",
+   "description": "Three chat phones side by side — 'No skills', 'Fable 5.1' over a dinner photo, 'GPT-6' messages with keyboard. Same dinner, three assistants: a chat-app comparison in one frame.",
+   "roles": [
+    "chat"
+   ],
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "comparison"
+   ],
    "palette": [
     "#F9F9F9",
     "#5E4A3D",
@@ -52632,7 +52644,8 @@
     "path": "E:\\Downloads\\UI\\27eNArR7P2zNt9dH.mp4",
     "bytes": 10410698
    },
-   "source_note": "auto-draft 2026-09-26: motion median 16.85; needs a visual read-through",
+   "quality": "Chat text small; comparison legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0395.webp",
    "thumb": "assets/thumb/VID-0395.webp",
    "motion": 16.85,
@@ -52650,13 +52663,20 @@
   {
    "id": "VID-0396",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0396",
-   "description": "",
+   "category": "mobile-app-ui",
+   "type": "component",
+   "title": "Voice memo actions",
+   "description": "A dark voice-memo action list: 00:00 with Restart and Delete rows. Recording aftermath reduced to two verbs.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "audio",
+    "voice"
+   ],
    "palette": [
     "#000000",
     "#221D1E",
@@ -52700,7 +52720,8 @@
     "path": "E:\\Downloads\\UI\\aQqXOSPO5WZQgzoM.mp4",
     "bytes": 1343788
    },
-   "source_note": "auto-draft 2026-09-26: motion median 2.41; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0396.webp",
    "thumb": "assets/thumb/VID-0396.webp",
    "motion": 2.41,
@@ -52718,13 +52739,21 @@
   {
    "id": "VID-0397",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0397",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Card tiers fan",
+   "description": "A fanned 'Tiers' card stack: Visa cashback tiers with a Next CTA, cards mid-flourish. Tiered rewards as a card fan.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "cards",
+    "fintech"
+   ],
    "palette": [
     "#0D0D0D",
     "#212121",
@@ -52768,7 +52797,8 @@
     "path": "E:\\Downloads\\UI\\M3_4afreWXr8-RSG.mp4",
     "bytes": 13546516
    },
-   "source_note": "auto-draft 2026-09-26: motion median 61.3; needs a visual read-through",
+   "quality": "Fast frames blur detail; fan legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0397.webp",
    "thumb": "assets/thumb/VID-0397.webp",
    "motion": 61.3,
@@ -52786,13 +52816,22 @@
   {
    "id": "VID-0398",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0398",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "dashboard",
+   "type": "component",
+   "title": "Spend-freeze toggle",
+   "description": "A 'Router → Billing' spend control: 1.24M/256/$184 stats with a 'Freeze spend on this edge' toggle. One switch between the numbers and the money.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "limit",
+    "spending"
+   ],
    "palette": [
     "#ECECEC",
     "#ECF0FA",
@@ -52836,7 +52875,8 @@
     "path": "E:\\Downloads\\UI\\SUn5F8lJwVdFiAqD.mp4",
     "bytes": 1750256
    },
-   "source_note": "auto-draft 2026-09-26: motion median 1.88; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0398.webp",
    "thumb": "assets/thumb/VID-0398.webp",
    "motion": 1.88,
@@ -52846,13 +52886,18 @@
   {
    "id": "VID-0399",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0399",
-   "description": "",
+   "category": "other",
+   "type": "screen",
+   "title": "Manifestation word grid",
+   "description": "A dark word grid — Leavening, Levitating, Manifesting, Metamorphosing: manifestation vocabulary as tiles. Kept for the typographic texture, not as interface.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "typography",
+    "wellness"
+   ],
    "palette": [
     "#FFFFFF",
     "#141414",
@@ -52896,7 +52941,8 @@
     "path": "E:\\Downloads\\UI\\_2kbL3bONVPCwAE8.mp4",
     "bytes": 137325079
    },
-   "source_note": "auto-draft 2026-09-26: motion median 4.22; needs a visual read-through",
+   "quality": "Words decorative; texture legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0399.webp",
    "thumb": "assets/thumb/VID-0399.webp",
    "motion": 4.22,
@@ -52991,13 +53037,19 @@
   {
    "id": "VID-0401",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0401",
-   "description": "",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Mood track list",
+   "description": "A colour-dot track list: Redbone, Blinding Lights, Dreams, Motion Sickness and more with a bottom scrubber. Moods as dots, songs as rows.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "music",
+    "playlist"
+   ],
    "palette": [
     "#F7F4FC",
     "#C6BDCE",
@@ -53041,7 +53093,8 @@
     "path": "E:\\Downloads\\UI\\jgKaUHHtY6jIMNxt.mp4",
     "bytes": 484264
    },
-   "source_note": "auto-draft 2026-09-26: motion median 3.04; needs a visual read-through",
+   "quality": "Row text blurred; list legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0401.webp",
    "thumb": "assets/thumb/VID-0401.webp",
    "motion": 3.04,
@@ -53059,13 +53112,19 @@
   {
    "id": "VID-0402",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0402",
-   "description": "",
+   "category": "website",
+   "type": "screen",
+   "title": "Event planning calendar",
+   "description": "An 'Event planning' calendar with a Waters Partner Lunch side panel: month grid plus agenda. A static planning reference.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "calendar",
+    "scheduling"
+   ],
    "palette": [
     "#FDFDFD",
     "#A9AEA5",
@@ -53109,7 +53168,8 @@
     "path": "E:\\Downloads\\UI\\M5k_8wDGqRnKJOLB.mp4",
     "bytes": 2973731
    },
-   "source_note": "auto-draft 2026-09-26: motion median 0.35; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0402.webp",
    "thumb": "assets/thumb/VID-0402.webp",
    "motion": 0.35,
@@ -53120,12 +53180,17 @@
    "id": "VID-0403",
    "kind": "video",
    "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0403",
-   "description": "",
+   "type": "screen",
+   "title": "VisionKit capture concept",
+   "description": "An iOS concept note: Dynamic Island horse photo with 'Activity seam' and 'VisionKit capture idea' annotations about the photograph-then-type problem. A concept sketch, kept as one.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "concept",
+    "ios"
+   ],
    "palette": [
     "#F4F1E3",
     "#010101",
@@ -53169,7 +53234,8 @@
     "path": "E:\\Downloads\\UI\\QY2Fzq06ruz7eH4t.mp4",
     "bytes": 386443
    },
-   "source_note": "auto-draft 2026-09-26: motion median 1.81; needs a visual read-through",
+   "quality": "Annotation text small; concept legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0403.webp",
    "thumb": "assets/thumb/VID-0403.webp",
    "motion": 1.81,
@@ -53179,13 +53245,18 @@
   {
    "id": "VID-0404",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0404",
-   "description": "",
+   "category": "other",
+   "type": "screen",
+   "title": "Photo scatter motion",
+   "description": "A fast photo-scatter: prints flying across white in heavy motion. No interface on it — kept as a motion specimen like the earlier photo scroll.",
    "roles": [],
    "style": [],
-   "tags": [],
+   "tags": [
+    "gallery",
+    "motion",
+    "photo",
+    "photographic"
+   ],
    "palette": [
     "#F9F9F9",
     "#A3A49B",
@@ -53229,7 +53300,8 @@
     "path": "E:\\Downloads\\UI\\UxZZ8w2OnGgzUzcX.mp4",
     "bytes": 865200
    },
-   "source_note": "auto-draft 2026-09-26: motion median 24.98; needs a visual read-through",
+   "quality": "Motion blur throughout; kept as motion, not UI.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0404.webp",
    "thumb": "assets/thumb/VID-0404.webp",
    "motion": 24.98,
@@ -53248,12 +53320,20 @@
    "id": "VID-0405",
    "kind": "video",
    "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0405",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "type": "screen",
+   "title": "Neon music player",
+   "description": "A neon music player: concert art over chunky prev/play/next buttons with a cursor parked on next. Playback controls at poster scale.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "music",
+    "music-player"
+   ],
    "palette": [
     "#EBEBEB",
     "#252325",
@@ -53297,7 +53377,8 @@
     "path": "E:\\Downloads\\UI\\svCqwX1PS3y8Lkbv.mp4",
     "bytes": 17331601
    },
-   "source_note": "auto-draft 2026-09-26: motion median 8.18; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0405.webp",
    "thumb": "assets/thumb/VID-0405.webp",
    "motion": 8.18,
@@ -53316,12 +53397,18 @@
    "id": "VID-0406",
    "kind": "video",
    "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0406",
-   "description": "",
+   "type": "screen",
+   "title": "Tool specimens animation",
+   "description": "Maker specimens in motion: bell, fountain-pen A, nib, screw and cube over 'Now I make small open-source to…' with a 工房 mark. Tools as a moving still life.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "logo",
+    "specimen"
+   ],
    "palette": [
     "#EDE4D1",
     "#D2C9B8",
@@ -53365,7 +53452,8 @@
     "path": "E:\\Downloads\\UI\\UxmjTNY_oCTTbt4v.mp4",
     "bytes": 8023813
    },
-   "source_note": "auto-draft 2026-09-26: motion median 7.72; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0406.webp",
    "thumb": "assets/thumb/VID-0406.webp",
    "motion": 7.72,
