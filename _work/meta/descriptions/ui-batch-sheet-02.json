@@ -1,0 +1,254 @@
+{
+ "items": {
+  "IMG-0557": {
+   "category": "website",
+   "description": "A dark node-based approval-flow builder: left config panel (Configure, Project, Content type) and an Approval card with assignee rows. A no-code automation surface; the compact approval card inside the canvas is the component worth stealing.",
+   "id": "IMG-0557",
+   "quality": "Small print soft at capture size; structure fully legible.",
+   "roles": [
+    "editor",
+    "form"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "data-dense"
+   ],
+   "tags": [
+    "no-code",
+    "agents"
+   ],
+   "title": "Dark approval-flow builder",
+   "type": "screen"
+  },
+  "IMG-0558": {
+   "category": "website",
+   "description": "A dark agent-builder panel from the same automation product: trigger list (Manual trigger, Content created, Schedule, Webhook) above a Research group (Deep research, Competitor analysis, Keyword analysis, Website crawl) and Draft content. Trigger-then-capability stacking as a navigation pattern.",
+   "id": "IMG-0558",
+   "pair_with": "IMG-0557",
+   "quality": "Small print soft at capture size; structure fully legible.",
+   "roles": [
+    "navigation"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "no-code",
+    "agents",
+    "ai"
+   ],
+   "title": "Agent trigger-and-research panel",
+   "type": "screen"
+  },
+  "IMG-0559": {
+   "category": "website",
+   "description": "A zoomed crop of the same dark canvas: a single 'Content created' node with a dotted connection trailing off-frame. Almost abstract at this zoom — kept as the node aesthetic companion to the builder screens, not as a standalone layout.",
+   "id": "IMG-0559",
+   "pair_with": "IMG-0558",
+   "quality": "Tight crop; kept for the node aesthetic, not the layout.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "no-code",
+    "agents"
+   ],
+   "title": "Automation node canvas (dark)",
+   "type": "component"
+  },
+  "IMG-0560": {
+   "category": "website",
+   "description": "A project chat composer ('Main / project-sea'): attachment chips for payroll, timetable, presentation and prototype files, a 'Hi, what do you need today?' prompt, a '+' button and a 'Bypass all' permissions toggle. The composer bar plus permission escape-hatch is the pattern.",
+   "id": "IMG-0560",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "chat"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "composer",
+    "attachments"
+   ],
+   "title": "Project chat composer with attachments",
+   "type": "screen"
+  },
+  "IMG-0561": {
+   "category": "website",
+   "description": "A 'Models / Quick Search' picker card: GPT-5.6 Terra, GPT-5.6 Mini (selected, 'Medium' tier dropdown), GPT-5.6 Sol, GPT-5.5, GPT-5.4 and GPT-5.4 Mini as radio rows with provider glyphs. A model-version selector done as a radio list with per-model tier control.",
+   "id": "IMG-0561",
+   "quality": "Clean capture; fully legible.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "model-versions",
+    "picker",
+    "option-list"
+   ],
+   "title": "AI model picker (GPT-5.x)",
+   "type": "component"
+  },
+  "IMG-0562": {
+   "category": "website",
+   "description": "A 'Permissions' card for an AI agent: Auto ('Agent decides by itself'), Manual ('Always ask before making a change'), Plan mode ('Create a plan before proceeding') and Bypass all ('Agent handles permission decisions'). Four autonomy levels as plain-language radio rows — the clearest permission UX in the batch.",
+   "id": "IMG-0562",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "settings"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "agents",
+    "privacy",
+    "option-list"
+   ],
+   "title": "Agent permission modes",
+   "type": "component"
+  },
+  "IMG-0563": {
+   "category": "dashboard",
+   "description": "A finance Reports screen (Income statement / Balance sheet / Cash flow / Accounting tabs): a 'Report period' popover with From/To date fields over Cash, Burn, Income and Expenses rows with figures, plus an 'Uncategorized 45' row. Tabbed statements plus inline period filter.",
+   "id": "IMG-0563",
+   "quality": "Some figures small; structure fully legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "finance",
+    "report",
+    "table",
+    "filters"
+   ],
+   "title": "Income-statement report with period filter",
+   "type": "screen"
+  },
+  "IMG-0564": {
+   "category": "dashboard",
+   "description": "A categorized banking table with a Rules/Filters bar: company rows (Stellar Innovations, Apex Solutions, Nexus Global…) mapped to Treasury and Credit-card accounts with amounts ($145,678.00, $87,123.45…). Rule-based categorization as a dense working table.",
+   "id": "IMG-0564",
+   "pair_with": "IMG-0563",
+   "quality": "Dense but legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "finance",
+    "banking",
+    "table",
+    "filters"
+   ],
+   "title": "Banking rules-and-accounts table",
+   "type": "screen"
+  },
+  "IMG-0565": {
+   "category": "dashboard",
+   "description": "An 'Acme, Inc. Your summary' startup finance view: Cash/Burn header, recent Mercury and Brex checking transactions dated Jul 2025 (Vercel, GitHub, Shopify counterparties), and report links. A founder-friendly cash summary over raw bank data.",
+   "id": "IMG-0565",
+   "pair_with": "IMG-0564",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "finance",
+    "fintech",
+    "transaction"
+   ],
+   "title": "Startup cash summary (Mercury/Brex)",
+   "type": "screen"
+  },
+  "IMG-0566": {
+   "category": "dashboard",
+   "description": "A transaction-table moment: an Amount column ($145,678.90, $87,123.45, $32,500.00…) with a row context menu open offering 'Split transaction' and a red 'Delete'. Row-level money actions without leaving the table.",
+   "id": "IMG-0566",
+   "pair_with": "IMG-0565",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "finance",
+    "transaction",
+    "context-menu"
+   ],
+   "title": "Transaction row context menu",
+   "type": "component"
+  },
+  "IMG-0567": {
+   "category": "dashboard",
+   "description": "A dark, very dense data table — rows of small red/green status text on near-black. Read at review-sheet size only: the density and dark-mode table treatment are the reference; no cell text was transcribed.",
+   "id": "IMG-0567",
+   "quality": "Cell text illegible at review-sheet size — flagged for a full-size second pass before quoting any content.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "monochrome"
+   ],
+   "tags": [
+    "data-table"
+   ],
+   "title": "Dark dense data table",
+   "type": "screen"
+  },
+  "IMG-0568": {
+   "category": "website",
+   "description": "Delivery-brand marketing told through iPhone frames: 'Deliver with confidence' with a courier illustration, and a second panel starting 'Every de[livery] tells a st[ory]'. Device-framed storytelling for a logistics product.",
+   "id": "IMG-0568",
+   "quality": "Right panel cropped by the source; left panel fully legible.",
+   "roles": [
+    "marketing"
+   ],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "landing",
+    "delivery"
+   ],
+   "title": "Delivery-brand phone mockups",
+   "type": "mockup"
+  }
+ }
+}

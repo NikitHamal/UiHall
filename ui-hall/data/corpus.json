@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 530
+  "described": 542
  },
  "categories": [
   {
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 49
+   "count": 56
   },
   {
    "id": "design-system",
@@ -63,7 +63,7 @@
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 32
+   "count": 37
   },
   {
    "id": "motion-demo",
@@ -84,14 +84,14 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 156
+   "count": 144
   }
  ],
  "types": [
   {
    "id": "component",
    "label": "component",
-   "count": 12
+   "count": 16
   },
   {
    "id": "flow-walkthrough",
@@ -106,7 +106,7 @@
   {
    "id": "mockup",
    "label": "mockup",
-   "count": 20
+   "count": 21
   },
   {
    "id": "multi-screen",
@@ -126,7 +126,7 @@
   {
    "id": "screen",
    "label": "screen",
-   "count": 258
+   "count": 253
   },
   {
    "id": "token-sheet",
@@ -137,7 +137,7 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 97
+   "count": 102
   },
   {
    "id": "list",
@@ -161,7 +161,7 @@
   },
   {
    "id": "form",
-   "count": 26
+   "count": 27
   },
   {
    "id": "landing-section",
@@ -169,7 +169,7 @@
   },
   {
    "id": "editor",
-   "count": 16
+   "count": 17
   },
   {
    "id": "media",
@@ -184,12 +184,12 @@
    "count": 16
   },
   {
-   "id": "checkout",
+   "id": "settings",
    "count": 15
   },
   {
-   "id": "settings",
-   "count": 14
+   "id": "checkout",
+   "count": 15
   },
   {
    "id": "pricing",
@@ -197,7 +197,7 @@
   },
   {
    "id": "chat",
-   "count": 10
+   "count": 11
   },
   {
    "id": "search",
@@ -212,11 +212,11 @@
    "count": 8
   },
   {
-   "id": "empty-state",
-   "count": 7
+   "id": "navigation",
+   "count": 8
   },
   {
-   "id": "navigation",
+   "id": "empty-state",
    "count": 7
   },
   {
@@ -227,23 +227,23 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 314
+   "count": 322
   },
   {
    "id": "minimal",
-   "count": 242
+   "count": 250
   },
   {
    "id": "dark-mode",
-   "count": 166
+   "count": 170
   },
   {
    "id": "card-based",
-   "count": 138
+   "count": 141
   },
   {
    "id": "rounded",
-   "count": 136
+   "count": 140
   },
   {
    "id": "editorial",
@@ -251,7 +251,7 @@
   },
   {
    "id": "data-dense",
-   "count": 41
+   "count": 45
   },
   {
    "id": "soft",
@@ -267,7 +267,7 @@
   },
   {
    "id": "playful",
-   "count": 28
+   "count": 29
   },
   {
    "id": "high-contrast",
@@ -275,7 +275,7 @@
   },
   {
    "id": "monochrome",
-   "count": 23
+   "count": 24
   },
   {
    "id": "gradient-heavy",
@@ -325,19 +325,19 @@
   },
   {
    "id": "fintech",
-   "count": 48
+   "count": 49
   },
   {
    "id": "chart",
    "count": 43
   },
   {
-   "id": "card",
-   "count": 33
+   "id": "ai",
+   "count": 36
   },
   {
-   "id": "ai",
-   "count": 32
+   "id": "card",
+   "count": 33
   },
   {
    "id": "photographic",
@@ -412,6 +412,10 @@
    "count": 19
   },
   {
+   "id": "table",
+   "count": 19
+  },
+  {
    "id": "health",
    "count": 18
   },
@@ -425,10 +429,6 @@
   },
   {
    "id": "music",
-   "count": 17
-  },
-  {
-   "id": "table",
    "count": 17
   },
   {
@@ -468,6 +468,14 @@
    "count": 13
   },
   {
+   "id": "finance",
+   "count": 13
+  },
+  {
+   "id": "transaction",
+   "count": 13
+  },
+  {
    "id": "reading",
    "count": 13
   },
@@ -488,6 +496,10 @@
    "count": 12
   },
   {
+   "id": "landing",
+   "count": 12
+  },
+  {
    "id": "green",
    "count": 11
   },
@@ -496,7 +508,7 @@
    "count": 11
   },
   {
-   "id": "transaction",
+   "id": "delivery",
    "count": 11
   },
   {
@@ -508,15 +520,11 @@
    "count": 11
   },
   {
-   "id": "landing",
-   "count": 11
-  },
-  {
    "id": "list",
    "count": 11
   },
   {
-   "id": "delivery",
+   "id": "banking",
    "count": 10
   },
   {
@@ -532,15 +540,7 @@
    "count": 10
   },
   {
-   "id": "finance",
-   "count": 9
-  },
-  {
    "id": "steps",
-   "count": 9
-  },
-  {
-   "id": "banking",
    "count": 9
   },
   {
@@ -660,6 +660,10 @@
    "count": 7
   },
   {
+   "id": "data-table",
+   "count": 7
+  },
+  {
    "id": "stats",
    "count": 7
   },
@@ -768,10 +772,6 @@
    "count": 6
   },
   {
-   "id": "data-table",
-   "count": 6
-  },
-  {
    "id": "real-estate",
    "count": 6
   },
@@ -837,6 +837,10 @@
   },
   {
    "id": "charts",
+   "count": 5
+  },
+  {
+   "id": "picker",
    "count": 5
   },
   {
@@ -916,7 +920,15 @@
    "count": 5
   },
   {
+   "id": "context-menu",
+   "count": 5
+  },
+  {
    "id": "branding",
+   "count": 5
+  },
+  {
+   "id": "marketing",
    "count": 5
   },
   {
@@ -960,10 +972,6 @@
    "count": 4
   },
   {
-   "id": "picker",
-   "count": 4
-  },
-  {
    "id": "metric-tile",
    "count": 4
   },
@@ -973,6 +981,10 @@
   },
   {
    "id": "playlist",
+   "count": 4
+  },
+  {
+   "id": "report",
    "count": 4
   },
   {
@@ -1036,6 +1048,10 @@
    "count": 4
   },
   {
+   "id": "filters",
+   "count": 4
+  },
+  {
    "id": "capture",
    "count": 4
   },
@@ -1056,11 +1072,11 @@
    "count": 4
   },
   {
-   "id": "context-menu",
+   "id": "documentation",
    "count": 4
   },
   {
-   "id": "documentation",
+   "id": "agents",
    "count": 4
   },
   {
@@ -1081,10 +1097,6 @@
   },
   {
    "id": "home-screen",
-   "count": 4
-  },
-  {
-   "id": "marketing",
    "count": 4
   },
   {
@@ -1109,6 +1121,10 @@
   },
   {
    "id": "payments",
+   "count": 3
+  },
+  {
+   "id": "option-list",
    "count": 3
   },
   {
@@ -1157,10 +1173,6 @@
   },
   {
    "id": "podcast",
-   "count": 3
-  },
-  {
-   "id": "report",
    "count": 3
   },
   {
@@ -1297,6 +1309,10 @@
   },
   {
    "id": "survey",
+   "count": 3
+  },
+  {
+   "id": "no-code",
    "count": 3
   },
   {
@@ -1596,6 +1612,10 @@
    "count": 2
   },
   {
+   "id": "composer",
+   "count": 2
+  },
+  {
    "id": "post",
    "count": 2
   },
@@ -1612,6 +1632,10 @@
    "count": 2
   },
   {
+   "id": "privacy",
+   "count": 2
+  },
+  {
    "id": "tool",
    "count": 2
   },
@@ -1625,10 +1649,6 @@
   },
   {
    "id": "wireframe",
-   "count": 2
-  },
-  {
-   "id": "filters",
    "count": 2
   },
   {
@@ -1689,6 +1709,14 @@
   },
   {
    "id": "voice-assistant",
+   "count": 2
+  },
+  {
+   "id": "attachments",
+   "count": 2
+  },
+  {
+   "id": "model-versions",
    "count": 2
   },
   {
@@ -1901,10 +1929,6 @@
   },
   {
    "id": "moon",
-   "count": 1
-  },
-  {
-   "id": "option-list",
    "count": 1
   },
   {
@@ -2132,10 +2156,6 @@
    "count": 1
   },
   {
-   "id": "composer",
-   "count": 1
-  },
-  {
    "id": "shell",
    "count": 1
   },
@@ -2229,10 +2249,6 @@
   },
   {
    "id": "consent",
-   "count": 1
-  },
-  {
-   "id": "privacy",
    "count": 1
   },
   {
@@ -2353,10 +2369,6 @@
   },
   {
    "id": "folders",
-   "count": 1
-  },
-  {
-   "id": "attachments",
    "count": 1
   },
   {
@@ -2693,10 +2705,6 @@
   },
   {
    "id": "achievement",
-   "count": 1
-  },
-  {
-   "id": "model-versions",
    "count": 1
   },
   {
@@ -25674,13 +25682,23 @@
   {
    "id": "IMG-0557",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0557",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Dark approval-flow builder",
+   "description": "A dark node-based approval-flow builder: left config panel (Configure, Project, Content type) and an Approval card with assignee rows. A no-code automation surface; the compact approval card inside the canvas is the component worth stealing.",
+   "roles": [
+    "editor",
+    "form"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "minimal"
+   ],
+   "tags": [
+    "agents",
+    "no-code"
+   ],
    "palette": [
     "#18171C",
     "#0A0A0C",
@@ -25724,20 +25742,29 @@
     "path": "E:\\Downloads\\UI\\HS6H3XhbQAEMMg_.jpg",
     "bytes": 686382
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Small print soft at capture size; structure fully legible.",
    "src": "assets/img/IMG-0557.webp",
    "thumb": "assets/thumb/IMG-0557.webp"
   },
   {
    "id": "IMG-0558",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0558",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Agent trigger-and-research panel",
+   "description": "A dark agent-builder panel from the same automation product: trigger list (Manual trigger, Content created, Schedule, Webhook) above a Research group (Deep research, Competitor analysis, Keyword analysis, Website crawl) and Draft content. Trigger-then-capability stacking as a navigation pattern.",
+   "roles": [
+    "navigation"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "agents",
+    "ai",
+    "no-code"
+   ],
    "palette": [
     "#0A0A0C",
     "#18171C",
@@ -25781,20 +25808,27 @@
     "path": "E:\\Downloads\\UI\\HS6H3XiaIAAfJxA.jpg",
     "bytes": 288455
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Small print soft at capture size; structure fully legible.",
+   "pair_with": "IMG-0557",
    "src": "assets/img/IMG-0558.webp",
    "thumb": "assets/thumb/IMG-0558.webp"
   },
   {
    "id": "IMG-0559",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0559",
-   "description": "",
+   "category": "website",
+   "type": "component",
+   "title": "Automation node canvas (dark)",
+   "description": "A zoomed crop of the same dark canvas: a single 'Content created' node with a dotted connection trailing off-frame. Almost abstract at this zoom — kept as the node aesthetic companion to the builder screens, not as a standalone layout.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "agents",
+    "no-code"
+   ],
    "palette": [
     "#0A0A0C",
     "#18171C",
@@ -25838,20 +25872,31 @@
     "path": "E:\\Downloads\\UI\\HS6H3XgbQAEDwq-.jpg",
     "bytes": 448930
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Tight crop; kept for the node aesthetic, not the layout.",
+   "pair_with": "IMG-0558",
    "src": "assets/img/IMG-0559.webp",
    "thumb": "assets/thumb/IMG-0559.webp"
   },
   {
    "id": "IMG-0560",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0560",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Project chat composer with attachments",
+   "description": "A project chat composer ('Main / project-sea'): attachment chips for payroll, timetable, presentation and prototype files, a 'Hi, what do you need today?' prompt, a '+' button and a 'Bypass all' permissions toggle. The composer bar plus permission escape-hatch is the pattern.",
+   "roles": [
+    "chat"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "attachments",
+    "composer"
+   ],
    "palette": [
     "#F1F1F1",
     "#FFFFFF",
@@ -25895,20 +25940,30 @@
     "path": "E:\\Downloads\\UI\\HS6fWwqW0AAcDSS.jpg",
     "bytes": 43304
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0560.webp",
    "thumb": "assets/thumb/IMG-0560.webp"
   },
   {
    "id": "IMG-0561",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0561",
-   "description": "",
+   "category": "website",
+   "type": "component",
+   "title": "AI model picker (GPT-5.x)",
+   "description": "A 'Models / Quick Search' picker card: GPT-5.6 Terra, GPT-5.6 Mini (selected, 'Medium' tier dropdown), GPT-5.6 Sol, GPT-5.5, GPT-5.4 and GPT-5.4 Mini as radio rows with provider glyphs. A model-version selector done as a radio list with per-model tier control.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "model-versions",
+    "option-list",
+    "picker"
+   ],
    "palette": [
     "#F2F2F2",
     "#FFFFFF",
@@ -25952,20 +26007,32 @@
     "path": "E:\\Downloads\\UI\\HS6fWw0WsAAIald.jpg",
     "bytes": 42016
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0561.webp",
    "thumb": "assets/thumb/IMG-0561.webp"
   },
   {
    "id": "IMG-0562",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0562",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "component",
+   "title": "Agent permission modes",
+   "description": "A 'Permissions' card for an AI agent: Auto ('Agent decides by itself'), Manual ('Always ask before making a change'), Plan mode ('Create a plan before proceeding') and Bypass all ('Agent handles permission decisions'). Four autonomy levels as plain-language radio rows — the clearest permission UX in the batch.",
+   "roles": [
+    "settings"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "agents",
+    "ai",
+    "option-list",
+    "privacy"
+   ],
    "palette": [
     "#F2F2F2",
     "#FFFFFF",
@@ -26009,20 +26076,30 @@
     "path": "E:\\Downloads\\UI\\HS6fWwsXMAEkCgI.jpg",
     "bytes": 41564
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0562.webp",
    "thumb": "assets/thumb/IMG-0562.webp"
   },
   {
    "id": "IMG-0563",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0563",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Income-statement report with period filter",
+   "description": "A finance Reports screen (Income statement / Balance sheet / Cash flow / Accounting tabs): a 'Report period' popover with From/To date fields over Cash, Burn, Income and Expenses rows with figures, plus an 'Uncategorized 45' row. Tabbed statements plus inline period filter.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "filters",
+    "finance",
+    "report",
+    "table"
+   ],
    "palette": [
     "#FFFFFF",
     "#F8F8F9",
@@ -26066,20 +26143,30 @@
     "path": "E:\\Downloads\\UI\\HS55PocaMAEzB6r.jpg",
     "bytes": 187591
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Some figures small; structure fully legible.",
    "src": "assets/img/IMG-0563.webp",
    "thumb": "assets/thumb/IMG-0563.webp"
   },
   {
    "id": "IMG-0564",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0564",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Banking rules-and-accounts table",
+   "description": "A categorized banking table with a Rules/Filters bar: company rows (Stellar Innovations, Apex Solutions, Nexus Global…) mapped to Treasury and Credit-card accounts with amounts ($145,678.00, $87,123.45…). Rule-based categorization as a dense working table.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "banking",
+    "filters",
+    "finance",
+    "table"
+   ],
    "palette": [
     "#FFFFFF",
     "#F8F8F8",
@@ -26123,20 +26210,31 @@
     "path": "E:\\Downloads\\UI\\HS55P6kbAAA9gwr.jpg",
     "bytes": 315887
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Dense but legible.",
+   "pair_with": "IMG-0563",
    "src": "assets/img/IMG-0564.webp",
    "thumb": "assets/thumb/IMG-0564.webp"
   },
   {
    "id": "IMG-0565",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0565",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Startup cash summary (Mercury/Brex)",
+   "description": "An 'Acme, Inc. Your summary' startup finance view: Cash/Burn header, recent Mercury and Brex checking transactions dated Jul 2025 (Vercel, GitHub, Shopify counterparties), and report links. A founder-friendly cash summary over raw bank data.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "finance",
+    "fintech",
+    "transaction"
+   ],
    "palette": [
     "#CECECE",
     "#FFFFFF",
@@ -26180,20 +26278,30 @@
     "path": "E:\\Downloads\\UI\\HS55QLqaYAEP2-s.jpg",
     "bytes": 168724
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0564",
    "src": "assets/img/IMG-0565.webp",
    "thumb": "assets/thumb/IMG-0565.webp"
   },
   {
    "id": "IMG-0566",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0566",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "dashboard",
+   "type": "component",
+   "title": "Transaction row context menu",
+   "description": "A transaction-table moment: an Amount column ($145,678.90, $87,123.45, $32,500.00…) with a row context menu open offering 'Split transaction' and a red 'Delete'. Row-level money actions without leaving the table.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "context-menu",
+    "finance",
+    "transaction"
+   ],
    "palette": [
     "#FFFFFF",
     "#F9F7F8",
@@ -26237,20 +26345,29 @@
     "path": "E:\\Downloads\\UI\\HS55Qb-aMAA6fpm.jpg",
     "bytes": 74274
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0565",
    "src": "assets/img/IMG-0566.webp",
    "thumb": "assets/thumb/IMG-0566.webp"
   },
   {
    "id": "IMG-0567",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0567",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Dark dense data table",
+   "description": "A dark, very dense data table — rows of small red/green status text on near-black. Read at review-sheet size only: the density and dark-mode table treatment are the reference; no cell text was transcribed.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "monochrome"
+   ],
+   "tags": [
+    "data-table"
+   ],
    "palette": [
     "#0A0A0A",
     "#181818",
@@ -26294,20 +26411,28 @@
     "path": "E:\\Downloads\\UI\\HS54dAxaMAAm_sn.jpg",
     "bytes": 692290
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Cell text illegible at review-sheet size — flagged for a full-size second pass before quoting any content.",
    "src": "assets/img/IMG-0567.webp",
    "thumb": "assets/thumb/IMG-0567.webp"
   },
   {
    "id": "IMG-0568",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0568",
-   "description": "",
+   "category": "website",
+   "type": "mockup",
+   "title": "Delivery-brand phone mockups",
+   "description": "Delivery-brand marketing told through iPhone frames: 'Deliver with confidence' with a courier illustration, and a second panel starting 'Every de[livery] tells a st[ory]'. Device-framed storytelling for a logistics product.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "delivery",
+    "landing",
+    "marketing"
+   ],
    "palette": [
     "#FCFCFB",
     "#0C0B0B",
@@ -26351,7 +26476,7 @@
     "path": "E:\\Downloads\\UI\\HS6_pZrXkAAoPN8.jpg",
     "bytes": 147548
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Right panel cropped by the source; left panel fully legible.",
    "src": "assets/img/IMG-0568.webp",
    "thumb": "assets/thumb/IMG-0568.webp"
   },
