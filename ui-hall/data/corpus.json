@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 590
+  "described": 602
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 359
+   "count": 367
   },
   {
    "id": "app-store-screens",
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 76
+   "count": 77
   },
   {
    "id": "design-system",
@@ -63,7 +63,7 @@
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 47
+   "count": 50
   },
   {
    "id": "motion-demo",
@@ -84,7 +84,7 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 96
+   "count": 84
   }
  ],
  "types": [
@@ -111,7 +111,7 @@
   {
    "id": "multi-screen",
    "label": "multi-screen",
-   "count": 82
+   "count": 84
   },
   {
    "id": "pattern",
@@ -126,7 +126,7 @@
   {
    "id": "screen",
    "label": "screen",
-   "count": 240
+   "count": 238
   },
   {
    "id": "token-sheet",
@@ -137,7 +137,7 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 112
+   "count": 115
   },
   {
    "id": "hero",
@@ -149,15 +149,15 @@
   },
   {
    "id": "home",
-   "count": 46
+   "count": 48
   },
   {
    "id": "detail",
-   "count": 45
+   "count": 47
   },
   {
    "id": "onboarding",
-   "count": 36
+   "count": 37
   },
   {
    "id": "landing-section",
@@ -169,7 +169,7 @@
   },
   {
    "id": "editor",
-   "count": 17
+   "count": 18
   },
   {
    "id": "settings",
@@ -208,15 +208,15 @@
    "count": 12
   },
   {
+   "id": "auth",
+   "count": 10
+  },
+  {
    "id": "notification",
    "count": 8
   },
   {
    "id": "navigation",
-   "count": 8
-  },
-  {
-   "id": "auth",
    "count": 8
   },
   {
@@ -227,39 +227,39 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 359
+   "count": 369
   },
   {
    "id": "minimal",
-   "count": 265
+   "count": 267
   },
   {
    "id": "dark-mode",
-   "count": 181
-  },
-  {
-   "id": "card-based",
-   "count": 164
+   "count": 182
   },
   {
    "id": "rounded",
-   "count": 163
+   "count": 171
+  },
+  {
+   "id": "card-based",
+   "count": 167
   },
   {
    "id": "data-dense",
-   "count": 55
+   "count": 59
   },
   {
    "id": "editorial",
    "count": 49
   },
   {
-   "id": "soft",
-   "count": 35
+   "id": "playful",
+   "count": 39
   },
   {
-   "id": "playful",
-   "count": 33
+   "id": "soft",
+   "count": 36
   },
   {
    "id": "bold-typography",
@@ -325,11 +325,11 @@
   },
   {
    "id": "fintech",
-   "count": 54
+   "count": 55
   },
   {
    "id": "chart",
-   "count": 46
+   "count": 47
   },
   {
    "id": "ai",
@@ -345,11 +345,15 @@
   },
   {
    "id": "analytics",
-   "count": 31
+   "count": 32
   },
   {
    "id": "progress",
    "count": 28
+  },
+  {
+   "id": "photo",
+   "count": 27
   },
   {
    "id": "promo",
@@ -372,11 +376,11 @@
    "count": 26
   },
   {
-   "id": "photo",
+   "id": "table",
    "count": 26
   },
   {
-   "id": "table",
+   "id": "travel",
    "count": 25
   },
   {
@@ -385,10 +389,6 @@
   },
   {
    "id": "illustration",
-   "count": 21
-  },
-  {
-   "id": "travel",
    "count": 21
   },
   {
@@ -416,6 +416,10 @@
    "count": 20
   },
   {
+   "id": "finance",
+   "count": 20
+  },
+  {
    "id": "calendar",
    "count": 20
   },
@@ -425,10 +429,6 @@
   },
   {
    "id": "health",
-   "count": 19
-  },
-  {
-   "id": "finance",
    "count": 19
   },
   {
@@ -560,6 +560,14 @@
    "count": 10
   },
   {
+   "id": "schedule",
+   "count": 9
+  },
+  {
+   "id": "budgeting",
+   "count": 9
+  },
+  {
    "id": "steps",
    "count": 9
   },
@@ -584,14 +592,6 @@
    "count": 8
   },
   {
-   "id": "schedule",
-   "count": 8
-  },
-  {
-   "id": "budgeting",
-   "count": 8
-  },
-  {
    "id": "cta-button",
    "count": 8
   },
@@ -609,6 +609,10 @@
   },
   {
    "id": "shelf",
+   "count": 8
+  },
+  {
+   "id": "wellness",
    "count": 8
   },
   {
@@ -661,10 +665,6 @@
   },
   {
    "id": "gauge",
-   "count": 7
-  },
-  {
-   "id": "wellness",
    "count": 7
   },
   {
@@ -772,6 +772,14 @@
    "count": 6
   },
   {
+   "id": "contacts",
+   "count": 6
+  },
+  {
+   "id": "authentication",
+   "count": 6
+  },
+  {
    "id": "yellow",
    "count": 6
   },
@@ -805,6 +813,10 @@
   },
   {
    "id": "ai-agent",
+   "count": 6
+  },
+  {
+   "id": "signup",
    "count": 6
   },
   {
@@ -896,10 +908,6 @@
    "count": 5
   },
   {
-   "id": "contacts",
-   "count": 5
-  },
-  {
    "id": "event",
    "count": 5
   },
@@ -937,6 +945,10 @@
   },
   {
    "id": "sharing",
+   "count": 5
+  },
+  {
+   "id": "memories",
    "count": 5
   },
   {
@@ -1040,10 +1052,6 @@
    "count": 4
   },
   {
-   "id": "authentication",
-   "count": 4
-  },
-  {
    "id": "invite",
    "count": 4
   },
@@ -1096,6 +1104,10 @@
    "count": 4
   },
   {
+   "id": "kanban",
+   "count": 4
+  },
+  {
    "id": "avatar-picker",
    "count": 4
   },
@@ -1128,7 +1140,7 @@
    "count": 4
   },
   {
-   "id": "signup",
+   "id": "collection",
    "count": 4
   },
   {
@@ -1312,10 +1324,6 @@
    "count": 3
   },
   {
-   "id": "kanban",
-   "count": 3
-  },
-  {
    "id": "phone-mockup",
    "count": 3
   },
@@ -1325,6 +1333,10 @@
   },
   {
    "id": "iconography",
+   "count": 3
+  },
+  {
+   "id": "widgets",
    "count": 3
   },
   {
@@ -1349,6 +1361,10 @@
   },
   {
    "id": "side-by-side",
+   "count": 3
+  },
+  {
+   "id": "sticker",
    "count": 3
   },
   {
@@ -1572,6 +1588,10 @@
    "count": 2
   },
   {
+   "id": "check-in",
+   "count": 2
+  },
+  {
    "id": "dialog",
    "count": 2
   },
@@ -1641,6 +1661,10 @@
   },
   {
    "id": "post",
+   "count": 2
+  },
+  {
+   "id": "mood",
    "count": 2
   },
   {
@@ -1728,10 +1752,6 @@
    "count": 2
   },
   {
-   "id": "widgets",
-   "count": 2
-  },
-  {
    "id": "writing",
    "count": 2
   },
@@ -1816,10 +1836,6 @@
    "count": 2
   },
   {
-   "id": "sticker",
-   "count": 2
-  },
-  {
    "id": "mockup-set",
    "count": 2
   },
@@ -1845,10 +1861,6 @@
   },
   {
    "id": "barcode",
-   "count": 2
-  },
-  {
-   "id": "collection",
    "count": 2
   },
   {
@@ -2100,10 +2112,6 @@
    "count": 1
   },
   {
-   "id": "check-in",
-   "count": 1
-  },
-  {
    "id": "placeholder",
    "count": 1
   },
@@ -2197,10 +2205,6 @@
   },
   {
    "id": "meditation",
-   "count": 1
-  },
-  {
-   "id": "mood",
    "count": 1
   },
   {
@@ -2309,10 +2313,6 @@
   },
   {
    "id": "member",
-   "count": 1
-  },
-  {
-   "id": "memories",
    "count": 1
   },
   {
@@ -29749,13 +29749,24 @@
   {
    "id": "IMG-0618",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0618",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Mint mood-check onboarding",
+   "description": "A mint-green mental-health onboarding: 'Take a breath. You're in a safe space' with Get Started/skip, a Reflections journal card ('Why do I feel exhausted even after a full night's sleep?'), and a blob-mascot mood check ('How are you feeling right now?'). Soft, safe, check-in-first design.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "check-in",
+    "mood",
+    "wellness"
+   ],
    "palette": [
     "#DCDFDB",
     "#F2F5ED",
@@ -29799,20 +29810,27 @@
     "path": "E:\\Downloads\\UI\\HS_tQpHbYAMuZ8Z.jpg",
     "bytes": 135603
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0618.webp",
    "thumb": "assets/thumb/IMG-0618.webp"
   },
   {
    "id": "IMG-0619",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0619",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "CRM contact record",
+   "description": "A CloseCRM contact record for Patrick Collison: Contact information, Activity timeline, Company information and Tasks columns. A dense three-pane CRM read-out; first of a four-screen CloseCRM series.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "contacts"
+   ],
    "palette": [
     "#FBFBFB",
     "#F2F2F4",
@@ -29856,20 +29874,29 @@
     "path": "E:\\Downloads\\UI\\HS_u4dWWIAAKcHB.jpg",
     "bytes": 370347
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Dense but legible.",
    "src": "assets/img/IMG-0619.webp",
    "thumb": "assets/thumb/IMG-0619.webp"
   },
   {
    "id": "IMG-0620",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0620",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "CRM dashboard",
+   "description": "The CloseCRM dashboard: 377/467/122 headline stats, a Revenue Overview chart, a $350,000 Lead Sources donut, Recently Updated Deals and Tasks & follow-ups. Metrics-plus-pipeline in one screen.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "card-based",
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "analytics",
+    "chart"
+   ],
    "palette": [
     "#FAFAFA",
     "#F1F1F3",
@@ -29913,20 +29940,28 @@
     "path": "E:\\Downloads\\UI\\HS_u4fWXIAEVINX.jpg",
     "bytes": 283425
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Dense but legible.",
+   "pair_with": "IMG-0619",
    "src": "assets/img/IMG-0620.webp",
    "thumb": "assets/thumb/IMG-0620.webp"
   },
   {
    "id": "IMG-0621",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0621",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "CRM deal kanban",
+   "description": "The CloseCRM deal kanban: Filters/Export bar over stage columns with value cards. Same product, third depth — pipeline as columns after record and metrics.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "kanban"
+   ],
    "palette": [
     "#F9F9F9",
     "#F1F2F3",
@@ -29970,20 +30005,29 @@
     "path": "E:\\Downloads\\UI\\HS_u4dfWEAAtdnd.jpg",
     "bytes": 330294
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Card text small; structure fully legible.",
+   "pair_with": "IMG-0620",
    "src": "assets/img/IMG-0621.webp",
    "thumb": "assets/thumb/IMG-0621.webp"
   },
   {
    "id": "IMG-0622",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0622",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "CRM meetings list",
+   "description": "The CloseCRM meetings list: a dense dated schedule table with type chips. The fourth CloseCRM screen — one product shown as record, metrics, pipeline and calendar.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "schedule",
+    "table"
+   ],
    "palette": [
     "#FAFAFA",
     "#F2F2F3",
@@ -30027,20 +30071,32 @@
     "path": "E:\\Downloads\\UI\\HS_u4dZXoAASr2U.jpg",
     "bytes": 415477
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Cell text small; structure fully legible.",
+   "pair_with": "IMG-0621",
    "src": "assets/img/IMG-0622.webp",
    "thumb": "assets/thumb/IMG-0622.webp"
   },
   {
    "id": "IMG-0623",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0623",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Travel journal collections",
+   "description": "A 'Daily travel journal': Explore Paris (27 places) and Maldives Trip (18 places) as photo piles with flag pins and companion avatars. Collections-as-piles for travel memories.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "collection",
+    "memories",
+    "travel"
+   ],
    "palette": [
     "#F4F4F4",
     "#E5E6E8",
@@ -30084,20 +30140,31 @@
     "path": "E:\\Downloads\\UI\\HTAAjowWIAAE4g0.jpg",
     "bytes": 182755
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0623.webp",
    "thumb": "assets/thumb/IMG-0623.webp"
   },
   {
    "id": "IMG-0624",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0624",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Travel trip collections",
+   "description": "More collections from the same travel app: Barcelona Trip (20 places), Bali Trip (18), Explore Tokyo (21) and Explore Dubai, over a bottom tab bar with a central File action. Same pile-and-flag language, second screen.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "collection",
+    "memories",
+    "travel"
+   ],
    "palette": [
     "#F4F4F4",
     "#E5E5E7",
@@ -30141,20 +30208,31 @@
     "path": "E:\\Downloads\\UI\\HTAAjowXQAAzg9u.jpg",
     "bytes": 253727
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0623",
    "src": "assets/img/IMG-0624.webp",
    "thumb": "assets/thumb/IMG-0624.webp"
   },
   {
    "id": "IMG-0625",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0625",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Travel memory detail",
+   "description": "A travel memory detail: 'Eiffel Tower — 17 Photos, 8 Videos, 03 June 2026' over a tower photo pinned with a 'Nice View' sticker note. The inside of the collection — counts, date and one annotated photo.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "memories",
+    "photo",
+    "travel"
+   ],
    "palette": [
     "#EFF0F1",
     "#B9D5E6",
@@ -30198,20 +30276,30 @@
     "path": "E:\\Downloads\\UI\\HTAAjouW8AAWNn_.jpg",
     "bytes": 297074
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0624",
    "src": "assets/img/IMG-0625.webp",
    "thumb": "assets/thumb/IMG-0625.webp"
   },
   {
    "id": "IMG-0626",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0626",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Trip collage editor",
+   "description": "'Trips With Friend': a sticker-collage trip editor — sunglasses, photo, plane and landmark stickers over a group photo, with text tools and a Play button. Travel memory as a playful composition surface.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "memories",
+    "sticker",
+    "travel"
+   ],
    "palette": [
     "#EFEFF0",
     "#B9C4CA",
@@ -30255,20 +30343,28 @@
     "path": "E:\\Downloads\\UI\\HTAAjowWcAAUtuH.jpg",
     "bytes": 562402
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Sticker text partially obscured by design; structure legible.",
    "src": "assets/img/IMG-0626.webp",
    "thumb": "assets/thumb/IMG-0626.webp"
   },
   {
    "id": "IMG-0627",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0627",
-   "description": "",
+   "title": "Budget widget menu",
+   "description": "A 'Pixel Budget' widget menu: Widgets/Remove rows plus green Add expense, Scan receipt and Add income actions with matching dock icons. Money actions as big friendly targets.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "budgeting",
+    "finance",
+    "widgets"
+   ],
    "palette": [
     "#162631",
     "#E9EEF1",
@@ -30312,20 +30408,30 @@
     "path": "E:\\Downloads\\UI\\HS_bKyFXMAABMGv.jpg",
     "bytes": 98135
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0627.webp",
    "thumb": "assets/thumb/IMG-0627.webp"
   },
   {
    "id": "IMG-0628",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0628",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Green fintech auth trio",
+   "description": "A green fintech auth trio: 'Let's get started' (Nigeria locale), Create Password and Verify your Email screens with lime Get Started CTAs. Full signup arc in three matching screens.",
+   "roles": [
+    "auth"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "authentication",
+    "fintech",
+    "signup"
+   ],
    "palette": [
     "#E5E5E5",
     "#FEFEFE",
@@ -30369,20 +30475,29 @@
     "path": "E:\\Downloads\\UI\\HTCuuhsWMAA-f9D.jpg",
     "bytes": 311385
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0628.webp",
    "thumb": "assets/thumb/IMG-0628.webp"
   },
   {
    "id": "IMG-0629",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0629",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Auth signup crop",
+   "description": "A close crop of the same auth flow: locale dropdown (Nigeria), email field and lime Get Started button. No new layout information — the legible-text companion.",
+   "roles": [
+    "auth"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "authentication",
+    "signup"
+   ],
    "palette": [
     "#E5E5E5",
     "#FEFEFE",
@@ -30426,7 +30541,8 @@
     "path": "E:\\Downloads\\UI\\HTCuv7tWQAArPCL.jpg",
     "bytes": 190880
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Close crop; text fully legible.",
+   "pair_with": "IMG-0628",
    "src": "assets/img/IMG-0629.webp",
    "thumb": "assets/thumb/IMG-0629.webp"
   },

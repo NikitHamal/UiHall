@@ -1,0 +1,252 @@
+{
+ "items": {
+  "IMG-0618": {
+   "category": "mobile-app-ui",
+   "description": "A mint-green mental-health onboarding: 'Take a breath. You're in a safe space' with Get Started/skip, a Reflections journal card ('Why do I feel exhausted even after a full night's sleep?'), and a blob-mascot mood check ('How are you feeling right now?'). Soft, safe, check-in-first design.",
+   "id": "IMG-0618",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "playful",
+    "soft",
+    "rounded",
+    "light-mode"
+   ],
+   "tags": [
+    "wellness",
+    "check-in",
+    "mood"
+   ],
+   "title": "Mint mood-check onboarding",
+   "type": "multi-screen"
+  },
+  "IMG-0619": {
+   "category": "website",
+   "description": "A CloseCRM contact record for Patrick Collison: Contact information, Activity timeline, Company information and Tasks columns. A dense three-pane CRM read-out; first of a four-screen CloseCRM series.",
+   "id": "IMG-0619",
+   "quality": "Dense but legible.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "contacts"
+   ],
+   "title": "CRM contact record",
+   "type": "screen"
+  },
+  "IMG-0620": {
+   "category": "dashboard",
+   "description": "The CloseCRM dashboard: 377/467/122 headline stats, a Revenue Overview chart, a $350,000 Lead Sources donut, Recently Updated Deals and Tasks & follow-ups. Metrics-plus-pipeline in one screen.",
+   "id": "IMG-0620",
+   "pair_with": "IMG-0619",
+   "quality": "Dense but legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense",
+    "card-based"
+   ],
+   "tags": [
+    "analytics",
+    "chart"
+   ],
+   "title": "CRM dashboard",
+   "type": "screen"
+  },
+  "IMG-0621": {
+   "category": "dashboard",
+   "description": "The CloseCRM deal kanban: Filters/Export bar over stage columns with value cards. Same product, third depth — pipeline as columns after record and metrics.",
+   "id": "IMG-0621",
+   "pair_with": "IMG-0620",
+   "quality": "Card text small; structure fully legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "kanban"
+   ],
+   "title": "CRM deal kanban",
+   "type": "screen"
+  },
+  "IMG-0622": {
+   "category": "dashboard",
+   "description": "The CloseCRM meetings list: a dense dated schedule table with type chips. The fourth CloseCRM screen — one product shown as record, metrics, pipeline and calendar.",
+   "id": "IMG-0622",
+   "pair_with": "IMG-0621",
+   "quality": "Cell text small; structure fully legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "schedule",
+    "table"
+   ],
+   "title": "CRM meetings list",
+   "type": "screen"
+  },
+  "IMG-0623": {
+   "category": "mobile-app-ui",
+   "description": "A 'Daily travel journal': Explore Paris (27 places) and Maldives Trip (18 places) as photo piles with flag pins and companion avatars. Collections-as-piles for travel memories.",
+   "id": "IMG-0623",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded",
+    "playful"
+   ],
+   "tags": [
+    "travel",
+    "memories",
+    "collection"
+   ],
+   "title": "Travel journal collections",
+   "type": "screen"
+  },
+  "IMG-0624": {
+   "category": "mobile-app-ui",
+   "description": "More collections from the same travel app: Barcelona Trip (20 places), Bali Trip (18), Explore Tokyo (21) and Explore Dubai, over a bottom tab bar with a central File action. Same pile-and-flag language, second screen.",
+   "id": "IMG-0624",
+   "pair_with": "IMG-0623",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded",
+    "playful"
+   ],
+   "tags": [
+    "travel",
+    "memories",
+    "collection"
+   ],
+   "title": "Travel trip collections",
+   "type": "screen"
+  },
+  "IMG-0625": {
+   "category": "mobile-app-ui",
+   "description": "A travel memory detail: 'Eiffel Tower — 17 Photos, 8 Videos, 03 June 2026' over a tower photo pinned with a 'Nice View' sticker note. The inside of the collection — counts, date and one annotated photo.",
+   "id": "IMG-0625",
+   "pair_with": "IMG-0624",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "playful"
+   ],
+   "tags": [
+    "travel",
+    "memories",
+    "photo"
+   ],
+   "title": "Travel memory detail",
+   "type": "screen"
+  },
+  "IMG-0626": {
+   "category": "mobile-app-ui",
+   "description": "'Trips With Friend': a sticker-collage trip editor — sunglasses, photo, plane and landmark stickers over a group photo, with text tools and a Play button. Travel memory as a playful composition surface.",
+   "id": "IMG-0626",
+   "quality": "Sticker text partially obscured by design; structure legible.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "travel",
+    "sticker",
+    "memories"
+   ],
+   "title": "Trip collage editor",
+   "type": "screen"
+  },
+  "IMG-0627": {
+   "category": "mobile-app-ui",
+   "description": "A 'Pixel Budget' widget menu: Widgets/Remove rows plus green Add expense, Scan receipt and Add income actions with matching dock icons. Money actions as big friendly targets.",
+   "id": "IMG-0627",
+   "quality": "Clean capture; fully legible.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "playful"
+   ],
+   "tags": [
+    "finance",
+    "budgeting",
+    "widgets"
+   ],
+   "title": "Budget widget menu",
+   "type": "screen"
+  },
+  "IMG-0628": {
+   "category": "mobile-app-ui",
+   "description": "A green fintech auth trio: 'Let's get started' (Nigeria locale), Create Password and Verify your Email screens with lime Get Started CTAs. Full signup arc in three matching screens.",
+   "id": "IMG-0628",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "auth"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "authentication",
+    "signup",
+    "fintech"
+   ],
+   "title": "Green fintech auth trio",
+   "type": "multi-screen"
+  },
+  "IMG-0629": {
+   "category": "mobile-app-ui",
+   "description": "A close crop of the same auth flow: locale dropdown (Nigeria), email field and lime Get Started button. No new layout information — the legible-text companion.",
+   "id": "IMG-0629",
+   "pair_with": "IMG-0628",
+   "quality": "Close crop; text fully legible.",
+   "roles": [
+    "auth"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "authentication",
+    "signup"
+   ],
+   "title": "Auth signup crop",
+   "type": "screen"
+  }
+ }
+}
