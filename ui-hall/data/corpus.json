@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 661
+  "described": 673
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 381
+   "count": 382
   },
   {
    "id": "app-store-screens",
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 99
+   "count": 106
   },
   {
    "id": "design-system",
@@ -63,14 +63,14 @@
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 58
+   "count": 60
   },
   {
    "id": "motion-demo",
    "label": "Motion demo",
    "blurb": "Clips whose whole point is the transition, not the static screen.",
    "icon": "play",
-   "count": 89
+   "count": 81
   },
   {
    "id": "promo-reel",
@@ -84,19 +84,19 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 45
+   "count": 43
   }
  ],
  "types": [
   {
    "id": "component",
    "label": "component",
-   "count": 26
+   "count": 27
   },
   {
    "id": "flow-walkthrough",
    "label": "flow-walkthrough",
-   "count": 315
+   "count": 309
   },
   {
    "id": "marketing",
@@ -126,7 +126,7 @@
   {
    "id": "screen",
    "label": "screen",
-   "count": 245
+   "count": 250
   },
   {
    "id": "token-sheet",
@@ -137,11 +137,11 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 123
+   "count": 125
   },
   {
    "id": "hero",
-   "count": 64
+   "count": 66
   },
   {
    "id": "list",
@@ -157,11 +157,11 @@
   },
   {
    "id": "onboarding",
-   "count": 43
+   "count": 44
   },
   {
    "id": "landing-section",
-   "count": 31
+   "count": 32
   },
   {
    "id": "form",
@@ -169,7 +169,7 @@
   },
   {
    "id": "settings",
-   "count": 19
+   "count": 20
   },
   {
    "id": "editor",
@@ -196,20 +196,20 @@
    "count": 16
   },
   {
+   "id": "search",
+   "count": 15
+  },
+  {
    "id": "checkout",
    "count": 15
   },
   {
-   "id": "search",
+   "id": "social-proof",
    "count": 13
   },
   {
-   "id": "social-proof",
-   "count": 12
-  },
-  {
    "id": "auth",
-   "count": 11
+   "count": 12
   },
   {
    "id": "notification",
@@ -227,27 +227,27 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 411
+   "count": 419
   },
   {
    "id": "minimal",
-   "count": 291
+   "count": 297
   },
   {
    "id": "rounded",
-   "count": 206
+   "count": 209
   },
   {
    "id": "card-based",
-   "count": 194
+   "count": 196
   },
   {
    "id": "dark-mode",
-   "count": 192
+   "count": 194
   },
   {
    "id": "data-dense",
-   "count": 67
+   "count": 69
   },
   {
    "id": "editorial",
@@ -255,7 +255,7 @@
   },
   {
    "id": "playful",
-   "count": 45
+   "count": 46
   },
   {
    "id": "soft",
@@ -283,7 +283,7 @@
   },
   {
    "id": "illustration-led",
-   "count": 22
+   "count": 23
   },
   {
    "id": "outlined",
@@ -307,7 +307,7 @@
   },
   {
    "id": "retro",
-   "count": 1
+   "count": 2
   },
   {
    "id": "brutalist",
@@ -329,7 +329,7 @@
   },
   {
    "id": "ai",
-   "count": 51
+   "count": 53
   },
   {
    "id": "chart",
@@ -337,18 +337,18 @@
   },
   {
    "id": "analytics",
+   "count": 37
+  },
+  {
+   "id": "landing",
    "count": 36
   },
   {
    "id": "photographic",
-   "count": 34
+   "count": 35
   },
   {
    "id": "card",
-   "count": 33
-  },
-  {
-   "id": "landing",
    "count": 33
   },
   {
@@ -356,15 +356,19 @@
    "count": 28
   },
   {
+   "id": "photo",
+   "count": 28
+  },
+  {
    "id": "comparison",
    "count": 27
   },
   {
-   "id": "photo",
+   "id": "promo",
    "count": 27
   },
   {
-   "id": "promo",
+   "id": "table",
    "count": 27
   },
   {
@@ -380,12 +384,8 @@
    "count": 26
   },
   {
-   "id": "table",
-   "count": 26
-  },
-  {
    "id": "finance",
-   "count": 25
+   "count": 26
   },
   {
    "id": "onboarding",
@@ -432,11 +432,11 @@
    "count": 20
   },
   {
-   "id": "gradient",
-   "count": 19
+   "id": "music",
+   "count": 20
   },
   {
-   "id": "music",
+   "id": "gradient",
    "count": 19
   },
   {
@@ -504,6 +504,10 @@
    "count": 13
   },
   {
+   "id": "booking",
+   "count": 12
+  },
+  {
    "id": "numeral",
    "count": 12
   },
@@ -512,15 +516,15 @@
    "count": 12
   },
   {
+   "id": "gallery",
+   "count": 12
+  },
+  {
    "id": "crypto",
    "count": 12
   },
   {
    "id": "green",
-   "count": 11
-  },
-  {
-   "id": "booking",
    "count": 11
   },
   {
@@ -533,10 +537,6 @@
   },
   {
    "id": "redesign",
-   "count": 11
-  },
-  {
-   "id": "gallery",
    "count": 11
   },
   {
@@ -596,6 +596,10 @@
    "count": 9
   },
   {
+   "id": "testimonial",
+   "count": 9
+  },
+  {
    "id": "headline",
    "count": 9
   },
@@ -636,10 +640,6 @@
    "count": 8
   },
   {
-   "id": "testimonial",
-   "count": 8
-  },
-  {
    "id": "bar-chart",
    "count": 8
   },
@@ -653,6 +653,10 @@
   },
   {
    "id": "sidebar",
+   "count": 8
+  },
+  {
+   "id": "design-tool",
    "count": 8
   },
   {
@@ -673,6 +677,10 @@
   },
   {
    "id": "tabs",
+   "count": 7
+  },
+  {
+   "id": "exploration",
    "count": 7
   },
   {
@@ -700,6 +708,10 @@
    "count": 7
   },
   {
+   "id": "contacts",
+   "count": 7
+  },
+  {
    "id": "authentication",
    "count": 7
   },
@@ -721,10 +733,6 @@
   },
   {
    "id": "collaboration",
-   "count": 7
-  },
-  {
-   "id": "design-tool",
    "count": 7
   },
   {
@@ -761,10 +769,6 @@
   },
   {
    "id": "date-picker",
-   "count": 6
-  },
-  {
-   "id": "exploration",
    "count": 6
   },
   {
@@ -816,10 +820,6 @@
    "count": 6
   },
   {
-   "id": "contacts",
-   "count": 6
-  },
-  {
    "id": "upgrade",
    "count": 6
   },
@@ -836,7 +836,15 @@
    "count": 6
   },
   {
+   "id": "service",
+   "count": 6
+  },
+  {
    "id": "summary",
+   "count": 6
+  },
+  {
+   "id": "filters",
    "count": 6
   },
   {
@@ -972,19 +980,11 @@
    "count": 5
   },
   {
-   "id": "service",
-   "count": 5
-  },
-  {
    "id": "order",
    "count": 5
   },
   {
    "id": "property",
-   "count": 5
-  },
-  {
-   "id": "filters",
    "count": 5
   },
   {
@@ -1206,6 +1206,10 @@
   {
    "id": "unclear",
    "count": 4
+  },
+  {
+   "id": "sustainability",
+   "count": 3
   },
   {
    "id": "blur",
@@ -1445,10 +1449,6 @@
   },
   {
    "id": "overlay",
-   "count": 2
-  },
-  {
-   "id": "sustainability",
    "count": 2
   },
   {
@@ -1908,6 +1908,14 @@
    "count": 2
   },
   {
+   "id": "changelog",
+   "count": 2
+  },
+  {
+   "id": "release-notes",
+   "count": 2
+  },
+  {
    "id": "ai-comparison",
    "count": 2
   },
@@ -1917,6 +1925,10 @@
   },
   {
    "id": "pixel-art",
+   "count": 2
+  },
+  {
+   "id": "cinematic",
    "count": 2
   },
   {
@@ -2708,14 +2720,6 @@
    "count": 1
   },
   {
-   "id": "changelog",
-   "count": 1
-  },
-  {
-   "id": "release-notes",
-   "count": 1
-  },
-  {
    "id": "version",
    "count": 1
   },
@@ -2757,10 +2761,6 @@
   },
   {
    "id": "star",
-   "count": 1
-  },
-  {
-   "id": "cinematic",
    "count": 1
   },
   {
@@ -49884,13 +49884,22 @@
   {
    "id": "VID-0359",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "dashboard",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0359",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Advisor finance dashboard",
+   "description": "An advisor finance dashboard tour: 'Tech is 38% of your portfolio' insight, Ask Orion chat, allocation bars and holdings. Scroll-through of a guided investing surface.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "card-based",
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "analytics",
+    "finance"
+   ],
    "palette": [
     "#FFFFFF",
     "#F3F2F7",
@@ -49934,7 +49943,8 @@
     "path": "E:\\Downloads\\UI\\0BB3TfPl9SSrjHtc.mp4",
     "bytes": 11840285
    },
-   "source_note": "auto-draft 2026-09-26: motion median 15.04; needs a visual read-through",
+   "quality": "Scroll frames blur text; structure legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0359.webp",
    "thumb": "assets/thumb/VID-0359.webp",
    "motion": 15.04,
@@ -49954,11 +49964,18 @@
    "kind": "video",
    "category": "motion-demo",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0360",
-   "description": "",
+   "title": "Landing designs file tour",
+   "description": "A flythrough of a design file ('Color Palette Design'): Yellow Pink Theme bookshop landings pinned on graph paper. Landing exploration as a moving canvas tour.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "illustration-led",
+    "playful"
+   ],
+   "tags": [
+    "design-tool",
+    "exploration",
+    "landing"
+   ],
    "palette": [
     "#EDEBE2",
     "#DFCCC2",
@@ -50002,7 +50019,8 @@
     "path": "E:\\Downloads\\UI\\SUneg2GhErBkFq9F.mp4",
     "bytes": 4076174
    },
-   "source_note": "auto-draft 2026-09-26: motion median 26.58; needs a visual read-through",
+   "quality": "Fast frames blur text; boards legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0360.webp",
    "thumb": "assets/thumb/VID-0360.webp",
    "motion": 26.58,
@@ -50020,13 +50038,22 @@
   {
    "id": "VID-0361",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "website",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0361",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Cassette landing scroll",
+   "description": "A cassette-tape landing scroll: 'Played until worn' over a floating tape with cursor. Retro music nostalgia as a single scrolling hero.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "retro"
+   ],
+   "tags": [
+    "landing",
+    "music"
+   ],
    "palette": [
     "#EFEBE1",
     "#E1D9C4",
@@ -50070,7 +50097,8 @@
     "path": "E:\\Downloads\\UI\\HPvYraNvwj7O40bW.mp4",
     "bytes": 18636127
    },
-   "source_note": "auto-draft 2026-09-26: motion median 12.2; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0361.webp",
    "thumb": "assets/thumb/VID-0361.webp",
    "motion": 12.2,
@@ -50088,13 +50116,21 @@
   {
    "id": "VID-0362",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "dashboard",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0362",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Company table scroll",
+   "description": "A slow scroll down a dense company/contact table: avatar rows with status dots. Table density as the whole subject.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "contacts",
+    "table"
+   ],
    "palette": [
     "#FEFEFE",
     "#F3F3F3",
@@ -50138,7 +50174,8 @@
     "path": "E:\\Downloads\\UI\\yMEznmG-reue8bcd.mp4",
     "bytes": 9883821
    },
-   "source_note": "auto-draft 2026-09-26: motion median 4.06; needs a visual read-through",
+   "quality": "Rows small; density legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0362.webp",
    "thumb": "assets/thumb/VID-0362.webp",
    "motion": 4.06,
@@ -50156,13 +50193,22 @@
   {
    "id": "VID-0363",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0363",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "screen",
+   "title": "Contractor assign flow",
+   "description": "An 'Assign a contractor' rush: Miles Plumbing cards with ratings, 18-minute ETA, 96% match and an Assign-and-notify CTA. Service booking at speed.",
+   "roles": [
+    "search"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "booking",
+    "service"
+   ],
    "palette": [
     "#FEFEFE",
     "#F4EFEB",
@@ -50206,7 +50252,8 @@
     "path": "E:\\Downloads\\UI\\rImUSYEmOd6Blw-W.mp4",
     "bytes": 7464015
    },
-   "source_note": "auto-draft 2026-09-26: motion median 42.51; needs a visual read-through",
+   "quality": "Fast frames blur text; cards legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0363.webp",
    "thumb": "assets/thumb/VID-0363.webp",
    "motion": 42.51,
@@ -50224,12 +50271,17 @@
   {
    "id": "VID-0364",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0364",
-   "description": "",
-   "roles": [],
-   "style": [],
+   "category": "website",
+   "type": "screen",
+   "title": "App preferences page",
+   "description": "A Linear-style Preferences page: General, Display, week-start, Interface and theme rows. A static settings reference — calm, complete, unmoving.",
+   "roles": [
+    "settings"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
    "tags": [],
    "palette": [
     "#F8F7FA",
@@ -50274,7 +50326,8 @@
     "path": "E:\\Downloads\\UI\\1h7kGy45YpvvQJE7.mp4",
     "bytes": 3386285
    },
-   "source_note": "auto-draft 2026-09-26: motion median 0.44; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0364.webp",
    "thumb": "assets/thumb/VID-0364.webp",
    "motion": 0.44,
@@ -50284,13 +50337,19 @@
   {
    "id": "VID-0365",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0365",
-   "description": "",
+   "category": "website",
+   "type": "screen",
+   "title": "Changelog news feed",
+   "description": "A 'News & Alerts' changelog: acme-var-feed 2.1 updates, dashboard moves, plugin fixes and eight new database vulnerabilities. Release notes as a dated feed.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "changelog",
+    "release-notes"
+   ],
    "palette": [
     "#FFFFFF",
     "#F9F9F9",
@@ -50334,7 +50393,8 @@
     "path": "E:\\Downloads\\UI\\Z4WTbqWclUe0bDbD.mp4",
     "bytes": 672051
    },
-   "source_note": "auto-draft 2026-09-26: motion median 0.25; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0365.webp",
    "thumb": "assets/thumb/VID-0365.webp",
    "motion": 0.25,
@@ -50344,13 +50404,17 @@
   {
    "id": "VID-0366",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0366",
-   "description": "",
+   "category": "other",
+   "type": "screen",
+   "title": "Photo strip scroll",
+   "description": "A fast photo-strip scroll landing on a night party photo: pure gallery motion with no interface on it. Kept as a motion specimen, not a UI reference.",
    "roles": [],
    "style": [],
-   "tags": [],
+   "tags": [
+    "gallery",
+    "photo",
+    "photographic"
+   ],
    "palette": [
     "#979695",
     "#1B2518",
@@ -50394,7 +50458,8 @@
     "path": "E:\\Downloads\\UI\\iRu8p6vTBIwvnuo4.mp4",
     "bytes": 17693998
    },
-   "source_note": "auto-draft 2026-09-26: motion median 55.33; needs a visual read-through",
+   "quality": "Motion blur throughout; kept as motion, not UI.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0366.webp",
    "thumb": "assets/thumb/VID-0366.webp",
    "motion": 55.33,
@@ -50412,13 +50477,21 @@
   {
    "id": "VID-0367",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "website",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0367",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Clarity dark landing",
+   "description": "A dark 'Clarity Begins Here' landing scroll: glass human head, HUD panels and a Start Session CTA. AI mystery as art direction.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "ai",
+    "cinematic",
+    "landing"
+   ],
    "palette": [
     "#2E271C",
     "#A3BDCC",
@@ -50462,7 +50535,8 @@
     "path": "E:\\Downloads\\UI\\5py7m5St_dn4wsei.mp4",
     "bytes": 638435
    },
-   "source_note": "auto-draft 2026-09-26: motion median 12.03; needs a visual read-through",
+   "quality": "Scroll frames soft; composition legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0367.webp",
    "thumb": "assets/thumb/VID-0367.webp",
    "motion": 12.03,
@@ -50480,13 +50554,22 @@
   {
    "id": "VID-0368",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0368",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Opal onboarding check",
+   "description": "An Opal AI onboarding check: glowing orb over 'Quick check, have we met before?' with 'No, I'm new' and 'Sign in' paths. Returning-vs-new as the entire first screen.",
+   "roles": [
+    "auth",
+    "onboarding"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "ai"
+   ],
    "palette": [
     "#151616",
     "#1D1E1E",
@@ -50530,7 +50613,8 @@
     "path": "E:\\Downloads\\UI\\6RGKku6KGJGy2Z4D.mp4",
     "bytes": 4914969
    },
-   "source_note": "auto-draft 2026-09-26: motion median 4.67; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0368.webp",
    "thumb": "assets/thumb/VID-0368.webp",
    "motion": 4.67,
@@ -50548,13 +50632,21 @@
   {
    "id": "VID-0369",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0369",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "component",
+   "title": "Tag search dropdown",
+   "description": "A 'Search tags' dropdown: AI 47, Art 34, Design 69, Life 12, Marketing 34, Productivity 34, Programming 75 with a Manage tags footer. Counted tag navigation done right.",
+   "roles": [
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "filters"
+   ],
    "palette": [
     "#FDFDFD",
     "#95802B",
@@ -50598,7 +50690,8 @@
     "path": "E:\\Downloads\\UI\\Q7zZxivdviQQKACZ.mp4",
     "bytes": 955419
    },
-   "source_note": "auto-draft 2026-09-26: motion median 2.55; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0369.webp",
    "thumb": "assets/thumb/VID-0369.webp",
    "motion": 2.55,
@@ -50616,13 +50709,22 @@
   {
    "id": "VID-0370",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "website",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0370",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Partners landing scroll",
+   "description": "A sustainability landing scroll: Mehrweg reusable-packaging testimonial over a 'TRUSTED BY TOP PARTNERS & SUPPORTERS' wall with stat tiles. Proof-stacked green marketing.",
+   "roles": [
+    "landing-section",
+    "social-proof"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "sustainability",
+    "testimonial"
+   ],
    "palette": [
     "#FFFFFE",
     "#D2F6DE",
@@ -50666,7 +50768,8 @@
     "path": "E:\\Downloads\\UI\\oWZY5_z3ulB_mPMv.mp4",
     "bytes": 11899972
    },
-   "source_note": "auto-draft 2026-09-26: motion median 57.05; needs a visual read-through",
+   "quality": "Scroll frames blur text; structure legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0370.webp",
    "thumb": "assets/thumb/VID-0370.webp",
    "motion": 57.05,

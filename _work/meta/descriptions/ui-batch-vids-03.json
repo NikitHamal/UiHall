@@ -1,0 +1,240 @@
+{
+ "items": {
+  "VID-0359": {
+   "category": "dashboard",
+   "description": "An advisor finance dashboard tour: 'Tech is 38% of your portfolio' insight, Ask Orion chat, allocation bars and holdings. Scroll-through of a guided investing surface.",
+   "id": "VID-0359",
+   "quality": "Scroll frames blur text; structure legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "data-dense",
+    "card-based"
+   ],
+   "tags": [
+    "finance",
+    "analytics"
+   ],
+   "title": "Advisor finance dashboard",
+   "type": "flow-walkthrough"
+  },
+  "VID-0360": {
+   "category": "motion-demo",
+   "description": "A flythrough of a design file ('Color Palette Design'): Yellow Pink Theme bookshop landings pinned on graph paper. Landing exploration as a moving canvas tour.",
+   "id": "VID-0360",
+   "quality": "Fast frames blur text; boards legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "playful",
+    "illustration-led"
+   ],
+   "tags": [
+    "design-tool",
+    "landing",
+    "exploration"
+   ],
+   "title": "Landing designs file tour",
+   "type": "flow-walkthrough"
+  },
+  "VID-0361": {
+   "category": "website",
+   "description": "A cassette-tape landing scroll: 'Played until worn' over a floating tape with cursor. Retro music nostalgia as a single scrolling hero.",
+   "id": "VID-0361",
+   "quality": "Clean frames; fully legible.",
+   "roles": [
+    "hero"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "retro",
+    "minimal"
+   ],
+   "tags": [
+    "music",
+    "landing"
+   ],
+   "title": "Cassette landing scroll",
+   "type": "flow-walkthrough"
+  },
+  "VID-0362": {
+   "category": "dashboard",
+   "description": "A slow scroll down a dense company/contact table: avatar rows with status dots. Table density as the whole subject.",
+   "id": "VID-0362",
+   "quality": "Rows small; density legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "table",
+    "contacts"
+   ],
+   "title": "Company table scroll",
+   "type": "flow-walkthrough"
+  },
+  "VID-0363": {
+   "category": "website",
+   "description": "An 'Assign a contractor' rush: Miles Plumbing cards with ratings, 18-minute ETA, 96% match and an Assign-and-notify CTA. Service booking at speed.",
+   "id": "VID-0363",
+   "quality": "Fast frames blur text; cards legible.",
+   "roles": [
+    "search"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "booking",
+    "service"
+   ],
+   "title": "Contractor assign flow",
+   "type": "screen"
+  },
+  "VID-0364": {
+   "category": "website",
+   "description": "A Linear-style Preferences page: General, Display, week-start, Interface and theme rows. A static settings reference — calm, complete, unmoving.",
+   "id": "VID-0364",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [
+    "settings"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [],
+   "title": "App preferences page",
+   "type": "screen"
+  },
+  "VID-0365": {
+   "category": "website",
+   "description": "A 'News & Alerts' changelog: acme-var-feed 2.1 updates, dashboard moves, plugin fixes and eight new database vulnerabilities. Release notes as a dated feed.",
+   "id": "VID-0365",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "changelog",
+    "release-notes"
+   ],
+   "title": "Changelog news feed",
+   "type": "screen"
+  },
+  "VID-0366": {
+   "category": "other",
+   "description": "A fast photo-strip scroll landing on a night party photo: pure gallery motion with no interface on it. Kept as a motion specimen, not a UI reference.",
+   "id": "VID-0366",
+   "quality": "Motion blur throughout; kept as motion, not UI.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "photographic"
+   ],
+   "tags": [
+    "photo",
+    "gallery"
+   ],
+   "title": "Photo strip scroll",
+   "type": "screen"
+  },
+  "VID-0367": {
+   "category": "website",
+   "description": "A dark 'Clarity Begins Here' landing scroll: glass human head, HUD panels and a Start Session CTA. AI mystery as art direction.",
+   "id": "VID-0367",
+   "quality": "Scroll frames soft; composition legible.",
+   "roles": [
+    "hero"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "cinematic"
+   ],
+   "tags": [
+    "landing",
+    "ai"
+   ],
+   "title": "Clarity dark landing",
+   "type": "flow-walkthrough"
+  },
+  "VID-0368": {
+   "category": "mobile-app-ui",
+   "description": "An Opal AI onboarding check: glowing orb over 'Quick check, have we met before?' with 'No, I'm new' and 'Sign in' paths. Returning-vs-new as the entire first screen.",
+   "id": "VID-0368",
+   "quality": "Clean frames; fully legible.",
+   "roles": [
+    "onboarding",
+    "auth"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "title": "Opal onboarding check",
+   "type": "screen"
+  },
+  "VID-0369": {
+   "category": "website",
+   "description": "A 'Search tags' dropdown: AI 47, Art 34, Design 69, Life 12, Marketing 34, Productivity 34, Programming 75 with a Manage tags footer. Counted tag navigation done right.",
+   "id": "VID-0369",
+   "quality": "Clean frames; fully legible.",
+   "roles": [
+    "search"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded",
+    "minimal"
+   ],
+   "tags": [
+    "filters"
+   ],
+   "title": "Tag search dropdown",
+   "type": "component"
+  },
+  "VID-0370": {
+   "category": "website",
+   "description": "A sustainability landing scroll: Mehrweg reusable-packaging testimonial over a 'TRUSTED BY TOP PARTNERS & SUPPORTERS' wall with stat tiles. Proof-stacked green marketing.",
+   "id": "VID-0370",
+   "quality": "Scroll frames blur text; structure legible.",
+   "roles": [
+    "landing-section",
+    "social-proof"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "sustainability",
+    "testimonial"
+   ],
+   "title": "Partners landing scroll",
+   "type": "flow-walkthrough"
+  }
+ }
+}
