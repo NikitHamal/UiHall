@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 626
+  "described": 637
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 374
+   "count": 377
   },
   {
    "id": "app-store-screens",
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 86
+   "count": 93
   },
   {
    "id": "design-system",
@@ -63,7 +63,7 @@
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 54
+   "count": 55
   },
   {
    "id": "motion-demo",
@@ -84,7 +84,7 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 60
+   "count": 49
   }
  ],
  "types": [
@@ -111,7 +111,7 @@
   {
    "id": "multi-screen",
    "label": "multi-screen",
-   "count": 87
+   "count": 88
   },
   {
    "id": "pattern",
@@ -126,7 +126,7 @@
   {
    "id": "screen",
    "label": "screen",
-   "count": 234
+   "count": 233
   },
   {
    "id": "token-sheet",
@@ -137,11 +137,11 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 119
+   "count": 120
   },
   {
    "id": "hero",
-   "count": 59
+   "count": 62
   },
   {
    "id": "list",
@@ -149,7 +149,7 @@
   },
   {
    "id": "home",
-   "count": 49
+   "count": 51
   },
   {
    "id": "detail",
@@ -157,15 +157,15 @@
   },
   {
    "id": "onboarding",
-   "count": 38
+   "count": 42
   },
   {
    "id": "landing-section",
-   "count": 28
+   "count": 31
   },
   {
    "id": "form",
-   "count": 28
+   "count": 29
   },
   {
    "id": "settings",
@@ -176,12 +176,16 @@
    "count": 18
   },
   {
-   "id": "profile",
+   "id": "chat",
    "count": 17
   },
   {
    "id": "media",
-   "count": 16
+   "count": 17
+  },
+  {
+   "id": "profile",
+   "count": 17
   },
   {
    "id": "pricing",
@@ -194,10 +198,6 @@
   {
    "id": "checkout",
    "count": 15
-  },
-  {
-   "id": "chat",
-   "count": 14
   },
   {
    "id": "search",
@@ -227,27 +227,27 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 389
+   "count": 395
   },
   {
    "id": "minimal",
-   "count": 280
+   "count": 285
   },
   {
    "id": "rounded",
-   "count": 189
+   "count": 195
   },
   {
    "id": "dark-mode",
-   "count": 186
+   "count": 187
   },
   {
    "id": "card-based",
-   "count": 177
+   "count": 185
   },
   {
    "id": "data-dense",
-   "count": 64
+   "count": 65
   },
   {
    "id": "editorial",
@@ -255,11 +255,11 @@
   },
   {
    "id": "playful",
-   "count": 39
+   "count": 43
   },
   {
    "id": "soft",
-   "count": 37
+   "count": 38
   },
   {
    "id": "bold-typography",
@@ -278,12 +278,12 @@
    "count": 25
   },
   {
-   "id": "illustration-led",
+   "id": "gradient-heavy",
    "count": 22
   },
   {
-   "id": "gradient-heavy",
-   "count": 21
+   "id": "illustration-led",
+   "count": 22
   },
   {
    "id": "outlined",
@@ -328,12 +328,12 @@
    "count": 55
   },
   {
-   "id": "chart",
-   "count": 47
+   "id": "ai",
+   "count": 49
   },
   {
-   "id": "ai",
-   "count": 46
+   "id": "chart",
+   "count": 47
   },
   {
    "id": "photographic",
@@ -346,6 +346,10 @@
   {
    "id": "analytics",
    "count": 33
+  },
+  {
+   "id": "landing",
+   "count": 30
   },
   {
    "id": "progress",
@@ -361,10 +365,6 @@
   },
   {
    "id": "promo",
-   "count": 27
-  },
-  {
-   "id": "landing",
    "count": 27
   },
   {
@@ -388,6 +388,10 @@
    "count": 25
   },
   {
+   "id": "finance",
+   "count": 22
+  },
+  {
    "id": "illustration",
    "count": 21
   },
@@ -397,10 +401,6 @@
   },
   {
    "id": "balance",
-   "count": 21
-  },
-  {
-   "id": "finance",
    "count": 21
   },
   {
@@ -436,11 +436,11 @@
    "count": 19
   },
   {
-   "id": "app-store",
-   "count": 18
+   "id": "music",
+   "count": 19
   },
   {
-   "id": "music",
+   "id": "app-store",
    "count": 18
   },
   {
@@ -516,6 +516,10 @@
    "count": 11
   },
   {
+   "id": "budgeting",
+   "count": 11
+  },
+  {
    "id": "subscription",
    "count": 11
   },
@@ -532,15 +536,15 @@
    "count": 11
   },
   {
+   "id": "signup",
+   "count": 11
+  },
+  {
    "id": "list",
    "count": 11
   },
   {
    "id": "booking",
-   "count": 10
-  },
-  {
-   "id": "budgeting",
    "count": 10
   },
   {
@@ -713,10 +717,6 @@
   },
   {
    "id": "agents",
-   "count": 7
-  },
-  {
-   "id": "signup",
    "count": 7
   },
   {
@@ -912,6 +912,10 @@
    "count": 5
   },
   {
+   "id": "playlist",
+   "count": 5
+  },
+  {
    "id": "budget",
    "count": 5
   },
@@ -929,6 +933,10 @@
   },
   {
    "id": "full-bleed",
+   "count": 5
+  },
+  {
+   "id": "invite",
    "count": 5
   },
   {
@@ -1040,10 +1048,6 @@
    "count": 4
   },
   {
-   "id": "playlist",
-   "count": 4
-  },
-  {
    "id": "report",
    "count": 4
   },
@@ -1068,10 +1072,6 @@
    "count": 4
   },
   {
-   "id": "invite",
-   "count": 4
-  },
-  {
    "id": "timeline",
    "count": 4
   },
@@ -1085,6 +1085,10 @@
   },
   {
    "id": "icon-button",
+   "count": 4
+  },
+  {
+   "id": "insights",
    "count": 4
   },
   {
@@ -1141,6 +1145,14 @@
   },
   {
    "id": "metric",
+   "count": 4
+  },
+  {
+   "id": "integration",
+   "count": 4
+  },
+  {
+   "id": "survey",
    "count": 4
   },
   {
@@ -1284,7 +1296,15 @@
    "count": 3
   },
   {
+   "id": "now-playing",
+   "count": 3
+  },
+  {
    "id": "timer",
+   "count": 3
+  },
+  {
+   "id": "greeting",
    "count": 3
   },
   {
@@ -1293,10 +1313,6 @@
   },
   {
    "id": "device",
-   "count": 3
-  },
-  {
-   "id": "insights",
    "count": 3
   },
   {
@@ -1309,6 +1325,10 @@
   },
   {
    "id": "album",
+   "count": 3
+  },
+  {
+   "id": "team",
    "count": 3
   },
   {
@@ -1352,14 +1372,6 @@
    "count": 3
   },
   {
-   "id": "integration",
-   "count": 3
-  },
-  {
-   "id": "survey",
-   "count": 3
-  },
-  {
    "id": "community",
    "count": 3
   },
@@ -1373,6 +1385,10 @@
   },
   {
    "id": "legal",
+   "count": 3
+  },
+  {
+   "id": "leaderboard",
    "count": 3
   },
   {
@@ -1552,10 +1568,6 @@
    "count": 2
   },
   {
-   "id": "now-playing",
-   "count": 2
-  },
-  {
    "id": "circle",
    "count": 2
   },
@@ -1573,10 +1585,6 @@
   },
   {
    "id": "panel",
-   "count": 2
-  },
-  {
-   "id": "greeting",
    "count": 2
   },
   {
@@ -1684,10 +1692,6 @@
    "count": 2
   },
   {
-   "id": "team",
-   "count": 2
-  },
-  {
    "id": "caption",
    "count": 2
   },
@@ -1780,6 +1784,10 @@
    "count": 2
   },
   {
+   "id": "gamification",
+   "count": 2
+  },
+  {
    "id": "logo",
    "count": 2
   },
@@ -1845,10 +1853,6 @@
   },
   {
    "id": "mockup-set",
-   "count": 2
-  },
-  {
-   "id": "leaderboard",
    "count": 2
   },
   {
@@ -2537,10 +2541,6 @@
   },
   {
    "id": "commitment",
-   "count": 1
-  },
-  {
-   "id": "gamification",
    "count": 1
   },
   {
@@ -32185,13 +32185,22 @@
   {
    "id": "IMG-0655",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0655",
-   "description": "",
+   "title": "Budget insight card",
+   "description": "A 'Budget Insight' coaching card: Food $35 progress bar, Recent Purchases (Vietnamese Restaurant, Grocery, Rehoot Cafe) and a budgeting Tip. Spending feedback as a single gentle card.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "budgeting",
+    "finance",
+    "insights"
+   ],
    "palette": [
     "#F4F4F4",
     "#FCFCFC",
@@ -32235,20 +32244,27 @@
     "path": "E:\\Downloads\\UI\\HTFODC5WcAASxde.jpg",
     "bytes": 30100
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0655.webp",
    "thumb": "assets/thumb/IMG-0655.webp"
   },
   {
    "id": "IMG-0656",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0656",
-   "description": "",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Leaderboard trio",
+   "description": "A leaderboard trio in red, orange and purple: Top Agencies, Leaderboard and Top Offers phones with 2-1-3 podiums, medal avatars and member rows. Competitive ranking as spectacle.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "gradient-heavy",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "gamification",
+    "leaderboard"
+   ],
    "palette": [
     "#410F03",
     "#97280C",
@@ -32292,20 +32308,29 @@
     "path": "E:\\Downloads\\UI\\HTHV7U_aUAACkPe.jpg",
     "bytes": 314408
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Row text small; podiums and structure fully legible.",
    "src": "assets/img/IMG-0656.webp",
    "thumb": "assets/thumb/IMG-0656.webp"
   },
   {
    "id": "IMG-0657",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0657",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Morning briefing dashboard",
+   "description": "A 'Good Morning, Marcus' briefing dashboard (spot.design): greeting header, 95K/1.4%/512 stat row and a people table. The day, quantified, before anything else.",
+   "roles": [
+    "dashboard",
+    "home"
+   ],
+   "style": [
+    "data-dense",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "greeting"
+   ],
    "palette": [
     "#FDFEFD",
     "#F8F8F9",
@@ -32349,20 +32374,31 @@
     "path": "E:\\Downloads\\UI\\HTD3DOwXEAAnmwt.jpg",
     "bytes": 317164
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Table text small; greeting and structure legible.",
    "src": "assets/img/IMG-0657.webp",
    "thumb": "assets/thumb/IMG-0657.webp"
   },
   {
    "id": "IMG-0658",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0658",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Dark music home",
+   "description": "A dark music Home: 'Top Picks for You' poster wall (Elton John, Burna Boy, Charli XCX), Recently Played rail, a 'Drag up to open the player' coachmark and a True Magic Deluxe mini player. Poster-led discovery with the player one gesture away.",
+   "roles": [
+    "home",
+    "media"
+   ],
+   "style": [
+    "card-based",
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "music",
+    "now-playing",
+    "playlist"
+   ],
    "palette": [
     "#040303",
     "#302525",
@@ -32406,20 +32442,29 @@
     "path": "E:\\Downloads\\UI\\HTGQvDeXYAIJeRO.jpg",
     "bytes": 174500
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Poster text small; structure fully legible.",
    "src": "assets/img/IMG-0658.webp",
    "thumb": "assets/thumb/IMG-0658.webp"
   },
   {
    "id": "IMG-0659",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0659",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Workspace creation form",
+   "description": "A 'Create workspace' onboarding step: company-details form with a live side preview. Form-plus-preview so the workspace exists before it exists. First of a four-step onboarding series.",
+   "roles": [
+    "form",
+    "onboarding"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "signup"
+   ],
    "palette": [
     "#FAFAFA",
     "#EDEDED",
@@ -32463,20 +32508,28 @@
     "path": "E:\\Downloads\\UI\\HTE1zzybkAUbyE0.jpg",
     "bytes": 189626
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Form text small; structure fully legible.",
    "src": "assets/img/IMG-0659.webp",
    "thumb": "assets/thumb/IMG-0659.webp"
   },
   {
    "id": "IMG-0660",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0660",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Attribution survey",
+   "description": "The attribution step of the same onboarding: 'How did you hear Marketer.com?' with channel options and a dark Continue bar. One question, one screen, no decoration.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "signup",
+    "survey"
+   ],
    "palette": [
     "#FAFAFA",
     "#EDEDED",
@@ -32520,20 +32573,30 @@
     "path": "E:\\Downloads\\UI\\HTE10XhbkAQTkw8.jpg",
     "bytes": 207231
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Option text small; structure fully legible.",
+   "pair_with": "IMG-0659",
    "src": "assets/img/IMG-0660.webp",
    "thumb": "assets/thumb/IMG-0660.webp"
   },
   {
    "id": "IMG-0661",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0661",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Integration sync step",
+   "description": "The integrations step: 'Sync in data' with red/blue connect buttons and a data preview. Same series — value (your data, live) before the ask is finished.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "integration",
+    "signup"
+   ],
    "palette": [
     "#FBFBFB",
     "#EEEDEC",
@@ -32577,20 +32640,31 @@
     "path": "E:\\Downloads\\UI\\HTE1062awAAK-o7.jpg",
     "bytes": 265757
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Button text small; structure fully legible.",
+   "pair_with": "IMG-0660",
    "src": "assets/img/IMG-0661.webp",
    "thumb": "assets/thumb/IMG-0661.webp"
   },
   {
    "id": "IMG-0662",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0662",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Team invite step",
+   "description": "The team step closing the series: 'Who else is on your team?' with an email field and an org-chart preview. The viral loop placed last, after the workspace already feels real.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "invite",
+    "signup",
+    "team"
+   ],
    "palette": [
     "#FCFCFC",
     "#EDEDED",
@@ -32634,20 +32708,32 @@
     "path": "E:\\Downloads\\UI\\HTE11gwbUAAOvZC.jpg",
     "bytes": 204937
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Preview text small; structure fully legible.",
+   "pair_with": "IMG-0661",
    "src": "assets/img/IMG-0662.webp",
    "thumb": "assets/thumb/IMG-0662.webp"
   },
   {
    "id": "IMG-0663",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0663",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Frank card (leaf art)",
+   "description": "The Frank WhatsApp card with green-leaf art: same 'Rearch your WhatsApp audience' headline (sic), chat mockup and 'See how it works' button. One of three art variants — the composition is identical, the backdrop is the variable.",
+   "roles": [
+    "chat",
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "card-based",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "landing"
+   ],
    "palette": [
     "#F2F2F2",
     "#FFFFFF",
@@ -32691,20 +32777,32 @@
     "path": "E:\\Downloads\\UI\\HTD7FlPa8AAyHBO.jpg",
     "bytes": 880720
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Headline typo ('Rearch') is in the source asset.",
+   "pair_with": "IMG-0666",
    "src": "assets/img/IMG-0663.webp",
    "thumb": "assets/thumb/IMG-0663.webp"
   },
   {
    "id": "IMG-0664",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0664",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Frank card (mountain art)",
+   "description": "The Frank card with mountain art: identical layout, new backdrop. Kept because the variant set documents how one card system dresses three moods.",
+   "roles": [
+    "chat",
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "card-based",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "landing"
+   ],
    "palette": [
     "#F2F2F2",
     "#FFFFFF",
@@ -32748,20 +32846,32 @@
     "path": "E:\\Downloads\\UI\\HTD7EYgb0AA3Sj7.jpg",
     "bytes": 885467
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Headline typo ('Rearch') is in the source asset.",
+   "pair_with": "IMG-0663",
    "src": "assets/img/IMG-0664.webp",
    "thumb": "assets/thumb/IMG-0664.webp"
   },
   {
    "id": "IMG-0665",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0665",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Frank card (sky art)",
+   "description": "The Frank card with blue-sky art: the third and last variant. Together with its siblings it is a small masterclass in art-directed theming without re-layout.",
+   "roles": [
+    "chat",
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "card-based",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "landing"
+   ],
    "palette": [
     "#F2F2F2",
     "#FFFFFF",
@@ -32805,7 +32915,8 @@
     "path": "E:\\Downloads\\UI\\HTD7EYiboAA3pVW.jpg",
     "bytes": 885110
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Headline typo ('Rearch') is in the source asset.",
+   "pair_with": "IMG-0664",
    "src": "assets/img/IMG-0665.webp",
    "thumb": "assets/thumb/IMG-0665.webp"
   },

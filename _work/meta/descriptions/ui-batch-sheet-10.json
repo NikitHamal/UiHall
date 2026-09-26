@@ -1,0 +1,236 @@
+{
+ "items": {
+  "IMG-0655": {
+   "category": "mobile-app-ui",
+   "description": "A 'Budget Insight' coaching card: Food $35 progress bar, Recent Purchases (Vietnamese Restaurant, Grocery, Rehoot Cafe) and a budgeting Tip. Spending feedback as a single gentle card.",
+   "id": "IMG-0655",
+   "quality": "Clean capture; fully legible.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "finance",
+    "budgeting",
+    "insights"
+   ],
+   "title": "Budget insight card",
+   "type": "screen"
+  },
+  "IMG-0656": {
+   "category": "mobile-app-ui",
+   "description": "A leaderboard trio in red, orange and purple: Top Agencies, Leaderboard and Top Offers phones with 2-1-3 podiums, medal avatars and member rows. Competitive ranking as spectacle.",
+   "id": "IMG-0656",
+   "quality": "Row text small; podiums and structure fully legible.",
+   "roles": [],
+   "style": [
+    "gradient-heavy",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "leaderboard",
+    "gamification"
+   ],
+   "title": "Leaderboard trio",
+   "type": "multi-screen"
+  },
+  "IMG-0657": {
+   "category": "dashboard",
+   "description": "A 'Good Morning, Marcus' briefing dashboard (spot.design): greeting header, 95K/1.4%/512 stat row and a people table. The day, quantified, before anything else.",
+   "id": "IMG-0657",
+   "quality": "Table text small; greeting and structure legible.",
+   "roles": [
+    "dashboard",
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "data-dense"
+   ],
+   "tags": [
+    "greeting"
+   ],
+   "title": "Morning briefing dashboard",
+   "type": "screen"
+  },
+  "IMG-0658": {
+   "category": "mobile-app-ui",
+   "description": "A dark music Home: 'Top Picks for You' poster wall (Elton John, Burna Boy, Charli XCX), Recently Played rail, a 'Drag up to open the player' coachmark and a True Magic Deluxe mini player. Poster-led discovery with the player one gesture away.",
+   "id": "IMG-0658",
+   "quality": "Poster text small; structure fully legible.",
+   "roles": [
+    "home",
+    "media"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "music",
+    "playlist",
+    "now-playing"
+   ],
+   "title": "Dark music home",
+   "type": "screen"
+  },
+  "IMG-0659": {
+   "category": "website",
+   "description": "A 'Create workspace' onboarding step: company-details form with a live side preview. Form-plus-preview so the workspace exists before it exists. First of a four-step onboarding series.",
+   "id": "IMG-0659",
+   "quality": "Form text small; structure fully legible.",
+   "roles": [
+    "onboarding",
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "signup"
+   ],
+   "title": "Workspace creation form",
+   "type": "screen"
+  },
+  "IMG-0660": {
+   "category": "website",
+   "description": "The attribution step of the same onboarding: 'How did you hear Marketer.com?' with channel options and a dark Continue bar. One question, one screen, no decoration.",
+   "id": "IMG-0660",
+   "pair_with": "IMG-0659",
+   "quality": "Option text small; structure fully legible.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "survey",
+    "signup"
+   ],
+   "title": "Attribution survey",
+   "type": "screen"
+  },
+  "IMG-0661": {
+   "category": "website",
+   "description": "The integrations step: 'Sync in data' with red/blue connect buttons and a data preview. Same series — value (your data, live) before the ask is finished.",
+   "id": "IMG-0661",
+   "pair_with": "IMG-0660",
+   "quality": "Button text small; structure fully legible.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "integration",
+    "signup"
+   ],
+   "title": "Integration sync step",
+   "type": "screen"
+  },
+  "IMG-0662": {
+   "category": "website",
+   "description": "The team step closing the series: 'Who else is on your team?' with an email field and an org-chart preview. The viral loop placed last, after the workspace already feels real.",
+   "id": "IMG-0662",
+   "pair_with": "IMG-0661",
+   "quality": "Preview text small; structure fully legible.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "invite",
+    "team",
+    "signup"
+   ],
+   "title": "Team invite step",
+   "type": "screen"
+  },
+  "IMG-0663": {
+   "category": "website",
+   "description": "The Frank WhatsApp card with green-leaf art: same 'Rearch your WhatsApp audience' headline (sic), chat mockup and 'See how it works' button. One of three art variants — the composition is identical, the backdrop is the variable.",
+   "id": "IMG-0663",
+   "pair_with": "IMG-0666",
+   "quality": "Headline typo ('Rearch') is in the source asset.",
+   "roles": [
+    "landing-section",
+    "hero",
+    "chat"
+   ],
+   "style": [
+    "playful",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "landing",
+    "ai"
+   ],
+   "title": "Frank card (leaf art)",
+   "type": "screen"
+  },
+  "IMG-0664": {
+   "category": "website",
+   "description": "The Frank card with mountain art: identical layout, new backdrop. Kept because the variant set documents how one card system dresses three moods.",
+   "id": "IMG-0664",
+   "pair_with": "IMG-0663",
+   "quality": "Headline typo ('Rearch') is in the source asset.",
+   "roles": [
+    "landing-section",
+    "hero",
+    "chat"
+   ],
+   "style": [
+    "playful",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "landing",
+    "ai"
+   ],
+   "title": "Frank card (mountain art)",
+   "type": "screen"
+  },
+  "IMG-0665": {
+   "category": "website",
+   "description": "The Frank card with blue-sky art: the third and last variant. Together with its siblings it is a small masterclass in art-directed theming without re-layout.",
+   "id": "IMG-0665",
+   "pair_with": "IMG-0664",
+   "quality": "Headline typo ('Rearch') is in the source asset.",
+   "roles": [
+    "landing-section",
+    "hero",
+    "chat"
+   ],
+   "style": [
+    "playful",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "landing",
+    "ai"
+   ],
+   "title": "Frank card (sky art)",
+   "type": "screen"
+  }
+ }
+}
