@@ -1,0 +1,242 @@
+{
+ "items": {
+  "IMG-0643": {
+   "category": "website",
+   "description": "An 'Email Broadcast' task card for the same Summer Escape campaign: owner Aiden Brooks, due August 31 2025, seed-round announcement copy. The campaign as an assigned task — the operational shadow of the brief.",
+   "id": "IMG-0643",
+   "pair_with": "IMG-0642",
+   "quality": "Clean capture; fully legible.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "campaign"
+   ],
+   "title": "Campaign task card",
+   "type": "component"
+  },
+  "IMG-0644": {
+   "category": "mobile-app-ui",
+   "description": "An AI shopping assistant across two phones: blurred chat thread resolving into 'Assistant' product cards (Smart Casual Essentials, Creative Professional) with a 'describe what you're looking for' prompt. Conversational commerce with the receipts shown.",
+   "id": "IMG-0644",
+   "quality": "Chat text blurred by the source; cards fully legible.",
+   "roles": [
+    "chat"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "assistant",
+    "e-commerce"
+   ],
+   "title": "Shopping assistant phones",
+   "type": "multi-screen"
+  },
+  "IMG-0645": {
+   "category": "website",
+   "description": "A dark agent-run view titled 'Saved card fails at checkout': Failed status, $402 run, 'Expected a confirmation, got an error' toast and code trace. Failure made legible — status, cause and trace in one frame.",
+   "id": "IMG-0645",
+   "quality": "Trace text small; status and structure legible.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "monochrome"
+   ],
+   "tags": [
+    "ai",
+    "agents",
+    "error-state"
+   ],
+   "title": "Agent failure trace (dark)",
+   "type": "screen"
+  },
+  "IMG-0646": {
+   "category": "dashboard",
+   "description": "A dark Runs view: '3 steps' deploy checklist (Merge wallet, Charge cards directly) beside a Branches test/flight panel with green checks and a 'Start first run' CTA. Shipping as a checklist with receipts.",
+   "id": "IMG-0646",
+   "quality": "Checklist text small; structure fully legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "developer-tool"
+   ],
+   "title": "Deploy runs checklist",
+   "type": "screen"
+  },
+  "IMG-0647": {
+   "category": "dashboard",
+   "description": "A dark 'Flaky' test dashboard: 23 offending, 6 fixed, 412 quarantined, with per-test rows and red failure sparklines. Quarantine-count-as-headline for test health.",
+   "id": "IMG-0647",
+   "quality": "Row text small; stats and structure legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "developer-tool",
+    "data-table"
+   ],
+   "title": "Flaky-test dashboard",
+   "type": "screen"
+  },
+  "IMG-0648": {
+   "category": "dashboard",
+   "description": "A dark checkout-experiment review: Split/Overlay/OOP snapshot modes, Staging/Production environment pills and a 0.6% result with an 'Accept baseline' CTA. Experiment verdict as a single decision screen.",
+   "id": "IMG-0648",
+   "quality": "Small text soft; structure fully legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "rounded"
+   ],
+   "tags": [
+    "comparison"
+   ],
+   "title": "Checkout experiment review",
+   "type": "multi-screen"
+  },
+  "IMG-0649": {
+   "category": "website",
+   "description": "A 'Share your board' permissions card: owner rows (Maya, Charles Postiaux, Lia Moreau) with Editor/Viewer roles, link rows and copy-link affordance. Board access as a people list; first of a three-piece sharing family.",
+   "id": "IMG-0649",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "sharing"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "sharing",
+    "collaboration"
+   ],
+   "title": "Board sharing permissions",
+   "type": "screen"
+  },
+  "IMG-0650": {
+   "category": "website",
+   "description": "A closer crop of the same share board: Maya's access row, an Add people field and a dark Share button over the access list. The action half of the permissions pattern.",
+   "id": "IMG-0650",
+   "pair_with": "IMG-0649",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "sharing"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "sharing",
+    "collaboration"
+   ],
+   "title": "Share board crop",
+   "type": "screen"
+  },
+  "IMG-0651": {
+   "category": "website",
+   "description": "Link-sharing controls: Priya Nair as Invited Viewer, 'Everyone at Acme can view' scope, a Public link toggle and Copy link. The three access tiers — person, workspace, world — in one card.",
+   "id": "IMG-0651",
+   "pair_with": "IMG-0650",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "sharing"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "sharing",
+    "collaboration"
+   ],
+   "title": "Link sharing controls",
+   "type": "screen"
+  },
+  "IMG-0652": {
+   "category": "website",
+   "description": "An Acme Solutions API onboarding dashboard: Get started checklist, Generate API key, first-request guide, Quickstart links and a This Week requests/errors strip. Docs and dashboard merged into one developer front door.",
+   "id": "IMG-0652",
+   "quality": "Guide text small; structure fully legible.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "developer-tool",
+    "documentation"
+   ],
+   "title": "API onboarding dashboard",
+   "type": "screen"
+  },
+  "IMG-0653": {
+   "category": "dashboard",
+   "description": "API analytics with brand tokens on the same screen: 12.4M requests, 7,312 subscriptions, connection rows (Commonwealth Bank, AGL Energy) and a Logos/Names colour-token editor. Usage metrics beside the theming controls that dress them.",
+   "id": "IMG-0653",
+   "quality": "Small text soft; structure fully legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense",
+    "card-based"
+   ],
+   "tags": [
+    "analytics",
+    "developer-tool"
+   ],
+   "title": "API analytics with tokens",
+   "type": "screen"
+  },
+  "IMG-0654": {
+   "category": "mobile-app-ui",
+   "description": "An expense-tracker across two phones: $1,050 balance header, $1,000/$600/$400 budget chips, a spending donut and a transaction feed over a tab bar. Budget-chips-first personal finance.",
+   "id": "IMG-0654",
+   "quality": "Feed text small; structure fully legible.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "finance",
+    "budgeting"
+   ],
+   "title": "Expense tracker phones",
+   "type": "multi-screen"
+  }
+ }
+}

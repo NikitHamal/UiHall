@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 614
+  "described": 626
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 372
+   "count": 374
   },
   {
    "id": "app-store-screens",
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 80
+   "count": 86
   },
   {
    "id": "design-system",
@@ -63,7 +63,7 @@
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 50
+   "count": 54
   },
   {
    "id": "motion-demo",
@@ -84,14 +84,14 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 72
+   "count": 60
   }
  ],
  "types": [
   {
    "id": "component",
    "label": "component",
-   "count": 19
+   "count": 20
   },
   {
    "id": "flow-walkthrough",
@@ -111,7 +111,7 @@
   {
    "id": "multi-screen",
    "label": "multi-screen",
-   "count": 84
+   "count": 87
   },
   {
    "id": "pattern",
@@ -126,7 +126,7 @@
   {
    "id": "screen",
    "label": "screen",
-   "count": 238
+   "count": 234
   },
   {
    "id": "token-sheet",
@@ -137,7 +137,7 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 115
+   "count": 119
   },
   {
    "id": "hero",
@@ -149,7 +149,7 @@
   },
   {
    "id": "home",
-   "count": 48
+   "count": 49
   },
   {
    "id": "detail",
@@ -157,7 +157,7 @@
   },
   {
    "id": "onboarding",
-   "count": 37
+   "count": 38
   },
   {
    "id": "landing-section",
@@ -196,11 +196,11 @@
    "count": 15
   },
   {
-   "id": "search",
-   "count": 13
+   "id": "chat",
+   "count": 14
   },
   {
-   "id": "chat",
+   "id": "search",
    "count": 13
   },
   {
@@ -227,27 +227,27 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 381
+   "count": 389
   },
   {
    "id": "minimal",
-   "count": 275
+   "count": 280
   },
   {
    "id": "rounded",
-   "count": 182
+   "count": 189
   },
   {
    "id": "dark-mode",
-   "count": 182
+   "count": 186
   },
   {
    "id": "card-based",
-   "count": 171
+   "count": 177
   },
   {
    "id": "data-dense",
-   "count": 59
+   "count": 64
   },
   {
    "id": "editorial",
@@ -275,7 +275,7 @@
   },
   {
    "id": "monochrome",
-   "count": 24
+   "count": 25
   },
   {
    "id": "illustration-led",
@@ -333,7 +333,7 @@
   },
   {
    "id": "ai",
-   "count": 44
+   "count": 46
   },
   {
    "id": "photographic",
@@ -345,11 +345,15 @@
   },
   {
    "id": "analytics",
-   "count": 32
+   "count": 33
   },
   {
    "id": "progress",
    "count": 28
+  },
+  {
+   "id": "comparison",
+   "count": 27
   },
   {
    "id": "photo",
@@ -369,10 +373,6 @@
   },
   {
    "id": "typography",
-   "count": 26
-  },
-  {
-   "id": "comparison",
    "count": 26
   },
   {
@@ -400,6 +400,10 @@
    "count": 21
   },
   {
+   "id": "finance",
+   "count": 21
+  },
+  {
    "id": "tab-bar",
    "count": 21
   },
@@ -417,10 +421,6 @@
   },
   {
    "id": "grid",
-   "count": 20
-  },
-  {
-   "id": "finance",
    "count": 20
   },
   {
@@ -540,6 +540,10 @@
    "count": 10
   },
   {
+   "id": "budgeting",
+   "count": 10
+  },
+  {
    "id": "banking",
    "count": 10
   },
@@ -568,10 +572,6 @@
    "count": 9
   },
   {
-   "id": "budgeting",
-   "count": 9
-  },
-  {
    "id": "steps",
    "count": 9
   },
@@ -585,6 +585,10 @@
   },
   {
    "id": "headline",
+   "count": 9
+  },
+  {
+   "id": "sharing",
    "count": 9
   },
   {
@@ -632,7 +636,19 @@
    "count": 8
   },
   {
+   "id": "e-commerce",
+   "count": 8
+  },
+  {
+   "id": "data-table",
+   "count": 8
+  },
+  {
    "id": "sidebar",
+   "count": 8
+  },
+  {
+   "id": "developer-tool",
    "count": 8
   },
   {
@@ -684,14 +700,6 @@
    "count": 7
   },
   {
-   "id": "e-commerce",
-   "count": 7
-  },
-  {
-   "id": "data-table",
-   "count": 7
-  },
-  {
    "id": "product-detail",
    "count": 7
   },
@@ -701,6 +709,10 @@
   },
   {
    "id": "branding",
+   "count": 7
+  },
+  {
+   "id": "agents",
    "count": 7
   },
   {
@@ -804,7 +816,7 @@
    "count": 6
   },
   {
-   "id": "sharing",
+   "id": "collaboration",
    "count": 6
   },
   {
@@ -824,7 +836,7 @@
    "count": 6
   },
   {
-   "id": "agents",
+   "id": "documentation",
    "count": 6
   },
   {
@@ -865,6 +877,10 @@
   },
   {
    "id": "serif",
+   "count": 5
+  },
+  {
+   "id": "assistant",
    "count": 5
   },
   {
@@ -964,10 +980,6 @@
    "count": 5
   },
   {
-   "id": "documentation",
-   "count": 5
-  },
-  {
    "id": "marketing",
    "count": 5
   },
@@ -997,10 +1009,6 @@
   },
   {
    "id": "goal-selection",
-   "count": 4
-  },
-  {
-   "id": "assistant",
    "count": 4
   },
   {
@@ -1137,10 +1145,6 @@
   },
   {
    "id": "no-code",
-   "count": 4
-  },
-  {
-   "id": "developer-tool",
    "count": 4
   },
   {
@@ -1300,6 +1304,10 @@
    "count": 3
   },
   {
+   "id": "campaign",
+   "count": 3
+  },
+  {
    "id": "album",
    "count": 3
   },
@@ -1321,10 +1329,6 @@
   },
   {
    "id": "month-view",
-   "count": 3
-  },
-  {
-   "id": "collaboration",
    "count": 3
   },
   {
@@ -1665,10 +1669,6 @@
   },
   {
    "id": "post",
-   "count": 2
-  },
-  {
-   "id": "campaign",
    "count": 2
   },
   {
@@ -2353,6 +2353,10 @@
   },
   {
    "id": "electric-vehicle",
+   "count": 1
+  },
+  {
+   "id": "error-state",
    "count": 1
   },
   {
@@ -31397,13 +31401,20 @@
   {
    "id": "IMG-0643",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0643",
-   "description": "",
+   "category": "website",
+   "type": "component",
+   "title": "Campaign task card",
+   "description": "An 'Email Broadcast' task card for the same Summer Escape campaign: owner Aiden Brooks, due August 31 2025, seed-round announcement copy. The campaign as an assigned task — the operational shadow of the brief.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "campaign"
+   ],
    "palette": [
     "#FAFAFA",
     "#FFFFFF",
@@ -31447,20 +31458,31 @@
     "path": "E:\\Downloads\\UI\\HTD_ka3akAAZwVh.jpg",
     "bytes": 100686
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0642",
    "src": "assets/img/IMG-0643.webp",
    "thumb": "assets/thumb/IMG-0643.webp"
   },
   {
    "id": "IMG-0644",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0644",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Shopping assistant phones",
+   "description": "An AI shopping assistant across two phones: blurred chat thread resolving into 'Assistant' product cards (Smart Casual Essentials, Creative Professional) with a 'describe what you're looking for' prompt. Conversational commerce with the receipts shown.",
+   "roles": [
+    "chat"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "assistant",
+    "e-commerce"
+   ],
    "palette": [
     "#F8F8F8",
     "#D7D8D7",
@@ -31504,20 +31526,28 @@
     "path": "E:\\Downloads\\UI\\HTEduTfWMAA1zmW.jpg",
     "bytes": 604093
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Chat text blurred by the source; cards fully legible.",
    "src": "assets/img/IMG-0644.webp",
    "thumb": "assets/thumb/IMG-0644.webp"
   },
   {
    "id": "IMG-0645",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0645",
-   "description": "",
+   "title": "Agent failure trace (dark)",
+   "description": "A dark agent-run view titled 'Saved card fails at checkout': Failed status, $402 run, 'Expected a confirmation, got an error' toast and code trace. Failure made legible — status, cause and trace in one frame.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "monochrome"
+   ],
+   "tags": [
+    "agents",
+    "ai",
+    "error-state"
+   ],
    "palette": [
     "#101012",
     "#262627",
@@ -31561,20 +31591,27 @@
     "path": "E:\\Downloads\\UI\\HTC3ZZvWkAAZ18h.jpg",
     "bytes": 322028
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Trace text small; status and structure legible.",
    "src": "assets/img/IMG-0645.webp",
    "thumb": "assets/thumb/IMG-0645.webp"
   },
   {
    "id": "IMG-0646",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0646",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Deploy runs checklist",
+   "description": "A dark Runs view: '3 steps' deploy checklist (Merge wallet, Charge cards directly) beside a Branches test/flight panel with green checks and a 'Start first run' CTA. Shipping as a checklist with receipts.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "developer-tool"
+   ],
    "palette": [
     "#101012",
     "#252527",
@@ -31618,20 +31655,28 @@
     "path": "E:\\Downloads\\UI\\HTC3bluXIAACLLi.jpg",
     "bytes": 269267
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Checklist text small; structure fully legible.",
    "src": "assets/img/IMG-0646.webp",
    "thumb": "assets/thumb/IMG-0646.webp"
   },
   {
    "id": "IMG-0647",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0647",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Flaky-test dashboard",
+   "description": "A dark 'Flaky' test dashboard: 23 offending, 6 fixed, 412 quarantined, with per-test rows and red failure sparklines. Quarantine-count-as-headline for test health.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "data-table",
+    "developer-tool"
+   ],
    "palette": [
     "#101012",
     "#242426",
@@ -31675,20 +31720,28 @@
     "path": "E:\\Downloads\\UI\\HTC3dSnWUAAHskC.jpg",
     "bytes": 213298
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Row text small; stats and structure legible.",
    "src": "assets/img/IMG-0647.webp",
    "thumb": "assets/thumb/IMG-0647.webp"
   },
   {
    "id": "IMG-0648",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0648",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "dashboard",
+   "type": "multi-screen",
+   "title": "Checkout experiment review",
+   "description": "A dark checkout-experiment review: Split/Overlay/OOP snapshot modes, Staging/Production environment pills and a 0.6% result with an 'Accept baseline' CTA. Experiment verdict as a single decision screen.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "rounded"
+   ],
+   "tags": [
+    "comparison"
+   ],
    "palette": [
     "#101012",
     "#242325",
@@ -31732,20 +31785,28 @@
     "path": "E:\\Downloads\\UI\\HTC3fT4WcAAnrrc.jpg",
     "bytes": 257304
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Small text soft; structure fully legible.",
    "src": "assets/img/IMG-0648.webp",
    "thumb": "assets/thumb/IMG-0648.webp"
   },
   {
    "id": "IMG-0649",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0649",
-   "description": "",
+   "title": "Board sharing permissions",
+   "description": "A 'Share your board' permissions card: owner rows (Maya, Charles Postiaux, Lia Moreau) with Editor/Viewer roles, link rows and copy-link affordance. Board access as a people list; first of a three-piece sharing family.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "collaboration",
+    "sharing"
+   ],
    "palette": [
     "#ECEBE9",
     "#FFFFFF",
@@ -31789,20 +31850,27 @@
     "path": "E:\\Downloads\\UI\\HTDG4I5XEAAZbqu.jpg",
     "bytes": 107202
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0649.webp",
    "thumb": "assets/thumb/IMG-0649.webp"
   },
   {
    "id": "IMG-0650",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0650",
-   "description": "",
+   "title": "Share board crop",
+   "description": "A closer crop of the same share board: Maya's access row, an Add people field and a dark Share button over the access list. The action half of the permissions pattern.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "collaboration",
+    "sharing"
+   ],
    "palette": [
     "#FFFFFF",
     "#EDEDEB",
@@ -31846,20 +31914,29 @@
     "path": "E:\\Downloads\\UI\\HTDG46eWgAAsKMM.jpg",
     "bytes": 134748
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0649",
    "src": "assets/img/IMG-0650.webp",
    "thumb": "assets/thumb/IMG-0650.webp"
   },
   {
    "id": "IMG-0651",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0651",
-   "description": "",
+   "title": "Link sharing controls",
+   "description": "Link-sharing controls: Priya Nair as Invited Viewer, 'Everyone at Acme can view' scope, a Public link toggle and Copy link. The three access tiers — person, workspace, world — in one card.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "collaboration",
+    "sharing"
+   ],
    "palette": [
     "#FFFFFF",
     "#ECEBE9",
@@ -31903,20 +31980,29 @@
     "path": "E:\\Downloads\\UI\\HTDG5ftWwAA3UxY.png",
     "bytes": 120512
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0650",
    "src": "assets/img/IMG-0651.webp",
    "thumb": "assets/thumb/IMG-0651.webp"
   },
   {
    "id": "IMG-0652",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0652",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "API onboarding dashboard",
+   "description": "An Acme Solutions API onboarding dashboard: Get started checklist, Generate API key, first-request guide, Quickstart links and a This Week requests/errors strip. Docs and dashboard merged into one developer front door.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "developer-tool",
+    "documentation"
+   ],
    "palette": [
     "#FFFFFF",
     "#FAFAFA",
@@ -31960,20 +32046,29 @@
     "path": "E:\\Downloads\\UI\\HTDRWgzbUAAyXBg.png",
     "bytes": 136655
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Guide text small; structure fully legible.",
    "src": "assets/img/IMG-0652.webp",
    "thumb": "assets/thumb/IMG-0652.webp"
   },
   {
    "id": "IMG-0653",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0653",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "API analytics with tokens",
+   "description": "API analytics with brand tokens on the same screen: 12.4M requests, 7,312 subscriptions, connection rows (Commonwealth Bank, AGL Energy) and a Logos/Names colour-token editor. Usage metrics beside the theming controls that dress them.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "card-based",
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "analytics",
+    "developer-tool"
+   ],
    "palette": [
     "#FEFEFE",
     "#EDEDED",
@@ -32017,20 +32112,29 @@
     "path": "E:\\Downloads\\UI\\HTDRXMhbAAA-NHm.jpg",
     "bytes": 149317
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Small text soft; structure fully legible.",
    "src": "assets/img/IMG-0653.webp",
    "thumb": "assets/thumb/IMG-0653.webp"
   },
   {
    "id": "IMG-0654",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0654",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Expense tracker phones",
+   "description": "An expense-tracker across two phones: $1,050 balance header, $1,000/$600/$400 budget chips, a spending donut and a transaction feed over a tab bar. Budget-chips-first personal finance.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "budgeting",
+    "finance"
+   ],
    "palette": [
     "#F4F4F4",
     "#FEFEFE",
@@ -32074,7 +32178,7 @@
     "path": "E:\\Downloads\\UI\\HTFODC3XMAApwGj.jpg",
     "bytes": 52590
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Feed text small; structure fully legible.",
    "src": "assets/img/IMG-0654.webp",
    "thumb": "assets/thumb/IMG-0654.webp"
   },
