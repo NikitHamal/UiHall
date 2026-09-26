@@ -1,0 +1,503 @@
+{
+ "items": [
+  {
+   "id": "IMG-0335",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Settings - Plant AI Pro upsell on a dark-green field",
+   "description": "The Plant AI Settings screen shown on a deep-green backdrop: 'Pro' badge, dark 'Plant AI PRO - Claim up to 80% off Pro' card with leaf mascot, and a grouped list (Language English, Restore Purchase, Rate us, Email Us, Share App, Privacy Policy). The same screen as IMG-0334 in a presentation frame.",
+   "roles": [
+    "navigation",
+    "settings",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "upsell",
+    "plant"
+   ],
+   "group": "GRP-settings"
+  },
+  {
+   "id": "IMG-0333",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Settings - black 'Upgrade to Pro' cleaner card",
+   "description": "A cleaner app's Settings: black 'Upgrade to Pro - Clean deeper, save more space, and boost performance' card with crown/robot art, Cleanup Preferences (Notification, Schedule Report, Analysis preferences) and App Settings (Language English, Restore Purchase). A distinct product from the Plant AI variants.",
+   "roles": [
+    "navigation",
+    "settings",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "upsell"
+   ],
+   "group": "GRP-settings"
+  },
+  {
+   "id": "IMG-0332",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Settings - serif 'Unlock All Tools' with a rainbow bird",
+   "description": "A serif-titled Settings with a 'Go Pro' pill and a gradient 'Unlock All Tools - More tools and higher limits for smarter Prints' card featuring a colourful bird, above account rows (Username Dev, Email Devdsgn@gmail.com, Subscription, Credit usage, Feedback). A prints/tools product.",
+   "roles": [
+    "navigation",
+    "settings"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "rounded"
+   ],
+   "tags": [
+    "upsell",
+    "account",
+    "gradient",
+    "serif"
+   ],
+   "group": "GRP-settings"
+  },
+  {
+   "id": "IMG-0227",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Study-notes AI home - 72% progress and 128 notes",
+   "description": "A learning app home: '72% Track your learning progress' with a black 'Start Learning' pill, cards for 'Total Note 128 Notes' (with collaborator avatars) and '12 Folders' (112/32/12), and a banner 'Transform educational videos into smart study notes with AI instantly.' A notes/AI study tool, not a news app.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "notes",
+    "ai",
+    "progress",
+    "folders"
+   ]
+  },
+  {
+   "id": "IMG-0477",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Crypto swap - two near-identical orange/lime panels",
+   "description": "Two almost identical swap screens: black balance ticket '$5,020.89' with coin dots, a '1 BTC = 79,586.62 USDT' tag, BTC 0.0179825 and lime USDT 1,690.09 fields, and a Swap button over a sketched background. A duplicated swap UI, not dark dashboards.",
+   "roles": [
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "high-contrast"
+   ],
+   "tags": [
+    "crypto",
+    "ticket"
+   ]
+  },
+  {
+   "id": "IMG-0425",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "My Listings - empty state then two filled property cards",
+   "description": "'My Listings' with filter tabs (All/Active/Sold/Inactive) shown twice: left an empty state ('No listings yet', green 'Add a Property'), right filled with '3 Plots of Land - Ibeju Lekki' (₦12,500,000, Available, Edit) and '5-Bedroom Duplex - Lekki Phase 1'. A green real-estate listings empty→filled pair.",
+   "roles": [
+    "list",
+    "state",
+    "empty-state"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "real-estate",
+    "listings",
+    "property",
+    "price"
+   ]
+  },
+  {
+   "id": "IMG-0454",
+   "category": "mobile-app-ui",
+   "type": "flow-walkthrough",
+   "title": "Music library and a full-bleed 'Endless Vibes' player",
+   "description": "A dark Music Library (Midnight Drive, Late Night Lo-Fi, Endless Vibes, 'AI Discovery 24 tracks') beside a full-bleed 'Featured Sounds' player over album art reading 'ENDLESS VIBES' with playback controls. A library-to-player pair.",
+   "roles": [
+    "home",
+    "media"
+   ],
+   "style": [
+    "dark-mode",
+    "photographic",
+    "rounded"
+   ],
+   "tags": [
+    "music",
+    "library",
+    "player",
+    "album-art"
+   ]
+  },
+  {
+   "id": "IMG-0452",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Eight varied onboarding screens in a 2x4 wall",
+   "description": "Eight unrelated onboarding screens in a grid: Collab AI 3D, 'A place to call home', 'Share Your Creativity', SENDOE money, 'Consult Doctors Anytime', a crowned figure, 'The world speaks. You understand.', and Kasaree transfers. A sampler of onboarding directions, not one app wall.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "varied"
+   ],
+   "tags": [
+    "collection",
+    "grid"
+   ]
+  },
+  {
+   "id": "IMG-0517",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Eight onboarding screens - money, food, faith, business",
+   "description": "Eight onboarding screens by @uiuxbyvicko: 'Your Money Global Freedom', 'Made for your taste', 'Everyone chips in', 'Grow in Faith, Together', 'Find food worth craving', 'Squiz - find a place', 'Grow your Business', 'Save together with Trusted Circles'. A diverse onboarding portfolio, not a sustainability app.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "varied"
+   ],
+   "tags": [
+    "collection",
+    "grid"
+   ]
+  },
+  {
+   "id": "IMG-0365",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Crypto wallet - $8,500.90 with send-crypto banner and assets",
+   "description": "A purple-dark wallet: 'Main Wallet $8,500.90 (+1.44% Today)', Receive/Send/Swap/Buy, a 'Send Crypto Globally in 3 Steps - Send Now' banner, My Assets (Bitcoin $72,830, Solana $6,821) and Market Movers (Pepe, Ethereum). A crypto wallet home, not a prediction market.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "data-dense"
+   ],
+   "tags": [
+    "crypto",
+    "wallet",
+    "balance"
+   ]
+  },
+  {
+   "id": "IMG-0482",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Twelve dark phone states in a numbered 2-col grid",
+   "description": "Six numbered pairs (01-06) of dark phone screens covering onboarding ('Realize your dream'), a $1,240 wallet, 'Build apps without writing any code', a voice/scan screen, 'Connect with your friends' and 'Create and Join Arcs' / '140 Days Streak'. A numbered state grid.",
+   "roles": [
+    "onboarding",
+    "state"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "grid"
+   ],
+   "tags": [
+    "states",
+    "grid"
+   ]
+  },
+  {
+   "id": "IMG-0220",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "September 2026 schedule - week chart and event calendar, dark",
+   "description": "Two dark schedule panels for September 2026 (Total rev $23,678): left a dense week time-block chart (Sep 14-20), right a week calendar (Mon 14-Sun 20) with events (Morning Jog, Board Meeting, Launch Break, Design Workflow) and avatar chips. A scheduling/calendar pair, not a heat map.",
+   "roles": [
+    "dashboard",
+    "calendar"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "rounded"
+   ],
+   "tags": [
+    "calendar",
+    "schedule",
+    "events",
+    "timeline"
+   ]
+  },
+  {
+   "id": "IMG-0244",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Onboarding screen-sheet - twelve varied marketing screens",
+   "description": "A 4x3 sheet of unrelated onboarding/marketing screens: 'Meet Novo AI', 'Take Control of Your Money', 'Discover Your Sound', trading, 'Your electric adventure starts here', 'Trade, Create, Discover', 'Discover the World with ease', 'Your Home in Your Hands', flight tracker, and more. A portfolio sheet, not a music shelf.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "varied",
+    "grid"
+   ],
+   "tags": [
+    "collection",
+    "sheet"
+   ]
+  },
+  {
+   "id": "IMG-0217",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Rome destination card - illustrated caryatids over a photo field",
+   "description": "A 'Rome' card with an Italian-flag chip and illustrated caryatid columns at sunset, copy 'Where ancient history meets timeless beauty', a black 'View Hotels' button and bookmark, floating over a painterly pomegranate/ruins backdrop. A destination discovery card.",
+   "roles": [
+    "detail",
+    "media"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "photographic"
+   ],
+   "tags": [
+    "travel",
+    "destination",
+    "illustration",
+    "card"
+   ],
+   "group": "GRP-travel-app"
+  },
+  {
+   "id": "IMG-0419",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Hand-held travel app - Dhaka search with package toggles",
+   "description": "Greyscale hands hold a colour phone: 'Dhaka Bangladesh' header, 'Search destination...' pill, 'Tour Package / Flight Package' toggles, Popular Destination stack (Australia, Sweden, Norway, 'Forest Haven Estate - Modern Villa' 12 Days) and a lime home tab. A travel discovery home.",
+   "roles": [
+    "home",
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "photographic"
+   ],
+   "tags": [
+    "travel",
+    "destination"
+   ]
+  },
+  {
+   "id": "IMG-0407",
+   "category": "mobile-app-ui",
+   "type": "mockup",
+   "title": "Logistics home - 'Precision In Every Delivery' with a truck",
+   "description": "A hand-held phone: 'Precision In Every Delivery.' with a white semi-truck, shipment ABJ-10235KJ, driver Mark Leonard (Online), route LON→BMH (May 17→May 20 2026) and Good Details (Fries/Bread cartons, weights, $23,987.65). A freight-tracking home.",
+   "roles": [
+    "home",
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "logistics",
+    "delivery",
+    "tracking",
+    "route"
+   ]
+  },
+  {
+   "id": "IMG-0495",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Tara fashion - outerwear list and green Atelier Coat detail",
+   "description": "'Women — Outerwear' with colour/size filters and two product cards (Silk Column Gown $720, The Atelier Coat $1,050) beside the 'The Atelier Coat $720' detail: full-bleed green satin dress, size guide, description, colour swatches and Purchase/Add to Cart. A discovery-to-PDP pair.",
+   "roles": [
+    "list",
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "photographic"
+   ],
+   "tags": [
+    "fashion"
+   ],
+   "group": "GRP-tara-fashion"
+  },
+  {
+   "id": "IMG-0496",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Tara checkout - two-piece cart then delivery details form",
+   "description": "'Your Cart (2 Pieces)' (Silk Column Gown $720, Leather Shoulder Bag $760, Order Summary $1,384, promo code, Proceed to Checkout) beside 'Preview Delivery Details' with contact and existing-delivery forms (Amelia Hart, London) and Make Payment. The checkout half of the Tara flow.",
+   "roles": [
+    "form",
+    "list",
+    "checkout"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "cart",
+    "delivery",
+    "payment"
+   ],
+   "group": "GRP-tara-fashion"
+  },
+  {
+   "id": "IMG-0383",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Caregiving onboarding sheet - pink/rose fifteen screens",
+   "description": "Fifteen rose-tinted caregiving onboarding screens: 'Care feels lighter when everything's in one place', 'Hi Alice', 'Who are you organising care for?', 'Add your parents', 'Set your care plan reminders', 'Choose the plan', 'You're officially set up for better care'. The pink variant of the care app also in IMG-0382.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "sheet",
+    "plan"
+   ],
+   "group": "GRP-care-app"
+  },
+  {
+   "id": "IMG-0382",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Caregiving onboarding sheet - orange fifteen screens",
+   "description": "Fifteen orange caregiving onboarding screens with the same flow as IMG-0383 ('Care feels lighter', 'Swap a bottle', 'Keep everyone in the loop', 'What should we call you?', add parents, care-plan reminders, choose plan $12.99/$99.99). The warm variant of the same care app.",
+   "roles": [
+    "onboarding",
+    "pricing"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "high-contrast"
+   ],
+   "tags": [
+    "sheet",
+    "plan"
+   ],
+   "group": "GRP-care-app"
+  },
+  {
+   "id": "IMG-0312",
+   "category": "mobile-app-ui",
+   "type": "component",
+   "title": "Avatar clusters - scattered faces at three densities",
+   "description": "Three white rounded panels showing circular avatar/photo chips scattered and then clustering into a dense blob left→right. A study of avatar-grouping density, likely a social graph visual.",
+   "roles": [
+    "state"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "avatar",
+    "social"
+   ]
+  },
+  {
+   "id": "IMG-0226",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Fitness - 'Vibecode' stats ring vs 'Revamp' map recap",
+   "description": "'Vibecode' vs 'Revamp': left a plain steps screen (7,842 ring, Calories 328, Distance 5.6, Active 1h 24m); right a richer recap ('You've walked 8.4km, burned 582 calories, collected 3 new artifacts') over a SF map with a 7,050 card. The revamp turns stats into a journey.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "photographic"
+   ],
+   "tags": [
+    "before-after",
+    "fitness",
+    "redesign",
+    "map",
+    "steps"
+   ]
+  },
+  {
+   "id": "IMG-0384",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "'Dose Logged' - green 3-day streak confirmation sheet",
+   "description": "A green confirmation: 'Dose Logged - Lisinopril 2:00 PM', a scalloped '3 DAYS' badge, 'You've stayed on track for 3 days. Keep going!', a Mon-Sun check row (Tue missed in red) and a green Go Home button. A medication adherence moment.",
+   "roles": [
+    "state"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "medication",
+    "streak",
+    "confirmation",
+    "green"
+   ]
+  },
+  {
+   "id": "IMG-0413",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "BearHug teddy shop - categories and best-seller bears",
+   "description": "A blue-headed 'BearHug' toy shop: 'Ready for your daily dose of cuddles?', search, category chips, a 'Hugs Made Happy' banner and Best Sellers (Pink-Fluffed Bunny $35, Pure Cuddle $35, Velvet Heart, Sky Snuggles) with a Home/Shop/Cart/Profile nav. A plush-toy store, not a pet shop.",
+   "roles": [
+    "home",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": []
+  }
+ ]
+}

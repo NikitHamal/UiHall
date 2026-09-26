@@ -3,8 +3,8 @@ import json
 import os
 import sys
 
-ROOT = r"E:\Downloads"
-OUT = r"E:\Stormy\_work\meta\inventory.json"
+ROOT = os.path.join(os.path.expanduser("~"), "Downloads")
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "_work", "meta", "inventory.json")
 
 IMG_EXT = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".bmp", ".avif", ".heic"}
 VID_EXT = {".mp4", ".webm", ".mov", ".mkv", ".avi"}

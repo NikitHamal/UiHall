@@ -89,7 +89,7 @@ async function main() {
   check('tools/list returns tools', names.length >= 8, `got ${names.length}`);
   for (const required of [
     'search_designs', 'get_asset', 'list_facets', 'find_patterns',
-    'design_brief', 'palette_for', 'compare_pair', 'asset_image', 'corpus_stats',
+    'design_brief', 'palette_for', 'compare_pair', 'asset_image', 'corpus_stats', 'list_groups',
   ]) {
     check(`tool present: ${required}`, names.includes(required));
   }
@@ -167,6 +167,20 @@ async function main() {
   const bad = await rpc('tools/call', { name: 'get_asset', arguments: { id: 'NOPE-9999' } });
   check('unknown id reports an error', !!bad.result?.isError, JSON.stringify(bad.result).slice(0, 200));
   check('unknown id suggests alternatives when possible', /Did you mean|No asset/.test(textOf(bad)));
+
+  /* --------------------------------------------------------- groups ---- */
+  console.log('\nlist_groups');
+  const gr = jsonOf(await rpc('tools/call', { name: 'list_groups', arguments: { limit: 10 } }));
+  check('returns groups', (gr.results ?? []).length > 0, JSON.stringify(gr).slice(0, 160));
+  check('every group has 2+ members with ids', (gr.results ?? []).every((g) => (g.members ?? []).length >= 2 && g.members.every((m) => m.id)));
+  check('verified groups are flagged', (gr.results ?? []).some((g) => g.verified === true));
+
+  const grq = jsonOf(await rpc('tools/call', { name: 'list_groups', arguments: { query: 'closecrm', limit: 5 } }));
+  check('query finds the CloseCRM group', (grq.results ?? []).some((g) => g.id === 'GRP-closecrm'), JSON.stringify(grq.results ?? []).slice(0, 160));
+
+  const grouped = jsonOf(await rpc('tools/call', { name: 'get_asset', arguments: { id: 'IMG-0518' } }));
+  check('get_asset surfaces the verified group', grouped.group?.id === 'GRP-closecrm', JSON.stringify(grouped.group ?? {}).slice(0, 160));
+  check('group lists the other screens', (grouped.group?.siblings ?? []).length === 3);
 
   /* -------------------------------------------------------- patterns --- */
   console.log('\nfind_patterns');

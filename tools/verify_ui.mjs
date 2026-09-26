@@ -452,10 +452,17 @@ try {
     await go('#/about');
     const about = document.body.innerText.length;
     await go('#/');
+    const homeLen = document.body.innerText.length;
+    const homeTools = document.querySelectorAll('.toolcard').length;
+    const homeGroups = document.querySelectorAll('.groupcard').length;
+    await go('#/gallery');
     await settle('.card');
     const expectedPal = DATA.all().filter(a => a.category === 'color-palette' && (DATA.corpus.printed_palettes || {})[a.id]).length;
-    return { pal, tallyTiles, bandText, pat, ba, mo, about, expectedPal };
+    return { pal, tallyTiles, bandText, pat, ba, mo, about, expectedPal, homeLen, homeTools, homeGroups };
   `);
+  check("home route renders the showcase", routeState.homeLen > 800, String(routeState.homeLen));
+  check("home lists every MCP tool card", routeState.homeTools >= 10, String(routeState.homeTools));
+  check("home shows verified app sets", routeState.homeGroups >= 4, String(routeState.homeGroups));
   check("palettes route renders every named card",
     routeState.pal > 0 && routeState.pal === routeState.expectedPal,
     `${routeState.pal} rendered vs ${routeState.expectedPal} in data`);

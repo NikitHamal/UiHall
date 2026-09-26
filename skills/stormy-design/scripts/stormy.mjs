@@ -346,6 +346,25 @@ const cmds = {
     if (a.clip) console.log(`clip   ${path.resolve(ROOT, a.clip).replace(/\\/g, '/')}`);
     console.log(`source ${a.origin?.path}`);
   },
+
+  groups() {
+    const q = (flags.query || '').toLowerCase();
+    const limit = parseInt(flags.limit, 10) || 20;
+    const rows = (corpus.groups || [])
+      .map((g) => {
+        const members = g.members.map((m) => corpus.assets.find((x) => x.id === m)).filter(Boolean);
+        const text = (g.title + ' ' + members.map((m) => m.title).join(' ')).toLowerCase();
+        return { g, members, hit: !q || text.includes(q) };
+      })
+      .filter((r) => r.hit && r.members.length >= 2)
+      .sort((a, b) => Number(!!b.g.verified) - Number(!!a.g.verified) || b.members.length - a.members.length);
+    console.log(C.b(`\n${rows.length} groups${q ? ` matching "${q}"` : ''}, showing ${Math.min(limit, rows.length)}\n`));
+    for (const { g, members } of rows.slice(0, limit)) {
+      console.log(`${C.b(g.id)} ${g.verified ? C.g('[verified]') : C.dim('[prefix]')} ${g.title}`);
+      for (const m of members) console.log(`      ${C.c(m.id)} ${C.dim(m.title)}`);
+      console.log();
+    }
+  },
 };
 
 /* -------------------------------------------------------------- main ----- */
@@ -359,6 +378,7 @@ if (!cmd || !cmds[cmd]) {
   brief <screen>              synthesised design brief (--platform --mood --dark --examples)
   palette <mood>              colour schemes (--surface --count)
   compare <topic>             before/after evidence
+  groups                      verified same-app sets (--query --limit)
   image <id>                  resolve file paths
 
 corpus: ${corpusFile}

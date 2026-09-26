@@ -16,7 +16,7 @@ import json
 import os
 import re
 
-ROOT = r"E:\Stormy"
+ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CORPUS = os.path.join(ROOT, "ui-hall", "data", "corpus.json")
 OUT = os.path.join(ROOT, "_work", "meta", "groups.json")
 

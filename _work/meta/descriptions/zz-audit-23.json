@@ -1,0 +1,269 @@
+{
+ "items": [
+  {
+   "id": "IMG-0187",
+   "category": "website",
+   "type": "marketing",
+   "title": "'elsewhere.' - 'The world can wait.' over a ringed peach planet",
+   "description": "A dark starfield hero for 'elsewhere.': 'A SMALL ESCAPE FROM EVERYTHING', 'The world can wait.' in serif/italic, a big peach marbled planet with a thin ring, '02 / EMBERLIGHT - You don't have to be anywhere else.' A calm escape landing.",
+   "roles": [
+    "home",
+    "hero"
+   ],
+   "style": [
+    "dark-mode",
+    "editorial",
+    "photographic"
+   ],
+   "tags": [
+    "serif"
+   ]
+  },
+  {
+   "id": "VID-0066",
+   "category": "website",
+   "type": "flow-walkthrough",
+   "title": "Promise Wall - 'Make a promise' modal with paper swatches",
+   "description": "A 'Make a promise' modal over a sticky-note wall: 'Write it as if your future self will read it here.', promise 'Learn new things using AI everyday', category chips (Health... Self-Growth...), paper swatches, tags #growth #discipline #future and 'Place it on the wall'. A commitment-board composer.",
+   "roles": [
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "notes",
+    "composer"
+   ]
+  },
+  {
+   "id": "VID-0293",
+   "category": "website",
+   "type": "flow-walkthrough",
+   "title": "Crema - 'Your coffee, fast.' hero with a phone on a pedestal",
+   "description": "A 'Crema' product page in a Morbility clone frame: 'Your coffee, fast.' serif headline, copy on ordering ahead, App Store / Google Play buttons, and a black phone staged on a cream pedestal with a plant. A coffee-app commerce hero.",
+   "roles": [
+    "home",
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "photographic"
+   ],
+   "tags": [
+    "commerce",
+    "cream"
+   ]
+  },
+  {
+   "id": "VID-0125",
+   "category": "website",
+   "type": "flow-walkthrough",
+   "title": "Realtime education - evolution lesson with jungle art and audio",
+   "description": "A 'Max Realtime Education' session: a jungle illustration with a chimpanzee on a branch beside evolution text ('Evolution is descent with modification...'), with a listening waveform bar and 'Connected' status. A live reading/teaching session, not a designer portfolio.",
+   "roles": [
+    "detail",
+    "media"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "rounded"
+   ],
+   "tags": [
+    "education",
+    "lesson",
+    "audio",
+    "illustration"
+   ]
+  },
+  {
+   "id": "VID-0122",
+   "category": "website",
+   "type": "flow-walkthrough",
+   "title": "MEOW AI AGENT - scanline cat landing with Get Started",
+   "description": "A monochrome landing: pixel-block 'MEOW AI AGENT' headline, 'Your personal AI assistant, helping you manage tasks and make smarter decisions.', Get Started / See How It Works, and a scanline-drawn cat. A playful agent landing.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "mono",
+    "playful"
+   ],
+   "tags": [
+    "ai",
+    "agent",
+    "landing"
+   ]
+  },
+  {
+   "id": "VID-0319",
+   "category": "website",
+   "type": "marketing",
+   "title": "Money app feature strip - six white cards with red glyphs",
+   "description": "Six feature cards: 'Track your money at a glance', 'Send money in seconds', 'Stay on top of spending', 'Never miss a due date', 'Get more for every payment', 'Your money, protected', each with a small red-accented diagram. A banking feature grid.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "banking",
+    "grid",
+    "cards"
+   ]
+  },
+  {
+   "id": "VID-0126",
+   "category": "website",
+   "type": "flow-walkthrough",
+   "title": "Bookcrumbs - One Minute Manager quote on a cream card",
+   "description": "A blue-framed cream page from 'Bookcrumbs': 'Making mistakes is not the problem. It's not learning from them that causes real problems.' attributed to The One Minute Manager (Ken Blanchard & Spencer Johnson), with 'Enjoying the notes? You could buy me a coffee'. A quote-note page.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "rounded"
+   ],
+   "tags": [
+    "quote",
+    "book",
+    "notes",
+    "cream",
+    "reading"
+   ]
+  },
+  {
+   "id": "VID-0328",
+   "category": "website",
+   "type": "flow-walkthrough",
+   "title": "Outgaze Studio - integrations page with connected tools",
+   "description": "A localhost 'Outgaze Studio' app: Integrations panel (Claude Connect, GitHub/Slack/Figma Connected, GPT, Vercel, ClickUp, Notion, Chromatic, Storybook, Maze) over a blue activity canvas ('Updated 23 tasks...', 'Reviewed 14 pull requests...'), sidebar of agents. Same product as VID-0227.",
+   "roles": [
+    "dashboard",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "studio",
+    "agents",
+    "canvas"
+   ],
+   "group": "GRP-outgaze-studio"
+  },
+  {
+   "id": "VID-0227",
+   "category": "website",
+   "type": "flow-walkthrough",
+   "title": "Outgaze Studio chat - Monday-numbers agent with task list",
+   "description": "A 'Gurgiew Studio' chat: 'Turn the Monday numbers post into an agent: Metabase to Slack, filed in Notion.' with a Read-tasks checklist and 'Thinking...' status; the sidebar lists the same agents as VID-0328. An agent conversation, not a text-heavy page.",
+   "roles": [
+    "chat"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "studio",
+    "agent",
+    "tasks"
+   ],
+   "group": "GRP-outgaze-studio"
+  },
+  {
+   "id": "VID-0315",
+   "category": "website",
+   "type": "flow-walkthrough",
+   "title": "Inori profile - CS student with m3e-canvas featured project",
+   "description": "A profile page: 'Inori @Inkiai - CS student / AI engineer' with anime avatar and navy Contact button, FEATURED card 'm3e-canvas - Sketch Material 3 Expressive screens in the browser, then turn them into prompts for AI coding tools.' (Trending #1). A developer profile.",
+   "roles": [
+    "profile"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "developer",
+    "featured",
+    "canvas"
+   ]
+  },
+  {
+   "id": "VID-0146",
+   "category": "website",
+   "type": "flow-walkthrough",
+   "title": "Harshit Beniwal - chat-style product designer portfolio",
+   "description": "A portfolio as a chat: 'sup?' / 'not much, just vibing and pretending my inbox doesn't exist', Harshit Beniwal (San Francisco), 'Hello, I am a # Product Designer who...', Work/Play/Notes/Others chips and a 'tell me' composer. A conversational portfolio, not Harold Bernard.",
+   "roles": [
+    "profile",
+    "chat"
+   ],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "portfolio",
+    "conversation",
+    "chips"
+   ]
+  },
+  {
+   "id": "VID-0117",
+   "category": "website",
+   "type": "flow-walkthrough",
+   "title": "rivet - red dot-matrix wordmark landing with install CTA",
+   "description": "A cream landing for 'rivet': giant red dot-matrix wordmark, Docs / Release notes and a red 'Install Rivet' pill top-right, footer columns (Releases, MCP, Contact / Twitter, LinkedIn, Instagram), © 2026 Rivet, Inc. A dev-tool landing.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "mono"
+   ],
+   "tags": [
+    "landing",
+    "wordmark"
+   ]
+  },
+  {
+   "id": "VID-0083",
+   "category": "website",
+   "type": "flow-walkthrough",
+   "title": "Cream canvas explainer - flowchart cards with a presenter bubble",
+   "description": "A cream app canvas showing connected flowchart cards and a 'What do you want to understand?' input, with a presenter webcam bubble bottom-right. A live demo/explainer frame.",
+   "roles": [
+    "media",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "canvas",
+    "explainer"
+   ]
+  }
+ ]
+}

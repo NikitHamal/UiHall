@@ -1,0 +1,731 @@
+{
+ "items": [
+  {
+   "id": "IMG-0182",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Real-estate listing card A/B - 'Which One Looks Better?'",
+   "description": "A 'Design Testing' card headlined 'Which One Looks Better?' with two variants of the same listing - 'Lakeshore Blvd West, $250 Night, 4.8 (20), 2464 Royal Ln Mesa New Jersey, 3 Bed 4 Bath 3210 Sqft'. Option A is a light card with the photo on top and details below; option B overlays the price and details on the photo with a white Reserve button. A clean listing-card A/B, not date pickers.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "card-based"
+   ],
+   "tags": [
+    "before-after",
+    "real-estate",
+    "listing",
+    "comparison",
+    "card"
+   ]
+  },
+  {
+   "id": "IMG-0282",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Dating/social revamp - 'Vibe code' to 'After revamp' with a drawn arrow",
+   "description": "Two dark social/dating screens labelled 'Vibe code' and 'AFTER REVAMP' joined by a hand-drawn arrow: both show a 'For you' shelf with Roselyn, 27 (Paris, France) and an avatar row, the revamp tightening the header and adding Follow/Message. A profile-feed revamp told with one arrow.",
+   "roles": [
+    "feed",
+    "profile"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "before-after",
+    "redesign",
+    "social",
+    "portrait",
+    "arrow"
+   ]
+  },
+  {
+   "id": "IMG-0297",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Loopsy referral - 'get rewards' to 'Earn Rewards' with a friend slider",
+   "description": "'Original' vs 'Revamp' of a referral screen: dark-green 'Share Loopsy, get rewards!' with reward tiers (1/3/12 month) and a 2/5/10-friends rail, versus 'Share Loopsy, Earn Rewards!' with a high-five illustration, month tiles and a green friend slider. The revamp swaps a dense list for one celebratory graphic.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "before-after",
+    "referral",
+    "reward",
+    "invite",
+    "green"
+   ]
+  },
+  {
+   "id": "IMG-0298",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Crochet community - dark post to light 'Community' revamp",
+   "description": "'Original' vs 'Revamp': a dark crochet social post (pinkskyy95 'She's FINALLY finished!' with a crochet-top photo and tags) versus a light 'Community' feed (search, Pinkskyy row, a photo wall of crochet swatches, Trending). The revamp moves from single-post to a browsable community.",
+   "roles": [
+    "feed"
+   ],
+   "style": [
+    "dark-mode",
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "before-after",
+    "social",
+    "redesign",
+    "photo"
+   ]
+  },
+  {
+   "id": "IMG-0295",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "'Your Circle' leaderboard in dark vs light",
+   "description": "The same 'Your Circle' friend leaderboard rendered dark (left) and light (right): Nathan 88 Sparks, #2 Linda 72, #3 Claire 69, Pierre 55, Doug 37, Rosa 31, Frank 28, each with an avatar and a quip. A theme comparison of a ranked roster, not a contact list.",
+   "roles": [
+    "list"
+   ],
+   "style": [
+    "dark-mode",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "before-after",
+    "leaderboard",
+    "theme",
+    "avatar",
+    "list-row"
+   ]
+  },
+  {
+   "id": "IMG-0279",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Tinker mini-game store - 'Vibe code' light vs 'Revamp' dark",
+   "description": "'Vibe code' vs 'Revamp' of a mini-game platform 'Tinker': left light 'Ideas to play. Bits to build.' with a game shelf (Popup Canyon, The Long Waddle, Doge Moon) and My Bits; right dark with a featured 'Bladebound' hero, Play button and a 'Got a game idea?' prompt-to-play banner. The revamp leads with one featured game.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "dark-mode",
+    "playful"
+   ],
+   "tags": [
+    "before-after",
+    "games",
+    "redesign",
+    "store",
+    "featured"
+   ],
+   "group": "GRP-tinker"
+  },
+  {
+   "id": "IMG-0281",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Lumen social feed revamp - denser header, bigger photos",
+   "description": "'Vibe code' vs 'Revamp' of a photo-social feed 'Lumen': left with a story-circle row and a yellow-house post (mara.codes, 1,284); right with larger overlapping story circles, a beach post (Jose Alvarez) and a floating action cluster. The revamp gives photos more room.",
+   "roles": [
+    "feed"
+   ],
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "before-after",
+    "social",
+    "redesign",
+    "photo",
+    "story"
+   ]
+  },
+  {
+   "id": "IMG-0280",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Miette food-memories onboarding - collage to bold wordmark",
+   "description": "'Vibe code' vs 'Revamp' of a restaurant-journal onboarding: left 'Welcome to MIETTE / Create your food memories.' with a scattered food-photo collage; right 'MIETTE / Keep track of the restaurants you loved and the ones you didn't.' with a bold orange wordmark over angled photos. Both close on an orange Continue.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "rounded"
+   ],
+   "tags": [
+    "before-after",
+    "food",
+    "redesign",
+    "wordmark"
+   ]
+  },
+  {
+   "id": "IMG-0283",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Health streak - 75% snapshot ring and a 4-day reward card",
+   "description": "A single wellness screen: 'Your Health Snapshot' with a 75% lavender ring behind a white '4 Day Streak!' trophy card ('You've added an entry the last 4 days'), a week strip of flame chips and a black 'Claim reward' button. A streak/reward moment, not a before-after pair.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "streak",
+    "reward",
+    "progress-ring",
+    "wellness",
+    "week-strip"
+   ]
+  },
+  {
+   "id": "IMG-0286",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Podd - recent activity feed with review cards",
+   "description": "A dark work-feed 'Podd / Recent activity' with filter chips (New 12, Tasks 6, Team 12): Jane Watson 'October Sales Performance' (Sales, Due Today 3:00 PM, +2) and Dave Staples 'Reviewed' with a reply, plus a 'Leave a reply...' composer. A single activity screen, not a comparison.",
+   "roles": [
+    "feed",
+    "list"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "work",
+    "activity",
+    "review",
+    "card"
+   ],
+   "group": "GRP-podd"
+  },
+  {
+   "id": "IMG-0285",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Podd - activity feed with a moodboard-saving design post",
+   "description": "The same dark 'Podd' feed: Jane Watson 'October Sales Performance' and Dwayne G 'Cool Design Inspiration' with a held-phone photo and an 'Add to moodboard' action, tagged Design, Due Today 3:00 PM. Shows the feed's save-to-moodboard pattern.",
+   "roles": [
+    "feed"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "work",
+    "activity",
+    "moodboard",
+    "photo",
+    "card"
+   ],
+   "group": "GRP-podd"
+  },
+  {
+   "id": "IMG-0284",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Boards home - Fashion, Gadgets and Skincare tile grid",
+   "description": "A dark 'Your boards' screen (StylCLI) with a Filter control and a 2x2 grid of image tiles - Fashion, Gadgets, Skincare and a dashed 'New' add tile - above a pill nav. A single moodboard-grid home, not a before-after.",
+   "roles": [
+    "home",
+    "list"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "moodboard",
+    "grid",
+    "tiles",
+    "category",
+    "gallery"
+   ]
+  },
+  {
+   "id": "IMG-0289",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Dosebank home - health score 203/300 with care plan",
+   "description": "The Dosebank home: 'Good afternoon, Isaac Ayo', 'Your health score 203 /300', tiles 7h 52m Good / 68bpm Stable, and 'Today's Care Plan' (Check Evening Glucose, Exercise Routine, Review Diet Plan) with Check in pills. Same product as IMG-0223; a single home screen, not a comparison.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "bold-typography"
+   ],
+   "tags": [
+    "health-score",
+    "care-plan",
+    "numeral",
+    "dark-ui"
+   ],
+   "group": "GRP-dosebank"
+  },
+  {
+   "id": "IMG-0288",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Dosebank dashboard - vertical vitals bars with a to-do",
+   "description": "The Dosebank dashboard: week strip over three tall bars (magenta 68bpm heart rate, blue 79% sleep, orange 90% steps 8,230) with a right legend and a 'To-do' card (Check Evening Glucose). Same product as IMG-0222; a single dashboard, not a comparison.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "rounded"
+   ],
+   "tags": [
+    "health-score",
+    "bar-chart",
+    "metrics",
+    "dark-ui"
+   ],
+   "group": "GRP-dosebank"
+  },
+  {
+   "id": "IMG-0296",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Ayo.eth - crypto address QR share screen",
+   "description": "A dark wallet share screen for 'Ayo.eth': the truncated address 0x46eM...e033d, a large white QR code with a centre mark, a row of supported-network icons and a white Share button. A single receive/share screen in the Dosebank/Ayo family.",
+   "roles": [
+    "detail"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "crypto",
+    "qr-code",
+    "wallet",
+    "address"
+   ],
+   "group": "GRP-dosebank"
+  },
+  {
+   "id": "IMG-0301",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Skin scanner - 'Vibecoded' dense vs 'Redesign' contained",
+   "description": "'Vibecoded' vs 'Redesign' of a skin-analysis app: left 'Hi Tobi, 87/100 Skin Score' with a portrait, five insight figures and a routine; right 'Goodmorning, Your overall skin score 87% Excellent' with colour-coded insight tiles (Hydrogen, Clear skin, Texture, Dark spot) and a history row. The redesign contains the same data more calmly.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "before-after",
+    "skincare",
+    "redesign",
+    "comparison"
+   ]
+  },
+  {
+   "id": "IMG-0277",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Language-test app - 'Vibecode' list vs 'Revamp' mascot tiles",
+   "description": "'Vibecode' vs 'Revamp' of an English-practice app: left 'Tests / Choose a skill' with Writing/Reading/Listening/Speaking cards and Recent tests; right 'Hello, Carol / Take a test' with four rabbit-mascot test tiles and blue continue cards. The revamp trades a dense list for friendly tiles.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "playful"
+   ],
+   "tags": [
+    "before-after",
+    "education",
+    "redesign",
+    "mascot"
+   ]
+  },
+  {
+   "id": "IMG-0303",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Health dashboard - 'Vibecoded' snapshot vs 'Redesign' tasks",
+   "description": "'Vibecoded' vs 'Redesign' of a health home: left 'Good morning Adaeze' with an appointment card and a four-figure Health snapshot; right 'Hello joy / Goodmorning' with a General checkup card and a two-tile Health logo (Heart Rate 70bpm, Blood pressure 120). The redesign pares the snapshot to two legible tiles.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "before-after",
+    "health",
+    "redesign",
+    "comparison",
+    "tiles"
+   ]
+  },
+  {
+   "id": "IMG-0302",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "AI project copilot - 'Vibecoded' dashboard vs 'Redesigned' focus",
+   "description": "'Vibecoded' vs 'Redesigned' of a work app: left 'Big ideas, on track.' with a Website Redesign 68% card and a Your-work list; right 'Your AI co-pilot keeps projects moving' with a Project-in-focus bar (68%), Today's task and an 'AI suggests' note. The redesign centres one project instead of a dashboard.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "before-after",
+    "productivity",
+    "ai",
+    "redesign",
+    "comparison"
+   ]
+  },
+  {
+   "id": "IMG-0287",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "memrbl book app - home vs 'Practice does' sheet",
+   "description": "A before-after of 'memrbl': left the home 'Which book is on your mind?' with search and recommended covers (Steve Jobs, Educated, The Subtle Art...); right the same screen dimmed behind a sheet 'Books Don't Change You, Practice Does.' with 'Continue With Apple'. The sheet reframes reading as practice.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "rounded"
+   ],
+   "tags": [
+    "before-after",
+    "books",
+    "reading",
+    "bottom-sheet",
+    "redesign"
+   ]
+  },
+  {
+   "id": "IMG-0292",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Social triptych - photo feed, map of pins, and a $850 chat",
+   "description": "Three screens of one social app: a photo feed (Lisa Haller uploaded 4 photos to Bali Trip; Joe Foster), a map view with photo pins around San Francisco, and a chat with Lisa Haller ending in an orange '$850' payment card ('You sent $850 to Lisa Haller'). A walkthrough from feed to map to payment.",
+   "roles": [
+    "feed",
+    "media",
+    "chat"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "social",
+    "map",
+    "photo",
+    "payment",
+    "multi-panel"
+   ]
+  },
+  {
+   "id": "IMG-0294",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Dating app triptych - feed, Roselyn profile, portrait chat",
+   "description": "Three dark screens of the dating app: a 'For you' feed (Roselyn, 27), a profile 'Roselyn Archer, 24 / Paris' with stats (1,130 / 6 / 27), interests and 'Send a message', and a full-bleed portrait with an overlaid message composer. Same product as IMG-0461.",
+   "roles": [
+    "feed",
+    "profile",
+    "chat"
+   ],
+   "style": [
+    "dark-mode",
+    "editorial",
+    "rounded"
+   ],
+   "tags": [
+    "dating",
+    "portrait",
+    "social",
+    "multi-panel"
+   ],
+   "group": "GRP-dating-roselyn"
+  },
+  {
+   "id": "IMG-0293",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Fitness triptych - kcal ring, profile metrics, 50-day streak",
+   "description": "Three dark fitness screens: 'Good morning, Ayo' with a 1,390/2000 kcal ring and Daily Log; a profile (Akwuabaaa, CertTrkAct Pro) with achievements and metrics (95kg, 75kg, 175cm); and a '50 Days Streak' purple-lightning card with Share your progress. An activity trio in the Ayo/Dosebank family.",
+   "roles": [
+    "dashboard",
+    "profile"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "data-dense"
+   ],
+   "tags": [
+    "fitness",
+    "streak",
+    "progress-ring",
+    "metrics",
+    "multi-panel"
+   ],
+   "group": "GRP-dosebank"
+  },
+  {
+   "id": "IMG-0290",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Doseback onboarding - 30% pricing, ready state, invite friends",
+   "description": "Three dark-green onboarding screens: '30% - Get 12 months for the price of 6' with feature list and Yearly $2.49/mo / Monthly $12.99 + Continue; 'Your Doseback is ready!' with Set up my first plan; and 'Invite Friends' with a gift illustration and Share. The pricing-to-invite arc of the Dosebank family.",
+   "roles": [
+    "onboarding",
+    "pricing"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "high-contrast"
+   ],
+   "tags": [
+    "referral",
+    "lime",
+    "multi-panel"
+   ],
+   "group": "GRP-dosebank"
+  },
+  {
+   "id": "IMG-0291",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Running-social triptych - route summary, profile, explore post",
+   "description": "Three dark screens of a running app: a Run Summary (15.23 km, 20km, 1h29min, 15742) over an aerial route map; a profile (Lisaodnni) with Follow and Consistency Pro badges; and an Explore post of a tennis photo with the same 15.23 km stats. A Strava-like share loop.",
+   "roles": [
+    "dashboard",
+    "profile",
+    "feed"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded",
+    "photographic"
+   ],
+   "tags": [
+    "running",
+    "route",
+    "fitness",
+    "social",
+    "multi-panel"
+   ]
+  },
+  {
+   "id": "IMG-0299",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Tinker triptych - featured game, Atlantis detail, gallery",
+   "description": "Three dark 'Tinker' screens: a featured 'Bladebound' home with a prompt-to-play banner; an 'Atlantis' detail with Remix/Play over underwater art; and a 'Bladebound' gallery/reviews page. A walkthrough of the game store, same product as IMG-0279.",
+   "roles": [
+    "home",
+    "detail"
+   ],
+   "style": [
+    "dark-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "games",
+    "store",
+    "gallery",
+    "multi-panel"
+   ],
+   "group": "GRP-tinker"
+  },
+  {
+   "id": "IMG-0278",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "LIFE/CTRL - mono routine calendar concept in three screens",
+   "description": "A cream 'LIFE/CTRL ... COMMING SOON' concept: a month calendar (2026.09) with a repeat control; a DAY A / DAY B / OFF block schedule; and a DAY A screen of circular habit icons with timed routines. Mono-typography and hairline rules give it a printed-timetable feel.",
+   "roles": [
+    "home",
+    "list"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "flat"
+   ],
+   "tags": [
+    "calendar",
+    "routine",
+    "concept",
+    "multi-panel"
+   ]
+  },
+  {
+   "id": "VID-0077",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Dev incident logs - light green vs dark theme cards",
+   "description": "Two code-log cards side by side: a light-green 'Hooks: webhook retry storm' with Delivered/Result/Log sections, and a dark 'Auth: revoke sessions on reset'. A theme/styling comparison of developer incident cards rather than a reading view.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "before-after",
+    "developer",
+    "theme-comparison",
+    "code"
+   ]
+  },
+  {
+   "id": "VID-0264",
+   "category": "before-after",
+   "type": "pattern",
+   "title": "Context menu - 'good' vs 'better' destructive-action affordance",
+   "description": "'good' vs 'better': a context menu (Crop image, Move folder, Copy to clipboard, Delete image in red) with a round X dismiss, compared to a minimal + button. The clip argues for clearer destructive-action styling and dismissal.",
+   "roles": [
+    "navigation"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "before-after",
+    "menu",
+    "usability",
+    "context-menu",
+    "accessibility"
+   ]
+  },
+  {
+   "id": "VID-0207",
+   "category": "before-after",
+   "type": "marketing",
+   "title": "Astrology onboarding - 'No skills' flat vs 'MCP + Skills' polished",
+   "description": "'No skills' vs 'MCP + Skills': a flat light birth-data form ('When were you born?' with date/time fields) versus a dark polished 'Your starting point.' with birth date/time/place rows and 'Reveal my chart'. The same astrology brief executed twice.",
+   "roles": [
+    "onboarding",
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "dark-mode"
+   ],
+   "tags": [
+    "before-after",
+    "astrology",
+    "ai-comparison"
+   ]
+  },
+  {
+   "id": "VID-0278",
+   "category": "before-after",
+   "type": "marketing",
+   "title": "Sticker onboarding - Fable 5.1 vs GPT-6 Astra",
+   "description": "'Fable 5.1' vs 'GPT-6 Astra': two sticker-collage onboarding screens - a sky-blue 'Create and discover ... to plan your next trip' and a black 'Create and launch ... apps' - each with a + hub and 'Let's go'. A same-brief model-output comparison.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "dark-mode",
+    "playful"
+   ],
+   "tags": [
+    "before-after",
+    "ai-comparison",
+    "sticker",
+    "collage"
+   ]
+  },
+  {
+   "id": "VID-0240",
+   "category": "before-after",
+   "type": "marketing",
+   "title": "Budget app - crude 'Before' form vs polished Goodbudget",
+   "description": "'Before ($10k mrr)' vs 'After (MCP + Skills)': a crude green 'Eating Out' budget form with a keypad versus a polished 'Goodbudget' screen (Groceries 438.76 USD, transactions, Add/Move/Spend). The delta is the pitch.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "before-after",
+    "budget",
+    "fintech",
+    "ai-comparison",
+    "redesign"
+   ]
+  },
+  {
+   "id": "VID-0277",
+   "category": "before-after",
+   "type": "marketing",
+   "title": "Goodbudget three generations - Original, Opus 5, Opus 5.5",
+   "description": "'Original' vs 'Opus 5' vs 'Opus 5.5': the crude green budget form and two increasingly refined Goodbudget screens (438.76 USD, transaction list, green action bar). Three generations of one screen, showing iterative model quality.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "before-after",
+    "budget",
+    "model-versions",
+    "fintech",
+    "side-by-side"
+   ]
+  }
+ ]
+}

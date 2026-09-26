@@ -229,7 +229,7 @@ const App = (() => {
 
   /* ------------------------------------------------------------- routes -- */
 
-  const ROUTES = ['gallery', 'palettes', 'typography', 'patterns', 'before-after', 'motion', 'about'];
+  const ROUTES = ['home', 'gallery', 'palettes', 'typography', 'patterns', 'before-after', 'motion', 'about'];
 
   function go(route) {
     Filters.setRoute(route);
@@ -278,7 +278,8 @@ const App = (() => {
       'before-after': 'Before / after',
       motion: 'Motion',
       about: 'About',
-    }[route] || 'Gallery';
+      home: 'Stormy',
+    }[route] || 'Stormy';
 
     const sub = document.getElementById('pageSub');
     sub.textContent = {
@@ -289,9 +290,11 @@ const App = (() => {
       'before-after': 'Paired evidence. The same brief executed twice, where the delta is the lesson.',
       motion: 'Clips that show a transition rather than a still screen. Static recordings are not included.',
       about: 'What this is, where the material came from, and how to read it.',
+      home: 'One corpus, three surfaces: a gallery, an MCP server and a skill.',
     }[route] || '';
 
     const isGallery = route === 'gallery';
+    document.body.classList.toggle('is-home', route === 'home');
 
     // The toolbar (sort, view, card size) and shuffle are gallery controls.
     // On the reference tabs they do nothing, so they are hidden rather than
@@ -312,6 +315,10 @@ const App = (() => {
     }
     if (route === 'patterns') return renderPatterns();
     if (route === 'about') return renderAbout();
+    if (route === 'home') {
+      document.getElementById('emptyState').hidden = true;
+      return Home.render(document.getElementById('results'));
+    }
 
     renderResults();
   }
@@ -628,7 +635,7 @@ const App = (() => {
     for (const a of document.querySelectorAll('[data-link]')) {
       a.addEventListener('click', (ev) => {
         ev.preventDefault();
-        const route = a.getAttribute('href').replace(/^#\/?/, '') || 'gallery';
+        const route = a.getAttribute('href').replace(/^#\/?/, '') || 'home';
         Filters.setRoute(route);
         Filters.writeUrl();
         App.render();

@@ -1,0 +1,259 @@
+{
+ "items": [
+  {
+   "id": "VID-0071",
+   "category": "design-system",
+   "type": "flow-walkthrough",
+   "title": "Brand direction picker - five pastel file cards A-E",
+   "description": "A dark modal titled 'Brand direction - 5 files' showing five pastel document cards (mint, apricot, sky, lilac, butter) lettered A to E, hovered by a cursor. A brand-direction file picker, not a folder dashboard.",
+   "roles": [
+    "navigation"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based"
+   ],
+   "tags": [
+    "branding",
+    "picker",
+    "cards",
+    "pastel"
+   ]
+  },
+  {
+   "id": "VID-0296",
+   "category": "dashboard",
+   "type": "flow-walkthrough",
+   "title": "Knowledge Index - entity hub graph over a company tree",
+   "description": "A dark 'Knowledge Index' explorer: a dotted sphere ('Model 4 of 12', 92% confidence ring), a stack of entity cards (Documents 14, People 20, Companies 24 highlighted, Metrics 20, Alerts 14) and a right-hand tree of company names (Northbridge Holdings, Atlas Freight, Grande Peak Ventures, Westfield Grain Exchange...) linked by fine edges. A knowledge-graph dashboard.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "network-graph",
+    "analytics"
+   ]
+  },
+  {
+   "id": "VID-0100",
+   "category": "dashboard",
+   "type": "flow-walkthrough",
+   "title": "Generative UI - 'How do quad trees work?' interactive explainer",
+   "description": "A 'generative_ui' chat result: 'How do quad trees work? - Worked for 30s', a generated dark card 'Quadtree Spatial Partitioning' with a scatter grid subdivided by pink/yellow quadtree lines, Node Capacity slider (7), stats (Points 116, Nodes 73, Max Depth 5), presets (Clusters, Spiral, +20 Rand, Clear) and an explainer paragraph. A generated interactive artifact.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "generative-art",
+    "ai",
+    "explainer"
+   ]
+  },
+  {
+   "id": "VID-0101",
+   "category": "dashboard",
+   "type": "flow-walkthrough",
+   "title": "B* vs Dijkstra visualizer - comparison table and grid demos",
+   "description": "A dark 'B* vs Dijkstra Visualizer' page: a comparison table (heuristic, search paradigm, termination, typical domain: OSPF/GPS, game navigation, decision trees), two grid visualizers (cyan visited nodes; yellow B* frontier) with VISITED NODES 14 / QUEUE 14 / PATH COST stats, and a 'Launch Full Studio' artifact blurb. An algorithm-comparison tool.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "comparison",
+    "grid"
+   ]
+  },
+  {
+   "id": "VID-0314",
+   "category": "dashboard",
+   "type": "screen",
+   "title": "Dark commerce overview - pixel sales bars and transactions",
+   "description": "A dark 'Overview' commerce dashboard in a browser: left nav (Dashboard, Products, Transactions, Reports & Analytics, Messages, Team Performance, Campaigns...), SALES TREND $4,860 as orange pixel-block bars with a Thu 12:00 tooltip, REVENUE BREAKDOWN $20,320, and a RECENT TRANSACTIONS table (Ryan Korsgaard/Ergo Office Chair Completed, Madelyn Lubin, Adrian Bergove Pending, Phillip Manga Refunded).",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "analytics",
+    "bar-chart",
+    "table",
+    "transactions",
+    "orange"
+   ]
+  },
+  {
+   "id": "VID-0283",
+   "category": "dashboard",
+   "type": "flow-walkthrough",
+   "title": "Dark video editor - layers panel with clips and overlays",
+   "description": "A dark video editor: faint logo in the preview, top-right Share and Export buttons, right 'Layers 0:20' panel listing Video Clips (4 clips): Video 00:08, Text overlay 00:04, Video 00:02, Transition 00:05, Video 00:06, Blur overlay 00:02. A timeline/layers editing view.",
+   "roles": [
+    "dashboard",
+    "editor"
+   ],
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "video-editing",
+    "layers",
+    "timeline"
+   ]
+  },
+  {
+   "id": "VID-0079",
+   "category": "dashboard",
+   "type": "flow-walkthrough",
+   "title": "Week calendar app - August 2026 with Product Launch event",
+   "description": "A macOS-style calendar app (app.so) in week view, Aug 2026 (Sun 23 - Sat 29, Thu 27 circled): a grey 'Sync with friends' block being dragged and a cyan 'Product Launch' event card; small dock controls bottom-centre. A clean weekly planner.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "calendar",
+    "week-strip",
+    "schedule",
+    "event",
+    "planner"
+   ]
+  },
+  {
+   "id": "VID-0311",
+   "category": "dashboard",
+   "type": "flow-walkthrough",
+   "title": "Fleet Insights glass card over a pixel-art landscape",
+   "description": "A frosted 'Fleet Insights' card floating on a pixel-art mountain meadow: 'Avg fuel efficiency 7975 km/l', stacked Jan-Apr bars (lilac/cream/blue) with a hovered April column and a 'Fuel Used 320 L' tooltip. A playful data widget over scenery.",
+   "roles": [
+    "dashboard",
+    "media"
+   ],
+   "style": [
+    "glassmorphism",
+    "playful"
+   ],
+   "tags": [
+    "analytics",
+    "bar-chart",
+    "pixel-art",
+    "tooltips"
+   ]
+  },
+  {
+   "id": "VID-0316",
+   "category": "dashboard",
+   "type": "flow-walkthrough",
+   "title": "Personal cash forecast - '$102,400 by Oct 31' with key moments",
+   "description": "A light personal-finance dashboard (Daniel Carter, 'Ask Oriel' button): May-Nov bars with forecast, 'Cash should reach $102,400 by Oct 31' line chart with tooltip (range $99.8k to $104.9k), key moments (Sapphire payment -$4,240.62, Investing and home goal -$8,450.00, Paycheck and RSU vest +$17,520.00) and 'Where income went' (Saved $12,180, Spending $8,420, Taxes $5,180).",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "finance",
+    "chart",
+    "budget"
+   ]
+  },
+  {
+   "id": "VID-0295",
+   "category": "dashboard",
+   "type": "flow-walkthrough",
+   "title": "Kravio support dashboard - tickets, SLA and updates feed",
+   "description": "A 'Kravio - Support Dashboard' in a browser: 'Hello, Achmad Hakim', KPIs (3,484 Current Tickets, 486 Daily Avg Resolution, 92% SLA Compliance), Ticket Volume Trend 4,790 with a dark Tue 584 bar, an SLA Monitoring table (#2219 Payment failed on renewal, High, John Doe, In Review) and a Latest Updates feed. A support-ops view.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "analytics",
+    "kpi",
+    "bar-chart",
+    "table"
+   ]
+  },
+  {
+   "id": "VID-0322",
+   "category": "dashboard",
+   "type": "flow-walkthrough",
+   "title": "Aro docs - cohort retention heatmap block on meadow wallpaper",
+   "description": "An 'Aro' design-docs page over a grass wallpaper: left block list (Journey flow, Empty states, Audit log... 'Cohort retention' active... Revenue globe, Customer galaxy), main 'Cohort retention' card with an orange heatmap triangle (Month 1 94.1%, Month 6 79.3%, 915 new workspaces) and a Heatmap/Curves toggle. A docs pattern page.",
+   "roles": [
+    "list"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "documentation",
+    "analytics"
+   ]
+  },
+  {
+   "id": "VID-0326",
+   "category": "dashboard",
+   "type": "flow-walkthrough",
+   "title": "Finera portfolio - green P&L KPIs, performance and allocation",
+   "description": "A green 'Finera' finance dashboard: KPIs ($72.59K Invested, $108.89K Total Holding, +$2.04K Day's P&L, +$36.3K Overall P&L), Portfolio Performance line ($60.7K invested / $89K current, 1D-All ranges), Allocation Distribution donut ($31.8K: Alt Coins, Blue Chip, DeFi, Meme, Other), Coin Distribution and a Watchlist (Arbitrum $1.24, Optimism). Left nav spans Finance, Cash Flow, Equities, Crypto, EMIs.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "finance",
+    "portfolio",
+    "kpi",
+    "chart",
+    "crypto"
+   ]
+  },
+  {
+   "id": "VID-0149",
+   "category": "dashboard",
+   "type": "flow-walkthrough",
+   "title": "Pregnancy nutrition app - week 24, nutrient arcs and iron logging",
+   "description": "Six screens of a sage-toned pregnancy nutrition app ('nurture+'): week-24 card with a 3D fetus and 'Your daily mix' supplements; Nutrition rainbow arcs (6/7) with Iron/Folate/Calcium/Choline/Iodine percentages; 'Add to your day' ingredient sheet (soft-boiled egg, plain yogurt); 'A closer look at iron' ring (44%, 12 mg logged, 15 mg to target); iron week bars (31 Aug-6 Sep) and a September 2026 month calendar ('6 of 8 days with known amounts').",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "soft",
+    "card-based"
+   ],
+   "tags": [
+    "health",
+    "wellness",
+    "tracker",
+    "calendar",
+    "progress-ring",
+    "meal"
+   ]
+  }
+ ]
+}

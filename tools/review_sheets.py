@@ -21,9 +21,9 @@ import os
 
 from PIL import Image, ImageDraw, ImageFont
 
-CORPUS = r"E:\Stormy\ui-hall\data\corpus.json"
-IMGDIR = r"E:\Stormy\ui-hall\assets\img"
-OUT = r"E:\Stormy\_work\review"
+CORPUS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ui-hall", "data", "corpus.json")
+IMGDIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ui-hall", "assets", "img")
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "_work", "review")
 
 BG = (16, 17, 20)
 FG = (238, 238, 242)

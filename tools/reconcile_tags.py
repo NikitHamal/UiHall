@@ -19,9 +19,9 @@ import re
 import sys
 from collections import Counter
 
-META = r"E:\Stormy\_work\meta"
+META = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "_work", "meta")
 DESC = os.path.join(META, "descriptions")
-TAXONOMY = r"E:\Stormy\stormy-mcp\taxonomy.json"
+TAXONOMY = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "stormy-mcp", "taxonomy.json")
 
 # Preferred form when two variants exist. Keys are the form to discard.
 NORMALISE = {

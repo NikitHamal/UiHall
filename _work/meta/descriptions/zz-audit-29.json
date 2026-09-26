@@ -1,0 +1,468 @@
+{
+ "items": [
+  {
+   "id": "VID-0064",
+   "category": "motion-demo",
+   "type": "flow-walkthrough",
+   "title": "Dark 3x3 board of Bezier and circle motion primitives",
+   "description": "A dark 3x3 grid of purple vector studies: bezier curves with handles, right-angle paths, circles with dashed pivots, a ring of circles, overlapping circles, a square with a dashed arc and a fine grid - each cell hovered by a cursor. A motion-primitives board, not orbiting arcs.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "animation",
+    "motion",
+    "abstract",
+    "grid",
+    "line-art"
+   ]
+  },
+  {
+   "id": "VID-0267",
+   "category": "motion-demo",
+   "type": "flow-walkthrough",
+   "title": "Glassy 3D 'New' pill button in a cosmic scene",
+   "description": "A glossy glass pill button reading '+ New' with a chevron, rendered 3D with reflections, floating in a dark space scene with purple orbs. A tactile button motion study.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "button",
+    "3d",
+    "glass",
+    "glow",
+    "micro-interaction"
+   ]
+  },
+  {
+   "id": "VID-0325",
+   "category": "motion-demo",
+   "type": "flow-walkthrough",
+   "title": "Retro glyph editor drawing a black '6' on a dot grid",
+   "description": "A pixel-styled glyph tool over an orange/purple brush backdrop: left COMPOSITION/DESIGN panel (brush mode, stroke order, rings, rotation, column/ring size 18), a dot-grid canvas with a thick black '6' glyph, right LAYERS panel (Shapes 4, 'Glyph 1'), footer 'GLYPHS 5 - 100%'. A character-design editor, not a font tool named LAYESS.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "light-mode",
+    "retro"
+   ],
+   "tags": [
+    "glyph",
+    "pixel-art",
+    "typography",
+    "grid"
+   ]
+  },
+  {
+   "id": "VID-0235",
+   "category": "motion-demo",
+   "type": "flow-walkthrough",
+   "title": "Event app on iPhone - 'What's your next event?'",
+   "description": "An iPhone screen: 'What's your next event? - A collection of little moments...' (Today, 26/08/2025), four tilted photo cards, 20 comments / 14 shares / Share Invite, and a 'Rooftop Jazz Night - Sunset sets, cold drinks and good company' card. A social event feed, not rainbow streaks.",
+   "roles": [
+    "feed"
+   ],
+   "style": [
+    "light-mode",
+    "soft-shadow"
+   ],
+   "tags": [
+    "event",
+    "photo",
+    "social",
+    "phone-mockup",
+    "cards"
+   ]
+  },
+  {
+   "id": "VID-0150",
+   "category": "motion-demo",
+   "type": "flow-walkthrough",
+   "title": "Cursor demo - without smoothing vs spring smoothing",
+   "description": "A light demo page: 'Your cursor' with a Show overlays button, then two strips - 'Without smoothing' and 'With spring smoothing' - each with a purple cursor arrow chasing a 'Des...' chip. A cursor-interpolation comparison.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "cursor",
+    "micro-interaction",
+    "comparison",
+    "motion"
+   ]
+  },
+  {
+   "id": "VID-0081",
+   "category": "motion-demo",
+   "type": "flow-walkthrough",
+   "title": "Shared-pivot demo with K keycaps on a dot field",
+   "description": "A dotted white canvas with four brown 'K' keycap badges; one is ringed in magenta with a dashed arc, yellow dots and a 'shared pivot' label under a cursor. A multi-cursor pivot demo.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "cursor",
+    "collaboration",
+    "keyboard",
+    "motion"
+   ]
+  },
+  {
+   "id": "VID-0113",
+   "category": "motion-demo",
+   "type": "flow-walkthrough",
+   "title": "Text editor where bold is a dial and italics lean",
+   "description": "A cream editor card whose copy performs its features: 'A text editor where bold is a dial, italics lean both ways, and an underline has heft', with a toolbar (B, italic, an orange dial control, alignment, A). A playful formatting concept.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "light-mode",
+    "playful"
+   ],
+   "tags": [
+    "text-editing",
+    "typography"
+   ]
+  },
+  {
+   "id": "VID-0109",
+   "category": "motion-demo",
+   "type": "flow-walkthrough",
+   "title": "Slate tablet mockup with a pale blue dashboard",
+   "description": "A light slate/tablet device mockup on cream: a pale blue app skeleton with search bar, profile cards, an icon grid and a floating action button. A device-mockup reveal, not a book morph.",
+   "roles": [
+    "media",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "soft"
+   ],
+   "tags": [
+    "device-frame",
+    "skeleton"
+   ]
+  },
+  {
+   "id": "VID-0292",
+   "category": "motion-demo",
+   "type": "flow-walkthrough",
+   "title": "Four glowing orbs - 'Oohhh, who's it gonna be?'",
+   "description": "A dark iPhone with four glowing orbs (orange, periwinkle, magenta, cyan) and the caption 'Oohhh, who's it gonna be?'. A suspenseful orb-picker moment.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "orbs",
+    "glow",
+    "animation",
+    "colourful"
+   ]
+  },
+  {
+   "id": "VID-0061",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "30:00 timer with a dalmatian in a held phone",
+   "description": "A blue illustrated hand holding a phone showing a huge '30:00' timer over a spotted dalmatian illustration, pause chip top-left. A friendly timer app promo.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "playful",
+    "high-contrast"
+   ],
+   "tags": [
+    "timer",
+    "illustration",
+    "pet",
+    "promo",
+    "phone-mockup"
+   ]
+  },
+  {
+   "id": "VID-0308",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Cuesa onboarding - 'Gentle structure for your day'",
+   "description": "An iPhone welcome screen: 'Welcome to Cuesa - Gentle structure for your day', a Mood & Energy curve card with a smiling icon, a black Get Started button and Terms/Privacy footnote. Not a delivery ad.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "soft"
+   ],
+   "tags": [
+    "welcome",
+    "wellness",
+    "phone-mockup"
+   ]
+  },
+  {
+   "id": "VID-0327",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Brink podcast letter under a glowing bulb",
+   "description": "A warm dark iPhone screen: a lit filament bulb above a letter - 'Hello, I built Brink because I wanted podcast listening to feel delightful... It is an independent app... Thank you for listening with Brink.' signed 'Gowtham'. A founder's note, not a pendant-lamp message.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "dark-mode",
+    "editorial"
+   ],
+   "tags": [
+    "podcast",
+    "story"
+   ]
+  },
+  {
+   "id": "VID-0080",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Avatar ring onboarding - 200k saves bookmarked",
+   "description": "A dark phone with a blurred green backdrop: a ring of small avatar faces around '200k Saves bookmarked', 'Made for...' copy and a Continue button. A social-proof onboarding step, not an icon grid.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "avatar",
+    "social",
+    "phone-mockup"
+   ]
+  },
+  {
+   "id": "VID-0323",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Mymind - 'Good find! It's in your mind.'",
+   "description": "An orange-to-blue gradient phone (mymind.com): 'Good find! It's in your mind.' with a '+ Add Tags/Notes' pill over a frosted sheet. A saving-confirmation promo, not a lock-screen card app called Chapel.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "gradient-heavy"
+   ],
+   "tags": [
+    "gradient",
+    "notes",
+    "promo"
+   ]
+  },
+  {
+   "id": "VID-0321",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Focus app onboarding - 'What gets in your way most?' 3/4",
+   "description": "A dark onboarding screen, step 3/4: 'What gets in your way most? Be honest. This helps us remove the friction', with a fading option 'I lose focus'. A focus-app question step, not 'Hexlethy'.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "question",
+    "dark-ui"
+   ]
+  },
+  {
+   "id": "VID-0332",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Photo mosaic forming a shape on a brick-wall phone",
+   "description": "A phone whose black brick-wall screen fills with a photo mosaic that builds up a silhouette shape, over a sky backdrop. A memories-mosaic promo, not a corporate claims platform.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "high-contrast"
+   ],
+   "tags": [
+    "photo-grid",
+    "collage",
+    "promo"
+   ]
+  },
+  {
+   "id": "VID-0330",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "'Draw right on it.' - wallpaper annotation editor",
+   "description": "A maroon promo: 'Draw right on it.' above a phone editing a pink wallpaper ('11:21, Slow is smooth') with a drawing toolbar (brush sizes, colour dots) and Save. A wallpaper-annotation editor, not a mosaic wallpaper promo.",
+   "roles": [
+    "editor"
+   ],
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "drawing",
+    "annotation",
+    "home-screen"
+   ]
+  },
+  {
+   "id": "VID-0213",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Six-card app promo montage",
+   "description": "A 2x3 montage of phone promo cards: green MRR chart ('Grow consistent MRR with the apps you ship'), gratitude note ('Practicing daily gratitude... Swipe False/True'), purple globe ('Stay updated at any time'), red shield ('Achievement and streaks badges'), 'Profound' recruiting ('Discover top talent'), and a skin-myth card ('They make your skin and clothing look overly plastic-y').",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "card-based"
+   ],
+   "tags": [
+    "collage",
+    "app-store",
+    "promo",
+    "multi-panel"
+   ]
+  },
+  {
+   "id": "VID-0200",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Six-app promo montage - quests, coffee, tip calc, jobs",
+   "description": "A 2x3 montage: habit quests ('3 Days', Level 4, Morning Skincare Routine), a coffee-pour lock screen with Done pill, a dark tip calculator (+222 keypad), 'Meet Bailes, where live protection meets social layer', a white route-map flow, and 'Swipe right on your next job.' (R app, Software Engineer card).",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "card-based"
+   ],
+   "tags": [
+    "collage",
+    "app-store",
+    "promo",
+    "multi-panel"
+   ]
+  },
+  {
+   "id": "VID-0236",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Pillow sleep app onboarding screens",
+   "description": "App-store style screens of a blue sleep app named 'Pillow': 'Why it works' (score 89 dial), 'Now let's talk about your bad sleeping habits' with a sleepy pillow character, and a name-entry screen with keyboard. A sleep-app onboarding set.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "playful"
+   ],
+   "tags": [
+    "sleep",
+    "app-store",
+    "promo",
+    "character"
+   ]
+  },
+  {
+   "id": "VID-0138",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Keiki learning games - store page and purple phone preview",
+   "description": "An 'AI onboarding flow' layout: left app-store card 'Keiki Learning games for Kids' (4.6, 10.5K reviews, $1M revenue, 100K installs, 31 screens) with screenshots; right a purple phone preview (appkitties.com, owl mascot, 'Is Dent' chip) above a video scrubber 00:48/02:59.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "app-store",
+    "kids",
+    "education",
+    "promo",
+    "video"
+   ]
+  },
+  {
+   "id": "VID-0148",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "AI trip planner - Paris-London business trip plan",
+   "description": "A phone over a painted landscape: an AI chat asking about AI Engineer and Lego Workshop venue/schedule, then 'Build this plan: Paris-London business trip plan' and a task card (Build itinerary Done, Check trip details Working, Prepare trip preview Next). An AI itinerary builder, not shoe shopping.",
+   "roles": [
+    "chat"
+   ],
+   "style": [
+    "light-mode",
+    "editorial"
+   ],
+   "tags": [
+    "ai",
+    "travel",
+    "itinerary",
+    "planner"
+   ]
+  },
+  {
+   "id": "VID-0333",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Portfolio exposure dashboard - Rs 286.64 Cr with legal action centre",
+   "description": "Tilted light dashboard pages: 'Portfolio Exposure Rs 286.64 Cr' with project rows (Ramanagara Flyover, TIDCO MFF, ISRO AJT, NH44 Package 3) and red progress bars, plus a 'Legal Action Centre' (Eviction Notice, EGT Notice, Stay Order; 218 tracked) and stats 4/142/89%. An infrastructure-finance dashboard, not a music app.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode"
+   ],
+   "tags": [
+    "finance",
+    "portfolio",
+    "table",
+    "kpi",
+    "analytics"
+   ]
+  },
+  {
+   "id": "VID-0282",
+   "category": "promo-reel",
+   "type": "flow-walkthrough",
+   "title": "Four-panel journal app promo - moments, doodles, sharing, widgets",
+   "description": "Four hand-lettered promo panels with phones: 'Collect Little Moments' (photo card), 'Fill Your Calendar with Doods' (sticker grid), 'Make Memories Worth Sharing' (share card over a photo), 'Keep Your Desk Close' (green home-screen widgets). A journaling-app feature strip.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "light-mode",
+    "playful"
+   ],
+   "tags": [
+    "promo",
+    "journal",
+    "sticker",
+    "widgets",
+    "multi-panel"
+   ]
+  }
+ ]
+}

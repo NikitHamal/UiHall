@@ -1,0 +1,166 @@
+{
+ "items": [
+  {
+   "id": "IMG-0539",
+   "category": "website",
+   "type": "screen",
+   "title": "Content automation - 'Content created' trigger with approval node",
+   "description": "A workflow canvas: 'Content created - Start a run when a new content asset is created' with Configuration/Documentation/History tabs and Project/Content type fields, beside an Approval node (Reviewer Razia, Due 12/11/2026, Approval/Changes requested/Rejected) under Run all / Activate. A content-ops automation builder.",
+   "roles": [
+    "form",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "canvas"
+   ]
+  },
+  {
+   "id": "IMG-0483",
+   "category": "website",
+   "type": "screen",
+   "title": "recruitpilot - DACH Tech-CTOs sequence with German templates",
+   "description": "A German CRM 'recruitpilot': Kampagnen ▸ DACH Tech-CTOs with Analytics/Leads/Sequenz/Einstellungen tabs, 'Vernetzungsanfrage – Schritt 1' editor ('Hi Vorname, ich bin Dein Name von adfects...') and 'LinkedIn-Nachricht – Schritt 2' with templates (Danke fürs Vernetzen). Sidebar: Dashboard/Piloten/Leads/Kampagnen/Nachrichten/Kunden. Same product as IMG-0484.",
+   "roles": [
+    "dashboard",
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "table"
+   ],
+   "tags": [
+    "crm",
+    "sequence"
+   ],
+   "group": "GRP-recruitpilot"
+  },
+  {
+   "id": "IMG-0501",
+   "category": "website",
+   "type": "screen",
+   "title": "Hospital HR - 3,200 employees with satisfaction gauge",
+   "description": "An 'Employee' admin: Total Employee 3,200 (Doctors and Specialists 800, Nurses 2000, Pharmacy 100), Employee Satisfaction 75-point gauge, Attendance Overview (On Time/On Late/On Leave) and an Employee List table (Dr. John Smith Cardiologist, Dr. Jane Doe Pediatrician...). A hospital workforce board, not a CRM.",
+   "roles": [
+    "dashboard",
+    "table"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "data-dense"
+   ],
+   "tags": [
+    "gauge",
+    "table"
+   ]
+  },
+  {
+   "id": "IMG-0183",
+   "category": "website",
+   "type": "screen",
+   "title": "wandor - 'Let's make this trip yours' with a sticker skyline",
+   "description": "A travel landing for 'wandor': an illustrated pagoda, 'Let's make this trip yours', a prompt card ('I'm planning a 7-day trip to Japan in October...') with Plan my trip, and a sticker collage of world landmarks (Sagrada Familia, Opera House, Eiffel, Big Ben, Colosseum) above Explore/Company/Legal. A trip-planner hero.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "playful",
+    "editorial"
+   ],
+   "tags": [
+    "travel",
+    "landing",
+    "planner"
+   ]
+  },
+  {
+   "id": "IMG-0184",
+   "category": "website",
+   "type": "screen",
+   "title": "Wave cycling - readiness 82 with FTP interval workout",
+   "description": "A dark 'Wave' training app with pink accents: week strip (WED 21), '82 High - Readiness Thursday, Aug 27', 'Todays workout 4x8 min FTP Intervals' bar chart (1:23, 248w, TSS 90), Start workout, Training Load (Acute 112, Chronic 95) and Home/Plan/+/Club/Profile. A cycling home, not a light health chart.",
+   "roles": [
+    "home",
+    "dashboard"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "rounded"
+   ],
+   "tags": [
+    "pink"
+   ]
+  },
+  {
+   "id": "IMG-0185",
+   "category": "website",
+   "type": "flow-walkthrough",
+   "title": "Shapes to blur to final - 'Welcome to Nova AI' tutorial",
+   "description": "A dark tutorial: three phones labelled 'Shapes → Blur effect → Final Design' - flat blue circles, their blur, then a 'Welcome to Nova AI - Publish projects while you are sleeping' splash with Get Started. A design-process explainer.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "tutorial",
+    "blur",
+    "ai",
+    "splash"
+   ]
+  },
+  {
+   "id": "IMG-0189",
+   "category": "website",
+   "type": "marketing",
+   "title": "focus3 zen - 'The wind passes. The sky remains clear.'",
+   "description": "A focus3 section: 'The wind passes. The sky remains clear.' with 'Only three intentions a day. Done, and close the screen.', a Daily Intentions card (morning run, vector drawings, forest walk & deep reading) and EXPORT A ZEN CARD over soft hills. The same product as IMG-0188.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "soft"
+   ],
+   "tags": [
+    "card",
+    "landing"
+   ],
+   "group": "GRP-focus3"
+  },
+  {
+   "id": "IMG-0537",
+   "category": "website",
+   "type": "screen",
+   "title": "Structurely - real-estate contacts with campaign responses",
+   "description": "A 'Structurely' CRM: Contacts table (Thomas Anderson, Kevin O'Connor, Sarah Mitchell...) with response previews, channels, campaigns (FHA Refi Outreach, VA IRRRL Streamline, New Purchase Pre-A...), filter tabs (Responded, Qualified, Appointment Request) and an agent context menu (Assign agent, Mute, Message, Open, Close). An English real-estate CRM, not French.",
+   "roles": [
+    "dashboard",
+    "table"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "table"
+   ],
+   "tags": [
+    "crm",
+    "real-estate",
+    "contacts",
+    "table"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,315 @@
+{
+ "items": [
+  {
+   "id": "VID-0147",
+   "category": "design-system",
+   "type": "flow-walkthrough",
+   "title": "Pastel component board - workspaces, toggles and doc cards",
+   "description": "A light board of pastel UI cards: workspace copy with 'Jam on' cursor, a Sun/TaskUX/Ficus toggle stack, Design/Engineering/Marketing/Sales chips, a pink 'Product Requirement Doc' card, task rows with 'Mark as done' and yellow agent cards. A component sampler.",
+   "roles": [
+    "component"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "pastel",
+    "board",
+    "cards"
+   ]
+  },
+  {
+   "id": "VID-0128",
+   "category": "design-system",
+   "type": "flow-walkthrough",
+   "title": "Generative gradients - three pixel panels with an AI side chat",
+   "description": "A design tool: left AI chat ('liquid water', sampling notes), right three generated pixel-gradient panels (blue/green mountains, green light, stitched beach) captioned '01 Water light - simple emotion', '03 Summer - stitched beach'. A generative-art iteration view.",
+   "roles": [
+    "media",
+    "chat"
+   ],
+   "style": [
+    "dark-mode",
+    "data-dense",
+    "rounded"
+   ],
+   "tags": []
+  },
+  {
+   "id": "VID-0074",
+   "category": "design-system",
+   "type": "flow-walkthrough",
+   "title": "Grok Bot icon - code-animated face with a launch tweet",
+   "description": "A phone frame showing the black Grok Bot icon (white blob face, coloured ribbon arcs) above Benji Taylor's Aug 11 post: 'Had a lot of fun animating our new Grok Bot icon. It's entirely made in code... I made it with Grok Build.' An icon-launch moment.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "animation"
+   ]
+  },
+  {
+   "id": "VID-0099",
+   "category": "design-system",
+   "type": "flow-walkthrough",
+   "title": "'Tabs' index - giant type over a field of section chips",
+   "description": "A design-system index page: huge black 'Tabs' headline ringed by white section chips (Kit, Layout, User Flows, Research, Design System, Introducing..., UI Patterns, Icons, Grid System, Prototypes, Frames, Typography, Components). A tabbed docs landing, not an app window.",
+   "roles": [
+    "navigation"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "flat"
+   ],
+   "tags": [
+    "tabs",
+    "chips",
+    "design-system",
+    "typography"
+   ]
+  },
+  {
+   "id": "VID-0120",
+   "category": "design-system",
+   "type": "flow-walkthrough",
+   "title": "Reference cards - 'Capital Metamorphosis' and 'Sensitive Dependencies'",
+   "description": "Two 'MY CARD' reference cards on halftone: a purple dahlia ('Capital Metamorphosis', Efficiency Delta ring) and black-white fabric ('Sensitive Dependencies', Variance Threshold ring), each with Add Card and Tonic tags. A moodboard pair, not 'Delicate Linework'.",
+   "roles": [
+    "media",
+    "component"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "rounded"
+   ],
+   "tags": [
+    "cards",
+    "halftone",
+    "moodboard"
+   ]
+  },
+  {
+   "id": "VID-0137",
+   "category": "design-system",
+   "type": "flow-walkthrough",
+   "title": "Animation library - alarm preview with palettes and effects",
+   "description": "A 'With Animation - Library / Alarm App' tool: centre 'Set an Alarm' phone (repeat chips, blue radial dial 5:42 PM, Evening Hues.mp3), left Browse list (Capsule Loader, Cards Shuffle, Meetball Particles, Matrix View, Water Ripple, Warp Speed, Glass Refraction), right Inspector with palettes (Ember, Rose, Ocean, Forest, Plum). An animation-library workspace.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "animation",
+    "library",
+    "alarm"
+   ]
+  },
+  {
+   "id": "VID-0063",
+   "category": "design-system",
+   "type": "flow-walkthrough",
+   "title": "Thinking orbs - animated agent state pills on black",
+   "description": "A dark showcase titled 'Thinking orbs - Animated thinking orbs component': pills reading Agent thinking..., Agent working..., Thinking.... (line orb), Listening.... (dot orb), Agent shaping..., Thinking.... A state-component set.",
+   "roles": [
+    "component",
+    "state"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "orbs",
+    "states",
+    "agent",
+    "animation"
+   ]
+  },
+  {
+   "id": "IMG-0055",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Raspberry Red #EE005A / Deep Space Blue #012641",
+   "description": "A two-block palette card: Raspberry Red (HEX #EE005A) above Deep Space Blue (HEX #012641), names set in the opposite colour. A high-contrast pink/navy pair.",
+   "roles": [
+    "reference"
+   ],
+   "style": [
+    "flat",
+    "high-contrast"
+   ],
+   "tags": [
+    "palette",
+    "blue"
+   ]
+  },
+  {
+   "id": "IMG-0059",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Celadon #A8D3A8 / Chocolate Plum #553832",
+   "description": "A two-block palette card: Celadon (HEX #A8D3A8) above Chocolate Plum (HEX #553832). A soft green over deep brown pair.",
+   "roles": [
+    "reference"
+   ],
+   "style": [
+    "flat"
+   ],
+   "tags": [
+    "palette",
+    "green"
+   ]
+  },
+  {
+   "id": "IMG-0058",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Lime Cream #DDEA78 / Vintage Grape #433455",
+   "description": "A two-block palette card: Lime Cream (HEX #DDEA78) above Vintage Grape (HEX #433455). A bright lime over muted purple pair.",
+   "roles": [
+    "reference"
+   ],
+   "style": [
+    "flat"
+   ],
+   "tags": [
+    "palette",
+    "lime"
+   ]
+  },
+  {
+   "id": "IMG-0060",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Cherry Blossom #F9A8BB / Deep Twilight #1A1265",
+   "description": "A two-block palette card: Cherry Blossom (HEX #F9A8BB) above Deep Twilight (HEX #1A1265). A pink over indigo pair.",
+   "roles": [
+    "reference"
+   ],
+   "style": [
+    "flat"
+   ],
+   "tags": [
+    "palette",
+    "pink"
+   ]
+  },
+  {
+   "id": "IMG-0061",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Coffee Bean #20130D / Morning Butter #F3D98F",
+   "description": "A two-block palette card: Coffee Bean (HEX #20130D) above Morning Butter (HEX #F3D98F). A near-black brown over warm cream pair.",
+   "roles": [
+    "reference"
+   ],
+   "style": [
+    "flat"
+   ],
+   "tags": [
+    "palette",
+    "cream"
+   ]
+  },
+  {
+   "id": "IMG-0064",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Deep Mocha #3D2E2B / Powder Petal #E1D0C9",
+   "description": "A two-block palette card: Deep Mocha (HEX #3D2E2B) above Powder Petal (HEX #E1D0C9). A mocha over pale rose-grey pair.",
+   "roles": [
+    "reference"
+   ],
+   "style": [
+    "flat"
+   ],
+   "tags": [
+    "palette"
+   ]
+  },
+  {
+   "id": "IMG-0062",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Regal Navy #0D3B66 / Lemon Chiffon #FAF0CA",
+   "description": "A two-block palette card: Regal Navy (HEX #0D3B66) above Lemon Chiffon (HEX #FAF0CA). A navy over pale lemon pair.",
+   "roles": [
+    "reference"
+   ],
+   "style": [
+    "flat"
+   ],
+   "tags": [
+    "palette"
+   ]
+  },
+  {
+   "id": "IMG-0056",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Shadow Grey #272727 / Sandy Clay #D4AA7D",
+   "description": "A two-block palette card: Shadow Grey (HEX #272727) above Sandy Clay (HEX #D4AA7D). A charcoal over tan pair.",
+   "roles": [
+    "reference"
+   ],
+   "style": [
+    "flat"
+   ],
+   "tags": [
+    "palette",
+    "grey"
+   ]
+  },
+  {
+   "id": "IMG-0057",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Electric Rose #FE00AE / Chartreuse #C1FE1A",
+   "description": "A two-block palette card: Electric Rose (HEX #FE00AE) above Chartreuse (HEX #C1FE1A), names cross-set in the other colour. A loud magenta/lime pair.",
+   "roles": [
+    "reference"
+   ],
+   "style": [
+    "flat",
+    "high-contrast"
+   ],
+   "tags": [
+    "palette",
+    "magenta",
+    "lime",
+    "neon"
+   ]
+  },
+  {
+   "id": "IMG-0063",
+   "category": "color-palette",
+   "type": "token-sheet",
+   "title": "Espresso #3E2723 / Peony #F4C9D6",
+   "description": "A two-block palette card: Espresso (HEX #3E2723) above Peony (HEX #F4C9D6). A deep coffee over soft pink pair.",
+   "roles": [
+    "reference"
+   ],
+   "style": [
+    "flat"
+   ],
+   "tags": [
+    "palette",
+    "pink"
+   ]
+  }
+ ]
+}

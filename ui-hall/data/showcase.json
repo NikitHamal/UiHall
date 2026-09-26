@@ -1,0 +1,617 @@
+{
+ "generated_at": "2026-09-25T10:31:18.589Z",
+ "stats": {
+  "assets": 511,
+  "described": 511,
+  "described_pct": 100,
+  "clips": 170,
+  "categories": 11,
+  "groups": 59,
+  "verified_groups": 49,
+  "tags": 592
+ },
+ "tools": [
+  {
+   "name": "search_designs",
+   "description": "Search the design corpus for examples relevant to what you are building. Returns compact records with a summary and measured palette. Use this as the first step when designing any app screen or page: real examples beat invented ones. Query freely in natural language — \"dark mode crypto wallet with a big balance\" works. Filter with category/role/style/tag/orientation/hue/surface for precision once you know the vocabulary from list_facets.",
+   "params": [
+    {
+     "name": "query",
+     "type": "string",
+     "description": "Natural-language description of what you are looking for.",
+     "required": true
+    },
+    {
+     "name": "category",
+     "type": "array",
+     "description": "Filter to these categories.",
+     "required": false
+    },
+    {
+     "name": "role",
+     "type": "array",
+     "description": "Filter to these screen roles.",
+     "required": false
+    },
+    {
+     "name": "style",
+     "type": "array",
+     "description": "Filter to these visual styles.",
+     "required": false
+    },
+    {
+     "name": "tag",
+     "type": "array",
+     "description": "Filter to these tags.",
+     "required": false
+    },
+    {
+     "name": "orientation",
+     "type": "array",
+     "description": "",
+     "required": false
+    },
+    {
+     "name": "surface",
+     "type": "array",
+     "description": "'dark', 'light' or 'mid' — derived from the measured palette.",
+     "required": false
+    },
+    {
+     "name": "has_motion",
+     "type": "boolean",
+     "description": "Only assets that ship a playable motion clip.",
+     "required": false
+    },
+    {
+     "name": "only_described",
+     "type": "boolean",
+     "description": "Only assets with a full hand-written write-up.",
+     "required": false
+    },
+    {
+     "name": "limit",
+     "type": "integer",
+     "description": "",
+     "required": false
+    }
+   ],
+   "sample_args": {
+    "query": "dark crypto wallet balance",
+    "limit": 3
+   },
+   "sample_output": "{\n \"query\": \"dark crypto wallet balance\",\n \"matched\": 511,\n \"showing\": 3,\n \"results\": [\n  {\n   \"id\": \"IMG-0507\",\n   \"title\": \"Crypto wallet - balance, actions and top assets\",\n   \"kind\": \"image\",\n   \"category\": \"dashboard\",\n   \"type\": \"screen\",\n   \"roles\": [\n    \"dashboard\"\n   ],\n   \"style\": [\n    \"light-mode\"\n   ],\n   \"tags\": [\n    \"balance\",\n    \"chart\",\n    \"crypto\",\n    \"fintech\",\n    \"orange\",\n    \"table\",\n    \"wallet\"\n   ],\n   \"palette\": [\n    \"#FCFCFC\",\n    \"#E5E6E9\",\n    \"#B4B2B7\",\n    \"#1C1D22\",\n    \"#FC8C55\",\n    \"#64737A\"\n   ],\n   \"summary\": \"A white crypto wallet in browser chrome (user Onipio Sajbur): an Ethereum $1,040.50 card, 'My Balance $102,540.00' on BNB Chain, an orange Deposit button with Withdraw/Swap/Transfer, a price chart with a June 2025 tooltip (44,008 BTC, +23.48%), Top Assets (Electroneum, Solana, Bitcoin, Ethereum, Ripple) and Top Gainers. A wallet overview.\n…"
+  },
+  {
+   "name": "get_asset",
+   "description": "Get the complete record for one asset: the full hand-written description of what is on the screen, its measured palette with area percentages, structural metadata, and the local file path so you can look at the image itself. Use after search_designs when one result matters.",
+   "params": [
+    {
+     "name": "id",
+     "type": "string",
+     "description": "Asset id, e.g. IMG-0055 or VID-0240.",
+     "required": true
+    },
+    {
+     "name": "include_markdown",
+     "type": "boolean",
+     "description": "Wrap the write-up as markdown.",
+     "required": false
+    }
+   ],
+   "sample_args": {
+    "id": "IMG-0518"
+   },
+   "sample_output": "{\n \"id\": \"IMG-0518\",\n \"title\": \"CloseCRM analytics - revenue trend, funnel and targets\",\n \"kind\": \"image\",\n \"category\": \"dashboard\",\n \"type\": \"screen\",\n \"description\": \"A 'CloseCRM' analytics screen: KPIs (425 Deals Won, 1,847 Active Leads, 32.8% Win Rate, $350,000 Total Revenue), a Revenue Trend bar chart with April highlighted ($27,832), an Activity Breakdown donut (2,122: calls, emails, meetings, tasks), a Last Month Sales Funnel (Leads 820, Qualified 425, Proposal 212) and a Monthly Revenue Target bar (84.3%).\",\n \"roles\": [\n  \"dashboard\"\n ],\n \"style\": [\n  \"light-mode\"\n ],\n \"tags\": [\n  \"analytics\",\n  \"bar-chart\",\n  \"crm\",\n  \"funnel\",\n  \"kpi\",\n  \"sidebar\"\n ],\n \"palette_measured\": [\n  {\n   \"hex\": \"#FBFBFB\",\n   \"area_pct\": 67.9,\n   \"contrast_on_white\": 1.03,\n   \"contrast_on_black\": 20.29\n  },\n  {\n   \"hex\": \"#EFEFF1\",\n   \"area_pct\": 25.3,\n   \"contrast_on_white\": 1.15,\n   \"contrast_on_blac\n…"
+  },
+  {
+   "name": "list_facets",
+   "description": "List the vocabulary and counts available in the corpus: categories, screen roles, visual styles, tags, types, orientations. Call this first if you are unsure what values search_designs accepts, or to see what the corpus can speak to at all.",
+   "params": [
+    {
+     "name": "dimension",
+     "type": "string",
+     "description": "",
+     "required": false
+    },
+    {
+     "name": "limit",
+     "type": "integer",
+     "description": "",
+     "required": false
+    }
+   ],
+   "sample_args": {
+    "dimension": "categories",
+    "limit": 6
+   },
+   "sample_output": "{\n \"totals\": {\n  \"assets\": 511,\n  \"images\": 310,\n  \"videos\": 201,\n  \"clips\": 170,\n  \"described\": 511\n },\n \"categories\": [\n  {\n   \"id\": \"mobile-app-ui\",\n   \"label\": \"Mobile app UI\",\n   \"blurb\": \"Screens, flows and mockups for phone apps. The core of the corpus.\",\n   \"icon\": \"phone\",\n   \"count\": 351\n  },\n  {\n   \"id\": \"app-store-screens\",\n   \"label\": \"App Store screens\",\n   \"blurb\": \"Store listing panels - the framed marketing shots that sell an app.\",\n   \"icon\": \"store\",\n   \"count\": 7\n  },\n  {\n   \"id\": \"before-after\",\n   \"label\": \"Before / after\",\n   \"blurb\": \"Paired evidence: the same screen done badly and done well. Highest teaching value.\",\n   \"icon\": \"compare\",\n   \"count\": 21\n  },\n  {\n   \"id\": \"website\",\n   \"label\": \"Website\",\n   \"blurb\": \"Marketing sites, landing pages and web product surfaces.\",\n   \"icon\": \"globe\",\n   \"count\": 38\n  },\n  {\n   \"id\": \"design-system\",\n   \"label\": \"Design\n…"
+  },
+  {
+   "name": "find_patterns",
+   "description": "Return named layout patterns that recur across the corpus, with a description of why each one works and the assets that demonstrate it. Use this when you need a structural starting point rather than a specific example — e.g. \"how should I lay out a dashboard\".",
+   "params": [
+    {
+     "name": "about",
+     "type": "string",
+     "description": "Optional topic to rank patterns by, e.g. \"onboarding\" or \"pricing\".",
+     "required": false
+    },
+    {
+     "name": "limit",
+     "type": "integer",
+     "description": "",
+     "required": false
+    }
+   ],
+   "sample_args": {
+    "about": "dashboard",
+    "limit": 2
+   },
+   "sample_output": "{\n \"about\": \"dashboard\",\n \"patterns\": [\n  {\n   \"name\": \"Multi-screen flow strip\",\n   \"why_it_works\": \"Three or more screens of one flow laid out left to right. Encodes the sequence rather than any single screen — the most direct way to show an ordered journey.\",\n   \"example_count\": 271,\n   \"examples\": [\n    {\n     \"id\": \"IMG-0161\",\n     \"title\": \"Scripture devotional app - onboarding set in green, cream and candle-orange\",\n     \"category\": \"mobile-app-ui\"\n    },\n    {\n     \"id\": \"IMG-0185\",\n     \"title\": \"Shapes to blur to final - 'Welcome to Nova AI' tutorial\",\n     \"category\": \"website\"\n    },\n    {\n     \"id\": \"IMG-0215\",\n     \"title\": \"Shihab freelancer dashboard and November schedule\",\n     \"category\": \"mobile-app-ui\"\n    },\n    {\n     \"id\": \"IMG-0219\",\n     \"title\": \"Sales overview dashboard in light and dark with orange bars\",\n     \"category\": \"mobile-app-ui\"\n    },\n    {\n     \"id\"\n…"
+  },
+  {
+   "name": "design_brief",
+   "description": "Given a screen you need to design, return a synthesised brief: the best matching examples, the palettes they actually use, the layout patterns that apply, and the recurring decisions worth knowing about. This is the highest-value tool — call it instead of stitching together several searches by hand.",
+   "params": [
+    {
+     "name": "screen",
+     "type": "string",
+     "description": "What you need to design, e.g. \"onboarding for a sleep-tracking app\".",
+     "required": true
+    },
+    {
+     "name": "platform",
+     "type": "string",
+     "description": "",
+     "required": false
+    },
+    {
+     "name": "mood",
+     "type": "string",
+     "description": "Optional tonal direction, e.g. \"calm\", \"high-energy\", \"premium\".",
+     "required": false
+    },
+    {
+     "name": "dark",
+     "type": "boolean",
+     "description": "Force a dark-surface bias when true, light when false.",
+     "required": false
+    },
+    {
+     "name": "examples",
+     "type": "integer",
+     "description": "",
+     "required": false
+    }
+   ],
+   "sample_args": {
+    "screen": "onboarding for a sleep tracking app",
+    "examples": 3
+   },
+   "sample_output": "{\n \"brief\": \"onboarding for a sleep tracking app\",\n \"platform\": \"any\",\n \"mood\": null,\n \"evidence_count\": 511,\n \"examples\": [\n  {\n   \"id\": \"VID-0236\",\n   \"title\": \"Pillow sleep app onboarding screens\",\n   \"kind\": \"video\",\n   \"category\": \"promo-reel\",\n   \"type\": \"flow-walkthrough\",\n   \"roles\": [\n    \"onboarding\"\n   ],\n   \"style\": [\n    \"light-mode\",\n    \"playful\",\n    \"rounded\"\n   ],\n   \"tags\": [\n    \"app-store\",\n    \"character\",\n    \"health\",\n    \"onboarding\",\n    \"promo\",\n    \"screenshot\",\n    \"sleep\"\n   ],\n   \"motion_clip\": true,\n   \"summary\": \"App-store style screens of a blue sleep app named 'Pillow': 'Why it works' (score 89 dial), 'Now let's talk about your bad sleeping habits' with a sleepy pillow character, and a name-entry screen with keyboard. A sleep-app onboarding set.\"\n  },\n  {\n   \"id\": \"VID-0114\",\n   \"title\": \"Onbo Hub - 'It's biology, not laziness' sleep lesson with owl\",\n…"
+  },
+  {
+   "name": "palette_for",
+   "description": "Produce a usable colour palette for a product direction, grounded in the corpus. Returns named two-tone schemes that fit the brief plus the colours that actually recur in matching screens, with WCAG contrast ratios for each pair. Every value is measured from real interfaces, so it is directly usable as CSS.",
+   "params": [
+    {
+     "name": "mood",
+     "type": "string",
+     "description": "What it should feel like, e.g. \"warm and quiet\" or \"loud and synthetic\".",
+     "required": true
+    },
+    {
+     "name": "surface",
+     "type": "string",
+     "description": "",
+     "required": false
+    },
+    {
+     "name": "category",
+     "type": "string",
+     "description": "Optional product area, e.g. fintech, health, food.",
+     "required": false
+    },
+    {
+     "name": "count",
+     "type": "integer",
+     "description": "",
+     "required": false
+    }
+   ],
+   "sample_args": {
+    "mood": "warm and quiet",
+    "surface": "dark",
+    "count": 2
+   },
+   "sample_output": "{\n \"mood\": \"warm and quiet\",\n \"surface\": \"dark\",\n \"named_schemes\": [\n  {\n   \"id\": \"IMG-0061\",\n   \"name\": \"Coffee Bean #20130D / Morning Butter #F3D98F\",\n   \"colours\": [\n    \"#1E130F\",\n    \"#EFDA99\"\n   ],\n   \"contrast\": 13.12,\n   \"why\": \"A two-block palette card: Coffee Bean (HEX #20130D) above Morning Butter (HEX #F3D98F). A near-black brown over warm cream pair.\"\n  },\n  {\n   \"id\": \"IMG-0055\",\n   \"name\": \"Raspberry Red #EE005A / Deep Space Blue #012641\",\n   \"colours\": [\n    \"#DA2F5C\",\n    \"#0D2740\"\n   ],\n   \"contrast\": 3.29,\n   \"why\": \"A two-block palette card: Raspberry Red (HEX #EE005A) above Deep Space Blue (HEX #012641), names set in the opposite colour. A high-contrast pink/navy pair.\"\n  }\n ],\n \"contrast_checks\": [\n  {\n   \"scheme\": \"Coffee Bean #20130D / Morning Butter #F3D98F\",\n   \"pair\": [\n    \"#1E130F\",\n    \"#EFDA99\"\n   ],\n   \"ratio\": 13.12,\n   \"verdict\": \"AA for body text\"\n  },\n…"
+  },
+  {
+   "name": "compare_pair",
+   "description": "Find before/after evidence in the corpus — the same brief executed twice, where the difference is the lesson. Use this to justify a design decision: \"here is the same screen done badly and well, and here is precisely what changed\".",
+   "params": [
+    {
+     "name": "topic",
+     "type": "string",
+     "description": "What the comparison should be about, e.g. \"wallet balance screen\".",
+     "required": false
+    },
+    {
+     "name": "limit",
+     "type": "integer",
+     "description": "",
+     "required": false
+    }
+   ],
+   "sample_args": {
+    "topic": "wallet balance",
+    "limit": 2
+   },
+   "sample_output": "{\n \"topic\": \"wallet balance\",\n \"comparisons_found\": 1,\n \"available_total\": 21,\n \"comparisons\": [\n  {\n   \"id\": \"VID-0240\",\n   \"title\": \"Budget app - crude 'Before' form vs polished Goodbudget\",\n   \"what_changed\": \"'Before ($10k mrr)' vs 'After (MCP + Skills)': a crude green 'Eating Out' budget form with a keypad versus a polished 'Goodbudget' screen (Groceries 438.76 USD, transactions, Add/Move/Spend). The delta is the pitch.\",\n   \"kind\": \"video\",\n   \"has_motion_clip\": true,\n   \"tags\": [\n    \"ai\",\n    \"ai-comparison\",\n    \"before-after\",\n    \"budget\",\n    \"comparison\",\n    \"fintech\",\n    \"mcp\",\n    \"redesign\",\n    \"wallet\"\n   ]\n  }\n ],\n \"how_to_use\": \"These are argument, not layout. Cite one when you need to justify a decision — the description names the specific delta rather than just asserting the second version is better.\"\n}"
+  },
+  {
+   "name": "asset_image",
+   "description": "Resolve an asset id to the local image files on disk — the full-size web image, the thumbnail, and the original source file. Use this when you actually need to look at the design rather than read about it.",
+   "params": [
+    {
+     "name": "id",
+     "type": "string",
+     "description": "",
+     "required": true
+    },
+    {
+     "name": "which",
+     "type": "string",
+     "description": "",
+     "required": false
+    }
+   ],
+   "sample_args": {
+    "id": "IMG-0518",
+    "which": "web"
+   },
+   "sample_output": "{\n \"id\": \"IMG-0518\",\n \"title\": \"CloseCRM analytics - revenue trend, funnel and targets\",\n \"web_image\": \"/home/user/UiHall/ui-hall/assets/img/IMG-0518.webp\",\n \"dimensions\": \"2742x2104\"\n}"
+  },
+  {
+   "name": "corpus_stats",
+   "description": "Report what the corpus contains: totals, and the distribution of categories, roles and styles. Useful to establish what evidence is available before making claims.",
+   "params": [],
+   "sample_args": {},
+   "sample_output": "{\n \"totals\": {\n  \"assets\": 511,\n  \"images\": 310,\n  \"videos\": 201,\n  \"clips\": 170,\n  \"described\": 511\n },\n \"described_pct\": 100,\n \"by_category\": [\n  {\n   \"id\": \"mobile-app-ui\",\n   \"label\": \"Mobile app UI\",\n   \"count\": 351\n  },\n  {\n   \"id\": \"app-store-screens\",\n   \"label\": \"App Store screens\",\n   \"count\": 7\n  },\n  {\n   \"id\": \"before-after\",\n   \"label\": \"Before / after\",\n   \"count\": 21\n  },\n  {\n   \"id\": \"website\",\n   \"label\": \"Website\",\n   \"count\": 38\n  },\n  {\n   \"id\": \"design-system\",\n   \"label\": \"Design system\",\n   \"count\": 18\n  },\n  {\n   \"id\": \"color-palette\",\n   \"label\": \"Colour palette\",\n   \"count\": 10\n  },\n  {\n   \"id\": \"illustration\",\n   \"label\": \"Illustration\",\n   \"count\": 2\n  },\n  {\n   \"id\": \"dashboard\",\n   \"label\": \"Dashboard\",\n   \"count\": 29\n  },\n  {\n   \"id\": \"motion-demo\",\n   \"label\": \"Motion demo\",\n   \"count\": 9\n  },\n  {\n   \"id\": \"promo-reel\",\n   \"label\": \"Promo reel\",\n   \"count\n…"
+  },
+  {
+   "name": "list_groups",
+   "description": "List the same-app / same-set groups: screens verified as belonging to one product or one exploration (e.g. all four screens of a CRM, both states of a contacts table). Use this when a design must stay consistent across several screens of one app — pull the whole group instead of one lucky example. An optional query filters by group or member title.",
+   "params": [
+    {
+     "name": "query",
+     "type": "string",
+     "description": "Optional text matched against group titles and member titles, e.g. \"crm\" or \"lease\".",
+     "required": false
+    },
+    {
+     "name": "limit",
+     "type": "integer",
+     "description": "",
+     "required": false
+    }
+   ],
+   "sample_args": {
+    "limit": 3
+   },
+   "sample_output": "{\n \"groups\": 59,\n \"matched\": 59,\n \"showing\": 3,\n \"note\": \"verified = every member was looked at and confirmed as one app/set.\",\n \"results\": [\n  {\n   \"id\": \"GRP-dosebank\",\n   \"title\": \"Dosebank - dark peptide dosing & health app\",\n   \"verified\": true,\n   \"count\": 11,\n   \"members\": [\n    {\n     \"id\": \"IMG-0222\",\n     \"title\": \"Dosebank dashboard - vertical metric bars with a to-do\",\n     \"category\": \"mobile-app-ui\"\n    },\n    {\n     \"id\": \"IMG-0223\",\n     \"title\": \"Dosebank home - health score hero with a care-plan list\",\n     \"category\": \"mobile-app-ui\"\n    },\n    {\n     \"id\": \"IMG-0288\",\n     \"title\": \"Dosebank dashboard - vertical vitals bars with a to-do\",\n     \"category\": \"mobile-app-ui\"\n    },\n    {\n     \"id\": \"IMG-0289\",\n     \"title\": \"Dosebank home - health score 203/300 with care plan\",\n     \"category\": \"mobile-app-ui\"\n    },\n    {\n     \"id\": \"IMG-0290\",\n     \"title\": \"Doseback on\n…"
+  }
+ ],
+ "groups": [
+  {
+   "id": "GRP-dosebank",
+   "title": "Dosebank - dark peptide dosing & health app",
+   "members": [
+    {
+     "id": "IMG-0222",
+     "title": "Dosebank dashboard - vertical metric bars with a to-do",
+     "thumb": "assets/thumb/IMG-0222.webp"
+    },
+    {
+     "id": "IMG-0223",
+     "title": "Dosebank home - health score hero with a care-plan list",
+     "thumb": "assets/thumb/IMG-0223.webp"
+    },
+    {
+     "id": "IMG-0288",
+     "title": "Dosebank dashboard - vertical vitals bars with a to-do",
+     "thumb": "assets/thumb/IMG-0288.webp"
+    },
+    {
+     "id": "IMG-0289",
+     "title": "Dosebank home - health score 203/300 with care plan",
+     "thumb": "assets/thumb/IMG-0289.webp"
+    },
+    {
+     "id": "IMG-0290",
+     "title": "Doseback onboarding - 30% pricing, ready state, invite friends",
+     "thumb": "assets/thumb/IMG-0290.webp"
+    },
+    {
+     "id": "IMG-0293",
+     "title": "Fitness triptych - kcal ring, profile metrics, 50-day streak",
+     "thumb": "assets/thumb/IMG-0293.webp"
+    },
+    {
+     "id": "IMG-0296",
+     "title": "Ayo.eth - crypto address QR share screen",
+     "thumb": "assets/thumb/IMG-0296.webp"
+    },
+    {
+     "id": "IMG-0421",
+     "title": "Dosebank action sheet - log dose, log health, add supply",
+     "thumb": "assets/thumb/IMG-0421.webp"
+    },
+    {
+     "id": "IMG-0422",
+     "title": "Dosebank dose-location sheet - body map with injection site",
+     "thumb": "assets/thumb/IMG-0422.webp"
+    },
+    {
+     "id": "IMG-0423",
+     "title": "Dosebank dose calculator - syringe draw-to with inputs",
+     "thumb": "assets/thumb/IMG-0423.webp"
+    },
+    {
+     "id": "IMG-0424",
+     "title": "Dosebank supply - BPC-157 vial with a vial-size stepper",
+     "thumb": "assets/thumb/IMG-0424.webp"
+    }
+   ]
+  },
+  {
+   "id": "GRP-laundry-campus",
+   "title": "GRP-laundry-campus",
+   "members": [
+    {
+     "id": "IMG-0369",
+     "title": "Campus Laundry order - the full phone on a white field",
+     "thumb": "assets/thumb/IMG-0369.webp"
+    },
+    {
+     "id": "IMG-0370",
+     "title": "Laundry order #2026-30759 - wash-and-fold service details",
+     "thumb": "assets/thumb/IMG-0370.webp"
+    },
+    {
+     "id": "IMG-0371",
+     "title": "Campus Laundry tracking - timeline to 'Ready for Delivery'",
+     "thumb": "assets/thumb/IMG-0371.webp"
+    },
+    {
+     "id": "IMG-0376",
+     "title": "Campus Laundry booking - options, load size and order summary",
+     "thumb": "assets/thumb/IMG-0376.webp"
+    },
+    {
+     "id": "IMG-0377",
+     "title": "Campus Laundry - service details, provider and student reviews",
+     "thumb": "assets/thumb/IMG-0377.webp"
+    },
+    {
+     "id": "IMG-0378",
+     "title": "Campus Laundry - handover, drop-off, return and timeline",
+     "thumb": "assets/thumb/IMG-0378.webp"
+    },
+    {
+     "id": "IMG-0375",
+     "title": "Campus Laundry - Wash & Fold detail beside the provider sheet",
+     "thumb": "assets/thumb/IMG-0375.webp"
+    }
+   ]
+  },
+  {
+   "id": "GRP-hvac-field",
+   "title": "Copperline HVAC field documentation",
+   "members": [
+    {
+     "id": "IMG-0474",
+     "title": "HVAC field job - voice-note explain step with photos and work-type chips",
+     "thumb": "assets/thumb/IMG-0474.webp"
+    },
+    {
+     "id": "IMG-0476",
+     "title": "HVAC field job - arrival status timeline synced with the office",
+     "thumb": "assets/thumb/IMG-0476.webp"
+    },
+    {
+     "id": "IMG-0475",
+     "title": "Copperline photo capture - stage pills and a job photo strip",
+     "thumb": "assets/thumb/IMG-0475.webp"
+    },
+    {
+     "id": "IMG-0409",
+     "title": "Copperline team - technician roster with live job status pills",
+     "thumb": "assets/thumb/IMG-0409.webp"
+    },
+    {
+     "id": "IMG-0408",
+     "title": "Copperline insights - documented-vs-corrected bars across 7 techs",
+     "thumb": "assets/thumb/IMG-0408.webp"
+    },
+    {
+     "id": "IMG-0410",
+     "title": "Copperline voice-fact review - waveform, transcript and confirm",
+     "thumb": "assets/thumb/IMG-0410.webp"
+    }
+   ]
+  },
+  {
+   "id": "GRP-mongi-courier",
+   "title": "Mongi courier (BD, taka/bKash)",
+   "members": [
+    {
+     "id": "IMG-0478",
+     "title": "Mongi - 'Sell today. Delivered tonight.' landing screen",
+     "thumb": "assets/thumb/IMG-0478.webp"
+    },
+    {
+     "id": "IMG-0210",
+     "title": "Mongi courier - first-delivery hero with 'How it works' steps",
+     "thumb": "assets/thumb/IMG-0210.webp"
+    },
+    {
+     "id": "IMG-0209",
+     "title": "Mongi courier - new-delivery form filled from a pasted message",
+     "thumb": "assets/thumb/IMG-0209.webp"
+    },
+    {
+     "id": "IMG-0479",
+     "title": "Mongi courier - new-delivery form (near-identical capture)",
+     "thumb": "assets/thumb/IMG-0479.webp"
+    },
+    {
+     "id": "IMG-0480",
+     "title": "Mongi courier - Money screen with tonight's payout and weekly bars",
+     "thumb": "assets/thumb/IMG-0480.webp"
+    },
+    {
+     "id": "IMG-0208",
+     "title": "Courier payout home - pickup banner, tonight's payout and ready list",
+     "thumb": "assets/thumb/IMG-0208.webp"
+    }
+   ]
+  },
+  {
+   "id": "GRP-voice-studio",
+   "title": "GRP-voice-studio",
+   "members": [
+    {
+     "id": "IMG-0415",
+     "title": "Voice-model audit table - included models with usage columns",
+     "thumb": "assets/thumb/IMG-0415.webp"
+    },
+    {
+     "id": "IMG-0352",
+     "title": "Cloned voices - three radial voice cards with speaking share",
+     "thumb": "assets/thumb/IMG-0352.webp"
+    },
+    {
+     "id": "IMG-0353",
+     "title": "Voice library - empty state with record/upload/from-video",
+     "thumb": "assets/thumb/IMG-0353.webp"
+    },
+    {
+     "id": "IMG-0354",
+     "title": "Dubbing output analytics - 412 minutes across 3 languages",
+     "thumb": "assets/thumb/IMG-0354.webp"
+    },
+    {
+     "id": "IMG-0355",
+     "title": "Dub settings - lip sync, pace, targets and voice mode",
+     "thumb": "assets/thumb/IMG-0355.webp"
+    }
+   ]
+  },
+  {
+   "id": "GRP-android-editor",
+   "title": "Text - Android text/code editor",
+   "members": [
+    {
+     "id": "IMG-0357",
+     "title": "Android code editor with an open language picker",
+     "thumb": "assets/thumb/IMG-0357.webp"
+    },
+    {
+     "id": "IMG-0358",
+     "title": "Text editor - 'Welcome to Text' first-run dialog",
+     "thumb": "assets/thumb/IMG-0358.webp"
+    },
+    {
+     "id": "IMG-0359",
+     "title": "Text editor - empty 'Untitled-1.txt' with a find bar",
+     "thumb": "assets/thumb/IMG-0359.webp"
+    },
+    {
+     "id": "IMG-0360",
+     "title": "Text editor settings - theme segmented control and font-size slider",
+     "thumb": "assets/thumb/IMG-0360.webp"
+    }
+   ]
+  },
+  {
+   "id": "GRP-closecrm",
+   "title": "CloseCRM desktop suite (analytics, dashboard, companies, contacts)",
+   "members": [
+    {
+     "id": "IMG-0518",
+     "title": "CloseCRM analytics - revenue trend, funnel and targets",
+     "thumb": "assets/thumb/IMG-0518.webp"
+    },
+    {
+     "id": "IMG-0519",
+     "title": "CloseCRM dashboard - deals, upcoming and activity feed",
+     "thumb": "assets/thumb/IMG-0519.webp"
+    },
+    {
+     "id": "IMG-0520",
+     "title": "CloseCRM companies table - revenue, status, industry",
+     "thumb": "assets/thumb/IMG-0520.webp"
+    },
+    {
+     "id": "IMG-0521",
+     "title": "CloseCRM contacts table - company logos and statuses",
+     "thumb": "assets/thumb/IMG-0521.webp"
+    }
+   ]
+  },
+  {
+   "id": "GRP-food-skybar",
+   "title": "GRP-food-skybar",
+   "members": [
+    {
+     "id": "IMG-0394",
+     "title": "Food cart - three Skybar dishes with GHS prices",
+     "thumb": "assets/thumb/IMG-0394.webp"
+    },
+    {
+     "id": "IMG-0395",
+     "title": "Food cart - one salmon line with a GHS 2,170 total",
+     "thumb": "assets/thumb/IMG-0395.webp"
+    },
+    {
+     "id": "IMG-0456",
+     "title": "Food checkout - standard vs scheduled delivery and order summary",
+     "thumb": "assets/thumb/IMG-0456.webp"
+    },
+    {
+     "id": "IMG-0457",
+     "title": "Food checkout - promo-code field and Mobile Money, GHS 2,140",
+     "thumb": "assets/thumb/IMG-0457.webp"
+    }
+   ]
+  }
+ ],
+ "patterns": [
+  {
+   "name": "One hero number",
+   "why": "A single dominant figure set far larger than everything around it, with supporting detail subordinated. The most reliable way to give a mobile screen an immediate focal point without adding decoration."
+  },
+  {
+   "name": "Card over tinted backdrop",
+   "why": "A light content card on a saturated or gradient background rather than on white. Separates chrome from content with colour instead of elevation, which survives dark mode far better than a shadow."
+  },
+  {
+   "name": "Progressive disclosure list",
+   "why": "Rows stacked flat, each expandable rather than each being its own screen. Keeps perceived length down while still showing everything available."
+  },
+  {
+   "name": "Bottom tab bar, 4-5 destinations",
+   "why": "Fixed bottom navigation with a small consistent set of top-level destinations, active one marked by tint rather than weight. The interesting variation is what the bar does when a sheet or keyboard opens."
+  },
+  {
+   "name": "Empty state that teaches",
+   "why": "The zero-data screen explains what the product does and offers exactly one action, instead of showing a grey \"no data\" box. Cheap and high-leverage, and most products skip it."
+  },
+  {
+   "name": "Dark surface, single hot accent",
+   "why": "A near-black background with exactly one saturated accent carrying every interactive element. The accent is usually warm, because a cool accent on black loses its punch."
+  }
+ ]
+}
