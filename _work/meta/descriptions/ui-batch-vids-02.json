@@ -1,0 +1,237 @@
+{
+ "items": {
+  "VID-0347": {
+   "category": "mobile-app-ui",
+   "description": "A fast scroll across real-estate listing panels: For-sale pool villa, numbered '03' card, testimonial and a 'Lexington' mansion shot. Listing cards as a moving strip.",
+   "id": "VID-0347",
+   "quality": "Scroll frames blur text; cards legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "card-based",
+    "photographic"
+   ],
+   "tags": [
+    "real-estate",
+    "property"
+   ],
+   "title": "Real-estate listing panels",
+   "type": "multi-screen"
+  },
+  "VID-0348": {
+   "category": "motion-demo",
+   "description": "A mobile video editor ('Made with Unveil') on a gradient stage: iPhone timeline at 00:01:35 over clip thumbnails. Editing chrome in fast motion.",
+   "id": "VID-0348",
+   "quality": "Fast frames blur detail; chrome legible.",
+   "roles": [
+    "editor",
+    "media"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "gradient-heavy",
+    "rounded"
+   ],
+   "tags": [
+    "video-editing"
+   ],
+   "title": "Mobile video-editor demo",
+   "type": "flow-walkthrough"
+  },
+  "VID-0349": {
+   "category": "website",
+   "description": "'The execution layer for onchain finance': pink-gradient hero over portfolio-allocation and investment-indicator cards. DeFi marketing with the product wall behind the headline.",
+   "id": "VID-0349",
+   "quality": "Card text small; headline and structure legible.",
+   "roles": [
+    "hero"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "gradient-heavy",
+    "card-based"
+   ],
+   "tags": [
+    "landing",
+    "crypto",
+    "fintech"
+   ],
+   "title": "Onchain-finance landing",
+   "type": "screen"
+  },
+  "VID-0350": {
+   "category": "website",
+   "description": "A dark docs sidebar demo: 'On this page' TOC (Introduction, MDX, Frontmatter, Auto Links, Cards…) scrolling past Callouts, Headings and Shiki Transformers entries. Documentation navigation as the subject.",
+   "id": "VID-0350",
+   "quality": "Entries small; structure legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "documentation",
+    "developer-tool"
+   ],
+   "title": "Docs sidebar navigation",
+   "type": "component"
+  },
+  "VID-0351": {
+   "category": "website",
+   "description": "'Book a meeting with Pasquale': a 30-minute onboarding lands in chat with Reasoning, two completed steps and a booking confirmation, over an Ask Cal input. Scheduling resolved inside conversation.",
+   "id": "VID-0351",
+   "quality": "Clean frames; fully legible.",
+   "roles": [
+    "chat"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "assistant",
+    "scheduling",
+    "calendar"
+   ],
+   "title": "AI meeting-booking chat",
+   "type": "screen"
+  },
+  "VID-0352": {
+   "category": "motion-demo",
+   "description": "A 'Thinking…' AI input bar with glow: the waiting state as a designed moment. Thirteen seconds of anticipation, honestly labelled.",
+   "id": "VID-0352",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "loading-state"
+   ],
+   "title": "AI thinking indicator",
+   "type": "component"
+  },
+  "VID-0353": {
+   "category": "mobile-app-ui",
+   "description": "A purple 'Sleep Goal — 6h 50m' setter with a gradient duration slider and a Done CTA. One goal, one slider, one button.",
+   "id": "VID-0353",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "gradient-heavy",
+    "rounded"
+   ],
+   "tags": [
+    "sleep",
+    "health"
+   ],
+   "title": "Sleep-goal setter",
+   "type": "screen"
+  },
+  "VID-0354": {
+   "category": "dashboard",
+   "description": "A transaction-feed scroll: Sapphire and Checking rows, a +$96 correction, a grocery-overspend review card and an Apple Pay -$184.32 detail. Real-money feed with inline review moments.",
+   "id": "VID-0354",
+   "quality": "Scroll frames blur text; structure legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "finance",
+    "transaction"
+   ],
+   "title": "Transaction feed scroll",
+   "type": "flow-walkthrough"
+  },
+  "VID-0355": {
+   "category": "other",
+   "description": "A near-black frame of small light text over a starfield: illegible at poster size from a static recording. Held, not described — needs a full-size look before it earns a subject.",
+   "id": "VID-0355",
+   "quality": "Illegible at poster size — flagged for a full-size second pass.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "atmospheric"
+   ],
+   "title": "Dark abstract text frame",
+   "type": "screen"
+  },
+  "VID-0356": {
+   "category": "dashboard",
+   "description": "'Share payment link': a grain.payment URL with Email/Message/LinkedIn/X/WhatsApp rows floating over a Miller Logistics invoice table. Getting paid as a share sheet.",
+   "id": "VID-0356",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "payments",
+    "sharing",
+    "finance"
+   ],
+   "title": "Payment-link share sheet",
+   "type": "component"
+  },
+  "VID-0357": {
+   "category": "other",
+   "description": "A long field message about curtain-wall anchor embed depths (Rowan & Hale Builders): Jobsite correspondence captured as a screenshot. Niche working document, kept for the long-form field-message shape.",
+   "id": "VID-0357",
+   "quality": "Dense fine print; flagged for a full-size pass before quoting.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "documentation"
+   ],
+   "title": "Field-message screenshot",
+   "type": "screen"
+  },
+  "VID-0358": {
+   "category": "website",
+   "description": "'Book a call, I redesign it. You ship it on Friday': a design-service landing with a booking card and plan tiers. The whole offer — call, redesign, Friday ship — above the fold.",
+   "id": "VID-0358",
+   "quality": "Card text small; offer fully legible.",
+   "roles": [
+    "hero"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "landing",
+    "booking"
+   ],
+   "title": "Redesign-service booking landing",
+   "type": "screen"
+  }
+ }
+}

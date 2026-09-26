@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 649
+  "described": 661
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 379
+   "count": 381
   },
   {
    "id": "app-store-screens",
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 95
+   "count": 99
   },
   {
    "id": "design-system",
@@ -63,14 +63,14 @@
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 56
+   "count": 58
   },
   {
    "id": "motion-demo",
    "label": "Motion demo",
    "blurb": "Clips whose whole point is the transition, not the static screen.",
    "icon": "play",
-   "count": 95
+   "count": 89
   },
   {
    "id": "promo-reel",
@@ -84,19 +84,19 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 47
+   "count": 45
   }
  ],
  "types": [
   {
    "id": "component",
    "label": "component",
-   "count": 23
+   "count": 26
   },
   {
    "id": "flow-walkthrough",
    "label": "flow-walkthrough",
-   "count": 325
+   "count": 315
   },
   {
    "id": "marketing",
@@ -111,7 +111,7 @@
   {
    "id": "multi-screen",
    "label": "multi-screen",
-   "count": 88
+   "count": 89
   },
   {
    "id": "pattern",
@@ -126,7 +126,7 @@
   {
    "id": "screen",
    "label": "screen",
-   "count": 239
+   "count": 245
   },
   {
    "id": "token-sheet",
@@ -137,11 +137,11 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 122
+   "count": 123
   },
   {
    "id": "hero",
-   "count": 62
+   "count": 64
   },
   {
    "id": "list",
@@ -173,15 +173,15 @@
   },
   {
    "id": "editor",
-   "count": 18
+   "count": 19
   },
   {
    "id": "chat",
-   "count": 18
+   "count": 19
   },
   {
    "id": "media",
-   "count": 17
+   "count": 18
   },
   {
    "id": "pricing",
@@ -227,27 +227,27 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 404
+   "count": 411
   },
   {
    "id": "minimal",
-   "count": 287
+   "count": 291
   },
   {
    "id": "rounded",
-   "count": 201
+   "count": 206
   },
   {
    "id": "card-based",
-   "count": 189
+   "count": 194
   },
   {
    "id": "dark-mode",
-   "count": 189
+   "count": 192
   },
   {
    "id": "data-dense",
-   "count": 66
+   "count": 67
   },
   {
    "id": "editorial",
@@ -279,7 +279,7 @@
   },
   {
    "id": "gradient-heavy",
-   "count": 22
+   "count": 25
   },
   {
    "id": "illustration-led",
@@ -325,11 +325,11 @@
   },
   {
    "id": "fintech",
-   "count": 55
+   "count": 56
   },
   {
    "id": "ai",
-   "count": 49
+   "count": 51
   },
   {
    "id": "chart",
@@ -341,7 +341,7 @@
   },
   {
    "id": "photographic",
-   "count": 33
+   "count": 34
   },
   {
    "id": "card",
@@ -349,7 +349,7 @@
   },
   {
    "id": "landing",
-   "count": 31
+   "count": 33
   },
   {
    "id": "progress",
@@ -384,12 +384,12 @@
    "count": 26
   },
   {
-   "id": "onboarding",
+   "id": "finance",
    "count": 25
   },
   {
-   "id": "finance",
-   "count": 23
+   "id": "onboarding",
+   "count": 25
   },
   {
    "id": "avatar",
@@ -408,6 +408,10 @@
    "count": 21
   },
   {
+   "id": "calendar",
+   "count": 21
+  },
+  {
    "id": "fitness",
    "count": 21
   },
@@ -420,19 +424,15 @@
    "count": 21
   },
   {
+   "id": "health",
+   "count": 20
+  },
+  {
    "id": "grid",
    "count": 20
   },
   {
-   "id": "calendar",
-   "count": 20
-  },
-  {
    "id": "gradient",
-   "count": 19
-  },
-  {
-   "id": "health",
    "count": 19
   },
   {
@@ -460,12 +460,12 @@
    "count": 15
   },
   {
-   "id": "animation",
+   "id": "transaction",
    "count": 15
   },
   {
-   "id": "transaction",
-   "count": 14
+   "id": "animation",
+   "count": 15
   },
   {
    "id": "status",
@@ -512,7 +512,15 @@
    "count": 12
   },
   {
+   "id": "crypto",
+   "count": 12
+  },
+  {
    "id": "green",
+   "count": 11
+  },
+  {
+   "id": "booking",
    "count": 11
   },
   {
@@ -532,10 +540,6 @@
    "count": 11
   },
   {
-   "id": "crypto",
-   "count": 11
-  },
-  {
    "id": "stats",
    "count": 11
   },
@@ -546,10 +550,6 @@
   {
    "id": "list",
    "count": 11
-  },
-  {
-   "id": "booking",
-   "count": 10
   },
   {
    "id": "banking",
@@ -565,6 +565,10 @@
   },
   {
    "id": "price",
+   "count": 10
+  },
+  {
+   "id": "sharing",
    "count": 10
   },
   {
@@ -596,7 +600,7 @@
    "count": 9
   },
   {
-   "id": "sharing",
+   "id": "developer-tool",
    "count": 9
   },
   {
@@ -652,7 +656,7 @@
    "count": 8
   },
   {
-   "id": "developer-tool",
+   "id": "documentation",
    "count": 8
   },
   {
@@ -712,6 +716,10 @@
    "count": 7
   },
   {
+   "id": "real-estate",
+   "count": 7
+  },
+  {
    "id": "collaboration",
    "count": 7
   },
@@ -761,6 +769,10 @@
   },
   {
    "id": "statistics",
+   "count": 6
+  },
+  {
+   "id": "assistant",
    "count": 6
   },
   {
@@ -828,19 +840,11 @@
    "count": 6
   },
   {
-   "id": "real-estate",
-   "count": 6
-  },
-  {
    "id": "camera",
    "count": 6
   },
   {
    "id": "ai-agent",
-   "count": 6
-  },
-  {
-   "id": "documentation",
    "count": 6
   },
   {
@@ -884,10 +888,6 @@
    "count": 5
   },
   {
-   "id": "assistant",
-   "count": 5
-  },
-  {
    "id": "timestamp",
    "count": 5
   },
@@ -897,6 +897,10 @@
   },
   {
    "id": "charts",
+   "count": 5
+  },
+  {
+   "id": "payments",
    "count": 5
   },
   {
@@ -976,6 +980,10 @@
    "count": 5
   },
   {
+   "id": "property",
+   "count": 5
+  },
+  {
    "id": "filters",
    "count": 5
   },
@@ -1025,10 +1033,6 @@
   },
   {
    "id": "colourful",
-   "count": 4
-  },
-  {
-   "id": "payments",
    "count": 4
   },
   {
@@ -1117,10 +1121,6 @@
   },
   {
    "id": "notifications",
-   "count": 4
-  },
-  {
-   "id": "property",
    "count": 4
   },
   {
@@ -1249,6 +1249,10 @@
   },
   {
    "id": "audio",
+   "count": 3
+  },
+  {
+   "id": "sleep",
    "count": 3
   },
   {
@@ -1396,6 +1400,10 @@
    "count": 3
   },
   {
+   "id": "loading-state",
+   "count": 3
+  },
+  {
    "id": "prototype",
    "count": 3
   },
@@ -1481,10 +1489,6 @@
   },
   {
    "id": "chapter",
-   "count": 2
-  },
-  {
-   "id": "sleep",
    "count": 2
   },
   {
@@ -1796,10 +1800,6 @@
    "count": 2
   },
   {
-   "id": "loading-state",
-   "count": 2
-  },
-  {
    "id": "magazine",
    "count": 2
   },
@@ -1909,6 +1909,10 @@
   },
   {
    "id": "ai-comparison",
+   "count": 2
+  },
+  {
+   "id": "scheduling",
    "count": 2
   },
   {
@@ -2720,10 +2724,6 @@
    "count": 1
   },
   {
-   "id": "scheduling",
-   "count": 1
-  },
-  {
    "id": "code-editor",
    "count": 1
   },
@@ -2761,6 +2761,14 @@
   },
   {
    "id": "cinematic",
+   "count": 1
+  },
+  {
+   "id": "video-editing",
+   "count": 1
+  },
+  {
+   "id": "atmospheric",
    "count": 1
   },
   {
@@ -48975,13 +48983,20 @@
   {
    "id": "VID-0347",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0347",
-   "description": "",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Real-estate listing panels",
+   "description": "A fast scroll across real-estate listing panels: For-sale pool villa, numbered '03' card, testimonial and a 'Lexington' mansion shot. Listing cards as a moving strip.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode"
+   ],
+   "tags": [
+    "photographic",
+    "property",
+    "real-estate"
+   ],
    "palette": [
     "#F8F6F4",
     "#E3E3DE",
@@ -49025,7 +49040,8 @@
     "path": "E:\\Downloads\\UI\\uiYbmd3lbW9P0KsR.mp4",
     "bytes": 2384342
    },
-   "source_note": "auto-draft 2026-09-26: motion median 38.16; needs a visual read-through",
+   "quality": "Scroll frames blur text; cards legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0347.webp",
    "thumb": "assets/thumb/VID-0347.webp",
    "motion": 38.16,
@@ -49045,11 +49061,19 @@
    "kind": "video",
    "category": "motion-demo",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0348",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Mobile video-editor demo",
+   "description": "A mobile video editor ('Made with Unveil') on a gradient stage: iPhone timeline at 00:01:35 over clip thumbnails. Editing chrome in fast motion.",
+   "roles": [
+    "editor",
+    "media"
+   ],
+   "style": [
+    "gradient-heavy",
+    "rounded"
+   ],
+   "tags": [
+    "video-editing"
+   ],
    "palette": [
     "#E5A68C",
     "#2D2578",
@@ -49093,7 +49117,8 @@
     "path": "E:\\Downloads\\UI\\xrvI-L_B9EPENoMj.mp4",
     "bytes": 20784216
    },
-   "source_note": "auto-draft 2026-09-26: motion median 84.28; needs a visual read-through",
+   "quality": "Fast frames blur detail; chrome legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0348.webp",
    "thumb": "assets/thumb/VID-0348.webp",
    "motion": 84.28,
@@ -49111,13 +49136,22 @@
   {
    "id": "VID-0349",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0349",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "screen",
+   "title": "Onchain-finance landing",
+   "description": "'The execution layer for onchain finance': pink-gradient hero over portfolio-allocation and investment-indicator cards. DeFi marketing with the product wall behind the headline.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "card-based",
+    "gradient-heavy"
+   ],
+   "tags": [
+    "crypto",
+    "fintech",
+    "landing"
+   ],
    "palette": [
     "#FAF9FA",
     "#E02E6D",
@@ -49161,7 +49195,8 @@
     "path": "E:\\Downloads\\UI\\YvHKd-4wI1Pf3Xhf.mp4",
     "bytes": 10084262
    },
-   "source_note": "auto-draft 2026-09-26: motion median 8.91; needs a visual read-through",
+   "quality": "Card text small; headline and structure legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0349.webp",
    "thumb": "assets/thumb/VID-0349.webp",
    "motion": 8.91,
@@ -49179,13 +49214,19 @@
   {
    "id": "VID-0350",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0350",
-   "description": "",
+   "category": "website",
+   "type": "component",
+   "title": "Docs sidebar navigation",
+   "description": "A dark docs sidebar demo: 'On this page' TOC (Introduction, MDX, Frontmatter, Auto Links, Cards…) scrolling past Callouts, Headings and Shiki Transformers entries. Documentation navigation as the subject.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "developer-tool",
+    "documentation"
+   ],
    "palette": [
     "#111111",
     "#171717",
@@ -49229,7 +49270,8 @@
     "path": "E:\\Downloads\\UI\\iz_uhfozRAY9BiwX.mp4",
     "bytes": 1411806
    },
-   "source_note": "auto-draft 2026-09-26: motion median 4.52; needs a visual read-through",
+   "quality": "Entries small; structure legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0350.webp",
    "thumb": "assets/thumb/VID-0350.webp",
    "motion": 4.52,
@@ -49247,13 +49289,24 @@
   {
    "id": "VID-0351",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0351",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "screen",
+   "title": "AI meeting-booking chat",
+   "description": "'Book a meeting with Pasquale': a 30-minute onboarding lands in chat with Reasoning, two completed steps and a booking confirmation, over an Ask Cal input. Scheduling resolved inside conversation.",
+   "roles": [
+    "chat"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "assistant",
+    "calendar",
+    "scheduling"
+   ],
    "palette": [
     "#FDFDFD",
     "#F1F1F1",
@@ -49297,7 +49350,8 @@
     "path": "E:\\Downloads\\UI\\RyDdrdqUHNNiirqb.mp4",
     "bytes": 1524751
    },
-   "source_note": "auto-draft 2026-09-26: motion median 2.99; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0351.webp",
    "thumb": "assets/thumb/VID-0351.webp",
    "motion": 2.99,
@@ -49316,12 +49370,19 @@
    "id": "VID-0352",
    "kind": "video",
    "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0352",
-   "description": "",
+   "type": "component",
+   "title": "AI thinking indicator",
+   "description": "A 'Thinking…' AI input bar with glow: the waiting state as a designed moment. Thirteen seconds of anticipation, honestly labelled.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "loading-state"
+   ],
    "palette": [
     "#FFFFFF",
     "#F4F4FD",
@@ -49365,7 +49426,8 @@
     "path": "E:\\Downloads\\UI\\0-SlLyWcKVDIwQYK.mp4",
     "bytes": 10739999
    },
-   "source_note": "auto-draft 2026-09-26: motion median 13.26; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0352.webp",
    "thumb": "assets/thumb/VID-0352.webp",
    "motion": 13.26,
@@ -49383,13 +49445,20 @@
   {
    "id": "VID-0353",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0353",
-   "description": "",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Sleep-goal setter",
+   "description": "A purple 'Sleep Goal — 6h 50m' setter with a gradient duration slider and a Done CTA. One goal, one slider, one button.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "gradient-heavy",
+    "rounded"
+   ],
+   "tags": [
+    "health",
+    "sleep"
+   ],
    "palette": [
     "#FEFEFE",
     "#190E1E",
@@ -49433,7 +49502,8 @@
     "path": "E:\\Downloads\\UI\\Zi877_plx1Q54-hO.mp4",
     "bytes": 1708527
    },
-   "source_note": "auto-draft 2026-09-26: motion median 4.56; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0353.webp",
    "thumb": "assets/thumb/VID-0353.webp",
    "motion": 4.56,
@@ -49451,13 +49521,21 @@
   {
    "id": "VID-0354",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "dashboard",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0354",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Transaction feed scroll",
+   "description": "A transaction-feed scroll: Sapphire and Checking rows, a +$96 correction, a grocery-overspend review card and an Apple Pay -$184.32 detail. Real-money feed with inline review moments.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "finance",
+    "transaction"
+   ],
    "palette": [
     "#FFFFFF",
     "#F2F3F9",
@@ -49501,7 +49579,8 @@
     "path": "E:\\Downloads\\UI\\yF8avnBZ9iaR94ae.mp4",
     "bytes": 13814031
    },
-   "source_note": "auto-draft 2026-09-26: motion median 15.63; needs a visual read-through",
+   "quality": "Scroll frames blur text; structure legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0354.webp",
    "thumb": "assets/thumb/VID-0354.webp",
    "motion": 15.63,
@@ -49520,12 +49599,16 @@
    "id": "VID-0355",
    "kind": "video",
    "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0355",
-   "description": "",
+   "type": "screen",
+   "title": "Dark abstract text frame",
+   "description": "A near-black frame of small light text over a starfield: illegible at poster size from a static recording. Held, not described — needs a full-size look before it earns a subject.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "atmospheric"
+   ],
    "palette": [
     "#0A0A0A",
     "#010100",
@@ -49569,7 +49652,8 @@
     "path": "E:\\Downloads\\UI\\VznAOX1sFz-mOshw.mp4",
     "bytes": 2269509
    },
-   "source_note": "auto-draft 2026-09-26: motion median 0.39; needs a visual read-through",
+   "quality": "Illegible at poster size — flagged for a full-size second pass.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0355.webp",
    "thumb": "assets/thumb/VID-0355.webp",
    "motion": 0.39,
@@ -49579,13 +49663,21 @@
   {
    "id": "VID-0356",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0356",
-   "description": "",
+   "category": "dashboard",
+   "type": "component",
+   "title": "Payment-link share sheet",
+   "description": "'Share payment link': a grain.payment URL with Email/Message/LinkedIn/X/WhatsApp rows floating over a Miller Logistics invoice table. Getting paid as a share sheet.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "finance",
+    "payments",
+    "sharing"
+   ],
    "palette": [
     "#6E6F72",
     "#868788",
@@ -49629,7 +49721,8 @@
     "path": "E:\\Downloads\\UI\\vbCRFrvtwd0duJA8.mp4",
     "bytes": 170179
    },
-   "source_note": "auto-draft 2026-09-26: motion median 1.12; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0356.webp",
    "thumb": "assets/thumb/VID-0356.webp",
    "motion": 1.12,
@@ -49640,12 +49733,17 @@
    "id": "VID-0357",
    "kind": "video",
    "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0357",
-   "description": "",
+   "type": "screen",
+   "title": "Field-message screenshot",
+   "description": "A long field message about curtain-wall anchor embed depths (Rowan & Hale Builders): Jobsite correspondence captured as a screenshot. Niche working document, kept for the long-form field-message shape.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "documentation"
+   ],
    "palette": [
     "#F8F8F8",
     "#FFFFFF",
@@ -49689,7 +49787,8 @@
     "path": "E:\\Downloads\\UI\\mUoASVMJvvnfohwp.mp4",
     "bytes": 6850134
    },
-   "source_note": "auto-draft 2026-09-26: motion median 2.79; needs a visual read-through",
+   "quality": "Dense fine print; flagged for a full-size pass before quoting.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0357.webp",
    "thumb": "assets/thumb/VID-0357.webp",
    "motion": 2.79,
@@ -49707,13 +49806,22 @@
   {
    "id": "VID-0358",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0358",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "screen",
+   "title": "Redesign-service booking landing",
+   "description": "'Book a call, I redesign it. You ship it on Friday': a design-service landing with a booking card and plan tiers. The whole offer — call, redesign, Friday ship — above the fold.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "booking",
+    "landing"
+   ],
    "palette": [
     "#FFFFFF",
     "#F6F7F9",
@@ -49757,7 +49865,8 @@
     "path": "E:\\Downloads\\UI\\In9k86WDLrMRpPc3.mp4",
     "bytes": 4252311
    },
-   "source_note": "auto-draft 2026-09-26: motion median 6.31; needs a visual read-through",
+   "quality": "Card text small; offer fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0358.webp",
    "thumb": "assets/thumb/VID-0358.webp",
    "motion": 6.31,
