@@ -1,0 +1,255 @@
+{
+ "items": {
+  "IMG-0545": {
+   "category": "website",
+   "description": "A Japanese-language documentation page for React: left sidebar, prose with Japanese headings, a code block, and small contributor avatars. A docs-layout reference; the body copy was not transcribed, only its structure was read.",
+   "id": "IMG-0545",
+   "quality": "Japanese body copy not transcribed; layout fully legible.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "documentation",
+    "localised"
+   ],
+   "title": "React docs page in Japanese",
+   "type": "screen"
+  },
+  "IMG-0546": {
+   "category": "dashboard",
+   "description": "A 'Reporting / User Satisfaction' dashboard in Pratik's Workspace: left nav (Search, Events, Chat, Reporting), headline Net Promoter Score 93 'Outstanding', Total Surveys Shown 2,825 and Total Responses 1,921. A clean SaaS reporting screen; the KPI-then-chart rhythm is the pattern.",
+   "id": "IMG-0546",
+   "quality": "Clean capture; small print legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "data-dense"
+   ],
+   "tags": [
+    "analytics",
+    "kpi",
+    "survey"
+   ],
+   "title": "NPS reporting dashboard",
+   "type": "screen"
+  },
+  "IMG-0547": {
+   "category": "dashboard",
+   "description": "A cropped NPS chart card for April 2026: Promoters 71%, Passive 16%, Detractors 13%, NPS Score +58, over a Mar-Jun trend line. The chart half of the reporting screen next to it — same product, kept for the annotated-chart treatment.",
+   "id": "IMG-0547",
+   "pair_with": "IMG-0546",
+   "quality": "Tight crop of a larger screen; kept for the chart.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "chart",
+    "analytics"
+   ],
+   "title": "NPS breakdown chart card",
+   "type": "component"
+  },
+  "IMG-0548": {
+   "category": "app-store-screens",
+   "description": "A set of travel-social store panels for 'Mike': 'Join hangouts anywhere', 'Plan Trips', a live map with avatars, and a 'new Friends' headline over globe-and-plane art. Bright blue marketing panels; the map-with-avatars panel is the strongest layout.",
+   "id": "IMG-0548",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "social-proof"
+   ],
+   "style": [
+    "playful",
+    "gradient-heavy",
+    "rounded"
+   ],
+   "tags": [
+    "app-store",
+    "travel",
+    "social",
+    "map"
+   ],
+   "title": "Mike travel-social store panels",
+   "type": "multi-screen"
+  },
+  "IMG-0549": {
+   "category": "website",
+   "description": "A dark maroon fintech landing, 'Smarter Financial Management': a hand holding a small device over a faint data grid, supporting copy about AI automation, and a stat row (500+, 80%, $20B+). A luxury-dark SaaS hero; the stat strip grounds it.",
+   "id": "IMG-0549",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "dark-mode",
+    "luxury"
+   ],
+   "tags": [
+    "landing",
+    "fintech",
+    "finance"
+   ],
+   "title": "Dark fintech management hero",
+   "type": "screen"
+  },
+  "IMG-0550": {
+   "category": "website",
+   "description": "A light green fintech landing, 'Manage money with confidence everyday': photo cards of young women, a '$75' balance widget, and a 'Manage Your Money Worldwide' band below. Friendly card-based marketing; the embedded product widget inside the hero is the device.",
+   "id": "IMG-0550",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "landing",
+    "fintech"
+   ],
+   "title": "Green fintech confidence landing",
+   "type": "screen"
+  },
+  "IMG-0551": {
+   "category": "website",
+   "description": "An agency page in burnt orange and red: a profile portrait under 'VISUAL STORIES THAT DEFINE BRANDS', view/share counters (90K, 98%), and an 'ART DIRECTION WITH PURPOSE & PRECISION' section with monochrome fashion photography. Editorial, type-led, high-contrast.",
+   "id": "IMG-0551",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "editorial",
+    "bold-typography",
+    "high-contrast"
+   ],
+   "tags": [
+    "landing",
+    "branding",
+    "portfolio"
+   ],
+   "title": "Orange editorial agency page",
+   "type": "screen"
+  },
+  "IMG-0552": {
+   "category": "website",
+   "description": "A deep-red AI-sales landing, 'Boost Sales with AI Agents' for Salesio: chat-assistant panels, agent avatars, and copy about supporting customers to improve satisfaction. Dark, dense, product-led; the chat panels carry the layout.",
+   "id": "IMG-0552",
+   "quality": "Some panel text small; headline and structure legible.",
+   "roles": [
+    "hero",
+    "landing-section",
+    "chat"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based"
+   ],
+   "tags": [
+    "landing",
+    "ai",
+    "assistant"
+   ],
+   "title": "Salesio AI-agents sales landing",
+   "type": "screen"
+  },
+  "IMG-0553": {
+   "category": "website",
+   "description": "An Answer AI-education section, 'You get the evidence': copy about a full term at Babson College measuring the AI readiness of 211 students, beside a stat card (40%, 4.5/5, 2x). A proof-led landing module; first of a matching Answer series.",
+   "id": "IMG-0553",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "landing-section",
+    "social-proof"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "landing",
+    "education",
+    "ai",
+    "testimonial"
+   ],
+   "title": "Answer evidence section (Babson)",
+   "type": "screen"
+  },
+  "IMG-0554": {
+   "category": "website",
+   "description": "The Answer 'See your AIQ' hero: centred serif headline, dual CTAs ('See your AIQ', 'Book a demo'), footer link columns, and a full-width blue engraving-style illustration of a domed institutional building. Classical-illustration SaaS hero.",
+   "id": "IMG-0554",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "illustration-led",
+    "editorial"
+   ],
+   "tags": [
+    "landing",
+    "ai",
+    "education"
+   ],
+   "title": "Answer AIQ hero with engraving",
+   "type": "screen"
+  },
+  "IMG-0555": {
+   "category": "website",
+   "description": "An Answer testimonial band, 'Trusted by institutions building AI capability': Chapman/Babson College logo row and a Michael Reynolds quote about moving beyond AI adoption metrics toward real-world decision-making. A standard logo-plus-quote social-proof module.",
+   "id": "IMG-0555",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "social-proof"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "landing",
+    "testimonial",
+    "education"
+   ],
+   "title": "Answer institutional testimonial band",
+   "type": "screen"
+  },
+  "IMG-0556": {
+   "category": "website",
+   "description": "An Answer section, 'Institutions buy it. People carry it.': enterprise hiring copy ('Hire for AI fluency') beside a 'Comparing AIQ Scores' card of graduate-cap icons. The people-proof counterpart to the institutional band.",
+   "id": "IMG-0556",
+   "quality": "Card copy small; headline and structure legible.",
+   "roles": [
+    "landing-section",
+    "social-proof"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "landing",
+    "education",
+    "ai"
+   ],
+   "title": "Answer people-proof section",
+   "type": "screen"
+  }
+ }
+}

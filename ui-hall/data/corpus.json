@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 518
+  "described": 530
  },
  "categories": [
   {
@@ -21,7 +21,7 @@
    "label": "App Store screens",
    "blurb": "Store listing panels - the framed marketing shots that sell an app.",
    "icon": "store",
-   "count": 7
+   "count": 8
   },
   {
    "id": "before-after",
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 40
+   "count": 49
   },
   {
    "id": "design-system",
@@ -63,7 +63,7 @@
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 30
+   "count": 32
   },
   {
    "id": "motion-demo",
@@ -84,14 +84,14 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 168
+   "count": 156
   }
  ],
  "types": [
   {
    "id": "component",
    "label": "component",
-   "count": 11
+   "count": 12
   },
   {
    "id": "flow-walkthrough",
@@ -111,7 +111,7 @@
   {
    "id": "multi-screen",
    "label": "multi-screen",
-   "count": 72
+   "count": 73
   },
   {
    "id": "pattern",
@@ -126,7 +126,7 @@
   {
    "id": "screen",
    "label": "screen",
-   "count": 260
+   "count": 258
   },
   {
    "id": "token-sheet",
@@ -137,7 +137,7 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 95
+   "count": 97
   },
   {
    "id": "list",
@@ -145,7 +145,7 @@
   },
   {
    "id": "hero",
-   "count": 46
+   "count": 51
   },
   {
    "id": "home",
@@ -165,7 +165,7 @@
   },
   {
    "id": "landing-section",
-   "count": 18
+   "count": 23
   },
   {
    "id": "editor",
@@ -196,11 +196,15 @@
    "count": 14
   },
   {
+   "id": "chat",
+   "count": 10
+  },
+  {
    "id": "search",
    "count": 9
   },
   {
-   "id": "chat",
+   "id": "social-proof",
    "count": 9
   },
   {
@@ -218,40 +222,36 @@
   {
    "id": "auth",
    "count": 6
-  },
-  {
-   "id": "social-proof",
-   "count": 5
   }
  ],
  "styles": [
   {
    "id": "light-mode",
-   "count": 306
+   "count": 314
   },
   {
    "id": "minimal",
-   "count": 236
+   "count": 242
   },
   {
    "id": "dark-mode",
-   "count": 164
-  },
-  {
-   "id": "rounded",
-   "count": 134
+   "count": 166
   },
   {
    "id": "card-based",
-   "count": 134
+   "count": 138
+  },
+  {
+   "id": "rounded",
+   "count": 136
   },
   {
    "id": "editorial",
-   "count": 44
+   "count": 46
   },
   {
    "id": "data-dense",
-   "count": 40
+   "count": 41
   },
   {
    "id": "soft",
@@ -259,7 +259,7 @@
   },
   {
    "id": "bold-typography",
-   "count": 31
+   "count": 32
   },
   {
    "id": "flat",
@@ -267,11 +267,11 @@
   },
   {
    "id": "playful",
-   "count": 27
+   "count": 28
   },
   {
    "id": "high-contrast",
-   "count": 24
+   "count": 25
   },
   {
    "id": "monochrome",
@@ -279,11 +279,11 @@
   },
   {
    "id": "gradient-heavy",
-   "count": 20
+   "count": 21
   },
   {
    "id": "illustration-led",
-   "count": 19
+   "count": 20
   },
   {
    "id": "outlined",
@@ -294,12 +294,12 @@
    "count": 7
   },
   {
-   "id": "glassmorphism",
+   "id": "luxury",
    "count": 4
   },
   {
-   "id": "luxury",
-   "count": 3
+   "id": "glassmorphism",
+   "count": 4
   },
   {
    "id": "corporate",
@@ -325,30 +325,30 @@
   },
   {
    "id": "fintech",
-   "count": 46
+   "count": 48
   },
   {
    "id": "chart",
-   "count": 42
+   "count": 43
   },
   {
    "id": "card",
    "count": 33
   },
   {
+   "id": "ai",
+   "count": 32
+  },
+  {
    "id": "photographic",
    "count": 30
   },
   {
-   "id": "progress",
-   "count": 28
-  },
-  {
-   "id": "ai",
-   "count": 28
-  },
-  {
    "id": "analytics",
+   "count": 30
+  },
+  {
+   "id": "progress",
    "count": 28
   },
   {
@@ -388,6 +388,10 @@
    "count": 21
   },
   {
+   "id": "social",
+   "count": 21
+  },
+  {
    "id": "illustration",
    "count": 20
   },
@@ -400,7 +404,7 @@
    "count": 20
   },
   {
-   "id": "social",
+   "id": "kpi",
    "count": 20
   },
   {
@@ -408,19 +412,15 @@
    "count": 19
   },
   {
-   "id": "kpi",
-   "count": 19
-  },
-  {
    "id": "health",
    "count": 18
   },
   {
-   "id": "cards",
-   "count": 17
+   "id": "app-store",
+   "count": 18
   },
   {
-   "id": "app-store",
+   "id": "cards",
    "count": 17
   },
   {
@@ -433,18 +433,18 @@
   },
   {
    "id": "travel",
-   "count": 15
+   "count": 16
   },
   {
    "id": "call-to-action",
    "count": 15
   },
   {
-   "id": "status",
-   "count": 14
+   "id": "map",
+   "count": 15
   },
   {
-   "id": "map",
+   "id": "status",
    "count": 14
   },
   {
@@ -484,6 +484,10 @@
    "count": 12
   },
   {
+   "id": "portfolio",
+   "count": 12
+  },
+  {
    "id": "green",
    "count": 11
   },
@@ -496,11 +500,15 @@
    "count": 11
   },
   {
+   "id": "education",
+   "count": 11
+  },
+  {
    "id": "gallery",
    "count": 11
   },
   {
-   "id": "portfolio",
+   "id": "landing",
    "count": 11
   },
   {
@@ -522,6 +530,10 @@
   {
    "id": "settings",
    "count": 10
+  },
+  {
+   "id": "finance",
+   "count": 9
   },
   {
    "id": "steps",
@@ -561,10 +573,6 @@
   },
   {
    "id": "cta-button",
-   "count": 8
-  },
-  {
-   "id": "finance",
    "count": 8
   },
   {
@@ -612,6 +620,10 @@
    "count": 8
   },
   {
+   "id": "localised",
+   "count": 7
+  },
+  {
    "id": "tabs",
    "count": 7
   },
@@ -621,10 +633,6 @@
   },
   {
    "id": "quick-actions",
-   "count": 7
-  },
-  {
-   "id": "education",
    "count": 7
   },
   {
@@ -678,10 +686,6 @@
   {
    "id": "motion",
    "count": 7
-  },
-  {
-   "id": "localised",
-   "count": 6
   },
   {
    "id": "booking",
@@ -876,6 +880,10 @@
    "count": 5
   },
   {
+   "id": "testimonial",
+   "count": 5
+  },
+  {
    "id": "habit-tracker",
    "count": 5
   },
@@ -908,6 +916,10 @@
    "count": 5
   },
   {
+   "id": "branding",
+   "count": 5
+  },
+  {
    "id": "annotation",
    "count": 5
   },
@@ -937,6 +949,10 @@
   },
   {
    "id": "goal-selection",
+   "count": 4
+  },
+  {
+   "id": "assistant",
    "count": 4
   },
   {
@@ -1044,11 +1060,11 @@
    "count": 4
   },
   {
-   "id": "signup",
+   "id": "documentation",
    "count": 4
   },
   {
-   "id": "branding",
+   "id": "signup",
    "count": 4
   },
   {
@@ -1089,10 +1105,6 @@
   },
   {
    "id": "centred",
-   "count": 3
-  },
-  {
-   "id": "assistant",
    "count": 3
   },
   {
@@ -1204,10 +1216,6 @@
    "count": 3
   },
   {
-   "id": "testimonial",
-   "count": 3
-  },
-  {
    "id": "dropdown",
    "count": 3
   },
@@ -1288,7 +1296,7 @@
    "count": 3
   },
   {
-   "id": "landing",
+   "id": "survey",
    "count": 3
   },
   {
@@ -1301,10 +1309,6 @@
   },
   {
    "id": "search",
-   "count": 3
-  },
-  {
-   "id": "documentation",
    "count": 3
   },
   {
@@ -1769,10 +1773,6 @@
   },
   {
    "id": "keyboard",
-   "count": 2
-  },
-  {
-   "id": "survey",
    "count": 2
   },
   {
@@ -24871,13 +24871,19 @@
   {
    "id": "IMG-0545",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0545",
-   "description": "",
+   "title": "React docs page in Japanese",
+   "description": "A Japanese-language documentation page for React: left sidebar, prose with Japanese headings, a code block, and small contributor avatars. A docs-layout reference; the body copy was not transcribed, only its structure was read.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "documentation",
+    "localised"
+   ],
    "palette": [
     "#FDFDFB",
     "#EDECEC",
@@ -24921,20 +24927,30 @@
     "path": "E:\\Downloads\\UI\\HS5jx5Ua0AEePqb.jpg",
     "bytes": 345421
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Japanese body copy not transcribed; layout fully legible.",
    "src": "assets/img/IMG-0545.webp",
    "thumb": "assets/thumb/IMG-0545.webp"
   },
   {
    "id": "IMG-0546",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0546",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "NPS reporting dashboard",
+   "description": "A 'Reporting / User Satisfaction' dashboard in Pratik's Workspace: left nav (Search, Events, Chat, Reporting), headline Net Promoter Score 93 'Outstanding', Total Surveys Shown 2,825 and Total Responses 1,921. A clean SaaS reporting screen; the KPI-then-chart rhythm is the pattern.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "data-dense",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "analytics",
+    "kpi",
+    "survey"
+   ],
    "palette": [
     "#EFF3FF",
     "#FAFBFF",
@@ -24978,20 +24994,28 @@
     "path": "E:\\Downloads\\UI\\HS68Gh7aYAALYjT.jpg",
     "bytes": 378281
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; small print legible.",
    "src": "assets/img/IMG-0546.webp",
    "thumb": "assets/thumb/IMG-0546.webp"
   },
   {
    "id": "IMG-0547",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0547",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "dashboard",
+   "type": "component",
+   "title": "NPS breakdown chart card",
+   "description": "A cropped NPS chart card for April 2026: Promoters 71%, Passive 16%, Detractors 13%, NPS Score +58, over a Mar-Jun trend line. The chart half of the reporting screen next to it — same product, kept for the annotated-chart treatment.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "analytics",
+    "chart"
+   ],
    "palette": [
     "#F3F6FF",
     "#E6EDFE",
@@ -25035,20 +25059,32 @@
     "path": "E:\\Downloads\\UI\\HS68QuRbUAAPNC-.jpg",
     "bytes": 298152
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Tight crop of a larger screen; kept for the chart.",
+   "pair_with": "IMG-0546",
    "src": "assets/img/IMG-0547.webp",
    "thumb": "assets/thumb/IMG-0547.webp"
   },
   {
    "id": "IMG-0548",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0548",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "app-store-screens",
+   "type": "multi-screen",
+   "title": "Mike travel-social store panels",
+   "description": "A set of travel-social store panels for 'Mike': 'Join hangouts anywhere', 'Plan Trips', a live map with avatars, and a 'new Friends' headline over globe-and-plane art. Bright blue marketing panels; the map-with-avatars panel is the strongest layout.",
+   "roles": [
+    "social-proof"
+   ],
+   "style": [
+    "gradient-heavy",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "app-store",
+    "map",
+    "social",
+    "travel"
+   ],
    "palette": [
     "#EBEDF0",
     "#0F44B2",
@@ -25092,20 +25128,30 @@
     "path": "E:\\Downloads\\UI\\HS6bLvIakAAuRWd.jpg",
     "bytes": 639478
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0548.webp",
    "thumb": "assets/thumb/IMG-0548.webp"
   },
   {
    "id": "IMG-0549",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0549",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Dark fintech management hero",
+   "description": "A dark maroon fintech landing, 'Smarter Financial Management': a hand holding a small device over a faint data grid, supporting copy about AI automation, and a stat row (500+, 80%, $20B+). A luxury-dark SaaS hero; the stat strip grounds it.",
+   "roles": [
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "dark-mode",
+    "luxury"
+   ],
+   "tags": [
+    "finance",
+    "fintech",
+    "landing"
+   ],
    "palette": [
     "#341815",
     "#E3E0D1",
@@ -25149,20 +25195,30 @@
     "path": "E:\\Downloads\\UI\\HS-fJmKbcAEsL3x.jpg",
     "bytes": 595053
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0549.webp",
    "thumb": "assets/thumb/IMG-0549.webp"
   },
   {
    "id": "IMG-0550",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0550",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Green fintech confidence landing",
+   "description": "A light green fintech landing, 'Manage money with confidence everyday': photo cards of young women, a '$75' balance widget, and a 'Manage Your Money Worldwide' band below. Friendly card-based marketing; the embedded product widget inside the hero is the device.",
+   "roles": [
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "fintech",
+    "landing"
+   ],
    "palette": [
     "#FFFFFF",
     "#DEF6EC",
@@ -25206,20 +25262,30 @@
     "path": "E:\\Downloads\\UI\\HS-fLDUaMAAw5vd.jpg",
     "bytes": 654178
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0550.webp",
    "thumb": "assets/thumb/IMG-0550.webp"
   },
   {
    "id": "IMG-0551",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0551",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Orange editorial agency page",
+   "description": "An agency page in burnt orange and red: a profile portrait under 'VISUAL STORIES THAT DEFINE BRANDS', view/share counters (90K, 98%), and an 'ART DIRECTION WITH PURPOSE & PRECISION' section with monochrome fashion photography. Editorial, type-led, high-contrast.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "bold-typography",
+    "editorial",
+    "high-contrast"
+   ],
+   "tags": [
+    "branding",
+    "landing",
+    "portfolio"
+   ],
    "palette": [
     "#FCFAFA",
     "#341313",
@@ -25263,20 +25329,31 @@
     "path": "E:\\Downloads\\UI\\HS-fLDdbEAAN28z.jpg",
     "bytes": 927957
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0551.webp",
    "thumb": "assets/thumb/IMG-0551.webp"
   },
   {
    "id": "IMG-0552",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0552",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Salesio AI-agents sales landing",
+   "description": "A deep-red AI-sales landing, 'Boost Sales with AI Agents' for Salesio: chat-assistant panels, agent avatars, and copy about supporting customers to improve satisfaction. Dark, dense, product-led; the chat panels carry the layout.",
+   "roles": [
+    "chat",
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "card-based",
+    "dark-mode"
+   ],
+   "tags": [
+    "ai",
+    "assistant",
+    "landing"
+   ],
    "palette": [
     "#F0E9DC",
     "#42040F",
@@ -25320,20 +25397,32 @@
     "path": "E:\\Downloads\\UI\\HS-fLDNb0AApxV4.jpg",
     "bytes": 605410
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Some panel text small; headline and structure legible.",
    "src": "assets/img/IMG-0552.webp",
    "thumb": "assets/thumb/IMG-0552.webp"
   },
   {
    "id": "IMG-0553",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0553",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Answer evidence section (Babson)",
+   "description": "An Answer AI-education section, 'You get the evidence': copy about a full term at Babson College measuring the AI readiness of 211 students, beside a stat card (40%, 4.5/5, 2x). A proof-led landing module; first of a matching Answer series.",
+   "roles": [
+    "landing-section",
+    "social-proof"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "ai",
+    "education",
+    "landing",
+    "testimonial"
+   ],
    "palette": [
     "#FFFFFF",
     "#E2E1D7",
@@ -25377,20 +25466,30 @@
     "path": "E:\\Downloads\\UI\\HS6REjKbQAA2Msj.jpg",
     "bytes": 531150
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0553.webp",
    "thumb": "assets/thumb/IMG-0553.webp"
   },
   {
    "id": "IMG-0554",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0554",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Answer AIQ hero with engraving",
+   "description": "The Answer 'See your AIQ' hero: centred serif headline, dual CTAs ('See your AIQ', 'Book a demo'), footer link columns, and a full-width blue engraving-style illustration of a domed institutional building. Classical-illustration SaaS hero.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "editorial",
+    "illustration-led",
+    "light-mode"
+   ],
+   "tags": [
+    "ai",
+    "education",
+    "landing"
+   ],
    "palette": [
     "#FEFEFE",
     "#7790AF",
@@ -25434,20 +25533,29 @@
     "path": "E:\\Downloads\\UI\\HS6REjJa0AE-Qka.jpg",
     "bytes": 1286286
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0554.webp",
    "thumb": "assets/thumb/IMG-0554.webp"
   },
   {
    "id": "IMG-0555",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0555",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Answer institutional testimonial band",
+   "description": "An Answer testimonial band, 'Trusted by institutions building AI capability': Chapman/Babson College logo row and a Michael Reynolds quote about moving beyond AI adoption metrics toward real-world decision-making. A standard logo-plus-quote social-proof module.",
+   "roles": [
+    "social-proof"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "education",
+    "landing",
+    "testimonial"
+   ],
    "palette": [
     "#FFFFFF",
     "#F6F6F4",
@@ -25491,20 +25599,31 @@
     "path": "E:\\Downloads\\UI\\HS6REjMa8AA3xuM.jpg",
     "bytes": 597670
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0555.webp",
    "thumb": "assets/thumb/IMG-0555.webp"
   },
   {
    "id": "IMG-0556",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0556",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Answer people-proof section",
+   "description": "An Answer section, 'Institutions buy it. People carry it.': enterprise hiring copy ('Hire for AI fluency') beside a 'Comparing AIQ Scores' card of graduate-cap icons. The people-proof counterpart to the institutional band.",
+   "roles": [
+    "landing-section",
+    "social-proof"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "ai",
+    "education",
+    "landing"
+   ],
    "palette": [
     "#FFFFFF",
     "#F7F6F4",
@@ -25548,7 +25667,7 @@
     "path": "E:\\Downloads\\UI\\HS6REjJbUAAIEeq.jpg",
     "bytes": 305485
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Card copy small; headline and structure legible.",
    "src": "assets/img/IMG-0556.webp",
    "thumb": "assets/thumb/IMG-0556.webp"
   },
