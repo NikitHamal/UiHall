@@ -1,0 +1,195 @@
+{
+ "items": {
+  "VID-0456": {
+   "category": "mobile-app-ui",
+   "description": "Gentle-workout personalization compared: 'No skills' versus 'MCP + Skills' over sensitive-shoulders/knees, no-jumping and pregnancy toggles. Adaptation options as the whole onboarding.",
+   "id": "VID-0456",
+   "quality": "Toggle text small; comparison legible.",
+   "roles": [
+    "onboarding"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "fitness",
+    "personalisation",
+    "comparison"
+   ],
+   "title": "Gentle-workout personalization",
+   "type": "multi-screen"
+  },
+  "VID-0457": {
+   "category": "mobile-app-ui",
+   "description": "A hot-pink Korean lyrics player: Hangul verses over playback controls. Lyrics as the entire screen.",
+   "id": "VID-0457",
+   "quality": "Lyrics in Korean, not transcribed; player legible.",
+   "roles": [
+    "media"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "gradient-heavy",
+    "rounded"
+   ],
+   "tags": [
+    "music",
+    "lyrics",
+    "localised"
+   ],
+   "title": "Korean lyrics player",
+   "type": "screen"
+  },
+  "VID-0458": {
+   "category": "mobile-app-ui",
+   "description": "A voice AI chat: Hermes/Twinport run-command thread with a Write-with-Siri keyboard. Command-line habits inside a messenger.",
+   "id": "VID-0458",
+   "quality": "Thread text small; pattern legible.",
+   "roles": [
+    "chat"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "voice"
+   ],
+   "title": "Voice AI chat",
+   "type": "screen"
+  },
+  "VID-0459": {
+   "category": "website",
+   "description": "Three gradient dawn cards — 'A New Dawn', 'Powered by Data' and an orb: one landing, three moods. A static variant sheet.",
+   "id": "VID-0459",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "gradient-heavy",
+    "rounded"
+   ],
+   "tags": [
+    "landing"
+   ],
+   "title": "Gradient card trio",
+   "type": "multi-screen"
+  },
+  "VID-0460": {
+   "category": "website",
+   "description": "A delivery-settings document over a landscape backdrop: returns process with priority rows. Ops documentation with a view.",
+   "id": "VID-0460",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "logistics",
+    "documentation"
+   ],
+   "title": "Delivery settings doc",
+   "type": "screen"
+  },
+  "VID-0461": {
+   "category": "website",
+   "description": "'Sign the contract': a signature pad with a Wind Sweep undo and a dark Clear pill. Signing reduced to one gesture and one escape hatch.",
+   "id": "VID-0461",
+   "quality": "Clean frames; fully legible.",
+   "roles": [
+    "form"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "legal"
+   ],
+   "title": "Contract signature pad",
+   "type": "screen"
+  },
+  "VID-0462": {
+   "category": "motion-demo",
+   "description": "An orange 'Hold to post' pill with a cursor pressing in: deliberate posting as a press-and-hold interaction. The friction is the feature.",
+   "id": "VID-0462",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "social",
+    "publish"
+   ],
+   "title": "Hold-to-post button",
+   "type": "component"
+  },
+  "VID-0463": {
+   "category": "mobile-app-ui",
+   "description": "A dark 'Hey hey' social day-feed: Campusoffland card, Guests 10/34, Today's solar moment and sticker rails. Scrapbook social in a phone.",
+   "id": "VID-0463",
+   "quality": "Card text small; feed legible.",
+   "roles": [
+    "feed"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "card-based",
+    "rounded",
+    "playful"
+   ],
+   "tags": [
+    "social"
+   ],
+   "title": "Social day feed",
+   "type": "screen"
+  },
+  "VID-0464": {
+   "category": "website",
+   "description": "A contract tracker: test-contract.pdf with Viewed status, recipient rows, an activity trail and a Download/Nudge/Duplicate menu. The paperwork of paperwork.",
+   "id": "VID-0464",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "legal",
+    "documentation"
+   ],
+   "title": "Contract tracker",
+   "type": "screen"
+  },
+  "VID-0465": {
+   "category": "promo-reel",
+   "description": "A snack pack bursting through a phone screen: 3D product pop as a fifteen-second ad. Packaging with an exit velocity.",
+   "id": "VID-0465",
+   "quality": "Fast frames blur pack detail; gag legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "3d"
+   ],
+   "title": "Snack pack burst ad",
+   "type": "screen"
+  }
+ }
+}

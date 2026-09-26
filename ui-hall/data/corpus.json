@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 333,
   "clips": 273,
-  "described": 756
+  "described": 766
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 407
+   "count": 411
   },
   {
    "id": "app-store-screens",
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 132
+   "count": 136
   },
   {
    "id": "design-system",
@@ -77,33 +77,33 @@
    "label": "Motion demo",
    "blurb": "Clips whose whole point is the transition, not the static screen.",
    "icon": "play",
-   "count": 33
+   "count": 27
   },
   {
    "id": "promo-reel",
    "label": "Promo reel",
    "blurb": "Marketing video: app presented, not an interface to copy.",
    "icon": "film",
-   "count": 20
+   "count": 21
   },
   {
    "id": "other",
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 27
+   "count": 24
   }
  ],
  "types": [
   {
    "id": "component",
    "label": "component",
-   "count": 37
+   "count": 38
   },
   {
    "id": "flow-walkthrough",
    "label": "flow-walkthrough",
-   "count": 236
+   "count": 226
   },
   {
    "id": "marketing",
@@ -118,7 +118,7 @@
   {
    "id": "multi-screen",
    "label": "multi-screen",
-   "count": 91
+   "count": 93
   },
   {
    "id": "pattern",
@@ -133,7 +133,7 @@
   {
    "id": "screen",
    "label": "screen",
-   "count": 306
+   "count": 313
   },
   {
    "id": "token-sheet",
@@ -160,7 +160,7 @@
   },
   {
    "id": "onboarding",
-   "count": 50
+   "count": 51
   },
   {
    "id": "detail",
@@ -172,7 +172,7 @@
   },
   {
    "id": "form",
-   "count": 30
+   "count": 31
   },
   {
    "id": "settings",
@@ -180,6 +180,10 @@
   },
   {
    "id": "chat",
+   "count": 23
+  },
+  {
+   "id": "media",
    "count": 22
   },
   {
@@ -187,19 +191,15 @@
    "count": 21
   },
   {
-   "id": "media",
-   "count": 21
-  },
-  {
    "id": "search",
    "count": 20
   },
   {
-   "id": "pricing",
-   "count": 17
+   "id": "feed",
+   "count": 18
   },
   {
-   "id": "feed",
+   "id": "pricing",
    "count": 17
   },
   {
@@ -234,31 +234,31 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 464
+   "count": 469
   },
   {
    "id": "minimal",
-   "count": 330
+   "count": 333
   },
   {
    "id": "rounded",
-   "count": 255
+   "count": 262
   },
   {
    "id": "dark-mode",
-   "count": 227
+   "count": 229
   },
   {
    "id": "card-based",
-   "count": 209
+   "count": 210
   },
   {
    "id": "data-dense",
-   "count": 74
+   "count": 75
   },
   {
    "id": "playful",
-   "count": 53
+   "count": 54
   },
   {
    "id": "editorial",
@@ -266,7 +266,7 @@
   },
   {
    "id": "soft",
-   "count": 41
+   "count": 42
   },
   {
    "id": "bold-typography",
@@ -278,7 +278,7 @@
   },
   {
    "id": "gradient-heavy",
-   "count": 26
+   "count": 28
   },
   {
    "id": "high-contrast",
@@ -328,7 +328,7 @@
   },
   {
    "id": "ai",
-   "count": 62
+   "count": 63
   },
   {
    "id": "fintech",
@@ -344,7 +344,7 @@
   },
   {
    "id": "landing",
-   "count": 41
+   "count": 42
   },
   {
    "id": "analytics",
@@ -359,12 +359,12 @@
    "count": 33
   },
   {
-   "id": "travel",
+   "id": "comparison",
    "count": 30
   },
   {
-   "id": "comparison",
-   "count": 29
+   "id": "travel",
+   "count": 30
   },
   {
    "id": "photo",
@@ -395,15 +395,19 @@
    "count": 26
   },
   {
+   "id": "music",
+   "count": 25
+  },
+  {
+   "id": "social",
+   "count": 25
+  },
+  {
    "id": "onboarding",
    "count": 25
   },
   {
    "id": "avatar",
-   "count": 24
-  },
-  {
-   "id": "music",
    "count": 24
   },
   {
@@ -415,8 +419,8 @@
    "count": 23
   },
   {
-   "id": "social",
-   "count": 23
+   "id": "fitness",
+   "count": 22
   },
   {
    "id": "balance",
@@ -424,10 +428,6 @@
   },
   {
    "id": "tab-bar",
-   "count": 21
-  },
-  {
-   "id": "fitness",
    "count": 21
   },
   {
@@ -539,6 +539,10 @@
    "count": 12
   },
   {
+   "id": "documentation",
+   "count": 12
+  },
+  {
    "id": "signup",
    "count": 12
   },
@@ -595,12 +599,12 @@
    "count": 10
   },
   {
-   "id": "documentation",
+   "id": "settings",
    "count": 10
   },
   {
-   "id": "settings",
-   "count": 10
+   "id": "localised",
+   "count": 9
   },
   {
    "id": "schedule",
@@ -636,10 +640,6 @@
   },
   {
    "id": "food",
-   "count": 8
-  },
-  {
-   "id": "localised",
    "count": 8
   },
   {
@@ -755,6 +755,10 @@
    "count": 7
   },
   {
+   "id": "3d",
+   "count": 7
+  },
+  {
    "id": "modal",
    "count": 7
   },
@@ -856,10 +860,6 @@
   },
   {
    "id": "glow",
-   "count": 6
-  },
-  {
-   "id": "3d",
    "count": 6
   },
   {
@@ -1023,6 +1023,10 @@
    "count": 5
   },
   {
+   "id": "voice",
+   "count": 5
+  },
+  {
    "id": "data-viz",
    "count": 5
   },
@@ -1036,6 +1040,10 @@
   },
   {
    "id": "sticker",
+   "count": 5
+  },
+  {
+   "id": "legal",
    "count": 5
   },
   {
@@ -1183,10 +1191,6 @@
    "count": 4
   },
   {
-   "id": "voice",
-   "count": 4
-  },
-  {
    "id": "iconography",
    "count": 4
   },
@@ -1256,6 +1260,10 @@
   },
   {
    "id": "unclear",
+   "count": 4
+  },
+  {
+   "id": "personalisation",
    "count": 4
   },
   {
@@ -1359,6 +1367,10 @@
    "count": 3
   },
   {
+   "id": "lyrics",
+   "count": 3
+  },
+  {
    "id": "waveform",
    "count": 3
   },
@@ -1400,6 +1412,10 @@
   },
   {
    "id": "album",
+   "count": 3
+  },
+  {
+   "id": "logistics",
    "count": 3
   },
   {
@@ -1451,10 +1467,6 @@
    "count": 3
   },
   {
-   "id": "legal",
-   "count": 3
-  },
-  {
    "id": "leaderboard",
    "count": 3
   },
@@ -1500,10 +1512,6 @@
   },
   {
    "id": "keyboard",
-   "count": 3
-  },
-  {
-   "id": "personalisation",
    "count": 3
   },
   {
@@ -1635,10 +1643,6 @@
    "count": 2
   },
   {
-   "id": "lyrics",
-   "count": 2
-  },
-  {
    "id": "scrubber",
    "count": 2
   },
@@ -1752,10 +1756,6 @@
   },
   {
    "id": "hand",
-   "count": 2
-  },
-  {
-   "id": "logistics",
    "count": 2
   },
   {
@@ -1928,6 +1928,10 @@
   },
   {
    "id": "barcode",
+   "count": 2
+  },
+  {
+   "id": "publish",
    "count": 2
   },
   {
@@ -2668,10 +2672,6 @@
   },
   {
    "id": "keypad",
-   "count": 1
-  },
-  {
-   "id": "publish",
    "count": 1
   },
   {
@@ -57058,13 +57058,23 @@
   {
    "id": "VID-0456",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0456",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Gentle-workout personalization",
+   "description": "Gentle-workout personalization compared: 'No skills' versus 'MCP + Skills' over sensitive-shoulders/knees, no-jumping and pregnancy toggles. Adaptation options as the whole onboarding.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "comparison",
+    "fitness",
+    "personalisation"
+   ],
    "palette": [
     "#FEFEFD",
     "#F2EEEC",
@@ -57108,7 +57118,8 @@
     "path": "E:\\Downloads\\UI\\AW7k2RlVQ0sBLPuL.mp4",
     "bytes": 9490464
    },
-   "source_note": "auto-draft 2026-09-26: motion median 8.24; needs a visual read-through",
+   "quality": "Toggle text small; comparison legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0456.webp",
    "thumb": "assets/thumb/VID-0456.webp",
    "motion": 8.24,
@@ -57126,13 +57137,22 @@
   {
    "id": "VID-0457",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0457",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Korean lyrics player",
+   "description": "A hot-pink Korean lyrics player: Hangul verses over playback controls. Lyrics as the entire screen.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "gradient-heavy",
+    "rounded"
+   ],
+   "tags": [
+    "localised",
+    "lyrics",
+    "music"
+   ],
    "palette": [
     "#EE79A8",
     "#390925",
@@ -57176,7 +57196,8 @@
     "path": "E:\\Downloads\\UI\\J66CO37_mcgjyqh0.mp4",
     "bytes": 5236413
    },
-   "source_note": "auto-draft 2026-09-26: motion median 11.09; needs a visual read-through",
+   "quality": "Lyrics in Korean, not transcribed; player legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0457.webp",
    "thumb": "assets/thumb/VID-0457.webp",
    "motion": 11.09,
@@ -57194,13 +57215,21 @@
   {
    "id": "VID-0458",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0458",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Voice AI chat",
+   "description": "A voice AI chat: Hermes/Twinport run-command thread with a Write-with-Siri keyboard. Command-line habits inside a messenger.",
+   "roles": [
+    "chat"
+   ],
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "voice"
+   ],
    "palette": [
     "#DCDFDA",
     "#F1EEE7",
@@ -57244,7 +57273,8 @@
     "path": "E:\\Downloads\\UI\\InvCe7cEZgg8KvVC.mp4",
     "bytes": 7676125
    },
-   "source_note": "auto-draft 2026-09-26: motion median 7.12; needs a visual read-through",
+   "quality": "Thread text small; pattern legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0458.webp",
    "thumb": "assets/thumb/VID-0458.webp",
    "motion": 7.12,
@@ -57262,13 +57292,18 @@
   {
    "id": "VID-0459",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0459",
-   "description": "",
+   "category": "website",
+   "type": "multi-screen",
+   "title": "Gradient card trio",
+   "description": "Three gradient dawn cards — 'A New Dawn', 'Powered by Data' and an orb: one landing, three moods. A static variant sheet.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "gradient-heavy",
+    "rounded"
+   ],
+   "tags": [
+    "landing"
+   ],
    "palette": [
     "#FCFCFC",
     "#F1F1F1",
@@ -57312,7 +57347,8 @@
     "path": "E:\\Downloads\\UI\\TobEUJMUVoSM5Hw1.mp4",
     "bytes": 1530256
    },
-   "source_note": "auto-draft 2026-09-26: motion median 0.53; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0459.webp",
    "thumb": "assets/thumb/VID-0459.webp",
    "motion": 0.53,
@@ -57322,13 +57358,19 @@
   {
    "id": "VID-0460",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0460",
-   "description": "",
+   "category": "website",
+   "type": "screen",
+   "title": "Delivery settings doc",
+   "description": "A delivery-settings document over a landscape backdrop: returns process with priority rows. Ops documentation with a view.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "documentation",
+    "logistics"
+   ],
    "palette": [
     "#FDFDFD",
     "#4396CA",
@@ -57372,7 +57414,8 @@
     "path": "E:\\Downloads\\UI\\s3YbTYliupmgJ6oR.mp4",
     "bytes": 2029677
    },
-   "source_note": "auto-draft 2026-09-26: motion median 0.39; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0460.webp",
    "thumb": "assets/thumb/VID-0460.webp",
    "motion": 0.39,
@@ -57382,13 +57425,21 @@
   {
    "id": "VID-0461",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0461",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "screen",
+   "title": "Contract signature pad",
+   "description": "'Sign the contract': a signature pad with a Wind Sweep undo and a dark Clear pill. Signing reduced to one gesture and one escape hatch.",
+   "roles": [
+    "form"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "legal"
+   ],
    "palette": [
     "#F9F9F9",
     "#EDEDED",
@@ -57432,7 +57483,8 @@
     "path": "E:\\Downloads\\UI\\bk4Nlz2TmRZw5R1A.mp4",
     "bytes": 13820144
    },
-   "source_note": "auto-draft 2026-09-26: motion median 10.28; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0461.webp",
    "thumb": "assets/thumb/VID-0461.webp",
    "motion": 10.28,
@@ -57451,12 +57503,18 @@
    "id": "VID-0462",
    "kind": "video",
    "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0462",
-   "description": "",
+   "type": "component",
+   "title": "Hold-to-post button",
+   "description": "An orange 'Hold to post' pill with a cursor pressing in: deliberate posting as a press-and-hold interaction. The friction is the feature.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "publish",
+    "social"
+   ],
    "palette": [
     "#E5E3DF",
     "#FE581F",
@@ -57500,7 +57558,8 @@
     "path": "E:\\Downloads\\UI\\uBhh5-KMXXmXWsBD.mp4",
     "bytes": 6241777
    },
-   "source_note": "auto-draft 2026-09-26: motion median 24.42; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0462.webp",
    "thumb": "assets/thumb/VID-0462.webp",
    "motion": 24.42,
@@ -57518,13 +57577,22 @@
   {
    "id": "VID-0463",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0463",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Social day feed",
+   "description": "A dark 'Hey hey' social day-feed: Campusoffland card, Guests 10/34, Today's solar moment and sticker rails. Scrapbook social in a phone.",
+   "roles": [
+    "feed"
+   ],
+   "style": [
+    "card-based",
+    "dark-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "social"
+   ],
    "palette": [
     "#FDFDFD",
     "#1A1A1A",
@@ -57568,7 +57636,8 @@
     "path": "E:\\Downloads\\UI\\VuxKin179biAoH7E.mp4",
     "bytes": 1014691
    },
-   "source_note": "auto-draft 2026-09-26: motion median 8.66; needs a visual read-through",
+   "quality": "Card text small; feed legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0463.webp",
    "thumb": "assets/thumb/VID-0463.webp",
    "motion": 8.66,
@@ -57586,13 +57655,19 @@
   {
    "id": "VID-0464",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0464",
-   "description": "",
+   "category": "website",
+   "type": "screen",
+   "title": "Contract tracker",
+   "description": "A contract tracker: test-contract.pdf with Viewed status, recipient rows, an activity trail and a Download/Nudge/Duplicate menu. The paperwork of paperwork.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "documentation",
+    "legal"
+   ],
    "palette": [
     "#FFFFFF",
     "#1D9194",
@@ -57636,7 +57711,8 @@
     "path": "E:\\Downloads\\UI\\4sBpFe0529r6Eh6A.mp4",
     "bytes": 1392701
    },
-   "source_note": "auto-draft 2026-09-26: motion median 1.24; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0464.webp",
    "thumb": "assets/thumb/VID-0464.webp",
    "motion": 1.24,
@@ -57646,13 +57722,17 @@
   {
    "id": "VID-0465",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0465",
-   "description": "",
+   "category": "promo-reel",
+   "type": "screen",
+   "title": "Snack pack burst ad",
+   "description": "A snack pack bursting through a phone screen: 3D product pop as a fifteen-second ad. Packaging with an exit velocity.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "3d"
+   ],
    "palette": [
     "#FEFEFF",
     "#1F1828",
@@ -57696,7 +57776,8 @@
     "path": "E:\\Downloads\\UI\\G88fXjt8RHMqI0uB.mp4",
     "bytes": 6421205
    },
-   "source_note": "auto-draft 2026-09-26: motion median 16.92; needs a visual read-through",
+   "quality": "Fast frames blur pack detail; gag legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0465.webp",
    "thumb": "assets/thumb/VID-0465.webp",
    "motion": 16.92,
