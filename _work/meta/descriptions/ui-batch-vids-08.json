@@ -1,0 +1,235 @@
+{
+ "items": {
+  "VID-0420": {
+   "category": "website",
+   "description": "A canyon-hero travel landing: Explore/Experiences/Destinations nav over canyon, forest, mountain and coastline cards. Terrain as navigation.",
+   "id": "VID-0420",
+   "quality": "Card text small; hero legible.",
+   "roles": [
+    "hero"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "photographic",
+    "rounded"
+   ],
+   "tags": [
+    "travel",
+    "landing"
+   ],
+   "title": "Canyon travel landing",
+   "type": "screen"
+  },
+  "VID-0421": {
+   "category": "website",
+   "description": "A dark course Progression panel: 'Chemistry for Engineers' with Course Type, Units 5, Section, Semester Y1S1, Teacher and a Present approval flag. Enrollment detail as a spec sheet.",
+   "id": "VID-0421",
+   "quality": "Row text small; structure legible.",
+   "roles": [
+    "detail"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "education",
+    "course"
+   ],
+   "title": "Course progression panel",
+   "type": "screen"
+  },
+  "VID-0422": {
+   "category": "motion-demo",
+   "description": "Mercury blobs drifting on a black phone screen: liquid-metal 3D as pure motion study. No interface — the movement is the asset.",
+   "id": "VID-0422",
+   "quality": "Clean frames; motion is the subject.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "3d",
+    "abstract",
+    "animation"
+   ],
+   "title": "Mercury blobs motion",
+   "type": "screen"
+  },
+  "VID-0423": {
+   "category": "website",
+   "description": "A dark issue-tracker panel: 'Fix UI misalignment in profile settings' with properties, labels and assignment rows. Bug work as tidy rows.",
+   "id": "VID-0423",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "minimal",
+    "data-dense"
+   ],
+   "tags": [
+    "project-management",
+    "developer-tool"
+   ],
+   "title": "Issue detail panel",
+   "type": "screen"
+  },
+  "VID-0424": {
+   "category": "mobile-app-ui",
+   "description": "A dark music Explore: For-you genre tiles (Classical, 1990s, Focus, Jazz, Romance), Moods & moments rail and a bottom player. Genre-first discovery at speed.",
+   "id": "VID-0424",
+   "quality": "Fast frames blur tiles; grid legible.",
+   "roles": [
+    "home",
+    "search"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "music"
+   ],
+   "title": "Music explore grid",
+   "type": "screen"
+  },
+  "VID-0425": {
+   "category": "website",
+   "description": "A 'Team' avatar pile on diagonal stripes: five faces overlapping in a pill. The team-stack component isolated on a pattern.",
+   "id": "VID-0425",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded",
+    "minimal"
+   ],
+   "tags": [
+    "team",
+    "avatar"
+   ],
+   "title": "Team avatar stack",
+   "type": "component"
+  },
+  "VID-0426": {
+   "category": "other",
+   "description": "A Nepali-language audio screen: Devanagari headline over a purple seal mark with a Speaker label. Localised voice content — the script, not the layout, is the point.",
+   "id": "VID-0426",
+   "quality": "Script legible; kept for localisation.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "localised",
+    "audio"
+   ],
+   "title": "Nepali audio screen",
+   "type": "screen"
+  },
+  "VID-0427": {
+   "category": "mobile-app-ui",
+   "description": "A finger scrolling a 'Fri 25' journal: dated entries (September days, theatre notes, monitor arrival) under a sunset hero. Real-hand demo of a diary app.",
+   "id": "VID-0427",
+   "quality": "Entry text small; demo legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "journal"
+   ],
+   "title": "Journal scroll demo",
+   "type": "screen"
+  },
+  "VID-0428": {
+   "category": "mobile-app-ui",
+   "description": "A dark 'Forming' splash: particle text resolving on black. A loading moment with atmosphere.",
+   "id": "VID-0428",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "loading-state",
+    "splash"
+   ],
+   "title": "Forming splash",
+   "type": "screen"
+  },
+  "VID-0429": {
+   "category": "mobile-app-ui",
+   "description": "A 'San Francisco' price-history feed: Big Mac, iPhone, PlayStation, Air Jordan 1 and LEGO Classic with then-and-now prices. Nostalgia as a shopping list.",
+   "id": "VID-0429",
+   "quality": "Figures small; items legible.",
+   "roles": [
+    "feed"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "price",
+    "history"
+   ],
+   "title": "Price history feed",
+   "type": "screen"
+  },
+  "VID-0430": {
+   "category": "website",
+   "description": "A creative-house landing: fanned brand cards (Uber, Star Wars and more) over 'depth, elegance and resonance' copy. Showreel confidence in one frame.",
+   "id": "VID-0430",
+   "quality": "Card text small; composition legible.",
+   "roles": [
+    "hero"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "playful"
+   ],
+   "tags": [
+    "branding",
+    "landing"
+   ],
+   "title": "Creative-house landing",
+   "type": "screen"
+  },
+  "VID-0431": {
+   "category": "other",
+   "description": "A blue dotted-wave data artwork at very high motion: particles as the entire frame. No interface — kept as a motion specimen.",
+   "id": "VID-0431",
+   "quality": "Motion blur throughout; kept as motion, not UI.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "gradient-heavy"
+   ],
+   "tags": [
+    "data-viz",
+    "particles",
+    "motion"
+   ],
+   "title": "Dotted wave data art",
+   "type": "screen"
+  }
+ }
+}

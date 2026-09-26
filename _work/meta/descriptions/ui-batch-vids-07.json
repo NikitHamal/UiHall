@@ -1,9 +1,9 @@
 {
  "items": {
-  "VID-0407": {
+  "VID-0408": {
    "category": "other",
    "description": "A small dark export dialog floating over dimmed content: one action, barely readable at poster size. Held as a dialog specimen, not a screen.",
-   "id": "VID-0407",
+   "id": "VID-0408",
    "quality": "Dialog text small — flagged for a full-size second pass.",
    "roles": [],
    "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
@@ -17,10 +17,10 @@
    "title": "Export dialog (dark)",
    "type": "component"
   },
-  "VID-0408": {
+  "VID-0409": {
    "category": "website",
    "description": "A dark portfolio card: 'Hi, I'm Blake, Product Engineer' with bio and social links. A static personal-site still.",
-   "id": "VID-0408",
+   "id": "VID-0409",
    "quality": "Static clip; poster carries the design.",
    "roles": [],
    "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
@@ -36,10 +36,10 @@
    "title": "Engineer portfolio card",
    "type": "screen"
   },
-  "VID-0409": {
+  "VID-0410": {
    "category": "website",
    "description": "A dark AI chat home: 'What would you like to work on?' prompt rows with suggestion chips. The empty state of an assistant, held still.",
-   "id": "VID-0409",
+   "id": "VID-0410",
    "quality": "Static clip; poster carries the design.",
    "roles": [
     "chat"
@@ -55,10 +55,10 @@
    "title": "AI chat prompt list",
    "type": "screen"
   },
-  "VID-0410": {
+  "VID-0411": {
    "category": "other",
    "description": "A screen recording of SVG files landing in Downloads: a capture demo where the Finder window is the content. Tooling footage, not interface design.",
-   "id": "VID-0410",
+   "id": "VID-0411",
    "quality": "Niche capture footage; kept with reservations.",
    "roles": [],
    "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
@@ -71,10 +71,10 @@
    "title": "SVG downloads capture",
    "type": "screen"
   },
-  "VID-0411": {
+  "VID-0412": {
    "category": "motion-demo",
    "description": "A phone video-editor tour: 'Cut / Start with Cut' over editing timelines. Fast-cut tool marketing.",
-   "id": "VID-0411",
+   "id": "VID-0412",
    "quality": "Fast frames blur detail; flow legible.",
    "roles": [
     "editor"
@@ -90,10 +90,10 @@
    "title": "Cut editor tour",
    "type": "flow-walkthrough"
   },
-  "VID-0412": {
+  "VID-0413": {
    "category": "motion-demo",
    "description": "A particle 'Morph' logo resolving from scatter: Touch, Scatter, Morph, Ship-it modes named below. Logo choreography as the clip.",
-   "id": "VID-0412",
+   "id": "VID-0413",
    "quality": "Clean frames; fully legible.",
    "roles": [],
    "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
@@ -109,10 +109,10 @@
    "title": "Morph logo animation",
    "type": "screen"
   },
-  "VID-0413": {
+  "VID-0414": {
    "category": "website",
    "description": "A fixed-yield DeFi landing: 'pioneering fixed yield platform built for growth' with $4.2T+, 4M+ and sub-0.5s stats. Quiet institutional crypto marketing.",
-   "id": "VID-0413",
+   "id": "VID-0414",
    "quality": "Stat text small; headline legible.",
    "roles": [
     "hero"
@@ -130,10 +130,10 @@
    "title": "Fixed-yield DeFi landing",
    "type": "screen"
   },
-  "VID-0414": {
+  "VID-0415": {
    "category": "other",
    "description": "A particle starburst on white, marked 7 and L: generative art frames with no interface on them. Kept as a motion specimen.",
-   "id": "VID-0414",
+   "id": "VID-0415",
    "quality": "Static clip of generative art; kept as motion, not UI.",
    "roles": [],
    "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
@@ -147,10 +147,10 @@
    "title": "Particle starburst",
    "type": "screen"
   },
-  "VID-0415": {
+  "VID-0416": {
    "category": "mobile-app-ui",
    "description": "A 'Topify App Rankings' tracker: Moldova and South Korea chart rows with ranks over green aurora art. App-store watching as a dark phone screen.",
-   "id": "VID-0415",
+   "id": "VID-0416",
    "quality": "Row text small; charts legible.",
    "roles": [],
    "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
@@ -165,10 +165,10 @@
    "title": "App rankings tracker",
    "type": "screen"
   },
-  "VID-0416": {
+  "VID-0417": {
    "category": "dashboard",
    "description": "A dark 'Dolce Energy' sales timeline: activity feed with call/email rows and a $7.14K figure. CRM liveness as a scrolling feed.",
-   "id": "VID-0416",
+   "id": "VID-0417",
    "quality": "Feed text small; flow legible.",
    "roles": [
     "dashboard"
@@ -182,10 +182,10 @@
    "title": "Sales timeline scroll",
    "type": "flow-walkthrough"
   },
-  "VID-0417": {
+  "VID-0418": {
    "category": "website",
    "description": "A dark settings panel of toggle rows: compact switches with short labels. The toggle list as a complete pattern.",
-   "id": "VID-0417",
+   "id": "VID-0418",
    "quality": "Labels small; pattern legible.",
    "roles": [
     "settings"
@@ -200,10 +200,10 @@
    "title": "Settings toggles panel",
    "type": "component"
   },
-  "VID-0418": {
+  "VID-0419": {
    "category": "dashboard",
    "description": "A referrer table with a September 2026 calendar picker: 'Occurred between' date-range selection with hour precision. The date-range picker is the component.",
-   "id": "VID-0418",
+   "id": "VID-0419",
    "quality": "Static clip; poster carries the design.",
    "roles": [
     "dashboard"
@@ -219,6 +219,25 @@
    ],
    "title": "Analytics date-range picker",
    "type": "component"
+  },
+  "VID-0407": {
+   "id": "VID-0407",
+   "category": "website",
+   "type": "screen",
+   "title": "AI research trail",
+   "description": "A live research trail: structural-steel queries (library erection permits, beam stock, rebar lead time, crane-operator hours) each with timings and a Searching 10.7s state, plus Reset/Next-event controls. Agent homework shown with receipts.",
+   "roles": [
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "quality": "Query text small; trail legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched."
   }
  }
 }
