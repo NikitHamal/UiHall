@@ -1,0 +1,244 @@
+{
+ "items": {
+  "IMG-0594": {
+   "category": "dashboard",
+   "description": "A 'Run Outreach' sales dashboard: Enterprise Prospects table with lead rows, status dots and an engagement column under a run-control header. Prospecting ops in table form.",
+   "id": "IMG-0594",
+   "quality": "Dense but legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "table"
+   ],
+   "title": "Sales outreach prospects table",
+   "type": "screen"
+  },
+  "IMG-0595": {
+   "category": "mobile-app-ui",
+   "description": "A study-app Community tab: 'Learn programming, solve coding challenges' cards, shared Cell Biology notes, and a 'Popular Quizzes / Human Anatomy Challenge' module with a Play Now CTA. Community-as-content in an education app.",
+   "id": "IMG-0595",
+   "quality": "Clean capture; fully legible.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "community",
+    "education",
+    "quiz"
+   ],
+   "title": "Study-app community tab",
+   "type": "screen"
+  },
+  "IMG-0596": {
+   "category": "mobile-app-ui",
+   "description": "Two more screens from the same study app: a 'Study Smarter Every Single Day' home card and a stats screen with a 72% ring and 120-hours figure. Soft gradient cards; the ring-plus-streak idiom carries both.",
+   "id": "IMG-0596",
+   "pair_with": "IMG-0595",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "education",
+    "stats",
+    "streak"
+   ],
+   "title": "Study-app home and stats",
+   "type": "multi-screen"
+  },
+  "IMG-0597": {
+   "category": "mobile-app-ui",
+   "description": "A close crop of the same study app: quiz list, Play Now button and a bottom tab bar on Community. No new layout information — the legible-text companion to the wider shots.",
+   "id": "IMG-0597",
+   "pair_with": "IMG-0596",
+   "quality": "Close crop; text fully legible.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "education",
+    "quiz"
+   ],
+   "title": "Study-app quizzes crop",
+   "type": "screen"
+  },
+  "IMG-0598": {
+   "category": "website",
+   "description": "A wellness brand statement: centred serif manifesto about intentional care — yoga, massage, tailored practices — with small inline imagery. Quiet editorial about-page writing.",
+   "id": "IMG-0598",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "landing-section"
+   ],
+   "style": [
+    "light-mode",
+    "editorial",
+    "minimal"
+   ],
+   "tags": [
+    "wellness",
+    "landing"
+   ],
+   "title": "Wellness brand statement",
+   "type": "screen"
+  },
+  "IMG-0599": {
+   "category": "website",
+   "description": "'Real results from real customers': 4.8/5 rating, 10K+ community, 99% satisfaction tiles with yoga and beach photography. Proof-by-numbers social proof for the same wellness brand.",
+   "id": "IMG-0599",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "social-proof"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "photographic"
+   ],
+   "tags": [
+    "testimonial",
+    "stats",
+    "wellness"
+   ],
+   "title": "Wellness results stat tiles",
+   "type": "screen"
+  },
+  "IMG-0600": {
+   "category": "website",
+   "description": "A split login screen: green pixel-scape artwork on the left, 'Log into your account' with Google/Apple/phone options on the right. Art-led auth; the illustration does the brand work the form cannot.",
+   "id": "IMG-0600",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "auth"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "authentication",
+    "side-by-side",
+    "illustration"
+   ],
+   "title": "Split-art login screen",
+   "type": "screen"
+  },
+  "IMG-0601": {
+   "category": "mobile-app-ui",
+   "description": "A Rajdhani Express train app in two phone variants: route map with station pins and an Upcoming Platforms list (New Delhi 10:00, Tundla 12:48, Kanpur 14:35, Fatehpur 15:53). Timetable-as-feed for rail travel.",
+   "id": "IMG-0601",
+   "quality": "Small station text soft; structure fully legible.",
+   "roles": [
+    "home",
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "travel",
+    "train",
+    "map",
+    "schedule"
+   ],
+   "title": "Train timetable app screens",
+   "type": "multi-screen"
+  },
+  "IMG-0602": {
+   "category": "mobile-app-ui",
+   "description": "An AURAX art-app onboarding: a framed cherub painting on dark green, 'Bring The World's Art Into Your Space' and a Start Collecting CTA. Gallery-dark luxury for collecting art.",
+   "id": "IMG-0602",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "dark-mode",
+    "luxury"
+   ],
+   "tags": [
+    "artwork"
+   ],
+   "title": "Art-collecting app onboarding",
+   "type": "screen"
+  },
+  "IMG-0603": {
+   "category": "mobile-app-ui",
+   "description": "A hotel-app auth screen: monogram mark over a bed photograph with Continue with Apple/Google/Email buttons. Imagery-first sign-in; the photograph carries the brand.",
+   "id": "IMG-0603",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "auth"
+   ],
+   "style": [
+    "dark-mode",
+    "photographic",
+    "rounded"
+   ],
+   "tags": [
+    "authentication",
+    "travel"
+   ],
+   "title": "Hotel-app auth with imagery",
+   "type": "screen"
+  },
+  "IMG-0604": {
+   "category": "mobile-app-ui",
+   "description": "An EV charging app across three dark panels: 'Charge Anywhere. Drive Everywhere' station art, an ElectroCharge station-finder list, and a 59% charge ring over a car photo with green CTAs. Neon-green-on-black energy throughout.",
+   "id": "IMG-0604",
+   "quality": "Small list text soft; structure fully legible.",
+   "roles": [
+    "home",
+    "search"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "electric-vehicle",
+    "map"
+   ],
+   "title": "EV charging app screens",
+   "type": "multi-screen"
+  },
+  "IMG-0605": {
+   "category": "mobile-app-ui",
+   "description": "Two dark training-schedule screens: a '10 December' plan with red status dots and a 'Little details' session panel. Read at sheet size only — the dark schedule idiom is the reference, cell text was not transcribed.",
+   "id": "IMG-0605",
+   "quality": "Cell text illegible at review-sheet size — flagged for a full-size second pass before quoting any content.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "fitness",
+    "schedule"
+   ],
+   "title": "Dark training-schedule screens",
+   "type": "multi-screen"
+  }
+ }
+}

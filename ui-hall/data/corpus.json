@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 566
+  "described": 578
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 345
+   "count": 353
   },
   {
    "id": "app-store-screens",
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 70
+   "count": 73
   },
   {
    "id": "design-system",
@@ -63,7 +63,7 @@
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 44
+   "count": 45
   },
   {
    "id": "motion-demo",
@@ -84,7 +84,7 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 120
+   "count": 108
   }
  ],
  "types": [
@@ -111,7 +111,7 @@
   {
    "id": "multi-screen",
    "label": "multi-screen",
-   "count": 74
+   "count": 78
   },
   {
    "id": "pattern",
@@ -126,7 +126,7 @@
   {
    "id": "screen",
    "label": "screen",
-   "count": 249
+   "count": 245
   },
   {
    "id": "token-sheet",
@@ -137,7 +137,7 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 109
+   "count": 110
   },
   {
    "id": "hero",
@@ -148,24 +148,24 @@
    "count": 57
   },
   {
+   "id": "home",
+   "count": 45
+  },
+  {
    "id": "detail",
    "count": 44
   },
   {
-   "id": "home",
-   "count": 42
+   "id": "onboarding",
+   "count": 35
   },
   {
-   "id": "onboarding",
-   "count": 34
+   "id": "landing-section",
+   "count": 27
   },
   {
    "id": "form",
    "count": 27
-  },
-  {
-   "id": "landing-section",
-   "count": 26
   },
   {
    "id": "editor",
@@ -196,16 +196,16 @@
    "count": 15
   },
   {
+   "id": "search",
+   "count": 13
+  },
+  {
    "id": "chat",
    "count": 13
   },
   {
-   "id": "search",
-   "count": 11
-  },
-  {
    "id": "social-proof",
-   "count": 11
+   "count": 12
   },
   {
    "id": "notification",
@@ -216,46 +216,46 @@
    "count": 8
   },
   {
-   "id": "empty-state",
-   "count": 7
+   "id": "auth",
+   "count": 8
   },
   {
-   "id": "auth",
-   "count": 6
+   "id": "empty-state",
+   "count": 7
   }
  ],
  "styles": [
   {
    "id": "light-mode",
-   "count": 344
+   "count": 352
   },
   {
    "id": "minimal",
-   "count": 257
+   "count": 259
   },
   {
    "id": "dark-mode",
-   "count": 172
+   "count": 176
   },
   {
    "id": "card-based",
-   "count": 152
+   "count": 158
   },
   {
    "id": "rounded",
-   "count": 149
+   "count": 156
   },
   {
    "id": "data-dense",
-   "count": 52
+   "count": 54
   },
   {
    "id": "editorial",
-   "count": 48
+   "count": 49
   },
   {
    "id": "soft",
-   "count": 34
+   "count": 35
   },
   {
    "id": "bold-typography",
@@ -295,7 +295,7 @@
   },
   {
    "id": "luxury",
-   "count": 4
+   "count": 5
   },
   {
    "id": "glassmorphism",
@@ -336,12 +336,12 @@
    "count": 42
   },
   {
-   "id": "card",
+   "id": "photographic",
    "count": 33
   },
   {
-   "id": "photographic",
-   "count": 31
+   "id": "card",
+   "count": 33
   },
   {
    "id": "analytics",
@@ -372,16 +372,20 @@
    "count": 25
   },
   {
+   "id": "table",
+   "count": 25
+  },
+  {
+   "id": "landing",
+   "count": 25
+  },
+  {
    "id": "onboarding",
    "count": 25
   },
   {
-   "id": "table",
-   "count": 24
-  },
-  {
-   "id": "landing",
-   "count": 24
+   "id": "illustration",
+   "count": 21
   },
   {
    "id": "avatar",
@@ -404,7 +408,7 @@
    "count": 21
   },
   {
-   "id": "illustration",
+   "id": "travel",
    "count": 20
   },
   {
@@ -428,10 +432,6 @@
    "count": 19
   },
   {
-   "id": "travel",
-   "count": 18
-  },
-  {
    "id": "app-store",
    "count": 18
   },
@@ -440,15 +440,15 @@
    "count": 17
   },
   {
+   "id": "map",
+   "count": 17
+  },
+  {
    "id": "music",
    "count": 17
   },
   {
    "id": "call-to-action",
-   "count": 15
-  },
-  {
-   "id": "map",
    "count": 15
   },
   {
@@ -461,6 +461,14 @@
   },
   {
    "id": "status",
+   "count": 14
+  },
+  {
+   "id": "fitness",
+   "count": 14
+  },
+  {
+   "id": "education",
    "count": 14
   },
   {
@@ -481,10 +489,6 @@
   },
   {
    "id": "reading",
-   "count": 13
-  },
-  {
-   "id": "fitness",
    "count": 13
   },
   {
@@ -516,10 +520,6 @@
    "count": 11
   },
   {
-   "id": "education",
-   "count": 11
-  },
-  {
    "id": "redesign",
    "count": 11
   },
@@ -533,6 +533,10 @@
   },
   {
    "id": "banking",
+   "count": 10
+  },
+  {
+   "id": "streak",
    "count": 10
   },
   {
@@ -552,15 +556,15 @@
    "count": 9
   },
   {
-   "id": "streak",
-   "count": 9
-  },
-  {
    "id": "productivity",
    "count": 9
   },
   {
    "id": "payment",
+   "count": 9
+  },
+  {
+   "id": "stats",
    "count": 9
   },
   {
@@ -573,6 +577,10 @@
   },
   {
    "id": "nav-bar",
+   "count": 8
+  },
+  {
+   "id": "schedule",
    "count": 8
   },
   {
@@ -601,6 +609,10 @@
   },
   {
    "id": "spending",
+   "count": 8
+  },
+  {
+   "id": "testimonial",
    "count": 8
   },
   {
@@ -652,7 +664,7 @@
    "count": 7
   },
   {
-   "id": "testimonial",
+   "id": "wellness",
    "count": 7
   },
   {
@@ -669,10 +681,6 @@
   },
   {
    "id": "data-table",
-   "count": 7
-  },
-  {
-   "id": "stats",
    "count": 7
   },
   {
@@ -709,10 +717,6 @@
   },
   {
    "id": "statistics",
-   "count": 6
-  },
-  {
-   "id": "schedule",
    "count": 6
   },
   {
@@ -872,10 +876,6 @@
    "count": 5
   },
   {
-   "id": "wellness",
-   "count": 5
-  },
-  {
    "id": "pill",
    "count": 5
   },
@@ -984,11 +984,19 @@
    "count": 4
   },
   {
+   "id": "quiz",
+   "count": 4
+  },
+  {
    "id": "metric-tile",
    "count": 4
   },
   {
    "id": "address",
+   "count": 4
+  },
+  {
+   "id": "artwork",
    "count": 4
   },
   {
@@ -1017,6 +1025,10 @@
   },
   {
    "id": "floating-action-button",
+   "count": 4
+  },
+  {
+   "id": "authentication",
    "count": 4
   },
   {
@@ -1165,10 +1177,6 @@
   },
   {
    "id": "tracking",
-   "count": 3
-  },
-  {
-   "id": "artwork",
    "count": 3
   },
   {
@@ -1324,6 +1332,14 @@
    "count": 3
   },
   {
+   "id": "community",
+   "count": 3
+  },
+  {
+   "id": "side-by-side",
+   "count": 3
+  },
+  {
    "id": "prototype",
    "count": 3
   },
@@ -1404,10 +1420,6 @@
    "count": 2
   },
   {
-   "id": "quiz",
-   "count": 2
-  },
-  {
    "id": "recommendation",
    "count": 2
   },
@@ -1465,10 +1477,6 @@
   },
   {
    "id": "theme",
-   "count": 2
-  },
-  {
-   "id": "authentication",
    "count": 2
   },
   {
@@ -1565,6 +1573,10 @@
   },
   {
    "id": "live",
+   "count": 2
+  },
+  {
+   "id": "train",
    "count": 2
   },
   {
@@ -1732,10 +1744,6 @@
    "count": 2
   },
   {
-   "id": "community",
-   "count": 2
-  },
-  {
    "id": "magazine",
    "count": 2
   },
@@ -1813,10 +1821,6 @@
   },
   {
    "id": "splash-screen",
-   "count": 2
-  },
-  {
-   "id": "side-by-side",
    "count": 2
   },
   {
@@ -2104,10 +2108,6 @@
    "count": 1
   },
   {
-   "id": "train",
-   "count": 1
-  },
-  {
    "id": "methodology",
    "count": 1
   },
@@ -2349,6 +2349,10 @@
   },
   {
    "id": "wordmark",
+   "count": 1
+  },
+  {
+   "id": "electric-vehicle",
    "count": 1
   },
   {
@@ -28156,13 +28160,20 @@
   {
    "id": "IMG-0594",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0594",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Sales outreach prospects table",
+   "description": "A 'Run Outreach' sales dashboard: Enterprise Prospects table with lead rows, status dots and an engagement column under a run-control header. Prospecting ops in table form.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "table"
+   ],
    "palette": [
     "#FEFEFE",
     "#F5F5F5",
@@ -28206,20 +28217,28 @@
     "path": "E:\\Downloads\\UI\\HS50wMkbEAAiYpB.jpg",
     "bytes": 719314
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Dense but legible.",
    "src": "assets/img/IMG-0594.webp",
    "thumb": "assets/thumb/IMG-0594.webp"
   },
   {
    "id": "IMG-0595",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0595",
-   "description": "",
+   "title": "Study-app community tab",
+   "description": "A study-app Community tab: 'Learn programming, solve coding challenges' cards, shared Cell Biology notes, and a 'Popular Quizzes / Human Anatomy Challenge' module with a Play Now CTA. Community-as-content in an education app.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "community",
+    "education",
+    "quiz"
+   ],
    "palette": [
     "#EAEAEA",
     "#FBFBFA",
@@ -28263,20 +28282,31 @@
     "path": "E:\\Downloads\\UI\\HS-xGRXXoAAOM0O.jpg",
     "bytes": 138717
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0595.webp",
    "thumb": "assets/thumb/IMG-0595.webp"
   },
   {
    "id": "IMG-0596",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0596",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Study-app home and stats",
+   "description": "Two more screens from the same study app: a 'Study Smarter Every Single Day' home card and a stats screen with a 72% ring and 120-hours figure. Soft gradient cards; the ring-plus-streak idiom carries both.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "education",
+    "stats",
+    "streak"
+   ],
    "palette": [
     "#EBEBEA",
     "#FCFBFB",
@@ -28320,20 +28350,28 @@
     "path": "E:\\Downloads\\UI\\HS-xGREXkAAYDZc.jpg",
     "bytes": 206585
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0595",
    "src": "assets/img/IMG-0596.webp",
    "thumb": "assets/thumb/IMG-0596.webp"
   },
   {
    "id": "IMG-0597",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0597",
-   "description": "",
+   "title": "Study-app quizzes crop",
+   "description": "A close crop of the same study app: quiz list, Play Now button and a bottom tab bar on Community. No new layout information — the legible-text companion to the wider shots.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "education",
+    "quiz"
+   ],
    "palette": [
     "#EAEAEA",
     "#FBFBFB",
@@ -28377,20 +28415,30 @@
     "path": "E:\\Downloads\\UI\\HS-xGQ2XYAAa3vB.jpg",
     "bytes": 219260
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Close crop; text fully legible.",
+   "pair_with": "IMG-0596",
    "src": "assets/img/IMG-0597.webp",
    "thumb": "assets/thumb/IMG-0597.webp"
   },
   {
    "id": "IMG-0598",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0598",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Wellness brand statement",
+   "description": "A wellness brand statement: centred serif manifesto about intentional care — yoga, massage, tailored practices — with small inline imagery. Quiet editorial about-page writing.",
+   "roles": [
+    "landing-section"
+   ],
+   "style": [
+    "editorial",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "landing",
+    "wellness"
+   ],
    "palette": [
     "#F3F3F3",
     "#BEBDBB",
@@ -28434,20 +28482,30 @@
     "path": "E:\\Downloads\\UI\\HS-FxeeasAAffL1.jpg",
     "bytes": 81254
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0598.webp",
    "thumb": "assets/thumb/IMG-0598.webp"
   },
   {
    "id": "IMG-0599",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0599",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Wellness results stat tiles",
+   "description": "'Real results from real customers': 4.8/5 rating, 10K+ community, 99% satisfaction tiles with yoga and beach photography. Proof-by-numbers social proof for the same wellness brand.",
+   "roles": [
+    "social-proof"
+   ],
+   "style": [
+    "card-based",
+    "light-mode"
+   ],
+   "tags": [
+    "photographic",
+    "stats",
+    "testimonial",
+    "wellness"
+   ],
    "palette": [
     "#FCFDFE",
     "#D6D7D7",
@@ -28491,20 +28549,30 @@
     "path": "E:\\Downloads\\UI\\HS-FzGjaoAAPHfN.jpg",
     "bytes": 138689
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0599.webp",
    "thumb": "assets/thumb/IMG-0599.webp"
   },
   {
    "id": "IMG-0600",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0600",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Split-art login screen",
+   "description": "A split login screen: green pixel-scape artwork on the left, 'Log into your account' with Google/Apple/phone options on the right. Art-led auth; the illustration does the brand work the form cannot.",
+   "roles": [
+    "auth"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "authentication",
+    "illustration",
+    "side-by-side"
+   ],
    "palette": [
     "#FCFDFD",
     "#1E311C",
@@ -28548,20 +28616,32 @@
     "path": "E:\\Downloads\\UI\\Screenshot 2026-09-24 200010.png",
     "bytes": 1530392
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0600.webp",
    "thumb": "assets/thumb/IMG-0600.webp"
   },
   {
    "id": "IMG-0601",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0601",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Train timetable app screens",
+   "description": "A Rajdhani Express train app in two phone variants: route map with station pins and an Upcoming Platforms list (New Delhi 10:00, Tundla 12:48, Kanpur 14:35, Fatehpur 15:53). Timetable-as-feed for rail travel.",
+   "roles": [
+    "home",
+    "search"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "map",
+    "schedule",
+    "train",
+    "travel"
+   ],
    "palette": [
     "#E3E5E4",
     "#F9FBFC",
@@ -28605,20 +28685,27 @@
     "path": "E:\\Downloads\\UI\\HS-2LpWbsAAZ5xY.jpg",
     "bytes": 228401
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Small station text soft; structure fully legible.",
    "src": "assets/img/IMG-0601.webp",
    "thumb": "assets/thumb/IMG-0601.webp"
   },
   {
    "id": "IMG-0602",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0602",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Art-collecting app onboarding",
+   "description": "An AURAX art-app onboarding: a framed cherub painting on dark green, 'Bring The World's Art Into Your Space' and a Start Collecting CTA. Gallery-dark luxury for collecting art.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "dark-mode",
+    "luxury"
+   ],
+   "tags": [
+    "artwork"
+   ],
    "palette": [
     "#CCCBCB",
     "#06070F",
@@ -28662,20 +28749,29 @@
     "path": "E:\\Downloads\\UI\\HS-5cXYWAAA7UaI.jpg",
     "bytes": 437820
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0602.webp",
    "thumb": "assets/thumb/IMG-0602.webp"
   },
   {
    "id": "IMG-0603",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0603",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Hotel-app auth with imagery",
+   "description": "A hotel-app auth screen: monogram mark over a bed photograph with Continue with Apple/Google/Email buttons. Imagery-first sign-in; the photograph carries the brand.",
+   "roles": [
+    "auth"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "authentication",
+    "photographic",
+    "travel"
+   ],
    "palette": [
     "#CCCCCB",
     "#C6B194",
@@ -28719,20 +28815,30 @@
     "path": "E:\\Downloads\\UI\\HS-5y_NWYAAo7PX.jpg",
     "bytes": 341442
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0603.webp",
    "thumb": "assets/thumb/IMG-0603.webp"
   },
   {
    "id": "IMG-0604",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0604",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "EV charging app screens",
+   "description": "An EV charging app across three dark panels: 'Charge Anywhere. Drive Everywhere' station art, an ElectroCharge station-finder list, and a 59% charge ring over a car photo with green CTAs. Neon-green-on-black energy throughout.",
+   "roles": [
+    "home",
+    "search"
+   ],
+   "style": [
+    "card-based",
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "electric-vehicle",
+    "map"
+   ],
    "palette": [
     "#1B2122",
     "#454B48",
@@ -28776,20 +28882,26 @@
     "path": "E:\\Downloads\\UI\\HS-2BLJbYAAZEq3.jpg",
     "bytes": 763433
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Small list text soft; structure fully legible.",
    "src": "assets/img/IMG-0604.webp",
    "thumb": "assets/thumb/IMG-0604.webp"
   },
   {
    "id": "IMG-0605",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0605",
-   "description": "",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Dark training-schedule screens",
+   "description": "Two dark training-schedule screens: a '10 December' plan with red status dots and a 'Little details' session panel. Read at sheet size only — the dark schedule idiom is the reference, cell text was not transcribed.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "data-dense"
+   ],
+   "tags": [
+    "fitness",
+    "schedule"
+   ],
    "palette": [
     "#323232",
     "#282828",
@@ -28833,7 +28945,7 @@
     "path": "E:\\Downloads\\UI\\HS-1-dSaMAAVmtB.jpg",
     "bytes": 105107
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Cell text illegible at review-sheet size — flagged for a full-size second pass before quoting any content.",
    "src": "assets/img/IMG-0605.webp",
    "thumb": "assets/thumb/IMG-0605.webp"
   },
