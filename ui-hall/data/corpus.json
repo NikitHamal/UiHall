@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 637
+  "described": 649
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 377
+   "count": 379
   },
   {
    "id": "app-store-screens",
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 93
+   "count": 95
   },
   {
    "id": "design-system",
@@ -63,14 +63,14 @@
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 55
+   "count": 56
   },
   {
    "id": "motion-demo",
    "label": "Motion demo",
    "blurb": "Clips whose whole point is the transition, not the static screen.",
    "icon": "play",
-   "count": 98
+   "count": 95
   },
   {
    "id": "promo-reel",
@@ -84,19 +84,19 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 49
+   "count": 47
   }
  ],
  "types": [
   {
    "id": "component",
    "label": "component",
-   "count": 20
+   "count": 23
   },
   {
    "id": "flow-walkthrough",
    "label": "flow-walkthrough",
-   "count": 334
+   "count": 325
   },
   {
    "id": "marketing",
@@ -126,7 +126,7 @@
   {
    "id": "screen",
    "label": "screen",
-   "count": 233
+   "count": 239
   },
   {
    "id": "token-sheet",
@@ -137,7 +137,7 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 120
+   "count": 122
   },
   {
    "id": "hero",
@@ -157,7 +157,7 @@
   },
   {
    "id": "onboarding",
-   "count": 42
+   "count": 43
   },
   {
    "id": "landing-section",
@@ -177,19 +177,19 @@
   },
   {
    "id": "chat",
-   "count": 17
+   "count": 18
   },
   {
    "id": "media",
    "count": 17
   },
   {
-   "id": "profile",
+   "id": "pricing",
    "count": 17
   },
   {
-   "id": "pricing",
-   "count": 16
+   "id": "profile",
+   "count": 17
   },
   {
    "id": "feed",
@@ -227,27 +227,27 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 395
+   "count": 404
   },
   {
    "id": "minimal",
-   "count": 285
+   "count": 287
   },
   {
    "id": "rounded",
-   "count": 195
-  },
-  {
-   "id": "dark-mode",
-   "count": 187
+   "count": 201
   },
   {
    "id": "card-based",
-   "count": 185
+   "count": 189
+  },
+  {
+   "id": "dark-mode",
+   "count": 189
   },
   {
    "id": "data-dense",
-   "count": 65
+   "count": 66
   },
   {
    "id": "editorial",
@@ -255,11 +255,11 @@
   },
   {
    "id": "playful",
-   "count": 43
+   "count": 45
   },
   {
    "id": "soft",
-   "count": 38
+   "count": 39
   },
   {
    "id": "bold-typography",
@@ -336,6 +336,10 @@
    "count": 47
   },
   {
+   "id": "analytics",
+   "count": 36
+  },
+  {
    "id": "photographic",
    "count": 33
   },
@@ -344,12 +348,8 @@
    "count": 33
   },
   {
-   "id": "analytics",
-   "count": 33
-  },
-  {
    "id": "landing",
-   "count": 30
+   "count": 31
   },
   {
    "id": "progress",
@@ -389,14 +389,14 @@
   },
   {
    "id": "finance",
+   "count": 23
+  },
+  {
+   "id": "avatar",
    "count": 22
   },
   {
    "id": "illustration",
-   "count": 21
-  },
-  {
-   "id": "avatar",
    "count": 21
   },
   {
@@ -444,11 +444,11 @@
    "count": 18
   },
   {
-   "id": "cards",
-   "count": 17
+   "id": "map",
+   "count": 18
   },
   {
-   "id": "map",
+   "id": "cards",
    "count": 17
   },
   {
@@ -457,6 +457,10 @@
   },
   {
    "id": "call-to-action",
+   "count": 15
+  },
+  {
+   "id": "animation",
    "count": 15
   },
   {
@@ -469,10 +473,6 @@
   },
   {
    "id": "education",
-   "count": 14
-  },
-  {
-   "id": "animation",
    "count": 14
   },
   {
@@ -492,7 +492,15 @@
    "count": 13
   },
   {
+   "id": "subscription",
+   "count": 13
+  },
+  {
    "id": "list-row",
+   "count": 13
+  },
+  {
+   "id": "portfolio",
    "count": 13
   },
   {
@@ -501,10 +509,6 @@
   },
   {
    "id": "delivery",
-   "count": 12
-  },
-  {
-   "id": "portfolio",
    "count": 12
   },
   {
@@ -520,15 +524,15 @@
    "count": 11
   },
   {
-   "id": "subscription",
-   "count": 11
-  },
-  {
    "id": "redesign",
    "count": 11
   },
   {
    "id": "gallery",
+   "count": 11
+  },
+  {
+   "id": "crypto",
    "count": 11
   },
   {
@@ -564,10 +568,6 @@
    "count": 10
   },
   {
-   "id": "crypto",
-   "count": 10
-  },
-  {
    "id": "settings",
    "count": 10
   },
@@ -581,6 +581,10 @@
   },
   {
    "id": "productivity",
+   "count": 9
+  },
+  {
+   "id": "spending",
    "count": 9
   },
   {
@@ -625,10 +629,6 @@
   },
   {
    "id": "wellness",
-   "count": 8
-  },
-  {
-   "id": "spending",
    "count": 8
   },
   {
@@ -684,6 +684,10 @@
    "count": 7
   },
   {
+   "id": "progress-ring",
+   "count": 7
+  },
+  {
    "id": "tiles",
    "count": 7
   },
@@ -708,7 +712,19 @@
    "count": 7
   },
   {
+   "id": "collaboration",
+   "count": 7
+  },
+  {
+   "id": "design-tool",
+   "count": 7
+  },
+  {
    "id": "menu",
+   "count": 7
+  },
+  {
+   "id": "document",
    "count": 7
   },
   {
@@ -780,10 +796,6 @@
    "count": 6
   },
   {
-   "id": "progress-ring",
-   "count": 6
-  },
-  {
    "id": "portrait",
    "count": 6
   },
@@ -793,6 +805,10 @@
   },
   {
    "id": "contacts",
+   "count": 6
+  },
+  {
+   "id": "upgrade",
    "count": 6
   },
   {
@@ -816,19 +832,7 @@
    "count": 6
   },
   {
-   "id": "collaboration",
-   "count": 6
-  },
-  {
    "id": "camera",
-   "count": 6
-  },
-  {
-   "id": "design-tool",
-   "count": 6
-  },
-  {
-   "id": "document",
    "count": 6
   },
   {
@@ -944,10 +948,6 @@
    "count": 5
   },
   {
-   "id": "upgrade",
-   "count": 5
-  },
-  {
    "id": "habit-tracker",
    "count": 5
   },
@@ -981,6 +981,10 @@
   },
   {
    "id": "memories",
+   "count": 5
+  },
+  {
+   "id": "avatar-picker",
    "count": 5
   },
   {
@@ -1024,6 +1028,10 @@
    "count": 4
   },
   {
+   "id": "payments",
+   "count": 4
+  },
+  {
    "id": "destination",
    "count": 4
   },
@@ -1045,6 +1053,10 @@
   },
   {
    "id": "artwork",
+   "count": 4
+  },
+  {
+   "id": "podcast",
    "count": 4
   },
   {
@@ -1072,6 +1084,10 @@
    "count": 4
   },
   {
+   "id": "comment",
+   "count": 4
+  },
+  {
    "id": "timeline",
    "count": 4
   },
@@ -1081,6 +1097,10 @@
   },
   {
    "id": "transfer",
+   "count": 4
+  },
+  {
+   "id": "timer",
    "count": 4
   },
   {
@@ -1121,10 +1141,6 @@
   },
   {
    "id": "kanban",
-   "count": 4
-  },
-  {
-   "id": "avatar-picker",
    "count": 4
   },
   {
@@ -1200,10 +1216,6 @@
    "count": 3
   },
   {
-   "id": "payments",
-   "count": 3
-  },
-  {
    "id": "option-list",
    "count": 3
   },
@@ -1240,10 +1252,6 @@
    "count": 3
   },
   {
-   "id": "podcast",
-   "count": 3
-  },
-  {
    "id": "states",
    "count": 3
   },
@@ -1276,10 +1284,6 @@
    "count": 3
   },
   {
-   "id": "comment",
-   "count": 3
-  },
-  {
    "id": "membership",
    "count": 3
   },
@@ -1300,7 +1304,7 @@
    "count": 3
   },
   {
-   "id": "timer",
+   "id": "countdown",
    "count": 3
   },
   {
@@ -1580,10 +1584,6 @@
    "count": 2
   },
   {
-   "id": "countdown",
-   "count": 2
-  },
-  {
    "id": "panel",
    "count": 2
   },
@@ -1717,6 +1717,10 @@
   },
   {
    "id": "wireframe",
+   "count": 2
+  },
+  {
+   "id": "reaction",
    "count": 2
   },
   {
@@ -2293,10 +2297,6 @@
   },
   {
    "id": "laptop",
-   "count": 1
-  },
-  {
-   "id": "reaction",
    "count": 1
   },
   {
@@ -48095,12 +48095,19 @@
    "id": "VID-0335",
    "kind": "video",
    "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0335",
-   "description": "",
+   "type": "screen",
+   "title": "Podcast sentiment cards",
+   "description": "Two podcast analytics cards: audience sentiment (%48 positive, 44/40/16 split) and a '9 Comment' mention bar chart. A near-static recording — kept as poster frames for the sentiment-bar treatment.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "analytics",
+    "podcast"
+   ],
    "palette": [
     "#EDEDED",
     "#FFFFFF",
@@ -48144,7 +48151,8 @@
     "path": "E:\\Downloads\\UI\\SPSm9lMnCrh_Vws3.mp4",
     "bytes": 291557
    },
-   "source_note": "auto-draft 2026-09-26: motion median 1.72; needs a visual read-through",
+   "quality": "Near-static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0335.webp",
    "thumb": "assets/thumb/VID-0335.webp",
    "motion": 1.72,
@@ -48155,12 +48163,19 @@
    "id": "VID-0336",
    "kind": "video",
    "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0336",
-   "description": "",
+   "type": "component",
+   "title": "Countdown widget motion",
+   "description": "A countdown widget reading 71 over undulating purple waves: the motion is the subject, a number emerging from ambient movement.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "playful"
+   ],
+   "tags": [
+    "animation",
+    "countdown",
+    "timer"
+   ],
    "palette": [
     "#E1E1E1",
     "#2A162C",
@@ -48204,7 +48219,8 @@
     "path": "E:\\Downloads\\UI\\UIHnTCJUHYkX9MLJ.mp4",
     "bytes": 61982583
    },
-   "source_note": "auto-draft 2026-09-26: motion median 7.34; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0336.webp",
    "thumb": "assets/thumb/VID-0336.webp",
    "motion": 7.34,
@@ -48224,11 +48240,16 @@
    "kind": "video",
    "category": "motion-demo",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0337",
-   "description": "",
+   "title": "Design-tool boards demo",
+   "description": "A dark design-tool walkthrough: 'My Project' with Boards/Board 1 and a Layers panel (Frame 1, Page 1) beside a rainbow canvas edge. Tool chrome in motion rather than a static panel.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "design-tool"
+   ],
    "palette": [
     "#1F1F1F",
     "#131313",
@@ -48272,7 +48293,8 @@
     "path": "E:\\Downloads\\UI\\nout4h9qYUuqhHVG.mp4",
     "bytes": 1423572
    },
-   "source_note": "auto-draft 2026-09-26: motion median 4.57; needs a visual read-through",
+   "quality": "Panel text small; structure legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0337.webp",
    "thumb": "assets/thumb/VID-0337.webp",
    "motion": 4.57,
@@ -48290,13 +48312,21 @@
   {
    "id": "VID-0338",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0338",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Crypto payment chat",
+   "description": "A crypto payment chat: a $558.50 'Delivered!' bubble with a 'sure, sending it now' reply above an iOS keyboard. A static recording — the chat-bubble money pattern is the reference.",
+   "roles": [
+    "chat"
+   ],
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "crypto",
+    "payments"
+   ],
    "palette": [
     "#F5F5F5",
     "#D9DCDE",
@@ -48340,7 +48370,8 @@
     "path": "E:\\Downloads\\UI\\W7iEcVIEqaC0c4XO.mp4",
     "bytes": 540657
    },
-   "source_note": "auto-draft 2026-09-26: motion median 0.3; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0338.webp",
    "thumb": "assets/thumb/VID-0338.webp",
    "motion": 0.3,
@@ -48350,13 +48381,21 @@
   {
    "id": "VID-0339",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0339",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Live-map onboarding clip",
+   "description": "A peach 'Add your live map' onboarding: framed street map, soft rationale copy and a Continue pill. High-motion clip of a gentle location priming screen.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "map"
+   ],
    "palette": [
     "#E3BEAC",
     "#EED9CB",
@@ -48400,7 +48439,8 @@
     "path": "E:\\Downloads\\UI\\JOzs_LDV-Et-l44f.mp4",
     "bytes": 3516962
    },
-   "source_note": "auto-draft 2026-09-26: motion median 33.27; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0339.webp",
    "thumb": "assets/thumb/VID-0339.webp",
    "motion": 33.27,
@@ -48419,12 +48459,18 @@
    "id": "VID-0340",
    "kind": "video",
    "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0340",
-   "description": "",
+   "type": "component",
+   "title": "Circular avatar row",
+   "description": "Four circular landscape avatars in a row with a cursor hovering: an avatar-picker moment from a near-static recording. Kept for the circular-row treatment.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "avatar",
+    "avatar-picker"
+   ],
    "palette": [
     "#FDFBF6",
     "#F1EBE3",
@@ -48468,7 +48514,8 @@
     "path": "E:\\Downloads\\UI\\ZXF6ZWwW5SbCZEAz.mp4",
     "bytes": 17944522
    },
-   "source_note": "auto-draft 2026-09-26: motion median 1.39; needs a visual read-through",
+   "quality": "Near-static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0340.webp",
    "thumb": "assets/thumb/VID-0340.webp",
    "motion": 1.39,
@@ -48479,12 +48526,20 @@
    "id": "VID-0341",
    "kind": "video",
    "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0341",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "type": "component",
+   "title": "Dashboard cards motion",
+   "description": "Dashboard cards in motion: an 83.1% progress ring beside a blue ribbon seal with a cursor mid-drag. Metric cards presented as a moving composition.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "card-based",
+    "light-mode"
+   ],
+   "tags": [
+    "analytics",
+    "progress-ring"
+   ],
    "palette": [
     "#FBFBFE",
     "#97BEEF",
@@ -48528,7 +48583,8 @@
     "path": "E:\\Downloads\\UI\\QgPqp-k8Ood0HpQr.mp4",
     "bytes": 2925946
    },
-   "source_note": "auto-draft 2026-09-26: motion median 8.34; needs a visual read-through",
+   "quality": "Card text small; composition legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0341.webp",
    "thumb": "assets/thumb/VID-0341.webp",
    "motion": 8.34,
@@ -48547,12 +48603,20 @@
    "id": "VID-0342",
    "kind": "video",
    "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0342",
-   "description": "",
+   "type": "screen",
+   "title": "Design-update comment thread",
+   "description": "A collaboration moment: avatar reactions row over a 'Hey, I've Updated the design, let me know what your team says' comment bubble, cursor selecting a reactor. Handoff-as-interaction.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "collaboration",
+    "comment",
+    "reaction"
+   ],
    "palette": [
     "#DDDDDD",
     "#FAFAFA",
@@ -48596,7 +48660,8 @@
     "path": "E:\\Downloads\\UI\\20VQ4wKkMNp8nw3X.mp4",
     "bytes": 1968909
    },
-   "source_note": "auto-draft 2026-09-26: motion median 19.06; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0342.webp",
    "thumb": "assets/thumb/VID-0342.webp",
    "motion": 19.06,
@@ -48614,13 +48679,22 @@
   {
    "id": "VID-0343",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0343",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "screen",
+   "title": "Max plan upgrade screen",
+   "description": "A 'Max plan' upgrade card: 20x Pro usage, October 2026 renewal, Adjust plan link, rocket art. A static plan-upsell still.",
+   "roles": [
+    "pricing"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "subscription",
+    "upgrade"
+   ],
    "palette": [
     "#F3F3F3",
     "#1A1A1A",
@@ -48664,7 +48738,8 @@
     "path": "E:\\Downloads\\UI\\aFHl29rI_whFGWSN.mp4",
     "bytes": 2779042
    },
-   "source_note": "auto-draft 2026-09-26: motion median 1.3; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0343.webp",
    "thumb": "assets/thumb/VID-0343.webp",
    "motion": 1.3,
@@ -48675,12 +48750,17 @@
    "id": "VID-0344",
    "kind": "video",
    "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0344",
-   "description": "",
+   "type": "screen",
+   "title": "Document preview interaction",
+   "description": "An iPhone 'Preview — choose a document to display and edit' with a ring control mid-turn and Recents below. Document selection as a tactile interaction.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "document"
+   ],
    "palette": [
     "#2E2E2E",
     "#ECEBEF",
@@ -48724,7 +48804,8 @@
     "path": "E:\\Downloads\\UI\\ju6SD_5CfBjxoRkp.mp4",
     "bytes": 873828
    },
-   "source_note": "auto-draft 2026-09-26: motion median 8.67; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0344.webp",
    "thumb": "assets/thumb/VID-0344.webp",
    "motion": 8.67,
@@ -48742,13 +48823,16 @@
   {
    "id": "VID-0345",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "website",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0345",
-   "description": "",
+   "title": "Portfolio scroll-through",
+   "description": "A fast scroll through a kargul.studio portfolio: 'One click. Zero friction' hero, Template/Report/Start cards and project tiles. A scroll-tour of a portfolio site rather than one screen.",
    "roles": [],
    "style": [],
-   "tags": [],
+   "tags": [
+    "landing",
+    "portfolio"
+   ],
    "palette": [
     "#FDFDFD",
     "#ECECEC",
@@ -48792,7 +48876,8 @@
     "path": "E:\\Downloads\\UI\\0PdS4xfWl3gCroi1.mp4",
     "bytes": 106370919
    },
-   "source_note": "auto-draft 2026-09-26: motion median 94.91; needs a visual read-through",
+   "quality": "Scroll frames blur text; structure legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0345.webp",
    "thumb": "assets/thumb/VID-0345.webp",
    "motion": 94.91,
@@ -48810,13 +48895,24 @@
   {
    "id": "VID-0346",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "dashboard",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0346",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Finance dashboard tour",
+   "description": "A personal-finance scroll tour: 38% technology exposure, dining 18% over average, an Adobe $74.99/mo subscription row and $6,928 in upcoming bills. Insights stacked as a scrolling feed.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "card-based",
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "analytics",
+    "finance",
+    "spending",
+    "subscription"
+   ],
    "palette": [
     "#FFFFFF",
     "#F2F2F7",
@@ -48860,7 +48956,8 @@
     "path": "E:\\Downloads\\UI\\RbU1RO_4-1kg87Yi.mp4",
     "bytes": 12600827
    },
-   "source_note": "auto-draft 2026-09-26: motion median 15.16; needs a visual read-through",
+   "quality": "Scroll frames blur text; structure legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0346.webp",
    "thumb": "assets/thumb/VID-0346.webp",
    "motion": 15.16,

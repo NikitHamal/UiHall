@@ -1,0 +1,232 @@
+{
+ "items": {
+  "VID-0335": {
+   "category": "other",
+   "description": "Two podcast analytics cards: audience sentiment (%48 positive, 44/40/16 split) and a '9 Comment' mention bar chart. A near-static recording — kept as poster frames for the sentiment-bar treatment.",
+   "id": "VID-0335",
+   "quality": "Near-static clip; poster carries the design.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal",
+    "card-based"
+   ],
+   "tags": [
+    "analytics",
+    "podcast"
+   ],
+   "title": "Podcast sentiment cards",
+   "type": "screen"
+  },
+  "VID-0336": {
+   "category": "motion-demo",
+   "description": "A countdown widget reading 71 over undulating purple waves: the motion is the subject, a number emerging from ambient movement.",
+   "id": "VID-0336",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "playful"
+   ],
+   "tags": [
+    "countdown",
+    "timer",
+    "animation"
+   ],
+   "title": "Countdown widget motion",
+   "type": "component"
+  },
+  "VID-0337": {
+   "category": "motion-demo",
+   "description": "A dark design-tool walkthrough: 'My Project' with Boards/Board 1 and a Layers panel (Frame 1, Page 1) beside a rainbow canvas edge. Tool chrome in motion rather than a static panel.",
+   "id": "VID-0337",
+   "quality": "Panel text small; structure legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "design-tool"
+   ],
+   "title": "Design-tool boards demo",
+   "type": "flow-walkthrough"
+  },
+  "VID-0338": {
+   "category": "mobile-app-ui",
+   "description": "A crypto payment chat: a $558.50 'Delivered!' bubble with a 'sure, sending it now' reply above an iOS keyboard. A static recording — the chat-bubble money pattern is the reference.",
+   "id": "VID-0338",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [
+    "chat"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "crypto",
+    "payments"
+   ],
+   "title": "Crypto payment chat",
+   "type": "screen"
+  },
+  "VID-0339": {
+   "category": "mobile-app-ui",
+   "description": "A peach 'Add your live map' onboarding: framed street map, soft rationale copy and a Continue pill. High-motion clip of a gentle location priming screen.",
+   "id": "VID-0339",
+   "quality": "Clean frames; fully legible.",
+   "roles": [
+    "onboarding"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "map"
+   ],
+   "title": "Live-map onboarding clip",
+   "type": "screen"
+  },
+  "VID-0340": {
+   "category": "other",
+   "description": "Four circular landscape avatars in a row with a cursor hovering: an avatar-picker moment from a near-static recording. Kept for the circular-row treatment.",
+   "id": "VID-0340",
+   "quality": "Near-static clip; poster carries the design.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "avatar",
+    "avatar-picker"
+   ],
+   "title": "Circular avatar row",
+   "type": "component"
+  },
+  "VID-0341": {
+   "category": "motion-demo",
+   "description": "Dashboard cards in motion: an 83.1% progress ring beside a blue ribbon seal with a cursor mid-drag. Metric cards presented as a moving composition.",
+   "id": "VID-0341",
+   "quality": "Card text small; composition legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "card-based"
+   ],
+   "tags": [
+    "analytics",
+    "progress-ring"
+   ],
+   "title": "Dashboard cards motion",
+   "type": "component"
+  },
+  "VID-0342": {
+   "category": "motion-demo",
+   "description": "A collaboration moment: avatar reactions row over a 'Hey, I've Updated the design, let me know what your team says' comment bubble, cursor selecting a reactor. Handoff-as-interaction.",
+   "id": "VID-0342",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded",
+    "playful"
+   ],
+   "tags": [
+    "collaboration",
+    "comment",
+    "reaction"
+   ],
+   "title": "Design-update comment thread",
+   "type": "screen"
+  },
+  "VID-0343": {
+   "category": "website",
+   "description": "A 'Max plan' upgrade card: 20x Pro usage, October 2026 renewal, Adjust plan link, rocket art. A static plan-upsell still.",
+   "id": "VID-0343",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [
+    "pricing"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "subscription",
+    "upgrade"
+   ],
+   "title": "Max plan upgrade screen",
+   "type": "screen"
+  },
+  "VID-0344": {
+   "category": "motion-demo",
+   "description": "An iPhone 'Preview — choose a document to display and edit' with a ring control mid-turn and Recents below. Document selection as a tactile interaction.",
+   "id": "VID-0344",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "document"
+   ],
+   "title": "Document preview interaction",
+   "type": "screen"
+  },
+  "VID-0345": {
+   "category": "website",
+   "description": "A fast scroll through a kargul.studio portfolio: 'One click. Zero friction' hero, Template/Report/Start cards and project tiles. A scroll-tour of a portfolio site rather than one screen.",
+   "id": "VID-0345",
+   "quality": "Scroll frames blur text; structure legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "tags": [
+    "portfolio",
+    "landing"
+   ],
+   "title": "Portfolio scroll-through",
+   "type": "flow-walkthrough"
+  },
+  "VID-0346": {
+   "category": "dashboard",
+   "description": "A personal-finance scroll tour: 38% technology exposure, dining 18% over average, an Adobe $74.99/mo subscription row and $6,928 in upcoming bills. Insights stacked as a scrolling feed.",
+   "id": "VID-0346",
+   "quality": "Scroll frames blur text; structure legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "card-based",
+    "data-dense"
+   ],
+   "tags": [
+    "finance",
+    "analytics",
+    "spending",
+    "subscription"
+   ],
+   "title": "Finance dashboard tour",
+   "type": "flow-walkthrough"
+  }
+ }
+}
