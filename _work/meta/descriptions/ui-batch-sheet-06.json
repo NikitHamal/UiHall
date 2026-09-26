@@ -1,0 +1,249 @@
+{
+ "items": {
+  "IMG-0606": {
+   "category": "mobile-app-ui",
+   "description": "Two dark team-invite screens for Texas State WBB: a bull-mark invite card with 'Player invited' and a share-invitation-code sheet. Sports-team onboarding in near-black with one red accent.",
+   "id": "IMG-0606",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "team",
+    "invite",
+    "fitness"
+   ],
+   "title": "Team invite screens (dark)",
+   "type": "multi-screen"
+  },
+  "IMG-0607": {
+   "category": "website",
+   "description": "A travel-itinerary collage: 'Where will you go next?' search over landmark illustrations, hotel cards and day-plan strips. An inspiration-board layout more than a single screen — kept for the collage composition.",
+   "id": "IMG-0607",
+   "quality": "Small card text soft; composition fully legible.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "card-based",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "travel",
+    "collage",
+    "exploration",
+    "booking"
+   ],
+   "title": "Travel itinerary collage",
+   "type": "multi-screen"
+  },
+  "IMG-0608": {
+   "category": "mobile-app-ui",
+   "description": "A 'Mugic' music-app design board: lavender screens, player cards, playlist rows and a $29 pricing card arranged as one presentation. A concept board — the player-card styling is the takeaway.",
+   "id": "IMG-0608",
+   "quality": "Board text small; screens and structure legible.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "music",
+    "exploration",
+    "concept"
+   ],
+   "title": "Mugic music-app board",
+   "type": "multi-screen"
+  },
+  "IMG-0609": {
+   "category": "website",
+   "description": "'Control Every Shipment, From Supplier to Customer': isometric warehouse art, a 'Smarter Logistics in 5 Steps' band and tracking-status cards. Control-tower marketing for a logistics platform.",
+   "id": "IMG-0609",
+   "quality": "Card text small; headline and structure legible.",
+   "roles": [
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "light-mode",
+    "illustration-led",
+    "card-based"
+   ],
+   "tags": [
+    "landing",
+    "logistics",
+    "tracking"
+   ],
+   "title": "Logistics control-tower landing",
+   "type": "screen"
+  },
+  "IMG-0610": {
+   "category": "website",
+   "description": "A 'Production-ready HTML & Next.js Converter' dev-tool landing: converter widget with blue CTAs over a feature grid. Developer-tool marketing with the tool itself embedded in the hero.",
+   "id": "IMG-0610",
+   "quality": "Widget text small; structure fully legible.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "landing",
+    "developer-tool",
+    "no-code"
+   ],
+   "title": "HTML-to-Next.js converter landing",
+   "type": "screen"
+  },
+  "IMG-0611": {
+   "category": "dashboard",
+   "description": "A 'Top Constituents' crypto donut: BTC 69.33%, ETH 15.63%, BNB 4.32% with a full constituent ledger. One chart, fully labelled — an index-allocation component.",
+   "id": "IMG-0611",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "crypto",
+    "chart"
+   ],
+   "title": "Crypto index donut",
+   "type": "component"
+  },
+  "IMG-0612": {
+   "category": "dashboard",
+   "description": "A Bitcoin token-detail screen at $80,456.32: Spot/Derivatives tabs, market-cap and supply stats, and a 100% Profile Score bar. The single-asset companion to the index donut.",
+   "id": "IMG-0612",
+   "pair_with": "IMG-0611",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "detail",
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded",
+    "data-dense"
+   ],
+   "tags": [
+    "crypto",
+    "token"
+   ],
+   "title": "Bitcoin token detail",
+   "type": "screen"
+  },
+  "IMG-0613": {
+   "category": "mobile-app-ui",
+   "description": "A dark 'Push Day' workout home: progress ring, 45/8/14.2k/280 stat tiles, exercise rows with completion dots and a Resume workout pill. Gym-dark training design; first of a four-screen series.",
+   "id": "IMG-0613",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "dark-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "gym",
+    "fitness",
+    "stats"
+   ],
+   "title": "Push-day workout tracker",
+   "type": "screen"
+  },
+  "IMG-0614": {
+   "category": "mobile-app-ui",
+   "description": "The logging screen from the same gym app: 'Incline Dumbbell Press', 70 lb target, 8–12 rep range, Weight 65 and Reps 8 steppers, Complete set CTA. Set logging reduced to two steppers and one button.",
+   "id": "IMG-0614",
+   "pair_with": "IMG-0613",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "form"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "gym",
+    "stepper"
+   ],
+   "title": "Exercise logging screen",
+   "type": "screen"
+  },
+  "IMG-0615": {
+   "category": "mobile-app-ui",
+   "description": "The rest timer from the same series: a 1:24 countdown ring with Up Next (Incline Dumbbell Press) and a Skip rest link. Recovery as a first-class screen, not an afterthought.",
+   "id": "IMG-0615",
+   "pair_with": "IMG-0614",
+   "quality": "Clean capture; fully legible.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "gym",
+    "timer"
+   ],
+   "title": "Gym rest timer",
+   "type": "screen"
+  },
+  "IMG-0616": {
+   "category": "mobile-app-ui",
+   "description": "The 'Workout Complete' payoff screen: 45:32, 14.2k, 8-exercise and 16-set stats with View Log and Share Summary actions. The celebration endpoint of the four-screen gym flow.",
+   "id": "IMG-0616",
+   "pair_with": "IMG-0615",
+   "quality": "Clean capture; fully legible.",
+   "roles": [],
+   "style": [
+    "dark-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "gym",
+    "stats",
+    "fitness"
+   ],
+   "title": "Workout complete summary",
+   "type": "screen"
+  },
+  "IMG-0617": {
+   "category": "before-after",
+   "description": "A labelled Before/After of a Hilda John profile-settings screen: same menu (Manage Profile, Password & Security, Notifications, Language, About, Appointments) reorganized between the two shots. Settings-IA comparison as one image.",
+   "id": "IMG-0617",
+   "quality": "Menu text small; both variants legible.",
+   "roles": [
+    "settings"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "before-after",
+    "comparison"
+   ],
+   "title": "Profile-settings before/after",
+   "type": "multi-screen"
+  }
+ }
+}

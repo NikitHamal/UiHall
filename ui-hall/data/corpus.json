@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 578
+  "described": 590
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 353
+   "count": 359
   },
   {
    "id": "app-store-screens",
@@ -28,14 +28,14 @@
    "label": "Before / after",
    "blurb": "Paired evidence: the same screen done badly and done well. Highest teaching value.",
    "icon": "compare",
-   "count": 34
+   "count": 35
   },
   {
    "id": "website",
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 73
+   "count": 76
   },
   {
    "id": "design-system",
@@ -63,7 +63,7 @@
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 45
+   "count": 47
   },
   {
    "id": "motion-demo",
@@ -84,14 +84,14 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 108
+   "count": 96
   }
  ],
  "types": [
   {
    "id": "component",
    "label": "component",
-   "count": 18
+   "count": 19
   },
   {
    "id": "flow-walkthrough",
@@ -111,7 +111,7 @@
   {
    "id": "multi-screen",
    "label": "multi-screen",
-   "count": 78
+   "count": 82
   },
   {
    "id": "pattern",
@@ -126,7 +126,7 @@
   {
    "id": "screen",
    "label": "screen",
-   "count": 245
+   "count": 240
   },
   {
    "id": "token-sheet",
@@ -137,11 +137,11 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 110
+   "count": 112
   },
   {
    "id": "hero",
-   "count": 57
+   "count": 59
   },
   {
    "id": "list",
@@ -149,27 +149,31 @@
   },
   {
    "id": "home",
-   "count": 45
+   "count": 46
   },
   {
    "id": "detail",
-   "count": 44
+   "count": 45
   },
   {
    "id": "onboarding",
-   "count": 35
+   "count": 36
   },
   {
    "id": "landing-section",
-   "count": 27
+   "count": 28
   },
   {
    "id": "form",
-   "count": 27
+   "count": 28
   },
   {
    "id": "editor",
    "count": 17
+  },
+  {
+   "id": "settings",
+   "count": 16
   },
   {
    "id": "media",
@@ -186,10 +190,6 @@
   {
    "id": "profile",
    "count": 16
-  },
-  {
-   "id": "settings",
-   "count": 15
   },
   {
    "id": "checkout",
@@ -227,27 +227,27 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 352
+   "count": 359
   },
   {
    "id": "minimal",
-   "count": 259
+   "count": 265
   },
   {
    "id": "dark-mode",
-   "count": 176
+   "count": 181
   },
   {
    "id": "card-based",
-   "count": 158
+   "count": 164
   },
   {
    "id": "rounded",
-   "count": 156
+   "count": 163
   },
   {
    "id": "data-dense",
-   "count": 54
+   "count": 55
   },
   {
    "id": "editorial",
@@ -258,12 +258,12 @@
    "count": 35
   },
   {
-   "id": "bold-typography",
-   "count": 32
+   "id": "playful",
+   "count": 33
   },
   {
-   "id": "playful",
-   "count": 31
+   "id": "bold-typography",
+   "count": 32
   },
   {
    "id": "flat",
@@ -278,11 +278,11 @@
    "count": 24
   },
   {
-   "id": "gradient-heavy",
-   "count": 21
+   "id": "illustration-led",
+   "count": 22
   },
   {
-   "id": "illustration-led",
+   "id": "gradient-heavy",
    "count": 21
   },
   {
@@ -329,7 +329,7 @@
   },
   {
    "id": "chart",
-   "count": 45
+   "count": 46
   },
   {
    "id": "ai",
@@ -356,6 +356,10 @@
    "count": 27
   },
   {
+   "id": "landing",
+   "count": 27
+  },
+  {
    "id": "dark-ui",
    "count": 26
   },
@@ -364,19 +368,15 @@
    "count": 26
   },
   {
+   "id": "comparison",
+   "count": 26
+  },
+  {
    "id": "photo",
    "count": 26
   },
   {
-   "id": "comparison",
-   "count": 25
-  },
-  {
    "id": "table",
-   "count": 25
-  },
-  {
-   "id": "landing",
    "count": 25
   },
   {
@@ -385,6 +385,10 @@
   },
   {
    "id": "illustration",
+   "count": 21
+  },
+  {
+   "id": "travel",
    "count": 21
   },
   {
@@ -406,10 +410,6 @@
   {
    "id": "kpi",
    "count": 21
-  },
-  {
-   "id": "travel",
-   "count": 20
   },
   {
    "id": "grid",
@@ -436,7 +436,15 @@
    "count": 18
   },
   {
+   "id": "music",
+   "count": 18
+  },
+  {
    "id": "cards",
+   "count": 17
+  },
+  {
+   "id": "fitness",
    "count": 17
   },
   {
@@ -444,16 +452,12 @@
    "count": 17
   },
   {
-   "id": "music",
-   "count": 17
+   "id": "before-after",
+   "count": 15
   },
   {
    "id": "call-to-action",
    "count": 15
-  },
-  {
-   "id": "before-after",
-   "count": 14
   },
   {
    "id": "transaction",
@@ -461,10 +465,6 @@
   },
   {
    "id": "status",
-   "count": 14
-  },
-  {
-   "id": "fitness",
    "count": 14
   },
   {
@@ -528,8 +528,16 @@
    "count": 11
   },
   {
+   "id": "stats",
+   "count": 11
+  },
+  {
    "id": "list",
    "count": 11
+  },
+  {
+   "id": "booking",
+   "count": 10
   },
   {
    "id": "banking",
@@ -544,12 +552,12 @@
    "count": 10
   },
   {
-   "id": "settings",
+   "id": "crypto",
    "count": 10
   },
   {
-   "id": "booking",
-   "count": 9
+   "id": "settings",
+   "count": 10
   },
   {
    "id": "steps",
@@ -561,10 +569,6 @@
   },
   {
    "id": "payment",
-   "count": 9
-  },
-  {
-   "id": "stats",
    "count": 9
   },
   {
@@ -613,10 +617,6 @@
   },
   {
    "id": "testimonial",
-   "count": 8
-  },
-  {
-   "id": "crypto",
    "count": 8
   },
   {
@@ -713,6 +713,10 @@
   },
   {
    "id": "date-picker",
+   "count": 6
+  },
+  {
+   "id": "exploration",
    "count": 6
   },
   {
@@ -876,6 +880,10 @@
    "count": 5
   },
   {
+   "id": "gym",
+   "count": 5
+  },
+  {
    "id": "pill",
    "count": 5
   },
@@ -901,6 +909,10 @@
   },
   {
    "id": "3d",
+   "count": 5
+  },
+  {
+   "id": "stepper",
    "count": 5
   },
   {
@@ -964,10 +976,6 @@
    "count": 4
   },
   {
-   "id": "exploration",
-   "count": 4
-  },
-  {
    "id": "goal-selection",
    "count": 4
   },
@@ -993,6 +1001,10 @@
   },
   {
    "id": "address",
+   "count": 4
+  },
+  {
+   "id": "tracking",
    "count": 4
   },
   {
@@ -1032,6 +1044,10 @@
    "count": 4
   },
   {
+   "id": "invite",
+   "count": 4
+  },
+  {
    "id": "timeline",
    "count": 4
   },
@@ -1052,10 +1068,6 @@
    "count": 4
   },
   {
-   "id": "stepper",
-   "count": 4
-  },
-  {
    "id": "commerce",
    "count": 4
   },
@@ -1069,6 +1081,14 @@
   },
   {
    "id": "developer",
+   "count": 4
+  },
+  {
+   "id": "token",
+   "count": 4
+  },
+  {
+   "id": "collage",
    "count": 4
   },
   {
@@ -1097,6 +1117,14 @@
   },
   {
    "id": "agents",
+   "count": 4
+  },
+  {
+   "id": "no-code",
+   "count": 4
+  },
+  {
+   "id": "developer-tool",
    "count": 4
   },
   {
@@ -1176,10 +1204,6 @@
    "count": 3
   },
   {
-   "id": "tracking",
-   "count": 3
-  },
-  {
    "id": "audio",
    "count": 3
   },
@@ -1220,10 +1244,6 @@
    "count": 3
   },
   {
-   "id": "invite",
-   "count": 3
-  },
-  {
    "id": "comment",
    "count": 3
   },
@@ -1241,6 +1261,10 @@
   },
   {
    "id": "waveform",
+   "count": 3
+  },
+  {
+   "id": "timer",
    "count": 3
   },
   {
@@ -1280,19 +1304,11 @@
    "count": 3
   },
   {
-   "id": "token",
-   "count": 3
-  },
-  {
    "id": "month-view",
    "count": 3
   },
   {
    "id": "collaboration",
-   "count": 3
-  },
-  {
-   "id": "collage",
    "count": 3
   },
   {
@@ -1328,10 +1344,6 @@
    "count": 3
   },
   {
-   "id": "no-code",
-   "count": 3
-  },
-  {
    "id": "community",
    "count": 3
   },
@@ -1353,10 +1365,6 @@
   },
   {
    "id": "story",
-   "count": 3
-  },
-  {
-   "id": "developer-tool",
    "count": 3
   },
   {
@@ -1448,6 +1456,10 @@
    "count": 2
   },
   {
+   "id": "concept",
+   "count": 2
+  },
+  {
    "id": "thumbnail",
    "count": 2
   },
@@ -1517,10 +1529,6 @@
   },
   {
    "id": "now-playing",
-   "count": 2
-  },
-  {
-   "id": "timer",
    "count": 2
   },
   {
@@ -1637,6 +1645,14 @@
   },
   {
    "id": "hand",
+   "count": 2
+  },
+  {
+   "id": "logistics",
+   "count": 2
+  },
+  {
+   "id": "team",
    "count": 2
   },
   {
@@ -1984,14 +2000,6 @@
    "count": 1
   },
   {
-   "id": "gym",
-   "count": 1
-  },
-  {
-   "id": "concept",
-   "count": 1
-  },
-  {
    "id": "mono-typography",
    "count": 1
   },
@@ -2208,15 +2216,7 @@
    "count": 1
   },
   {
-   "id": "logistics",
-   "count": 1
-  },
-  {
    "id": "mint",
-   "count": 1
-  },
-  {
-   "id": "team",
    "count": 1
   },
   {
@@ -28952,13 +28952,23 @@
   {
    "id": "IMG-0606",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0606",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Team invite screens (dark)",
+   "description": "Two dark team-invite screens for Texas State WBB: a bull-mark invite card with 'Player invited' and a share-invitation-code sheet. Sports-team onboarding in near-black with one red accent.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "fitness",
+    "invite",
+    "team"
+   ],
    "palette": [
     "#333333",
     "#282828",
@@ -29002,20 +29012,30 @@
     "path": "E:\\Downloads\\UI\\HS-1-tsbcAAWFSa.jpg",
     "bytes": 87067
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0606.webp",
    "thumb": "assets/thumb/IMG-0606.webp"
   },
   {
    "id": "IMG-0607",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0607",
-   "description": "",
+   "category": "website",
+   "type": "multi-screen",
+   "title": "Travel itinerary collage",
+   "description": "A travel-itinerary collage: 'Where will you go next?' search over landmark illustrations, hotel cards and day-plan strips. An inspiration-board layout more than a single screen — kept for the collage composition.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "booking",
+    "collage",
+    "exploration",
+    "travel"
+   ],
    "palette": [
     "#FBFBFB",
     "#D5E1E3",
@@ -29059,20 +29079,29 @@
     "path": "E:\\Downloads\\UI\\HS_A0OubIAAzGBN.jpg",
     "bytes": 315524
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Small card text soft; composition fully legible.",
    "src": "assets/img/IMG-0607.webp",
    "thumb": "assets/thumb/IMG-0607.webp"
   },
   {
    "id": "IMG-0608",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0608",
-   "description": "",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Mugic music-app board",
+   "description": "A 'Mugic' music-app design board: lavender screens, player cards, playlist rows and a $29 pricing card arranged as one presentation. A concept board — the player-card styling is the takeaway.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "concept",
+    "exploration",
+    "music"
+   ],
    "palette": [
     "#FDFDFE",
     "#E8E5E6",
@@ -29116,20 +29145,31 @@
     "path": "E:\\Downloads\\UI\\HS_A0Oyb0AAzPnV.jpg",
     "bytes": 271826
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Board text small; screens and structure legible.",
    "src": "assets/img/IMG-0608.webp",
    "thumb": "assets/thumb/IMG-0608.webp"
   },
   {
    "id": "IMG-0609",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0609",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Logistics control-tower landing",
+   "description": "'Control Every Shipment, From Supplier to Customer': isometric warehouse art, a 'Smarter Logistics in 5 Steps' band and tracking-status cards. Control-tower marketing for a logistics platform.",
+   "roles": [
+    "hero",
+    "landing-section"
+   ],
+   "style": [
+    "card-based",
+    "illustration-led",
+    "light-mode"
+   ],
+   "tags": [
+    "landing",
+    "logistics",
+    "tracking"
+   ],
    "palette": [
     "#FBF7F4",
     "#E7E3E3",
@@ -29173,20 +29213,29 @@
     "path": "E:\\Downloads\\UI\\HS_A0OsaoAAbvwq.jpg",
     "bytes": 266429
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Card text small; headline and structure legible.",
    "src": "assets/img/IMG-0609.webp",
    "thumb": "assets/thumb/IMG-0609.webp"
   },
   {
    "id": "IMG-0610",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0610",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "HTML-to-Next.js converter landing",
+   "description": "A 'Production-ready HTML & Next.js Converter' dev-tool landing: converter widget with blue CTAs over a feature grid. Developer-tool marketing with the tool itself embedded in the hero.",
+   "roles": [
+    "hero"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "developer-tool",
+    "landing",
+    "no-code"
+   ],
    "palette": [
     "#FEFEFE",
     "#F3F3F3",
@@ -29230,20 +29279,28 @@
     "path": "E:\\Downloads\\UI\\HS_A5RyaoAAqxE1.jpg",
     "bytes": 258619
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Widget text small; structure fully legible.",
    "src": "assets/img/IMG-0610.webp",
    "thumb": "assets/thumb/IMG-0610.webp"
   },
   {
    "id": "IMG-0611",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0611",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "dashboard",
+   "type": "component",
+   "title": "Crypto index donut",
+   "description": "A 'Top Constituents' crypto donut: BTC 69.33%, ETH 15.63%, BNB 4.32% with a full constituent ledger. One chart, fully labelled — an index-allocation component.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "chart",
+    "crypto"
+   ],
    "palette": [
     "#FFFFFF",
     "#F7F2EB",
@@ -29287,20 +29344,31 @@
     "path": "E:\\Downloads\\UI\\HS_EmOLXgAAMh1V.jpg",
     "bytes": 54076
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0611.webp",
    "thumb": "assets/thumb/IMG-0611.webp"
   },
   {
    "id": "IMG-0612",
    "kind": "image",
-   "category": "other",
+   "category": "dashboard",
    "type": "screen",
-   "title": "Needs review — IMG-0612",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Bitcoin token detail",
+   "description": "A Bitcoin token-detail screen at $80,456.32: Spot/Derivatives tabs, market-cap and supply stats, and a 100% Profile Score bar. The single-asset companion to the index donut.",
+   "roles": [
+    "dashboard",
+    "detail"
+   ],
+   "style": [
+    "card-based",
+    "data-dense",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "crypto",
+    "token"
+   ],
    "palette": [
     "#FFFFFF",
     "#F3F6F5",
@@ -29344,20 +29412,31 @@
     "path": "E:\\Downloads\\UI\\HS_EmVGXoAAyC8n.jpg",
     "bytes": 84839
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0611",
    "src": "assets/img/IMG-0612.webp",
    "thumb": "assets/thumb/IMG-0612.webp"
   },
   {
    "id": "IMG-0613",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0613",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Push-day workout tracker",
+   "description": "A dark 'Push Day' workout home: progress ring, 45/8/14.2k/280 stat tiles, exercise rows with completion dots and a Resume workout pill. Gym-dark training design; first of a four-screen series.",
+   "roles": [
+    "home"
+   ],
+   "style": [
+    "card-based",
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "fitness",
+    "gym",
+    "stats"
+   ],
    "palette": [
     "#F3F3F3",
     "#131110",
@@ -29401,20 +29480,29 @@
     "path": "E:\\Downloads\\UI\\HS_tme9WsAAz5tm.jpg",
     "bytes": 211149
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0613.webp",
    "thumb": "assets/thumb/IMG-0613.webp"
   },
   {
    "id": "IMG-0614",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0614",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Exercise logging screen",
+   "description": "The logging screen from the same gym app: 'Incline Dumbbell Press', 70 lb target, 8–12 rep range, Weight 65 and Reps 8 steppers, Complete set CTA. Set logging reduced to two steppers and one button.",
+   "roles": [
+    "form"
+   ],
+   "style": [
+    "dark-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "gym",
+    "stepper"
+   ],
    "palette": [
     "#F3F3F3",
     "#121010",
@@ -29458,20 +29546,27 @@
     "path": "E:\\Downloads\\UI\\HS_tuE2WYAASeM1.jpg",
     "bytes": 175022
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0613",
    "src": "assets/img/IMG-0614.webp",
    "thumb": "assets/thumb/IMG-0614.webp"
   },
   {
    "id": "IMG-0615",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0615",
-   "description": "",
+   "title": "Gym rest timer",
+   "description": "The rest timer from the same series: a 1:24 countdown ring with Up Next (Incline Dumbbell Press) and a Skip rest link. Recovery as a first-class screen, not an afterthought.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "gym",
+    "timer"
+   ],
    "palette": [
     "#F3F3F3",
     "#0F0D0C",
@@ -29515,20 +29610,29 @@
     "path": "E:\\Downloads\\UI\\HS_t23jWwAAvdnY.jpg",
     "bytes": 258018
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0614",
    "src": "assets/img/IMG-0615.webp",
    "thumb": "assets/thumb/IMG-0615.webp"
   },
   {
    "id": "IMG-0616",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0616",
-   "description": "",
+   "title": "Workout complete summary",
+   "description": "The 'Workout Complete' payoff screen: 45:32, 14.2k, 8-exercise and 16-set stats with View Log and Share Summary actions. The celebration endpoint of the four-screen gym flow.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "fitness",
+    "gym",
+    "stats"
+   ],
    "palette": [
     "#F3F3F3",
     "#14100F",
@@ -29572,20 +29676,29 @@
     "path": "E:\\Downloads\\UI\\HS_t9TlWIAAZQJX.jpg",
     "bytes": 300936
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0615",
    "src": "assets/img/IMG-0616.webp",
    "thumb": "assets/thumb/IMG-0616.webp"
   },
   {
    "id": "IMG-0617",
    "kind": "image",
-   "category": "other",
-   "type": "screen",
-   "title": "Needs review — IMG-0617",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "before-after",
+   "type": "multi-screen",
+   "title": "Profile-settings before/after",
+   "description": "A labelled Before/After of a Hilda John profile-settings screen: same menu (Manage Profile, Password & Security, Notifications, Language, About, Appointments) reorganized between the two shots. Settings-IA comparison as one image.",
+   "roles": [
+    "settings"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "before-after",
+    "comparison"
+   ],
    "palette": [
     "#DBDBDB",
     "#FDFDFE",
@@ -29629,7 +29742,7 @@
     "path": "E:\\Downloads\\UI\\HS95IduWAAAClR-.jpg",
     "bytes": 307710
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Menu text small; both variants legible.",
    "src": "assets/img/IMG-0617.webp",
    "thumb": "assets/thumb/IMG-0617.webp"
   },
