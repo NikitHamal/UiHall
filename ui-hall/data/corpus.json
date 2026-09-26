@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 733
+  "described": 745
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 398
+   "count": 403
   },
   {
    "id": "app-store-screens",
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 126
+   "count": 129
   },
   {
    "id": "design-system",
@@ -50,6 +50,13 @@
    "blurb": "Named two-tone colour pairings with printed hex values.",
    "icon": "swatch",
    "count": 10
+  },
+  {
+   "id": "typography",
+   "label": "Typography",
+   "blurb": "Type specimens and type-led layouts.",
+   "icon": "type",
+   "count": 1
   },
   {
    "id": "illustration",
@@ -70,7 +77,7 @@
    "label": "Motion demo",
    "blurb": "Clips whose whole point is the transition, not the static screen.",
    "icon": "play",
-   "count": 48
+   "count": 42
   },
   {
    "id": "promo-reel",
@@ -84,19 +91,19 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 32
+   "count": 29
   }
  ],
  "types": [
   {
    "id": "component",
    "label": "component",
-   "count": 36
+   "count": 37
   },
   {
    "id": "flow-walkthrough",
    "label": "flow-walkthrough",
-   "count": 258
+   "count": 246
   },
   {
    "id": "marketing",
@@ -111,7 +118,7 @@
   {
    "id": "multi-screen",
    "label": "multi-screen",
-   "count": 90
+   "count": 91
   },
   {
    "id": "pattern",
@@ -121,12 +128,12 @@
   {
    "id": "reference",
    "label": "reference",
-   "count": 3
+   "count": 4
   },
   {
    "id": "screen",
    "label": "screen",
-   "count": 290
+   "count": 299
   },
   {
    "id": "token-sheet",
@@ -152,12 +159,12 @@
    "count": 52
   },
   {
-   "id": "detail",
-   "count": 48
+   "id": "onboarding",
+   "count": 49
   },
   {
-   "id": "onboarding",
-   "count": 47
+   "id": "detail",
+   "count": 48
   },
   {
    "id": "landing-section",
@@ -168,12 +175,12 @@
    "count": 30
   },
   {
-   "id": "chat",
+   "id": "settings",
    "count": 22
   },
   {
-   "id": "settings",
-   "count": 21
+   "id": "chat",
+   "count": 22
   },
   {
    "id": "editor",
@@ -181,7 +188,7 @@
   },
   {
    "id": "media",
-   "count": 19
+   "count": 20
   },
   {
    "id": "search",
@@ -227,23 +234,23 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 449
+   "count": 456
   },
   {
    "id": "minimal",
-   "count": 322
+   "count": 327
   },
   {
    "id": "rounded",
-   "count": 241
+   "count": 249
   },
   {
    "id": "dark-mode",
-   "count": 220
+   "count": 225
   },
   {
    "id": "card-based",
-   "count": 205
+   "count": 206
   },
   {
    "id": "data-dense",
@@ -251,11 +258,11 @@
   },
   {
    "id": "playful",
-   "count": 50
+   "count": 51
   },
   {
    "id": "editorial",
-   "count": 49
+   "count": 50
   },
   {
    "id": "soft",
@@ -356,20 +363,20 @@
    "count": 29
   },
   {
+   "id": "travel",
+   "count": 29
+  },
+  {
    "id": "photo",
    "count": 29
   },
   {
+   "id": "typography",
+   "count": 28
+  },
+  {
    "id": "progress",
    "count": 28
-  },
-  {
-   "id": "travel",
-   "count": 28
-  },
-  {
-   "id": "typography",
-   "count": 27
   },
   {
    "id": "finance",
@@ -396,19 +403,19 @@
    "count": 24
   },
   {
+   "id": "calendar",
+   "count": 23
+  },
+  {
    "id": "music",
    "count": 23
   },
   {
-   "id": "illustration",
-   "count": 22
-  },
-  {
-   "id": "calendar",
-   "count": 22
-  },
-  {
    "id": "social",
+   "count": 23
+  },
+  {
+   "id": "illustration",
    "count": 22
   },
   {
@@ -472,6 +479,10 @@
    "count": 15
   },
   {
+   "id": "portfolio",
+   "count": 15
+  },
+  {
    "id": "status",
    "count": 14
   },
@@ -481,10 +492,6 @@
   },
   {
    "id": "crypto",
-   "count": 14
-  },
-  {
-   "id": "portfolio",
    "count": 14
   },
   {
@@ -532,6 +539,10 @@
    "count": 12
   },
   {
+   "id": "signup",
+   "count": 12
+  },
+  {
    "id": "green",
    "count": 11
   },
@@ -556,7 +567,7 @@
    "count": 11
   },
   {
-   "id": "signup",
+   "id": "developer-tool",
    "count": 11
   },
   {
@@ -580,11 +591,11 @@
    "count": 10
   },
   {
-   "id": "developer-tool",
+   "id": "settings",
    "count": 10
   },
   {
-   "id": "settings",
+   "id": "motion",
    "count": 10
   },
   {
@@ -593,6 +604,10 @@
   },
   {
    "id": "steps",
+   "count": 9
+  },
+  {
+   "id": "player",
    "count": 9
   },
   {
@@ -620,15 +635,15 @@
    "count": 9
   },
   {
-   "id": "motion",
-   "count": 9
-  },
-  {
    "id": "food",
    "count": 8
   },
   {
    "id": "localised",
+   "count": 8
+  },
+  {
+   "id": "date-picker",
    "count": 8
   },
   {
@@ -648,11 +663,11 @@
    "count": 8
   },
   {
-   "id": "player",
+   "id": "shelf",
    "count": 8
   },
   {
-   "id": "shelf",
+   "id": "contacts",
    "count": 8
   },
   {
@@ -669,6 +684,10 @@
   },
   {
    "id": "data-table",
+   "count": 8
+  },
+  {
+   "id": "collaboration",
    "count": 8
   },
   {
@@ -689,10 +708,6 @@
   },
   {
    "id": "tabs",
-   "count": 7
-  },
-  {
-   "id": "date-picker",
    "count": 7
   },
   {
@@ -732,10 +747,6 @@
    "count": 7
   },
   {
-   "id": "contacts",
-   "count": 7
-  },
-  {
    "id": "trading",
    "count": 7
   },
@@ -753,10 +764,6 @@
   },
   {
    "id": "real-estate",
-   "count": 7
-  },
-  {
-   "id": "collaboration",
    "count": 7
   },
   {
@@ -972,6 +979,10 @@
    "count": 5
   },
   {
+   "id": "comment",
+   "count": 5
+  },
+  {
    "id": "event",
    "count": 5
   },
@@ -1004,6 +1015,10 @@
    "count": 5
   },
   {
+   "id": "notes",
+   "count": 5
+  },
+  {
    "id": "data-viz",
    "count": 5
   },
@@ -1021,6 +1036,10 @@
   },
   {
    "id": "button",
+   "count": 5
+  },
+  {
+   "id": "generative-art",
    "count": 5
   },
   {
@@ -1096,10 +1115,6 @@
    "count": 4
   },
   {
-   "id": "comment",
-   "count": 4
-  },
-  {
    "id": "timeline",
    "count": 4
   },
@@ -1109,6 +1124,10 @@
   },
   {
    "id": "transfer",
+   "count": 4
+  },
+  {
+   "id": "specimen",
    "count": 4
   },
   {
@@ -1156,10 +1175,6 @@
    "count": 4
   },
   {
-   "id": "notes",
-   "count": 4
-  },
-  {
    "id": "voice",
    "count": 4
   },
@@ -1200,6 +1215,10 @@
    "count": 4
   },
   {
+   "id": "sticker",
+   "count": 4
+  },
+  {
    "id": "logo",
    "count": 4
   },
@@ -1225,10 +1244,6 @@
   },
   {
    "id": "feed",
-   "count": 4
-  },
-  {
-   "id": "generative-art",
    "count": 4
   },
   {
@@ -1344,10 +1359,6 @@
    "count": 3
   },
   {
-   "id": "specimen",
-   "count": 3
-  },
-  {
    "id": "waveform",
    "count": 3
   },
@@ -1436,10 +1447,6 @@
    "count": 3
   },
   {
-   "id": "sticker",
-   "count": 3
-  },
-  {
    "id": "legal",
    "count": 3
   },
@@ -1460,6 +1467,10 @@
    "count": 3
   },
   {
+   "id": "cursor",
+   "count": 3
+  },
+  {
    "id": "search",
    "count": 3
   },
@@ -1469,6 +1480,10 @@
   },
   {
    "id": "story",
+   "count": 3
+  },
+  {
+   "id": "personal-site",
    "count": 3
   },
   {
@@ -1840,10 +1855,6 @@
    "count": 2
   },
   {
-   "id": "cursor",
-   "count": 2
-  },
-  {
    "id": "input-bar",
    "count": 2
   },
@@ -1877,10 +1888,6 @@
   },
   {
    "id": "quote",
-   "count": 2
-  },
-  {
-   "id": "personal-site",
    "count": 2
   },
   {
@@ -1981,6 +1988,10 @@
   },
   {
    "id": "video-editing",
+   "count": 2
+  },
+  {
+   "id": "video",
    "count": 2
   },
   {
@@ -2776,11 +2787,19 @@
    "count": 1
   },
   {
-   "id": "video",
+   "id": "ios",
    "count": 1
   },
   {
-   "id": "ios",
+   "id": "language-learning",
+   "count": 1
+  },
+  {
+   "id": "custom-font",
+   "count": 1
+  },
+  {
+   "id": "teardown",
    "count": 1
   },
   {
@@ -55326,13 +55345,21 @@
   {
    "id": "VID-0432",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0432",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Find-friends permission",
+   "description": "A RIVALS 'Find your friends!' contacts prompt: dark screen, gradient slider-art and a contacts-access ask. Permission priming with brand heat.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "contacts",
+    "social"
+   ],
    "palette": [
     "#131313",
     "#FEFEFE",
@@ -55376,7 +55403,8 @@
     "path": "E:\\Downloads\\UI\\RTLWk8P5IiHxAqaz.mp4",
     "bytes": 600017
    },
-   "source_note": "auto-draft 2026-09-26: motion median 1.07; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0432.webp",
    "thumb": "assets/thumb/VID-0432.webp",
    "motion": 1.07,
@@ -55386,13 +55414,19 @@
   {
    "id": "VID-0433",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0433",
-   "description": "",
+   "category": "website",
+   "type": "screen",
+   "title": "Offsite comment thread",
+   "description": "An offsite-finder comment: 'Found a place for the offsite' with app chips beside it. Work chat with integrations attached.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "collaboration",
+    "comment"
+   ],
    "palette": [
     "#FFFFFF",
     "#F0F0F0",
@@ -55436,7 +55470,8 @@
     "path": "E:\\Downloads\\UI\\9M_3aCqI0w6kJcDn.mp4",
     "bytes": 1003890
    },
-   "source_note": "auto-draft 2026-09-26: motion median 13.45; needs a visual read-through",
+   "quality": "Comment small; thread legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0433.webp",
    "thumb": "assets/thumb/VID-0433.webp",
    "motion": 13.45,
@@ -55454,13 +55489,19 @@
   {
    "id": "VID-0434",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0434",
-   "description": "",
+   "category": "mobile-app-ui",
+   "type": "component",
+   "title": "Year dial picker",
+   "description": "Year-dial pickers reading 1920 and 1990: time scrubbed as odometer drums. Date selection as a tactile toy.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "date-picker"
+   ],
    "palette": [
     "#F3F3F3",
     "#FEFEFE",
@@ -55504,7 +55545,8 @@
     "path": "E:\\Downloads\\UI\\pTOqqdZVvr5VZOR9.mp4",
     "bytes": 1410821
    },
-   "source_note": "auto-draft 2026-09-26: motion median 2.32; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0434.webp",
    "thumb": "assets/thumb/VID-0434.webp",
    "motion": 2.32,
@@ -55522,13 +55564,20 @@
   {
    "id": "VID-0435",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0435",
-   "description": "",
+   "category": "website",
+   "type": "screen",
+   "title": "Visitor-counter portfolio",
+   "description": "'HELLO, VISITOR #869778': Seungmee Lee's portfolio counts its visitors in public, with Twitter/Instagram links and a book-a-chat CTA. Counter-as-personality on a personal site.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "editorial",
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "personal-site",
+    "portfolio"
+   ],
    "palette": [
     "#FFFFFF",
     "#7D9031",
@@ -55572,7 +55621,8 @@
     "path": "E:\\Downloads\\UI\\PfpFs5dNEC7d1N0a.mp4",
     "bytes": 423914
    },
-   "source_note": "auto-draft 2026-09-26: motion median 3.03; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0435.webp",
    "thumb": "assets/thumb/VID-0435.webp",
    "motion": 3.03,
@@ -55590,13 +55640,22 @@
   {
    "id": "VID-0436",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0436",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Language picker",
+   "description": "'Which language you want to learn?': flag rows for English, Spanish, German, Italian, French, Korean and Chinese with a Continue bar. The change-later promise keeps it low-pressure.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "language-learning",
+    "signup"
+   ],
    "palette": [
     "#FEFEFE",
     "#0D0D0D",
@@ -55640,7 +55699,8 @@
     "path": "E:\\Downloads\\UI\\wEg2L7scamh4KOLK.mp4",
     "bytes": 2659408
    },
-   "source_note": "auto-draft 2026-09-26: motion median 12.01; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0436.webp",
    "thumb": "assets/thumb/VID-0436.webp",
    "motion": 12.01,
@@ -55658,13 +55718,20 @@
   {
    "id": "VID-0437",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0437",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "screen",
+   "title": "Cursor playground",
+   "description": "A cursor playground: Light Blue, Brightness, Connected-lines, Interaction, Ripple-displacement and Colour-and-motion sliders over a dot field. Every cursor parameter exposed as play.",
+   "roles": [
+    "settings"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "cursor"
+   ],
    "palette": [
     "#F6F6F6",
     "#E1E1E1",
@@ -55708,7 +55775,8 @@
     "path": "E:\\Downloads\\UI\\2iQ_7vCFbHcO2Zqf.mp4",
     "bytes": 24584007
    },
-   "source_note": "auto-draft 2026-09-26: motion median 21.1; needs a visual read-through",
+   "quality": "Labels small; playground legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0437.webp",
    "thumb": "assets/thumb/VID-0437.webp",
    "motion": 21.1,
@@ -55726,13 +55794,20 @@
   {
    "id": "VID-0438",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0438",
-   "description": "",
+   "category": "typography",
+   "type": "reference",
+   "title": "Width-axis type tester",
+   "description": "A width-axis type tester: Compressed, Condensed, Regular and Expanded 'a' rows with weight columns. A variable-font fitting room.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "custom-font",
+    "specimen",
+    "typography"
+   ],
    "palette": [
     "#000000",
     "#343434",
@@ -55776,7 +55851,8 @@
     "path": "E:\\Downloads\\UI\\OHMyaeQDuJ4TnZfe.mp4",
     "bytes": 265267177
    },
-   "source_note": "auto-draft 2026-09-26: motion median 16.22; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0438.webp",
    "thumb": "assets/thumb/VID-0438.webp",
    "motion": 16.22,
@@ -55794,13 +55870,19 @@
   {
    "id": "VID-0439",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0439",
-   "description": "",
+   "category": "mobile-app-ui",
+   "type": "multi-screen",
+   "title": "Flight companion phones",
+   "description": "A flight companion in two phones: 'Ask anything about your flight' chat and 'Connect and share with friends' social. Itinerary plus crew.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "travel"
+   ],
    "palette": [
     "#E1E1E3",
     "#1C1C1C",
@@ -55844,7 +55926,8 @@
     "path": "E:\\Downloads\\UI\\sBQKqSEPv4PrJCoW.mp4",
     "bytes": 6382355
    },
-   "source_note": "auto-draft 2026-09-26: motion median 20.06; needs a visual read-through",
+   "quality": "Chat text small; pair legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0439.webp",
    "thumb": "assets/thumb/VID-0439.webp",
    "motion": 20.06,
@@ -55862,13 +55945,20 @@
   {
    "id": "VID-0440",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0440",
-   "description": "",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Sticker calendar",
+   "description": "A sticker calendar: August and September grids tiled with sticker art. Planning as decoration.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "calendar",
+    "sticker"
+   ],
    "palette": [
     "#000000",
     "#FEFDFD",
@@ -55912,7 +56002,8 @@
     "path": "E:\\Downloads\\UI\\GP9EPjP0intaRelN.mp4",
     "bytes": 774797
    },
-   "source_note": "auto-draft 2026-09-26: motion median 1.92; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0440.webp",
    "thumb": "assets/thumb/VID-0440.webp",
    "motion": 1.92,
@@ -55922,13 +56013,18 @@
   {
    "id": "VID-0441",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0441",
-   "description": "",
+   "category": "other",
+   "type": "screen",
+   "title": "Coherent chaos wave",
+   "description": "A 'Coherent chaos' wireframe wave with its formula: generative art frames, no interface. Motion specimen.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "generative-art",
+    "motion"
+   ],
    "palette": [
     "#13110D",
     "#33312D",
@@ -55972,7 +56068,8 @@
     "path": "E:\\Downloads\\UI\\p29w483kdSLzm3gm.mp4",
     "bytes": 5390315
    },
-   "source_note": "auto-draft 2026-09-26: motion median 6.19; needs a visual read-through",
+   "quality": "Kept as motion, not UI.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0441.webp",
    "thumb": "assets/thumb/VID-0441.webp",
    "motion": 6.19,
@@ -55991,12 +56088,19 @@
    "id": "VID-0442",
    "kind": "video",
    "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0442",
-   "description": "",
+   "type": "screen",
+   "title": "Notes-app code reveal",
+   "description": "A notes app revealing its SwiftUI underpinnings: '43 notes this week' with a WritingWeek code overlay and red annotation arrows. Demo as annotated teardown.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "developer-tool",
+    "notes",
+    "teardown"
+   ],
    "palette": [
     "#F0ECE6",
     "#3F3F3F",
@@ -56040,7 +56144,8 @@
     "path": "E:\\Downloads\\UI\\10-3PVxQca27gijm.mp4",
     "bytes": 2052555
    },
-   "source_note": "auto-draft 2026-09-26: motion median 40.95; needs a visual read-through",
+   "quality": "Code small; teardown legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0442.webp",
    "thumb": "assets/thumb/VID-0442.webp",
    "motion": 40.95,
@@ -56059,12 +56164,20 @@
    "id": "VID-0443",
    "kind": "video",
    "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0443",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "type": "screen",
+   "title": "Tilted video playback",
+   "description": "A tilted phone playing back video with a red action button: playback as product shot. The angle is the art direction.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "player",
+    "video"
+   ],
    "palette": [
     "#686768",
     "#545354",
@@ -56108,7 +56221,8 @@
     "path": "E:\\Downloads\\UI\\MOQAZvETa07uAINT.mp4",
     "bytes": 551481
    },
-   "source_note": "auto-draft 2026-09-26: motion median 12.53; needs a visual read-through",
+   "quality": "Playback content blurred; device legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0443.webp",
    "thumb": "assets/thumb/VID-0443.webp",
    "motion": 12.53,

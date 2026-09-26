@@ -1,0 +1,231 @@
+{
+ "items": {
+  "VID-0432": {
+   "category": "mobile-app-ui",
+   "description": "A RIVALS 'Find your friends!' contacts prompt: dark screen, gradient slider-art and a contacts-access ask. Permission priming with brand heat.",
+   "id": "VID-0432",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [
+    "onboarding"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "contacts",
+    "social"
+   ],
+   "title": "Find-friends permission",
+   "type": "screen"
+  },
+  "VID-0433": {
+   "category": "website",
+   "description": "An offsite-finder comment: 'Found a place for the offsite' with app chips beside it. Work chat with integrations attached.",
+   "id": "VID-0433",
+   "quality": "Comment small; thread legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "collaboration",
+    "comment"
+   ],
+   "title": "Offsite comment thread",
+   "type": "screen"
+  },
+  "VID-0434": {
+   "category": "mobile-app-ui",
+   "description": "Year-dial pickers reading 1920 and 1990: time scrubbed as odometer drums. Date selection as a tactile toy.",
+   "id": "VID-0434",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded",
+    "minimal"
+   ],
+   "tags": [
+    "date-picker"
+   ],
+   "title": "Year dial picker",
+   "type": "component"
+  },
+  "VID-0435": {
+   "category": "website",
+   "description": "'HELLO, VISITOR #869778': Seungmee Lee's portfolio counts its visitors in public, with Twitter/Instagram links and a book-a-chat CTA. Counter-as-personality on a personal site.",
+   "id": "VID-0435",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal",
+    "editorial"
+   ],
+   "tags": [
+    "portfolio",
+    "personal-site"
+   ],
+   "title": "Visitor-counter portfolio",
+   "type": "screen"
+  },
+  "VID-0436": {
+   "category": "mobile-app-ui",
+   "description": "'Which language you want to learn?': flag rows for English, Spanish, German, Italian, French, Korean and Chinese with a Continue bar. The change-later promise keeps it low-pressure.",
+   "id": "VID-0436",
+   "quality": "Clean frames; fully legible.",
+   "roles": [
+    "onboarding"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded",
+    "minimal"
+   ],
+   "tags": [
+    "language-learning",
+    "signup"
+   ],
+   "title": "Language picker",
+   "type": "screen"
+  },
+  "VID-0437": {
+   "category": "website",
+   "description": "A cursor playground: Light Blue, Brightness, Connected-lines, Interaction, Ripple-displacement and Colour-and-motion sliders over a dot field. Every cursor parameter exposed as play.",
+   "id": "VID-0437",
+   "quality": "Labels small; playground legible.",
+   "roles": [
+    "settings"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "cursor"
+   ],
+   "title": "Cursor playground",
+   "type": "screen"
+  },
+  "VID-0438": {
+   "category": "typography",
+   "description": "A width-axis type tester: Compressed, Condensed, Regular and Expanded 'a' rows with weight columns. A variable-font fitting room.",
+   "id": "VID-0438",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "minimal"
+   ],
+   "tags": [
+    "typography",
+    "custom-font",
+    "specimen"
+   ],
+   "title": "Width-axis type tester",
+   "type": "reference"
+  },
+  "VID-0439": {
+   "category": "mobile-app-ui",
+   "description": "A flight companion in two phones: 'Ask anything about your flight' chat and 'Connect and share with friends' social. Itinerary plus crew.",
+   "id": "VID-0439",
+   "quality": "Chat text small; pair legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "travel"
+   ],
+   "title": "Flight companion phones",
+   "type": "multi-screen"
+  },
+  "VID-0440": {
+   "category": "mobile-app-ui",
+   "description": "A sticker calendar: August and September grids tiled with sticker art. Planning as decoration.",
+   "id": "VID-0440",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "calendar",
+    "sticker"
+   ],
+   "title": "Sticker calendar",
+   "type": "screen"
+  },
+  "VID-0441": {
+   "category": "other",
+   "description": "A 'Coherent chaos' wireframe wave with its formula: generative art frames, no interface. Motion specimen.",
+   "id": "VID-0441",
+   "quality": "Kept as motion, not UI.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "generative-art",
+    "motion"
+   ],
+   "title": "Coherent chaos wave",
+   "type": "screen"
+  },
+  "VID-0442": {
+   "category": "motion-demo",
+   "description": "A notes app revealing its SwiftUI underpinnings: '43 notes this week' with a WritingWeek code overlay and red annotation arrows. Demo as annotated teardown.",
+   "id": "VID-0442",
+   "quality": "Code small; teardown legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "notes",
+    "developer-tool",
+    "teardown"
+   ],
+   "title": "Notes-app code reveal",
+   "type": "screen"
+  },
+  "VID-0443": {
+   "category": "motion-demo",
+   "description": "A tilted phone playing back video with a red action button: playback as product shot. The angle is the art direction.",
+   "id": "VID-0443",
+   "quality": "Playback content blurred; device legible.",
+   "roles": [
+    "media"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "video",
+    "player"
+   ],
+   "title": "Tilted video playback",
+   "type": "screen"
+  }
+ }
+}
