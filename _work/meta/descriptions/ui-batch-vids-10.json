@@ -1,0 +1,215 @@
+{
+ "items": {
+  "VID-0445": {
+   "category": "mobile-app-ui",
+   "description": "An 'All Spaces' mind-search notes app: Watchlist, Research and Quotes cards over a 'Search my mind' bar on rainbow warmth. Second brain with a search box for a front door.",
+   "id": "VID-0445",
+   "quality": "Card text small; app legible.",
+   "roles": [
+    "search"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded",
+    "playful"
+   ],
+   "tags": [
+    "notes"
+   ],
+   "title": "Mind-search notes app",
+   "type": "screen"
+  },
+  "VID-0446": {
+   "category": "mobile-app-ui",
+   "description": "The same peach 'Add your live map' onboarding captured again: map frame, rationale, Continue. A second capture of the same screen — paired, not duplicated, since the bytes differ.",
+   "id": "VID-0446",
+   "pair_with": "VID-0339",
+   "quality": "Clean frames; fully legible.",
+   "roles": [
+    "onboarding"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "soft",
+    "rounded"
+   ],
+   "tags": [
+    "map"
+   ],
+   "title": "Live-map onboarding (alt)",
+   "type": "screen"
+  },
+  "VID-0447": {
+   "category": "dashboard",
+   "description": "A Payment Reports scroll: 89 Completed, 71% Completion Rate and a Performance Distribution chart. Payroll analytics in motion.",
+   "id": "VID-0447",
+   "quality": "Scroll frames blur text; metrics legible.",
+   "roles": [
+    "dashboard"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "data-dense",
+    "card-based"
+   ],
+   "tags": [
+    "finance",
+    "analytics"
+   ],
+   "title": "Payroll reports scroll",
+   "type": "flow-walkthrough"
+  },
+  "VID-0448": {
+   "category": "design-system",
+   "description": "Four gesture icons on white: check, X, pause bars and moon. A static gesture legend — confirm, cancel, hold, sleep in one glance.",
+   "id": "VID-0448",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "icons",
+    "gesture"
+   ],
+   "title": "Gesture icon quartet",
+   "type": "reference"
+  },
+  "VID-0449": {
+   "category": "mobile-app-ui",
+   "description": "'Arriving in Kyoto — Nozomi 32, Kyoto in 12 min': train nose art, 477/514 km journey bar and a 'Remind me at 5 min' bell. Arrival as a moment of design.",
+   "id": "VID-0449",
+   "quality": "Clean frames; fully legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "train",
+    "travel",
+    "notifications"
+   ],
+   "title": "Train arrival screen",
+   "type": "screen"
+  },
+  "VID-0450": {
+   "category": "website",
+   "description": "Refund help accordions: plan-change, refund-workings and team-invoice questions with review-count pills. Support content as quiet accordions.",
+   "id": "VID-0450",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "documentation",
+    "payments"
+   ],
+   "title": "Refund FAQ accordions",
+   "type": "screen"
+  },
+  "VID-0451": {
+   "category": "website",
+   "description": "A hardware-key catalog: 'Widespread hardware support' with a credential search over reader rows. Security keys sold like a parts catalog.",
+   "id": "VID-0451",
+   "quality": "Static clip; poster carries the design.",
+   "roles": [
+    "search"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "security"
+   ],
+   "title": "Hardware-key catalog",
+   "type": "screen"
+  },
+  "VID-0452": {
+   "category": "website",
+   "description": "A Mobbin 'Also seen on' test-gallery scroll: usability-test cards flying past. Design-inspiration infrastructure in motion.",
+   "id": "VID-0452",
+   "quality": "Scroll frames blur cards; gallery legible.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "gallery"
+   ],
+   "title": "Test gallery scroll",
+   "type": "flow-walkthrough"
+  },
+  "VID-0453": {
+   "category": "other",
+   "description": "A very fast dark settings scroll: illegible at speed, settings-shaped throughout. Held as motion, not read as content.",
+   "id": "VID-0453",
+   "quality": "Speed-blurred throughout — flagged for a slow pass before quoting any row.",
+   "roles": [
+    "settings"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "motion"
+   ],
+   "title": "Settings scroll blur",
+   "type": "screen"
+  },
+  "VID-0454": {
+   "category": "mobile-app-ui",
+   "description": "A dark lyrics player: 'We made a green meadow / Whenever we would collide / I died a thousand times' over transport controls. Heartbreak with a progress bar.",
+   "id": "VID-0454",
+   "quality": "Clean frames; fully legible.",
+   "roles": [
+    "media"
+   ],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "music",
+    "lyrics"
+   ],
+   "title": "Lyrics player",
+   "type": "screen"
+  },
+  "VID-0455": {
+   "category": "illustration",
+   "description": "A sticker-pack pan: reading bear, sleeping moon-cat, film camera, boba and blossoms. Product art with no interface — kept as illustration, the pack is the product.",
+   "id": "VID-0455",
+   "quality": "Pan blurs edges; stickers identifiable.",
+   "roles": [],
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
+   "style": [
+    "playful"
+   ],
+   "tags": [
+    "sticker",
+    "illustration"
+   ],
+   "title": "Sticker pack pan",
+   "type": "reference"
+  }
+ }
+}

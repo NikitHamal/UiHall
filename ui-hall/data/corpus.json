@@ -2,11 +2,11 @@
  "version": "1.0.0",
  "generated_from": "E:\\Downloads",
  "totals": {
-  "assets": 767,
+  "assets": 766,
   "images": 433,
-  "videos": 334,
-  "clips": 274,
-  "described": 745
+  "videos": 333,
+  "clips": 273,
+  "described": 756
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 403
+   "count": 407
   },
   {
    "id": "app-store-screens",
@@ -35,14 +35,14 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 129
+   "count": 132
   },
   {
    "id": "design-system",
    "label": "Design system",
    "blurb": "Tokens, components, spacing, icon sets, tool panels.",
    "icon": "grid",
-   "count": 22
+   "count": 23
   },
   {
    "id": "color-palette",
@@ -63,21 +63,21 @@
    "label": "Illustration",
    "blurb": "In-app and marketing illustration, backgrounds, decorative art.",
    "icon": "brush",
-   "count": 2
+   "count": 3
   },
   {
    "id": "dashboard",
    "label": "Dashboard",
    "blurb": "Data-dense product surfaces: metrics, tables, charts.",
    "icon": "chart",
-   "count": 66
+   "count": 67
   },
   {
    "id": "motion-demo",
    "label": "Motion demo",
    "blurb": "Clips whose whole point is the transition, not the static screen.",
    "icon": "play",
-   "count": 42
+   "count": 33
   },
   {
    "id": "promo-reel",
@@ -91,7 +91,7 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 29
+   "count": 27
   }
  ],
  "types": [
@@ -103,7 +103,7 @@
   {
    "id": "flow-walkthrough",
    "label": "flow-walkthrough",
-   "count": 246
+   "count": 236
   },
   {
    "id": "marketing",
@@ -128,12 +128,12 @@
   {
    "id": "reference",
    "label": "reference",
-   "count": 4
+   "count": 6
   },
   {
    "id": "screen",
    "label": "screen",
-   "count": 299
+   "count": 306
   },
   {
    "id": "token-sheet",
@@ -144,7 +144,7 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 130
+   "count": 131
   },
   {
    "id": "hero",
@@ -160,7 +160,7 @@
   },
   {
    "id": "onboarding",
-   "count": 49
+   "count": 50
   },
   {
    "id": "detail",
@@ -176,7 +176,7 @@
   },
   {
    "id": "settings",
-   "count": 22
+   "count": 23
   },
   {
    "id": "chat",
@@ -188,11 +188,11 @@
   },
   {
    "id": "media",
-   "count": 20
+   "count": 21
   },
   {
    "id": "search",
-   "count": 18
+   "count": 20
   },
   {
    "id": "pricing",
@@ -234,31 +234,31 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 456
+   "count": 464
   },
   {
    "id": "minimal",
-   "count": 327
+   "count": 330
   },
   {
    "id": "rounded",
-   "count": 249
+   "count": 255
   },
   {
    "id": "dark-mode",
-   "count": 225
+   "count": 227
   },
   {
    "id": "card-based",
-   "count": 206
+   "count": 209
   },
   {
    "id": "data-dense",
-   "count": 73
+   "count": 74
   },
   {
    "id": "playful",
-   "count": 51
+   "count": 53
   },
   {
    "id": "editorial",
@@ -266,7 +266,7 @@
   },
   {
    "id": "soft",
-   "count": 40
+   "count": 41
   },
   {
    "id": "bold-typography",
@@ -348,7 +348,7 @@
   },
   {
    "id": "analytics",
-   "count": 39
+   "count": 40
   },
   {
    "id": "photographic",
@@ -359,11 +359,11 @@
    "count": 33
   },
   {
-   "id": "comparison",
-   "count": 29
+   "id": "travel",
+   "count": 30
   },
   {
-   "id": "travel",
+   "id": "comparison",
    "count": 29
   },
   {
@@ -380,7 +380,7 @@
   },
   {
    "id": "finance",
-   "count": 27
+   "count": 28
   },
   {
    "id": "promo",
@@ -403,20 +403,20 @@
    "count": 24
   },
   {
-   "id": "calendar",
+   "id": "music",
+   "count": 24
+  },
+  {
+   "id": "illustration",
    "count": 23
   },
   {
-   "id": "music",
+   "id": "calendar",
    "count": 23
   },
   {
    "id": "social",
    "count": 23
-  },
-  {
-   "id": "illustration",
-   "count": 22
   },
   {
    "id": "balance",
@@ -443,11 +443,11 @@
    "count": 20
   },
   {
-   "id": "gradient",
-   "count": 19
+   "id": "map",
+   "count": 20
   },
   {
-   "id": "map",
+   "id": "gradient",
    "count": 19
   },
   {
@@ -479,15 +479,15 @@
    "count": 15
   },
   {
+   "id": "gallery",
+   "count": 15
+  },
+  {
    "id": "portfolio",
    "count": 15
   },
   {
    "id": "status",
-   "count": 14
-  },
-  {
-   "id": "gallery",
    "count": 14
   },
   {
@@ -559,6 +559,10 @@
    "count": 11
   },
   {
+   "id": "icons",
+   "count": 11
+  },
+  {
    "id": "redesign",
    "count": 11
   },
@@ -575,11 +579,11 @@
    "count": 11
   },
   {
-   "id": "banking",
-   "count": 10
+   "id": "motion",
+   "count": 11
   },
   {
-   "id": "icons",
+   "id": "banking",
    "count": 10
   },
   {
@@ -591,11 +595,11 @@
    "count": 10
   },
   {
-   "id": "settings",
+   "id": "documentation",
    "count": 10
   },
   {
-   "id": "motion",
+   "id": "settings",
    "count": 10
   },
   {
@@ -628,10 +632,6 @@
   },
   {
    "id": "headline",
-   "count": 9
-  },
-  {
-   "id": "documentation",
    "count": 9
   },
   {
@@ -719,6 +719,10 @@
    "count": 7
   },
   {
+   "id": "payments",
+   "count": 7
+  },
+  {
    "id": "confirmation",
    "count": 7
   },
@@ -803,10 +807,6 @@
    "count": 6
   },
   {
-   "id": "payments",
-   "count": 6
-  },
-  {
    "id": "badges",
    "count": 6
   },
@@ -876,6 +876,10 @@
   },
   {
    "id": "avatar-picker",
+   "count": 6
+  },
+  {
+   "id": "notes",
    "count": 6
   },
   {
@@ -1007,15 +1011,15 @@
    "count": 5
   },
   {
+   "id": "notifications",
+   "count": 5
+  },
+  {
    "id": "property",
    "count": 5
   },
   {
    "id": "memories",
-   "count": 5
-  },
-  {
-   "id": "notes",
    "count": 5
   },
   {
@@ -1031,6 +1035,10 @@
    "count": 5
   },
   {
+   "id": "sticker",
+   "count": 5
+  },
+  {
    "id": "profile",
    "count": 5
   },
@@ -1040,6 +1048,10 @@
   },
   {
    "id": "generative-art",
+   "count": 5
+  },
+  {
+   "id": "security",
    "count": 5
   },
   {
@@ -1151,10 +1163,6 @@
    "count": 4
   },
   {
-   "id": "notifications",
-   "count": 4
-  },
-  {
    "id": "developer",
    "count": 4
   },
@@ -1215,10 +1223,6 @@
    "count": 4
   },
   {
-   "id": "sticker",
-   "count": 4
-  },
-  {
    "id": "logo",
    "count": 4
   },
@@ -1252,10 +1256,6 @@
   },
   {
    "id": "unclear",
-   "count": 4
-  },
-  {
-   "id": "security",
    "count": 4
   },
   {
@@ -1384,6 +1384,10 @@
   },
   {
    "id": "device",
+   "count": 3
+  },
+  {
+   "id": "train",
    "count": 3
   },
   {
@@ -1631,6 +1635,10 @@
    "count": 2
   },
   {
+   "id": "lyrics",
+   "count": 2
+  },
+  {
    "id": "scrubber",
    "count": 2
   },
@@ -1680,10 +1688,6 @@
   },
   {
    "id": "live",
-   "count": 2
-  },
-  {
-   "id": "train",
    "count": 2
   },
   {
@@ -2120,10 +2124,6 @@
   },
   {
    "id": "points",
-   "count": 1
-  },
-  {
-   "id": "lyrics",
    "count": 1
   },
   {
@@ -2800,6 +2800,10 @@
   },
   {
    "id": "teardown",
+   "count": 1
+  },
+  {
+   "id": "gesture",
    "count": 1
   },
   {
@@ -56238,83 +56242,24 @@
    }
   },
   {
-   "id": "VID-0444",
-   "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0444",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
-   "palette": [
-    "#495126",
-    "#404624",
-    "#383C22",
-    "#7B3827",
-    "#A9694C",
-    "#CD8F8C"
-   ],
-   "palette_detail": [
-    {
-     "hex": "#495126",
-     "pct": 44.3
-    },
-    {
-     "hex": "#404624",
-     "pct": 33.4
-    },
-    {
-     "hex": "#383C22",
-     "pct": 19.8
-    },
-    {
-     "hex": "#7B3827",
-     "pct": 1.1
-    },
-    {
-     "hex": "#A9694C",
-     "pct": 0.8
-    },
-    {
-     "hex": "#CD8F8C",
-     "pct": 0.6
-    }
-   ],
-   "w": 1280,
-   "h": 720,
-   "orientation": "landscape",
-   "aspect": 1.7778,
-   "synthetic": false,
-   "origin": {
-    "path": "E:\\Downloads\\UI\\C223qRh6_9Nmr3uH.mp4",
-    "bytes": 9122793
-   },
-   "source_note": "auto-draft 2026-09-26: motion median 17.68; needs a visual read-through",
-   "src": "assets/vid/VID-0444.webp",
-   "thumb": "assets/thumb/VID-0444.webp",
-   "motion": 17.68,
-   "duration_s": 37.9,
-   "fps": 30.0,
-   "clip": "assets/vid/VID-0444.webm",
-   "clip_meta": {
-    "w": 720,
-    "h": 404,
-    "fps": 24,
-    "duration_s": 20.0,
-    "bytes": 18868420
-   }
-  },
-  {
    "id": "VID-0445",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0445",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Mind-search notes app",
+   "description": "An 'All Spaces' mind-search notes app: Watchlist, Research and Quotes cards over a 'Search my mind' bar on rainbow warmth. Second brain with a search box for a front door.",
+   "roles": [
+    "search"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "playful",
+    "rounded"
+   ],
+   "tags": [
+    "notes"
+   ],
    "palette": [
     "#EBEBEE",
     "#E3A150",
@@ -56358,7 +56303,8 @@
     "path": "E:\\Downloads\\UI\\-pMVnKxYWw0pE0nh.mp4",
     "bytes": 2715602
    },
-   "source_note": "auto-draft 2026-09-26: motion median 10.23; needs a visual read-through",
+   "quality": "Card text small; app legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0445.webp",
    "thumb": "assets/thumb/VID-0445.webp",
    "motion": 10.23,
@@ -56376,13 +56322,21 @@
   {
    "id": "VID-0446",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0446",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Live-map onboarding (alt)",
+   "description": "The same peach 'Add your live map' onboarding captured again: map frame, rationale, Continue. A second capture of the same screen — paired, not duplicated, since the bytes differ.",
+   "roles": [
+    "onboarding"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "map"
+   ],
    "palette": [
     "#FDFDFD",
     "#E2BFAD",
@@ -56426,7 +56380,9 @@
     "path": "E:\\Downloads\\UI\\FRvgcZ9xnCXPv-2s.mp4",
     "bytes": 3250961
    },
-   "source_note": "auto-draft 2026-09-26: motion median 11.66; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "pair_with": "VID-0339",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0446.webp",
    "thumb": "assets/thumb/VID-0446.webp",
    "motion": 11.66,
@@ -56444,13 +56400,22 @@
   {
    "id": "VID-0447",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "dashboard",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0447",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Payroll reports scroll",
+   "description": "A Payment Reports scroll: 89 Completed, 71% Completion Rate and a Performance Distribution chart. Payroll analytics in motion.",
+   "roles": [
+    "dashboard"
+   ],
+   "style": [
+    "card-based",
+    "data-dense",
+    "light-mode"
+   ],
+   "tags": [
+    "analytics",
+    "finance"
+   ],
    "palette": [
     "#FDFDFD",
     "#F6F4F5",
@@ -56494,7 +56459,8 @@
     "path": "E:\\Downloads\\UI\\0nVarBXhP2Qvme79.mp4",
     "bytes": 80967644
    },
-   "source_note": "auto-draft 2026-09-26: motion median 32.21; needs a visual read-through",
+   "quality": "Scroll frames blur text; metrics legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0447.webp",
    "thumb": "assets/thumb/VID-0447.webp",
    "motion": 32.21,
@@ -56512,13 +56478,20 @@
   {
    "id": "VID-0448",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0448",
-   "description": "",
+   "category": "design-system",
+   "type": "reference",
+   "title": "Gesture icon quartet",
+   "description": "Four gesture icons on white: check, X, pause bars and moon. A static gesture legend — confirm, cancel, hold, sleep in one glance.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "gesture",
+    "icons"
+   ],
    "palette": [
     "#F4F4F4",
     "#E8E8E8",
@@ -56562,7 +56535,8 @@
     "path": "E:\\Downloads\\UI\\qHvl3NMAhEMVRAPC.mp4",
     "bytes": 66999
    },
-   "source_note": "auto-draft 2026-09-26: motion median 0.04; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0448.webp",
    "thumb": "assets/thumb/VID-0448.webp",
    "motion": 0.04,
@@ -56572,13 +56546,21 @@
   {
    "id": "VID-0449",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0449",
-   "description": "",
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Train arrival screen",
+   "description": "'Arriving in Kyoto — Nozomi 32, Kyoto in 12 min': train nose art, 477/514 km journey bar and a 'Remind me at 5 min' bell. Arrival as a moment of design.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "notifications",
+    "train",
+    "travel"
+   ],
    "palette": [
     "#151515",
     "#F9F9FC",
@@ -56622,7 +56604,8 @@
     "path": "E:\\Downloads\\UI\\Ujkx9gQTQQQliuQV.mp4",
     "bytes": 1052035
    },
-   "source_note": "auto-draft 2026-09-26: motion median 13.53; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0449.webp",
    "thumb": "assets/thumb/VID-0449.webp",
    "motion": 13.53,
@@ -56640,13 +56623,19 @@
   {
    "id": "VID-0450",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0450",
-   "description": "",
+   "category": "website",
+   "type": "screen",
+   "title": "Refund FAQ accordions",
+   "description": "Refund help accordions: plan-change, refund-workings and team-invoice questions with review-count pills. Support content as quiet accordions.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "documentation",
+    "payments"
+   ],
    "palette": [
     "#FFFFFF",
     "#EDEDEE",
@@ -56690,7 +56679,8 @@
     "path": "E:\\Downloads\\UI\\fVuPlP3MstYAZ-ha.mp4",
     "bytes": 721118
    },
-   "source_note": "auto-draft 2026-09-26: motion median 0.3; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0450.webp",
    "thumb": "assets/thumb/VID-0450.webp",
    "motion": 0.3,
@@ -56700,13 +56690,20 @@
   {
    "id": "VID-0451",
    "kind": "video",
-   "category": "other",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0451",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "website",
+   "type": "screen",
+   "title": "Hardware-key catalog",
+   "description": "A hardware-key catalog: 'Widespread hardware support' with a credential search over reader rows. Security keys sold like a parts catalog.",
+   "roles": [
+    "search"
+   ],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "security"
+   ],
    "palette": [
     "#FFFFFF",
     "#1A191E",
@@ -56750,7 +56747,8 @@
     "path": "E:\\Downloads\\UI\\Hy3cI_Omo2pJGqMU.mp4",
     "bytes": 521141
    },
-   "source_note": "auto-draft 2026-09-26: motion median 0.66; needs a visual read-through",
+   "quality": "Static clip; poster carries the design.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0451.webp",
    "thumb": "assets/thumb/VID-0451.webp",
    "motion": 0.66,
@@ -56760,13 +56758,18 @@
   {
    "id": "VID-0452",
    "kind": "video",
-   "category": "motion-demo",
+   "category": "website",
    "type": "flow-walkthrough",
-   "title": "Needs review — VID-0452",
-   "description": "",
+   "title": "Test gallery scroll",
+   "description": "A Mobbin 'Also seen on' test-gallery scroll: usability-test cards flying past. Design-inspiration infrastructure in motion.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "gallery"
+   ],
    "palette": [
     "#FEFEFE",
     "#010101",
@@ -56810,7 +56813,8 @@
     "path": "E:\\Downloads\\UI\\ij_tQvTUbDi2Sgng.mp4",
     "bytes": 18690992
    },
-   "source_note": "auto-draft 2026-09-26: motion median 45.02; needs a visual read-through",
+   "quality": "Scroll frames blur cards; gallery legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0452.webp",
    "thumb": "assets/thumb/VID-0452.webp",
    "motion": 45.02,
@@ -56828,13 +56832,19 @@
   {
    "id": "VID-0453",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0453",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "other",
+   "type": "screen",
+   "title": "Settings scroll blur",
+   "description": "A very fast dark settings scroll: illegible at speed, settings-shaped throughout. Held as motion, not read as content.",
+   "roles": [
+    "settings"
+   ],
+   "style": [
+    "dark-mode"
+   ],
+   "tags": [
+    "motion"
+   ],
    "palette": [
     "#FCFCFC",
     "#2C2C2C",
@@ -56878,7 +56888,8 @@
     "path": "E:\\Downloads\\UI\\diWzNEkKrYea9aGv.mp4",
     "bytes": 2470449
    },
-   "source_note": "auto-draft 2026-09-26: motion median 64.76; needs a visual read-through",
+   "quality": "Speed-blurred throughout — flagged for a slow pass before quoting any row.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0453.webp",
    "thumb": "assets/thumb/VID-0453.webp",
    "motion": 64.76,
@@ -56896,13 +56907,21 @@
   {
    "id": "VID-0454",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0454",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "category": "mobile-app-ui",
+   "type": "screen",
+   "title": "Lyrics player",
+   "description": "A dark lyrics player: 'We made a green meadow / Whenever we would collide / I died a thousand times' over transport controls. Heartbreak with a progress bar.",
+   "roles": [
+    "media"
+   ],
+   "style": [
+    "dark-mode",
+    "rounded"
+   ],
+   "tags": [
+    "lyrics",
+    "music"
+   ],
    "palette": [
     "#29142A",
     "#3C262C",
@@ -56946,7 +56965,8 @@
     "path": "E:\\Downloads\\UI\\DfeI3z1dQO6xRtaV.mp4",
     "bytes": 3041073
    },
-   "source_note": "auto-draft 2026-09-26: motion median 10.56; needs a visual read-through",
+   "quality": "Clean frames; fully legible.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0454.webp",
    "thumb": "assets/thumb/VID-0454.webp",
    "motion": 10.56,
@@ -56964,13 +56984,18 @@
   {
    "id": "VID-0455",
    "kind": "video",
-   "category": "motion-demo",
-   "type": "flow-walkthrough",
-   "title": "Needs review — VID-0455",
-   "description": "",
+   "category": "illustration",
+   "type": "reference",
+   "title": "Sticker pack pan",
+   "description": "A sticker-pack pan: reading bear, sleeping moon-cat, film camera, boba and blossoms. Product art with no interface — kept as illustration, the pack is the product.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "playful"
+   ],
+   "tags": [
+    "illustration",
+    "sticker"
+   ],
    "palette": [
     "#F2F2F4",
     "#DDCECB",
@@ -57014,7 +57039,8 @@
     "path": "E:\\Downloads\\UI\\RYVu9c-qiBkJFZ4P.mp4",
     "bytes": 2529133
    },
-   "source_note": "auto-draft 2026-09-26: motion median 38.75; needs a visual read-through",
+   "quality": "Pan blurs edges; stickers identifiable.",
+   "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0455.webp",
    "thumb": "assets/thumb/VID-0455.webp",
    "motion": 38.75,
