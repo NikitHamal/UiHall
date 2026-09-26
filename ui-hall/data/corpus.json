@@ -6,7 +6,7 @@
   "images": 433,
   "videos": 334,
   "clips": 274,
-  "described": 602
+  "described": 614
  },
  "categories": [
   {
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 367
+   "count": 372
   },
   {
    "id": "app-store-screens",
@@ -35,14 +35,14 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 77
+   "count": 80
   },
   {
    "id": "design-system",
    "label": "Design system",
    "blurb": "Tokens, components, spacing, icon sets, tool panels.",
    "icon": "grid",
-   "count": 17
+   "count": 21
   },
   {
    "id": "color-palette",
@@ -84,7 +84,7 @@
    "label": "Other",
    "blurb": "Relevant but unclassified.",
    "icon": "dot",
-   "count": 84
+   "count": 72
   }
  ],
  "types": [
@@ -168,12 +168,16 @@
    "count": 28
   },
   {
+   "id": "settings",
+   "count": 19
+  },
+  {
    "id": "editor",
    "count": 18
   },
   {
-   "id": "settings",
-   "count": 16
+   "id": "profile",
+   "count": 17
   },
   {
    "id": "media",
@@ -185,10 +189,6 @@
   },
   {
    "id": "feed",
-   "count": 16
-  },
-  {
-   "id": "profile",
    "count": 16
   },
   {
@@ -209,7 +209,7 @@
   },
   {
    "id": "auth",
-   "count": 10
+   "count": 11
   },
   {
    "id": "notification",
@@ -227,23 +227,23 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 369
+   "count": 381
   },
   {
    "id": "minimal",
-   "count": 267
+   "count": 275
+  },
+  {
+   "id": "rounded",
+   "count": 182
   },
   {
    "id": "dark-mode",
    "count": 182
   },
   {
-   "id": "rounded",
-   "count": 171
-  },
-  {
    "id": "card-based",
-   "count": 167
+   "count": 171
   },
   {
    "id": "data-dense",
@@ -259,7 +259,7 @@
   },
   {
    "id": "soft",
-   "count": 36
+   "count": 37
   },
   {
    "id": "bold-typography",
@@ -333,7 +333,7 @@
   },
   {
    "id": "ai",
-   "count": 42
+   "count": 44
   },
   {
    "id": "photographic",
@@ -376,12 +376,12 @@
    "count": 26
   },
   {
-   "id": "table",
+   "id": "travel",
    "count": 26
   },
   {
-   "id": "travel",
-   "count": 25
+   "id": "table",
+   "count": 26
   },
   {
    "id": "onboarding",
@@ -401,6 +401,10 @@
   },
   {
    "id": "tab-bar",
+   "count": 21
+  },
+  {
+   "id": "fitness",
    "count": 21
   },
   {
@@ -441,10 +445,6 @@
   },
   {
    "id": "cards",
-   "count": 17
-  },
-  {
-   "id": "fitness",
    "count": 17
   },
   {
@@ -545,6 +545,10 @@
   },
   {
    "id": "streak",
+   "count": 10
+  },
+  {
+   "id": "icons",
    "count": 10
   },
   {
@@ -668,6 +672,10 @@
    "count": 7
   },
   {
+   "id": "authentication",
+   "count": 7
+  },
+  {
    "id": "modal",
    "count": 7
   },
@@ -693,6 +701,10 @@
   },
   {
    "id": "branding",
+   "count": 7
+  },
+  {
+   "id": "signup",
    "count": 7
   },
   {
@@ -752,10 +764,6 @@
    "count": 6
   },
   {
-   "id": "icons",
-   "count": 6
-  },
-  {
    "id": "sheet",
    "count": 6
   },
@@ -773,10 +781,6 @@
   },
   {
    "id": "contacts",
-   "count": 6
-  },
-  {
-   "id": "authentication",
    "count": 6
   },
   {
@@ -800,6 +804,10 @@
    "count": 6
   },
   {
+   "id": "sharing",
+   "count": 6
+  },
+  {
    "id": "camera",
    "count": 6
   },
@@ -816,7 +824,7 @@
    "count": 6
   },
   {
-   "id": "signup",
+   "id": "agents",
    "count": 6
   },
   {
@@ -912,6 +920,10 @@
    "count": 5
   },
   {
+   "id": "upgrade",
+   "count": 5
+  },
+  {
    "id": "habit-tracker",
    "count": 5
   },
@@ -941,10 +953,6 @@
   },
   {
    "id": "filters",
-   "count": 5
-  },
-  {
-   "id": "sharing",
    "count": 5
   },
   {
@@ -1068,10 +1076,6 @@
    "count": 4
   },
   {
-   "id": "upgrade",
-   "count": 4
-  },
-  {
    "id": "icon-button",
    "count": 4
   },
@@ -1120,15 +1124,15 @@
    "count": 4
   },
   {
+   "id": "iconography",
+   "count": 4
+  },
+  {
    "id": "messaging",
    "count": 4
   },
   {
    "id": "metric",
-   "count": 4
-  },
-  {
-   "id": "agents",
    "count": 4
   },
   {
@@ -1332,10 +1336,6 @@
    "count": 3
   },
   {
-   "id": "iconography",
-   "count": 3
-  },
-  {
    "id": "widgets",
    "count": 3
   },
@@ -1365,6 +1365,10 @@
   },
   {
    "id": "sticker",
+   "count": 3
+  },
+  {
+   "id": "legal",
    "count": 3
   },
   {
@@ -1664,6 +1668,10 @@
    "count": 2
   },
   {
+   "id": "campaign",
+   "count": 2
+  },
+  {
    "id": "mood",
    "count": 2
   },
@@ -1893,10 +1901,6 @@
   },
   {
    "id": "ai-comparison",
-   "count": 2
-  },
-  {
-   "id": "legal",
    "count": 2
   },
   {
@@ -2193,10 +2197,6 @@
   },
   {
    "id": "allocation",
-   "count": 1
-  },
-  {
-   "id": "campaign",
    "count": 1
   },
   {
@@ -30615,13 +30615,22 @@
   {
    "id": "IMG-0631",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0631",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Email verification code",
+   "description": "The verification step of the same green auth flow: a six-digit email code entry with a lime Verify CTA. The code-input idiom closing the signup arc.",
+   "roles": [
+    "auth"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "authentication",
+    "signup"
+   ],
    "palette": [
     "#E5E5E5",
     "#FEFEFE",
@@ -30665,20 +30674,28 @@
     "path": "E:\\Downloads\\UI\\HTCuyAwWQAAcyjm.jpg",
     "bytes": 186974
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0629",
    "src": "assets/img/IMG-0631.webp",
    "thumb": "assets/thumb/IMG-0631.webp"
   },
   {
    "id": "IMG-0632",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0632",
-   "description": "",
+   "title": "Lead-finder agent tasks",
+   "description": "A 'Startup Lead Finder' agent card: 'Automate lead in google docs' with Tasks/Artifacts/Files tabs and an In-progress list (Daily market scan, Weekly competitor digest, Research a company). Agent work surfaced as a task list.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "agents",
+    "ai"
+   ],
    "palette": [
     "#FCFCFB",
     "#F2F1ED",
@@ -30722,20 +30739,28 @@
     "path": "E:\\Downloads\\UI\\HTEGq6RbMAA2Dhl.jpg",
     "bytes": 140441
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Small text soft; structure fully legible.",
    "src": "assets/img/IMG-0632.webp",
    "thumb": "assets/thumb/IMG-0632.webp"
   },
   {
    "id": "IMG-0633",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0633",
-   "description": "",
+   "title": "Share-your-agent screen",
+   "description": "The sharing side of the same agent series: 'Slack Email Scanner' operator card above 'Share your Agent' with Acme Rico/Team and 'Anyone with the link' rows. Agent distribution as link-sharing rows.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "agents",
+    "ai",
+    "sharing"
+   ],
    "palette": [
     "#FEFEFE",
     "#F3F1ED",
@@ -30779,20 +30804,28 @@
     "path": "E:\\Downloads\\UI\\HTEGrUKa8AAaTfm.jpg",
     "bytes": 140624
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Small text soft; structure fully legible.",
+   "pair_with": "IMG-0632",
    "src": "assets/img/IMG-0633.webp",
    "thumb": "assets/thumb/IMG-0633.webp"
   },
   {
    "id": "IMG-0634",
    "kind": "image",
-   "category": "other",
+   "category": "design-system",
    "type": "screen",
-   "title": "Needs review — IMG-0634",
-   "description": "",
+   "title": "Marketplace icon-set promo",
+   "description": "An Iconiy 'Marketplace App' icon-set promo: numbered title, icon grid and a floating search/settings pill. A design-asset product page; first of a four-piece Iconiy series.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "iconography",
+    "icons"
+   ],
    "palette": [
     "#EFEFEF",
     "#E7E7E7",
@@ -30836,20 +30869,27 @@
     "path": "E:\\Downloads\\UI\\HRhVet_bEAAa7SK.jpg",
     "bytes": 81628
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0634.webp",
    "thumb": "assets/thumb/IMG-0634.webp"
   },
   {
    "id": "IMG-0635",
    "kind": "image",
-   "category": "other",
+   "category": "design-system",
    "type": "screen",
-   "title": "Needs review — IMG-0635",
-   "description": "",
+   "title": "Fitness tab-bar icon set",
+   "description": "The Iconiy 'Fitness App' set: a bottom tab bar (Home, heart, timer, lime +) as the hero specimen. Same promo template, fitness flavour.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "fitness",
+    "icons"
+   ],
    "palette": [
     "#EFEFEF",
     "#E9E9E8",
@@ -30893,20 +30933,27 @@
     "path": "E:\\Downloads\\UI\\HRhVet2aQAAbswr.jpg",
     "bytes": 63845
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0634",
    "src": "assets/img/IMG-0635.webp",
    "thumb": "assets/thumb/IMG-0635.webp"
   },
   {
    "id": "IMG-0636",
    "kind": "image",
-   "category": "other",
+   "category": "design-system",
    "type": "screen",
-   "title": "Needs review — IMG-0636",
-   "description": "",
+   "title": "Walking-app icon set",
+   "description": "The Iconiy 'Walking App' set: tab bar with a black + action. Same template, third flavour — the series reads as one system story.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "icons"
+   ],
    "palette": [
     "#EFEFEF",
     "#E9E9E9",
@@ -30950,20 +30997,27 @@
     "path": "E:\\Downloads\\UI\\HRhVetfXsAM2pwG.jpg",
     "bytes": 67445
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0635",
    "src": "assets/img/IMG-0636.webp",
    "thumb": "assets/thumb/IMG-0636.webp"
   },
   {
    "id": "IMG-0637",
    "kind": "image",
-   "category": "other",
+   "category": "design-system",
    "type": "screen",
-   "title": "Needs review — IMG-0637",
-   "description": "",
+   "title": "Video-app icon set",
+   "description": "The Iconiy 'Video App' set: tab bar with a red + action. Fourth and last of the series — the accent colour is the only variable.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "icons"
+   ],
    "palette": [
     "#EFEFEF",
     "#E7E7E7",
@@ -31007,20 +31061,30 @@
     "path": "E:\\Downloads\\UI\\HRhVetdWYAI45IJ.jpg",
     "bytes": 75950
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0636",
    "src": "assets/img/IMG-0637.webp",
    "thumb": "assets/thumb/IMG-0637.webp"
   },
   {
    "id": "IMG-0638",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0638",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Fitness profile (Joyce Scott)",
+   "description": "A Joyce Scott profile (Paris, France): avatar header, a green 'Set your goals' tracking card with plant illustration, and a Profile details row. Fitness-profile warmth; first of a four-screen settings family.",
+   "roles": [
+    "profile"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "fitness"
+   ],
    "palette": [
     "#F4F6F3",
     "#E3E7EA",
@@ -31064,20 +31128,28 @@
     "path": "E:\\Downloads\\UI\\HTArT6sWMAAzhw6.jpg",
     "bytes": 208694
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
    "src": "assets/img/IMG-0638.webp",
    "thumb": "assets/thumb/IMG-0638.webp"
   },
   {
    "id": "IMG-0639",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0639",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Fitness settings list",
+   "description": "The settings list from the same fitness app: Goals, Activity History, Progress & Stats, Health Metrics, Settings rows with icons, closed by an orange Logout. Every fitness concern as one labelled row.",
+   "roles": [
+    "settings"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "fitness"
+   ],
    "palette": [
     "#F4F6F3",
     "#E5E6E8",
@@ -31121,20 +31193,29 @@
     "path": "E:\\Downloads\\UI\\HTArT6sXAAA449l.jpg",
     "bytes": 259889
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0638",
    "src": "assets/img/IMG-0639.webp",
    "thumb": "assets/thumb/IMG-0639.webp"
   },
   {
    "id": "IMG-0640",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0640",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "App settings with premium",
+   "description": "General settings from the same family: Personal info, Language (English), Notifications, Privacy Policy rows with a purple Get Premium button. The account half of the settings pair.",
+   "roles": [
+    "settings"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "upgrade"
+   ],
    "palette": [
     "#FFFFFF",
     "#F4F6F3",
@@ -31178,20 +31259,30 @@
     "path": "E:\\Downloads\\UI\\HTArT6sWUAAjXs7.jpg",
     "bytes": 153694
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0639",
    "src": "assets/img/IMG-0640.webp",
    "thumb": "assets/thumb/IMG-0640.webp"
   },
   {
    "id": "IMG-0641",
    "kind": "image",
-   "category": "other",
+   "category": "mobile-app-ui",
    "type": "screen",
-   "title": "Needs review — IMG-0641",
-   "description": "",
-   "roles": [],
-   "style": [],
-   "tags": [],
+   "title": "Goals card with legal rows",
+   "description": "Terms of Use and Feedback rows above a dark-green 'Set your goals' progress card with tab bar. Legal-plus-goals in one screen; last of the fitness settings family.",
+   "roles": [
+    "settings"
+   ],
+   "style": [
+    "card-based",
+    "light-mode",
+    "rounded"
+   ],
+   "tags": [
+    "fitness",
+    "legal"
+   ],
    "palette": [
     "#FFFFFF",
     "#EEEFEF",
@@ -31235,20 +31326,27 @@
     "path": "E:\\Downloads\\UI\\HTArT6pWEAERZSX.jpg",
     "bytes": 158168
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Clean capture; fully legible.",
+   "pair_with": "IMG-0640",
    "src": "assets/img/IMG-0641.webp",
    "thumb": "assets/thumb/IMG-0641.webp"
   },
   {
    "id": "IMG-0642",
    "kind": "image",
-   "category": "other",
+   "category": "website",
    "type": "screen",
-   "title": "Needs review — IMG-0642",
-   "description": "",
+   "title": "Campaign brief document",
+   "description": "A 'Summer Escape: Coastal Adventures' campaign brief: audience targeting, body-text blocks, deliverables (visually compelling posts, video, landing page with testimonials and booking options) and an Attach row. A marketing brief as a readable document.",
    "roles": [],
-   "style": [],
-   "tags": [],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "campaign",
+    "travel"
+   ],
    "palette": [
     "#FAFAFA",
     "#D4D3D6",
@@ -31292,7 +31390,7 @@
     "path": "E:\\Downloads\\UI\\HTD_kMqawAA5ni6.jpg",
     "bytes": 108546
    },
-   "source_note": "auto-draft 2026-09-26: measured but not yet visually reviewed",
+   "quality": "Body text small; structure fully legible.",
    "src": "assets/img/IMG-0642.webp",
    "thumb": "assets/thumb/IMG-0642.webp"
   },

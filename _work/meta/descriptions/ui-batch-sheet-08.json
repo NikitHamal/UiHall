@@ -1,0 +1,234 @@
+{
+ "items": {
+  "IMG-0631": {
+   "category": "mobile-app-ui",
+   "description": "The verification step of the same green auth flow: a six-digit email code entry with a lime Verify CTA. The code-input idiom closing the signup arc.",
+   "id": "IMG-0631",
+   "pair_with": "IMG-0629",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "auth"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "authentication",
+    "signup"
+   ],
+   "title": "Email verification code",
+   "type": "screen"
+  },
+  "IMG-0632": {
+   "category": "website",
+   "description": "A 'Startup Lead Finder' agent card: 'Automate lead in google docs' with Tasks/Artifacts/Files tabs and an In-progress list (Daily market scan, Weekly competitor digest, Research a company). Agent work surfaced as a task list.",
+   "id": "IMG-0632",
+   "quality": "Small text soft; structure fully legible.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "agents"
+   ],
+   "title": "Lead-finder agent tasks",
+   "type": "screen"
+  },
+  "IMG-0633": {
+   "category": "website",
+   "description": "The sharing side of the same agent series: 'Slack Email Scanner' operator card above 'Share your Agent' with Acme Rico/Team and 'Anyone with the link' rows. Agent distribution as link-sharing rows.",
+   "id": "IMG-0633",
+   "pair_with": "IMG-0632",
+   "quality": "Small text soft; structure fully legible.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded"
+   ],
+   "tags": [
+    "ai",
+    "agents",
+    "sharing"
+   ],
+   "title": "Share-your-agent screen",
+   "type": "screen"
+  },
+  "IMG-0634": {
+   "category": "design-system",
+   "description": "An Iconiy 'Marketplace App' icon-set promo: numbered title, icon grid and a floating search/settings pill. A design-asset product page; first of a four-piece Iconiy series.",
+   "id": "IMG-0634",
+   "quality": "Clean capture; fully legible.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "icons",
+    "iconography"
+   ],
+   "title": "Marketplace icon-set promo",
+   "type": "screen"
+  },
+  "IMG-0635": {
+   "category": "design-system",
+   "description": "The Iconiy 'Fitness App' set: a bottom tab bar (Home, heart, timer, lime +) as the hero specimen. Same promo template, fitness flavour.",
+   "id": "IMG-0635",
+   "pair_with": "IMG-0634",
+   "quality": "Clean capture; fully legible.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "icons",
+    "fitness"
+   ],
+   "title": "Fitness tab-bar icon set",
+   "type": "screen"
+  },
+  "IMG-0636": {
+   "category": "design-system",
+   "description": "The Iconiy 'Walking App' set: tab bar with a black + action. Same template, third flavour — the series reads as one system story.",
+   "id": "IMG-0636",
+   "pair_with": "IMG-0635",
+   "quality": "Clean capture; fully legible.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "icons"
+   ],
+   "title": "Walking-app icon set",
+   "type": "screen"
+  },
+  "IMG-0637": {
+   "category": "design-system",
+   "description": "The Iconiy 'Video App' set: tab bar with a red + action. Fourth and last of the series — the accent colour is the only variable.",
+   "id": "IMG-0637",
+   "pair_with": "IMG-0636",
+   "quality": "Clean capture; fully legible.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "icons"
+   ],
+   "title": "Video-app icon set",
+   "type": "screen"
+  },
+  "IMG-0638": {
+   "category": "mobile-app-ui",
+   "description": "A Joyce Scott profile (Paris, France): avatar header, a green 'Set your goals' tracking card with plant illustration, and a Profile details row. Fitness-profile warmth; first of a four-screen settings family.",
+   "id": "IMG-0638",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "profile"
+   ],
+   "style": [
+    "light-mode",
+    "card-based",
+    "rounded",
+    "soft"
+   ],
+   "tags": [
+    "fitness"
+   ],
+   "title": "Fitness profile (Joyce Scott)",
+   "type": "screen"
+  },
+  "IMG-0639": {
+   "category": "mobile-app-ui",
+   "description": "The settings list from the same fitness app: Goals, Activity History, Progress & Stats, Health Metrics, Settings rows with icons, closed by an orange Logout. Every fitness concern as one labelled row.",
+   "id": "IMG-0639",
+   "pair_with": "IMG-0638",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "settings"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "fitness"
+   ],
+   "title": "Fitness settings list",
+   "type": "screen"
+  },
+  "IMG-0640": {
+   "category": "mobile-app-ui",
+   "description": "General settings from the same family: Personal info, Language (English), Notifications, Privacy Policy rows with a purple Get Premium button. The account half of the settings pair.",
+   "id": "IMG-0640",
+   "pair_with": "IMG-0639",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "settings"
+   ],
+   "style": [
+    "light-mode",
+    "minimal",
+    "rounded"
+   ],
+   "tags": [
+    "upgrade"
+   ],
+   "title": "App settings with premium",
+   "type": "screen"
+  },
+  "IMG-0641": {
+   "category": "mobile-app-ui",
+   "description": "Terms of Use and Feedback rows above a dark-green 'Set your goals' progress card with tab bar. Legal-plus-goals in one screen; last of the fitness settings family.",
+   "id": "IMG-0641",
+   "pair_with": "IMG-0640",
+   "quality": "Clean capture; fully legible.",
+   "roles": [
+    "settings"
+   ],
+   "style": [
+    "light-mode",
+    "rounded",
+    "card-based"
+   ],
+   "tags": [
+    "fitness",
+    "legal"
+   ],
+   "title": "Goals card with legal rows",
+   "type": "screen"
+  },
+  "IMG-0642": {
+   "category": "website",
+   "description": "A 'Summer Escape: Coastal Adventures' campaign brief: audience targeting, body-text blocks, deliverables (visually compelling posts, video, landing page with testimonials and booking options) and an Attach row. A marketing brief as a readable document.",
+   "id": "IMG-0642",
+   "quality": "Body text small; structure fully legible.",
+   "roles": [],
+   "style": [
+    "light-mode",
+    "minimal"
+   ],
+   "tags": [
+    "travel",
+    "campaign"
+   ],
+   "title": "Campaign brief document",
+   "type": "screen"
+  }
+ }
+}
