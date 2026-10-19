@@ -130,6 +130,7 @@ const Render = (() => {
         ...tags.map((t) => el('span', { class: 'card__tag', text: t })),
         ...styles.map((s) => el('span', { class: 'card__tag card__tag--style', text: s }))));
     }
+    body.append(Workbench.saveButton(a));
     node.append(body);
     return node;
   }

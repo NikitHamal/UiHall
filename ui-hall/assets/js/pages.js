@@ -19,16 +19,19 @@ const Lightbox = (() => {
     render(asset);
     const box = root();
     box.hidden = false;
+    if (!box.open) box.showModal();
     document.body.style.overflow = 'hidden';
     document.getElementById('lbPrev').onclick = () => step(-1);
     document.getElementById('lbNext').onclick = () => step(1);
     document.querySelector('.lightbox__close')?.focus();
     document.addEventListener('keydown', onKey);
+    box.oncancel = (event) => { event.preventDefault(); close(); };
   }
 
   function close() {
     const box = root();
     if (box.hidden) return;
+    box.close();
     box.hidden = true;
     document.body.style.overflow = '';
     mediaBox().innerHTML = '';

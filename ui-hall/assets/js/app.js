@@ -271,7 +271,8 @@ const App = (() => {
       a.classList.toggle('is-active', a.dataset.nav === route);
     }
     document.getElementById('pageTitle').textContent = {
-      gallery: 'Gallery',
+      gallery: 'The archive',
+      agents: 'For agents',
       sets: 'App sets',
       palettes: 'Palettes',
       typography: 'Typography',
@@ -283,8 +284,9 @@ const App = (() => {
 
     const sub = document.getElementById('pageSub');
     sub.textContent = {
-      gallery: 'Every keeper from the collection — screens, mockups, brand work, store panels and clips. Filter by what a screen is for, how it looks, and what colours it is built from.',
-      sets: 'Screens that belong together: several shots of one app or one exploration, shown as a strip instead of scattered cards. The appllama-style way to browse.',
+      gallery: 'Interfaces, identities and interactions. Collected for a closer look.',
+      agents: 'An evidence-driven design workflow, from reference to working interface.',
+      sets: 'Study a product as a system. Related screens, side by side.',
       palettes: 'Two-colour schemes with designer-given names, plus the palettes measured from the screens themselves.',
       typography: 'Twelve typefaces rendered from the actual woff2 files in this repo, with a live playground and copy-paste integration notes. All SIL Open Font License 1.1.',
       patterns: 'Layout idioms that recur often enough across the corpus to be worth naming.',
@@ -307,6 +309,14 @@ const App = (() => {
     const showGalleryTools = route === 'gallery' || route === 'palettes';
     for (const n of galleryOnly) if (n) n.hidden = !showGalleryTools;
 
+    document.getElementById('quickpaths').hidden = route !== 'gallery';
+    document.querySelectorAll('[data-discover]').forEach(b=>b.classList.toggle('is-on', b.dataset.discover === (Filters.state.category[0] || '')));
+    if (route === 'agents') {
+      document.getElementById('hero').hidden = true;
+      document.getElementById('emptyState').hidden = true;
+      document.getElementById('resultCount').textContent = '';
+      return Workbench.agents(document.getElementById('results'));
+    }
     if (route === 'palettes') return renderPalettes();
     if (route === 'sets') return renderSets();
     if (route === 'typography') {
@@ -333,15 +343,14 @@ const App = (() => {
     hero.hidden = !show;
     if (!show) return;
     document.getElementById('heroEyebrow').textContent =
-      `A visual reference library · ${fmt.n(corpus.assets.length)} assets`;
+      'An independent archive of digital craft';
     const t = corpus.totals;
     const stats = document.getElementById('heroStats');
     stats.innerHTML = '';
     for (const [n, label] of [
-      [t.assets, 'assets'],
+      [t.assets, 'design references'],
       [t.clips, 'motion clips'],
-      [(corpus.groups || []).length, 'app sets'],
-      [t.described, 'visually reviewed'],
+      [(corpus.groups || []).length, 'screen collections'],
     ]) {
       stats.append(el('div', { class: 'hero__stat' },
         el('div', { class: 'hero__stat-n num', text: fmt.n(n) }),
@@ -796,6 +805,8 @@ const App = (() => {
     for (const a of corpus.assets) {
       a._score = 0;
       if (a.description) a._score += 2;
+      const featured = ['VID-0377','VID-0420','VID-0397','VID-0373','VID-0311','VID-0349','VID-0430','VID-0400','VID-0367'];
+      if (featured.includes(a.id)) a._score += 20 - featured.indexOf(a.id);
       if (a.quality) a._score += 0.1;
       if (a.category === 'before-after') a._score += 0.6;
       if (a.category === 'color-palette') a._score += 0.5;
@@ -810,7 +821,7 @@ const App = (() => {
     // theme from storage or system
     let theme = null;
     try { theme = localStorage.getItem('uihall.theme'); } catch (_) {}
-    if (!theme) theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    if (!theme) theme = 'light';
     document.documentElement.dataset.theme = theme;
 
     Filters.readUrl();
