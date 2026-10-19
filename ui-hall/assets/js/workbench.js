@@ -10,10 +10,11 @@ const Workbench = (() => {
   }
   function sync() {
     document.getElementById('boardCount').textContent = saved.size;
+    document.getElementById('boardCount').setAttribute('aria-label', saved.size + ' saved references');
     document.querySelectorAll('[data-save-reference]').forEach(button => {
       const on = saved.has(button.dataset.saveReference);
       button.setAttribute('aria-pressed', String(on));
-      button.textContent = on ? '▣' : '⊞';
+      button.textContent = button.classList.contains('lb-save') ? (on ? 'Remove from shortlist' : 'Add to shortlist') : (on ? '▣' : '⊞');
       button.setAttribute('aria-label', `${on ? 'Remove from' : 'Add to'} shortlist: ${DATA.get(button.dataset.saveReference)?.title || button.dataset.saveReference}`);
     });
   }
@@ -64,9 +65,35 @@ const Workbench = (() => {
     proof.append(el('p',{html:'Read the repository’s <a href="https://github.com/NikitHamal/UiHall/tree/main/skills/stormy-design" target="_blank" rel="noreferrer">design skill</a> for the workflow. The existing <code>stormy-design</code> folder remains compatible. Start with <code>search_designs</code>, then <code>get_asset</code> and <code>asset_image</code>.'}),el('p',{text:'No API key is required for the local MCP server. UiHall does not call an AI service from this site. Reference media and original product designs are not included in a commercial reuse licence.'}));
     page.append(proof);container.append(page);
   }
+  function motionStage(assets) {
+    const preferred = ['VID-0397','VID-0400','VID-0430'];
+    const selected = preferred.map(id=>assets.find(a=>a.id===id)).filter(Boolean);
+    if(!selected.length) selected.push(...assets.slice(0,3));
+    const stage = el('section',{class:'motion-stage','aria-label':'Motion study player'});
+    const media = el('video',{controls:true,muted:true,playsinline:true,preload:'none',poster:selected[0].src,src:selected[0].clip});
+    const title=el('h3',{text:selected[0].title});
+    const note=el('p',{text:'Watch the trigger, the transition and what stays still. Recording duration is not transition duration.'});
+    const info=el('div',{class:'motion-stage__info'},el('p',{class:'eyebrow',text:'THE MOTION ROOM / PRESS PLAY'}),title,note);
+    const tabs=el('div',{class:'motion-stage__tabs',role:'group','aria-label':'Select motion study'});
+    selected.forEach((a,i)=>tabs.append(el('button',{type:'button','aria-pressed':String(i===0),text:String(i+1).padStart(2,'0')+' / '+a.id,onclick:()=>{media.pause();media.src=a.clip;media.poster=a.src;media.load();title.textContent=a.title;tabs.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.textContent.includes(a.id))));}})));
+    const speed=el('select',{'aria-label':'Playback speed'},...[[.5,'0.5×'],[1,'1×'],[1.5,'1.5×']].map(([value,text])=>el('option',{value:String(value),text,selected:value===1})));
+    speed.addEventListener('change',()=>{media.playbackRate=Number(speed.value);});
+    info.append(tabs,el('label',{class:'motion-speed',text:'Study speed '},speed));
+    stage.append(el('div',{class:'motion-stage__media'},media),info);
+    new IntersectionObserver(entries=>{if(!entries[0].isIntersecting)media.pause();},{threshold:0}).observe(stage);
+    return stage;
+  }
   async function boot() {
     await DATA.load();
     saved = new Set([...saved].filter(id=>DATA.get(id))); sync();
+    document.querySelector('.hero__primary').addEventListener('click',e=>{e.preventDefault();document.getElementById('explore').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});
+    const shell=document.getElementById('shell'), sidebar=document.getElementById('sidebar'), toggleButton=document.getElementById('filterToggle'), dismiss=document.getElementById('filterDismiss');
+    const closeFilters=()=>{shell.classList.remove('is-mobileopen');toggleButton.focus();};
+    document.getElementById('filterClose').onclick=closeFilters;dismiss.onclick=closeFilters;
+    const syncFilterVisibility=()=>{const mobile=innerWidth<=960;const open=mobile?shell.classList.contains('is-mobileopen'):!shell.classList.contains('is-collapsed');sidebar.inert=!open;toggleButton.setAttribute('aria-expanded',String(open));dismiss.hidden=!mobile||!open;};
+    new MutationObserver(syncFilterVisibility).observe(shell,{attributes:true,attributeFilter:['class']});window.addEventListener('resize',syncFilterVisibility);syncFilterVisibility();
+    document.addEventListener('keydown',e=>{if(innerWidth<=960&&shell.classList.contains('is-mobileopen')){if(e.key==='Escape'){e.preventDefault();closeFilters();}if(e.key==='Tab'){const targets=[...sidebar.querySelectorAll('button,input,summary,a')].filter(n=>n.offsetParent!==null&&!n.disabled);const first=targets[0],last=targets.at(-1);if(!sidebar.contains(document.activeElement)||e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus();}}}});
+    toggleButton.addEventListener('click',()=>{if(innerWidth<=960&&shell.classList.contains('is-mobileopen'))document.getElementById('q').focus();});
     document.getElementById('boardOpen').addEventListener('click',()=>{renderBoard();document.getElementById('boardDialog').showModal();});
     document.getElementById('boardClose').addEventListener('click',()=>document.getElementById('boardDialog').close());
     document.getElementById('copyBrief').addEventListener('click',async()=>{const ok=await copy(brief());document.getElementById('boardStatus').textContent=ok?'Brief copied, including reference IDs and capture caveats.':'Clipboard unavailable; please enable clipboard access.';});
@@ -76,5 +103,5 @@ const Workbench = (() => {
     const id = new URLSearchParams(location.hash.split('?')[1]||'').get('asset');if(id && DATA.get(id))Lightbox.open(id);
   }
   document.addEventListener('DOMContentLoaded',()=>boot().catch(()=>{}));
-  return {saveButton,toggle,sync,agents,notify};
+  return {saveButton,toggle,sync,agents,notify,motionStage};
 })();

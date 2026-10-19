@@ -8,6 +8,7 @@ const App = (() => {
   // True once the user clicks a category chip. Used so leaving the before/after
   // route only releases the category the *route* forced, never a user choice.
   let userPickedCategory = false;
+  let previousRoute = null;
 
   /* ------------------------------------------------------------ facets --- */
 
@@ -190,6 +191,7 @@ const App = (() => {
   function renderResults() {
     const assets = DATA.all();
     sorted = Filters.apply(assets);
+    if (Filters.currentRoute() === 'motion') sorted = sorted.filter(a => a.clip);
     const results = document.getElementById('results');
     const empty = document.getElementById('emptyState');
     const count = document.getElementById('resultCount');
@@ -203,6 +205,7 @@ const App = (() => {
     empty.hidden = shown > 0;
     if (shown) Render.grid(results, sorted);
     else results.innerHTML = '';
+    if (shown && Filters.currentRoute() === 'motion' && !Filters.state.q && !Filters.state.category.length) results.prepend(Workbench.motionStage(sorted));
 
     buildActiveBar();
     buildFacets();
@@ -229,7 +232,7 @@ const App = (() => {
 
   /* ------------------------------------------------------------- routes -- */
 
-  const ROUTES = ['gallery', 'sets', 'palettes', 'typography', 'patterns', 'before-after', 'motion', 'about'];
+  const ROUTES = ['gallery', 'sets', 'palettes', 'typography', 'patterns', 'before-after', 'motion', 'about', 'agents'];
 
   function go(route) {
     Filters.setRoute(route);
@@ -244,7 +247,9 @@ const App = (() => {
     const r = Filters.currentRoute();
     const st = Filters.state;
     const scope = routeScope(r);
-    if (st.kind !== scope.kind) st.kind = scope.kind;
+    if (r === 'motion') st.kind = 'video';
+    else if (previousRoute === 'motion' && st.kind === 'video') st.kind = 'all';
+    previousRoute = r;
     if (scope.category && !st.category.includes(scope.category)) {
       st.category = [scope.category];
     }
@@ -306,7 +311,7 @@ const App = (() => {
       document.querySelector('.select--size'),
       document.getElementById('shuffle'),
     ];
-    const showGalleryTools = route === 'gallery' || route === 'palettes';
+    const showGalleryTools = route === 'gallery';
     for (const n of galleryOnly) if (n) n.hidden = !showGalleryTools;
 
     document.getElementById('quickpaths').hidden = route !== 'gallery';
@@ -793,7 +798,7 @@ const App = (() => {
       corpus = await DATA.load();
     } catch (err) {
       clearSkeleton();
-      document.getElementById('results').append(
+      document.getElementById('results').replaceChildren(
         el('p', { class: 'empty', style: 'grid-column:1/-1', html:
           `<span class="empty__title">Could not load the corpus</span>
            <span class="empty__hint">${esc(err.message)}</span>` }));

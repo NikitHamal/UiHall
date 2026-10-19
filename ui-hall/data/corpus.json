@@ -1,5 +1,5 @@
 {
- "version": "1.0.0",
+ "version": "2.0.0",
  "generated_from": "E:\\Downloads",
  "totals": {
   "assets": 766,
@@ -14,7 +14,7 @@
    "label": "Mobile app UI",
    "blurb": "Screens, flows and mockups for phone apps. The core of the corpus.",
    "icon": "phone",
-   "count": 411
+   "count": 409
   },
   {
    "id": "app-store-screens",
@@ -35,7 +35,7 @@
    "label": "Website",
    "blurb": "Marketing sites, landing pages and web product surfaces.",
    "icon": "globe",
-   "count": 136
+   "count": 137
   },
   {
    "id": "design-system",
@@ -84,7 +84,7 @@
    "label": "Promo reel",
    "blurb": "Marketing video: app presented, not an interface to copy.",
    "icon": "film",
-   "count": 21
+   "count": 22
   },
   {
    "id": "other",
@@ -144,27 +144,27 @@
  "roles": [
   {
    "id": "dashboard",
-   "count": 131
+   "count": 132
   },
   {
    "id": "hero",
-   "count": 71
+   "count": 72
   },
   {
    "id": "list",
-   "count": 57
+   "count": 55
+  },
+  {
+   "id": "onboarding",
+   "count": 53
   },
   {
    "id": "home",
    "count": 52
   },
   {
-   "id": "onboarding",
-   "count": 51
-  },
-  {
    "id": "detail",
-   "count": 48
+   "count": 49
   },
   {
    "id": "landing-section",
@@ -184,11 +184,11 @@
   },
   {
    "id": "media",
-   "count": 22
+   "count": 23
   },
   {
    "id": "editor",
-   "count": 21
+   "count": 22
   },
   {
    "id": "search",
@@ -199,11 +199,11 @@
    "count": 18
   },
   {
-   "id": "pricing",
-   "count": 17
+   "id": "profile",
+   "count": 18
   },
   {
-   "id": "profile",
+   "id": "pricing",
    "count": 17
   },
   {
@@ -234,15 +234,15 @@
  "styles": [
   {
    "id": "light-mode",
-   "count": 469
+   "count": 470
   },
   {
    "id": "minimal",
-   "count": 333
+   "count": 327
   },
   {
    "id": "rounded",
-   "count": 262
+   "count": 264
   },
   {
    "id": "dark-mode",
@@ -250,11 +250,11 @@
   },
   {
    "id": "card-based",
-   "count": 210
+   "count": 211
   },
   {
    "id": "data-dense",
-   "count": 75
+   "count": 76
   },
   {
    "id": "playful",
@@ -266,7 +266,7 @@
   },
   {
    "id": "soft",
-   "count": 42
+   "count": 43
   },
   {
    "id": "bold-typography",
@@ -278,7 +278,7 @@
   },
   {
    "id": "gradient-heavy",
-   "count": 28
+   "count": 29
   },
   {
    "id": "high-contrast",
@@ -306,7 +306,7 @@
   },
   {
    "id": "glassmorphism",
-   "count": 4
+   "count": 5
   },
   {
    "id": "corporate",
@@ -336,11 +336,11 @@
   },
   {
    "id": "cta",
-   "count": 56
+   "count": 55
   },
   {
    "id": "chart",
-   "count": 47
+   "count": 48
   },
   {
    "id": "landing",
@@ -356,7 +356,7 @@
   },
   {
    "id": "card",
-   "count": 33
+   "count": 32
   },
   {
    "id": "comparison",
@@ -367,27 +367,27 @@
    "count": 30
   },
   {
-   "id": "photo",
+   "id": "finance",
    "count": 29
-  },
-  {
-   "id": "typography",
-   "count": 28
   },
   {
    "id": "progress",
    "count": 28
   },
   {
-   "id": "finance",
+   "id": "photo",
    "count": 28
   },
   {
-   "id": "promo",
+   "id": "typography",
    "count": 27
   },
   {
    "id": "table",
+   "count": 27
+  },
+  {
+   "id": "onboarding",
    "count": 27
   },
   {
@@ -396,14 +396,14 @@
   },
   {
    "id": "music",
+   "count": 26
+  },
+  {
+   "id": "promo",
    "count": 25
   },
   {
    "id": "social",
-   "count": 25
-  },
-  {
-   "id": "onboarding",
    "count": 25
   },
   {
@@ -417,6 +417,10 @@
   {
    "id": "calendar",
    "count": 23
+  },
+  {
+   "id": "cards",
+   "count": 22
   },
   {
    "id": "fitness",
@@ -451,16 +455,12 @@
    "count": 19
   },
   {
-   "id": "cards",
+   "id": "animation",
    "count": 18
   },
   {
    "id": "app-store",
-   "count": 18
-  },
-  {
-   "id": "animation",
-   "count": 17
+   "count": 16
   },
   {
    "id": "before-after",
@@ -507,15 +507,11 @@
    "count": 13
   },
   {
-   "id": "reading",
-   "count": 13
-  },
-  {
    "id": "subscription",
    "count": 13
   },
   {
-   "id": "list-row",
+   "id": "delivery",
    "count": 13
   },
   {
@@ -527,15 +523,15 @@
    "count": 12
   },
   {
-   "id": "delivery",
+   "id": "reading",
+   "count": 12
+  },
+  {
+   "id": "list-row",
    "count": 12
   },
   {
    "id": "stats",
-   "count": 12
-  },
-  {
-   "id": "sharing",
    "count": 12
   },
   {
@@ -547,11 +543,11 @@
    "count": 12
   },
   {
-   "id": "green",
-   "count": 11
+   "id": "list",
+   "count": 12
   },
   {
-   "id": "checklist",
+   "id": "green",
    "count": 11
   },
   {
@@ -575,11 +571,11 @@
    "count": 11
   },
   {
-   "id": "developer-tool",
+   "id": "sharing",
    "count": 11
   },
   {
-   "id": "list",
+   "id": "developer-tool",
    "count": 11
   },
   {
@@ -587,11 +583,11 @@
    "count": 11
   },
   {
-   "id": "banking",
+   "id": "checklist",
    "count": 10
   },
   {
-   "id": "spending",
+   "id": "banking",
    "count": 10
   },
   {
@@ -601,10 +597,6 @@
   {
    "id": "settings",
    "count": 10
-  },
-  {
-   "id": "localised",
-   "count": 9
   },
   {
    "id": "schedule",
@@ -627,6 +619,10 @@
    "count": 9
   },
   {
+   "id": "spending",
+   "count": 9
+  },
+  {
    "id": "payment",
    "count": 9
   },
@@ -639,7 +635,11 @@
    "count": 9
   },
   {
-   "id": "food",
+   "id": "bottom-nav",
+   "count": 9
+  },
+  {
+   "id": "localised",
    "count": 8
   },
   {
@@ -655,15 +655,15 @@
    "count": 8
   },
   {
+   "id": "confirmation",
+   "count": 8
+  },
+  {
    "id": "chips",
    "count": 8
   },
   {
    "id": "wallet",
-   "count": 8
-  },
-  {
-   "id": "shelf",
    "count": 8
   },
   {
@@ -703,8 +703,12 @@
    "count": 8
   },
   {
-   "id": "bottom-nav",
+   "id": "form",
    "count": 8
+  },
+  {
+   "id": "food",
+   "count": 7
   },
   {
    "id": "tabs",
@@ -723,7 +727,7 @@
    "count": 7
   },
   {
-   "id": "confirmation",
+   "id": "badges",
    "count": 7
   },
   {
@@ -735,15 +739,19 @@
    "count": 7
   },
   {
+   "id": "audio",
+   "count": 7
+  },
+  {
    "id": "template",
    "count": 7
   },
   {
-   "id": "progress-ring",
+   "id": "tiles",
    "count": 7
   },
   {
-   "id": "tiles",
+   "id": "shelf",
    "count": 7
   },
   {
@@ -791,14 +799,6 @@
    "count": 7
   },
   {
-   "id": "in-hand",
-   "count": 7
-  },
-  {
-   "id": "form",
-   "count": 7
-  },
-  {
    "id": "statistics",
    "count": 6
   },
@@ -811,15 +811,7 @@
    "count": 6
   },
   {
-   "id": "badges",
-   "count": 6
-  },
-  {
    "id": "tracker",
-   "count": 6
-  },
-  {
-   "id": "audio",
    "count": 6
   },
   {
@@ -840,6 +832,10 @@
   },
   {
    "id": "sheet",
+   "count": 6
+  },
+  {
+   "id": "progress-ring",
    "count": 6
   },
   {
@@ -883,11 +879,11 @@
    "count": 6
   },
   {
-   "id": "camera",
+   "id": "ai-agent",
    "count": 6
   },
   {
-   "id": "ai-agent",
+   "id": "collection",
    "count": 6
   },
   {
@@ -920,6 +916,10 @@
   },
   {
    "id": "canvas",
+   "count": 5
+  },
+  {
+   "id": "blur",
    "count": 5
   },
   {
@@ -1047,6 +1047,10 @@
    "count": 5
   },
   {
+   "id": "in-hand",
+   "count": 5
+  },
+  {
    "id": "profile",
    "count": 5
   },
@@ -1171,6 +1175,10 @@
    "count": 4
   },
   {
+   "id": "device-frame",
+   "count": 4
+  },
+  {
    "id": "developer",
    "count": 4
   },
@@ -1183,11 +1191,11 @@
    "count": 4
   },
   {
-   "id": "capture",
+   "id": "kanban",
    "count": 4
   },
   {
-   "id": "kanban",
+   "id": "camera",
    "count": 4
   },
   {
@@ -1223,10 +1231,6 @@
    "count": 4
   },
   {
-   "id": "collection",
-   "count": 4
-  },
-  {
    "id": "logo",
    "count": 4
   },
@@ -1235,19 +1239,11 @@
    "count": 4
   },
   {
-   "id": "loading-state",
-   "count": 4
-  },
-  {
    "id": "web-app",
    "count": 4
   },
   {
    "id": "dashboard",
-   "count": 4
-  },
-  {
-   "id": "home-screen",
    "count": 4
   },
   {
@@ -1271,7 +1267,7 @@
    "count": 3
   },
   {
-   "id": "blur",
+   "id": "dot-grid",
    "count": 3
   },
   {
@@ -1296,10 +1292,6 @@
   },
   {
    "id": "legend",
-   "count": 3
-  },
-  {
-   "id": "books",
    "count": 3
   },
   {
@@ -1431,19 +1423,15 @@
    "count": 3
   },
   {
-   "id": "device-frame",
-   "count": 3
-  },
-  {
    "id": "month-view",
    "count": 3
   },
   {
-   "id": "phone-mockup",
+   "id": "capture",
    "count": 3
   },
   {
-   "id": "plant",
+   "id": "phone-mockup",
    "count": 3
   },
   {
@@ -1467,11 +1455,23 @@
    "count": 3
   },
   {
+   "id": "gamification",
+   "count": 3
+  },
+  {
    "id": "leaderboard",
    "count": 3
   },
   {
+   "id": "loading-state",
+   "count": 3
+  },
+  {
    "id": "prototype",
+   "count": 3
+  },
+  {
+   "id": "drawing",
    "count": 3
   },
   {
@@ -1515,11 +1515,23 @@
    "count": 3
   },
   {
+   "id": "color-picker",
+   "count": 3
+  },
+  {
    "id": "desktop",
    "count": 3
   },
   {
    "id": "scheduling",
+   "count": 3
+  },
+  {
+   "id": "light-ui",
+   "count": 3
+  },
+  {
+   "id": "ios",
    "count": 3
   },
   {
@@ -1536,10 +1548,6 @@
   },
   {
    "id": "diagram",
-   "count": 2
-  },
-  {
-   "id": "dot-grid",
    "count": 2
   },
   {
@@ -1560,6 +1568,10 @@
   },
   {
    "id": "heat-map",
+   "count": 2
+  },
+  {
+   "id": "books",
    "count": 2
   },
   {
@@ -1620,10 +1632,6 @@
   },
   {
    "id": "qr-code",
-   "count": 2
-  },
-  {
-   "id": "scan",
    "count": 2
   },
   {
@@ -1708,10 +1716,6 @@
   },
   {
    "id": "explainer",
-   "count": 2
-  },
-  {
-   "id": "receipt",
    "count": 2
   },
   {
@@ -1823,6 +1827,10 @@
    "count": 2
   },
   {
+   "id": "plant",
+   "count": 2
+  },
+  {
    "id": "product-shot",
    "count": 2
   },
@@ -1843,10 +1851,6 @@
    "count": 2
   },
   {
-   "id": "gamification",
-   "count": 2
-  },
-  {
    "id": "abstract",
    "count": 2
   },
@@ -1855,7 +1859,7 @@
    "count": 2
   },
   {
-   "id": "drawing",
+   "id": "home-screen",
    "count": 2
   },
   {
@@ -1864,6 +1868,10 @@
   },
   {
    "id": "navigation",
+   "count": 2
+  },
+  {
+   "id": "editor",
    "count": 2
   },
   {
@@ -1915,15 +1923,7 @@
    "count": 2
   },
   {
-   "id": "splash-screen",
-   "count": 2
-  },
-  {
    "id": "screen-recording",
-   "count": 2
-  },
-  {
-   "id": "color-picker",
    "count": 2
   },
   {
@@ -1932,10 +1932,6 @@
   },
   {
    "id": "publish",
-   "count": 2
-  },
-  {
-   "id": "photo-grid",
    "count": 2
   },
   {
@@ -1971,11 +1967,19 @@
    "count": 2
   },
   {
+   "id": "achievement",
+   "count": 2
+  },
+  {
    "id": "ai-comparison",
    "count": 2
   },
   {
    "id": "journal",
+   "count": 2
+  },
+  {
+   "id": "gesture",
    "count": 2
   },
   {
@@ -2115,6 +2119,10 @@
    "count": 1
   },
   {
+   "id": "scan",
+   "count": 1
+  },
+  {
    "id": "depth",
    "count": 1
   },
@@ -2212,6 +2220,10 @@
   },
   {
    "id": "itemised",
+   "count": 1
+  },
+  {
+   "id": "receipt",
    "count": 1
   },
   {
@@ -2515,10 +2527,6 @@
    "count": 1
   },
   {
-   "id": "editor",
-   "count": 1
-  },
-  {
    "id": "skeleton-screen",
    "count": 1
   },
@@ -2611,6 +2619,10 @@
    "count": 1
   },
   {
+   "id": "splash-screen",
+   "count": 1
+  },
+  {
    "id": "ratings",
    "count": 1
   },
@@ -2679,6 +2691,10 @@
    "count": 1
   },
   {
+   "id": "photo-grid",
+   "count": 1
+  },
+  {
    "id": "mail",
    "count": 1
   },
@@ -2743,10 +2759,6 @@
    "count": 1
   },
   {
-   "id": "achievement",
-   "count": 1
-  },
-  {
    "id": "code-editor",
    "count": 1
   },
@@ -2787,10 +2799,6 @@
    "count": 1
   },
   {
-   "id": "ios",
-   "count": 1
-  },
-  {
    "id": "language-learning",
    "count": 1
   },
@@ -2800,10 +2808,6 @@
   },
   {
    "id": "teardown",
-   "count": 1
-  },
-  {
-   "id": "gesture",
    "count": 1
   },
   {
@@ -45540,6 +45544,12 @@
     "path": "E:\\Downloads\\UI\\n6wr01a4Xn86lMtI.mp4",
     "bytes": 1911066
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and one sampled clip frame",
+    "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+   },
    "quality": "Short clip (5.4s); real motion (median 18.1).",
    "source_note": "AI assistant quick-actions screen.",
    "src": "assets/vid/VID-0298.webp",
@@ -45561,21 +45571,23 @@
    "kind": "video",
    "category": "mobile-app-ui",
    "type": "flow-walkthrough",
-   "title": "Read app — book spine shelf",
-   "description": "A 'Read' bookshelf app: a long shelf of book spines (The Hobbit, a blue classical-bust volume, The Great Gatsby, Guns, …) where the selected book's cover floats up in front of the shelf. A horizontal shelf carousel with a pop-out selected state; the spine colours are the scan-line pattern.",
+   "title": "Die Cars collector profile and achievement badges",
+   "description": "A light mobile collector interface. The poster shows an Onboarded achievement detail with a Share button. Inspected clip frames show a collector profile with recent model cars and an Achievements screen, including a large Diecast Con Barcelona 2026 badge and a grid of locked and unlocked awards. This is evidence for collection profiles and gamification, not a bookshelf UI. Exact transition timing was not measured.",
    "roles": [
-    "home",
-    "list"
+    "detail",
+    "profile"
    ],
    "style": [
-    "light-mode",
-    "minimal"
+    "card-based",
+    "light-mode"
    ],
    "tags": [
-    "books",
-    "carousel",
-    "reading",
-    "shelf"
+    "achievement",
+    "badges",
+    "cards",
+    "collection",
+    "gamification",
+    "light-ui"
    ],
    "palette": [
     "#FBFBFB",
@@ -45619,6 +45631,13 @@
    "origin": {
     "path": "E:\\Downloads\\UI\\QrVwOM71zdUyYpIl.mp4",
     "bytes": 23433092
+   },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster, clip opening, and frame at 10 seconds",
+    "note": "Corrects a confirmed mismatch: previous bookshelf description did not match the actual poster or inspected clip frames.",
+    "taxonomy_replaced": true
    },
    "quality": "Real motion (median 30.2, 34.5s).",
    "src": "assets/vid/VID-0300.webp",
@@ -45697,6 +45716,12 @@
     "path": "E:\\Downloads\\UI\\NIPUkQh2irkhj2v8.mp4",
     "bytes": 4873656
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and one sampled clip frame",
+    "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+   },
    "quality": "Real motion (median 15.4, 18.5s).",
    "src": "assets/vid/VID-0301.webp",
    "thumb": "assets/thumb/VID-0301.webp",
@@ -45772,6 +45797,12 @@
     "path": "E:\\Downloads\\UI\\OlC0Z-g0Zo36YY4L.mp4",
     "bytes": 29532531
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and one sampled clip frame",
+    "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+   },
    "quality": "Very high motion (median 110.9, 20s); a generative illustration study.",
    "src": "assets/vid/VID-0302.webp",
    "thumb": "assets/thumb/VID-0302.webp",
@@ -45790,10 +45821,10 @@
   {
    "id": "VID-0304",
    "kind": "video",
-   "category": "mobile-app-ui",
+   "category": "website",
    "type": "flow-walkthrough",
-   "title": "Prefetch list demo with grocery panel",
-   "description": "Two panels side by side: a grey skeleton list ('Fetch on click') and a 'Groceries / Saturday' list (Get-milk, Sourdough, Avocados, Coffee beans, 'Add item') under a 'Prefetch on hover' label. A web list-UI demo where skeleton loading meets a grocery list; two states, one question.",
+   "title": "Loading, list prefetch and skeleton-state demonstrations",
+   "description": "A sequence of light web interaction demonstrations. The poster shows a Today task list labelled Server rendered. Four sampled clip frames include a Mail skeleton layout, a branching data diagram, side-by-side Fetch on click and Prefetch on hover grocery lists, and a skeleton card with a speed slider. Useful for comparing loading and prefetch feedback; the clip contains several separate demonstrations.",
    "roles": [
     "list"
    ],
@@ -45802,10 +45833,7 @@
     "minimal"
    ],
    "tags": [
-    "checklist",
-    "food",
-    "list-row",
-    "loading-state"
+    "list"
    ],
    "palette": [
     "#FEFEFE",
@@ -45850,6 +45878,13 @@
     "path": "E:\\Downloads\\UI\\I7D53K3Y3DgkQ5tv.mp4",
     "bytes": 394634
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+    "note": "Targeted visual review; not a complete playback or source attribution review.",
+    "taxonomy_replaced": true
+   },
    "quality": "Near-static (median 8.0, 10.1s).",
    "src": "assets/vid/VID-0304.webp",
    "thumb": "assets/thumb/VID-0304.webp",
@@ -45870,20 +45905,24 @@
    "kind": "video",
    "category": "mobile-app-ui",
    "type": "flow-walkthrough",
-   "title": "New Expense entry, ring and numpad",
-   "description": "A dark 'New Expense' phone screen: 'New Expense / Title / Amount / Category Housing · May 25, 2025 / Account …' with a spending ring and a '+ USD' input, plus a numpad below. A dark expense-entry screen; the ring shows the budget fill while the numpad is the input.",
+   "title": "Spending dashboard and New Expense sheet",
+   "description": "A dark mobile finance flow with yellow accents. Sampled frames show a balance home, a Spending view with a horizontal row of brightly coloured category cylinders, and a New Expense sheet. The sheet includes an amount, category, date, payment-method tiles and a yellow Save button; another sampled state contains Pharmacy Purchase and $21.00. The poster is the spending overview, not the form.",
    "roles": [
-    "form"
+    "dashboard",
+    "form",
+    "home"
    ],
    "style": [
     "dark-mode",
-    "minimal"
+    "data-dense"
    ],
    "tags": [
+    "bottom-nav",
     "budgeting",
+    "chart",
     "dark-ui",
-    "progress-ring",
-    "spending"
+    "finance",
+    "form"
    ],
    "palette": [
     "#2A2A29",
@@ -45928,6 +45967,13 @@
     "path": "E:\\Downloads\\UI\\QxuynHpYeZo1zr1y.mp4",
     "bytes": 2120417
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+    "note": "Targeted visual review; not a complete playback or source attribution review.",
+    "taxonomy_replaced": true
+   },
    "quality": "Real motion (median 15.0, 12.6s).",
    "src": "assets/vid/VID-0305.webp",
    "thumb": "assets/thumb/VID-0305.webp",
@@ -45948,15 +45994,20 @@
    "kind": "video",
    "category": "mobile-app-ui",
    "type": "flow-walkthrough",
-   "title": "Japanese card on dot grid",
-   "description": "A Japanese pink card ('この夢が残してきたのは / というのは…') on a dot grid — minimal Japanese text on a pastel field. A localised, near-static card study; the dot grid is the only texture.",
-   "roles": [],
+   "title": "Pastel dot-grid interaction with Japanese text",
+   "description": "A close crop of the lower portion of a phone mockup. Japanese text sits above a rounded, translucent dot-grid panel. Across sampled frames, small coloured discs and a glowing marker occupy different grid positions while the surrounding tint shifts from cool grey to warm yellow and green. This is an interaction study, not simply a static pink card. The full product context is not visible.",
+   "roles": [
+    "detail"
+   ],
    "style": [
-    "minimal"
+    "rounded",
+    "soft"
    ],
    "tags": [
-    "card",
-    "localised"
+    "animation",
+    "blur",
+    "device-frame",
+    "dot-grid"
    ],
    "palette": [
     "#C7CADA",
@@ -46000,6 +46051,13 @@
    "origin": {
     "path": "E:\\Downloads\\UI\\ACYJfd35NRzlFdDh.mp4",
     "bytes": 325855
+   },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+    "note": "Targeted visual review; not a complete playback or source attribution review.",
+    "taxonomy_replaced": true
    },
    "quality": "Near-static (median 8.5, 7s); Japanese copy legible.",
    "src": "assets/vid/VID-0306.webp",
@@ -46161,17 +46219,22 @@
    "kind": "video",
    "category": "mobile-app-ui",
    "type": "flow-walkthrough",
-   "title": "GOMPASHE dark item list",
-   "description": "A dark green 'GOMPASHE' phone screen: a list of 'Item 6' through 'Item 20' rows on near-black ground. A minimal dark list UI; the green-on-dark is the whole identity. A second clip of the same design as another GOMPASHE clip.",
+   "title": "Dashr delivery onboarding and scooter carousel",
+   "description": "Two light mobile screens for Dashr on a pale background. One is a lime-green splash with the word Dashr. The other combines scooter imagery, the headline Deliver faster, earn smarter with Dashr, a lime Get on the Road button and a sign-in link. Sampled clip frames show the scooter imagery changing across the hero.",
    "roles": [
-    "list"
+    "hero",
+    "onboarding"
    ],
    "style": [
-    "dark-mode",
+    "light-mode",
     "minimal"
    ],
    "tags": [
-    "dark-ui"
+    "carousel",
+    "cta",
+    "delivery",
+    "light-ui",
+    "onboarding"
    ],
    "palette": [
     "#E5E5E4",
@@ -46215,6 +46278,13 @@
    "origin": {
     "path": "E:\\Downloads\\UI\\x-downloader.com_skyFC0.mp4",
     "bytes": 317617
+   },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+    "note": "Corrects a confirmed mismatch: this is Dashr onboarding, not the GOMPASHE dark item list in VID-0312.",
+    "taxonomy_replaced": true
    },
    "quality": "Near-static (median 6.7, 10.6s).",
    "src": "assets/vid/VID-0309.webp",
@@ -46294,6 +46364,12 @@
     "path": "E:\\Downloads\\UI\\ZRpheo-vu6-gua_h.mp4",
     "bytes": 10199368
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and one sampled clip frame",
+    "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+   },
    "quality": "Real motion (median 30.8, 17.8s).",
    "src": "assets/vid/VID-0310.webp",
    "thumb": "assets/thumb/VID-0310.webp",
@@ -46371,6 +46447,12 @@
     "path": "E:\\Downloads\\UI\\NWWc9H7S77Ct3xoq.mp4",
     "bytes": 2624656
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and one sampled clip frame",
+    "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+   },
    "quality": "Near-static (median 3.7, 9.4s).",
    "src": "assets/vid/VID-0311.webp",
    "thumb": "assets/thumb/VID-0311.webp",
@@ -46446,6 +46528,12 @@
     "path": "E:\\Downloads\\UI\\jTX8dsIX0eboz-eh.mp4",
     "bytes": 775872
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and one sampled clip frame",
+    "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+   },
    "quality": "Moderate motion (median 6.0, 19.2s).",
    "src": "assets/vid/VID-0312.webp",
    "thumb": "assets/thumb/VID-0312.webp",
@@ -46466,22 +46554,18 @@
    "kind": "video",
    "category": "mobile-app-ui",
    "type": "flow-walkthrough",
-   "title": "In-hand flower capture, NATURAL",
-   "description": "An in-hand capture demo: a phone held up to a pink flower with a dark 'NATURAL' camera/capture overlay ('AI', 'M', 'Scan' bottom controls with a check state). A plant-identification capture app shown in the real world; the in-hand framing is the point.",
+   "title": "In-hand pink receipt deformation interaction",
+   "description": "A phone filmed in a hand, showing a dark Russian-language interface with a pink receipt-like card. Across sampled frames, a finger touches the card and its paper silhouette folds, stretches and changes shape. Telegram and VK sharing controls appear along the bottom. This is a direct-manipulation paper interaction; the samples do not establish OCR or a plant-identification workflow.",
    "roles": [
-    "detail",
     "media"
    ],
    "style": [
-    "dark-mode",
-    "minimal"
+    "dark-mode"
    ],
    "tags": [
-    "camera",
-    "capture",
-    "in-hand",
-    "photo",
-    "plant"
+    "cards",
+    "dark-ui",
+    "gesture"
    ],
    "palette": [
     "#2F3135",
@@ -46525,6 +46609,13 @@
    "origin": {
     "path": "E:\\Downloads\\UI\\K2C2gMdtr9j5WS7j.mp4",
     "bytes": 2393283
+   },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+    "note": "Corrects a confirmed mismatch: the visible object is a receipt-like pink card, not a flower capture interface.",
+    "taxonomy_replaced": true
    },
    "quality": "Real motion (median 32.6, 15.7s).",
    "src": "assets/vid/VID-0313.webp",
@@ -46603,6 +46694,12 @@
    "origin": {
     "path": "E:\\Downloads\\UI\\48iO6CYu8O73W1Be.mp4",
     "bytes": 8130108
+   },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and one sampled clip frame",
+    "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
    },
    "quality": "Near-static (median 3.7, 32.9s).",
    "src": "assets/vid/VID-0314.webp",
@@ -46752,6 +46849,12 @@
     "path": "E:\\Downloads\\UI\\MVhoWKmns4P84STc.mp4",
     "bytes": 12077609
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and one sampled clip frame",
+    "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+   },
    "quality": "Real motion (median 15.3, 15s).",
    "src": "assets/vid/VID-0316.webp",
    "thumb": "assets/thumb/VID-0316.webp",
@@ -46827,6 +46930,12 @@
    "origin": {
     "path": "E:\\Downloads\\UI\\DBHCFPg_Xx13yfDf.mp4",
     "bytes": 2612553
+   },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and one sampled clip frame",
+    "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
    },
    "quality": "Real motion (median 32.0, 20.6s).",
    "src": "assets/vid/VID-0317.webp",
@@ -47116,6 +47225,12 @@
     "path": "E:\\Downloads\\UI\\OXgZareIJ5_KF6cz.mp4",
     "bytes": 12933914
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and one sampled clip frame",
+    "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+   },
    "quality": "Real motion (median 60.9, 40.4s).",
    "src": "assets/vid/VID-0321.webp",
    "thumb": "assets/thumb/VID-0321.webp",
@@ -47193,6 +47308,12 @@
     "path": "E:\\Downloads\\UI\\zvPpfOfOETNNqkUj.mp4",
     "bytes": 759418
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and one sampled clip frame",
+    "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+   },
    "quality": "High motion (median 41.7, 16.3s); cursor-driven.",
    "src": "assets/vid/VID-0322.webp",
    "thumb": "assets/thumb/VID-0322.webp",
@@ -47213,22 +47334,20 @@
    "kind": "video",
    "category": "promo-reel",
    "type": "flow-walkthrough",
-   "title": "Chapel — lock-screen card promo",
-   "description": "A 'Chapel' lock-screen card app promo: 'should say something. / Pick one of 31 designs. / Reshape the card. / Save it. Set it.' with four phone mockups (a pink card 'Slow is smooth. Smooth is fast.'), stats '28 templates, 31 palettes, 10 typefaces, 4+5 doodles', and a 'Lock Card — Wallpapers with something to say. Get it on the App Store' CTA. A marketing reel for a lock-screen wallpaper app.",
+   "title": "mymind save-from-Photos flow",
+   "description": "An iPhone save flow on a warm orange-red background. Sampled frames show a quote image open in Photos, the iOS share sheet, and a translucent confirmation screen reading Good find! It’s in your mind, with an Add Tags/Notes control. The mymind.com label appears below the device. This is a capture/save handoff, not a lock-screen wallpaper editor.",
    "roles": [
-    "hero"
+    "media"
    ],
    "style": [
-    "light-mode",
-    "minimal"
+    "glassmorphism",
+    "gradient-heavy"
    ],
    "tags": [
-    "app-store",
-    "cta",
-    "home-screen",
-    "promo",
-    "splash-screen",
-    "typography"
+    "blur",
+    "collection",
+    "confirmation",
+    "ios"
    ],
    "palette": [
     "#1E1D2F",
@@ -47272,6 +47391,13 @@
    "origin": {
     "path": "E:\\Downloads\\UI\\wpXxdObD3v5kdIsT.mp4",
     "bytes": 3912721
+   },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+    "note": "Corrects a confirmed mismatch: previous lock-screen-editor copy belongs to a different type of promo.",
+    "taxonomy_replaced": true
    },
    "quality": "Very high motion (median 72.9, 9.3s).",
    "src": "assets/vid/VID-0323.webp",
@@ -47351,6 +47477,12 @@
     "path": "E:\\Downloads\\UI\\xYH8YeW64LpMEiNJ.mp4",
     "bytes": 2914492
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and one sampled clip frame",
+    "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+   },
    "quality": "Real motion (median 9.0, 13.7s).",
    "src": "assets/vid/VID-0324.webp",
    "thumb": "assets/thumb/VID-0324.webp",
@@ -47426,6 +47558,12 @@
    "origin": {
     "path": "E:\\Downloads\\UI\\JxDOAqG6aPwIHOaW.mp4",
     "bytes": 4236037
+   },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and one sampled clip frame",
+    "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
    },
    "quality": "High motion (median 36.7, 12.6s).",
    "src": "assets/vid/VID-0325.webp",
@@ -47506,6 +47644,12 @@
     "path": "E:\\Downloads\\UI\\bFRpeI9t5IGSqNeR.mp4",
     "bytes": 9213328
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and one sampled clip frame",
+    "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+   },
    "quality": "Long clip (median 30.1 over 127.1s).",
    "source_note": "One of the longest recordings in the corpus.",
    "src": "assets/vid/VID-0326.webp",
@@ -47583,6 +47727,12 @@
    "origin": {
     "path": "E:\\Downloads\\UI\\d4luGZGJNmPcdP4e.mp4",
     "bytes": 2059875
+   },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and one sampled clip frame",
+    "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
    },
    "quality": "Real motion (median 5.1, 10.5s).",
    "src": "assets/vid/VID-0327.webp",
@@ -47673,22 +47823,25 @@
   {
    "id": "VID-0329",
    "kind": "video",
-   "category": "mobile-app-ui",
+   "category": "promo-reel",
    "type": "flow-walkthrough",
-   "title": "In-hand receipt OCR, live",
-   "description": "An in-hand capture: a crumpled paper receipt held to the back of a phone; the in-app OCR unfolds and flattens it live (crumpled → flat receipt 'Итого 470 ₽'), with a bottom bar 'Telegram / VK / Share'. A live in-hand receipt-scanning demo with Russian UI; the unfurl is the motion.",
+   "title": "muso song creation and gift-opening promo",
+   "description": "A light promotional sequence for muso. Sampled frames show a phone headed Create your song, a Make it yours section with Create My Song, and a black record-sleeve card with the muso name. Another frame reads You received a gift! with a Play your gift button. This is a music creation and gifting flow, not an in-hand receipt scanner.",
    "roles": [
-    "media"
+    "hero",
+    "media",
+    "onboarding"
    ],
    "style": [
+    "light-mode",
     "minimal"
    ],
    "tags": [
-    "camera",
-    "in-hand",
-    "receipt",
-    "scan",
-    "sharing"
+    "audio",
+    "cards",
+    "light-ui",
+    "music",
+    "onboarding"
    ],
    "palette": [
     "#F2EFEB",
@@ -47733,6 +47886,13 @@
     "path": "E:\\Downloads\\UI\\HmfHtN2nLBEMBPgz.mp4",
     "bytes": 5026453
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+    "note": "Corrects a confirmed mismatch: receipt-scanning metadata did not describe this media.",
+    "taxonomy_replaced": true
+   },
    "quality": "High motion (median 42.4, 25.1s).",
    "source_note": "Russian UI; 'Итого 470 ₽' = total 470 rubles.",
    "src": "assets/vid/VID-0329.webp",
@@ -47754,20 +47914,22 @@
    "kind": "video",
    "category": "promo-reel",
    "type": "flow-walkthrough",
-   "title": "Memory Photo mosaic wallpaper promo",
-   "description": "A '追忆 Photo' (Memory Photo) wallpaper app promo: a settings screen with a 'gradient card' item, then a phone with a dense mosaic of many photos, a mosaic being revealed over a dark grid, and a full mosaic + app icon '追忆 Photo — Download on the App Store'. A promo for a photo-mosaic wallpaper app; the reveal is the payoff.",
+   "title": "Lock-screen card editor promotional sequence",
+   "description": "A lock-screen card customisation promo on dark coloured backgrounds. Sampled frames show a pink lock screen, a card template selector, drawing and colour controls, reshaping of the small card and a Save it instruction. Headlines include Pick one of 29 designs and Draw right on it. The sampled sequence is about authored lock-screen cards, not a mosaic of photographs.",
    "roles": [
+    "editor",
     "hero"
    ],
    "style": [
-    "minimal"
+    "dark-mode",
+    "rounded"
    ],
    "tags": [
-    "app-store",
-    "cta",
-    "home-screen",
-    "photo-grid",
-    "promo"
+    "cards",
+    "color-picker",
+    "drawing",
+    "editor",
+    "ios"
    ],
    "palette": [
     "#210F1A",
@@ -47811,6 +47973,13 @@
    "origin": {
     "path": "E:\\Downloads\\UI\\Vdlw0EsJlf4Yh8YU.mp4",
     "bytes": 7783790
+   },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+    "note": "Corrects a confirmed mismatch: previous photo-mosaic description did not match the inspected frames.",
+    "taxonomy_replaced": true
    },
    "quality": "Very high motion (median 61.0, 31.4s).",
    "src": "assets/vid/VID-0330.webp",
@@ -49230,6 +49399,12 @@
     "path": "E:\\Downloads\\UI\\YvHKd-4wI1Pf3Xhf.mp4",
     "bytes": 10084262
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster only",
+    "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+   },
    "quality": "Card text small; headline and structure legible.",
    "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0349.webp",
@@ -50570,6 +50745,12 @@
     "path": "E:\\Downloads\\UI\\5py7m5St_dn4wsei.mp4",
     "bytes": 638435
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster only",
+    "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+   },
    "quality": "Scroll frames soft; composition legible.",
    "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0367.webp",
@@ -51025,6 +51206,12 @@
     "path": "E:\\Downloads\\UI\\uv13GVSsYSzLtgYx.mp4",
     "bytes": 4722095
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster only",
+    "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+   },
    "quality": "Scroll frames soft; headline legible.",
    "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0373.webp",
@@ -51331,6 +51518,12 @@
    "origin": {
     "path": "E:\\Downloads\\UI\\hxaYnQcv8WHvxOFi.mp4",
     "bytes": 29125525
+   },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster only",
+    "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
    },
    "quality": "Footer text small; composition legible.",
    "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
@@ -52820,6 +53013,12 @@
     "path": "E:\\Downloads\\UI\\M3_4afreWXr8-RSG.mp4",
     "bytes": 13546516
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster only",
+    "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+   },
    "quality": "Fast frames blur detail; fan legible.",
    "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0397.webp",
@@ -53041,6 +53240,12 @@
    "origin": {
     "path": "E:\\Downloads\\UI\\s6r7PLR65u_mDf6x.mp4",
     "bytes": 7424490
+   },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster only",
+    "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
    },
    "quality": "Photo-of-a-phone capture; screen content legible.",
    "src": "assets/vid/VID-0400.webp",
@@ -54500,6 +54705,12 @@
     "path": "E:\\Downloads\\UI\\jMCAN23R2vK8LEfw.mp4",
     "bytes": 1211475
    },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster only",
+    "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+   },
    "quality": "Card text small; hero legible.",
    "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",
    "src": "assets/vid/VID-0420.webp",
@@ -55254,6 +55465,12 @@
    "origin": {
     "path": "E:\\Downloads\\UI\\Oljg8RoPMhj7ZDnn.mp4",
     "bytes": 2202007
+   },
+   "review": {
+    "date": "2026-10-19",
+    "method": "visual inspection of derivative media",
+    "scope": "poster only",
+    "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
    },
    "quality": "Card text small; composition legible.",
    "source_note": "Poster-frame read 2026-09-26 — full clip not watched.",

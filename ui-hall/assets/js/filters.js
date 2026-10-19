@@ -122,8 +122,8 @@ const Filters = (() => {
 
     const sorters = {
       curated: (a, b) => (b._score ?? 0) - (a._score ?? 0) || a.id.localeCompare(b.id),
-      newest: (a, b) => (b._mtime || 0) - (a._mtime || 0),
-      oldest: (a, b) => (a._mtime || 0) - (b._mtime || 0),
+      newest: (a, b) => Number(b.id.slice(4)) - Number(a.id.slice(4)) || b.id.localeCompare(a.id),
+      oldest: (a, b) => Number(a.id.slice(4)) - Number(b.id.slice(4)) || a.id.localeCompare(b.id),
       title: (a, b) => a.title.localeCompare(b.title),
       motion: (a, b) => (b.motion ?? -1) - (a.motion ?? -1) || a.id.localeCompare(b.id),
     };

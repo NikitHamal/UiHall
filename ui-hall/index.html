@@ -2,6 +2,10 @@
 <html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
+<meta name="theme-color" content="#f6f5f1">
+<meta property="og:title" content="UiHall — A field guide to digital craft">
+<meta property="og:description" content="766 design references. Motion, interfaces, palettes, and a better starting point for your next build.">
+<meta property="og:image" content="https://nikithamal.github.io/UiHall/docs/preview.webp">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>UiHall — A field guide to digital craft</title>
 <meta name="description" content="Study interfaces worth understanding. Explore 766 design references, motion studies, measured palettes, and an evidence-driven workflow for AI agents.">
@@ -34,7 +38,7 @@
     </nav>
 
     <div class="topbar__tools">
-      <button class="board-trigger" id="boardOpen" type="button">Shortlist <span id="boardCount">0</span></button>
+      <button class="board-trigger" id="boardOpen" type="button">Shortlist <span id="boardCount" aria-label="0 saved references">0</span></button>
       <button class="iconbtn" id="themeToggle" type="button" aria-label="Toggle light and dark theme" title="Toggle theme">
         <span class="iconbtn__glyph" aria-hidden="true"></span>
       </button>
@@ -43,6 +47,7 @@
       </button>
     </div>
   </div>
+<nav class="mobile-nav" aria-label="Browse archive"><a href="#/" data-link data-nav="gallery">Explore</a><a href="#/sets" data-link data-nav="sets">Collections</a><a href="#/motion" data-link data-nav="motion">Motion</a><a href="#/palettes" data-link data-nav="palettes">Palettes</a><a href="#/typography" data-link data-nav="typography">Type</a><a href="#/patterns" data-link data-nav="patterns">Patterns</a><a href="#/agents" data-link data-nav="agents">For agents ↗</a></nav>
 </header>
 
 <section class="hero" id="hero" hidden aria-label="A field guide to digital craft">
@@ -66,10 +71,11 @@
 </section>
 <div class="archive-strip" id="explore"><span>A growing collection. A sharper eye.</span><span>SCREENS · SYSTEMS · MOTION · TYPE <span aria-hidden="true">↓</span></span></div>
 
+<button id="filterDismiss" class="filter-dismiss" type="button" aria-label="Close filters" hidden></button>
 <div class="shell" id="shell">
 
   <aside class="sidebar" id="sidebar" aria-label="Filters">
-    <div class="sidebar__label">THE INDEX <span>↙</span></div>
+    <div class="sidebar__label">THE INDEX <span>↙</span><button type="button" id="filterClose" aria-label="Close filters">×</button></div>
     <form class="filters" id="filters" role="search" onsubmit="return false">
       <div class="filters__group filters__group--search">
         <label class="sr-only" for="q">Search</label>
@@ -181,8 +187,8 @@
           <span class="select__label" id="sortLabel">Sort</span>
           <select id="sort" aria-labelledby="sortLabel">
             <option value="curated">Curated</option>
-            <option value="newest">Newest first</option>
-            <option value="oldest">Oldest first</option>
+            <option value="newest">Reference ID ↓</option>
+            <option value="oldest">Reference ID ↑</option>
             <option value="title">A → Z</option>
             <option value="motion">Most motion</option>
           </select>

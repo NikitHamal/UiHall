@@ -346,6 +346,7 @@ export async function callTool(name, args, corpus, here) {
           ? { duration_s: a.duration_s, fps: a.fps, frame_diff: a.motion, clip_available: !!a.clip }
           : undefined,
         salvage_note: a.quality,
+        review: a.review || null,
         provenance: { description: 'Inherited corpus annotation; verify against the actual image before citing.', palette: 'Pixel samples, not semantic design tokens.', attribution: 'Original designer/source URL not verified; reference only.', quality: a.quality || null },
         printed_palette: corpus.printed_palettes?.[a.id] || null,
         source_file: a.origin?.path,

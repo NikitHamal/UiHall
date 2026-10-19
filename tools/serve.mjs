@@ -4,7 +4,7 @@
  *   node tools/serve.mjs            -> http://127.0.0.1:8788
  *   node tools/serve.mjs 9000       -> http://127.0.0.1:9000
  *
- * Serves E:/Stormy/ui-hall so relative asset paths resolve the way they will
+ * Serves the checkout’s ui-hall directory so relative asset paths resolve the way they will
  * when the folder is deployed. Range requests are supported because the browser
  * issues them for <video> playback.
  */
@@ -37,6 +37,7 @@ function send(res, code, body, headers = {}) {
 }
 
 const server = http.createServer((req, res) => {
+  if (!["GET", "HEAD"].includes(req.method)) return send(res, 405, "method not allowed", { Allow: "GET, HEAD" });
   let urlPath;
   try {
     urlPath = decodeURIComponent(new URL(req.url, "http://x").pathname);
@@ -47,7 +48,7 @@ const server = http.createServer((req, res) => {
   const filePath = path.join(ROOT, urlPath);
 
   // Contain the served tree inside ROOT.
-  if (!filePath.startsWith(ROOT)) return send(res, 403, "forbidden");
+  if (filePath !== ROOT && !filePath.startsWith(ROOT + path.sep)) return send(res, 403, "forbidden");
 
   fs.stat(filePath, (err, st) => {
     if (err || !st.isFile()) return send(res, 404, "not found: " + urlPath);
@@ -55,12 +56,11 @@ const server = http.createServer((req, res) => {
 
     const range = req.headers.range;
     if (range && /^bytes=/.test(range)) {
-      const [startS, endS] = range.replace(/^bytes=/, "").split("-");
-      const start = startS ? Number(startS) : 0;
-      const end = endS ? Number(endS) : st.size - 1;
-      if (Number.isNaN(start) || Number.isNaN(end) || start > end || end >= st.size) {
-        return send(res, 416, "", { "Content-Range": `bytes */${st.size}` });
-      }
+      const match = /^bytes=(\d*)-(\d*)$/.exec(range);
+      if (!match || (!match[1] && !match[2])) return send(res, 416, "", { "Content-Range": `bytes */${st.size}` });
+      const start = match[1] ? Number(match[1]) : Math.max(0, st.size - Number(match[2]));
+      const end = match[1] && match[2] ? Math.min(Number(match[2]), st.size - 1) : st.size - 1;
+      if (!Number.isSafeInteger(start) || !Number.isSafeInteger(end) || start < 0 || start > end || start >= st.size) return send(res, 416, "", { "Content-Range": `bytes */${st.size}` });
       res.writeHead(206, {
         "Content-Type": type,
         "Content-Length": end - start + 1,
@@ -68,18 +68,23 @@ const server = http.createServer((req, res) => {
         "Accept-Ranges": "bytes",
         "Cache-Control": "no-store",
       });
-      return fs.createReadStream(filePath, { start, end }).pipe(res);
+      if (req.method === "HEAD") return res.end();
+      return fs.createReadStream(filePath, { start, end }).on("error", () => res.destroy()).pipe(res);
     }
 
-    send(res, 200, fs.readFileSync(filePath), {
+    res.writeHead(200, {
       "Content-Type": type,
       "Content-Length": st.size,
       "Accept-Ranges": "bytes",
+      "Cache-Control": "no-store",
     });
+    if (req.method === "HEAD") return res.end();
+    fs.createReadStream(filePath).on("error", () => res.destroy()).pipe(res);
+
   });
 });
 
-server.listen(PORT, "127.0.0.1", () => {
+server.listen(PORT, process.env.HOST || "127.0.0.1", () => {
   console.log(`UI Hall  ->  http://127.0.0.1:${PORT}/`);
   console.log(`root: ${ROOT}`);
 });

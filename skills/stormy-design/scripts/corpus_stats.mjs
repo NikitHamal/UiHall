@@ -17,6 +17,7 @@ function findCorpus() {
   // HERE is skills/stormy-design/scripts, so the repo root is three levels up.
   // Resolving only two levels up landed on skills/ and never found the corpus.
   const candidates = [
+    process.env.UIHALL_CORPUS,
     process.env.STORMY_CORPUS,
     path.resolve(HERE, '..', '..', '..', 'ui-hall', 'data', 'corpus.json'),
     path.resolve(HERE, '..', '..', 'ui-hall', 'data', 'corpus.json'),
@@ -56,10 +57,10 @@ const withoutDesc = assets.filter((a) => !a.description);
 
 const fmt = new Intl.NumberFormat('en');
 
-console.log(`\nStormy design corpus`);
+console.log(`\nUiHall design corpus`);
 console.log(`  file        ${file}`);
 console.log(`  assets      ${fmt.format(assets.length)}  (${fmt.format(corpus.totals.images)} images, ${fmt.format(corpus.totals.videos)} video sources)`);
-console.log(`  described   ${fmt.format(described.length)}  (${Math.round((described.length / assets.length) * 100)}% carry a hand-written visual review)`);
+console.log(`  described   ${fmt.format(described.length)}  (${Math.round((described.length / assets.length) * 100)}% carry an inherited description)`);
 console.log(`  motion      ${fmt.format(corpus.totals.clips)} assets ship a playable clip`);
 
 console.log(`\nby category`);
@@ -87,7 +88,7 @@ if (withoutDesc.length) {
   }
 }
 if (withQuality.length) {
-  console.log(`  ${withQuality.length} assets carry a salvage note (cropped, low-res or partially obscured).`);
+  console.log(`  ${withQuality.length} assets carry a capture note; this field includes positive and negative observations.`);
 }
 if (missing.length) {
   console.log(`  ${missing.length} referenced files are missing on disk — the corpus needs a rebuild:`);
@@ -96,3 +97,5 @@ if (missing.length) {
   console.log(`  every referenced asset file exists on disk`);
 }
 console.log();
+
+console.log(`  ${assets.filter(a => a.review).length} records carry a scoped independent review; description coverage is not verification.`);
