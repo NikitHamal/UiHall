@@ -116,7 +116,7 @@ async function main() {
   check('reports usage guidance', !!facets.usage?.start_with);
 
   // Uncapped: the full enumeration must account for every asset exactly once.
-  const facetsAll = jsonOf(await rpc('tools/call', { name: 'list_facets', arguments: { dimension: 'categories', limit: 500 } }));
+  const facetsAll = jsonOf(await rpc('tools/call', { name: 'list_facets', arguments: { dimension: 'categories', limit: 400 } }));
   check('category counts sum to the corpus', (facetsAll.categories ?? []).reduce((s, c) => s + c.count, 0) === assetTotal,
     `${(facetsAll.categories ?? []).reduce((s, c) => s + c.count, 0)} vs ${assetTotal}`);
   check('no truncation when the limit is generous', facetsAll.truncated === false,

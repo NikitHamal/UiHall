@@ -14,9 +14,10 @@ import json
 import os
 import re
 import sys
+from pathlib import Path
 from collections import Counter
 
-ROOT = r"E:\Stormy"
+ROOT = str(Path(os.environ.get("UIHALL_ROOT", Path(__file__).resolve().parents[1])).resolve())
 META = os.path.join(ROOT, "_work", "meta")
 DESC = os.path.join(META, "descriptions")
 OUT = os.path.join(ROOT, "ui-hall", "data", "corpus.json")
