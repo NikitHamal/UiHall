@@ -108,7 +108,7 @@ function contrast(a, b) {
 
 /** Accessible text colour for a given background. */
 function inkOn(hex) {
-  return contrast(hex, '#ffffff') >= contrast(hex, '#111111') ? '#ffffff' : '#111111';
+  return contrast(hex, '#ffffff') >= contrast(hex, '#000000') ? '#ffffff' : '#000000';
 }
 
 /* ----------------------------------------------------------------- misc --- */

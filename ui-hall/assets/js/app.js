@@ -31,7 +31,7 @@ const App = (() => {
   }
 
   function buildFacets() {
-    const assets = DATA.all();
+    const assets = Filters.currentRoute() === 'motion' ? DATA.all().filter(a => a.clip) : DATA.all();
     const cats = corpus.categories || [];
 
     // category
@@ -158,7 +158,7 @@ const App = (() => {
       }
     }
     if (s.q) items.push({ k: 'q', v: s.q, label: `“${s.q}”` });
-    if (s.kind !== 'all') items.push({ k: 'kind', v: s.kind, label: s.kind === 'image' ? 'Images only' : 'Video only' });
+    if (s.kind !== 'all' && Filters.currentRoute() !== 'motion') items.push({ k: 'kind', v: s.kind, label: s.kind === 'image' ? 'Images only' : 'Video only' });
     if (s.seed) items.push({ k: 'seed', v: '', label: 'shuffled' });
 
     bar.hidden = items.length === 0;
@@ -271,6 +271,12 @@ const App = (() => {
   function render() {
     const route = Filters.currentRoute();
     applyRouteScope();
+    syncControls();
+    const isReferencePage = !['gallery', 'motion', 'before-after'].includes(route);
+    document.getElementById('shell').classList.toggle('is-reference-page', isReferencePage);
+    document.getElementById('filterToggle').hidden = isReferencePage;
+    document.getElementById('fKind').closest('.filters__group').hidden = route === 'motion';
+    if (isReferencePage) document.getElementById('activeFilters').hidden = true;
 
     for (const a of document.querySelectorAll('[data-nav]')) {
       a.classList.toggle('is-active', a.dataset.nav === route);
@@ -296,7 +302,7 @@ const App = (() => {
       typography: 'Twelve typefaces rendered from the actual woff2 files in this repo, with a live playground and copy-paste integration notes. All SIL Open Font License 1.1.',
       patterns: 'Layout idioms that recur often enough across the corpus to be worth naming.',
       'before-after': 'Paired evidence. The same brief executed twice, where the delta is the lesson.',
-      motion: 'Clips that show a transition rather than a still screen. Static recordings are not included.',
+      motion: 'Playable references for studying interactions. Recordings may include camera movement and editing; inspect before drawing conclusions.',
       about: 'What this is, where the material came from, and how to read it.',
     }[route] || '';
 
@@ -439,12 +445,12 @@ const App = (() => {
       const bands = el('div', { class: 'palcard__bands' });
       bands.append(el('div', {
         class: 'palcard__band',
-        style: `background:${top.hex};color:${top.name ? top.ink || inkOn(top.hex) : inkOn(top.hex)}`,
+        style: `background:${top.hex};color:${top.ink && contrast(top.hex, top.ink) >= 4.5 ? top.ink : inkOn(top.hex)}`,
         text: top.name || a.title.split('/')[0].trim(),
       }));
       bands.append(el('div', {
         class: 'palcard__band',
-        style: `background:${bottom.hex};color:${bottom.name ? bottom.ink || inkOn(bottom.hex) : inkOn(bottom.hex)}`,
+        style: `background:${bottom.hex};color:${bottom.ink && contrast(bottom.hex, bottom.ink) >= 4.5 ? bottom.ink : inkOn(bottom.hex)}`,
         text: bottom.name || (a.title.split('/')[1] || '').trim(),
       }));
       card.append(bands);
@@ -556,10 +562,10 @@ const App = (() => {
 
     wrap.append(el('div', { class: 'stats' },
       stat(t.assets, 'assets'), stat(t.images, 'images'), stat(t.videos, 'video sources'),
-      stat(t.clips, 'motion clips'), stat(t.described, 'visually reviewed')));
+      stat(t.clips, 'motion clips'), stat(corpus.assets.filter(a => a.review).length, 'scoped visual reviews')));
 
     wrap.append(el('h2', { text: 'What this is' }));
-    wrap.append(el('p', { html: `UI Hall is a catalogue of interface design collected from real product work — other people's apps and websites, screenshotted and saved over time. Every item was looked at individually and written up: what it is, what it is <em>for</em>, how it is styled, and what its colours actually are. The result is a searchable reference you can point an agent at, rather than a folder of images nobody opens.` }));
+    wrap.append(el('p', { html: `UI Hall is a catalogue of interface design collected from real product work — other people's apps and websites, screenshotted and saved over time. Every item carries an inherited description of its purpose and visual character. Some descriptions have been found to be wrong; scoped visual-review notes record what has actually been rechecked. The result is a searchable reference you can point an agent at, rather than a folder of images nobody opens.` }));
 
     wrap.append(el('h2', { text: 'What is in it' }));
     const cats = el('div', { class: 'catgrid' });
@@ -587,7 +593,7 @@ const App = (() => {
       el('li', { html: `<strong>Hue</strong> is computed from the palette, so a "blue" filter finds screens that actually contain blue at meaningful area — it does not rely on anyone tagging them.` })));
 
     wrap.append(el('h2', { text: 'Provenance and licensing' }));
-    wrap.append(el('p', { html: `This is a personal study collection assembled from public sources. Interfaces belong to their designers and companies; nothing here is licensed for redistribution or reuse in a shipped product. It is a reference for <em>learning the vocabulary</em> — the layout conventions, the rhythm, the colour logic — not a source of assets. Source filenames and paths are recorded on every item so anything can be traced back.` }));
+    wrap.append(el('p', { html: `This is a personal study collection assembled from public sources. Interfaces belong to their designers and companies; this archive does not grant rights to redistribute reference media or use it in a shipped product. It is a reference for <em>learning the vocabulary</em> — the layout conventions, the rhythm, the colour logic — not a source of assets. Source filenames and paths are recorded on every item so anything can be traced back.` }));
 
     wrap.append(el('h2', { text: 'Known limits' }));
     wrap.append(el('ul', {},

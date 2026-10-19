@@ -64,6 +64,8 @@ function brief(a, { withPalette = true } = {}) {
     kind: a.kind,
     category: a.category,
     type: a.type,
+    description_status: a.review ? 'scoped visual review; see get_asset' : 'inherited; not independently verified',
+    review_scope: a.review?.scope || null,
   };
   if (a.roles?.length) o.roles = a.roles;
   if (a.style?.length) o.style = a.style;
@@ -684,7 +686,7 @@ export async function callTool(name, args, corpus, here) {
       const selected = args.ids.map(id => requireAsset(assets, id));
       return {
         goal: args.goal, platform: args.platform || 'web',
-        evidence: selected.map(a => ({ id:a.id, title:a.title, inherited_description:a.description || null, inspect:{tool:'asset_image',arguments:{id:a.id}}, palette_samples:a.palette || [], capture_note:a.quality || null })),
+        evidence: selected.map(a => ({ id:a.id, title:a.title, inherited_description:a.description || null, review:a.review || null, inspect:{tool:'asset_image',arguments:{id:a.id}}, palette_samples:a.palette || [], capture_note:a.quality || null })),
         decisions_to_author: ['Primary user, job and action', 'Information hierarchy and content density', 'Original composition and responsive layout', 'Semantic colour/type/spacing/radius tokens with contrast checks', 'Interactive components and state ownership', 'Motion purpose, trigger, duration, easing, cancellation and reduced-motion fallback'],
         acceptance: ['References opened and observations cited by ID', 'No unverified description promoted to visual fact', 'Text/background contrast tested: 4.5:1 normal, 3:1 large', 'Keyboard order, visible focus, dialog containment and Escape tested', '360px, 768px and 1440px layouts inspected without overflow', 'Empty, loading, error, long labels and missing-media states exercised', 'Reduced-motion preference tested; no required autoplay', 'Original implementation, no copied product identity or unlicensed corpus media'],
         attribution: 'Reference-only corpus; original authors and reuse rights are not established by file names.',
@@ -868,3 +870,5 @@ export function validateToolArgs(name, args) {
   }
   validate(args, tool.inputSchema, 'arguments');
 }
+
+for (const tool of TOOLS) tool.inputSchema.additionalProperties = false;

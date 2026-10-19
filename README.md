@@ -1,284 +1,166 @@
-# Stormy
+# UiHall
 
-A design reference you can point an agent at.
+**A field guide to digital craft — for people and their agents.**
 
-Stormy is a curated corpus of mobile and web interface design — screenshots, mockups, brand
-work, store panels, motion clips — where **every item was looked at and written up**, and
-**every colour was measured from the pixels**. It ships as two things that share one corpus:
+UiHall connects a browsable design archive, a local MCP server and an evidence-driven
+design skill. Find references, inspect the actual media, compare principles, and
+build something original. The archive itself is a [worked example](docs/case-study.md).
 
-- **`ui-hall/`** — a browsable, filterable gallery (vanilla HTML/CSS/JS, no build step)
-- **`stormy-mcp/`** — an MCP server that exposes the corpus as design tools to an agent
-- **`skills/stormy-design/`** — the skill that tells an agent how to use them well
+![UiHall study-table interface](docs/preview.webp)
 
----
-
-## Why this exists
-
-An agent asked to "design a finance app" produces a blue gradient, a card and a rounded
-button, because that is the average of everything it has seen. The fix is not a better
-prompt — it is giving the agent specific, real, and *described* examples to reason from.
-
-That is what the corpus is. It is not a scraped image dump. Each asset carries:
-
-| Field | How it was produced |
-|---|---|
-| `description` | Read from the actual image, by looking at it |
-| `category`, `type`, `roles`, `style`, `tags` | Assigned against a shared taxonomy |
-| `palette_detail` | k-means over the real pixels, with area percentages |
-| `quality` | An honest note when the capture is cropped or low-res |
-| `motion` | Measured frame-to-frame change, so "is this a motion study" is answered, not assumed |
-
----
-
-## Layout
-
-```
-Stormy/
-├── ui-hall/
-│   ├── index.html              the app shell — open this directly, it works
-│   ├── assets/css/             tokens.css (design system) + app.css
-│   ├── assets/js/              8 modules: data, util, listbox, filters, patterns, render, pages, app
-│   ├── assets/fonts/           Inter Variable (SIL OFL 1.1) + its licence
-│   ├── assets/img/             306 full-size webp derivatives
-│   ├── assets/thumb/           grid thumbnails
-│   ├── assets/vid/             posters (.webp) + motion clips (.webm)
-│   └── data/corpus.json        ← the single source of truth
-│       data/corpus.js          generated twin, so file:// also works
-├── stormy-mcp/
-│   ├── server.js               stdio JSON-RPC, zero dependencies
-│   ├── tools.js                the nine design tools
-│   ├── taxonomy.json           the shared vocabulary
-│   ├── selftest.js             69 protocol-level assertions
-│   └── corpus.json             (symlink or copy — built at release)
-├── skills/stormy-design/
-│   ├── SKILL.md                the workflow
-│   └── scripts/                stormy.mjs, corpus_stats.mjs — work without the MCP
-├── tools/                      the build pipeline (Python) + the browser harnesses (Node)
-└── _work/                      intermediates: contact sheets, triage, reports, shots
-```
-
----
-
-## The review loop
-
-Describing 483 assets by hand is the slow part, so it is a loop with a check at each step
-rather than one long pass. The point of the tooling is that the *source files* stay correct
-and the taxonomy stays closed — a tag that exists for exactly one asset is noise in the facet
-list, so unknown tags are dropped and reported rather than quietly kept.
+## Start exploring
 
 ```bash
-# 1. build contact sheets from the PROCESSED images, so a description written
-#    off a sheet matches what the site actually shows
-"$PY" tools/review_sheets.py --category brand-identity      # or no flag for all undescribed
-"$PY" tools/remaining.py                                    # which sheets still have gaps
-
-# 2. write _work/meta/descriptions/<batch>.json, then check it against the vocabulary
-"$PY" tools/normalise_batch.py _work/meta/descriptions/mobile-ui-10.json
-#    -> reports tags that belong in style/roles, and genuine vocabulary gaps
-"$PY" tools/taxonomy_add.py --apply        # register concepts nothing existing covers
-"$PY" tools/normalise_batch.py _work/meta/descriptions/mobile-ui-10.json --apply
-
-# 3. rebuild and check coverage
-"$PY" tools/build_corpus.py                # must print 0 warnings
-"$PY" tools/coverage.py                    # per-category description coverage
+git clone https://github.com/NikitHamal/UiHall.git
+cd UiHall
+node tools/serve.mjs 8788
 ```
 
-Note that `review_sheets.py` names its output by category. An earlier version wrote a bare
-`review_NN.jpg`, so a second run for another category silently overwrote the first run's
-sheets *and* its `mapping.json`.
+Open **http://localhost:8788**. The gallery has no production build step or runtime
+dependencies. You can also open `ui-hall/index.html` directly; generated JavaScript
+corpus twins support `file://`. Use the HTTP server for video seeking and clipboard
+access. Node 18+ is required for the server and tools; Python 3.10+ for data tooling.
 
----
+The redesigned workbench includes category shortcuts, search and facets, screen
+collections, typography specimens, measured palettes, patterns, and a Motion Room.
+Save references to a local shortlist and copy an evidence-linked implementation
+brief. Boards stay in your browser; no cloud account or AI API key is required.
 
-## The interface itself
+## Give an agent access
 
-UI Hall is the first thing built with the Stormy skill rather than just the thing that
-holds the corpus. It is a design catalogue, so its own chrome is a claim about taste.
-
-**Type.** Inter Variable, self-hosted (`assets/fonts/InterVariable.woff2`, 352 KB, SIL OFL
-1.1). One file carries the whole 100–900 weight range and an optical-size axis, replacing
-nine static faces. `font-optical-sizing: auto` lets the display sizes take the tighter cut
-automatically, and tracking is set per size rather than once for the page — large type needs
-negative tracking, small type needs a little positive. The fallback stack includes Noto Sans
-and Nirmala UI because the corpus contains some Devanagari, which Inter does not cover.
-
-**Controls.** Every widget is custom, because a native one cannot be styled:
-
-| Control | Why it is custom |
-|---|---|
-| Sort dropdown | A `<select>` popup is drawn by the OS and is unstylable. Replaced with an ARIA listbox — full keyboard support, type-ahead, `aria-activedescendant`, Escape to close, focus return. See `assets/js/listbox.js`. |
-| Size slider | Only the track and thumb are replaced (`::-webkit-slider-*`, `::-moz-range-*`); the native input stays so keyboard and screen readers are untouched. |
-| Chips, segmented controls, buttons | Already custom; now with consistent hover, press and focus states. |
-
-The listbox is progressive enhancement: the real `<select>` stays in the DOM as the value
-and event source, so `el.value` and `change` listeners keep working. Existing code did not
-change.
-
-**Details.** One `:focus-visible` ring from a single token, tabular numerals on every count
-so figures stop jittering, a themed scrollbar, a `::selection` colour, and a card-shaped
-loading skeleton so the first paint is never a bare grid. All motion respects
-`prefers-reduced-motion`.
-
----
-
-## Building the corpus from scratch
-
-The pipeline is inspectable at every step, and re-runnable. It starts from a folder of
-collected files and ends at `corpus.json`.
-
-```bash
-PY="C:/Users/Acer/.workbuddy-ai/binaries/python/envs/stormy/Scripts/python.exe"
-
-# 1. inventory every image and video, assign stable IDs
-"$PY" tools/inventory.py
-
-# 2. build labelled contact sheets so everything can be reviewed visually
-"$PY" tools/make_sheets.py images 4 4
-"$PY" tools/make_sheets.py posters 4 4
-
-# 3. triage: record which items carry design value, and drop exact duplicates
-"$PY" tools/triage.py
-"$PY" tools/dedup.py
-
-# 4. extract a poster frame + strip from every video
-"$PY" tools/extract_vid_frames.py
-
-# 5. measure how much each video actually moves
-"$PY" tools/motion_probe.py
-
-# 6. encode web derivatives: webp images, webm clips, thumbnails
-"$PY" tools/encode_assets.py all
-
-# 7. merge measured data + hand-written reviews into the corpus
-#    Printed palettes are folded in by this step itself, from
-#    _work/meta/printed_palettes.json — running a separate script here would be
-#    lost the next time this file runs.
-"$PY" tools/build_corpus.py
-```
-
-## Verifying it
-
-Both harnesses drive the real site in headless Chrome over raw CDP WebSocket, with no npm
-install and no test framework. They start their own static server and tear it down again,
-so they work from a cold shell.
-
-```bash
-NODE="C:/Users/Acer/.workbuddy-ai/binaries/node/versions/22.22.2-3/node.exe"
-
-"$NODE" tools/verify_ui.mjs          # 62 assertions: data, type, controls, filters, routes, lightbox
-"$NODE" tools/verify_file_url.mjs    # 10 assertions: the file:// path, incl. video decode
-"$NODE" tools/shoot.mjs              # 10 screenshots into _work/shots/
-cd stormy-mcp && "$NODE" selftest.js # 69 assertions against the real MCP server
-```
-
-`shoot.mjs` refuses to write a screenshot if the page did not render. Without that guard a
-dead server produces nine identical PNGs of Chrome's error page, and the only symptom is
-that every file has the same byte size.
-
-The hand-written reviews live in `_work/meta/descriptions/*.json`. Those are the only
-non-derived inputs; everything else is computed.
-
-### Why the video pipeline is the way it is
-
-The Playwright ffmpeg build ships only `mjpeg` and `libvpx` — no H.264 encoder, and no
-`hstack`/`tile` filters. OpenCV both decodes the sources and *writes* VP8 through
-`VideoWriter`, so re-encoding runs entirely in-process with no external binary and no
-40 MB `av` wheel. Motion is measured with a mean-absolute-frame-difference probe, and only
-clips that actually move are shipped as video.
-
----
-
-## Running UI Hall
-
-**Double-click `ui-hall/index.html`.** That works, and it is the normal way to use the hall.
-
-A browser blocks `fetch()` on `file://` URLs — the origin is `null`, so every request counts
-as cross-origin. So the data layer has two load paths: on `http(s)` it fetches
-`data/corpus.json`, and on `file://` it loads the generated `data/corpus.js` through a
-classic `<script>` tag, which is not blocked. `corpus.js` is a build artifact of
-`tools/build_corpus.py`; `corpus.json` stays the single source of truth because the MCP
-reads it from disk.
-
-To serve it over http instead — useful for a shareable URL, or a browser strict about local
-media playback — double-click **`start.cmd`**, or:
-
-```bash
-node tools/serve.mjs 8099     # then open http://127.0.0.1:8099/
-```
-
-`serve.mjs` is dependency-free and supports HTTP Range requests, which `<video>` needs to
-seek. It also contains every request inside the served root.
-
-### Verifying both load paths
-
-```bash
-node tools/verify_ui.mjs        # 43 assertions over http
-node tools/verify_file_url.mjs  # 10 assertions over file://, incl. video decode
-```
-
-Both start and stop their own server, so they work from a cold shell.
-
----
-
-## Connecting the MCP
-
-Add to `~/.workbuddy-ai/mcp.json`:
+Add this configuration to your MCP client's supported configuration file. Replace
+the absolute path with your checkout. The legacy `stormy-mcp` directory remains
+compatible; the product is UiHall.
 
 ```json
 {
   "mcpServers": {
-    "stormy": {
-      "command": "C:/Users/Acer/.workbuddy-ai/binaries/node/versions/22.22.2-3/node.exe",
-      "args": ["E:/Stormy/stormy-mcp/server.js"]
+    "uihall": {
+      "command": "node",
+      "args": ["/absolute/path/to/UiHall/stormy-mcp/server.js"]
     }
   }
 }
 ```
 
-Then **trust the server** in the connector management page — a newly written config does
-not activate on its own.
+The stdio server is dependency-free and writes only JSON-RPC to stdout. It supports
+protocol negotiation for 2024-11-05 through 2025-11-25, read-only tool annotations,
+native image responses, a corpus overview resource and a reference-to-interface
+prompt. It does not require a hosted service.
 
-Verify before trusting it:
+| Tool | What it helps you do |
+|---|---|
+| `search_designs` | Ranked local term search, facets, match terms, pagination |
+| `get_asset` | Complete description, palette, media and review caveats |
+| `asset_image` | Inspect actual image content in the MCP client |
+| `list_facets` | Discover the corpus vocabulary and counts |
+| `find_patterns` | Find candidate structural patterns to inspect |
+| `design_brief` | Gather relevant examples, palette samples and pattern hypotheses |
+| `palette_for` | Distinguish printed colours from samples and check contrast |
+| `compare_pair` | Find before/after reference records |
+| `compare_designs` | Compare 2–4 explicitly selected references |
+| `motion_studies` | Find playable clips and a motion observation worksheet |
+| `implementation_plan` | Create an evidence-linked implementation worksheet |
+| `corpus_stats` | Establish coverage and interpretation limits |
+
+For image calls, `embed:false` returns paths only; `which:"web"` selects the full
+image (up to 5 MB). The default embedded image is the thumbnail. Motion tools return
+clip paths; an agent must open the clips to observe motion. Search is weighted term
+overlap, not embeddings. An implementation plan is a worksheet, not generated UI.
+
+## Install the design skill
+
+Use [skills/stormy-design/SKILL.md](skills/stormy-design/SKILL.md) in a skill-aware
+agent. Copy the `stormy-design` directory into that client's supported skill
+location and set `UIHALL_ROOT` to the full checkout. The skill teaches discovery,
+visual inspection, original composition, tokens, motion and browser verification.
+
+Without MCP, use the same engine from the CLI:
 
 ```bash
-"$NODE" stormy-mcp/selftest.js
+node skills/stormy-design/scripts/stormy.mjs search "editorial website" --limit 4
+node skills/stormy-design/scripts/stormy.mjs image VID-0377
+node skills/stormy-design/scripts/stormy.mjs motion "card" --limit 3
+node skills/stormy-design/scripts/stormy.mjs plan "Design reference archive" --ids VID-0377,VID-0397
 ```
 
-### The nine tools
+`UIHALL_CORPUS` overrides the corpus location; `STORMY_CORPUS` remains supported.
+`npm run package:skill` creates a ZIP containing instructions, CLI, tool engine and
+metadata. It excludes third-party reference media. Clone the full repository for
+visual inspection. See the [marketplace draft](docs/marketplace.md) for packaging
+scope and claims; no marketplace listing has been published.
 
-| Tool | Question it answers |
-|---|---|
-| `search_designs` | "show me screens like this" |
-| `get_asset` | "tell me everything about this one" |
-| `list_facets` | "what can this corpus even speak to" |
-| `find_patterns` | "how should I lay this out" |
-| `design_brief` | "give me everything for this screen at once" |
-| `palette_for` | "what colours should this be" |
-| `compare_pair` | "show me this done badly and well" |
-| `asset_image` | "where is the file so I can look at it" |
-| `corpus_stats` | "how much evidence is there" |
+## What the corpus actually contains
 
----
+This release indexes **766 references**: 433 images, 333 video sources and 273
+playable clips. All records carry descriptions. **That is coverage, not proof of
+accuracy.** Nine descriptions were rewritten after direct inspection and 32 records
+have scoped visual-review notes; 734 remain without that independent review.
 
-## Honesty contract
+Pixel palettes are k-means samples, not semantic design tokens. Named palette
+cards also have separately recorded *printed* values. A recording's duration and
+mean frame difference do not establish transition timing, easing or quality.
+Descriptions, inferred platforms and layout-pattern heuristics can be wrong.
 
-The corpus distinguishes three kinds of claim, and the tooling never blurs them:
+The [audit report](docs/corpus-audit.json) records structural checks and review
+coverage. `python3 tools/audit_corpus.py` checks all media references, IDs, taxonomy,
+facet counts, totals, palette values, group members and generated corpus twins.
+It does not pretend to visually verify the corpus.
 
-1. **Measured** — dimensions, palettes, motion, contrast ratios. Computed, reproducible.
-2. **Observed** — descriptions. Written by looking at the image; where text was too small
-   to read, the description says so instead of inventing copy.
-3. **Inferred** — platform labels. Flagged as inference.
+## Develop and verify
 
-`corpus_stats.mjs` reports coverage gaps alongside totals, so any claim built on the corpus
-can state its own confidence. Assets that are cropped, low-resolution or partially obscured
-carry a salvage note rather than being quietly dropped.
+```bash
+npm ci
+npx playwright install --with-deps chromium
+npm test
+npm run test:browser
+npm run audit
+```
 
----
+A ready-to-enable GitHub Actions configuration is provided at
+`docs/ci/verify.yml`. Move it to `.github/workflows/verify.yml` using a connection
+with workflow-write permission; the current connector rejected an active workflow.
 
-## Provenance
+The site and MCP need no npm installation for use. npm dependencies are development
+only: browser automation and accessibility checks. To capture previews, set
+`UIHALL_SHOTS` to an output directory when running the browser checks.
 
-The material was collected from public sources for personal study. Interfaces belong to the
-people who designed them. Nothing here is licensed for redistribution, and it should not be
-used to ship a clone of a specific product. It is a reference for learning the *vocabulary*
-of interface design — the layout conventions, the spacing rhythm, the colour logic.
+To update descriptions, add ID-keyed overrides under `_work/meta/descriptions/`.
+Later filenames take precedence, merging individual fields. Record what was
+actually inspected in `review`; do not label an entire clip verified after looking
+at a poster. `review.taxonomy_replaced:true` prevents obsolete video-triage tags
+from reappearing after a reviewed correction.
 
-Every asset records its original source path so anything can be traced back.
+```bash
+python3 tools/build_corpus.py
+python3 tools/audit_corpus.py --out docs/corpus-audit.json
+```
+
+The builder resolves the checkout automatically (`UIHALL_ROOT` may override it).
+It preserves measured metadata and emits both `corpus.json` and `corpus.js`.
+Original ingestion/encoding utilities under `tools/` include archival workflows
+that may still require the original source collection and external media tools;
+they are not required to browse, run MCP, rebuild metadata or run the audit.
+
+## Layout
+
+```text
+ui-hall/                 Static workbench and processed reference media
+stormy-mcp/              Local stdio MCP server and shared tool engine
+skills/stormy-design/    Portable workflow and CLI adapter
+_work/meta/              Source measurements, annotations and review overrides
+tools/                   Builder, integrity audit, browser checks, skill packaging
+docs/                    Case study, audit output and marketplace draft
+```
+
+## Rights and attribution
+
+UiHall is a study collection. Third-party screenshots, videos, interface designs,
+brand marks and artwork belong to their respective creators. File paths are not
+verified creator attribution. This project does not grant commercial reuse rights
+to that media or authorize shipping a recognizable product clone. Self-hosted
+fonts carry their own licences in `ui-hall/assets/fonts/`.
+
+The MCP package retains its existing MIT declaration for source code; that
+statement does not license third-party reference media. Review rights and provide
+creator attribution before redistributing any media or selling a media bundle.
