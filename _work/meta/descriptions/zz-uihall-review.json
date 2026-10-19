@@ -1,0 +1,448 @@
+{
+  "items": {
+    "VID-0300": {
+      "id": "VID-0300",
+      "title": "Die Cars collector profile and achievement badges",
+      "description": "A light mobile collector interface. The poster shows an Onboarded achievement detail with a Share button. Inspected clip frames show a collector profile with recent model cars and an Achievements screen, including a large Diecast Con Barcelona 2026 badge and a grid of locked and unlocked awards. This is evidence for collection profiles and gamification, not a bookshelf UI. Exact transition timing was not measured.",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster, clip opening, and frame at 10 seconds",
+        "note": "Corrects a confirmed mismatch: previous bookshelf description did not match the actual poster or inspected clip frames.",
+        "taxonomy_replaced": true
+      },
+      "roles": [
+        "profile",
+        "detail"
+      ],
+      "tags": [
+        "collection",
+        "achievement",
+        "badges",
+        "gamification",
+        "light-ui",
+        "cards"
+      ],
+      "style": [
+        "light-mode",
+        "card-based"
+      ]
+    },
+    "VID-0304": {
+      "id": "VID-0304",
+      "title": "Loading, list prefetch and skeleton-state demonstrations",
+      "description": "A sequence of light web interaction demonstrations. The poster shows a Today task list labelled Server rendered. Four sampled clip frames include a Mail skeleton layout, a branching data diagram, side-by-side Fetch on click and Prefetch on hover grocery lists, and a skeleton card with a speed slider. Useful for comparing loading and prefetch feedback; the clip contains several separate demonstrations.",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+        "note": "Targeted visual review; not a complete playback or source attribution review.",
+        "taxonomy_replaced": true
+      },
+      "roles": [
+        "list"
+      ],
+      "tags": [
+        "list"
+      ],
+      "category": "website",
+      "style": [
+        "minimal",
+        "light-mode"
+      ]
+    },
+    "VID-0305": {
+      "id": "VID-0305",
+      "title": "Spending dashboard and New Expense sheet",
+      "description": "A dark mobile finance flow with yellow accents. Sampled frames show a balance home, a Spending view with a horizontal row of brightly coloured category cylinders, and a New Expense sheet. The sheet includes an amount, category, date, payment-method tiles and a yellow Save button; another sampled state contains Pharmacy Purchase and $21.00. The poster is the spending overview, not the form.",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+        "note": "Targeted visual review; not a complete playback or source attribution review.",
+        "taxonomy_replaced": true
+      },
+      "roles": [
+        "dashboard",
+        "form",
+        "home"
+      ],
+      "tags": [
+        "budgeting",
+        "finance",
+        "dark-ui",
+        "chart",
+        "form",
+        "bottom-nav"
+      ],
+      "style": [
+        "dark-mode",
+        "data-dense"
+      ]
+    },
+    "VID-0306": {
+      "id": "VID-0306",
+      "title": "Pastel dot-grid interaction with Japanese text",
+      "description": "A close crop of the lower portion of a phone mockup. Japanese text sits above a rounded, translucent dot-grid panel. Across sampled frames, small coloured discs and a glowing marker occupy different grid positions while the surrounding tint shifts from cool grey to warm yellow and green. This is an interaction study, not simply a static pink card. The full product context is not visible.",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+        "note": "Targeted visual review; not a complete playback or source attribution review.",
+        "taxonomy_replaced": true
+      },
+      "roles": [
+        "detail"
+      ],
+      "tags": [
+        "dot-grid",
+        "animation",
+        "device-frame",
+        "blur"
+      ],
+      "style": [
+        "soft",
+        "rounded"
+      ]
+    },
+    "VID-0309": {
+      "id": "VID-0309",
+      "title": "Dashr delivery onboarding and scooter carousel",
+      "description": "Two light mobile screens for Dashr on a pale background. One is a lime-green splash with the word Dashr. The other combines scooter imagery, the headline Deliver faster, earn smarter with Dashr, a lime Get on the Road button and a sign-in link. Sampled clip frames show the scooter imagery changing across the hero.",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+        "note": "Corrects a confirmed mismatch: this is Dashr onboarding, not the GOMPASHE dark item list in VID-0312.",
+        "taxonomy_replaced": true
+      },
+      "roles": [
+        "onboarding",
+        "hero"
+      ],
+      "tags": [
+        "delivery",
+        "onboarding",
+        "carousel",
+        "light-ui",
+        "cta"
+      ],
+      "style": [
+        "light-mode",
+        "minimal"
+      ]
+    },
+    "VID-0313": {
+      "id": "VID-0313",
+      "title": "In-hand pink receipt deformation interaction",
+      "description": "A phone filmed in a hand, showing a dark Russian-language interface with a pink receipt-like card. Across sampled frames, a finger touches the card and its paper silhouette folds, stretches and changes shape. Telegram and VK sharing controls appear along the bottom. This is a direct-manipulation paper interaction; the samples do not establish OCR or a plant-identification workflow.",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+        "note": "Corrects a confirmed mismatch: the visible object is a receipt-like pink card, not a flower capture interface.",
+        "taxonomy_replaced": true
+      },
+      "roles": [
+        "media"
+      ],
+      "tags": [
+        "gesture",
+        "cards",
+        "dark-ui"
+      ],
+      "style": [
+        "dark-mode"
+      ]
+    },
+    "VID-0323": {
+      "id": "VID-0323",
+      "title": "mymind save-from-Photos flow",
+      "description": "An iPhone save flow on a warm orange-red background. Sampled frames show a quote image open in Photos, the iOS share sheet, and a translucent confirmation screen reading Good find! It’s in your mind, with an Add Tags/Notes control. The mymind.com label appears below the device. This is a capture/save handoff, not a lock-screen wallpaper editor.",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+        "note": "Corrects a confirmed mismatch: previous lock-screen-editor copy belongs to a different type of promo.",
+        "taxonomy_replaced": true
+      },
+      "roles": [
+        "media"
+      ],
+      "tags": [
+        "confirmation",
+        "collection",
+        "ios",
+        "blur"
+      ],
+      "style": [
+        "gradient-heavy",
+        "glassmorphism"
+      ]
+    },
+    "VID-0329": {
+      "id": "VID-0329",
+      "title": "muso song creation and gift-opening promo",
+      "description": "A light promotional sequence for muso. Sampled frames show a phone headed Create your song, a Make it yours section with Create My Song, and a black record-sleeve card with the muso name. Another frame reads You received a gift! with a Play your gift button. This is a music creation and gifting flow, not an in-hand receipt scanner.",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+        "note": "Corrects a confirmed mismatch: receipt-scanning metadata did not describe this media.",
+        "taxonomy_replaced": true
+      },
+      "roles": [
+        "onboarding",
+        "media",
+        "hero"
+      ],
+      "tags": [
+        "music",
+        "audio",
+        "cards",
+        "onboarding",
+        "light-ui"
+      ],
+      "category": "promo-reel",
+      "style": [
+        "minimal",
+        "light-mode"
+      ]
+    },
+    "VID-0330": {
+      "id": "VID-0330",
+      "title": "Lock-screen card editor promotional sequence",
+      "description": "A lock-screen card customisation promo on dark coloured backgrounds. Sampled frames show a pink lock screen, a card template selector, drawing and colour controls, reshaping of the small card and a Save it instruction. Headlines include Pick one of 29 designs and Draw right on it. The sampled sequence is about authored lock-screen cards, not a mosaic of photographs.",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+        "note": "Corrects a confirmed mismatch: previous photo-mosaic description did not match the inspected frames.",
+        "taxonomy_replaced": true
+      },
+      "roles": [
+        "editor",
+        "hero"
+      ],
+      "tags": [
+        "editor",
+        "color-picker",
+        "drawing",
+        "cards",
+        "ios"
+      ],
+      "category": "promo-reel",
+      "style": [
+        "dark-mode",
+        "rounded"
+      ]
+    },
+    "VID-0298": {
+      "id": "VID-0298",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and one sampled clip frame",
+        "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+      }
+    },
+    "VID-0301": {
+      "id": "VID-0301",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and one sampled clip frame",
+        "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+      }
+    },
+    "VID-0302": {
+      "id": "VID-0302",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and one sampled clip frame",
+        "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+      }
+    },
+    "VID-0310": {
+      "id": "VID-0310",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and one sampled clip frame",
+        "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+      }
+    },
+    "VID-0311": {
+      "id": "VID-0311",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and one sampled clip frame",
+        "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+      }
+    },
+    "VID-0312": {
+      "id": "VID-0312",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and one sampled clip frame",
+        "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+      }
+    },
+    "VID-0314": {
+      "id": "VID-0314",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and one sampled clip frame",
+        "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+      }
+    },
+    "VID-0316": {
+      "id": "VID-0316",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and one sampled clip frame",
+        "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+      }
+    },
+    "VID-0317": {
+      "id": "VID-0317",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and one sampled clip frame",
+        "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+      }
+    },
+    "VID-0321": {
+      "id": "VID-0321",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and one sampled clip frame",
+        "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+      }
+    },
+    "VID-0322": {
+      "id": "VID-0322",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and one sampled clip frame",
+        "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+      }
+    },
+    "VID-0324": {
+      "id": "VID-0324",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and one sampled clip frame",
+        "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+      }
+    },
+    "VID-0325": {
+      "id": "VID-0325",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and one sampled clip frame",
+        "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+      }
+    },
+    "VID-0326": {
+      "id": "VID-0326",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and one sampled clip frame",
+        "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+      }
+    },
+    "VID-0327": {
+      "id": "VID-0327",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster and one sampled clip frame",
+        "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+      }
+    },
+    "VID-0377": {
+      "id": "VID-0377",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster only",
+        "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+      }
+    },
+    "VID-0397": {
+      "id": "VID-0397",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster only",
+        "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+      }
+    },
+    "VID-0420": {
+      "id": "VID-0420",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster only",
+        "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+      }
+    },
+    "VID-0373": {
+      "id": "VID-0373",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster only",
+        "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+      }
+    },
+    "VID-0349": {
+      "id": "VID-0349",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster only",
+        "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+      }
+    },
+    "VID-0430": {
+      "id": "VID-0430",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster only",
+        "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+      }
+    },
+    "VID-0400": {
+      "id": "VID-0400",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster only",
+        "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+      }
+    },
+    "VID-0367": {
+      "id": "VID-0367",
+      "review": {
+        "date": "2026-10-19",
+        "method": "visual inspection of derivative media",
+        "scope": "poster only",
+        "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+      }
+    }
+  }
+}

@@ -13,6 +13,10 @@ const Render = (() => {
     window.matchMedia('(hover: hover) and (pointer: fine)').matches &&
     !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  const activePreviews = new Set();
+  const previewStops = new WeakMap();
+  const previewObserver = new IntersectionObserver(entries => { for (const entry of entries) if (!entry.isIntersecting) previewStops.get(entry.target)?.(); });
+
   function armHoverPreview(media, asset) {
     if (!asset.clip || !hoverPreviewOK()) return;
     let video = null;
@@ -29,10 +33,15 @@ const Render = (() => {
       });
       video.muted = true;
       media.append(video);
+      activePreviews.add(hide);
+      previewStops.set(media, hide);
+      previewObserver.observe(media);
       const play = video.play();
       if (play && play.catch) play.catch(() => {});
     };
     const hide = () => {
+      activePreviews.delete(hide);
+      previewObserver.unobserve(media);
       if (!video) return;
       try { video.pause(); } catch (_) {}
       video.remove();
@@ -83,6 +92,7 @@ const Render = (() => {
       // needed to stop layout shift before the image decodes — not to size the
       // frame. Setting --card-ar here would fight the fixed ratio in CSS.
     }
+    img.addEventListener('error', () => { img.hidden = true; media.append(el('span', { class: 'media-fallback', text: 'Preview unavailable. Open reference for details.' })); }, { once: true });
     media.append(img);
 
     if (a.kind === 'video') {
@@ -130,6 +140,7 @@ const Render = (() => {
         ...tags.map((t) => el('span', { class: 'card__tag', text: t })),
         ...styles.map((s) => el('span', { class: 'card__tag card__tag--style', text: s }))));
     }
+    body.append(Workbench.saveButton(a));
     node.append(body);
     return node;
   }
@@ -143,6 +154,7 @@ const Render = (() => {
   let renderGeneration = 0;
 
   function grid(container, items, opts = {}) {
+    for (const stop of [...activePreviews]) stop();
     const CHUNK = 60;
     const view = Filters.state.view;
     const gen = ++renderGeneration;

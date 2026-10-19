@@ -1,190 +1,256 @@
-/**
- * stormy-mcp — a zero-dependency MCP server over the Stormy design corpus.
- *
- * The corpus is a curated catalogue of mobile and web interface design: every
- * asset was looked at and written up by hand, and every palette was measured
- * from the pixels. This server exposes that to an agent so it can answer
- * "what does a good finance onboarding look like" with real examples carrying
- * real colour values, instead of inventing them.
- *
- * Transport: stdio, JSON-RPC 2.0, protocol 2024-11-05.
- * No dependencies on purpose — this is meant to run from a checkout.
+#!/usr/bin/env node
+/** UiHall MCP: dependency-free stdio transport (newline-delimited JSON-RPC).
+ * stdout is exclusively protocol traffic; diagnostics go to stderr.
  */
-
-import fs from 'node:fs';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { TOOLS, callTool } from './tools.js';
-
+import fs from "node:fs";
+import path from "node:path";
+import readline from "node:readline";
+import { fileURLToPath } from "node:url";
+import { TOOLS, callTool } from "./tools.js";
 const HERE = path.dirname(fileURLToPath(import.meta.url));
-const PROTOCOL = '2024-11-05';
-const SERVER = { name: 'stormy', version: '1.0.0' };
-
-let CORPUS = null;
-
-/**
- * Corpus discovery, in order of preference:
- *   1. $STORMY_CORPUS            explicit override
- *   2. ../ui-hall/data/corpus.json   the sibling site build
- *   3. ./corpus.json             a vendored copy
- */
-function findCorpus() {
-  const candidates = [
-    process.env.STORMY_CORPUS,
-    path.resolve(HERE, '..', 'ui-hall', 'data', 'corpus.json'),
-    path.resolve(HERE, 'corpus.json'),
-  ].filter(Boolean);
-  for (const c of candidates) {
-    if (fs.existsSync(c)) return c;
-  }
-  return null;
-}
-
+const PROTOCOLS = ["2025-11-25", "2025-06-18", "2025-03-26", "2024-11-05"];
+let corpus;
 function loadCorpus() {
-  if (CORPUS) return CORPUS;
-  const file = findCorpus();
-  if (!file) {
+  if (corpus) return corpus;
+  const candidates = [
+    process.env.UIHALL_CORPUS,
+    process.env.STORMY_CORPUS,
+    path.resolve(HERE, "../ui-hall/data/corpus.json"),
+    path.join(HERE, "corpus.json"),
+  ].filter(Boolean);
+  const file = candidates.find((file) => fs.existsSync(file));
+  if (!file)
     throw new Error(
-      'Stormy corpus not found. Looked for $STORMY_CORPUS, ../ui-hall/data/corpus.json and ./corpus.json. ' +
-      'Build it with tools/build_corpus.py, or point $STORMY_CORPUS at the file.'
+      "Corpus not found. Set UIHALL_CORPUS to corpus.json or use the full UiHall checkout.",
     );
-  }
-  const raw = JSON.parse(fs.readFileSync(file, 'utf8'));
-  raw.__path = file;
-  CORPUS = raw;
-  return CORPUS;
+  const value = JSON.parse(fs.readFileSync(file, "utf8"));
+  if (!Array.isArray(value.assets))
+    throw new Error("Invalid corpus: assets must be an array.");
+  corpus = { ...value, __path: file };
+  return corpus;
 }
-
-/* ------------------------------------------------------------- transport -- */
-
-function send(msg) {
-  process.stdout.write(JSON.stringify(msg) + '\n');
-}
-
-function reply(id, result) { send({ jsonrpc: '2.0', id, result }); }
-function fail(id, code, message, data) {
-  send({ jsonrpc: '2.0', id, error: { code, message, ...(data ? { data } : {}) } });
-}
-
+const send = (value) => process.stdout.write(JSON.stringify(value) + "\n");
+const reply = (id, result) => send({ jsonrpc: "2.0", id, result });
+const fail = (id, code, message) =>
+  send({ jsonrpc: "2.0", id, error: { code, message } });
+const resource = {
+  uri: "uihall://corpus/overview",
+  name: "UiHall corpus overview",
+  description: "Live corpus totals, vocabulary and interpretation limits.",
+  mimeType: "application/json",
+};
+const workflow = {
+  name: "reference_to_interface",
+  description: "Design an original interface from inspected references.",
+  arguments: [
+    {
+      name: "goal",
+      description: "Product, audience and primary action",
+      required: true,
+    },
+  ],
+};
 async function handle(msg) {
+  if (
+    !msg ||
+    Array.isArray(msg) ||
+    msg.jsonrpc !== "2.0" ||
+    typeof msg.method !== "string" ||
+    ("id" in msg &&
+      typeof msg.id !== "number" &&
+      typeof msg.id !== "string" &&
+      msg.id !== null)
+  )
+    return fail(null, -32600, "Invalid JSON-RPC request");
   const { id, method, params } = msg;
-
+  if (id === undefined) return; // notifications never receive a response
   switch (method) {
-    case 'initialize':
+    case "initialize":
       return reply(id, {
-        protocolVersion: PROTOCOL,
-        capabilities: { tools: { listChanged: false } },
-        serverInfo: SERVER,
+        protocolVersion: PROTOCOLS.includes(params?.protocolVersion)
+          ? params.protocolVersion
+          : PROTOCOLS[0],
+        capabilities: {
+          tools: { listChanged: false },
+          resources: { subscribe: false, listChanged: false },
+          prompts: { listChanged: false },
+        },
+        serverInfo: {
+          name: "stormy",
+          title: "UiHall design workbench",
+          version: "2.0.0",
+        },
         instructions:
-          'Stormy is a design-reference corpus gathered from real product work. Start with ' +
-          'search_designs to find examples for the screen you are building, then get_asset for the ' +
-          'full write-up and measured palette. Use list_facets first if you do not know what ' +
-          'vocabulary the corpus uses. Palettes returned here are measured from pixels, so they ' +
-          'are safe to use as literal values.',
+          "UiHall provides design references, not verified product specifications. Search, inspect actual images with asset_image, compare references, then create an implementation_plan. Inherited descriptions may be wrong. Pixel samples are not semantic tokens; validate final text contrast. Inspect motion clips before claiming timing/easing. Original media is for reference; rights are not granted.",
       });
-
-    case 'notifications/initialized':
-      return; // notification, no response
-
-    case 'tools/list':
+    case "ping":
+      return reply(id, {});
+    case "tools/list":
       return reply(id, {
         tools: TOOLS.map((t) => ({
-          name: t.name,
-          description: t.description,
-          inputSchema: t.inputSchema,
+          ...t,
+          annotations: {
+            title: t.name.replaceAll("_", " "),
+            readOnlyHint: true,
+            destructiveHint: false,
+            idempotentHint: true,
+            openWorldHint: false,
+          },
         })),
       });
-
-    case 'tools/call': {
-      const name = params?.name;
-      const args = params?.arguments ?? {};
-      const tool = TOOLS.find((t) => t.name === name);
-      if (!tool) return fail(id, -32602, `Unknown tool: ${name}`);
+    case "tools/call": {
+      if (!params || typeof params.name !== "string")
+        return fail(id, -32602, "Tool name is required");
+      if (!TOOLS.some((t) => t.name === params.name))
+        return fail(id, -32602, `Unknown tool: ${params.name}`);
       try {
-        const corpus = loadCorpus();
-        const out = await callTool(name, args, corpus, HERE);
+        const c = loadCorpus();
+        const args = params.arguments ?? {};
+        const out = await callTool(params.name, args, c, HERE);
+        const content = [
+          {
+            type: "text",
+            text: typeof out === "string" ? out : JSON.stringify(out, null, 1),
+          },
+        ];
+        if (
+          params.name === "asset_image" &&
+          args.embed !== false &&
+          args.which !== "original"
+        ) {
+          const a = c.assets.find((a) => a.id === args.id);
+          const root = fs.realpathSync(
+            path.resolve(path.dirname(c.__path), ".."),
+          );
+          const relative = args.which === "web" ? a.src : a.thumb || a.src;
+          if (!relative)
+            throw new Error("No image derivative is recorded for this asset.");
+          const imagePath = fs.realpathSync(path.resolve(root, relative));
+          if (!imagePath.startsWith(root + path.sep))
+            throw new Error(
+              "Asset path must stay within the corpus media root.",
+            );
+          const stat = fs.statSync(imagePath);
+          if (stat.size > 5 * 1024 * 1024)
+            throw new Error(
+              "Image exceeds 5 MB. Request which=thumb or embed=false.",
+            );
+          const ext = path.extname(imagePath).toLowerCase();
+          const mime = {
+            ".webp": "image/webp",
+            ".png": "image/png",
+            ".jpg": "image/jpeg",
+            ".jpeg": "image/jpeg",
+          }[ext];
+          if (!mime) throw new Error("Unsupported image format.");
+          content.push({
+            type: "image",
+            data: fs.readFileSync(imagePath).toString("base64"),
+            mimeType: mime,
+          });
+        }
         return reply(id, {
-          content: [{ type: 'text', text: typeof out === 'string' ? out : JSON.stringify(out, null, 1) }],
+          content,
           isError: false,
+          ...(typeof out === "object" ? { structuredContent: out } : {}),
         });
-      } catch (err) {
+      } catch (error) {
         return reply(id, {
-          content: [{ type: 'text', text: `Error in ${name}: ${err.message}` }],
+          content: [{ type: "text", text: error.message }],
           isError: true,
         });
       }
     }
-
-    case 'ping':
-      return reply(id, {});
-
-    case 'resources/list':
-      return reply(id, { resources: [] });
-
-    case 'prompts/list':
-      return reply(id, { prompts: [] });
-
-    default:
-      if (id !== undefined) fail(id, -32601, `Method not found: ${method}`);
-  }
-}
-
-/* ------------------------------------------------------------------ main -- */
-
-async function main() {
-  // Fail loudly at startup rather than on the first tool call — an agent that
-  // gets a clean error before connecting can tell the user what to fix.
-  try {
-    const c = loadCorpus();
-    process.stderr.write(
-      `[stormy] corpus loaded: ${c.totals.assets} assets (${c.totals.described} described, ` +
-      `${c.totals.clips} motion clips) from ${c.__path}\n`
-    );
-  } catch (err) {
-    process.stderr.write(`[stormy] ${err.message}\n`);
-  }
-
-  let buffer = '';
-  process.stdin.setEncoding('utf8');
-
-  process.stdin.on('data', (chunk) => {
-    buffer += chunk;
-
-    // newline-delimited JSON, but tolerate a stray Content-Length framing header
-    let nl;
-    while ((nl = buffer.indexOf('\n')) !== -1) {
-      let line = buffer.slice(0, nl).trim();
-      buffer = buffer.slice(nl + 1);
-      if (!line) continue;
-
-      if (/^Content-Length:/i.test(line)) {
-        const headerEnd = buffer.indexOf('\r\n\r\n');
-        const bare = buffer.indexOf('\n\n');
-        if (headerEnd !== -1 || bare !== -1) {
-          const cut = headerEnd !== -1 ? headerEnd + 4 : bare + 2;
-          line = buffer.slice(0, cut).trim();
-          buffer = buffer.slice(cut);
-        } else {
-          continue;
-        }
-      }
-
-      let msg;
-      try {
-        msg = JSON.parse(line);
-      } catch {
-        process.stderr.write(`[stormy] unparseable line: ${line.slice(0, 120)}\n`);
-        continue;
-      }
-      handle(msg).catch((err) => {
-        if (msg && msg.id !== undefined) fail(msg.id, -32603, err.message);
+    case "resources/list":
+      return reply(id, { resources: [resource] });
+    case "resources/templates/list":
+      return reply(id, { resourceTemplates: [] });
+    case "resources/read": {
+      if (params?.uri !== resource.uri)
+        return fail(id, -32602, "Unknown resource URI");
+      const c = loadCorpus();
+      return reply(id, {
+        contents: [
+          {
+            uri: resource.uri,
+            mimeType: resource.mimeType,
+            text: JSON.stringify({
+              totals: c.totals,
+              categories: c.categories,
+              limits: [
+                "Descriptions are inherited and unverified.",
+                "Palettes are sampled pixels; semantic role is inferred.",
+                "Source attribution and reuse rights are incomplete.",
+              ],
+            }),
+          },
+        ],
       });
     }
-  });
-
-  process.stdin.on('end', () => process.exit(0));
-  process.on('SIGINT', () => process.exit(0));
-  process.on('SIGTERM', () => process.exit(0));
+    case "prompts/list":
+      return reply(id, { prompts: [workflow] });
+    case "prompts/get": {
+      if (
+        params?.name !== workflow.name ||
+        typeof params?.arguments?.goal !== "string"
+      )
+        return fail(
+          id,
+          -32602,
+          "Supply reference_to_interface and a goal string",
+        );
+      return reply(id, {
+        description: workflow.description,
+        messages: [
+          {
+            role: "user",
+            content: {
+              type: "text",
+              text: `Design for this goal: ${params.arguments.goal}\nSearch UiHall with search_designs or design_brief. Open relevant references using asset_image. Compare observed structure, density, typography and states; cite IDs. Use motion_studies if interaction matters, then inspect the clips. Use implementation_plan to capture decisions. Preserve product/brand constraints. Author an original composition, label new tokens as authored, test accessibility and responsive states in a browser, and report actual evidence and limits.`,
+            },
+          },
+        ],
+      });
+    }
+    default:
+      return fail(id, -32601, `Method not found: ${method}`);
+  }
 }
-
-main();
+try {
+  const c = loadCorpus();
+  process.stderr.write(
+    `[uihall] corpus loaded: ${c.assets.length} assets from ${c.__path}\n`,
+  );
+} catch (e) {
+  process.stderr.write(`[uihall] ${e.message}\n`);
+}
+const lines = readline.createInterface({
+  input: process.stdin,
+  crlfDelay: Infinity,
+});
+let queue = Promise.resolve();
+lines.on("line", (line) => {
+  if (!line.trim()) return;
+  if (Buffer.byteLength(line) > 1024 * 1024) {
+    fail(null, -32600, "Request exceeds 1 MB");
+    return;
+  }
+  let msg;
+  try {
+    msg = JSON.parse(line);
+  } catch {
+    fail(null, -32700, "Parse error");
+    return;
+  }
+  queue = queue
+    .then(() => handle(msg))
+    .catch((e) => {
+      if (msg?.id !== undefined) fail(msg.id, -32603, e.message);
+      else process.stderr.write(`[uihall] ${e.message}\n`);
+    });
+});
+lines.on("close", () =>
+  queue.finally(() => {
+    process.exitCode = 0;
+  }),
+);

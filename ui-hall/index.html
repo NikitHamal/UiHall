@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
+<meta name="theme-color" content="#f6f5f1">
+<meta property="og:title" content="UiHall — A field guide to digital craft">
+<meta property="og:description" content="766 design references. Motion, interfaces, palettes, and a better starting point for your next build.">
+<meta property="og:image" content="https://nikithamal.github.io/UiHall/docs/preview.webp">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>UI Hall</title>
-<meta name="description" content="A curated, visual catalogue of mobile and web interface design collected from real product work.">
+<title>UiHall — A field guide to digital craft</title>
+<meta name="description" content="Study interfaces worth understanding. Explore 766 design references, motion studies, measured palettes, and an evidence-driven workflow for AI agents.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link rel="stylesheet" href="assets/css/app.css">
+<link rel="stylesheet" href="assets/css/workbench.css">
 </head>
 <body>
 
@@ -18,21 +23,22 @@
   <div class="topbar__inner">
     <a class="brand" href="#/" data-link>
       <span class="brand__mark" aria-hidden="true"></span>
-      <span class="brand__name">UI&nbsp;Hall</span>
+      <span class="brand__name">uihall<span class="brand__period">®</span></span>
     </a>
 
     <nav class="nav" aria-label="Sections">
-      <a href="#/" data-link data-nav="gallery">Gallery</a>
-      <a href="#/sets" data-link data-nav="sets">Sets</a>
+      <a href="#/" data-link data-nav="gallery">Explore</a>
+      <a href="#/sets" data-link data-nav="sets">Collections</a>
         <a href="#/palettes" data-link data-nav="palettes">Palettes</a>
         <a href="#/typography" data-link data-nav="typography">Typography</a>
         <a href="#/patterns" data-link data-nav="patterns">Patterns</a>
-      <a href="#/before-after" data-link data-nav="before-after">Before / after</a>
+
       <a href="#/motion" data-link data-nav="motion">Motion</a>
-      <a href="#/about" data-link data-nav="about">About</a>
+      <a href="#/agents" data-link data-nav="agents">For agents <span aria-hidden="true">↗</span></a>
     </nav>
 
     <div class="topbar__tools">
+      <button class="board-trigger" id="boardOpen" type="button">Shortlist <span id="boardCount" aria-label="0 saved references">0</span></button>
       <button class="iconbtn" id="themeToggle" type="button" aria-label="Toggle light and dark theme" title="Toggle theme">
         <span class="iconbtn__glyph" aria-hidden="true"></span>
       </button>
@@ -41,17 +47,41 @@
       </button>
     </div>
   </div>
+<nav class="mobile-nav" aria-label="Browse archive"><a href="#/" data-link data-nav="gallery">Explore</a><a href="#/sets" data-link data-nav="sets">Collections</a><a href="#/motion" data-link data-nav="motion">Motion</a><a href="#/palettes" data-link data-nav="palettes">Palettes</a><a href="#/typography" data-link data-nav="typography">Type</a><a href="#/patterns" data-link data-nav="patterns">Patterns</a><a href="#/agents" data-link data-nav="agents">For agents ↗</a></nav>
 </header>
 
+<section class="hero" id="hero" hidden aria-label="A field guide to digital craft">
+  <div class="hero__copy">
+    <p class="hero__eyebrow" id="heroEyebrow">An independent archive of digital craft</p>
+    <h1 class="hero__title">Good design<br>starts with<br><em>a closer look.</em></h1>
+    <p class="hero__sub">A field guide to interfaces worth understanding.<br>Find the reference. Study the details. Make it your own.</p>
+    <div class="hero__actions">
+      <a class="btn hero__primary" href="#explore">Explore the archive <span aria-hidden="true">↗</span></a>
+      <button class="btn btn--ghost" type="button" data-hero-go="agents">Build with UiHall <span aria-hidden="true">→</span></button>
+    </div>
+    <div class="hero__stats" id="heroStats" aria-label="Library statistics"></div>
+  </div>
+  <div class="hero__exhibit" aria-label="Selected references from the archive">
+    <div class="exhibit-label"><span class="live-dot"></span> ON THE STUDY TABLE <span>VOL. 001 / DIGITAL</span></div>
+    <button class="exhibit exhibit--landscape" data-open-asset="VID-0377" aria-label="Study Memory AI landing page"><img src="assets/vid/VID-0377.webp" alt="Black and white Memory AI landing page featuring an intricate tree" fetchpriority="high"><span>01 / WEB &amp; INTERACTION <i>↗</i></span></button>
+    <button class="exhibit exhibit--phone" data-open-asset="VID-0397" aria-label="Study card tiers interaction"><img src="assets/thumb/VID-0397.webp" alt="Dark mobile interface with a fan of metallic membership cards"><span>02 / MOTION STUDY <i>↗</i></span></button>
+    <div class="exhibit-note"><span class="note-star" aria-hidden="true">✳</span><p>Less scrolling.<br><em>More seeing.</em></p></div>
+    <div class="exhibit-swatch" aria-hidden="true"><span></span><span></span><span></span><span></span><small>FORM / COLOUR / FEELING</small></div>
+  </div>
+</section>
+<div class="archive-strip" id="explore"><span>A growing collection. A sharper eye.</span><span>SCREENS · SYSTEMS · MOTION · TYPE <span aria-hidden="true">↓</span></span></div>
+
+<button id="filterDismiss" class="filter-dismiss" type="button" aria-label="Close filters" hidden></button>
 <div class="shell" id="shell">
 
   <aside class="sidebar" id="sidebar" aria-label="Filters">
+    <div class="sidebar__label">THE INDEX <span>↙</span><button type="button" id="filterClose" aria-label="Close filters">×</button></div>
     <form class="filters" id="filters" role="search" onsubmit="return false">
       <div class="filters__group filters__group--search">
         <label class="sr-only" for="q">Search</label>
         <div class="searchfield">
           <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="5.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M13 13l4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-          <input id="q" name="q" type="search" placeholder="Search title, tags, roles…" autocomplete="off" spellcheck="false">
+          <input id="q" name="q" type="search" placeholder="Search the archive…" autocomplete="off" spellcheck="false">
           <button class="searchfield__clear" id="qClear" type="button" hidden aria-label="Clear search">
             <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 6l8 8M14 6l-8 8" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
           </button>
@@ -147,17 +177,6 @@
   </aside>
 
   <main class="main" id="main">
-    <section class="hero" id="hero" hidden aria-label="About this library">
-      <p class="hero__eyebrow" id="heroEyebrow">A visual reference library</p>
-      <h2 class="hero__title">Interface design, <em>worth studying.</em></h2>
-      <p class="hero__sub">Real product screens, flows and clips — each one looked at, written up, and measured. Filter by what a screen is for, how it looks, and what colours it is actually made of.</p>
-      <div class="hero__actions">
-        <button class="btn" type="button" data-hero-go="motion"><span>Browse motion</span></button>
-        <button class="btn btn--ghost" type="button" data-hero-go="sets"><span>Browse app sets</span></button>
-      </div>
-      <div class="hero__stats" id="heroStats" aria-label="Library statistics"></div>
-    </section>
-
     <div class="main__head">
       <div class="main__headline">
         <h1 class="page-title" id="pageTitle">Gallery</h1>
@@ -168,8 +187,8 @@
           <span class="select__label" id="sortLabel">Sort</span>
           <select id="sort" aria-labelledby="sortLabel">
             <option value="curated">Curated</option>
-            <option value="newest">Newest first</option>
-            <option value="oldest">Oldest first</option>
+            <option value="newest">Reference ID ↓</option>
+            <option value="oldest">Reference ID ↑</option>
             <option value="title">A → Z</option>
             <option value="motion">Most motion</option>
           </select>
@@ -199,6 +218,7 @@
       <button class="btn btn--ghost btn--sm" id="shuffle" type="button">Shuffle</button>
     </div>
 
+    <div class="quickpaths" id="quickpaths"><button data-discover="" class="is-on">All references</button><button data-discover="website">Web experiences</button><button data-discover="mobile-app-ui">Mobile interfaces</button><button data-discover="dashboard">Dashboards</button><button data-discover="brand-identity">Brand &amp; identity</button><button data-discover="motion">In motion ↗</button></div>
     <section class="results" id="results" aria-label="Results"></section>
     <div class="sentinel" id="sentinel" aria-hidden="true"></div>
     <p class="empty" id="emptyState" hidden>
@@ -208,7 +228,7 @@
   </main>
 </div>
 
-<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Asset detail">
+<dialog class="lightbox" id="lightbox" hidden aria-modal="true" aria-label="Asset detail">
   <div class="lightbox__backdrop" data-close></div>
   <div class="lightbox__panel" role="document">
     <button class="lightbox__close" type="button" data-close aria-label="Close">
@@ -224,7 +244,7 @@
     <div class="lightbox__media" id="lbMedia"></div>
     <div class="lightbox__info" id="lbInfo"></div>
   </div>
-</div>
+</dialog>
 
 <script src="assets/js/data.js"></script>
 <script src="assets/js/util.js"></script>
@@ -234,6 +254,10 @@
 <script src="assets/js/typography.js"></script>
 <script src="assets/js/render.js"></script>
 <script src="assets/js/pages.js"></script>
+<script src="assets/js/workbench.js"></script>
 <script src="assets/js/app.js"></script>
+<footer class="site-footer"><a class="brand__name" href="#/">uihall®</a><p>A reference is a starting point. Make something of your own.</p><a href="#/about" data-link>About the archive ↗</a><a href="https://github.com/NikitHamal/UiHall" target="_blank" rel="noreferrer">GitHub ↗</a></footer>
+<dialog id="boardDialog" class="board-dialog" aria-labelledby="boardTitle"><div class="board-head"><div><p class="eyebrow">YOUR STUDY TABLE</p><h2 id="boardTitle">A little direction.</h2></div><button class="iconbtn" id="boardClose" aria-label="Close shortlist">×</button></div><p class="board-intro">Collect references, then take the reasoning into your next build. Saved in this browser.</p><div id="boardItems"></div><label class="brief-label" for="briefGoal">What are you making?</label><textarea id="briefGoal" placeholder="e.g. An accessible research library for independent designers" rows="2"></textarea><button class="btn" id="copyBrief">Copy implementation brief ↗</button><p class="board-status" id="boardStatus" role="status"></p></dialog>
+<div class="toast" id="toast" role="status" hidden></div>
 </body>
 </html>

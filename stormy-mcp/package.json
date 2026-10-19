@@ -1,15 +1,21 @@
 {
   "name": "stormy-mcp",
-  "version": "1.0.0",
-  "description": "MCP server exposing the Stormy design corpus — a curated, visually-described catalogue of mobile and web interface design — to AI agents.",
+  "version": "2.0.0",
+  "description": "UiHall design workbench: reference search, native images, motion studies and evidence-linked implementation planning.",
   "type": "module",
-  "bin": { "stormy-mcp": "./server.js" },
+  "bin": {
+    "stormy-mcp": "./server.js",
+    "uihall-mcp": "./server.js"
+  },
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "selftest": "node selftest.js"
+    "selftest": "node selftest.js",
+    "test": "node selftest.js && node regression.test.js"
   },
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {},
   "license": "MIT",
   "private": true

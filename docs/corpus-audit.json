@@ -1,0 +1,3937 @@
+{
+  "totals": {
+    "assets": 766,
+    "images": 433,
+    "videos": 333,
+    "clips": 273,
+    "described": 766
+  },
+  "integrity_errors": [],
+  "warnings": [],
+  "exact_duplicate_derivatives": [
+    [
+      "VID-0089",
+      "VID-0297"
+    ],
+    [
+      "VID-0171",
+      "VID-0172"
+    ]
+  ],
+  "scoped_visual_reviews": [
+    {
+      "id": "VID-0298",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and one sampled clip frame",
+      "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+    },
+    {
+      "id": "VID-0300",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster, clip opening, and frame at 10 seconds",
+      "note": "Corrects a confirmed mismatch: previous bookshelf description did not match the actual poster or inspected clip frames.",
+      "taxonomy_replaced": true
+    },
+    {
+      "id": "VID-0301",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and one sampled clip frame",
+      "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+    },
+    {
+      "id": "VID-0302",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and one sampled clip frame",
+      "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+    },
+    {
+      "id": "VID-0304",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+      "note": "Targeted visual review; not a complete playback or source attribution review.",
+      "taxonomy_replaced": true
+    },
+    {
+      "id": "VID-0305",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+      "note": "Targeted visual review; not a complete playback or source attribution review.",
+      "taxonomy_replaced": true
+    },
+    {
+      "id": "VID-0306",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+      "note": "Targeted visual review; not a complete playback or source attribution review.",
+      "taxonomy_replaced": true
+    },
+    {
+      "id": "VID-0309",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+      "note": "Corrects a confirmed mismatch: this is Dashr onboarding, not the GOMPASHE dark item list in VID-0312.",
+      "taxonomy_replaced": true
+    },
+    {
+      "id": "VID-0310",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and one sampled clip frame",
+      "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+    },
+    {
+      "id": "VID-0311",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and one sampled clip frame",
+      "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+    },
+    {
+      "id": "VID-0312",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and one sampled clip frame",
+      "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+    },
+    {
+      "id": "VID-0313",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+      "note": "Corrects a confirmed mismatch: the visible object is a receipt-like pink card, not a flower capture interface.",
+      "taxonomy_replaced": true
+    },
+    {
+      "id": "VID-0314",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and one sampled clip frame",
+      "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+    },
+    {
+      "id": "VID-0316",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and one sampled clip frame",
+      "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+    },
+    {
+      "id": "VID-0317",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and one sampled clip frame",
+      "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+    },
+    {
+      "id": "VID-0321",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and one sampled clip frame",
+      "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+    },
+    {
+      "id": "VID-0322",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and one sampled clip frame",
+      "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+    },
+    {
+      "id": "VID-0323",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+      "note": "Corrects a confirmed mismatch: previous lock-screen-editor copy belongs to a different type of promo.",
+      "taxonomy_replaced": true
+    },
+    {
+      "id": "VID-0324",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and one sampled clip frame",
+      "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+    },
+    {
+      "id": "VID-0325",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and one sampled clip frame",
+      "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+    },
+    {
+      "id": "VID-0326",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and one sampled clip frame",
+      "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+    },
+    {
+      "id": "VID-0327",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and one sampled clip frame",
+      "note": "Visible composition broadly agrees with the inherited description. Fine text, complete flow, timing and original attribution remain unverified."
+    },
+    {
+      "id": "VID-0329",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+      "note": "Corrects a confirmed mismatch: receipt-scanning metadata did not describe this media.",
+      "taxonomy_replaced": true
+    },
+    {
+      "id": "VID-0330",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster and clip frames at 5%, 30%, 60%, 90%",
+      "note": "Corrects a confirmed mismatch: previous photo-mosaic description did not match the inspected frames.",
+      "taxonomy_replaced": true
+    },
+    {
+      "id": "VID-0349",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster only",
+      "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+    },
+    {
+      "id": "VID-0367",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster only",
+      "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+    },
+    {
+      "id": "VID-0373",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster only",
+      "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+    },
+    {
+      "id": "VID-0377",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster only",
+      "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+    },
+    {
+      "id": "VID-0397",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster only",
+      "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+    },
+    {
+      "id": "VID-0400",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster only",
+      "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+    },
+    {
+      "id": "VID-0420",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster only",
+      "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+    },
+    {
+      "id": "VID-0430",
+      "date": "2026-10-19",
+      "method": "visual inspection of derivative media",
+      "scope": "poster only",
+      "note": "Inspected the visible layout for the UiHall redesign. Full clip content, timings and attribution have not been independently verified."
+    }
+  ],
+  "reviewed_records": 32,
+  "unreviewed_records": 734,
+  "source_urls_recorded": 0,
+  "limits": [
+    "Integrity checks cannot verify visual descriptions.",
+    "Review scope is per record: poster-only and sampled-frame checks are not full playback.",
+    "Duplicate bytes can be intentional references or alternate records; no assets were automatically removed.",
+    "Original creator attribution and commercial media rights remain incomplete."
+  ],
+  "review_queue": [
+    {
+      "id": "IMG-0055",
+      "title": "Raspberry Red / Deep Space Blue",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0056",
+      "title": "Shadow Grey / Sandy Clay",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0057",
+      "title": "Electric Rose / Chartreuse",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0058",
+      "title": "Lime Cream / Vintage Grape",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0059",
+      "title": "Celadon / Chocolate Plum",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0060",
+      "title": "Cherry Blossom / Deep Twilight",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0061",
+      "title": "Coffee Bean / Morning Butter",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0062",
+      "title": "Regal Navy / Lemon Chiffon",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0063",
+      "title": "Espresso / Peony",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0064",
+      "title": "Deep Mocha / Powder Petal",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0150",
+      "title": "Analytics landing page over a photographic field of green",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0161",
+      "title": "Grove - onboarding sequence, green and cream",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0169",
+      "title": "Nepali-language app menu screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0173",
+      "title": "Annotated flow on a pale grid canvas",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0180",
+      "title": "Colour treatment ladder: shapes, blur, texture, design",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0182",
+      "title": "Two date pickers judged side by side",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0183",
+      "title": "Travel hero illustrated with a city skyline of landmarks",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0184",
+      "title": "Health app home on a light ground with a dense column chart",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0185",
+      "title": "Three-step blur-and-shape tutorial on a dark ground",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0187",
+      "title": "Dark hero with a phrase split by a large feathered sphere",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0188",
+      "title": "Focus-app landing section with a floating schedule card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0189",
+      "title": "Wellbeing landing section with a newsletter capture card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0191",
+      "title": "Goals checklist - soft blue gradient header",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0192",
+      "title": "Personal-agent app - chat-forward empty state",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0193",
+      "title": "Cloudborn - 'The world can wait' moon poster",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0194",
+      "title": "Money-tracking store panel — $48.60 total card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0195",
+      "title": "Spending app store panel — $55 category card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0196",
+      "title": "Payments app store panel — $24 transfer card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0198",
+      "title": "Vitality coach - morning check-in with avatar pill",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0199",
+      "title": "Vitality coach - goal setting with inline pickers",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0208",
+      "title": "Money app - spending summary with category cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0209",
+      "title": "Money app - payment setup with a progress rail",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0210",
+      "title": "Banking app - booking confirmation with a lime banner",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0215",
+      "title": "Shihab finance - ledger and schedule pair",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0216",
+      "title": "Orbit - dark hero with a wildflower meadow",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0217",
+      "title": "Travel app - 'Rome' destination card over a photo",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0219",
+      "title": "Wallet app - light and dark balance views compared",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0220",
+      "title": "Activity tracker - calendar heat map in two modes",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0221",
+      "title": "Reading app - shelf grid beside a quiz card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0222",
+      "title": "Fitness rings - dark dashboard with vertical bars",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0223",
+      "title": "Fitness app - streak hero with a large numeral",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0224",
+      "title": "Duolingo-upgrade style - three dark paywall panels",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0225",
+      "title": "Wallet-card app - monochrome card grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0226",
+      "title": "Fitness vs running - two summary screens compared",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0227",
+      "title": "News app - streak banner and reading cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0228",
+      "title": "Delivery app - order tracking with a photo card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0230",
+      "title": "Podcast app - episode cards with chapter art",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0232",
+      "title": "Automotive app - black screens on a lavender field",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0233",
+      "title": "Luma - four-screen product flow montage",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0234",
+      "title": "Education app - course flow montage in green",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0240",
+      "title": "Eight-panel store gallery in a dark green system",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0244",
+      "title": "Music app shelf - long scroll of cover artwork",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0246",
+      "title": "Budget app - chartreuse advert grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0247",
+      "title": "Sleep tracker - constellation chart and report card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0253",
+      "title": "Zodiac reading - 'Today's Guidance' with a balance scale",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0254",
+      "title": "Status chips - five coloured pill states",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0256",
+      "title": "Topics - green lesson tracker with a streak counter",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0257",
+      "title": "New topic — icon picker sheet",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0258",
+      "title": "Gym tracker - session summary with stat tiles",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0259",
+      "title": "Focus timer — hairline ring around a large number",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0277",
+      "title": "Vibecoded versus Revoop: the same screen with and without structure",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0278",
+      "title": "LIFE/CTRL three-screen concept on a cream ground",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0279",
+      "title": "Two app-store screens before and after a media-led redesign",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0280",
+      "title": "Food app before and after, from cluttered to warm",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0281",
+      "title": "Social profile before and after, feed to grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0282",
+      "title": "Profile revamp with a drawn arrow from old to new",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0283",
+      "title": "Readiness ring with a resetting countdown",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0284",
+      "title": "Story-viewer dark screen with a four-tile category grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0285",
+      "title": "Recent-activity ledger with an inline ad unit",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0286",
+      "title": "Activity history with a highlighted deposit row",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0287",
+      "title": "Book-app before and after, from list to cover-forward",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0288",
+      "title": "Dark dashboard with a stacked accent-budget bar",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0289",
+      "title": "Large balance figure over a plan card and quick actions",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0290",
+      "title": "Three-slide reward walkthrough on a lime accent",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0291",
+      "title": "Travel triptych, one destination per frame",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0292",
+      "title": "Three-screen social study, grid to map to confirmation",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0293",
+      "title": "Health tracker triptych built on a large ring",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0294",
+      "title": "Dating profile after a portrait-forward revamp",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0295",
+      "title": "Contact list in dark and light, dark winning on legibility",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0296",
+      "title": "Scan-to-pay screen with a centred QR code",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0297",
+      "title": "Referral reward screen before and after, from empty to earned",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0298",
+      "title": "Social post before and after, from cluttered to split-view",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0299",
+      "title": "Three-screen reading app wall built on depth",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0301",
+      "title": "Profile before and after, from loud to contained",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0302",
+      "title": "Feed before and after, from a stats bar to inline progress",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0303",
+      "title": "Dashboard before and after, from scattered tiles to a grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0304",
+      "title": "Calendar day picker with a morning-run event",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0305",
+      "title": "Balance home — gradient card treatment",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0306",
+      "title": "Loyalty card app - clean wallet screens",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0307",
+      "title": "Mello - dark account dashboard with a balance hero",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0308",
+      "title": "Marcus - three tappable panels in motion",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0309",
+      "title": "Music app home - blue header over a mixed feed",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0310",
+      "title": "Map search with a route summary sheet",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0311",
+      "title": "Reading app - a labelled before/after paywall comparison",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0312",
+      "title": "Avatar cluster - overlapping faces at three densities",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0325",
+      "title": "Music player - full-bleed artist photo with lyrics",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0326",
+      "title": "Music player - portrait artwork with a comment layer",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0327",
+      "title": "Music player - concert photo with a waveform",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0328",
+      "title": "Audiobook player - 'I Love My Computer' with a playlist",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0329",
+      "title": "Library - dark audio library with recent additions",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0330",
+      "title": "Classical music - Beethoven featured player card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0331",
+      "title": "Contacts app - searchable list on sage green",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0332",
+      "title": "Settings - upgrade banner over a grouped list",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0333",
+      "title": "Settings - dark upgrade card with a testimonial",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0334",
+      "title": "Settings - 'Plant AI' discount card on sage green",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0335",
+      "title": "Settings - the same offer on a neutral surface",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0336",
+      "title": "Focus timer - three screens, monochrome and halftone",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0337",
+      "title": "Eight-panel store gallery built on vivid circular graphics",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0338",
+      "title": "Playful dark store panel with a scribbled illustration",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0339",
+      "title": "Sixteen-panel store gallery in cream and green",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0340",
+      "title": "Budget app - 'Today' overview with category rows",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0341",
+      "title": "Promos - spend progress with a redemption list",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0342",
+      "title": "Creator profiles - Payout and Promos reporting panels",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0343",
+      "title": "Smart Alarms - 'No Alarm Active' state",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0344",
+      "title": "Focus timer - large countdown with mode tiles",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0345",
+      "title": "Quantum Rush - three staged app screens",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0346",
+      "title": "Social app - a full screen-sheet contact sheet",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0347",
+      "title": "Restaurant app - invite friends to a table",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0348",
+      "title": "Mobile AI - agents tab over a dusk gradient",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0349",
+      "title": "Agent card - $1,000.21 balance over a horizon glow",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0350",
+      "title": "Poster app - artwork cards beside an editor toolbar",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0351",
+      "title": "Finance app - crypto, prediction market and balance views",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0352",
+      "title": "Habit tracker - three radial gauges in neon",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0353",
+      "title": "Habit tracker - stacked 3D columns with a goal line",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0354",
+      "title": "Habit analytics - multi-series activity chart",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0355",
+      "title": "Code editor settings - dark panel with sliders",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0356",
+      "title": "MyHealth - daily plan with an orange floating action",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0357",
+      "title": "Wellness check-in - pale green panel with a scale",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0358",
+      "title": "Zelt - welcome dialog over a desktop-style list",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0359",
+      "title": "Empty list - drawn scale illustration as placeholder",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0360",
+      "title": "Settings - record rows with toggles and a pen accent",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0361",
+      "title": "Device pairing - 'Pair Your Account' with an illustration",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0362",
+      "title": "Rajdhani Express - live train tracking on a map",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0363",
+      "title": "Banking app - four carved-glass marketing screens",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0364",
+      "title": "Finance app - add-card and transfer forms compared",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0365",
+      "title": "Brokerage - $8,500 balance with a prediction market",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0366",
+      "title": "Finance trends - rose-tinted chart card with filters",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0367",
+      "title": "High rise - rose gradient insights screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0368",
+      "title": "High rise - the same insights plus an explainer card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0369",
+      "title": "Clean laundry app - single phone on a white field",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0370",
+      "title": "Order detail - laundry basket with a bill breakdown",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0371",
+      "title": "Order detail - timeline of pickup and return slots",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0372",
+      "title": "Laundry home - wallet, hero offer and status card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0373",
+      "title": "Laundry app - in-hand mockup over a teal field",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0374",
+      "title": "Usage stats - subscription progress and bar chart",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0375",
+      "title": "Wash and Fold - service detail beside an info sheet",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0376",
+      "title": "Laundry app - three-panel order and support spread",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0377",
+      "title": "Service card - about, options, provider and reviews",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0378",
+      "title": "Service pages - three overlapping detail cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0379",
+      "title": "Banking home - balance and transactions in light mode",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0380",
+      "title": "Banking home - dark variant of the same layout",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0381",
+      "title": "Travel app - three screens with an orange accent",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0382",
+      "title": "Orange app - a twelve-screen screen-sheet",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0383",
+      "title": "Fitness app - a seventeen-screen screen-sheet",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0384",
+      "title": "Dose Logged - a green confirmation with a burst badge",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0385",
+      "title": "Vitals app - 'Vitals Logged' on a green field",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0386",
+      "title": "Health monitor - blood pressure, blood sugar and ECG",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0387",
+      "title": "Shop smarter - three-screen violet onboarding",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0388",
+      "title": "Amazon Prime - dark perks screen with a yellow banner",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0389",
+      "title": "Ride app - $30.00 charge with saved places",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0390",
+      "title": "Social feed - dark post with a photographic card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0391",
+      "title": "Add Card - card entry form with grouped fields",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0392",
+      "title": "Add Card - nickname and work-card fields only",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0393",
+      "title": "Add Card - grouped card form in a light shell",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0394",
+      "title": "Cart - three dishes with quantities and prices",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0395",
+      "title": "Cart - a single item with the checkout summary",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0396",
+      "title": "Cart - three-item list with a sticky total bar",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0397",
+      "title": "Banking home - green header with transactions and move money",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0398",
+      "title": "Banking home - the same screen seen from a distance",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0399",
+      "title": "Banking home - allocation blocks and payment history",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0400",
+      "title": "L'hiver est a toi - three type-led winter tiles",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0401",
+      "title": "Wallet app - three dark screens with a soft glow",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0402",
+      "title": "ChatGPT Design vs Figma Design - two colour directions",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0403",
+      "title": "Ambient-motion onboarding triptych on a lilac ground",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0404",
+      "title": "Empty-state clause list under a stack icon",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0405",
+      "title": "Pastel avatar story-bubble list",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0406",
+      "title": "Orange music-promo panel with three tilted screens",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0407",
+      "title": "Hand-held phone over a delivery tracking home",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0408",
+      "title": "Spend-tracker dark screen with mint bars and a segmented ring",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0409",
+      "title": "Team roster with inline status pills",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0410",
+      "title": "Two-step delivery-confirm sheet with a dimmed backdrop",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0411",
+      "title": "Dark shop-ordering list under an order heading",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0412",
+      "title": "Dark portfolio with a large numeral and a red alert strip",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0413",
+      "title": "Pet-shop home with photographic product cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0414",
+      "title": "Streak-calendar screen with a magenta emphasis row",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0415",
+      "title": "Dense dark audit table with twin value columns",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0416",
+      "title": "Yellow-accent stats home with a progress summary card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0417",
+      "title": "Yellow-accent vertical feed of photographic cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0418",
+      "title": "Streak tracker with a large day numeral and a yellow call to action",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0419",
+      "title": "Hand-held travel app with a green search pill",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0420",
+      "title": "Travel triptych over an aerial-coast photograph",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0421",
+      "title": "Black notifications list with coloured category pills",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0422",
+      "title": "Location-sharing sheet over a body-map figure",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0423",
+      "title": "Dose calculator with a gauge-headed result",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0424",
+      "title": "Dark product detail with a lime buy bar",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0425",
+      "title": "Green-accent listings screen, empty state then filled",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0426",
+      "title": "Listings screen with an inline search field and a green status pill",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0427",
+      "title": "Dark browse-by-mood grid over a developer screenshot",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0428",
+      "title": "Hand-held finance home with a large pale figure",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0429",
+      "title": "Install-prompt screen staged on a desk with a laptop",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0430",
+      "title": "Headline typography over a laptop-and-phone product shot",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0431",
+      "title": "Phone on a warm desk showing a portrait feed",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0432",
+      "title": "Light finance portfolio with a large balance and token rows",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0433",
+      "title": "Dark finance portfolio, the night-mode sibling",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0434",
+      "title": "Two-step token transfer with a green confirm sheet",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0435",
+      "title": "Property booking detail with a photographic hero and a blue call to action",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0436",
+      "title": "Property filters sheet with a blue price histogram",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0437",
+      "title": "Dark booking detail with a white price label over the hero",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0438",
+      "title": "Finance app triptych on a pale grey ground",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0439",
+      "title": "To-do app pitch with the live screen beneath the claim",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0440",
+      "title": "Reminder app pitch with a pink accent button",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0441",
+      "title": "Calendar app pitch pairing a friendly mark with a date grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0442",
+      "title": "Calendar pitch with a headline band above a month grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0443",
+      "title": "Shared-list pitch with illustrated member rows",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0444",
+      "title": "Colour-coded list pitch with a floating phone",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0445",
+      "title": "Photo-memory pitch with a torn-edge photo stack",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0446",
+      "title": "Light-and-dark-mode feature list with a split face",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0447",
+      "title": "Inbox-capture pitch with a headline split above and below the phone",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0449",
+      "title": "Three-screen travel app wall, list to detail",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0450",
+      "title": "Four-screen dark wallet walkthrough",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0451",
+      "title": "Savings goals screen with a leading number column",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0452",
+      "title": "Eight-screen app wall from onboarding to feed",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0453",
+      "title": "Two surfaces of one music app: dense library beside a full-bleed player",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0454",
+      "title": "Music library and player with a circular scrubber",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0455",
+      "title": "Analytics dashboard with pastel metric tiles and a monthly bar chart",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0456",
+      "title": "Checkout screen with a scheduled delivery slot and an order summary",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0457",
+      "title": "Order checkout with a promo-code call to action and a mobile-money method",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0458",
+      "title": "Checkout with an inline address list rather than a summary card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0459",
+      "title": "Three feature slides built on one shared card template",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0460",
+      "title": "Wellness app wall with pastel progress rings",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0461",
+      "title": "Profile screen with a warm gradient portrait and a stats row",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0465",
+      "title": "Should I go outside — two outcomes, chip grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0466",
+      "title": "Trips — travel planning board with map",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0467",
+      "title": "Travel budget and split balances",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0468",
+      "title": "Day plan list beside a pinned map",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0469",
+      "title": "Invite code and packing progress cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0470",
+      "title": "Galileo — 3D navigate on a dark phone",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0471",
+      "title": "Home app onboarding — a place to call home",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0472",
+      "title": "Stay onboarding with avatar tiles",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0473",
+      "title": "SENDOE — multi-currency money, dark",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0474",
+      "title": "Quick note — note list to editor",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0475",
+      "title": "City of London — bottom sheet over photo",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0476",
+      "title": "On-walkthrough settings with check states",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0477",
+      "title": "Fintech dashboards, two dark panels",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0478",
+      "title": "Manage balance — sell today, delivered tonight",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0479",
+      "title": "New Delivery — details, address, time slot",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0480",
+      "title": "Storage account — card, chart, items",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0481",
+      "title": "$250 cloud sessions credit card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0482",
+      "title": "Twelve phone states in a numbered grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0483",
+      "title": "Kundenportal — German SaaS CRM",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0484",
+      "title": "Schrift-Buchse — German type tool",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0485",
+      "title": "Buy a gift — referral rewards, dark",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0486",
+      "title": "Food trust-and-recommendation flow",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0487",
+      "title": "Watch analytics, two KPI cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0488",
+      "title": "Watch face gallery, grid to detail",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0489",
+      "title": "WatchKit weather and record screens",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0490",
+      "title": "GenoGrowthMann Kids — smart garden",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0491",
+      "title": "Ulu Plus membership tiers, dark",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0492",
+      "title": "Ulu Plus membership tiers, light",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0493",
+      "title": "Dashr splash — one word, one colour",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0494",
+      "title": "Dashr — deliver faster, earn smarter",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0495",
+      "title": "Tara — fashion discovery and product",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0496",
+      "title": "Checkout — payment then delivery options",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0497",
+      "title": "Capture, project, visual direction",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0498",
+      "title": "Smart Garden AI — weather, voice, field",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0499",
+      "title": "GrowSmart Lab — growth KPIs and metrics",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0500",
+      "title": "AquaVision — agricultural analytics",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0501",
+      "title": "Erisproven — SaaS CRM overview",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0502",
+      "title": "Sony headphones product page, watermarked",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0503",
+      "title": "Sony headphones product page, clean",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0504",
+      "title": "Category chips, colour-coded",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0505",
+      "title": "Two list panels — sales and storage",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0506",
+      "title": "Racers — orange trading dashboard",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0507",
+      "title": "Trading platform — balance, tabs, sparkline",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0508",
+      "title": "eQh episode screen, near-empty",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0509",
+      "title": "Pick your avatars, dark grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0510",
+      "title": "Team chat message list",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0511",
+      "title": "The Olive Fashion Edit — curation feed",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0512",
+      "title": "Six avatar illustrations, pastel circles",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0513",
+      "title": "Choose Avatar onboarding, iPhone",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0514",
+      "title": "Client Dashboard bento widget",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0515",
+      "title": "Listening Time stat widget",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0516",
+      "title": "AI Discovery widget with glow",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0517",
+      "title": "Sustainability app, eight screens",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0518",
+      "title": "AuroraCRM analytics, KPIs and donut",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0519",
+      "title": "AuroraCRM activity and upcoming",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0520",
+      "title": "AuroraCRM deals table",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0521",
+      "title": "CRM contacts table view",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0522",
+      "title": "Dark analytics, hero line chart",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0523",
+      "title": "LaunchFlow LMS analytics, yellow",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0524",
+      "title": "KaiOS analytics, big percentage",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0525",
+      "title": "PilotDesk social analytics",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0526",
+      "title": "Dial budgeting with category usage",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0527",
+      "title": "PilotDesk HR dashboard, orange",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0528",
+      "title": "InsightPanel dashboard with calendar",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0529",
+      "title": "Studio Sphere music DAW",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0530",
+      "title": "Music stats on angled device",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0531",
+      "title": "Reports workspace with notifications",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0532",
+      "title": "Connect business bank accounts",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0533",
+      "title": "Ace Studio prompt menu with MCP",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0534",
+      "title": "Ace Studio project menu expanded",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0535",
+      "title": "Dark CRM contacts table",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0536",
+      "title": "Dark CRM row context menu",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0537",
+      "title": "Receviewe — French contact CRM",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0538",
+      "title": "AI Replacement — wider response view",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0539",
+      "title": "Content Writer — structured AI form",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0540",
+      "title": "Tennis tournament poster and app",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0541",
+      "title": "Dorcas smart home, voice-first",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0542",
+      "title": "Smart home setup, illustrated",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0543",
+      "title": "Sprint Planning PM dashboard",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0544",
+      "title": "Meetball share-transcript sheet",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0545",
+      "title": "React docs page in Japanese",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0546",
+      "title": "NPS reporting dashboard",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0547",
+      "title": "NPS breakdown chart card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0548",
+      "title": "Mike travel-social store panels",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0549",
+      "title": "Dark fintech management hero",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0550",
+      "title": "Green fintech confidence landing",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0551",
+      "title": "Orange editorial agency page",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0552",
+      "title": "Salesio AI-agents sales landing",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0553",
+      "title": "Answer evidence section (Babson)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0554",
+      "title": "Answer AIQ hero with engraving",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0555",
+      "title": "Answer institutional testimonial band",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0556",
+      "title": "Answer people-proof section",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0557",
+      "title": "Dark approval-flow builder",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0558",
+      "title": "Agent trigger-and-research panel",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0559",
+      "title": "Automation node canvas (dark)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0560",
+      "title": "Project chat composer with attachments",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0561",
+      "title": "AI model picker (GPT-5.x)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0562",
+      "title": "Agent permission modes",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0563",
+      "title": "Income-statement report with period filter",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0564",
+      "title": "Banking rules-and-accounts table",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0565",
+      "title": "Startup cash summary (Mercury/Brex)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0566",
+      "title": "Transaction row context menu",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0567",
+      "title": "Dark dense data table",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0568",
+      "title": "Delivery-brand phone mockups",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0569",
+      "title": "Delivery secure-story phone panels",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0570",
+      "title": "Payment-processor customers table",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0571",
+      "title": "Diet-app before/after redesign",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0572",
+      "title": "Harvey legal-AI landing",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0573",
+      "title": "AI-native docs platform landing",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0574",
+      "title": "Framer design-agent dark hero",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0575",
+      "title": "AI-app chat landing",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0576",
+      "title": "Stat-card analytics dashboard",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0577",
+      "title": "Tailoor doc-collab landing",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0578",
+      "title": "Booking price-filter card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0579",
+      "title": "Palm Beach hotel booking card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0580",
+      "title": "Palm Beach card (close crop)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0581",
+      "title": "OneFin company dashboard",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0582",
+      "title": "OneFin cash-management view",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0583",
+      "title": "OneFin valuation view",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0584",
+      "title": "NorthLine Studio illustrated brand page",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0585",
+      "title": "Customer-quote testimonial wall",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0586",
+      "title": "Lumen Studio footer with starfield",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0587",
+      "title": "Three-tier SaaS pricing",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0588",
+      "title": "Payouts money dashboard",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0589",
+      "title": "Money balance view (crop)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0590",
+      "title": "Caregiving SaaS track-record band",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0591",
+      "title": "Sunflower AI-builder hero",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0592",
+      "title": "Staged SaaS pricing columns",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0593",
+      "title": "Notes-app sky landing",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0594",
+      "title": "Sales outreach prospects table",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0595",
+      "title": "Study-app community tab",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0596",
+      "title": "Study-app home and stats",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0597",
+      "title": "Study-app quizzes crop",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0598",
+      "title": "Wellness brand statement",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0599",
+      "title": "Wellness results stat tiles",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0600",
+      "title": "Split-art login screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0601",
+      "title": "Train timetable app screens",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0602",
+      "title": "Art-collecting app onboarding",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0603",
+      "title": "Hotel-app auth with imagery",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0604",
+      "title": "EV charging app screens",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0605",
+      "title": "Dark training-schedule screens",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0606",
+      "title": "Team invite screens (dark)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0607",
+      "title": "Travel itinerary collage",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0608",
+      "title": "Mugic music-app board",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0609",
+      "title": "Logistics control-tower landing",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0610",
+      "title": "HTML-to-Next.js converter landing",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0611",
+      "title": "Crypto index donut",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0612",
+      "title": "Bitcoin token detail",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0613",
+      "title": "Push-day workout tracker",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0614",
+      "title": "Exercise logging screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0615",
+      "title": "Gym rest timer",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0616",
+      "title": "Workout complete summary",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0617",
+      "title": "Profile-settings before/after",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0618",
+      "title": "Mint mood-check onboarding",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0619",
+      "title": "CRM contact record",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0620",
+      "title": "CRM dashboard",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0621",
+      "title": "CRM deal kanban",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0622",
+      "title": "CRM meetings list",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0623",
+      "title": "Travel journal collections",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0624",
+      "title": "Travel trip collections",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0625",
+      "title": "Travel memory detail",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0626",
+      "title": "Trip collage editor",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0627",
+      "title": "Budget widget menu",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0628",
+      "title": "Green fintech auth trio",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0629",
+      "title": "Auth signup crop",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0630",
+      "title": "Grocera create-password form",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0631",
+      "title": "Email verification code",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0632",
+      "title": "Lead-finder agent tasks",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0633",
+      "title": "Share-your-agent screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0634",
+      "title": "Marketplace icon-set promo",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0635",
+      "title": "Fitness tab-bar icon set",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0636",
+      "title": "Walking-app icon set",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0637",
+      "title": "Video-app icon set",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0638",
+      "title": "Fitness profile (Joyce Scott)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0639",
+      "title": "Fitness settings list",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0640",
+      "title": "App settings with premium",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0641",
+      "title": "Goals card with legal rows",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0642",
+      "title": "Campaign brief document",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0643",
+      "title": "Campaign task card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0644",
+      "title": "Shopping assistant phones",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0645",
+      "title": "Agent failure trace (dark)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0646",
+      "title": "Deploy runs checklist",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0647",
+      "title": "Flaky-test dashboard",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0648",
+      "title": "Checkout experiment review",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0649",
+      "title": "Board sharing permissions",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0650",
+      "title": "Share board crop",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0651",
+      "title": "Link sharing controls",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0652",
+      "title": "API onboarding dashboard",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0653",
+      "title": "API analytics with tokens",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0654",
+      "title": "Expense tracker phones",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0655",
+      "title": "Budget insight card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0656",
+      "title": "Leaderboard trio",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0657",
+      "title": "Morning briefing dashboard",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0658",
+      "title": "Dark music home",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0659",
+      "title": "Workspace creation form",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0660",
+      "title": "Attribution survey",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0661",
+      "title": "Integration sync step",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0662",
+      "title": "Team invite step",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0663",
+      "title": "Frank card (leaf art)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0664",
+      "title": "Frank card (mountain art)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0665",
+      "title": "Frank card (sky art)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "IMG-0666",
+      "title": "Frank WhatsApp-integration card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0052",
+      "title": "Light mobile messaging/reading screen with purple CTA",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0060",
+      "title": "Animated black blob logo mark with coloured ribbons",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0061",
+      "title": "AI agent promo — iPhone mockup with 30:00 timer and dog illustration",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0063",
+      "title": "Dark AI agent 'thinking states' component showcase",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0064",
+      "title": "Abstract motion study — orbiting arcs on a dark dotted grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0066",
+      "title": "Web 'Promise Wall' board with sticky notes and composer",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0069",
+      "title": "Dark notes web app — scattered note cards and 'add your note' composer",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0070",
+      "title": "Mobile magazine/reading app — 'July' issue card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0071",
+      "title": "Dark 'Project Folder' dashboard with colour-coded folder cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0072",
+      "title": "Dark iOS messaging screen with calendar banner and image cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0073",
+      "title": "In-hand iPhone app with rounded 'Setting' pill button",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0074",
+      "title": "Grok Bot icon animation — code-driven morphing icon",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0075",
+      "title": "Drawing/annotation tool — floating bottom toolbar with highlighter and eraser",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0076",
+      "title": "AI app screen — trash illustration with undo prompt",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0077",
+      "title": "Same document, light theme vs dark theme",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0078",
+      "title": "Dark mobile profile/settings screen with grouped account menu",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0079",
+      "title": "Light web dashboard inside a browser window",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0080",
+      "title": "App promo mockup — 'Made for your everyday' icon grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0081",
+      "title": "White canvas with 'K' presence badges and cursor",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0082",
+      "title": "Photo card carousel on a white canvas",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0083",
+      "title": "Light web page with cards and presenter webcam bubble",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0084",
+      "title": "Light iOS form screen with 'Continue with Apple' row",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0086",
+      "title": "iOS mail/inbox app 'Electro' with search and message list",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0087",
+      "title": "iOS home screen with finance and birthday widgets",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0089",
+      "title": "Date-range picker component with blue selection state",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0090",
+      "title": "Onboarding step — 'Select your goal' option list",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0093",
+      "title": "Designer portfolio site — intro copy and project card grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0094",
+      "title": "Dark AI assistant ask-bar with 'Ask Aurelius' and 'Write with Siri'",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0095",
+      "title": "Deck/document page — 'Email Analytics' with vertical nav",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0097",
+      "title": "Line-art diagram of overlapping concentric circles",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0098",
+      "title": "Floating mobile tab bar component in blue and white",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0099",
+      "title": "Desktop design-app window with macOS controls and layer sidebar",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0100",
+      "title": "Dark data-viz dashboard with spatial and neural panels",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0101",
+      "title": "Dark AI agent configuration dashboard",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0102",
+      "title": "Travel/explore mobile app with nature photography cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0103",
+      "title": "Tasks and Notes mobile app in light mode",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0105",
+      "title": "iOS voice-message player with waveform scrubber",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0106",
+      "title": "Editor screen with beta checklist, palm illustration and July calendar",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0109",
+      "title": "Book-to-tablet morph animation revealing an app skeleton",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0111",
+      "title": "Dark AI agent chat with steering and queue controls",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0112",
+      "title": "Calendar app with May 2026 grid and colour-coded events",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0113",
+      "title": "Text-formatting motion demo with bold, underline and arrow annotation",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0114",
+      "title": "Learning app onboarding with mascot and topic buttons",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0115",
+      "title": "Dark AI coding agent conversation with live status lines",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0117",
+      "title": "'rivet' landing page with red dot-matrix hero graphic",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0118",
+      "title": "In-hand iPhone showing camera/photo app slider",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0119",
+      "title": "Social feed app 'Poplife' with For You tab",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0120",
+      "title": "Design moodboard — 'Delicate Linework' reference cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0122",
+      "title": "'MEOW AI AGENT' landing page with pixel-art cat",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0124",
+      "title": "Dark mobile biography/reading screen with portrait",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0125",
+      "title": "Designer portfolio page — 'How I make my living as a designer'",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0126",
+      "title": "Quote page on lavender background — 'no right or wrong'",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0127",
+      "title": "Personal portfolio page for 'Pratham Yadav'",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0128",
+      "title": "Design tool with three generative gradient panels",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0130",
+      "title": "In-hand iPhone showing app with abstract red artwork",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0131",
+      "title": "Dark AI assistant — 'Hello Raunak. May I help you?'",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0132",
+      "title": "'Lens Chat' app with photo grid and dark panel",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0135",
+      "title": "Dark welcome screen — 'Your world is ready'",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0136",
+      "title": "iOS collage app — 'browse, gather, rearrange'",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0137",
+      "title": "Design tool with phone artboard and layers panel",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0138",
+      "title": "Kids' learning app promo in app-store screenshot style",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0139",
+      "title": "In-hand iPhone with circular camera-style control",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0140",
+      "title": "Dark hero — 'Build the app you wished existed.'",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0141",
+      "title": "Three-screen mobile app flow — mentor match and route map",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0142",
+      "title": "Pink 'Afterglow' social/community app profile",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0144",
+      "title": "Garden planner — butterfly-shaped planting layout",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0146",
+      "title": "Product designer portfolio — Harold Bernard bio page",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0147",
+      "title": "Design board of pastel UI component cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0148",
+      "title": "Phone mockup — dark shoe shopping app on a painted backdrop",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0149",
+      "title": "Health/fitness app dashboard with radial stats and mint palette",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0150",
+      "title": "Cursor smoothing motion demo — spring vs none",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0151",
+      "title": "Portfolio mockup — 'designer. artist. human.'",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0153",
+      "title": "Onboarding — 'Welcome to Offhop' with 3D gradient blobs",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0154",
+      "title": "'Support the Developer' donation screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0155",
+      "title": "'Clockwork' sticker pack screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0156",
+      "title": "In-hand iPhone — social feed of profile cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0157",
+      "title": "Dark mobile settings/profile list (small mockup)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0158",
+      "title": "Dark mobile context menu — rename, move to trash, payment method",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0160",
+      "title": "Chat app mockup set — 'What are you thinking this afternoon?'",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0161",
+      "title": "Onboarding — 'Work. Earn. Enjoy'",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0162",
+      "title": "Habit app 'Commitment' with envelope illustration",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0163",
+      "title": "'CADU' splash screen with playful characters",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0164",
+      "title": "Gamified leaderboard — 'Climb the Global Rankings'",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0165",
+      "title": "Dark music app — playlist and track list",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0166",
+      "title": "Minimal mobile screen with a single input field",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0167",
+      "title": "Signup screen — 'Enter your name' with iOS keyboard",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0170",
+      "title": "Dark account/settings screen with grouped rows",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0171",
+      "title": "Survey question screen — time spent sitting or resting outside",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0172",
+      "title": "Survey question screen — sitting/resting outside (duplicate)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0173",
+      "title": "Health app onboarding with radial 'Overview' chart",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0188",
+      "title": "Light mobile app mockup with product cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0189",
+      "title": "App mockup set — 'Artifact' calendar and list screens",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0197",
+      "title": "Cream-toned 'Path of Abundance' onboarding welcome screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0200",
+      "title": "Collage of six app-store screenshot cards (fitness, coffee, routes)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0202",
+      "title": "Light-mode fintech app with Habit / Growth plan / Mutual funds tabs",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0203",
+      "title": "Two phone mockups with abstract graphic-art screens",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0204",
+      "title": "Dark splash screen with a bright green app-icon reveal",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0207",
+      "title": "No skills vs MCP + Skills - the baseline comparison",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0208",
+      "title": "Dark health app form with green header and Start Now button",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0209",
+      "title": "Very dark phone mockup, UI unreadable",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0211",
+      "title": "Dark-green social fitness screen with step leaderboard",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0213",
+      "title": "Six-screen app collage with fitness and rating screens",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0214",
+      "title": "Illustration/drawing tool with brush panel and colour swatches",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0217",
+      "title": "Light onboarding list with three colour-coded action rows",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0220",
+      "title": "Dark ticket/pass screen with barcode and YBI / YAY labels",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0221",
+      "title": "Warm light app with large '15h 00m' timer and Recently played list",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0225",
+      "title": "Phone showing 'Create poll' web view with on-screen keyboard",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0227",
+      "title": "Minimal text-heavy web page with logo and body copy",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0229",
+      "title": "Light 'Collections' screen with photo grid and info card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0231",
+      "title": "Light screen with 3D-tilted photo card stack and barcode",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0232",
+      "title": "'Crafting ideas in sync.' minimal studio landing page",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0233",
+      "title": "Dark security-key onboarding screen with lock glyph",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0234",
+      "title": "'Pick your vibe' illustrated avatar picker",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0235",
+      "title": "White screen with blurred rainbow motion streaks",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0236",
+      "title": "Sleep-app app-store screenshot set (Track sleep, Why it works)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0238",
+      "title": "Peach-toned reading/feed card with illustration and action bar",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0239",
+      "title": "Clean month-view calendar screen with Today pill",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0240",
+      "title": "Before ($10k/mo) vs After (MCP + Skills) - wallet app",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0241",
+      "title": "Dark sports prediction screen with chart and score card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0242",
+      "title": "Dark iOS picker sheet with categories and time wheel",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0243",
+      "title": "Cream-toned stats dashboard with 'Digital flock' mastery card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0244",
+      "title": "Dark notification list with blue toggle buttons",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0245",
+      "title": "Indigo water-tracking app with 88% and 250ml counter",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0246",
+      "title": "Payment amount entry with keypad plus coffee promo screens",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0247",
+      "title": "Bare white screen with search bar and blue Publish button",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0249",
+      "title": "Collections screen with colour-palette dots and photo cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0250",
+      "title": "Card/mail app screen with letter card and envelope imagery",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0252",
+      "title": "Photo-journal screen with circular week collage",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0253",
+      "title": "Document reader with text-selection context menu",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0255",
+      "title": "Dark analytics screen with vertical bar chart",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0256",
+      "title": "Chat thread with colour-highlighted message lines",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0257",
+      "title": "Dark promo with pink phone card and 'Leave your mark.' overlay",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0258",
+      "title": "Long list screen with colour-dot category rows",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0259",
+      "title": "Dark 'Featured On' carousel with large app dock",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0260",
+      "title": "Music player with album art held in hand outdoors",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0262",
+      "title": "December 2026 calendar sheet with Today and Select buttons",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0263",
+      "title": "Dark 'Let's get you set up' three-step onboarding",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0264",
+      "title": "good vs better - context menu ordering and destructive-action affordance",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0265",
+      "title": "'Select a project' dropdown with request-approval action",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0266",
+      "title": "Dark 'Apps' list with Spotify, App Store and notification rows",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0267",
+      "title": "Glowing 'New' pill button animation on deep blue",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0268",
+      "title": "'Morning routine' settings panel with frequency controls",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0269",
+      "title": "Black screen with '62%' label and dot-grid progress",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0274",
+      "title": "Dark habit tracker showing 'DAY 14' with empty-day state",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0275",
+      "title": "Dark release-notes screen for version 4.7.0",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0276",
+      "title": "Light 'Application status' screen with circular gauge",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0277",
+      "title": "Original vs Opus 5 vs Opus 5.5 - three generations of one screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0278",
+      "title": "Fable 5.1 vs GPT-6 Astra - same brief, two outputs",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0279",
+      "title": "'Plan Every Stop, Effortlessly.' travel route screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0280",
+      "title": "Editorial spread 'Designed to be read, then re-read'",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0281",
+      "title": "Project/kanban workspace panel on pink-orange gradient",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0282",
+      "title": "Four app-store screenshot cards (boost, ratings, rewards, tour)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0283",
+      "title": "Desktop calendar dashboard with event month grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0284",
+      "title": "Dark 'Get Health Life' checklist screen with Start Now",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0285",
+      "title": "Two light wellness screens with gradient orb and plan list",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0286",
+      "title": "Phone in hand showing a pastel illustrated sticker card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0287",
+      "title": "'How episodic sharing works' social explainer screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0288",
+      "title": "Split view: code editor beside a 'Dark Environment' phone",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0289",
+      "title": "Journal app screen held in hand with warm morning light",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0290",
+      "title": "Minimal story screen with a single narrative line",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0291",
+      "title": "App Store product page for 'The Legend of Zelda: The Wind Waker'",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0292",
+      "title": "Abstract glowing orbs animation on a black screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0293",
+      "title": "'Your coffee, fast.' e-commerce hero with product and phone mockup",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0294",
+      "title": "Chat screen with colour-highlighted messages over a photo",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0295",
+      "title": "Desktop analytics dashboard with sidebar and bar charts",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0296",
+      "title": "Dark network-graph data visualisation with sidebar",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0297",
+      "title": "Light 'Top Goals' habit screen with streak and month grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0307",
+      "title": "Payment form, card to paid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0308",
+      "title": "Dashr delivery rider ad",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0315",
+      "title": "Inori LinkedIn profile walkthrough",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0318",
+      "title": "Select a project, minimal card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0319",
+      "title": "Three-card money education strip",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0320",
+      "title": "Share transcript modal, Meetlab",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0328",
+      "title": "Organic Studio — local AI chat IDE",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0331",
+      "title": "VS Code hot-reload phone preview",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0332",
+      "title": "Ferrock corporate claims platform reveal",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0333",
+      "title": "muso — make a song, keep a moment",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0334",
+      "title": "Dark photo-feed prototype walkthrough",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0335",
+      "title": "Podcast sentiment cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0336",
+      "title": "Countdown widget motion",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0337",
+      "title": "Design-tool boards demo",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0338",
+      "title": "Crypto payment chat",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0339",
+      "title": "Live-map onboarding clip",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0340",
+      "title": "Circular avatar row",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0341",
+      "title": "Dashboard cards motion",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0342",
+      "title": "Design-update comment thread",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0343",
+      "title": "Max plan upgrade screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0344",
+      "title": "Document preview interaction",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0345",
+      "title": "Portfolio scroll-through",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0346",
+      "title": "Finance dashboard tour",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0347",
+      "title": "Real-estate listing panels",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0348",
+      "title": "Mobile video-editor demo",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0350",
+      "title": "Docs sidebar navigation",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0351",
+      "title": "AI meeting-booking chat",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0352",
+      "title": "AI thinking indicator",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0353",
+      "title": "Sleep-goal setter",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0354",
+      "title": "Transaction feed scroll",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0355",
+      "title": "Dark abstract text frame",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0356",
+      "title": "Payment-link share sheet",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0357",
+      "title": "Field-message screenshot",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0358",
+      "title": "Redesign-service booking landing",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0359",
+      "title": "Advisor finance dashboard",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0360",
+      "title": "Landing designs file tour",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0361",
+      "title": "Cassette landing scroll",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0362",
+      "title": "Company table scroll",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0363",
+      "title": "Contractor assign flow",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0364",
+      "title": "App preferences page",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0365",
+      "title": "Changelog news feed",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0366",
+      "title": "Photo strip scroll",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0368",
+      "title": "Opal onboarding check",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0369",
+      "title": "Tag search dropdown",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0370",
+      "title": "Partners landing scroll",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0371",
+      "title": "Floor-plan gap editor",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0372",
+      "title": "Layers panel demo",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0374",
+      "title": "Social-post gallery scroll",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0375",
+      "title": "Travel guide scroll",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0376",
+      "title": "Browser start page",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0378",
+      "title": "CRM analytics screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0379",
+      "title": "Access-docs scroll",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0380",
+      "title": "AI portfolio cards",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0381",
+      "title": "Sales-email AI demo",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0382",
+      "title": "Trading deposit widget",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0383",
+      "title": "App promo card reel",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0384",
+      "title": "Dark tipping overlay",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0385",
+      "title": "Vibe avatar picker",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0386",
+      "title": "Multi-model selector",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0387",
+      "title": "GIF keyboard panel",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0388",
+      "title": "Writing stats dashboard",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0389",
+      "title": "2FA enroll screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0390",
+      "title": "Annotation styles board",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0391",
+      "title": "Voice recorder widget",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0392",
+      "title": "AI video-gen comparison",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0393",
+      "title": "Sail share card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0394",
+      "title": "Birthplace city picker",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0395",
+      "title": "Chat-app three-way",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0396",
+      "title": "Voice memo actions",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0398",
+      "title": "Spend-freeze toggle",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0399",
+      "title": "Manifestation word grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0401",
+      "title": "Mood track list",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0402",
+      "title": "Event planning calendar",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0403",
+      "title": "VisionKit capture concept",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0404",
+      "title": "Photo scatter motion",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0405",
+      "title": "Neon music player",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0406",
+      "title": "Tool specimens animation",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0407",
+      "title": "AI research trail",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0408",
+      "title": "Export dialog (dark)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0409",
+      "title": "Engineer portfolio card",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0410",
+      "title": "AI chat prompt list",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0411",
+      "title": "SVG downloads capture",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0412",
+      "title": "Cut editor tour",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0413",
+      "title": "Morph logo animation",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0414",
+      "title": "Fixed-yield DeFi landing",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0415",
+      "title": "Particle starburst",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0416",
+      "title": "App rankings tracker",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0417",
+      "title": "Sales timeline scroll",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0418",
+      "title": "Settings toggles panel",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0419",
+      "title": "Analytics date-range picker",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0421",
+      "title": "Course progression panel",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0422",
+      "title": "Mercury blobs motion",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0423",
+      "title": "Issue detail panel",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0424",
+      "title": "Music explore grid",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0425",
+      "title": "Team avatar stack",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0426",
+      "title": "Nepali audio screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0427",
+      "title": "Journal scroll demo",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0428",
+      "title": "Forming splash",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0429",
+      "title": "Price history feed",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0431",
+      "title": "Dotted wave data art",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0432",
+      "title": "Find-friends permission",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0433",
+      "title": "Offsite comment thread",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0434",
+      "title": "Year dial picker",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0435",
+      "title": "Visitor-counter portfolio",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0436",
+      "title": "Language picker",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0437",
+      "title": "Cursor playground",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0438",
+      "title": "Width-axis type tester",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0439",
+      "title": "Flight companion phones",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0440",
+      "title": "Sticker calendar",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0441",
+      "title": "Coherent chaos wave",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0442",
+      "title": "Notes-app code reveal",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0443",
+      "title": "Tilted video playback",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0445",
+      "title": "Mind-search notes app",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0446",
+      "title": "Live-map onboarding (alt)",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0447",
+      "title": "Payroll reports scroll",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0448",
+      "title": "Gesture icon quartet",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0449",
+      "title": "Train arrival screen",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0450",
+      "title": "Refund FAQ accordions",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0451",
+      "title": "Hardware-key catalog",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0452",
+      "title": "Test gallery scroll",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0453",
+      "title": "Settings scroll blur",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0454",
+      "title": "Lyrics player",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0455",
+      "title": "Sticker pack pan",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0456",
+      "title": "Gentle-workout personalization",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0457",
+      "title": "Korean lyrics player",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0458",
+      "title": "Voice AI chat",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0459",
+      "title": "Gradient card trio",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0460",
+      "title": "Delivery settings doc",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0461",
+      "title": "Contract signature pad",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0462",
+      "title": "Hold-to-post button",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0463",
+      "title": "Social day feed",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0464",
+      "title": "Contract tracker",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0465",
+      "title": "Snack pack burst ad",
+      "reason": "No scoped visual review recorded"
+    },
+    {
+      "id": "VID-0466",
+      "title": "Isometric press-line simulation",
+      "reason": "No scoped visual review recorded"
+    }
+  ]
+}

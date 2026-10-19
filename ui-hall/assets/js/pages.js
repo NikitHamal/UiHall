@@ -11,7 +11,7 @@ const Lightbox = (() => {
   function open(id, list) {
     const asset = DATA.get(id);
     if (!asset) return;
-    lastFocus = document.activeElement;
+    if (root().hidden) lastFocus = document.activeElement;
     currentId = id;
     if (list && list.length) order = list.slice();
     else if (!order.includes(id)) order = DATA.all().map((a) => a.id);
@@ -19,16 +19,19 @@ const Lightbox = (() => {
     render(asset);
     const box = root();
     box.hidden = false;
+    if (!box.open) box.showModal();
     document.body.style.overflow = 'hidden';
     document.getElementById('lbPrev').onclick = () => step(-1);
     document.getElementById('lbNext').onclick = () => step(1);
     document.querySelector('.lightbox__close')?.focus();
     document.addEventListener('keydown', onKey);
+    box.oncancel = (event) => { event.preventDefault(); close(); };
   }
 
   function close() {
     const box = root();
     if (box.hidden) return;
+    box.close();
     box.hidden = true;
     document.body.style.overflow = '';
     mediaBox().innerHTML = '';
@@ -62,7 +65,7 @@ const Lightbox = (() => {
         src: asset.clip,
         poster: asset.src,
         controls: true,
-        autoplay: true,
+        autoplay: !window.matchMedia('(prefers-reduced-motion: reduce)').matches,
         loop: true,
         muted: true,
         playsinline: true,
@@ -156,13 +159,18 @@ const Lightbox = (() => {
     box.append(el('p', { class: 'lb-id', text: asset.id }));
     box.append(el('h2', { class: 'lb-title', text: asset.title }));
     box.append(metaChips(asset));
+    const save = Workbench.saveButton(asset); save.className = 'btn btn--ghost lb-save'; save.style.position = 'static';
+    save.textContent = save.getAttribute('aria-pressed') === 'true' ? 'Remove from shortlist' : 'Add to shortlist';
+    save.addEventListener('click', () => { save.textContent = save.getAttribute('aria-pressed') === 'true' ? 'Remove from shortlist' : 'Add to shortlist'; });
+    box.append(save);
+    box.append(el('p', { class: 'lb-evidence', text: asset.review ? 'Visual review: ' + asset.review.scope + '. ' + asset.review.note : 'Inherited description. Check visible details against the reference; original source attribution is not verified.' }));
 
     if (asset.description) {
       box.append(el('p', { class: 'lb-desc', text: asset.description }));
     }
 
     if (asset.quality) {
-      box.append(el('h3', { class: 'lb-h', text: 'Salvage note' }));
+      box.append(el('h3', { class: 'lb-h', text: 'Capture note' }));
       box.append(el('p', { class: 'lb-desc', style: 'margin-top:0', text: asset.quality }));
     }
 
@@ -191,7 +199,7 @@ const Lightbox = (() => {
       rows.push(['Duration', fmt.secs(asset.duration_s)]);
       rows.push(['Frame rate', asset.fps ? `${asset.fps} fps` : '—']);
       rows.push(['Motion (frame diff)', asset.motion != null ? String(asset.motion) : '—']);
-      rows.push(['Clip shipped', asset.clip ? 'yes' : 'no — static, poster only']);
+      rows.push(['Clip shipped', asset.clip ? 'yes' : 'no playable derivative']);
     }
     if (asset.roles?.length) rows.push(['Roles', asset.roles.join(', ')]);
     if (asset.style?.length) rows.push(['Style', asset.style.join(', ')]);

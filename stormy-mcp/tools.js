@@ -64,6 +64,8 @@ function brief(a, { withPalette = true } = {}) {
     kind: a.kind,
     category: a.category,
     type: a.type,
+    description_status: a.review ? 'scoped visual review; see get_asset' : 'inherited; not independently verified',
+    review_scope: a.review?.scope || null,
   };
   if (a.roles?.length) o.roles = a.roles;
   if (a.style?.length) o.style = a.style;
@@ -104,11 +106,12 @@ export const TOOLS = [
         role: { type: 'array', items: { type: 'string' }, description: 'Filter to these screen roles.' },
         style: { type: 'array', items: { type: 'string' }, description: 'Filter to these visual styles.' },
         tag: { type: 'array', items: { type: 'string' }, description: 'Filter to these tags.' },
-        orientation: { type: 'array', items: { type: 'string' }, enum: ['portrait', 'landscape', 'square'] },
+        orientation: { type: 'array', items: { type: 'string', enum: ['portrait', 'landscape', 'square'] } },
         surface: { type: 'array', items: { type: 'string' }, description: "'dark', 'light' or 'mid' — derived from the measured palette." },
         has_motion: { type: 'boolean', description: 'Only assets that ship a playable motion clip.' },
         only_described: { type: 'boolean', description: 'Only assets with a full hand-written write-up.' },
         limit: { type: 'integer', minimum: 1, maximum: 50, default: 12 },
+        offset: { type: 'integer', minimum: 0, default: 0, description: 'Pagination offset within ranked matches.' },
       },
       required: ['query'],
     },
@@ -190,7 +193,7 @@ export const TOOLS = [
       'Produce a usable colour palette for a product direction, grounded in the corpus. Returns ' +
       'named two-tone schemes that fit the brief plus the colours that actually recur in matching ' +
       'screens, with WCAG contrast ratios for each pair. Every value is measured from real ' +
-      'interfaces, so it is directly usable as CSS.',
+      'interfaces. These are reference samples, not semantic tokens; validate final text/background contrast.',
     inputSchema: {
       type: 'object',
       properties: {
@@ -221,7 +224,7 @@ export const TOOLS = [
   {
     name: 'asset_image',
     description:
-      'Resolve an asset id to the local image files on disk — the full-size web image, the ' +
+      'View a reference as native MCP image content, and resolve its local image files — the full-size web image, the ' +
       'thumbnail, and the original source file. Use this when you actually need to look at the ' +
       'design rather than read about it.',
     inputSchema: {
@@ -229,11 +232,27 @@ export const TOOLS = [
       properties: {
         id: { type: 'string' },
         which: { type: 'string', enum: ['web', 'thumb', 'original', 'all'], default: 'all' },
+        embed: { type: 'boolean', default: true, description: 'Include an MCP image content block for visual inspection. Thumbnail by default; web uses full derivative (max 5 MB).' },
       },
       required: ['id'],
     },
   },
 
+  {
+    name: 'compare_designs',
+    description: 'Compare 2–4 chosen references side by side: shared roles/styles, palette contrast, media and capture caveats. Metadata comparisons are hypotheses until images are inspected.',
+    inputSchema: { type: 'object', properties: { ids: { type: 'array', minItems: 2, maxItems: 4, uniqueItems: true, items: { type: 'string' } } }, required: ['ids'] },
+  },
+  {
+    name: 'motion_studies',
+    description: 'Find playable clips for an interaction intent. Returns inspectable paths and a motion observation worksheet. Frame difference does not establish quality, duration of a transition, or easing.',
+    inputSchema: { type: 'object', properties: { query: { type: 'string' }, limit: { type: 'integer', minimum: 1, maximum: 12, default: 6 } }, required: ['query'] },
+  },
+  {
+    name: 'implementation_plan',
+    description: 'Turn an explicit product goal and selected reference IDs into an evidence-linked implementation worksheet. Separates inherited observations from authored decisions; includes motion, accessibility and responsive acceptance criteria.',
+    inputSchema: { type: 'object', properties: { goal: { type: 'string', minLength: 3 }, ids: { type: 'array', minItems: 1, maxItems: 6, uniqueItems: true, items: { type: 'string' } }, platform: { type: 'string', enum: ['web', 'ios', 'android', 'any'], default: 'web' } }, required: ['goal', 'ids'] },
+  },
   {
     name: 'corpus_stats',
     description:
@@ -248,6 +267,7 @@ export const TOOLS = [
 const CORPUS_ROOT = (corpus) => path.resolve(path.dirname(corpus.__path), '..');
 
 export async function callTool(name, args, corpus, here) {
+  validateToolArgs(name, args);
   const assets = corpus.assets;
 
   switch (name) {
@@ -278,29 +298,22 @@ export async function callTool(name, args, corpus, here) {
       });
 
       const scored = pool
-        .map((a) => ({ a, s: t.length ? score(a, t, { description: a.description ? 1 : 0 }) : 1 }))
+        .map((a) => ({ a, s: t.length ? score(a, t) : 1 }))
         .filter((x) => x.s > 0)
-        .sort((x, y) => y.s - x.s);
+        .sort((x, y) => y.s - x.s || x.a.id.localeCompare(y.a.id));
 
-      // if the strict pass found nothing, fall back to OR-matching so the agent
-      // gets *something* related rather than an empty result
-      let used = scored;
-      let note = null;
-      if (!scored.length && t.length) {
-        const loose = pool
-          .map((a) => ({ a, s: t.reduce((n, term) => n + (haystack(a).includes(term) ? 1 : 0), 0) }))
-          .filter((x) => x.s > 0)
-          .sort((x, y) => y.s - x.s);
-        used = loose;
-        note = 'No asset matched every term; these match at least one.';
-      }
+      const used = scored;
+      const note = !used.length ? 'No matching references. Broaden the query or inspect list_facets.' : null;
 
       return {
         query: q,
         matched: used.length,
-        showing: Math.min(limit, used.length),
+        offset: args.offset || 0,
+        showing: Math.min(limit, Math.max(0, used.length - (args.offset || 0))),
+        next_offset: (args.offset || 0) + limit < used.length ? (args.offset || 0) + limit : null,
+        match_mode: 'weighted term overlap; not semantic similarity',
         ...(note ? { note } : {}),
-        results: used.slice(0, limit).map(({ a, s }) => ({ ...brief(a), relevance: s })),
+        results: used.slice(args.offset || 0, (args.offset || 0) + limit).map(({ a, s }) => ({ ...brief(a), relevance: s, matched_terms: t.filter(term => haystack(a).includes(term)) })),
       };
     }
 
@@ -335,6 +348,9 @@ export async function callTool(name, args, corpus, here) {
           ? { duration_s: a.duration_s, fps: a.fps, frame_diff: a.motion, clip_available: !!a.clip }
           : undefined,
         salvage_note: a.quality,
+        review: a.review || null,
+        provenance: { description: 'Inherited corpus annotation; verify against the actual image before citing.', palette: 'Pixel samples, not semantic design tokens.', attribution: 'Original designer/source URL not verified; reference only.', quality: a.quality || null },
+        printed_palette: corpus.printed_palettes?.[a.id] || null,
         source_file: a.origin?.path,
         web_image: a.src,
         thumbnail: a.thumb,
@@ -439,6 +455,7 @@ export async function callTool(name, args, corpus, here) {
       const ranked = assets
         .map((a) => {
           let s = score(a, t);
+          if (t.length && s === 0) return { a, s: 0 };
           s += score(a, mood) * 0.7;
           if (wantPlatform) {
             const p = lc(a.platform || a.tags?.join(' ') || '');
@@ -476,6 +493,7 @@ export async function callTool(name, args, corpus, here) {
           appears_in: c.seen_in,
           weight: Math.round(c.weight),
           role: colourRole(c.hex),
+          role_basis: 'Heuristic based on luminance/saturation; verify intended use.',
         }));
 
       const matched = PATTERN_DEFS
@@ -497,7 +515,7 @@ export async function callTool(name, args, corpus, here) {
       if (top.length) {
         const dark = top.filter((a) => deriveSurface(a) === 'dark').length;
         if (dark >= top.length * 0.6) notes.push(`The majority of close matches (${dark}/${top.length}) are dark-surface designs.`);
-        if (dark === 0 && top.length >= 3) notes.push(`All ${top.length} close matches are light-surface.`);
+        if (top.length >= 3 && top.every(a => deriveSurface(a) === 'light')) notes.push(`All ${top.length} close matches are light-surface.`);
         const withClip = top.filter((a) => a.clip).length;
         if (withClip) notes.push(`${withClip} of these have a playable motion clip if transitions matter — query has_motion.`);
         const pairs = top.filter((a) => a.category === 'before-after');
@@ -544,12 +562,14 @@ export async function callTool(name, args, corpus, here) {
         .sort((x, y) => y.s - x.s);
 
       const schemes = scoredNamed.slice(0, count).map(({ a }) => {
-        const pair = (a.palette || []).slice(0, 2);
+        const printed = corpus.printed_palettes?.[a.id];
+        const pair = printed?.length >= 2 ? printed.slice(0, 2).map(c=>c.hex) : (a.palette || []).slice(0, 2);
         const [x, y] = pair;
         return {
           id: a.id,
           name: a.title,
           colours: pair,
+          value_source: corpus.printed_palettes?.[a.id]?.length >= 2 ? 'printed on card' : 'sampled pixels',
           contrast: pair.length === 2 ? ratio(x, y) : null,
           why: a.description,
         };
@@ -573,8 +593,8 @@ export async function callTool(name, args, corpus, here) {
         .map((c) => ({ hex: c.hex, appears_in: c.n, role: colourRole(c.hex) }));
 
       const ink = observed.length
-        ? { light_text_on: (observed.find((c) => lum(c.hex) > 55) || observed[0]).hex,
-            dark_text_on: (observed.find((c) => lum(c.hex) < 40) || observed[0]).hex }
+        ? { light_text_on: observed.find(c => ratio('#FFFFFF', c.hex) >= 4.5)?.hex || null,
+            dark_text_on: observed.find(c => ratio('#000000', c.hex) >= 4.5)?.hex || null }
         : null;
 
       const checks = [];
@@ -644,6 +664,36 @@ export async function callTool(name, args, corpus, here) {
       return out;
     }
 
+    case 'compare_designs': {
+      const selected = args.ids.map(id => requireAsset(assets, id));
+      const intersection = key => selected[0][key]?.filter(v => selected.every(a => (a[key] || []).includes(v))) || [];
+      return {
+        references: selected.map(a => ({ ...brief(a), description: a.description, surface: deriveSurface(a), quality: a.quality || null, image: a.src, clip: a.clip || null })),
+        shared: { roles: intersection('roles'), styles: intersection('style'), tags: intersection('tags') },
+        differences: selected.map(a => ({ id: a.id, roles: (a.roles || []).filter(v => !intersection('roles').includes(v)), styles: (a.style || []).filter(v => !intersection('style').includes(v)) })),
+        inspect_next: selected.map(a => ({ tool: 'asset_image', arguments: { id: a.id } })),
+        caveat: 'Shared tags do not prove a shared layout. Inspect images; do not infer quality or a winner from metadata.',
+      };
+    }
+    case 'motion_studies': {
+      const hits = await callTool('search_designs', { query: args.query, has_motion: true, limit: args.limit || 6 }, corpus, here);
+      return { ...hits, results: hits.results.map(hit => {
+        const a = requireAsset(assets, hit.id);
+        return { ...hit, clip: a.clip, local_clip: path.resolve(CORPUS_ROOT(corpus), a.clip), poster: a.src, source_duration_s: a.duration_s || null, frame_difference: a.motion ?? null, quality: a.quality || null };
+      }), observe: ['Trigger and user intent', 'Before/after state and continuity', 'Which element moves; hierarchy and occlusion', 'Actual transition duration and easing (inspect, do not infer from recording duration)', 'Interrupt/reverse behavior', 'Reduced-motion and keyboard alternative'], caveat: 'A playable clip is not a verified motion study. Frame difference can include camera movement, overlays or recording artifacts.' };
+    }
+    case 'implementation_plan': {
+      const selected = args.ids.map(id => requireAsset(assets, id));
+      return {
+        goal: args.goal, platform: args.platform || 'web',
+        evidence: selected.map(a => ({ id:a.id, title:a.title, inherited_description:a.description || null, review:a.review || null, inspect:{tool:'asset_image',arguments:{id:a.id}}, palette_samples:a.palette || [], capture_note:a.quality || null })),
+        decisions_to_author: ['Primary user, job and action', 'Information hierarchy and content density', 'Original composition and responsive layout', 'Semantic colour/type/spacing/radius tokens with contrast checks', 'Interactive components and state ownership', 'Motion purpose, trigger, duration, easing, cancellation and reduced-motion fallback'],
+        acceptance: ['References opened and observations cited by ID', 'No unverified description promoted to visual fact', 'Text/background contrast tested: 4.5:1 normal, 3:1 large', 'Keyboard order, visible focus, dialog containment and Escape tested', '360px, 768px and 1440px layouts inspected without overflow', 'Empty, loading, error, long labels and missing-media states exercised', 'Reduced-motion preference tested; no required autoplay', 'Original implementation, no copied product identity or unlicensed corpus media'],
+        attribution: 'Reference-only corpus; original authors and reuse rights are not established by file names.',
+        output: 'Deliver a working implementation, actual browser verification, evidence IDs, authored choices and unresolved limits. This worksheet is guidance, not a generated design or a visual verification.',
+      };
+    }
+
     /* ------------------------------------------------------- stats ----- */
     case 'corpus_stats': {
       const described = assets.filter((a) => a.description).length;
@@ -657,8 +707,8 @@ export async function callTool(name, args, corpus, here) {
         top_tags: corpus.tags.slice(0, 20),
         corpus_file: corpus.__path,
         honesty: {
-          described: `${described} of ${assets.length} assets carry a full hand-written visual description.`,
-          clips: `${clips} assets ship a playable motion clip. The rest are video sources that were found to be static and are kept as poster frames only.`,
+          described: `${described} of ${assets.length} assets carry an inherited visual description; presence does not establish accuracy.`,
+          clips: `${clips} assets ship a playable motion clip. ${assets.filter(a=>a.kind==='video'&&!a.clip).length} video records have no playable derivative; inspect their notes before inferring why.`,
           measured: 'All palettes are k-means samples of the actual pixels, not estimates.',
         },
       };
@@ -788,3 +838,37 @@ function renderAssetMarkdown(a) {
   L.push(`source: \`${a.source_file}\``);
   return L.join('\n');
 }
+
+function requireAsset(assets, id) {
+  const asset = assets.find(a => a.id === id);
+  if (!asset) throw new Error(`No asset ${id}`);
+  return asset;
+}
+
+/** Validate the advertised JSON-schema subset at the boundary, including direct CLI use. */
+export function validateToolArgs(name, args) {
+  const tool = TOOLS.find(t => t.name === name);
+  if (!tool) throw new Error(`Unknown tool: ${name}`);
+  function validate(value, schema, field) {
+    if (schema.type === 'object') {
+      if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error(`${field} must be an object`);
+      for (const key of schema.required || []) if (!(key in value)) throw new Error(`${field}.${key} is required`);
+      for (const [key, val] of Object.entries(value)) {
+        if (!schema.properties?.[key]) throw new Error(`Unknown argument ${field}.${key}`);
+        validate(val, schema.properties[key], `${field}.${key}`);
+      }
+    } else if (schema.type === 'array') {
+      if (!Array.isArray(value)) throw new Error(`${field} must be an array`);
+      if (schema.minItems && value.length < schema.minItems || schema.maxItems && value.length > schema.maxItems) throw new Error(`${field} has an invalid item count`);
+      if (schema.uniqueItems && new Set(value).size !== value.length) throw new Error(`${field} must contain unique items`);
+      value.forEach((v,i)=>validate(v,schema.items,`${field}[${i}]`));
+    } else if (schema.type === 'integer') {
+      if (!Number.isInteger(value) || schema.minimum !== undefined && value < schema.minimum || schema.maximum !== undefined && value > schema.maximum) throw new Error(`${field} must be an integer between ${schema.minimum ?? '-∞'} and ${schema.maximum ?? '∞'}`);
+    } else if (typeof value !== schema.type) throw new Error(`${field} must be ${schema.type}`);
+    if (schema.enum && !schema.enum.includes(value)) throw new Error(`${field} must be one of ${schema.enum.join(', ')}`);
+    if (schema.minLength && value.trim().length < schema.minLength) throw new Error(`${field} is too short`);
+  }
+  validate(args, tool.inputSchema, 'arguments');
+}
+
+for (const tool of TOOLS) tool.inputSchema.additionalProperties = false;

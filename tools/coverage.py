@@ -6,9 +6,11 @@ Usage:
 """
 import json
 import sys
+import os
+from pathlib import Path
 from collections import Counter, defaultdict
 
-CORPUS = r"E:\Stormy\ui-hall\data\corpus.json"
+CORPUS = Path(os.environ.get("UIHALL_CORPUS", Path(__file__).resolve().parents[1] / "ui-hall/data/corpus.json"))
 
 
 def main():
@@ -34,7 +36,8 @@ def main():
         print(f"{cat:<20} {c['total']:>6} {c['described']:>10} {c['low']:>9} {gap:>6}")
     print("-" * 56)
     print(f"{'TOTAL':<20} {tot:>6} {des:>10} {low:>9} {tot - des:>6}")
-    print(f"coverage: {des / tot * 100:.1f}%   ({des}/{tot})")
+    print(f"Description coverage: {des / tot * 100:.1f}% ({des}/{tot}); not a visual-accuracy score.")
+    print(f"Scoped visual reviews: {sum(bool(a.get('review')) for a in assets)}")
 
     if "--missing" in sys.argv:
         want = sys.argv[sys.argv.index("--missing") + 1] if len(sys.argv) > sys.argv.index("--missing") + 1 else None

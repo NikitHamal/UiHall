@@ -8,6 +8,7 @@ const App = (() => {
   // True once the user clicks a category chip. Used so leaving the before/after
   // route only releases the category the *route* forced, never a user choice.
   let userPickedCategory = false;
+  let previousRoute = null;
 
   /* ------------------------------------------------------------ facets --- */
 
@@ -30,7 +31,7 @@ const App = (() => {
   }
 
   function buildFacets() {
-    const assets = DATA.all();
+    const assets = Filters.currentRoute() === 'motion' ? DATA.all().filter(a => a.clip) : DATA.all();
     const cats = corpus.categories || [];
 
     // category
@@ -157,7 +158,7 @@ const App = (() => {
       }
     }
     if (s.q) items.push({ k: 'q', v: s.q, label: `“${s.q}”` });
-    if (s.kind !== 'all') items.push({ k: 'kind', v: s.kind, label: s.kind === 'image' ? 'Images only' : 'Video only' });
+    if (s.kind !== 'all' && Filters.currentRoute() !== 'motion') items.push({ k: 'kind', v: s.kind, label: s.kind === 'image' ? 'Images only' : 'Video only' });
     if (s.seed) items.push({ k: 'seed', v: '', label: 'shuffled' });
 
     bar.hidden = items.length === 0;
@@ -190,6 +191,7 @@ const App = (() => {
   function renderResults() {
     const assets = DATA.all();
     sorted = Filters.apply(assets);
+    if (Filters.currentRoute() === 'motion') sorted = sorted.filter(a => a.clip);
     const results = document.getElementById('results');
     const empty = document.getElementById('emptyState');
     const count = document.getElementById('resultCount');
@@ -203,6 +205,7 @@ const App = (() => {
     empty.hidden = shown > 0;
     if (shown) Render.grid(results, sorted);
     else results.innerHTML = '';
+    if (shown && Filters.currentRoute() === 'motion' && !Filters.state.q && !Filters.state.category.length) results.prepend(Workbench.motionStage(sorted));
 
     buildActiveBar();
     buildFacets();
@@ -229,7 +232,7 @@ const App = (() => {
 
   /* ------------------------------------------------------------- routes -- */
 
-  const ROUTES = ['gallery', 'sets', 'palettes', 'typography', 'patterns', 'before-after', 'motion', 'about'];
+  const ROUTES = ['gallery', 'sets', 'palettes', 'typography', 'patterns', 'before-after', 'motion', 'about', 'agents'];
 
   function go(route) {
     Filters.setRoute(route);
@@ -244,7 +247,9 @@ const App = (() => {
     const r = Filters.currentRoute();
     const st = Filters.state;
     const scope = routeScope(r);
-    if (st.kind !== scope.kind) st.kind = scope.kind;
+    if (r === 'motion') st.kind = 'video';
+    else if (previousRoute === 'motion' && st.kind === 'video') st.kind = 'all';
+    previousRoute = r;
     if (scope.category && !st.category.includes(scope.category)) {
       st.category = [scope.category];
     }
@@ -266,12 +271,19 @@ const App = (() => {
   function render() {
     const route = Filters.currentRoute();
     applyRouteScope();
+    syncControls();
+    const isReferencePage = !['gallery', 'motion', 'before-after'].includes(route);
+    document.getElementById('shell').classList.toggle('is-reference-page', isReferencePage);
+    document.getElementById('filterToggle').hidden = isReferencePage;
+    document.getElementById('fKind').closest('.filters__group').hidden = route === 'motion';
+    if (isReferencePage) document.getElementById('activeFilters').hidden = true;
 
     for (const a of document.querySelectorAll('[data-nav]')) {
       a.classList.toggle('is-active', a.dataset.nav === route);
     }
     document.getElementById('pageTitle').textContent = {
-      gallery: 'Gallery',
+      gallery: 'The archive',
+      agents: 'For agents',
       sets: 'App sets',
       palettes: 'Palettes',
       typography: 'Typography',
@@ -283,13 +295,14 @@ const App = (() => {
 
     const sub = document.getElementById('pageSub');
     sub.textContent = {
-      gallery: 'Every keeper from the collection — screens, mockups, brand work, store panels and clips. Filter by what a screen is for, how it looks, and what colours it is built from.',
-      sets: 'Screens that belong together: several shots of one app or one exploration, shown as a strip instead of scattered cards. The appllama-style way to browse.',
+      gallery: 'Interfaces, identities and interactions. Collected for a closer look.',
+      agents: 'An evidence-driven design workflow, from reference to working interface.',
+      sets: 'Study a product as a system. Related screens, side by side.',
       palettes: 'Two-colour schemes with designer-given names, plus the palettes measured from the screens themselves.',
       typography: 'Twelve typefaces rendered from the actual woff2 files in this repo, with a live playground and copy-paste integration notes. All SIL Open Font License 1.1.',
       patterns: 'Layout idioms that recur often enough across the corpus to be worth naming.',
       'before-after': 'Paired evidence. The same brief executed twice, where the delta is the lesson.',
-      motion: 'Clips that show a transition rather than a still screen. Static recordings are not included.',
+      motion: 'Playable references for studying interactions. Recordings may include camera movement and editing; inspect before drawing conclusions.',
       about: 'What this is, where the material came from, and how to read it.',
     }[route] || '';
 
@@ -304,9 +317,17 @@ const App = (() => {
       document.querySelector('.select--size'),
       document.getElementById('shuffle'),
     ];
-    const showGalleryTools = route === 'gallery' || route === 'palettes';
+    const showGalleryTools = route === 'gallery';
     for (const n of galleryOnly) if (n) n.hidden = !showGalleryTools;
 
+    document.getElementById('quickpaths').hidden = route !== 'gallery';
+    document.querySelectorAll('[data-discover]').forEach(b=>b.classList.toggle('is-on', b.dataset.discover === (Filters.state.category[0] || '')));
+    if (route === 'agents') {
+      document.getElementById('hero').hidden = true;
+      document.getElementById('emptyState').hidden = true;
+      document.getElementById('resultCount').textContent = '';
+      return Workbench.agents(document.getElementById('results'));
+    }
     if (route === 'palettes') return renderPalettes();
     if (route === 'sets') return renderSets();
     if (route === 'typography') {
@@ -333,15 +354,14 @@ const App = (() => {
     hero.hidden = !show;
     if (!show) return;
     document.getElementById('heroEyebrow').textContent =
-      `A visual reference library · ${fmt.n(corpus.assets.length)} assets`;
+      'An independent archive of digital craft';
     const t = corpus.totals;
     const stats = document.getElementById('heroStats');
     stats.innerHTML = '';
     for (const [n, label] of [
-      [t.assets, 'assets'],
+      [t.assets, 'design references'],
       [t.clips, 'motion clips'],
-      [(corpus.groups || []).length, 'app sets'],
-      [t.described, 'visually reviewed'],
+      [(corpus.groups || []).length, 'screen collections'],
     ]) {
       stats.append(el('div', { class: 'hero__stat' },
         el('div', { class: 'hero__stat-n num', text: fmt.n(n) }),
@@ -425,12 +445,12 @@ const App = (() => {
       const bands = el('div', { class: 'palcard__bands' });
       bands.append(el('div', {
         class: 'palcard__band',
-        style: `background:${top.hex};color:${top.name ? top.ink || inkOn(top.hex) : inkOn(top.hex)}`,
+        style: `background:${top.hex};color:${top.ink && contrast(top.hex, top.ink) >= 4.5 ? top.ink : inkOn(top.hex)}`,
         text: top.name || a.title.split('/')[0].trim(),
       }));
       bands.append(el('div', {
         class: 'palcard__band',
-        style: `background:${bottom.hex};color:${bottom.name ? bottom.ink || inkOn(bottom.hex) : inkOn(bottom.hex)}`,
+        style: `background:${bottom.hex};color:${bottom.ink && contrast(bottom.hex, bottom.ink) >= 4.5 ? bottom.ink : inkOn(bottom.hex)}`,
         text: bottom.name || (a.title.split('/')[1] || '').trim(),
       }));
       card.append(bands);
@@ -542,10 +562,10 @@ const App = (() => {
 
     wrap.append(el('div', { class: 'stats' },
       stat(t.assets, 'assets'), stat(t.images, 'images'), stat(t.videos, 'video sources'),
-      stat(t.clips, 'motion clips'), stat(t.described, 'visually reviewed')));
+      stat(t.clips, 'motion clips'), stat(corpus.assets.filter(a => a.review).length, 'scoped visual reviews')));
 
     wrap.append(el('h2', { text: 'What this is' }));
-    wrap.append(el('p', { html: `UI Hall is a catalogue of interface design collected from real product work — other people's apps and websites, screenshotted and saved over time. Every item was looked at individually and written up: what it is, what it is <em>for</em>, how it is styled, and what its colours actually are. The result is a searchable reference you can point an agent at, rather than a folder of images nobody opens.` }));
+    wrap.append(el('p', { html: `UI Hall is a catalogue of interface design collected from real product work — other people's apps and websites, screenshotted and saved over time. Every item carries an inherited description of its purpose and visual character. Some descriptions have been found to be wrong; scoped visual-review notes record what has actually been rechecked. The result is a searchable reference you can point an agent at, rather than a folder of images nobody opens.` }));
 
     wrap.append(el('h2', { text: 'What is in it' }));
     const cats = el('div', { class: 'catgrid' });
@@ -573,7 +593,7 @@ const App = (() => {
       el('li', { html: `<strong>Hue</strong> is computed from the palette, so a "blue" filter finds screens that actually contain blue at meaningful area — it does not rely on anyone tagging them.` })));
 
     wrap.append(el('h2', { text: 'Provenance and licensing' }));
-    wrap.append(el('p', { html: `This is a personal study collection assembled from public sources. Interfaces belong to their designers and companies; nothing here is licensed for redistribution or reuse in a shipped product. It is a reference for <em>learning the vocabulary</em> — the layout conventions, the rhythm, the colour logic — not a source of assets. Source filenames and paths are recorded on every item so anything can be traced back.` }));
+    wrap.append(el('p', { html: `This is a personal study collection assembled from public sources. Interfaces belong to their designers and companies; this archive does not grant rights to redistribute reference media or use it in a shipped product. It is a reference for <em>learning the vocabulary</em> — the layout conventions, the rhythm, the colour logic — not a source of assets. Source filenames and paths are recorded on every item so anything can be traced back.` }));
 
     wrap.append(el('h2', { text: 'Known limits' }));
     wrap.append(el('ul', {},
@@ -784,7 +804,7 @@ const App = (() => {
       corpus = await DATA.load();
     } catch (err) {
       clearSkeleton();
-      document.getElementById('results').append(
+      document.getElementById('results').replaceChildren(
         el('p', { class: 'empty', style: 'grid-column:1/-1', html:
           `<span class="empty__title">Could not load the corpus</span>
            <span class="empty__hint">${esc(err.message)}</span>` }));
@@ -796,6 +816,8 @@ const App = (() => {
     for (const a of corpus.assets) {
       a._score = 0;
       if (a.description) a._score += 2;
+      const featured = ['VID-0377','VID-0420','VID-0397','VID-0373','VID-0311','VID-0349','VID-0430','VID-0400','VID-0367'];
+      if (featured.includes(a.id)) a._score += 20 - featured.indexOf(a.id);
       if (a.quality) a._score += 0.1;
       if (a.category === 'before-after') a._score += 0.6;
       if (a.category === 'color-palette') a._score += 0.5;
@@ -810,7 +832,7 @@ const App = (() => {
     // theme from storage or system
     let theme = null;
     try { theme = localStorage.getItem('uihall.theme'); } catch (_) {}
-    if (!theme) theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    if (!theme) theme = 'light';
     document.documentElement.dataset.theme = theme;
 
     Filters.readUrl();
