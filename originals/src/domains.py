@@ -102,7 +102,7 @@ D = [
   plans=[('Free', '€0', ['1 language', 'Daily lessons', 'Ads']), ('Super', '€7', ['All languages', 'Offline', 'No ads']), ('Family', '€12', ['6 learners', 'Progress view', 'No ads'])]),
 
  dict(key='home', app='Nest', noun='listing', area='real estate', icon='home',
-  hero=('Saved search', '24 homes', '', 'Alfama · 2 bed · under €450k'), chart=[410, 420, 405, 430, 440, 455, 448], chart_label='Median price · 7 months',
+  hero=('Saved search', '24 homes', '', 'Alfama · 2 bed · under €450k'), chart=[3, 5, 2, 6, 4, 8, 5], chart_label='Viewings this week',
   kpis=[('Median', '€448k', '▲ 3%'), ('New today', '6', 'listings'), ('Viewings', '3', 'booked'), ('Offers', '1', 'pending')],
   cats=['All', 'Apartments', 'Houses', 'New builds', 'With garden'],
   items=[('Rua da Saudade 12', '2 bed · 84 m² · Alfama', '€425k', 'home'), ('Travessa do Fado 3', '3 bed · 110 m² · Graça', '€560k', 'home'), ('Largo do Chafariz 8', '1 bed · 52 m² · Alfama', '€310k', 'home'), ('Rua dos Remédios 40', '2 bed · 76 m² · Alfama', '€395k', 'home'), ('Calçada do Monte 9', '4 bed · 160 m² · Graça', '€790k', 'home'), ('Rua de São Miguel 2', 'Studio · 34 m²', '€210k', 'home')],
