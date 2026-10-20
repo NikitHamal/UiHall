@@ -884,8 +884,8 @@ class UiHall {
    * a type scale and pairing chosen from the reference's style, spacing, radius,
    * elevation and motion tokens, and base component CSS that uses them.
    */
-  designSystem({ id, colors, mood = '', name = 'uh' } = {}) {
-    const t = this.tokens({ id, colors, format: 'css', name });
+  designSystem({ id, colors, theme, mood = '', name = 'uh' } = {}) {
+    const t = this.tokens({ id, colors, theme, format: 'css', name });
     const a = id ? this.get(id) : null;
     const style = new Set([...(a?.style || []), ...(a?.tags || []), ...tokenize(mood)]);
     const has = (...xs) => xs.some((x) => style.has(x));
@@ -1419,14 +1419,15 @@ const TOOLS = [
       type: 'object',
       properties: {
         id: str('Asset id to build from.'),
+        theme: { type: 'string', enum: ['ember', 'mint', 'ink', 'grape'], description: 'Which of the original\'s four themes to build from. Default: its primary theme.' },
         colors: arr('Or explicit hex colours, most-used first.'),
         mood: str('Optional tone that nudges type and radius: "editorial", "playful", "dense".'),
         prefix: str('CSS variable prefix.', { default: 'uh' }),
       },
     },
     annotations: { title: 'Generate design system', ...RO },
-    run(h, { id, colors, mood = '', prefix = 'uh' }) {
-      const d = h.designSystem({ id, colors, mood, name: prefix });
+    run(h, { id, colors, theme, mood = '', prefix = 'uh' }) {
+      const d = h.designSystem({ id, colors, theme, mood, name: prefix });
       return {
         text: `Design system (${d.scheme}${d.source ? `, from ${d.source}` : ''}) — ${d.type.rationale} Base ${d.type.base}px × ${d.type.ratio}.\n\n\`\`\`css\n${d.css}\`\`\``,
         data: d,

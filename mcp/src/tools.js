@@ -313,14 +313,15 @@ export const TOOLS = [
       type: 'object',
       properties: {
         id: str('Asset id to build from.'),
+        theme: { type: 'string', enum: ['ember', 'mint', 'ink', 'grape'], description: 'Which of the original\'s four themes to build from. Default: its primary theme.' },
         colors: arr('Or explicit hex colours, most-used first.'),
         mood: str('Optional tone that nudges type and radius: "editorial", "playful", "dense".'),
         prefix: str('CSS variable prefix.', { default: 'uh' }),
       },
     },
     annotations: { title: 'Generate design system', ...RO },
-    run(h, { id, colors, mood = '', prefix = 'uh' }) {
-      const d = h.designSystem({ id, colors, mood, name: prefix });
+    run(h, { id, colors, theme, mood = '', prefix = 'uh' }) {
+      const d = h.designSystem({ id, colors, theme, mood, name: prefix });
       return {
         text: `Design system (${d.scheme}${d.source ? `, from ${d.source}` : ''}) — ${d.type.rationale} Base ${d.type.base}px × ${d.type.ratio}.\n\n\`\`\`css\n${d.css}\`\`\``,
         data: d,

@@ -37,7 +37,11 @@ export default function boardView(root, app, route) {
     if (!list.length) { body.innerHTML = empty(h); return; }
     const syn = synthesise(list);
     const promptText = prompt(h, list, syn);
-    const sys = h.designSystem({ colors: syn.palette.map((p) => p.hex), name: 'board' });
+    // the system follows the look the board shows most: that theme's real tokens, from a pinned screen wearing it
+    const shown = list.map((a) => pickTheme(a));
+    const lead = shown.filter(Boolean).sort((x, y) => shown.filter((t) => t === y).length - shown.filter((t) => t === x).length)[0];
+    const rep = lead && list.find((a) => pickTheme(a) === lead);
+    const sys = rep ? h.designSystem({ id: rep.id, theme: lead, name: 'board' }) : h.designSystem({ colors: syn.palette.map((p) => p.hex), name: 'board' });
     const cmp = list.length >= 2 && list.length <= 4 ? h.compare(list.map((a) => a.id)) : null;
 
     body.innerHTML = `
@@ -64,7 +68,7 @@ export default function boardView(root, app, route) {
         <div class="card syn-card">
           <h4 class="syn-h"><span>Synthesised palette</span><span>${syn.palette.length} colours · area-weighted</span></h4>
           <div class="palette-bar">${syn.palette.map((p) => `<div style="--c:${p.hex};--pct:${p.pct};--ink:${ink(p.hex)}" data-hex="${p.hex}" data-copy="${p.hex}" title="${p.hex} · ${p.pct}%"></div>`).join('')}</div>
-          <div class="roles mt-s">${['background', 'surface', 'text', 'accent'].filter((k) => sys.tokens.color[k]).map((k) => `<div class="role" data-copy="${sys.tokens.color[k]}" style="cursor:copy"><i style="--c:${sys.tokens.color[k]}"></i><div><b>${k}</b><code>${sys.tokens.color[k]}</code></div></div>`).join('')}</div>
+          <div class="roles mt-s">${['background', 'surface', 'text', 'text-muted', 'accent', 'on-accent'].filter((k) => sys.tokens.color[k]).map((k) => `<div class="role" data-copy="${sys.tokens.color[k]}" style="cursor:copy"><i style="--c:${sys.tokens.color[k]}"></i><div><b>${k}</b><code>${sys.tokens.color[k]}</code></div></div>`).join('')}</div>
           <h4 class="syn-h mt-m"><span>What they share</span><span>appears in ≥ half</span></h4>
           <div class="facets">${syn.traits.length ? syn.traits.map(([k, v, n]) => `<a class="tag ${k === 'style' ? 'tag--accent' : ''}" href="#/library?${k}=${encodeURIComponent(v)}">${esc(label(v))} <span style="opacity:.55;margin-left:4px">${n}/${list.length}</span></a>`).join('') : '<span class="faint">Nothing in common yet — that’s a range, not a direction.</span>'}</div>
         </div>
@@ -144,7 +148,7 @@ function empty(h) {
 /** Area-weighted union of the board's palettes, merging perceptually-equal colours. */
 function synthesise(list) {
   const pool = [];
-  for (const a of list) for (const p of a.palette_detail || []) {
+  for (const a of list) for (const p of (pickTheme(a) && a.variants?.[pickTheme(a)]?.palette_detail) || a.palette_detail || []) {
     const hex = normHex(p.hex);
     const w = p.pct / list.length;
     const hit = pool.find((q) => deltaE(q.hex, hex) < 0.06);
