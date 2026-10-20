@@ -98,6 +98,17 @@ export default function home(root, app) {
     <div class="container row mt-m">${arrowBtn('#/originals', `All ${t.originals || 0} originals`)}<span class="faint" style="font-size:13px">Drag the shelf · or use ← →</span></div>
   </section>
 
+  <section class="container lp-live" id="lpLive">
+    <div class="lp-live__frame"><iframe title="Live original — controls" src="originals/screens/components-controls.html?theme=ember&embed=1" loading="lazy"></iframe></div>
+    <div class="lp-live__copy">
+      <span class="eyebrow">Live, not a screenshot</span>
+      <h2 class="display h-md">Go on — <em>touch it.</em></h2>
+      <p class="lede">Every original is a real screen built from one kit. Flip a toggle, pick a chip, then swap the palette — the whole system re-skins in place, exactly as it would in your product.</p>
+      <div class="lp-live__themes" id="lpLiveThemes">${themes.map((x, i) => `<button type="button" data-v="${x}" aria-pressed="${i === 0}"><i class="lp-sw lp-sw--${x}"></i><b>${x[0].toUpperCase() + x.slice(1)}</b><span>${{ ember: 'warm dark · orange', mint: 'soft light · green', ink: 'editorial · cobalt', grape: 'violet dark · lime' }[x]}</span></button>`).join('')}</div>
+      <div class="row">${arrowBtn('#/originals', 'Explore the originals')}</div>
+    </div>
+  </section>
+
   <section class="container section" id="agent" data-io>
     <div class="section__head">
       <h2 class="display h-lg" data-reveal>Your agent, <em>with taste.</em></h2>
@@ -196,6 +207,18 @@ export default function home(root, app) {
   const stepIO = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) setStep(+e.target.dataset.step); }), { rootMargin: '-45% 0px -45% 0px' });
   steps.forEach((x) => stepIO.observe(x));
   let autoStep = setInterval(() => { const r = $('#lpMoves', root)?.getBoundingClientRect(); if (r && r.top < innerHeight && r.bottom > 0 && innerWidth < 980) setStep((+(steps.find((x) => x.classList.contains('on'))?.dataset.step || 0) + 1) % 3); }, 3200);
+
+  /* live frame: palette cards post the theme into the iframe */
+  const liveFrame = $('#lpLive iframe', root);
+  $('#lpLiveThemes', root).addEventListener('click', (e) => {
+    const b = e.target.closest('[data-v]'); if (!b) return;
+    $$('#lpLiveThemes button', root).forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    liveFrame.contentWindow?.postMessage({ uihallTheme: b.dataset.v }, '*');
+  });
+
+  /* hero phones drift apart as you scroll away */
+  const onHeroScroll = () => { const p = Math.min(1, scrollY / (innerHeight * 0.9)); stageEl.style.setProperty('--sy', p.toFixed(3)); };
+  addEventListener('scroll', onHeroScroll, { passive: true });
 
   /* originals shelf: drag to scroll, theme switch re-skins in place */
   const shelf = $('#lpShelf', root);
@@ -316,6 +339,6 @@ export default function home(root, app) {
   reveal(root);
 
   return {
-    cleanup() { alive = false; timers.forEach(clearTimeout); clearInterval(autoStep); stepIO.disconnect(); removeEventListener('pointermove', onMove); removeEventListener('scroll', onScroll); removeEventListener('keydown', onKeyShelf); },
+    cleanup() { alive = false; timers.forEach(clearTimeout); clearInterval(autoStep); stepIO.disconnect(); removeEventListener('pointermove', onMove); removeEventListener('scroll', onScroll); removeEventListener('scroll', onHeroScroll); removeEventListener('keydown', onKeyShelf); },
   };
 }
