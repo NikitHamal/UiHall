@@ -9,7 +9,8 @@ svg.i{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stro
 .stage{min-height:100dvh;display:grid;grid-template-columns:auto minmax(0,460px);justify-content:center;align-items:center;gap:clamp(40px,7vw,110px);padding:40px clamp(16px,5vw,80px)}
 @media(max-width:980px){.stage{grid-template-columns:minmax(0,1fr);justify-items:center;padding:20px 12px}.notes{order:2}}
 .phone{position:relative;width:390px;height:844px;max-width:100%;border-radius:56px;background:var(--bg);box-shadow:0 0 0 10px #0B0C0E,0 0 0 11px #2A2D33,0 60px 120px -30px rgba(0,0,0,.7);overflow:hidden;overflow:clip;isolation:isolate}
-@media(max-width:440px){.phone{width:100%;height:min(844px,calc(100dvh - 40px));border-radius:36px}}
+/* on a real phone the prototype is the app: no bezel, no fake island or status bar */
+@media(max-width:440px){.stage{padding:0 0 28px;gap:28px}.phone{width:100%;height:100dvh;border-radius:0;box-shadow:none}.island{display:none}.status{visibility:hidden}.notes{padding:0 18px}}
 .island{position:absolute;top:11px;left:50%;translate:-50% 0;width:122px;height:35px;border-radius:20px;background:#000;z-index:40}
 .status{position:absolute;inset:0 0 auto;height:54px;display:flex;justify-content:space-between;align-items:center;padding:0 32px 0 38px;font:600 15px var(--sans);z-index:39;color:var(--text);pointer-events:none}
 .status svg{width:66px;height:12px}
