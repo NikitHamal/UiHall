@@ -43,6 +43,12 @@ def head(title, right='', back=False):
 def row(t, s, v, k, accent=False):
     return f'<div class="li"><span class="ico {"a" if accent else ""}">{ic(k)}</span><div class="col" style="flex:1;min-width:0"><b style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{t}</b><span class="small" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{s}</span></div><b class="num" style="white-space:nowrap">{v}</b></div>'
 
+# table status vocabulary per domain: (usual, exception)
+STATUS = dict(money=('Cleared', 'Pending'), fitness=('Done', 'Planned'), travel=('Booked', 'Saved'), food=('Delivered', 'Saved'), music=('Saved', 'Queued'),
+              health=('Taken', 'Due'), learn=('Done', 'Next'), home=('Saved', 'Viewing'), shop=('In stock', 'Low stock'), social=('Following', 'Suggested'),
+              tasks=('Open', 'Done'), crypto=('Held', 'Staked'), ride=('Saved', 'Recent'), plants=('Healthy', 'Thirsty'), pets=('Done', 'Upcoming'),
+              events=('Going', 'Saved'), news=('Read', 'Saved'), smarthome=('Online', 'Idle'), jobs=('Applied', 'Saved'), invoice=('Paid', 'Overdue'))
+
 def bars(vals, hl=3, hgt=96):
     mx = max(vals) or 1
     return f'<div class="row" style="width:100%;align-items:flex-end;gap:8px;height:{hgt}px">' + ''.join(
@@ -236,12 +242,16 @@ for n, d in enumerate(D):
     screen(f'gen-{k}-pricing', meta(d, 'pricing', f'{app} pricing', ['pricing', 'landing-section'], ['bold-typography', 'card-based'], ['pricing', 'plans', 'toggle', 'desktop'], desc, 'desktop'), body)
 
     # desktop: table ---------------------------------------------------------------
+    st_on, st_off = STATUS.get(k, ('Active', 'Paused'))
+    # the exception sits on the row that says so, else on the fourth
+    st_x = next((j for j, (a_, b_, c_, _) in enumerate(items) if st_off.lower() in f'{b_} {c_}'.lower()), 3)
     body = (f'<div style="height:100%;padding:28px 36px;display:flex;flex-direction:column;gap:16px"><div class="row"><div class="col"><h1 class="d2" style="font-size:28px">{d["noun"].capitalize()}s</h1><span class="small">{len(items) * 41} total · {app}</span></div><div class="sp"></div><button class="btn btn-sm">Export</button><button class="btn btn-sm btn-p" style="margin-left:8px">{ic("plus")} New {d["noun"]}</button></div>'
+            '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px">' + ''.join(f'<div class="card col g4" style="padding:14px 16px"><span class="small">{x}</span><b class="num" style="font-size:22px">{y}</b><span class="small {"up" if z.startswith("▲") else "down" if z.startswith("▼") else ""}">{z}</span></div>' for x, y, z in d['kpis'][:4]) + '</div>'
             f'<div class="row g8"><div class="field" style="height:38px;width:300px">{ic("search")}<span>Search {d["noun"]}s</span></div>' + ''.join(f'<span class="pill" style="height:38px;border-radius:10px">{x} ▾</span>' for x in d['cats'][1:4]) + '</div>'
-            '<div class="card" style="padding:0;flex:1;overflow:hidden"><div class="row" style="padding:12px 18px;border-bottom:1px solid var(--line);font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)"><span style="width:320px">Name</span><span style="width:300px">Details</span><span style="width:140px">Status</span><span style="margin-left:auto">Value</span></div>'
-            + ''.join(f'<div class="row li" style="padding:14px 18px"><span class="row g12" style="width:320px"><span class="ico" style="width:32px;height:32px;border-radius:9px">{ic(ik)}</span><b style="font-size:14px">{a}</b></span><span class="small" style="width:300px">{b}</span><span style="width:140px"><span class="tag" style="{"" if j % 3 else "background:var(--surface2);color:var(--muted)"}">{"Active" if j % 3 else "Draft"}</span></span><b class="num" style="margin-left:auto;font-size:14px">{c}</b></div>' for j, (a, b, c, ik) in enumerate(items + [(x[0], x[1], d['kpis'][q][1], x[2]) for q, x in enumerate(d['notif'])]))
-            + '</div><div class="row"><span class="small">Showing 1–10</span><div class="sp"></div><button class="btn btn-sm">Previous</button><button class="btn btn-sm" style="margin-left:6px">Next</button></div></div>')
-    desc = f'A desktop table of {d["noun"]}s in {app}. A title row with Export and "New {d["noun"]}", a search field and filter dropdowns ({", ".join(d["cats"][1:4])}) sit above a table with name, details, status and value columns — ' + ', '.join(a for a, *_ in items) + '. Pagination closes the card. Idea: tables carry the data; chrome recedes.'
+            '<div class="card" style="padding:0;overflow:hidden"><div class="row" style="padding:12px 18px;border-bottom:1px solid var(--line);font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)"><span style="width:320px">Name</span><span style="width:300px">Details</span><span style="width:140px">Status</span><span style="margin-left:auto">Value</span></div>'
+            + ''.join(f'<div class="row li" style="padding:14px 18px"><span class="row g12" style="width:320px"><span class="ico" style="width:32px;height:32px;border-radius:9px">{ic(ik)}</span><b style="font-size:14px">{a}</b></span><span class="small" style="width:300px">{b}</span><span style="width:140px"><span class="tag" style="{"background:var(--surface2);color:var(--muted)" if j == st_x else ""}">{st_off if j == st_x else st_on}</span></span><b class="num" style="margin-left:auto;font-size:14px">{c}</b></div>' for j, (a, b, c, ik) in enumerate(items))
+            + f'</div><div class="row"><span class="small">Showing 1–{len(items)} of {len(items) * 41}</span><div class="sp"></div><button class="btn btn-sm">Previous</button><button class="btn btn-sm" style="margin-left:6px">Next</button></div></div>')
+    desc = f'A desktop table of {d["noun"]}s in {app}. A title row with Export and "New {d["noun"]}", a strip of four KPI tiles, a search field and filter dropdowns ({", ".join(d["cats"][1:4])}) sit above a table with name, details, status ({st_on} / {st_off}) and value columns — ' + ', '.join(a for a, *_ in items) + '. Pagination closes the card. Idea: tables carry the data; chrome recedes.'
     screen(f'gen-{k}-table', meta(d, 'table', f'{app} {d["noun"]} table', ['list', 'dashboard'], ['data-dense', 'minimal'], ['data-table', 'filters', 'desktop'], desc, 'desktop'), body)
 
 print(len(SCREENS), 'generated screens')
