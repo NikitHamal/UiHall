@@ -88,6 +88,7 @@ export default function home(root, app) {
       <p class="lede" data-reveal style="--d:1">One file, zero dependencies, no API key. Works with Claude Code, Cursor, VS Code, Codex, Claude Desktop — anything that speaks MCP.</p>
     </div>
     <div data-reveal style="--d:2">${installBlock()}</div>
+    <div class="row mt-m" data-reveal style="--d:3">${arrowBtn('../demo/sleep/', 'See a screen built with the skill')}<a class="btn btn--ghost" href="#/agents?tab=playground">Try the tools in your browser</a></div>
   </section>
 
   <section class="container section">

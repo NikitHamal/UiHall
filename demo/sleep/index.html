@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hush — sleep onboarding · built with the UI Hall skill</title>
+<!--
+  Built with the uihall skill, following its workflow end to end:
+    brief:      design_brief("onboarding for a sleep tracking app", platform=ios, mood=calm)
+    references: VID-0236 (question-per-step flow, small dark "Next" pill, soft blue panels, score card)
+                IMG-0618 (visual top ~60%, serif headline, full-width dark CTA + "Skip", choice chips)
+                VID-0173 (one dominant data visual, headline beneath)
+    patterns:   Single-promise onboarding · Soft light canvas, tinted cards · Editorial serif display
+    palette:    measured from VID-0236 — bg #F7F8F9 · surface #C7E3F0 · text #212229 (14.9:1)
+                accent #88BDDD as fill · #4B758F as text (nudged by check_contrast to pass 4.5:1)
+-->
+<link rel="stylesheet" href="../../ui-hall/assets/css/fonts-v2.css">
+<style>
+:root{
+  --bg:#F7F8F9;--surface:#C7E3F0;--text:#212229;--muted:#5C6470;--accent:#88BDDD;--accent-text:#4B758F;--warm:#DF5A5A;
+  --ink:#16171C;--line:rgba(33,34,41,.08);
+  --serif:'Instrument Serif',Georgia,serif;--sans:'Inter Tight',system-ui,sans-serif;--mono:'JetBrains Mono',monospace;
+  --ease:cubic-bezier(.16,1,.3,1);--spring:cubic-bezier(.34,1.4,.64,1);
+}
+*{box-sizing:border-box}
+body{margin:0;min-height:100dvh;background:#E9ECEF;color:var(--text);font:15px/1.5 var(--sans);display:grid;grid-template-columns:auto minmax(0,460px);justify-content:center;align-items:center;gap:clamp(40px,7vw,110px);padding:48px clamp(16px,5vw,80px)}
+@media(max-width:980px){body{grid-template-columns:1fr;justify-items:center;padding:24px 12px}}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent-text);outline-offset:3px;border-radius:12px}
+
+/* ----------------------------------------------------------- notes panel */
+.notes{max-width:560px}
+.notes small{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.notes h1{font:400 clamp(40px,5vw,64px)/.98 var(--serif);letter-spacing:-.02em;margin:14px 0 16px}
+.notes h1 em{color:var(--accent-text)}
+.notes p{color:var(--muted);margin:0 0 22px;max-width:52ch}
+.refs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px}
+.refs a{display:block;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 0 0 1px var(--line);text-decoration:none;color:inherit;transition:transform .5s var(--spring)}
+.refs a:hover{transform:translateY(-4px)}
+.refs img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.refs span{display:block;padding:8px 10px;font:500 11px/1.3 var(--mono);color:var(--muted)}
+.refs b{display:block;color:var(--text);font:500 12px/1.3 var(--sans);margin-top:2px}
+.sw{display:flex;gap:6px;margin-bottom:10px}
+.sw i{flex:1;height:44px;border-radius:10px;box-shadow:inset 0 0 0 1px var(--line);position:relative}
+.sw i::after{content:attr(data-h);position:absolute;left:8px;bottom:6px;font:500 10px var(--mono);color:var(--text);opacity:.75}
+.checks{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:6px;font-size:13.5px}
+.checks li::before{content:'✓';color:var(--accent-text);font-weight:700;margin-right:8px}
+.back{display:inline-block;margin-top:22px;font:500 13px var(--sans);color:var(--accent-text)}
+@media(max-width:980px){.notes{justify-self:center;order:2}}
+
+/* ----------------------------------------------------------- phone */
+.phone{position:relative;width:390px;height:844px;max-width:100%;border-radius:56px;background:var(--bg);box-shadow:0 0 0 10px #101114,0 0 0 11px #2A2B30,0 50px 100px -30px rgba(20,30,50,.45);overflow:hidden;isolation:isolate}
+@media(max-width:440px){.phone{width:100%;height:min(844px,100dvh - 48px);border-radius:36px}}
+.status{position:absolute;inset:0 0 auto;height:54px;display:flex;justify-content:space-between;align-items:center;padding:0 32px 0 38px;font:600 15px var(--sans);z-index:5}
+.island{position:absolute;top:11px;left:50%;translate:-50% 0;width:122px;height:35px;border-radius:20px;background:#000;z-index:6}
+.top{position:absolute;top:58px;left:24px;right:24px;display:flex;align-items:center;gap:12px;z-index:5}
+.dots{flex:1;display:flex;gap:6px}
+.dots i{height:4px;flex:1;border-radius:4px;background:rgba(33,34,41,.1);overflow:hidden}
+.dots i::after{content:'';display:block;height:100%;width:0;background:var(--text);transition:width .6s var(--ease)}
+.dots i.on::after{width:100%}
+.skip{font-size:14px;color:var(--muted);padding:8px 4px;min-height:44px}
+.backbtn{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.7);opacity:0;pointer-events:none;transition:opacity .3s}
+.backbtn.on{opacity:1;pointer-events:auto}
+
+.steps{position:absolute;inset:0}
+.step{position:absolute;inset:0;padding:120px 24px 40px;display:flex;flex-direction:column;opacity:0;pointer-events:none;transform:translateX(40px);transition:opacity .5s var(--ease),transform .7s var(--ease)}
+.step.on{opacity:1;pointer-events:auto;transform:none}
+.step.past{transform:translateX(-40px)}
+.visual{flex:0 0 56%;position:relative;border-radius:32px;background:linear-gradient(170deg,#DCEEF7 0%,var(--surface) 55%,#A9D0E6 100%);overflow:hidden;display:grid;place-items:center}
+h2{font:400 36px/1.02 var(--serif);letter-spacing:-.015em;margin:26px 0 10px;color:var(--text)}
+.lead{color:var(--muted);margin:0;font-size:15px}
+.grow{flex:1}
+.cta{height:56px;border-radius:18px;background:var(--ink);color:#fff;font-weight:600;font-size:16px;width:100%;transition:transform .35s var(--spring),opacity .3s}
+.cta:active{transform:scale(.97)}
+.cta:disabled{opacity:.3;cursor:default}
+.ghost{display:block;width:100%;margin-top:6px;min-height:44px;color:var(--muted);font-size:14px}
+.ghost b{color:var(--accent-text)}
+
+/* step 1: breathing moon */
+.moon{width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff,#EAF4FA 55%,#CFE5F1);box-shadow:0 0 0 18px rgba(255,255,255,.25),0 0 0 44px rgba(255,255,255,.14),0 30px 60px -10px rgba(40,90,130,.35);animation:breathe 6s ease-in-out infinite}
+@keyframes breathe{50%{transform:scale(1.07);box-shadow:0 0 0 26px rgba(255,255,255,.22),0 0 0 60px rgba(255,255,255,.1),0 40px 70px -10px rgba(40,90,130,.3)}}
+.star{position:absolute;width:4px;height:4px;border-radius:50%;background:#fff;animation:tw 3s ease-in-out infinite}
+@keyframes tw{50%{opacity:.2}}
+.breath{position:absolute;bottom:18px;left:0;right:0;text-align:center;font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)}
+
+/* step 2: options */
+.opts{display:grid;gap:10px;margin-top:22px}
+.opt{display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 18px;border-radius:18px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);font-size:16px;font-weight:500;text-align:left;transition:background .25s,box-shadow .25s,transform .4s var(--spring)}
+.opt small{color:var(--muted);font-weight:400;font-size:13px}
+.opt::after{content:'';width:22px;height:22px;border-radius:50%;box-shadow:inset 0 0 0 1.5px rgba(33,34,41,.2);transition:box-shadow .3s var(--spring),background .3s}
+.opt[aria-checked=true]{background:#EAF4FA;box-shadow:inset 0 0 0 1.5px var(--accent-text)}
+.opt[aria-checked=true]::after{background:var(--accent-text);box-shadow:inset 0 0 0 6px #EAF4FA,0 0 0 1.5px var(--accent-text)}
+.opt:active{transform:scale(.98)}
+.pill{align-self:center;height:48px;padding:0 34px;border-radius:999px;background:var(--ink);color:#fff;font-weight:600;transition:transform .35s var(--spring),opacity .3s}
+.pill:disabled{opacity:.25;cursor:default}
+
+/* step 3: mood chips + wave */
+.wave{display:flex;align-items:center;gap:5px;height:120px}
+.wave i{width:6px;border-radius:6px;background:rgba(255,255,255,.85);height:calc(var(--h)*1px);transition:height .7s var(--spring)}
+.chips{display:flex;gap:8px;justify-content:center;margin-top:22px}
+.chip{height:44px;padding:0 20px;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);font-weight:500;transition:all .3s var(--spring)}
+.chip[aria-checked=true]{background:var(--text);color:#fff;box-shadow:none;transform:scale(1.05)}
+
+/* step 4: goal ring */
+.ring{position:relative;width:210px;height:210px}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:16;stroke-linecap:round}
+.ring .track{stroke:rgba(255,255,255,.5)}
+.ring .fill{stroke:#fff;stroke-dasharray:597;stroke-dashoffset:597;transition:stroke-dashoffset 1.6s var(--ease) .3s}
+.step.on .ring .fill{stroke-dashoffset:calc(597 - 597 * var(--p))}
+.ring div{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
+.ring b{font:400 52px/1 var(--serif);color:var(--text)}
+.ring span{font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent-text);margin-top:6px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.facts div{padding:12px 14px;border-radius:16px;background:#fff;box-shadow:inset 0 0 0 1px var(--line)}
+.facts b{display:block;font:600 17px var(--sans);font-variant-numeric:tabular-nums}
+.facts small{color:var(--muted);font-size:12.5px}
+.done{position:absolute;inset:0;display:grid;place-content:center;text-align:center;padding:40px;background:var(--bg);opacity:0;pointer-events:none;transition:opacity .6s var(--ease);z-index:8}
+.done.on{opacity:1;pointer-events:auto}
+.done h2{margin-top:0}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:1ms!important}}
+</style>
+</head>
+<body>
+
+<main class="phone" aria-label="Hush onboarding prototype">
+  <div class="island"></div>
+  <div class="status"><span>9:41</span><svg aria-hidden="true" width="66" height="12" viewBox="0 0 66 12"><g fill="#212229"><rect x="0" y="7" width="3" height="5" rx="1"/><rect x="5" y="5" width="3" height="7" rx="1"/><rect x="10" y="2.5" width="3" height="9.5" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/><rect x="40" y="0.5" width="22" height="11" rx="3.5" fill="none" stroke="#212229" opacity=".4"/><rect x="42" y="2.5" width="16" height="7" rx="2"/><rect x="63.5" y="4" width="1.5" height="4" rx=".7" opacity=".4"/></g><path d="M29 3.2a8 8 0 0 1 9.5 0M30.6 5.6a5 5 0 0 1 6.3 0M32.4 8a2 2 0 0 1 2.7 0" stroke="#212229" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg></div>
+  <div class="top">
+    <button class="backbtn" id="back" aria-label="Back"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m12 4-6 6 6 6"/></svg></button>
+    <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+    <button class="skip" id="skip">Skip</button>
+  </div>
+
+  <div class="steps">
+    <section class="step on" aria-label="Welcome">
+      <div class="visual">
+        <span class="star" style="top:18%;left:20%"></span><span class="star" style="top:30%;left:78%;animation-delay:1s"></span><span class="star" style="top:70%;left:14%;animation-delay:2s"></span><span class="star" style="top:62%;left:84%;animation-delay:.5s"></span>
+        <div class="moon"></div>
+        <div class="breath" id="breath">Breathe in</div>
+      </div>
+      <h2>Sleep is a skill.<br>Let’s practise it.</h2>
+      <p class="lead">Two questions, thirty seconds, and Hush builds tonight’s wind-down around you.</p>
+      <div class="grow"></div>
+      <button class="cta" data-next>Get started</button>
+      <button class="ghost">I already have an account · <b>Log in</b></button>
+    </section>
+
+    <section class="step" aria-label="Bedtime">
+      <h2 style="margin-top:12px">When do you usually fall asleep?</h2>
+      <p class="lead">Be honest — this is a starting point, not a grade.</p>
+      <div class="opts" role="radiogroup" id="bed">
+        <button class="opt" role="radio" aria-checked="false" data-v="22:00"><span>Before 22:00<br><small>Early bird</small></span></button>
+        <button class="opt" role="radio" aria-checked="false" data-v="23:00"><span>22:00 – 23:00<br><small>Right on schedule</small></span></button>
+        <button class="opt" role="radio" aria-checked="false" data-v="00:00"><span>23:00 – 00:00<br><small>A little late</small></span></button>
+        <button class="opt" role="radio" aria-checked="false" data-v="01:00"><span>After midnight<br><small>Night owl</small></span></button>
+      </div>
+      <div class="grow"></div>
+      <button class="pill" data-next disabled>Next</button>
+    </section>
+
+    <section class="step" aria-label="Mornings">
+      <div class="visual" style="flex-basis:44%"><div class="wave" id="wave"></div></div>
+      <h2>How do you wake up most days?</h2>
+      <p class="lead">Select the closest match.</p>
+      <div class="chips" role="radiogroup" id="mood">
+        <button class="chip" role="radio" aria-checked="false" data-v="groggy">Groggy</button>
+        <button class="chip" role="radio" aria-checked="false" data-v="okay">Okay</button>
+        <button class="chip" role="radio" aria-checked="false" data-v="rested">Rested</button>
+      </div>
+      <div class="grow"></div>
+      <button class="pill" data-next disabled>Next</button>
+    </section>
+
+    <section class="step" aria-label="Your goal">
+      <div class="visual" style="flex-basis:46%">
+        <div class="ring" style="--p:.78"><svg viewBox="0 0 210 210"><circle class="track" cx="105" cy="105" r="95"/><circle class="fill" cx="105" cy="105" r="95"/></svg>
+          <div><b id="goal">7h 30m</b><span>tonight’s goal</span></div></div>
+      </div>
+      <h2>Your first plan is ready.</h2>
+      <div class="facts">
+        <div><b id="wind">22:15</b><small>Start winding down</small></div>
+        <div><b id="lights">22:45</b><small>Lights out</small></div>
+      </div>
+      <div class="grow"></div>
+      <button class="cta" data-next>Remind me at 22:15</button>
+      <button class="ghost" data-next>Not now</button>
+    </section>
+  </div>
+
+  <div class="done" id="done"><h2>Sleep well.</h2><p class="lead">That’s the whole flow.</p><button class="ghost" id="again"><b>Replay</b></button></div>
+</main>
+
+<aside class="notes">
+  <small>Built with the uihall skill · end to end</small>
+  <h1>A calm onboarding, <em>from evidence.</em></h1>
+  <p>Asked for “onboarding for a sleep-tracking app, calm, iOS”, the skill pulled a brief from UI Hall, looked at the three closest references, and took their <em>structure</em> — not their skin. Every colour below is measured, and every text pair was contrast-checked.</p>
+  <div class="refs">
+    <a href="../../ui-hall/#/a/VID-0236"><img src="../../ui-hall/assets/thumb/VID-0236.webp" alt=""><span>VID-0236<b>One question per step</b></span></a>
+    <a href="../../ui-hall/#/a/IMG-0618"><img src="../../ui-hall/assets/thumb/IMG-0618.webp" alt=""><span>IMG-0618<b>Visual top, serif headline</b></span></a>
+    <a href="../../ui-hall/#/a/VID-0173"><img src="../../ui-hall/assets/thumb/VID-0173.webp" alt=""><span>VID-0173<b>One dominant data visual</b></span></a>
+  </div>
+  <div class="sw">
+    <i style="background:#F7F8F9" data-h="#F7F8F9"></i><i style="background:#C7E3F0" data-h="#C7E3F0"></i><i style="background:#88BDDD" data-h="#88BDDD"></i><i style="background:#4B758F" data-h="#4B758F"></i><i style="background:#212229" data-h=""></i>
+  </div>
+  <small>Measured from VID-0236 · text 14.9:1 · accent-as-text nudged to #4B758F</small>
+  <ul class="checks">
+    <li>One promise per step, one primary action in the thumb zone</li>
+    <li>Progress shown, skippable, back available after step one</li>
+    <li>Reminder permission asked last — after showing value</li>
+    <li>Serif only ≥ 28px; Inter Tight for everything interactive</li>
+    <li>Reduced-motion fallback; 44pt targets throughout</li>
+  </ul>
+  <a class="back" href="../../ui-hall/#/agents?tab=skill">← Get the skill</a>
+</aside>
+
+<script>
+const steps=[...document.querySelectorAll('.step')],dots=[...document.querySelectorAll('.dots i')];
+let i=0;const ans={};
+function show(n){i=Math.max(0,Math.min(n,steps.length));
+  if(i===steps.length){document.getElementById('done').classList.add('on');return}
+  steps.forEach((s,k)=>{s.classList.toggle('on',k===i);s.classList.toggle('past',k<i)});
+  dots.forEach((d,k)=>d.classList.toggle('on',k<=i));
+  document.getElementById('back').classList.toggle('on',i>0)}
+document.addEventListener('click',e=>{if(e.target.closest('[data-next]'))show(i+1)});
+document.getElementById('back').onclick=()=>show(i-1);
+document.getElementById('skip').onclick=()=>show(3);
+document.getElementById('again').onclick=()=>{document.getElementById('done').classList.remove('on');show(0)};
+function radio(id,cb){const g=document.getElementById(id);g.addEventListener('click',e=>{const b=e.target.closest('[role=radio]');if(!b)return;
+  g.querySelectorAll('[role=radio]').forEach(x=>x.setAttribute('aria-checked',x===b));g.closest('.step').querySelector('.pill').disabled=false;cb(b.dataset.v)})}
+const fmt=m=>{m=(m+1440)%1440;return String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0')};
+radio('bed',v=>{const [h]=v.split(':').map(Number);const lights=(h===0?24:h)*60-45-(h>=24||h===0||h===1?30:0);ans.lights=lights;
+  document.getElementById('lights').textContent=fmt(lights);document.getElementById('wind').textContent=fmt(lights-30);
+  document.querySelector('.step:nth-child(4) .cta').textContent='Remind me at '+fmt(lights-30)});
+const wave=document.getElementById('wave');const N=22;wave.innerHTML=Array.from({length:N},()=>'<i style="--h:20"></i>').join('');
+const shape={groggy:k=>14+Math.abs(Math.sin(k*1.7))*26,okay:k=>24+Math.sin(k/3)*24+24,rested:k=>30+Math.sin(k/N*Math.PI)*70};
+radio('mood',v=>{[...wave.children].forEach((b,k)=>b.style.setProperty('--h',shape[v](k)));
+  document.getElementById('goal').textContent=v==='groggy'?'8h 00m':v==='okay'?'7h 45m':'7h 30m';
+  document.querySelector('.ring').style.setProperty('--p',v==='groggy'?.66:v==='okay'?.72:.78)});
+let tick=0;setInterval(()=>{tick++;document.getElementById('breath').textContent=tick%2?'Breathe out':'Breathe in'},3000);
+setInterval(()=>{if(!document.querySelector('#mood [aria-checked=true]'))[...wave.children].forEach((b,k)=>b.style.setProperty('--h',12+Math.random()*50))},900);
+</script>
+</body>
+</html>
