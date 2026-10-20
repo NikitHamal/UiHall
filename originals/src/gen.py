@@ -11,7 +11,7 @@ I.update({
  'bolt': '<path d="M11 2 4 11h5l-1 7 7-9h-5z"/>', 'card': '<rect x="2.5" y="5" width="15" height="10" rx="2"/><path d="M2.5 8.5h15"/>',
  'map': '<path d="M3 5.5 7.5 4l5 1.5L17 4v10.5L12.5 16l-5-1.5L3 16z"/><path d="M7.5 4v10.5M12.5 5.5V16"/>',
  'leaf': '<path d="M4 16c0-7 5-11 12-12 0 7-4 12-11 12M4 16l7-7"/>', 'cal': '<rect x="3" y="4.5" width="14" height="12" rx="2"/><path d="M3 8.5h14M7 3v3M13 3v3"/>',
- 'clock': '<circle cx="10" cy="10" r="7"/><path d="M10 6v4l3 2"/>', 'grid': '<rect x="3" y="3" width="6" height="6" rx="1.5"/><rect x="11" y="3" width="6" height="6" rx="1.5"/><rect x="3" y="11" width="6" height="6" rx="1.5"/><rect x="11" y="11" width="6" height="6" rx="1.5"/>',
+ 'edit': '<path d="M4 16h3l8-8-3-3-8 8z"/>', 'clock': '<circle cx="10" cy="10" r="7"/><path d="M10 6v4l3 2"/>', 'grid': '<rect x="3" y="3" width="6" height="6" rx="1.5"/><rect x="11" y="3" width="6" height="6" rx="1.5"/><rect x="3" y="11" width="6" height="6" rx="1.5"/><rect x="11" y="11" width="6" height="6" rx="1.5"/>',
 })
 
 CUR = {'icon': 'star'}

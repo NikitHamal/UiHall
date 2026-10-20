@@ -1072,7 +1072,7 @@ const TOOLS = [
   {
     name: 'search_designs',
     title: 'Search designs',
-    description: 'Search 268 live, MIT-licensed UI screens built in code — mobile apps, websites, dashboards and design systems across 16+ product domains, each in four themes and written up from its own content. '
+    description: 'Search 404 live, MIT-licensed UI screens built in code — mobile apps, websites, dashboards and design systems across 20 product domains, each in four themes and written up from its own content. '
       + 'Ranked full-text search with synonyms ("fintech" also finds wallet, banking…) plus facet filters. '
       + 'Use this first whenever you design, build or critique an interface, so decisions come from real examples instead of the generic average. '
       + 'Set include_images to actually see the top results.',

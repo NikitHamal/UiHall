@@ -1073,7 +1073,7 @@ const TOOLS = [
   {
     name: 'search_designs',
     title: 'Search designs',
-    description: 'Search 268 live, MIT-licensed UI screens built in code — mobile apps, websites, dashboards and design systems across 16+ product domains, each in four themes and written up from its own content. '
+    description: 'Search 404 live, MIT-licensed UI screens built in code — mobile apps, websites, dashboards and design systems across 20 product domains, each in four themes and written up from its own content. '
       + 'Ranked full-text search with synonyms ("fintech" also finds wallet, banking…) plus facet filters. '
       + 'Use this first whenever you design, build or critique an interface, so decisions come from real examples instead of the generic average. '
       + 'Set include_images to actually see the top results.',
@@ -1456,7 +1456,7 @@ const PROTOCOLS = ['2025-06-18', '2025-03-26', '2024-11-05'];
 const err = (id, code, message) => ({ jsonrpc: '2.0', id, error: { code, message } });
 const ok = (id, result) => ({ jsonrpc: '2.0', id, result });
 
-const INSTRUCTIONS = `UI Hall is a library of 268 live UI screens built in code (mobile, web, dashboards, design systems), each in four themes, MIT licensed, written up and colour-measured.
+const INSTRUCTIONS = `UI Hall is a library of 404 live UI screens built in code (mobile, web, dashboards, design systems), each in four themes, MIT licensed, written up and colour-measured.
 Use it before designing or building any UI, so layout and colour decisions come from evidence rather than the generic average:
 - design_brief(screen) to start a screen — references, patterns, palettes, checklist in one call.
 - search_designs / find_similar / search_by_color to explore; view_design to actually look at the images.

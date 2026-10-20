@@ -1,6 +1,6 @@
 # uihall-mcp
 
-MCP server for [UI Hall](https://nikithamal.github.io/UiHall/) — 268 live, MIT-licensed UI screens built in code, with
+MCP server for [UI Hall](https://nikithamal.github.io/UiHall/) — 404 live, MIT-licensed UI screens built in code, with
 palettes measured from the pixels. Gives coding agents design evidence: briefs, searchable and *viewable* references,
 patterns with build rules, measured palettes, token export and contrast checks.
 

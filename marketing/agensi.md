@@ -8,7 +8,7 @@ https://nikithamal.github.io/UiHall/skills/uihall.zip).
 
 **Name:** UI Hall — Design From Evidence
 
-**Tagline (≤ 80 chars):** Your agent designs from 268 live, MIT-licensed UI screens — not the average.
+**Tagline (≤ 80 chars):** Your agent designs from 404 live, MIT-licensed UI screens — not the average.
 
 **Category:** Design / Frontend · **Tags:** ui, ux, design, frontend, design-system, tailwind, swiftui, accessibility, palette, mcp
 
@@ -18,7 +18,7 @@ Claude Desktop — any agent that reads SKILL.md; MCP server optional.
 ## Short description
 
 Ask an agent for "a finance app" and you get a blue gradient, a card and a rounded button. UI Hall gives your agent a
-library of 268 live interface screens built in code — mobile apps, websites, dashboards and design systems across 16+ domains, four themes each, MIT licensed — each
+library of 404 live interface screens built in code — mobile apps, websites, dashboards and design systems across 20 domains, four themes each, MIT licensed — each
 written up by a person who looked at it, with every palette measured from the pixels. The skill makes the agent pull a
 brief, actually look at the closest references, take their structure (not their skin), use measured colour, export
 tokens and check contrast before it calls the work done.

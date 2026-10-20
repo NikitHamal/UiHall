@@ -4,7 +4,7 @@
 
 **Design evidence for humans and agents.**
 
-268 live interface screens built in code — four themes each, written up and colour-measured, all MIT licensed —
+404 live interface screens built in code — four themes each, written up and colour-measured, all MIT licensed —
 as a website, an MCP server and an agent skill.
 
 [**Open the hall →**](https://nikithamal.github.io/UiHall/) · [For agents](https://nikithamal.github.io/UiHall/#/agents) · [Playground](https://nikithamal.github.io/UiHall/#/agents?tab=playground)
@@ -93,7 +93,7 @@ No MCP? The skill's CLI runs the same tools: `node skills/uihall/scripts/uihall.
 
 | Claim | How |
 |---|---|
-| **Original** — every screen | Designed and built in code for UI Hall from one shared kit (`originals/kit`), rendered in four themes (Ember, Mint, Ink, Grape), MIT licensed. 44 are hand-built; 224 are composed by `originals/src/gen.py` across 16 product domains × 14 screen types. |
+| **Original** — every screen | Designed and built in code for UI Hall from one shared kit (`originals/kit`), rendered in four themes (Ember, Mint, Ink, Grape), MIT licensed. 44 are hand-built; 360 are composed by `originals/src/gen.py` across 20 product domains × 18 screen types. |
 | **Observed** — descriptions | Generated from the exact content each screen renders, so a write-up cannot drift from its pixels. |
 | **Measured** — palettes | k-means over each rendered theme with area percentages; split into background / surface / text / accent roles and contrast-checked at query time. |
 | **Live** — interaction | Every screen opens as real HTML: toggles, chips, steppers, tabs and fields work, and the palette switches in place. |

@@ -6,7 +6,7 @@ description: >-
   page, a dashboard, a component, a design system or a colour palette ("design an onboarding",
   "make this page look better", "what should a crypto wallet home look like", "pick colours
   for a calm health app", "why does this look generic", "build a pricing section"). Gives you
-  268 live, MIT-licensed UI screens built in code (four themes each) with palettes measured from the pixels, a pattern library
+  404 live, MIT-licensed UI screens built in code (four themes each) with palettes measured from the pixels, a pattern library
   with build rules, palette-to-token export and contrast checks — through the UI Hall MCP
   server when connected, or a bundled zero-dependency CLI when not.
 license: MIT
@@ -22,8 +22,8 @@ Asked for "a finance app", an agent produces a blue gradient, a card and a round
 because that is the average of everything it has seen. This skill replaces the average with
 specific, real, *described* references — and makes you look at them before you write code.
 
-UI Hall is a library of **268 live interface screens** built in code — mobile apps, websites,
-dashboards and design systems across 16+ product domains — each in four themes and MIT licensed.
+UI Hall is a library of **404 live interface screens** built in code — mobile apps, websites,
+dashboards and design systems across 20 product domains — each in four themes and MIT licensed.
 Every write-up is generated from what the screen renders; every palette is k-means over the
 rendered pixels with area percentages. `get_design` returns the live HTML, so you can adapt real markup.
 
