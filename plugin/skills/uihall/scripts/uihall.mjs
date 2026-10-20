@@ -646,7 +646,9 @@ class UiHall {
       }).sort((x, y) => y.rel - x.rel);
     }
     return ranked.map(({ p, rel }) => {
-      const ev = [...p.evidence].filter((a) => !a.crop_of).sort((x, y) => (hits.get(y.id) || 0) - (hits.get(x.id) || 0));
+      // with no topic, a stable per-pattern shuffle so each pattern shows its own evidence, not the corpus head
+      const mix = (a) => { let h = 2166136261; for (const c of p.slug + a.id) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return h >>> 0; };
+      const ev = [...p.evidence].filter((a) => !a.crop_of).sort((x, y) => (hits.get(y.id) || 0) - (hits.get(x.id) || 0) || mix(x) - mix(y));
       return {
         slug: p.slug, name: p.name, why: p.why, build: p.build, relevance: Math.round(rel * 100) / 100,
         evidence_count: p.evidence.length, examples: ev.slice(0, 4),
@@ -1013,8 +1015,9 @@ async function load() {
 const MIME = { webp: 'image/webp', jpg: 'image/jpeg', jpeg: 'image/jpeg', png: 'image/png' };
 
 /** Bytes for an asset image: local checkout → cache → site. */
-async function imageBytes(a, which) {
-  const rel = which === 'thumb' ? a.thumb : which === 'strip' ? a.strip?.src : a.src;
+async function imageBytes(a, which, theme) {
+  const v = (theme && a.variants?.[theme]) || a;
+  const rel = which === 'thumb' ? v.thumb : which === 'strip' ? a.strip?.src : v.src;
   if (!rel) return null;
   const mimeType = MIME[rel.split('.').pop()] || 'image/webp';
   if (ROOT && fs.existsSync(path.join(ROOT, rel))) return { data: fs.readFileSync(path.join(ROOT, rel)), mimeType };
@@ -1128,26 +1131,27 @@ const TOOLS = [
   {
     name: 'view_design',
     title: 'View design',
-    description: 'Look at references. Returns the actual images (up to 4 ids) so you can judge proportion, rhythm and polish — '
-      + 'the things a description cannot carry. For videos you get the poster plus a 6-frame strip across the clip.',
+    description: 'Look at references. Returns the rendered screens (up to 4 ids) so you can judge proportion, rhythm and polish — '
+      + 'the things a description cannot carry. Every original ships in four themes (ember, mint, ink, grape); pass theme to see one.',
     inputSchema: {
       type: 'object', required: ['ids'],
       properties: {
         ids: { type: 'array', items: { type: 'string' }, minItems: 1, maxItems: 4, description: 'Asset ids to view.' },
         size: { type: 'string', enum: ['thumb', 'full'], default: 'full', description: 'thumb ≈ 480px (cheap), full ≈ up to 1600px.' },
+        theme: { type: 'string', enum: ['ember', 'mint', 'ink', 'grape'], description: 'Which themed variant to show. Default: the primary render.' },
       },
     },
     annotations: { title: 'View design', ...RO },
-    run(h, { ids, size = 'full' }) {
+    run(h, { ids, size = 'full', theme }) {
       const list = (Array.isArray(ids) ? ids : [ids]).slice(0, 4).map((id) => h.get(id)).filter(Boolean);
       if (!list.length) throw new Error('None of those ids exist.');
       const images = [];
       for (const a of list) {
-        images.push({ id: a.id, which: size === 'thumb' ? 'thumb' : 'src' });
+        images.push({ id: a.id, which: size === 'thumb' ? 'thumb' : 'src', theme: a.variants?.[theme] ? theme : undefined });
         if (a.strip) images.push({ id: a.id, which: 'strip' });
       }
       return {
-        text: list.map((a) => `**${a.id}** · ${a.title}${a.strip ? ' (poster + 6-frame strip)' : ''}`).join('\n'),
+        text: list.map((a) => `**${a.id}** · ${a.title}${a.variants?.[theme] ? ` · ${theme} theme` : ''}${a.live ? ` · live: ${h.site}${a.live}` : ''}`).join('\n'),
         data: { assets: list.map((a) => h.card(a)) },
         images,
       };
@@ -1500,9 +1504,9 @@ async function main() {
     for (const id of rest) {
       const a = h.get(id);
       if (!a) { out.push(`${id}: unknown id`); continue; }
-      for (const which of a.strip ? ['src', 'strip'] : ['src']) {
+      for (const which of ['src']) {
         const b = await imageBytes(a, which);
-        const file = path.join(os.tmpdir(), `uihall-${a.id}${which === 'strip' ? '-strip' : ''}.${b.mimeType.split('/')[1]}`);
+        const file = path.join(os.tmpdir(), `uihall-${a.id}.${b.mimeType.split('/')[1]}`);
         fs.writeFileSync(file, b.data);
         out.push(file);
       }

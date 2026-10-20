@@ -41,7 +41,7 @@ node scripts/uihall.mjs <command> [args]      # path relative to this skill fold
 | Start any screen | `design_brief(screen, platform?, mood?, surface?)` | `brief "<screen>" --platform ios --mood calm` |
 | Find references | `search_designs(query, role?, style?, tag?, surface?, hue?, include_images?)` | `search "<query>" --role onboarding --surface dark` |
 | Full write-up + colour roles | `get_design(id)` | `get ORG-1037` |
-| **See** references | `view_design(ids)` | `image ORG-1037 ORG-0073` → open the printed files |
+| **See** references | `view_design(ids, theme?)` | `image ORG-1037 ORG-0073` → open the printed files |
 | Branch out | `find_similar(id, by?)` | `similar ORG-1037 --by palette` |
 | Structural patterns | `find_patterns(about?)` | `patterns "dashboard"` |
 | Palette for a mood | `palette_for(mood, query?, surface?)` | `palette --mood calm --query wellness` |

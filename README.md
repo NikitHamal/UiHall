@@ -71,7 +71,7 @@ to run fully offline from a checkout.
 |---|---|
 | `design_brief` | "I'm building X" → closest references, motion references, patterns with build rules, three measured palettes split into UI roles with WCAG checks, do/avoid guidance, a done-checklist |
 | `search_designs` | Ranked BM25 search with design synonyms ("fintech" ⇒ wallet, banking…) and facet filters; `include_images` attaches thumbnails |
-| `view_design` | The actual images — and a six-frame strip across each video — so the model sees proportion and polish |
+| `view_design` | The rendered screen, in any of its four themes, so the model sees proportion and polish |
 | `get_design` | Full write-up, measured palette with area %, colour roles, contrast, printed swatch names, URLs |
 | `find_similar` | Neighbours by content, by measured colour, or both |
 | `find_patterns` | 21 structural patterns, each with why, build rules and evidence ids |
@@ -106,7 +106,7 @@ The hall previously also held ~730 collected third-party references; they were r
 index.html               the site (vanilla ES modules, no build step) — served at the Pages root
 assets/css/site.css      design tokens → primitives → views, one layered file
 assets/js/               main (router), lib (DOM + motion), cmdk, board, views/*
-assets/{img,thumb,vid,strip}/   the media
+assets/{img,thumb}/      the rendered originals (one file per theme)
 data/corpus.json         the single source of truth
 demo/                    prototypes built with the skill
 mcp/                     uihall-mcp

@@ -60,8 +60,9 @@ async function load() {
 const MIME = { webp: 'image/webp', jpg: 'image/jpeg', jpeg: 'image/jpeg', png: 'image/png' };
 
 /** Bytes for an asset image: local checkout → cache → site. */
-export async function imageBytes(a, which) {
-  const rel = which === 'thumb' ? a.thumb : which === 'strip' ? a.strip?.src : a.src;
+export async function imageBytes(a, which, theme) {
+  const v = (theme && a.variants?.[theme]) || a;
+  const rel = which === 'thumb' ? v.thumb : which === 'strip' ? a.strip?.src : v.src;
   if (!rel) return null;
   const mimeType = MIME[rel.split('.').pop()] || 'image/webp';
   if (ROOT && fs.existsSync(path.join(ROOT, rel))) return { data: fs.readFileSync(path.join(ROOT, rel)), mimeType };

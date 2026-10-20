@@ -312,7 +312,9 @@ export class UiHall {
       }).sort((x, y) => y.rel - x.rel);
     }
     return ranked.map(({ p, rel }) => {
-      const ev = [...p.evidence].filter((a) => !a.crop_of).sort((x, y) => (hits.get(y.id) || 0) - (hits.get(x.id) || 0));
+      // with no topic, a stable per-pattern shuffle so each pattern shows its own evidence, not the corpus head
+      const mix = (a) => { let h = 2166136261; for (const c of p.slug + a.id) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return h >>> 0; };
+      const ev = [...p.evidence].filter((a) => !a.crop_of).sort((x, y) => (hits.get(y.id) || 0) - (hits.get(x.id) || 0) || mix(x) - mix(y));
       return {
         slug: p.slug, name: p.name, why: p.why, build: p.build, relevance: Math.round(rel * 100) / 100,
         evidence_count: p.evidence.length, examples: ev.slice(0, 4),

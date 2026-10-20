@@ -30,7 +30,7 @@ tokens and check contrast before it calls the work done.
 - **`design_brief` in one call:** closest references, motion references, structural patterns with build rules, three
   measured palettes split into background / surface / text / accent with WCAG checks, do/avoid guidance and a
   done-checklist.
-- **References the agent can see:** returns real images (and six-frame strips for videos) to multimodal models.
+- **References the agent can see:** returns the rendered screen, in any of its four themes, to multimodal models.
 - **Colour you can paste:** palette → CSS variables, Tailwind, W3C design tokens, SwiftUI or Jetpack Compose, with
   11-step ramps and contrast fixes.
 - **21 patterns with receipts:** hero number, bento grid, chip-filter row, bottom sheet, dark + single accent, AI chat

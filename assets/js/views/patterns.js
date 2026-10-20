@@ -20,7 +20,7 @@ export default function patterns(root, app) {
         <ul>${p.build.map((b) => `<li>${esc(b)}</li>`).join('')}</ul>
         <p class="pattern__count">${p.evidence_count} screens · <a href="#/library?q=${encodeURIComponent(p.name)}" style="color:var(--accent-text)">search similar</a></p>
       </div>
-      <div class="pattern__ev">${p.examples.map((a) => `<a href="#/a/${a.id}" title="${esc(a.title)}"><img src="${thumb(a)}" alt="${esc(a.title)}" loading="lazy"></a>`).join('')}</div>
+      <div class="pattern__ev">${p.examples.map((a) => `<a href="#/a/${a.id}" title="${esc(a.title)}"${a.viewport && a.viewport !== 'phone' ? ' class="wide"' : ''}><img src="${thumb(a)}" alt="${esc(a.title)}" loading="lazy"></a>`).join('')}</div>
     </article>`).join('')}
   </div>
   ${footer(h)}`;

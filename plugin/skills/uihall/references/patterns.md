@@ -11,7 +11,7 @@ A single figure set far larger than everything around it, with supporting detail
 - One supporting line directly under it (delta, period or unit) at muted contrast.
 - Nothing else on the screen above the fold at the same weight.
 
-Evidence (60): ORG-0001 (Analytics overview with sidebar), ORG-0017 (Card patterns sheet), ORG-0029 (Money home with hero balance), ORG-0185 (Crypto desktop dashboard · Halo)
+Evidence (60): ORG-0017 (Card patterns sheet), ORG-0801 (Ride-hailing desktop dashboard · Glide), ORG-1025 (Travel desktop dashboard · Wander), ORG-1073 (Crypto insights · Halo)
 
 ## Metric grid
 
@@ -21,7 +21,7 @@ Small multiples of equal-weight tiles, each one number and one label. Reads in a
 - Number first, label second; never more than one chart per tile.
 - Colour encodes status only, never decoration.
 
-Evidence (58): ORG-0001 (Analytics overview with sidebar), ORG-0029 (Money home with hero balance), ORG-0045 (Profile with stats and streak grid), ORG-0061 (Activity rings and workout list)
+Evidence (58): ORG-1553 (Smart home desktop dashboard · Hearth), ORG-0925 (Social home · Loop), ORG-1481 (News & reading desktop dashboard · Margin), ORG-0253 (Events & tickets home · Gather)
 
 ## Bottom tab bar, 4–5 destinations
 
@@ -31,7 +31,7 @@ Fixed bottom navigation with a small, stable set of destinations; the active one
 - Active = accent tint + filled icon; inactive = 60% ink.
 - Respect the home indicator safe area.
 
-Evidence (23): ORG-0029 (Money home with hero balance), ORG-0145 (Social feed with post actions), ORG-0165 (Podcast library with continue listening), ORG-0197 (Crypto home · Halo)
+Evidence (23): ORG-0813 (Ride-hailing home · Glide), ORG-1037 (Travel home · Wander), ORG-0757 (Plant care home · Fern), ORG-0645 (Music streaming home · Tide)
 
 ## Scrollable chip-filter row
 
@@ -41,7 +41,7 @@ Filters as chips in one horizontally scrolling row — never wrapping, never cli
 - white-space: nowrap; overflow-x: auto; hidden scrollbar; edge fade.
 - Selected chip inverts (ink fill), not just a border change.
 
-Evidence (96): ORG-0005 (AI assistant chat with composer), ORG-0021 (Buttons, inputs and controls sheet), ORG-0049 (Search with filter chips and results), ORG-0069 (Messages inbox with pinned threads)
+Evidence (96): ORG-1577 (Smart home device list · Hearth), ORG-1537 (News & reading support chat · Margin), ORG-1213 (Music streaming support chat · Tide), ORG-1261 (Ride-hailing support chat · Glide)
 
 ## Segmented range control
 
@@ -51,7 +51,7 @@ A Week / Month switch that redraws one view and moves nothing else. One state, o
 - Abbreviate day labels to three letters, never one.
 - Only the controlled region re-renders.
 
-Evidence (25): ORG-0021 (Buttons, inputs and controls sheet), ORG-0057 (Calendar day with timeline), ORG-0061 (Activity rings and workout list), ORG-0089 (Flight selection with date strip)
+Evidence (25): ORG-1157 (Real estate schedule · Nest), ORG-1189 (Personal finance schedule · Ledger), ORG-1141 (Health schedule · Dose), ORG-1237 (Plant care schedule · Fern)
 
 ## Empty state that teaches
 
@@ -61,7 +61,7 @@ The zero-data screen explains what will appear and offers exactly one action, in
 - One sentence of value, one primary button.
 - Show a ghosted preview of the filled state when possible.
 
-Evidence (21): ORG-0025 (Empty inbox that teaches), ORG-0193 (Crypto empty state · Halo), ORG-0249 (Events & tickets empty state · Gather), ORG-0305 (Fitness empty state · Pulse)
+Evidence (21): ORG-1033 (Travel empty state · Wander), ORG-0529 (Language learning empty state · Fable), ORG-0305 (Fitness empty state · Pulse), ORG-1345 (Business invoicing empty state · Tally)
 
 ## Single-promise onboarding
 
@@ -71,7 +71,7 @@ Each onboarding step makes one promise with one visual; progress dots and a sing
 - Primary CTA full-width at the thumb zone; "Log in" as secondary text.
 - Three steps maximum before value.
 
-Evidence (22): ORG-0025 (Empty inbox that teaches), ORG-0037 (Welcome with orbit illustration), ORG-0209 (Crypto welcome · Halo), ORG-0265 (Events & tickets welcome · Gather)
+Evidence (22): ORG-1437 (Job search welcome · Shortlist), ORG-1509 (News & reading welcome · Margin), ORG-0025 (Empty inbox that teaches), ORG-0037 (Welcome with orbit illustration)
 
 ## Type-led marketing hero
 
@@ -81,7 +81,7 @@ A large statement in a confident face, with the product shot secondary. Survives
 - One sentence of support, two CTAs max (primary + ghost).
 - Product visual below or beside, never behind the headline.
 
-Evidence (45): ORG-0033 (Product landing hero with app preview), ORG-0093 (Feature bento grid section), ORG-0097 (Pricing section with anchored plan), ORG-0101 (Testimonials wall with logo strip)
+Evidence (45): ORG-0761 (Plant care landing hero · Fern), ORG-0773 (Plant care pricing · Fern), ORG-0705 (Pet care landing hero · Paws), ORG-0717 (Pet care pricing · Paws)
 
 ## AI chat with anchored composer
 
@@ -91,7 +91,7 @@ Conversation scrolls; the composer stays anchored with attachments and model con
 - Assistant replies full-width, user messages as compact bubbles.
 - Suggested prompts as chips only in the empty state.
 
-Evidence (24): ORG-0005 (AI assistant chat with composer), ORG-0069 (Messages inbox with pinned threads), ORG-0105 (AI image studio with prompt and grid), ORG-0129 (Chat thread with reactions and composer)
+Evidence (24): ORG-1277 (Fashion e-commerce support chat · Thread), ORG-1245 (Plant care support chat · Fern), ORG-1213 (Music streaming support chat · Tide), ORG-1117 (Fitness support chat · Pulse)
 
 ## Dense data table with quiet chrome
 
@@ -101,7 +101,7 @@ Tables carry the data; chrome recedes. Zebra-free rows, hairline dividers, statu
 - Sticky header; filters above, not in the header row.
 - Status pills: tinted background at 12–16% with full-strength text.
 
-Evidence (66): ORG-0001 (Analytics overview with sidebar), ORG-0061 (Activity rings and workout list), ORG-0065 (Kanban board with swimlane columns), ORG-0121 (Email client with three panes)
+Evidence (66): ORG-0353 (Food delivery desktop dashboard · Bowl), ORG-1265 (Fashion e-commerce insights · Thread), ORG-1217 (Pet care insights · Paws), ORG-1185 (Personal finance insights · Ledger)
 
 ## Sidebar workspace shell
 
@@ -111,7 +111,7 @@ A persistent left rail for navigation and a content canvas on the right — the 
 - Group nav with small caps headings; active row tinted, not bold.
 - Canvas max-width only for reading views, never for tables.
 
-Evidence (25): ORG-0001 (Analytics overview with sidebar), ORG-0065 (Kanban board with swimlane columns), ORG-0121 (Email client with three panes), ORG-0133 (Customers table with filters and bulk actions)
+Evidence (25): ORG-0065 (Kanban board with swimlane columns), ORG-0745 (Plant care desktop dashboard · Fern), ORG-0689 (Pet care desktop dashboard · Paws), ORG-0521 (Language learning desktop dashboard · Fable)
 
 ## Progress ring as the hero
 
@@ -121,7 +121,7 @@ Goal completion shown as one ring (or nested rings) carrying the number inside. 
 - Number centred inside, unit below at small size.
 - Animate fill on appear (600–900ms, ease-out).
 
-Evidence (29): ORG-0017 (Card patterns sheet), ORG-0037 (Welcome with orbit illustration), ORG-0045 (Profile with stats and streak grid), ORG-0061 (Activity rings and workout list)
+Evidence (29): ORG-1497 (News & reading insights · Margin), ORG-1569 (Smart home insights · Hearth), ORG-1201 (Music streaming insights · Tide), ORG-1233 (Plant care insights · Fern)
 
 ## Three tiers, one anchored
 
@@ -131,7 +131,7 @@ Three plans side by side with the recommended one visually anchored — darker, 
 - Billing toggle directly above the prices it changes; show the saving as a number.
 - One CTA per plan, the anchored plan's CTA is the only filled one.
 
-Evidence (22): ORG-0041 (Paywall with anchored yearly plan), ORG-0097 (Pricing section with anchored plan), ORG-0213 (Crypto pricing · Halo), ORG-0269 (Events & tickets pricing · Gather)
+Evidence (22): ORG-0493 (Real estate pricing · Nest), ORG-0549 (Language learning pricing · Fable), ORG-0213 (Crypto pricing · Halo), ORG-0269 (Events & tickets pricing · Gather)
 
 ## Sticky bottom action
 
@@ -141,4 +141,4 @@ The primary action pinned to the bottom of a scrolling screen with the total or 
 - Show the consequence on the button ("Pay $42.10", not "Continue").
 - Hairline or blur behind the bar instead of a heavy shadow.
 
-Evidence (66): ORG-0013 (Cart with sticky pay button), ORG-0041 (Paywall with anchored yearly plan), ORG-0081 (Product detail with size picker), ORG-0089 (Flight selection with date strip)
+Evidence (66): ORG-0581 (Personal finance account detail · Ledger), ORG-1193 (Personal finance confirmation · Ledger), ORG-0461 (Real estate book a viewing · Nest), ORG-1161 (Real estate confirmation · Nest)

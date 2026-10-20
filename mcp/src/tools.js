@@ -100,26 +100,27 @@ export const TOOLS = [
   {
     name: 'view_design',
     title: 'View design',
-    description: 'Look at references. Returns the actual images (up to 4 ids) so you can judge proportion, rhythm and polish — '
-      + 'the things a description cannot carry. For videos you get the poster plus a 6-frame strip across the clip.',
+    description: 'Look at references. Returns the rendered screens (up to 4 ids) so you can judge proportion, rhythm and polish — '
+      + 'the things a description cannot carry. Every original ships in four themes (ember, mint, ink, grape); pass theme to see one.',
     inputSchema: {
       type: 'object', required: ['ids'],
       properties: {
         ids: { type: 'array', items: { type: 'string' }, minItems: 1, maxItems: 4, description: 'Asset ids to view.' },
         size: { type: 'string', enum: ['thumb', 'full'], default: 'full', description: 'thumb ≈ 480px (cheap), full ≈ up to 1600px.' },
+        theme: { type: 'string', enum: ['ember', 'mint', 'ink', 'grape'], description: 'Which themed variant to show. Default: the primary render.' },
       },
     },
     annotations: { title: 'View design', ...RO },
-    run(h, { ids, size = 'full' }) {
+    run(h, { ids, size = 'full', theme }) {
       const list = (Array.isArray(ids) ? ids : [ids]).slice(0, 4).map((id) => h.get(id)).filter(Boolean);
       if (!list.length) throw new Error('None of those ids exist.');
       const images = [];
       for (const a of list) {
-        images.push({ id: a.id, which: size === 'thumb' ? 'thumb' : 'src' });
+        images.push({ id: a.id, which: size === 'thumb' ? 'thumb' : 'src', theme: a.variants?.[theme] ? theme : undefined });
         if (a.strip) images.push({ id: a.id, which: 'strip' });
       }
       return {
-        text: list.map((a) => `**${a.id}** · ${a.title}${a.strip ? ' (poster + 6-frame strip)' : ''}`).join('\n'),
+        text: list.map((a) => `**${a.id}** · ${a.title}${a.variants?.[theme] ? ` · ${theme} theme` : ''}${a.live ? ` · live: ${h.site}${a.live}` : ''}`).join('\n'),
         data: { assets: list.map((a) => h.card(a)) },
         images,
       };

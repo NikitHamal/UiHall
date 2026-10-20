@@ -210,7 +210,7 @@ export function tint(src) {
   return esc(src)
     .replace(/(^|\n)(#[^\n]*)/g, '$1<span class="c">$2</span>')
     .replace(/(&quot;[^&\n]*?&quot;)/g, '<span class="s">$1</span>')
-    .replace(/\b(claude|npx|node|curl|codex|code|git)\b/g, '<span class="k">$1</span>');
+    .replace(/(?<![\w./-])(claude|npx|node|curl|codex|code|git)(?![\w./-])/g, '<span class="k">$1</span>');
 }
 
 export const debounce = (fn, ms = 160) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };

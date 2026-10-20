@@ -67,7 +67,7 @@ function mcpHtml(h) {
   <section class="container section" style="padding-top:56px">
     <div class="flow">
       <div><b>Brief</b><p><code>design_brief</code> turns “a sleep app onboarding” into references, patterns, palettes and a checklist.</p></div>
-      <div><b>Look</b><p><code>view_design</code> returns the actual images — and frame strips for video — so the model sees proportion and polish.</p></div>
+      <div><b>Look</b><p><code>view_design</code> returns the rendered screen in the theme you ask for, so the model sees proportion and polish.</p></div>
       <div><b>Lift</b><p><code>palette_for</code> + <code>export_tokens</code> give measured colour as CSS, Tailwind, SwiftUI or Compose.</p></div>
       <div><b>Check</b><p><code>check_contrast</code> and the checklist keep the result accessible and finished.</p></div>
     </div>

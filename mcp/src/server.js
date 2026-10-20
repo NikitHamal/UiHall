@@ -58,7 +58,7 @@ async function handle(msg) {
         for (const im of out.images || []) {
           try {
             const a = h.get(im.id);
-            const b = await imageBytes(a, im.which);
+            const b = await imageBytes(a, im.which, im.theme);
             if (b) content.push({ type: 'image', data: b.data.toString('base64'), mimeType: b.mimeType });
           } catch (e) { content.push({ type: 'text', text: `(image for ${im.id} unavailable: ${e.message})` }); }
         }

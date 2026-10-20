@@ -67,9 +67,9 @@ async function main() {
     for (const id of rest) {
       const a = h.get(id);
       if (!a) { out.push(`${id}: unknown id`); continue; }
-      for (const which of a.strip ? ['src', 'strip'] : ['src']) {
+      for (const which of ['src']) {
         const b = await imageBytes(a, which);
-        const file = path.join(os.tmpdir(), `uihall-${a.id}${which === 'strip' ? '-strip' : ''}.${b.mimeType.split('/')[1]}`);
+        const file = path.join(os.tmpdir(), `uihall-${a.id}.${b.mimeType.split('/')[1]}`);
         fs.writeFileSync(file, b.data);
         out.push(file);
       }
