@@ -1459,9 +1459,9 @@ const PROMPTS = [
  *   node uihall.mjs similar IMG-0468
  *   node uihall.mjs palette --mood calm --query wellness
  *   node uihall.mjs color "#C6F432"
- *   node uihall.mjs tokens IMG-0473 --format tailwind
+ *   node uihall.mjs tokens IMG-0365 --format tailwind
  *   node uihall.mjs compare IMG-0432 IMG-0433
- *   node uihall.mjs system IMG-0473 --mood editorial   → full starter design system CSS
+ *   node uihall.mjs system IMG-0365 --mood editorial   → full starter design system CSS
  *   node uihall.mjs contrast "#888" "#fff"
  *   node uihall.mjs patterns "dashboard"
  *   node uihall.mjs before-after wallet

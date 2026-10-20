@@ -46,9 +46,9 @@ node scripts/uihall.mjs <command> [args]      # path relative to this skill fold
 | Structural patterns | `find_patterns(about?)` | `patterns "dashboard"` |
 | Palette for a mood | `palette_for(mood, query?, surface?)` | `palette --mood calm --query wellness` |
 | Who uses this colour | `search_by_color(hex)` | `color "#C6F432"` |
-| Tokens for code | `export_tokens(id \| colors, format)` | `tokens IMG-0473 --format tailwind` |
+| Tokens for code | `export_tokens(id \| colors, format)` | `tokens IMG-0365 --format tailwind` |
 | Choose between directions | `compare_designs(ids, include_images?)` | `compare IMG-0432 IMG-0433` |
-| Whole starter system | `generate_design_system(id \| colors, mood?)` | `system IMG-0473 --mood editorial` |
+| Whole starter system | `generate_design_system(id \| colors, mood?)` | `system IMG-0365 --mood editorial` |
 | Accessibility | `check_contrast(fg, bg)` | `contrast "#888" "#fff"` |
 | Redesign evidence | `before_after(topic?)` | `before-after wallet` |
 | Vocabulary | `corpus_overview()` | `overview --tags` |

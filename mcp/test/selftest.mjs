@@ -68,7 +68,7 @@ for (const f of ['css', 'tailwind', 'dtcg', 'swiftui', 'compose']) {
 }
 r = await call('compare_designs', { ids: ['IMG-0432', 'IMG-0433'], include_images: true });
 ok(r.structuredContent.assets.length === 2 && r.content.filter((c) => c.type === 'image').length === 2, 'compare_designs with images');
-r = await call('generate_design_system', { id: 'IMG-0473', mood: 'editorial' });
+r = await call('generate_design_system', { id: 'IMG-0365', mood: 'editorial' });
 ok(/--uh-text-4xl/.test(r.structuredContent.css) && /\.btn-primary/.test(r.structuredContent.css), 'generate_design_system emits tokens + components');
 r = await call('check_contrast', { foreground: '#888', background: '#fff' });
 ok(r.structuredContent.ratio === 3.54 && r.structuredContent.suggestion, 'check_contrast + fix');

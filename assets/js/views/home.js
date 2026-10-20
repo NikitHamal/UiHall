@@ -13,7 +13,7 @@ import { BLURB } from '../blurbs.js';
 import { RING } from '../ring-data.js';
 
 /* Curated picks for the "measured" demo — strong, varied palettes. */
-const ANATOMY = ['IMG-0468', 'IMG-0473', 'IMG-0055', 'IMG-0397', 'IMG-0587', 'IMG-0618'];
+const ANATOMY = ['IMG-0468', 'IMG-0365', 'IMG-0055', 'IMG-0397', 'IMG-0587', 'IMG-0618'];
 
 /* Scripted agent sessions; results come from the real engine at runtime. */
 const SESSIONS = [
