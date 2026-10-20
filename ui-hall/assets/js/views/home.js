@@ -230,8 +230,20 @@ export default function home(root, app) {
         if (data.patterns?.length) line(`<span class="dim">  patterns</span> <span class="acc">${esc(data.patterns.slice(0, 2).map((p) => p.name).join(' · '))}</span>`);
         line(`<span class="dim">  palette </span> <span class="swatches">${colours.map((c) => `<i style="--c:${c}"></i>`).join('')}</span> ${pals && contrast(pals.text, pals.background) ? `<span class="dim">text ${contrast(pals.text, pals.background)}:1</span>` : ''}`);
       }, 2400);
-      later(() => line('<span class="dim">⏺</span> Building with structure from the top 3 references. Citing ids in the component header.'), 3400);
-      later(run, 7600);
+      later(() => line('<span class="dim">⏺</span> Building with structure from the top 3 references.'), 3400);
+      later(() => {
+        const ids = refs.slice(0, 3).map((r) => r.id).join(', ');
+        const file = s.tool === 'design_brief' ? 'src/screens/' + s.args.screen.split(' ')[0].replace(/^./, (c) => c.toUpperCase()) + '.tsx' : 'src/theme/tokens.css';
+        line(`<span class="ok">  ✎ ${esc(file)}</span>`);
+        line(`<span class="dim">    // references: ${esc(ids)}</span>`);
+        if (pals) {
+          for (const [k, v] of [['background', pals.background], ['text', pals.text], ['accent', pals.accent]].filter((x) => x[1])) {
+            line(`<span class="dim">    --${k}:</span> <span class="swatches"><i style="--c:${v}"></i></span> <span class="acc">${v}</span>`);
+          }
+        }
+        line(`<span class="ok">  ✓ contrast checked · empty, loading and error states drafted</span>`);
+      }, 4300);
+      later(run, 9200);
     });
   };
   $('#agent', root).addEventListener('reveal', () => later(run, 300), { once: true });

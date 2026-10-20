@@ -504,7 +504,7 @@ class UiHall {
    * Ranked search. Returns {total, results:[{asset, score, matched}]}.
    * With no query, returns the filtered set in curated order.
    */
-  search({ query = '', boost = '', prefer_surface, limit = 12, offset = 0, ...filters } = {}) {
+  search({ query = '', boost = '', prefer_surface, min_score = 0.15, limit = 12, offset = 0, ...filters } = {}) {
     const pool = new Set(this.filter(this.assets, filters));
     const terms = this.expand(query);
     for (const [t, w] of this.expand(boost)) if (!terms.has(t)) terms.set(t, w * 0.35);
@@ -523,6 +523,7 @@ class UiHall {
       ranked.sort((x, y) => y.score - x.score);
       const top = ranked[0]?.score || 1;
       for (const r of ranked) r.score = Math.round((r.score / top) * 1000) / 1000;
+      ranked = ranked.filter((r) => r.score >= min_score); // drop the long tail of one-synonym matches
     }
     return { total: ranked.length, results: ranked.slice(offset, offset + limit) };
   }

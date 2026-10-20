@@ -25,4 +25,5 @@ fs.mkdirSync(new URL('plugin/mcp', root), { recursive: true });
 fs.copyFileSync(new URL('mcp/dist/uihall-mcp.mjs', root), new URL('plugin/mcp/uihall-mcp.mjs', root));
 
 run('tar --sort=name --owner=0 --group=0 --numeric-owner --mtime=2026-10-01 -czf skills/uihall.tar.gz -C skills uihall');
+run('python3 -c "import shutil; shutil.make_archive(\'skills/uihall\', \'zip\', \'skills\', \'uihall\')"');
 run('node mcp/test/selftest.mjs mcp/dist/uihall-mcp.mjs');

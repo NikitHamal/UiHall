@@ -114,6 +114,14 @@ done, walk the brief's checklist honestly — including empty, loading and error
   work for a mood). Ask the user only for facts you can't know (brand, audience, content).
 - References are for learning the vocabulary. Never ship a clone of a specific product.
 
+## Network and privacy
+
+The CLI and the MCP server make exactly two kinds of request, both plain HTTPS GETs to the public
+site `https://nikithamal.github.io/UiHall/ui-hall/`: the corpus file (`data/corpus.json`, cached
+for 24 h in `~/.cache/uihall`) and, only when you ask to view a reference, that image. Nothing about
+your project, prompts or code is sent anywhere. No API key, no telemetry. Set `UIHALL_ROOT` to a
+local checkout to make no requests at all.
+
 ## More
 
 - [references/patterns.md](references/patterns.md) — the pattern library with build rules and evidence ids
