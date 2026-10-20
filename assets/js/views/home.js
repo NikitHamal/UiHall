@@ -31,7 +31,7 @@ export default function home(root, app) {
 
   const themes = ['ember', 'mint', 'ink', 'grape'];
   const origBySlug = new Map();
-  for (const x of h.assets) if (x.original && x.variants) origBySlug.set(x.live.split('/').pop().split('.')[0], Object.fromEntries(x.themes.map((th) => [th, { id: x.id, src: x.variants[th].src, title: x.title }])));
+  for (const x of h.assets) if (x.original && x.variants) origBySlug.set(x.live.split('/').pop().split('.')[0], Object.fromEntries(x.themes.map((th) => [th, { id: x.id, src: x.variants[th].src, thumb: x.variants[th].thumb, title: x.title }])));
   const carouselSlugs = ['finance-home', 'music-now-playing', 'assistant-chat', 'product-detail-sneaker', 'fitness-rings', 'travel-flight-select', 'onboarding-welcome', 'paywall-plans', 'calendar-day', 'messages-inbox', 'profile-stats', 'cart-sticky-checkout'].filter((k) => origBySlug.has(k));
 
   root.innerHTML = `
@@ -92,7 +92,7 @@ export default function home(root, app) {
     </div>
   </section>
   <div class="lp-drift" aria-label="More originals">
-    ${[0, 1].map((row) => { const items = [...origBySlug.entries()].filter((_, i) => i % 2 === row).map(([k, v]) => { const th = themes[(k.length + row) % 4]; const x = v[th] || v.ember; return `<a class="lp-drift__item" href="#/a/${x.id}"><img src="${x.src}" alt="${esc(x.title)}" loading="lazy"><span>${esc(x.title)}</span></a>`; }).join(''); return `<div class="lp-drift__row ${row ? 'rev' : ''}"><div class="lp-drift__track">${items}${items}</div></div>`; }).join('')}
+    ${[0, 1].map((row) => { const items = [...origBySlug.entries()].filter(([k]) => !/-(settings|table|empty|confirm|success)$/.test(k)).filter((_, i) => i % 7 === row * 3).slice(0, 22).map(([k, v]) => { const th = themes[(k.length + row) % 4]; const x = v[th] || v.ember; return `<a class="lp-drift__item" href="#/a/${x.id}?theme=${th}"><img src="${x.thumb || x.src}" alt="${esc(x.title)}" decoding="async"><span>${esc(x.title)}</span></a>`; }).join(''); return `<div class="lp-drift__row ${row ? 'rev' : ''}"><div class="lp-drift__track">${items}${items}</div></div>`; }).join('')}
   </div>
   <div class="container row lp-orig__more">${arrowBtn('#/originals', `All ${t.originals || 0} originals`)}</div>
 
