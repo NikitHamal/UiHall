@@ -107,8 +107,9 @@ for n, d in enumerate(D):
     body = (f'<div style="margin:-60px -20px 0">{art(n * 3 + 1, 300, 0)}</div><div class="row" style="position:absolute;top:60px;left:20px;right:20px"><span class="ico" style="width:40px;height:40px;border-radius:50%;background:var(--bg)">{ic("back")}</span><div class="sp"></div><span class="ico" style="width:40px;height:40px;border-radius:50%;background:var(--bg);color:var(--accent)">{ic("heart")}</span></div>'
             f'<div class="row" style="margin-top:18px;align-items:flex-end"><div class="col" style="min-width:0"><b class="d2">{dt["title"]}</b><span class="small">{dt["sub"]}</span></div><div class="sp"></div><b class="d2 num" style="white-space:nowrap">{dt["value"]}</b></div>'
             '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px">' + ''.join(f'<div class="tint col" style="padding:12px"><span class="small">{a}</span><b style="font-size:14.5px">{b}</b></div>' for a, b in dt['facts']) + '</div>'
-            f'<p class="lede" style="margin-top:14px;font-size:14.5px">{dt["body"]}</p><div class="sp"></div><div class="row g8"><button class="btn" style="width:52px">{ic("send" if "send" in I else "plus")}</button><button class="btn btn-p" style="flex:1">{d["checkout"][3]}</button></div>')
-    desc = f'A detail screen in {app} for "{dt["title"]}" ({dt["sub"]}). An illustrated header carries back and save buttons; below sit the title, the value "{dt["value"]}", a 2×2 fact grid ({"; ".join(f"{a}: {b}" for a, b in dt["facts"])}), a short paragraph and a sticky action "{d["checkout"][3]}". Idea: media first, facts scannable, one primary action pinned.'
+            f'<p class="lede" style="margin-top:14px;font-size:14.5px">{dt["body"]}</p>'
+            f'<span class="eyebrow" style="margin:18px 0 4px">Related</span><div class="list">{"".join(row(*it) for it in items[1:3])}</div><div class="sp"></div><div class="row g8"><button class="btn" style="width:52px">{ic("send" if "send" in I else "plus")}</button><button class="btn btn-p" style="flex:1">{d["checkout"][3]}</button></div>')
+    desc = f'A detail screen in {app} for "{dt["title"]}" ({dt["sub"]}). An illustrated header carries back and save buttons; below sit the title, the value "{dt["value"]}", a 2×2 fact grid ({"; ".join(f"{a}: {b}" for a, b in dt["facts"])}), a short paragraph, two "Related" rows and a sticky action "{d["checkout"][3]}". Idea: media first, facts scannable, one primary action pinned.'
     screen(f'gen-{k}-detail', meta(d, 'detail', f'{app} {d["noun"]} detail', ['detail'], ['card-based', 'rounded'], ['sticky-cta', 'card', 'illustration'], desc), body)
 
     # 4 onboarding ----------------------------------------------------------
@@ -129,8 +130,9 @@ for n, d in enumerate(D):
     nt = d['notif']
     body = (head('Activity', '<span class="small" style="color:var(--accent);font-weight:600">Mark all read</span>') + '<span class="eyebrow" style="margin:18px 0 6px">Today</span>'
             + ''.join(f'<div class="tint row" style="padding:12px;margin-bottom:8px"><span class="ico a">{ic(i)}</span><div class="col" style="flex:1"><b>{a}</b><span class="small">{b}</span></div><i style="width:8px;height:8px;border-radius:50%;background:var(--accent)"></i></div>' for a, b, i in nt[:2])
-            + '<span class="eyebrow" style="margin:14px 0 6px">Earlier</span><div class="list">' + ''.join(row(a, b, '', i) for a, b, i in nt[2:]) + '</div>')
-    desc = f'An activity feed in {app} grouped under Today and Earlier. Unread items sit on tinted cards with an accent dot — "{nt[0][0]}" ({nt[0][1]}) and "{nt[1][0]}" — and read items are plain rows: "{nt[2][0]}", "{nt[3][0]}". A "Mark all read" link sits in the header. Idea: read state carried by surface and one dot.'
+            + '<span class="eyebrow" style="margin:14px 0 6px">Earlier</span><div class="list">' + ''.join(row(a, b, '', i) for a, b, i in nt[2:]) + '</div>'
+            f'<div class="col" style="align-items:center;text-align:center;gap:6px;margin-top:26px"><span class="ico a" style="width:44px;height:44px;border-radius:50%">{ic("check")}</span><b style="font-size:15px">You’re all caught up</b><span class="small">Choose what reaches you in <span style="color:var(--accent);font-weight:600">notification settings</span>.</span></div>' + tabbar('inbox'))
+    desc = f'An activity feed in {app} grouped under Today and Earlier. Unread items sit on tinted cards with an accent dot — "{nt[0][0]}" ({nt[0][1]}) and "{nt[1][0]}" — and read items are plain rows: "{nt[2][0]}", "{nt[3][0]}". A "Mark all read" link sits in the header, and an "all caught up" note with a link to notification settings closes the feed above the tab bar. Idea: read state carried by surface and one dot.'
     screen(f'gen-{k}-activity', meta(d, 'activity', f'{app} activity feed', ['notification', 'list'], ['minimal', 'card-based'], ['notifications', 'list-row', 'unread'], desc), body)
 
     # 7 profile -------------------------------------------------------------
@@ -146,8 +148,10 @@ for n, d in enumerate(D):
     c = d['checkout']
     body = (head(c[0], back=True) + '<div class="card" style="margin-top:18px;padding:4px 16px"><div class="list">' + ''.join(f'<div class="li"><span class="small" style="flex:1">{a}</span><b class="num">{b}</b></div>' for a, b in c[1]) + '</div></div>'
             f'<div class="tint row" style="margin-top:12px">{ic("card")}<div class="col"><b>Visa •• 4417</b><span class="small">Expires 09/29</span></div><div class="sp"></div><span class="small">Change</span></div>'
+            f'<div class="field" style="margin-top:12px">{ic("key")}<span>Add a promo code</span><div class="sp"></div><span class="small" style="color:var(--accent);font-weight:600">Apply</span></div>'
+            f'<div class="row g8 small" style="margin-top:16px;align-items:flex-start">{ic("lock")}<span>Payments are encrypted, and you’ll get a receipt by email the moment this goes through.</span></div>'
             f'<div class="sp"></div><div class="row" style="padding-top:12px;border-top:1px solid var(--line)"><div class="col"><span class="small">Total</span><b class="d2 num">{c[2]}</b></div><div class="sp"></div><button class="btn btn-p" style="padding:0 26px">{c[3]}</button></div>')
-    desc = f'A confirmation screen in {app} titled "{c[0]}". A summary card lists {"; ".join(f"{a} {b}" for a, b in c[1])}, a payment row shows Visa •• 4417, and a sticky footer shows the total {c[2]} beside the primary button "{c[3]}". Idea: the consequence on the button and the total always visible.'
+    desc = f'A confirmation screen in {app} titled "{c[0]}". A summary card lists {"; ".join(f"{a} {b}" for a, b in c[1])}, a payment row shows Visa •• 4417, a promo-code field and a short reassurance line follow, and a sticky footer shows the total {c[2]} beside the primary button "{c[3]}". Idea: the consequence on the button and the total always visible.'
     screen(f'gen-{k}-confirm', meta(d, 'confirm', f'{app} {c[0].lower()}', ['checkout'], ['card-based', 'minimal'], ['checkout', 'sticky-cta', 'price'], desc), body)
 
     # 9 settings ------------------------------------------------------------
