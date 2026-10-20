@@ -10,7 +10,7 @@ import glob, json, os, sys
 from collections import Counter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CORPUS = os.path.join(ROOT, "ui-hall", "data", "corpus.json")
+CORPUS = os.path.join(ROOT, "data", "corpus.json")
 AUDIT_DIR = sys.argv[1] if len(sys.argv) > 1 else None
 OUT_DESC = os.path.join(ROOT, "_work", "meta", "descriptions", "zz-visual-audit-2026-10.json")
 
@@ -53,7 +53,7 @@ def main():
             for k in FIELDS:
                 a[k] = r[k]
         a.pop("source_note", None)
-        strip = os.path.join(ROOT, "ui-hall", "assets", "strip", a["id"] + ".webp")
+        strip = os.path.join(ROOT, "assets", "strip", a["id"] + ".webp")
         if os.path.exists(strip):
             a["strip"] = {"src": "assets/strip/%s.webp" % a["id"], "frames": 6}
         if a["id"] in CROP_OF:

@@ -19,7 +19,7 @@ from collections import Counter
 ROOT = r"E:\Stormy"
 META = os.path.join(ROOT, "_work", "meta")
 DESC = os.path.join(META, "descriptions")
-OUT = os.path.join(ROOT, "ui-hall", "data", "corpus.json")
+OUT = os.path.join(ROOT, "data", "corpus.json")
 TAXONOMY = os.path.join(ROOT, "stormy-mcp", "taxonomy.json")
 
 
@@ -314,8 +314,8 @@ def main():
     # Same treatment for the typeface reference, which the Typography tab loads.
     # Without the twin, opening index.html off disk would leave that tab empty
     # while every other route worked - a confusing half-broken page.
-    tf_src = os.path.join(ROOT, "ui-hall", "data", "typefaces.json")
-    tf_js = os.path.join(ROOT, "ui-hall", "data", "typefaces.js")
+    tf_src = os.path.join(ROOT, "data", "typefaces.json")
+    tf_js = os.path.join(ROOT, "data", "typefaces.js")
     if os.path.exists(tf_src):
         with open(tf_src, encoding="utf-8") as fh:
             tf_body = json.dumps(json.load(fh), ensure_ascii=False, separators=(",", ":"))

@@ -7,9 +7,9 @@
 755 real interface designs, each one looked at and written up by hand, every colour measured from the pixels —
 as a website, an MCP server and an agent skill.
 
-[**Open the hall →**](https://nikithamal.github.io/UiHall/ui-hall/) · [For agents](https://nikithamal.github.io/UiHall/ui-hall/#/agents) · [Playground](https://nikithamal.github.io/UiHall/ui-hall/#/agents?tab=playground)
+[**Open the hall →**](https://nikithamal.github.io/UiHall/) · [For agents](https://nikithamal.github.io/UiHall/#/agents) · [Playground](https://nikithamal.github.io/UiHall/#/agents?tab=playground)
 
-![UI Hall](ui-hall/assets/og.jpg)
+![UI Hall](assets/og.jpg)
 
 </div>
 
@@ -21,7 +21,7 @@ agent actually look at them before it writes code.
 
 | | What it is |
 |---|---|
-| **The hall** (`ui-hall/`) | A browsable library: ranked search, facets by role/style/surface/colour, a colour search in OKLab, a pattern library, a motion reel and a detail view that turns any palette into code tokens. |
+| **The hall** (repo root) | A browsable library: ranked search, facets by role/style/surface/colour, a colour search in OKLab, a pattern library, a motion reel and a detail view that turns any palette into code tokens. |
 | **The MCP server** (`mcp/`) | `uihall-mcp` — 14 design tools for Claude Code, Cursor, VS Code, Codex, Claude Desktop or anything that speaks MCP. One file, zero dependencies, no API key. |
 | **The skill** (`skills/uihall/`) | Tells the agent *when* and *how* to use the corpus: brief → look → steal structure → measured colour → checklist. Works with or without MCP (bundled CLI). |
 | **The plugin** (`plugin/`) | Skill + MCP in one Claude Code install. |
@@ -62,7 +62,7 @@ mkdir -p ~/.claude/skills && curl -fsSL https://nikithamal.github.io/UiHall/skil
 ```
 
 Needs Node 18+. On first run the server downloads the corpus (~1.3 MB) from the site and caches it in
-`~/.cache/uihall`; images are fetched only when an agent asks to see one. Set `UIHALL_ROOT=/path/to/UiHall/ui-hall`
+`~/.cache/uihall`; images are fetched only when an agent asks to see one. Set `UIHALL_ROOT=/path/to/UiHall`
 to run fully offline from a checkout.
 
 ## The tools
@@ -102,12 +102,12 @@ No MCP? The skill's CLI runs the same tools: `node skills/uihall/scripts/uihall.
 ## Repository
 
 ```
-ui-hall/                 the site (vanilla ES modules, no build step)
-  index.html
-  assets/css/site.css    design tokens → primitives → views, one layered file
-  assets/js/             main (router), lib (DOM + motion), cmdk, views/*
-  data/corpus.json       the single source of truth
-  assets/{img,thumb,vid,strip}/
+index.html               the site (vanilla ES modules, no build step) — served at the Pages root
+assets/css/site.css      design tokens → primitives → views, one layered file
+assets/js/               main (router), lib (DOM + motion), cmdk, board, views/*
+assets/{img,thumb,vid,strip}/   the media
+data/corpus.json         the single source of truth
+demo/                    prototypes built with the skill
 mcp/                     uihall-mcp
   src/engine.js          isomorphic engine — the site imports this same file
   src/{color,patterns,tools,corpus,server,cli}.js
@@ -123,7 +123,7 @@ _work/                   pipeline intermediates
 ### Develop
 
 ```bash
-node tools/serve.mjs 8099            # → http://127.0.0.1:8099/ui-hall/
+node tools/serve.mjs 8099            # → http://127.0.0.1:8099/
 node tools/build_release.mjs         # bundle server + CLI, regenerate skill refs, pack plugin + tarball, selftest
 node mcp/test/selftest.mjs           # test the server from source
 ```

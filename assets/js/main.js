@@ -1,7 +1,7 @@
 /* UI Hall — app shell: data, router, navigation, theme, command palette.
    The engine is the same file the MCP server runs (mcp/src/engine.js). */
 
-import { UiHall } from '../../../mcp/src/engine.js';
+import { UiHall } from '../../mcp/src/engine.js';
 import { $, $$, glow, reveal } from './lib.js';
 import { openCmd, openKeys } from './cmdk.js';
 import { board } from './board.js';

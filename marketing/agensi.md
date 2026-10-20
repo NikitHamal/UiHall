@@ -49,7 +49,7 @@ tokens and check contrast before it calls the work done.
 ## Honesty / review notes (for the reviewer)
 
 - **Network:** the CLI makes plain HTTPS GETs to the public GitHub Pages site
-  (`nikithamal.github.io/UiHall/ui-hall/`) for the corpus JSON (cached 24 h in `~/.cache/uihall`) and, only when asked,
+  (`nikithamal.github.io/UiHall/`) for the corpus JSON (cached 24 h in `~/.cache/uihall`) and, only when asked,
   a reference image. No user data is sent. No telemetry, no credentials. Disclosed in SKILL.md.
 - **Code:** `scripts/uihall.mjs` is a readable, unminified single-file build of the open-source engine at
   https://github.com/NikitHamal/UiHall/tree/main/mcp/src. MIT.

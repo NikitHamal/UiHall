@@ -493,7 +493,7 @@
   .sheet__strip { position: absolute; left: 14px; right: 14px; bottom: 14px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; padding: 4px; border-radius: 12px; background: rgba(0, 0, 0, .5); backdrop-filter: blur(10px); }
   .sheet__strip i { cursor: pointer; transition: transform var(--t-med) var(--spring), opacity var(--t-fast); opacity: .8; aspect-ratio: 3 / 2; border-radius: 7px; background-image: var(--strip); background-size: 600% 100%; background-position: calc(var(--f) * 20%) 0; }
   .sheet__strip i:hover { opacity: 1; transform: translateY(-2px); }
-  .sheet__info { min-width: 0; overflow-y: auto; padding: 30px 30px 40px; display: grid; gap: 26px; align-content: start; scrollbar-width: thin; }
+  .sheet__info { min-width: 0; grid-template-columns: minmax(0, 1fr); overflow-y: auto; padding: 30px 30px 40px; display: grid; gap: 26px; align-content: start; scrollbar-width: thin; }
   .sheet__top { display: flex; justify-content: space-between; align-items: center; gap: 8px; position: sticky; top: -30px; margin: -30px -30px 0; padding: 18px 22px 18px 30px; background: linear-gradient(var(--bg-2) 75%, transparent); z-index: 2; }
   .sheet__id { font: 500 12px/1 var(--font-mono); color: var(--text-3); }
   .sheet__title { font: 400 clamp(30px, 3vw, 42px)/1.02 var(--font-display); letter-spacing: -.015em; }

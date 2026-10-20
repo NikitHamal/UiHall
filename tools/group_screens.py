@@ -17,7 +17,7 @@ import os
 import re
 
 ROOT = r"E:\Stormy"
-CORPUS = os.path.join(ROOT, "ui-hall", "data", "corpus.json")
+CORPUS = os.path.join(ROOT, "data", "corpus.json")
 OUT = os.path.join(ROOT, "_work", "meta", "groups.json")
 
 MIN_SIZE = 2

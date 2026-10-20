@@ -1,6 +1,6 @@
 /**
  * Corpus + image loading for Node (server and CLI).
- * Order: $UIHALL_CORPUS → a local checkout (../ui-hall) → ~/.cache/uihall → the public site.
+ * Order: $UIHALL_CORPUS → a local checkout (the repo root) → ~/.cache/uihall → the public site.
  */
 
 import fs from 'node:fs';
@@ -18,7 +18,7 @@ export const log = (...m) => process.stderr.write(`[uihall] ${m.join(' ')}\n`);
 
 /** A local site root (the folder holding data/corpus.json and assets/), if any. */
 function localRoot() {
-  const cands = [process.env.UIHALL_ROOT, path.resolve(HERE, '..', '..', 'ui-hall'), path.resolve(HERE, '..', 'ui-hall'), path.resolve(process.cwd(), 'ui-hall')];
+  const cands = [process.env.UIHALL_ROOT, path.resolve(HERE, '..', '..'), process.cwd()];
   return cands.find((c) => c && fs.existsSync(path.join(c, 'data', 'corpus.json'))) || null;
 }
 

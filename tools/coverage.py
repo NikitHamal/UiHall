@@ -8,7 +8,7 @@ import json
 import sys
 from collections import Counter, defaultdict
 
-CORPUS = r"E:\Stormy\ui-hall\data\corpus.json"
+CORPUS = r"E:\Stormy\data\corpus.json"
 
 
 def main():

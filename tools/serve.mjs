@@ -4,7 +4,7 @@
  *   node tools/serve.mjs            -> http://127.0.0.1:8788
  *   node tools/serve.mjs 9000       -> http://127.0.0.1:9000
  *
- * Serves E:/Stormy/ui-hall so relative asset paths resolve the way they will
+ * Serves the repo root so relative asset paths resolve the way they will
  * when the folder is deployed. Range requests are supported because the browser
  * issues them for <video> playback.
  */
@@ -13,7 +13,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-// Serve the repo root: the site lives in /ui-hall/ and imports the engine from /mcp/src/.
+// Serve the repo root: the site is index.html + assets/ + data/, and imports the engine from /mcp/src/.
 const ROOT = path.resolve(fileURLToPath(new URL("..", import.meta.url)));
 const PORT = Number(process.argv[2] || 8788);
 
@@ -81,6 +81,6 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, "127.0.0.1", () => {
-  console.log(`UI Hall  ->  http://127.0.0.1:${PORT}/ui-hall/`);
+  console.log(`UI Hall  ->  http://127.0.0.1:${PORT}/`);
   console.log(`root: ${ROOT}`);
 });

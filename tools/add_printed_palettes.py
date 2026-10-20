@@ -10,7 +10,7 @@ Read directly from the cards during the visual review. Do not guess these.
 import json
 import os
 
-CORPUS = r"E:\Stormy\ui-hall\data\corpus.json"
+CORPUS = r"E:\Stormy\data\corpus.json"
 
 # id -> (top band, bottom band)
 PRINTED = {

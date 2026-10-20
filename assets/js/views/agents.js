@@ -2,7 +2,7 @@
    playground that runs the real tool handlers against the corpus in-browser. */
 
 import { $, $$, esc, split, md, jsonHtml, bindCopy, segmented, tint, withCopy, icon } from '../lib.js';
-import { TOOLS, PROMPTS } from '../../../../mcp/src/tools.js';
+import { TOOLS, PROMPTS } from '../../../mcp/src/tools.js';
 import { footer, installBlock, bindInstall } from './shared.js';
 import { BLURB } from '../blurbs.js';
 
@@ -205,8 +205,8 @@ function skillHtml() {
         ${withCopy('sk2', tint(`mkdir -p .claude/skills && curl -fsSL https://nikithamal.github.io/UiHall/skills/uihall.tar.gz | tar -xz -C .claude/skills`))}
         <p>Any agent that reads <code>SKILL.md</code> (Cursor, Codex, Copilot, Gemini CLI …): download the folder and place it where your agent loads skills or rules from.</p>
         <p>See it used end to end — brief, references, measured palette, checklist — in a working prototype:</p>
-        <div class="row"><a class="btn btn--sm btn--primary" href="../demo/sleep/">${icon.ext} Open the demo</a></div>
-        <div class="row"><a class="btn btn--sm" href="../skills/uihall.tar.gz" download>${icon.ext} Download uihall.tar.gz</a><a class="btn btn--sm btn--ghost" href="https://github.com/NikitHamal/UiHall/tree/main/skills/uihall">View on GitHub</a></div>
+        <div class="row"><a class="btn btn--sm btn--primary" href="demo/sleep/">${icon.ext} Open the demo</a></div>
+        <div class="row"><a class="btn btn--sm" href="skills/uihall.tar.gz" download>${icon.ext} Download uihall.tar.gz</a><a class="btn btn--sm btn--ghost" href="https://github.com/NikitHamal/UiHall/tree/main/skills/uihall">View on GitHub</a></div>
       </div>
       <div class="card doc"><div class="md" id="skillMd"><p class="faint">Loading SKILL.md…</p></div></div>
     </div>
@@ -215,7 +215,7 @@ function skillHtml() {
 
 async function loadSkill(root) {
   try {
-    const r = await fetch('../skills/uihall/SKILL.md');
+    const r = await fetch('skills/uihall/SKILL.md');
     const text = (await r.text()).replace(/^---[\s\S]*?---\n/, '');
     $('#skillMd', root).innerHTML = md(text);
   } catch { $('#skillMd', root).innerHTML = '<p>Could not load SKILL.md.</p>'; }

@@ -2,7 +2,7 @@
    masonry (real aspect ratios, ranked order preserved left-to-right). */
 
 import { $, $$, esc, icon, debounce, reduced, isTouch, segmented } from '../lib.js';
-import { HUE_FAMILIES } from '../../../../mcp/src/color.js';
+import { HUE_FAMILIES } from '../../../mcp/src/color.js';
 import { thumb, label, footer } from './shared.js';
 import { board, pinIcon, flyToBoard } from '../board.js';
 import { openDetail } from './detail.js';

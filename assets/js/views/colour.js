@@ -1,5 +1,5 @@
 import { $, $$, esc, split, ink, bindCopy, debounce } from '../lib.js';
-import { normHex, hueFamily, contrast } from '../../../../mcp/src/color.js';
+import { normHex, hueFamily, contrast } from '../../../mcp/src/color.js';
 import { thumb, footer } from './shared.js';
 
 const PRESETS = ['#FF5A1F', '#C6F432', '#3E63DD', '#0D2740', '#F9A8BB', '#18544E', '#FFD60A', '#8E4EC6', '#E5484D', '#12A594', '#D4AA7D', '#111111', '#F5F2EA', '#00A2C7', '#FE00AE', '#433455'];

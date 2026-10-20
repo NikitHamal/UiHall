@@ -10,9 +10,9 @@ const run = (cmd) => execSync(cmd, { cwd: root, stdio: 'inherit' });
 
 run('node mcp/build.mjs');
 
-const h = new UiHall(JSON.parse(fs.readFileSync(new URL('ui-hall/data/corpus.json', root), 'utf8')));
+const h = new UiHall(JSON.parse(fs.readFileSync(new URL('data/corpus.json', root), 'utf8')));
 const md = ['# Pattern library', '', `Generated from the corpus (v${h.corpus.version}, ${h.assets.length} references) by \`tools/build_release.mjs\`.`,
-  'Evidence ids open at `https://nikithamal.github.io/UiHall/ui-hall/#/a/<id>` or via `get_design` / `view_design`.', ''];
+  'Evidence ids open at `https://nikithamal.github.io/UiHall/#/a/<id>` or via `get_design` / `view_design`.', ''];
 for (const p of h.patterns()) {
   md.push(`## ${p.name}`, '', p.why, '', ...p.build.map((b) => `- ${b}`), '', `Evidence (${p.evidence_count}): ${p.examples.map((a) => `${a.id} (${a.title})`).join(', ')}`, '');
 }

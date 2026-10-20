@@ -1,7 +1,7 @@
 # Pattern library
 
 Generated from the corpus (v2.0.0, 755 references) by `tools/build_release.mjs`.
-Evidence ids open at `https://nikithamal.github.io/UiHall/ui-hall/#/a/<id>` or via `get_design` / `view_design`.
+Evidence ids open at `https://nikithamal.github.io/UiHall/#/a/<id>` or via `get_design` / `view_design`.
 
 ## One hero number
 

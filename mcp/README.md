@@ -1,6 +1,6 @@
 # uihall-mcp
 
-MCP server for [UI Hall](https://nikithamal.github.io/UiHall/ui-hall/) — 755 real, hand-described UI/UX references with
+MCP server for [UI Hall](https://nikithamal.github.io/UiHall/) — 755 real, hand-described UI/UX references with
 palettes measured from the pixels. Gives coding agents design evidence: briefs, searchable and *viewable* references,
 patterns with build rules, measured palettes, token export and contrast checks.
 
@@ -19,7 +19,7 @@ Once published to npm: `claude mcp add uihall -- npx -y uihall-mcp`.
 
 Tools: `design_brief`, `search_designs`, `view_design`, `get_design`, `find_similar`, `find_patterns`, `palette_for`,
 `search_by_color`, `export_tokens`, `compare_designs`, `generate_design_system`, `check_contrast`, `before_after`, `corpus_overview`. Full reference and an in-browser
-playground: https://nikithamal.github.io/UiHall/ui-hall/#/agents
+playground: https://nikithamal.github.io/UiHall/#/agents
 
 ```bash
 npm run build   # src → dist/uihall-mcp.mjs and the skill CLI

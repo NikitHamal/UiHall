@@ -164,7 +164,7 @@ export function md(src) {
     .replace(/`([^`]+)`/g, '<code>$1</code>')
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
     .replace(/(^|[\s(])_([^_]+)_/g, '$1<em>$2</em>')
-    .replace(/(https?:\/\/[^\s<)]+)/g, (u) => `<a href="${u}" target="_blank" rel="noopener">${u.replace(/^https?:\/\/[^/]+\/UiHall\/ui-hall\/#\/a\//, '#')}</a>`)
+    .replace(/(https?:\/\/[^\s<)]+)/g, (u) => `<a href="${u}" target="_blank" rel="noopener">${u.replace(/^https?:\/\/[^/]+\/UiHall\/#\/a\//, '#')}</a>`)
     .replace(/(^|[\s(])(#[0-9A-Fa-f]{6})\b/g, '$1<span class="sw" style="background:$2"></span>$2')
     .replace(/\b((?:IMG|VID)-\d{4})\b(?![^<]*<\/a>)/g, '<a href="#/a/$1">$1</a>');
   for (const l of lines) {

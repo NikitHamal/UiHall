@@ -3,7 +3,7 @@
    a design system and a ready-to-paste prompt. */
 
 import { $, esc, split, icon, bindCopy, ink, md, tint, toast, copy } from '../lib.js';
-import { deltaE, normHex } from '../../../../mcp/src/color.js';
+import { deltaE, normHex } from '../../../mcp/src/color.js';
 import { board, pinIcon } from '../board.js';
 import { thumb, footer, label, arrowBtn } from './shared.js';
 

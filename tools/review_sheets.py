@@ -1,7 +1,7 @@
 """Build review sheets from the *processed* UI Hall images.
 
 Unlike make_sheets.py (which reads originals from E:\\Downloads), this reads
-ui-hall/assets/img/<ID>.webp - i.e. exactly what the site displays - so a
+assets/img/<ID>.webp - i.e. exactly what the site displays - so a
 description written off one of these sheets matches what a visitor will see.
 
 Usage:
@@ -21,8 +21,8 @@ import os
 
 from PIL import Image, ImageDraw, ImageFont
 
-CORPUS = r"E:\Stormy\ui-hall\data\corpus.json"
-IMGDIR = r"E:\Stormy\ui-hall\assets\img"
+CORPUS = r"E:\Stormy\data\corpus.json"
+IMGDIR = r"E:\Stormy\assets\img"
 OUT = r"E:\Stormy\_work\review"
 
 BG = (16, 17, 20)

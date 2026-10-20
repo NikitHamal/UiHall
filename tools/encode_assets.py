@@ -2,10 +2,10 @@
 
 Source of truth stays in E:\\Downloads. This only writes derivatives:
 
-  ui-hall/assets/img/<ID>.webp   images, longest edge 1400, quality 82
-  ui-hall/assets/vid/<ID>.webm   VP8 clips, capped width, muted, no audio
-  ui-hall/assets/vid/<ID>.webp   poster frames
-  ui-hall/assets/thumb/<ID>.webp small grid thumbnails, longest edge 520
+  assets/img/<ID>.webp   images, longest edge 1400, quality 82
+  assets/vid/<ID>.webm   VP8 clips, capped width, muted, no audio
+  assets/vid/<ID>.webp   poster frames
+  assets/thumb/<ID>.webp small grid thumbnails, longest edge 520
 
 Video re-encoding uses OpenCV's bundled VP8 encoder -- the Playwright ffmpeg
 build ships only mjpeg/vp8, and a python-av wheel is a 40 MB download, so VP8
@@ -21,7 +21,7 @@ import numpy as np
 
 ROOT = r"E:\Stormy"
 META = os.path.join(ROOT, "_work", "meta")
-OUT = os.path.join(ROOT, "ui-hall", "assets")
+OUT = os.path.join(ROOT, "assets")
 
 IMG_MAX = 1400
 THUMB_MAX = 520

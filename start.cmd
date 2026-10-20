@@ -1,7 +1,7 @@
 @echo off
 REM Launch UI Hall over http instead of opening the file directly.
 REM
-REM You do NOT need this to browse the hall - double-clicking ui-hall\index.html
+REM You do NOT need this to browse the hall - double-clicking index.html
 REM works, because the data layer falls back to the generated data\corpus.js on
 REM file://. Use this when you want a shareable URL, or a browser that is strict
 REM about local media playback.
@@ -17,7 +17,7 @@ if not defined NODE (
 )
 if not defined NODE (
   echo Node.js was not found. Either install it, or just open:
-  echo    %~dp0ui-hall\index.html
+  echo    %~dp0index.html
   pause
   exit /b 1
 )
@@ -25,5 +25,5 @@ if not defined NODE (
 set "PORT=8099"
 echo Serving UI Hall at http://127.0.0.1:%PORT%/
 echo Press Ctrl+C to stop.
-start "" "http://127.0.0.1:%PORT%/ui-hall/"
+start "" "http://127.0.0.1:%PORT%/"
 "%NODE%" "tools\serve.mjs" %PORT%

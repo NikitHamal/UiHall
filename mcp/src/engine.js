@@ -11,7 +11,7 @@ import {
 } from './color.js';
 import { PATTERNS, matchPatterns } from './patterns.js';
 
-export const SITE = 'https://nikithamal.github.io/UiHall/ui-hall/';
+export const SITE = 'https://nikithamal.github.io/UiHall/';
 
 /* ----------------------------------------------------------- text index -- */
 
