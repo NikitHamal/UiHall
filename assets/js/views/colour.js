@@ -49,12 +49,13 @@ export default function colour(root, app, route) {
     $('#hexLabel', root).textContent = hex; $('#fam', root).textContent = hueFamily(hex);
     pick.value = hex.toLowerCase(); if (document.activeElement !== hexIn) hexIn.value = hex;
     $('#cx', root).innerHTML = ['#FFFFFF', '#0A0A0A'].map((bg) => { const r = contrast(hex, bg); return `<span class="contrast-pill ${r >= 4.5 ? 'pass' : 'fail'}">on ${bg === '#FFFFFF' ? 'white' : 'black'} ${r}:1</span>`; }).join('');
-    const res = h.byColor(hex, { tolerance: +tol.value, limit: 48 });
-    $('#resLabel', root).textContent = `${res.length} references use ${hex}`;
+    const seen = {};
+    const res = h.byColor(hex, { tolerance: +tol.value, limit: 300 }).filter((r) => { const k = (r.asset.live || r.asset.id).split('/').pop().replace(/^gen-[a-z]+-/, '').replace('.html', ''); seen[k] = (seen[k] || 0) + 1; return seen[k] <= 2; }).slice(0, 48);
+    $('#resLabel', root).textContent = `${res.length} screens use ${hex}`;
     $('#res', root).innerHTML = res.length ? res.map((r, i) => `
-      <a class="cres" href="#/a/${r.asset.id}" style="--i:${i}">
-        <div class="cres__img"><img src="${thumb(r.asset)}" alt="" loading="lazy"></div>
-        <div class="cres__meta"><b>${esc(r.asset.title)}</b><span class="cres__match"><i style="--c:${r.match}"></i>${r.match} · ${r.area_pct}% of the image · Δ${r.distance}</span></div>
+      <a class="cres" href="#/a/${r.asset.id}${r.theme ? `?theme=${r.theme}` : ''}" style="--i:${i}">
+        <div class="cres__img"><img src="${(r.theme && r.asset.variants?.[r.theme]?.thumb) || thumb(r.asset)}" alt="" loading="lazy"></div>
+        <div class="cres__meta"><b>${esc(r.asset.title)}</b><span class="cres__match"><i style="--c:${r.match}"></i>${r.match} · ${r.area_pct}%${r.theme ? ` · ${r.theme}` : ''}</span></div>
       </a>`).join('') : '<div class="empty" style="grid-column:1/-1"><b>No close match.</b><p>Raise the tolerance, or try a neighbouring shade.</p></div>';
     history.replaceState(null, '', `#/colour?hex=${hex.slice(1)}`);
   };

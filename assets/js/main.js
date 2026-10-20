@@ -43,7 +43,7 @@ async function route() {
   const r = parseHash();
   if (r.name === 'a' && r.arg) {
     if (!app.viewName && app.viewName !== '') await render('library', r);
-    openDetail(app, r.arg.toUpperCase());
+    openDetail(app, r.arg.toUpperCase(), { theme: r.params.get('theme') });
     return;
   }
   if (isDetailOpen()) closeDetail();

@@ -12,10 +12,11 @@ let host = null, current = null, list = [], keyHandler = null;
 
 export const isDetailOpen = () => !!host;
 
-export function openDetail(app, id, { morph = false } = {}) {
+export function openDetail(app, id, { morph = false, theme = null } = {}) {
   const { h } = app;
   const a = h.get(id);
   if (!a) { location.hash = '#/library'; return; }
+  if (theme && a.variants?.[theme]) { liveFor = a.id; liveTheme = theme; }
   list = app.view?.order?.() || h.assets.map((x) => x.id);
   if (!host) {
     host = document.createElement('div');

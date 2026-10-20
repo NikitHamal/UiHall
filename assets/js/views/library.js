@@ -279,27 +279,23 @@ export default function library(root, app, route, opts = {}) {
 /* Default order when nothing is typed: round-robin across categories so the
    first screenful shows the range of the hall; originals lead, crops and swatches last. */
 let CURATED = null;
+/* Default order: hand-built screens and every screen type interleaved, so the
+   first screenful shows the range of the hall rather than one product. */
 function curated(list) {
   if (!CURATED) {
     const buckets = new Map();
     for (const a of window.__uh.assets) {
-      const k = a.original ? 'aa-orig' : a.crop_of ? 'zz-crop' : a.category === 'color-palette' ? 'zz-pal' : a.category;
+      const slug = (a.live || a.id).split('/').pop().replace('.html', '');
+      const m = slug.match(/^gen-([a-z]+)-(.+)$/);
+      const k = m ? m[2] : 'hand';
       if (!buckets.has(k)) buckets.set(k, []);
       buckets.get(k).push(a);
     }
-    const main = [...buckets.entries()].filter(([k]) => !k.startsWith('zz') && k !== 'aa-orig').sort((a, b) => b[1].length - a[1].length).map(([, v]) => [...v]);
-    const weights = main.map((b) => Math.max(1, Math.round(Math.sqrt(b.length / 20))));
-    // interleave originals so neighbours differ in both screen and theme
-    const bySlug = new Map();
-    for (const a of buckets.get('aa-orig') || []) { const k = (a.source_html || a.id).split('?')[0]; if (!bySlug.has(k)) bySlug.set(k, []); bySlug.get(k).push(a); }
-    const groups = [...bySlug.values()], orig = [];
-    for (let r = 0; groups.some((g) => g.length); r++) groups.forEach((g, i) => { if (g.length) orig.push(g.splice((i + r) % g.length, 1)[0]); });
+    const lists = [...buckets.entries()].sort((x, y) => (x[0] === 'hand' ? -1 : y[0] === 'hand' ? 1 : 0)).map(([, v]) => v.map((a, i) => [a, i]));
+    lists.forEach((l, j) => { const r = (j * 5) % Math.max(1, l.length); l.push(...l.splice(0, r)); });
     const out = [];
-    while (main.some((b) => b.length) || orig.length) {
-      if (orig.length) out.push(...orig.splice(0, 2));
-      main.forEach((b, i) => { for (let n = 0; n < weights[i] && b.length; n++) out.push(b.shift()); });
-    }
-    CURATED = new Map([...out, ...(buckets.get('zz-pal') || []), ...(buckets.get('zz-crop') || [])].map((a, i) => [a.id, i]));
+    for (let i = 0; lists.some((l) => l.length); i++) lists.forEach((l, j) => { if (l.length) out.push(l.shift()[0]); if (j === 0 && lists[0].length) out.push(lists[0].shift()[0]); });
+    CURATED = new Map(out.map((a, i) => [a.id, i]));
   }
   return [...list].sort((a, b) => (CURATED.get(a.id) ?? 1e6) - (CURATED.get(b.id) ?? 1e6));
 }

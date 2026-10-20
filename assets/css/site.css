@@ -642,7 +642,7 @@
   .cres { border-radius: var(--r-md); overflow: hidden; background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); animation: pop 600ms var(--ease-out) both; animation-delay: calc(var(--i) * 30ms); }
   @keyframes pop { from { opacity: 0; transform: translateY(14px) scale(.98); } }
   .cres__img { aspect-ratio: 4 / 3; background: var(--img-bg); overflow: hidden; }
-  .cres__img img { width: 100%; height: 100%; object-fit: cover; transition: transform 900ms var(--ease-out); }
+  .cres__img img { width: 100%; height: 100%; object-fit: cover; object-position: center 12%; transition: transform 900ms var(--ease-out); }
   .cres:hover .cres__img img { transform: scale(1.05); }
   .cres__meta { padding: 12px; display: grid; gap: 8px; }
   .cres__meta b { font-weight: 500; font-size: 13.5px; line-height: 1.3; }
