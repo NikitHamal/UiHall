@@ -93,7 +93,7 @@ function fill(app, a, theme) {
   const sim = h.similar(a.id, { limit: 8 });
   const facet = (k, v) => `<a class="tag" href="#/library?${k}=${encodeURIComponent(v)}">${esc(label(v))}</a>`;
   const media = v
-    ? `<div class="live" data-vp="${a.viewport}"><div class="live__bar"><div class="live__themes" role="group" aria-label="Theme">${a.themes.map((t) => `<button type="button" data-theme="${t}" aria-pressed="${t === liveTheme}"><i style="background:${SW[t] || '#888'}"></i>${a.variants[t].name}</button>`).join('')}</div><a class="live__open" href="${a.live}?theme=${liveTheme}" target="_blank" rel="noopener">Open ${icon.ext}</a></div><iframe title="${esc(a.title)} — live" src="${a.live}?theme=${liveTheme}&embed=1" loading="lazy"></iframe><span class="live__hint">Live · tap toggles, chips, steppers and buttons</span></div>`
+    ? `<div class="live" data-vp="${a.viewport}"><div class="live__bar"><div class="live__themes" role="group" aria-label="Theme">${a.themes.map((t) => `<button type="button" data-theme="${t}" aria-pressed="${t === liveTheme}"><i style="background:${SW[t] || '#888'}"></i>${a.variants[t].name}</button>`).join('')}</div><a class="live__open" href="${a.live}?theme=${liveTheme}" target="_blank" rel="noopener" aria-label="Open live screen in a new tab">Open ${icon.ext}</a></div><iframe title="${esc(a.title)} — live" src="${a.live}?theme=${liveTheme}&embed=1" loading="lazy"></iframe><span class="live__hint">Live · tap toggles, chips, steppers and buttons</span></div>`
     : a.clip
     ? `<video src="${a.clip}" poster="${a.src}" autoplay muted loop playsinline title="Click to pause"></video>`
     : `<img class="zoomable" src="${a.src}" alt="${esc(a.title)}">`;
@@ -110,7 +110,7 @@ function fill(app, a, theme) {
     <div class="sheet__info">
       <div class="sheet__top">
         <span class="sheet__id">${a.id} · ${a.live ? ({ phone: 'phone', desktop: 'desktop', canvas: 'system' }[a.viewport] || a.viewport) + ' · live' : a.kind}${a.clip ? ' · motion' : ''} · ${a.w}×${a.h}</span>
-        <div class="row" style="gap:4px">
+        <div class="row" style="gap:4px;flex:none;flex-wrap:nowrap">
           <button class="sheet__pin" type="button" aria-pressed="${board.has(a.id)}" aria-label="Pin to board (P)" title="Pin to board (P)">${pinIcon(board.has(a.id))}</button>
           <button class="icon-btn" type="button" data-copy="${location.origin + location.pathname}#/a/${a.id}" data-copy-label="Link copied" aria-label="Copy link">${icon.copy}</button>
           <button class="icon-btn" type="button" data-close aria-label="Close">${icon.close}</button>
