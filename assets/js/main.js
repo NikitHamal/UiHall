@@ -78,7 +78,7 @@ async function render(name, r) {
 
 /* ----------------------------------------------------------------- nav -- */
 function markNav(name) {
-  for (const a of $$('.rail__link, .tabbar a')) {
+  for (const a of $$('.rail__link, .tabbar a, .topnav a, .topbar__board')) {
     if (a.dataset.nav === name) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   }
   $('#rail').classList.remove('open');
@@ -114,6 +114,7 @@ async function boot() {
     if (e.key === '/' && !/input|textarea|select/i.test(document.activeElement?.tagName)) { e.preventDefault(); openCmd(app); }
   });
   $('#keysBtn').addEventListener('click', () => openKeys());
+  $('#themeBtn2').addEventListener('click', () => $('#themeBtn').click());
   addEventListener('keydown', (e) => {
     if (/input|textarea|select/i.test(document.activeElement?.tagName) || e.metaKey || e.ctrlKey || e.altKey) return;
     if (e.key === '?') { e.preventDefault(); openKeys(); }
@@ -123,6 +124,7 @@ async function boot() {
   const badge = $('#boardBadge');
   const syncBadge = (bump) => {
     badge.textContent = board.list().length || '';
+    $('#boardBadge2').textContent = board.list().length || '';
     if (bump) { badge.classList.remove('bump'); void badge.offsetWidth; badge.classList.add('bump'); }
   };
   addEventListener('uh:board', () => syncBadge(true));
@@ -133,7 +135,7 @@ async function boot() {
     window.__uh = app.h;
     const t = app.h.corpus.totals;
     $('#railStat').innerHTML = `<b>${t.assets}</b> references · <b>${t.originals || 0}</b> originals`;
-    $('.search__ph').textContent = `Search ${t.assets} references, patterns, colours…`;
+    $(".search__ph").textContent = "Search the hall…";
   } catch (e) {
     $('#main').innerHTML = `<div class="container page-head"><h1 class="display h-md">The corpus didn’t load.</h1><p class="lede">${e.message}. If you opened this file directly, serve the repo over http: <code>node tools/serve.mjs</code>.</p></div>`;
     return;

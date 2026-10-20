@@ -44,14 +44,21 @@
 </aside>
 <div class="col">
   <header class="topbar" id="topbar">
-    <button class="icon-btn topbar__menu" id="menuBtn" type="button" aria-label="Open navigation"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 6h13M3.5 10h13M3.5 14h13"/></svg></button>
-    <a class="topbar__brand" href="#/" aria-label="UI Hall home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 25V15a7 7 0 0 1 14 0v10" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round"/><path d="M16 25v-7" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg></a>
-    <button class="search" id="openCmd" type="button" aria-label="Search (Ctrl K)">
-      <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="5.5"/><path d="m13.2 13.2 3.8 3.8"/></svg>
-      <span class="search__ph">Search 755 references, patterns, colours…</span><kbd>⌘K</kbd>
-    </button>
-    <div class="topbar__actions">
-      <a class="btn btn--sm btn--primary topbar__cta" href="#/agents">Install for agents</a>
+    <div class="topbar__in">
+      <button class="icon-btn topbar__menu" id="menuBtn" type="button" aria-label="Open navigation"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 6h13M3.5 10h13M3.5 14h13"/></svg></button>
+      <a class="topbar__brand" href="#/" aria-label="UI Hall home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 25V15a7 7 0 0 1 14 0v10" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round"/><path d="M16 25v-7" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg><span>UI&nbsp;Hall</span></a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="#/library" data-nav="library">Library</a><a href="#/originals" data-nav="originals">Originals</a><a href="#/patterns" data-nav="patterns">Patterns</a><a href="#/colour" data-nav="colour">Colour</a><a href="#/motion" data-nav="motion">Motion</a><a href="#/demos" data-nav="demos">Demos</a><a href="#/agents" data-nav="agents">For agents</a>
+      </nav>
+      <button class="search" id="openCmd" type="button" aria-label="Search (Ctrl K)">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="5.5"/><path d="m13.2 13.2 3.8 3.8"/></svg>
+        <span class="search__ph">Search…</span><kbd>⌘K</kbd>
+      </button>
+      <div class="topbar__actions">
+        <a class="icon-btn topbar__board" href="#/board" data-nav="board" aria-label="Board" title="Board"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 3.5h9v13.2L10 13.4l-4.5 3.3z"/></svg><em class="rail__badge num" id="boardBadge2"></em></a>
+        <button class="icon-btn" id="themeBtn2" type="button" aria-label="Toggle theme"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.2"/><path d="M10 3v1.5M10 15.5V17M3 10h1.5M15.5 10H17M5 5l1 1M14 14l1 1M5 15l1-1M14 6l1-1"/></svg></button>
+        <a class="btn btn--sm btn--primary topbar__cta" href="#/agents">Install</a>
+      </div>
     </div>
   </header>
   <main id="main" class="view" tabindex="-1"><div class="boot" aria-label="Loading"><svg viewBox="0 0 32 32" aria-hidden="true"><path class="boot__arch" d="M9 25V15a7 7 0 0 1 14 0v10" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-linecap="round" pathLength="1"/><path d="M16 25v-7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><span>Opening the hall…</span></div></main>
