@@ -553,6 +553,27 @@ class UiHall {
    * With no query, returns the filtered set in curated order.
    */
   search({ query = '', boost = '', prefer_surface, min_score = 0.15, limit = 12, offset = 0, ...filters } = {}) {
+    // colour and light/dark words pick a theme rather than match text: "green settings" → settings, shown in its green theme
+    const look = this.#lookWords(query);
+    if (look) {
+      const rest = this.search({ query: look.rest, boost, prefer_surface: look.scheme || prefer_surface, min_score, limit: 1e6, offset: 0, ...filters });
+      const pick = (a) => {
+        const ths = a.themes?.length ? a.themes : [null];
+        const ws = ths.map((th) => {
+          const r = this.rolesOf(a, th || undefined);
+          const fam = r?.accent ? hueFamily(r.accent) : null;
+          return (look.hues ? (look.hues.indexOf(fam) === 0 ? 1 : look.hues.includes(fam) ? 0.55 : 0) : 1) * (look.scheme ? (r?.scheme === look.scheme ? 1 : 0) : 1);
+        });
+        const bw = Math.max(...ws), tied = ths.filter((_, i) => ws[i] === bw);
+        // equally good themes alternate by screen, so a "dark" grid isn't all one palette
+        return [tied[[...a.id].reduce((n, ch) => n * 31 + ch.charCodeAt(0), 7) % tied.length], bw];
+      };
+      const ranked = (look.rest.trim() ? rest.results : this.assets.filter((a) => this.filter([a], filters).length).map((asset) => ({ asset, score: 1, matched: [] })))
+        .map((r) => { const [theme, w] = pick(r.asset); return { ...r, theme: theme || undefined, score: Math.round(r.score * (w ? 0.5 + 0.5 * w : 0.2) * 1000) / 1000, look: w }; })
+        .filter((r) => r.look > 0 || look.rest.trim())
+        .sort((x, y) => y.score - x.score);
+      return { total: ranked.length, results: ranked.slice(offset, offset + limit) };
+    }
     const pool = new Set(this.filter(this.assets, filters));
     const terms = this.expand(query);
     for (const [t, w] of this.expand(boost)) if (!terms.has(t)) terms.set(t, w * 0.35);
@@ -574,6 +595,20 @@ class UiHall {
       ranked = ranked.filter((r) => r.score >= min_score); // drop the long tail of one-synonym matches
     }
     return { total: ranked.length, results: ranked.slice(offset, offset + limit) };
+  }
+
+  #lookWords(query) {
+    const HUE = { red: ['red', 'magenta'], orange: ['orange', 'red', 'brown'], amber: ['orange', 'yellow'], yellow: ['yellow', 'lime'], lime: ['lime', 'yellow', 'green'],
+      green: ['green', 'teal', 'lime'], mint: ['green', 'teal'], teal: ['teal', 'cyan', 'green'], cyan: ['cyan', 'teal', 'blue'], blue: ['blue', 'cyan', 'violet'],
+      cobalt: ['blue'], navy: ['blue'], purple: ['violet', 'magenta'], violet: ['violet', 'magenta'], pink: ['magenta', 'red'], magenta: ['magenta'] };
+    const words = String(query || '').toLowerCase().split(/\s+/).filter(Boolean);
+    let hues = null, scheme = null;
+    const rest = words.filter((w) => {
+      if (HUE[w] && !hues) { hues = HUE[w]; return false; }
+      if ((w === 'dark' || w === 'light') && !scheme) { scheme = w; return false; }
+      return true;
+    });
+    return hues || scheme ? { hues, scheme, rest: rest.join(' ') } : null;
   }
 
   get(id) {
@@ -1099,9 +1134,11 @@ const FILTERS = {
 /* ------------------------------------------------------------ renderers -- */
 
 const pal = (p) => (p || []).slice(0, 5).join(' ');
-function line(h, a, extra = '') {
+function line(h, a, extra = '', theme) {
   const c = h.card(a);
-  return `- **${c.id}** · ${c.title} — _${c.category}/${c.type}${c.motion ? ', motion' : ''}, ${c.surface}_${extra}\n  ${c.summary}\n  palette ${pal(c.palette)}${c.accent ? ` · accent ${c.accent}` : ''} · ${c.url}`;
+  const v = theme && a.variants?.[theme];
+  const r = v ? h.rolesOf(a, theme) : null;
+  return `- **${c.id}** · ${c.title} — _${c.category}/${c.type}${c.motion ? ', motion' : ''}, ${v ? v.scheme : c.surface}_${extra}\n  ${c.summary}\n  palette ${pal(v ? v.palette : c.palette)}${(r?.accent || c.accent) ? ` · accent ${r?.accent || c.accent}` : ''} · ${c.url}${v ? `?theme=${theme}` : ''}`;
 }
 function rolesMd(r, cx) {
   return `bg ${r.background} · surface ${r.surface} · text ${r.text} (${cx.text_on_background.ratio}:1 ${cx.text_on_background.verdict})`
@@ -1117,7 +1154,7 @@ const TOOLS = [
     description: 'Search 404 live, MIT-licensed UI screens built in code — mobile apps, websites, dashboards and design systems across 20 product domains, each in four themes and written up from its own content. '
       + 'Ranked full-text search with synonyms ("fintech" also finds wallet, banking…) plus facet filters. '
       + 'Use this first whenever you design, build or critique an interface, so decisions come from real examples instead of the generic average. '
-      + 'Set include_images to actually see the top results.',
+      + 'Colour and light/dark words ("green settings", "dark onboarding") pick the matching theme of each screen. Set include_images to actually see the top results.',
     inputSchema: {
       type: 'object',
       properties: {
@@ -1132,12 +1169,12 @@ const TOOLS = [
     run(h, a) {
       const { total, results } = h.search({ ...a, limit: a.limit ?? 8, offset: a.offset ?? 0 });
       const text = total
-        ? `**${total}** matches${a.query ? ` for “${a.query}”` : ''}. Showing ${results.length}:\n\n${results.map((r) => line(h, r.asset, ` · score ${r.score}`)).join('\n')}\n\nNext: get_design(id) for the full write-up, view_design(ids) to see them, find_similar(id) to branch out.`
+        ? `**${total}** matches${a.query ? ` for “${a.query}”` : ''}. Showing ${results.length}:\n\n${results.map((r) => line(h, r.asset, ` · score ${r.score}${r.theme ? ` · ${r.theme} theme` : ''}`, r.theme)).join('\n')}\n\nNext: get_design(id) for the full write-up, view_design(ids, theme) to see them, find_similar(id) to branch out.`
         : `No matches${a.query ? ` for “${a.query}”` : ''}. Loosen the filters or try broader words; corpus_overview lists the vocabulary.`;
       return {
         text,
-        data: { total, results: results.map((r) => h.card(r.asset, { score: r.score, matched: r.matched })) },
-        images: a.include_images ? results.slice(0, 6).map((r) => ({ id: r.asset.id, which: 'thumb' })) : [],
+        data: { total, results: results.map((r) => h.card(r.asset, { score: r.score, matched: r.matched, ...(r.theme ? { theme: r.theme } : {}) })) },
+        images: a.include_images ? results.slice(0, 6).map((r) => ({ id: r.asset.id, which: 'thumb', theme: r.theme })) : [],
       };
     },
   },

@@ -45,7 +45,7 @@ export function openCmd(app) {
     }
     if (q) {
       const res = h.search({ query: q, limit: 7 }).results;
-      if (res.length) groups.push(['Screens', res.map((r) => ({ title: r.asset.title, sub: `${r.asset.id} · ${label(r.asset.category)} · ${(r.asset.roles || []).join(', ')}`, href: `#/a/${r.asset.id}`, img: thumb(r.asset), meta: r.asset.kind === 'video' ? 'video' : '' }))]);
+      if (res.length) groups.push(['Screens', res.map((r) => ({ title: r.asset.title, sub: `${r.asset.id} · ${label(r.asset.category)} · ${(r.asset.roles || []).join(', ')}`, href: `#/a/${r.asset.id}${r.theme ? `?theme=${r.theme}` : ''}`, img: (r.theme && r.asset.variants?.[r.theme]?.thumb) || thumb(r.asset), meta: r.asset.kind === 'video' ? 'video' : '' }))]);
       const ql = q.toLowerCase();
       const facets = [];
       for (const [k, key] of [['categories', 'category'], ['roles', 'role'], ['styles', 'style'], ['tags', 'tag']]) {

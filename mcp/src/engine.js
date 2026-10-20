@@ -195,6 +195,27 @@ export class UiHall {
    * With no query, returns the filtered set in curated order.
    */
   search({ query = '', boost = '', prefer_surface, min_score = 0.15, limit = 12, offset = 0, ...filters } = {}) {
+    // colour and light/dark words pick a theme rather than match text: "green settings" → settings, shown in its green theme
+    const look = this.#lookWords(query);
+    if (look) {
+      const rest = this.search({ query: look.rest, boost, prefer_surface: look.scheme || prefer_surface, min_score, limit: 1e6, offset: 0, ...filters });
+      const pick = (a) => {
+        const ths = a.themes?.length ? a.themes : [null];
+        const ws = ths.map((th) => {
+          const r = this.rolesOf(a, th || undefined);
+          const fam = r?.accent ? hueFamily(r.accent) : null;
+          return (look.hues ? (look.hues.indexOf(fam) === 0 ? 1 : look.hues.includes(fam) ? 0.55 : 0) : 1) * (look.scheme ? (r?.scheme === look.scheme ? 1 : 0) : 1);
+        });
+        const bw = Math.max(...ws), tied = ths.filter((_, i) => ws[i] === bw);
+        // equally good themes alternate by screen, so a "dark" grid isn't all one palette
+        return [tied[[...a.id].reduce((n, ch) => n * 31 + ch.charCodeAt(0), 7) % tied.length], bw];
+      };
+      const ranked = (look.rest.trim() ? rest.results : this.assets.filter((a) => this.filter([a], filters).length).map((asset) => ({ asset, score: 1, matched: [] })))
+        .map((r) => { const [theme, w] = pick(r.asset); return { ...r, theme: theme || undefined, score: Math.round(r.score * (w ? 0.5 + 0.5 * w : 0.2) * 1000) / 1000, look: w }; })
+        .filter((r) => r.look > 0 || look.rest.trim())
+        .sort((x, y) => y.score - x.score);
+      return { total: ranked.length, results: ranked.slice(offset, offset + limit) };
+    }
     const pool = new Set(this.filter(this.assets, filters));
     const terms = this.expand(query);
     for (const [t, w] of this.expand(boost)) if (!terms.has(t)) terms.set(t, w * 0.35);
@@ -216,6 +237,20 @@ export class UiHall {
       ranked = ranked.filter((r) => r.score >= min_score); // drop the long tail of one-synonym matches
     }
     return { total: ranked.length, results: ranked.slice(offset, offset + limit) };
+  }
+
+  #lookWords(query) {
+    const HUE = { red: ['red', 'magenta'], orange: ['orange', 'red', 'brown'], amber: ['orange', 'yellow'], yellow: ['yellow', 'lime'], lime: ['lime', 'yellow', 'green'],
+      green: ['green', 'teal', 'lime'], mint: ['green', 'teal'], teal: ['teal', 'cyan', 'green'], cyan: ['cyan', 'teal', 'blue'], blue: ['blue', 'cyan', 'violet'],
+      cobalt: ['blue'], navy: ['blue'], purple: ['violet', 'magenta'], violet: ['violet', 'magenta'], pink: ['magenta', 'red'], magenta: ['magenta'] };
+    const words = String(query || '').toLowerCase().split(/\s+/).filter(Boolean);
+    let hues = null, scheme = null;
+    const rest = words.filter((w) => {
+      if (HUE[w] && !hues) { hues = HUE[w]; return false; }
+      if ((w === 'dark' || w === 'light') && !scheme) { scheme = w; return false; }
+      return true;
+    });
+    return hues || scheme ? { hues, scheme, rest: rest.join(' ') } : null;
   }
 
   get(id) {

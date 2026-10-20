@@ -29,9 +29,11 @@ const FILTERS = {
 /* ------------------------------------------------------------ renderers -- */
 
 const pal = (p) => (p || []).slice(0, 5).join(' ');
-function line(h, a, extra = '') {
+function line(h, a, extra = '', theme) {
   const c = h.card(a);
-  return `- **${c.id}** · ${c.title} — _${c.category}/${c.type}${c.motion ? ', motion' : ''}, ${c.surface}_${extra}\n  ${c.summary}\n  palette ${pal(c.palette)}${c.accent ? ` · accent ${c.accent}` : ''} · ${c.url}`;
+  const v = theme && a.variants?.[theme];
+  const r = v ? h.rolesOf(a, theme) : null;
+  return `- **${c.id}** · ${c.title} — _${c.category}/${c.type}${c.motion ? ', motion' : ''}, ${v ? v.scheme : c.surface}_${extra}\n  ${c.summary}\n  palette ${pal(v ? v.palette : c.palette)}${(r?.accent || c.accent) ? ` · accent ${r?.accent || c.accent}` : ''} · ${c.url}${v ? `?theme=${theme}` : ''}`;
 }
 function rolesMd(r, cx) {
   return `bg ${r.background} · surface ${r.surface} · text ${r.text} (${cx.text_on_background.ratio}:1 ${cx.text_on_background.verdict})`
@@ -47,7 +49,7 @@ export const TOOLS = [
     description: 'Search 404 live, MIT-licensed UI screens built in code — mobile apps, websites, dashboards and design systems across 20 product domains, each in four themes and written up from its own content. '
       + 'Ranked full-text search with synonyms ("fintech" also finds wallet, banking…) plus facet filters. '
       + 'Use this first whenever you design, build or critique an interface, so decisions come from real examples instead of the generic average. '
-      + 'Set include_images to actually see the top results.',
+      + 'Colour and light/dark words ("green settings", "dark onboarding") pick the matching theme of each screen. Set include_images to actually see the top results.',
     inputSchema: {
       type: 'object',
       properties: {
@@ -62,12 +64,12 @@ export const TOOLS = [
     run(h, a) {
       const { total, results } = h.search({ ...a, limit: a.limit ?? 8, offset: a.offset ?? 0 });
       const text = total
-        ? `**${total}** matches${a.query ? ` for “${a.query}”` : ''}. Showing ${results.length}:\n\n${results.map((r) => line(h, r.asset, ` · score ${r.score}`)).join('\n')}\n\nNext: get_design(id) for the full write-up, view_design(ids) to see them, find_similar(id) to branch out.`
+        ? `**${total}** matches${a.query ? ` for “${a.query}”` : ''}. Showing ${results.length}:\n\n${results.map((r) => line(h, r.asset, ` · score ${r.score}${r.theme ? ` · ${r.theme} theme` : ''}`, r.theme)).join('\n')}\n\nNext: get_design(id) for the full write-up, view_design(ids, theme) to see them, find_similar(id) to branch out.`
         : `No matches${a.query ? ` for “${a.query}”` : ''}. Loosen the filters or try broader words; corpus_overview lists the vocabulary.`;
       return {
         text,
-        data: { total, results: results.map((r) => h.card(r.asset, { score: r.score, matched: r.matched })) },
-        images: a.include_images ? results.slice(0, 6).map((r) => ({ id: r.asset.id, which: 'thumb' })) : [],
+        data: { total, results: results.map((r) => h.card(r.asset, { score: r.score, matched: r.matched, ...(r.theme ? { theme: r.theme } : {}) })) },
+        images: a.include_images ? results.slice(0, 6).map((r) => ({ id: r.asset.id, which: 'thumb', theme: r.theme })) : [],
       };
     },
   },
