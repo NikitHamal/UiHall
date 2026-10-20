@@ -83,3 +83,4 @@ body.swap *{transition:background-color .45s ease,color .45s ease,border-color .
 .toggle::after{transition:left .3s cubic-bezier(.34,1.56,.64,1)}
 .toggle{transition:background .25s}
 .pill{transition:background .25s,color .25s}
+.fade-x{-webkit-mask-image:linear-gradient(90deg,#000 82%,transparent);mask-image:linear-gradient(90deg,#000 82%,transparent)}

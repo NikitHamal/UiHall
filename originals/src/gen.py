@@ -49,7 +49,7 @@ def bars(vals, hl=3, hgt=96):
         f'<div class="col g4" style="flex:1;align-items:center"><i style="width:100%;height:{max(6, v / mx * (hgt - 20)):.0f}px;border-radius:8px;background:{"var(--accent)" if i == hl else "var(--surface2)"}"></i><span class="small" style="font-size:10.5px">{"MTWTFSS"[i]}</span></div>' for i, v in enumerate(vals)) + '</div>'
 
 def chips(cs, on=0):
-    return '<div class="row g8" style="overflow:hidden;white-space:nowrap">' + ''.join(f'<span class="pill {"on" if i == on else ""}">{c}</span>' for i, c in enumerate(cs)) + '</div>'
+    return '<div class="row g8 fade-x" style="overflow:hidden;white-space:nowrap">' + ''.join(f'<span class="pill {"on" if i == on else ""}">{c}</span>' for i, c in enumerate(cs)) + '</div>'
 
 def meta(d, kind, title, roles, style, tags, desc, vp='phone'):
     title = f"{d['area'][0].upper() + d['area'][1:]} {title.split(' ', 1)[1]} · {d['app']}"
