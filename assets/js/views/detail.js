@@ -126,7 +126,7 @@ function fill(app, a, theme) {
         ${facet('category', a.category)}${facet('type', a.type)}
         ${(a.roles || []).map((x) => facet('role', x)).join('')}
         ${(a.style || []).map((x) => facet('style', x)).join('')}
-        ${(a.tags || []).filter((x) => !(a.roles || []).includes(x) && !(a.style || []).includes(x) && x !== a.type).map((x) => facet('tag', x)).join('')}
+        ${(a.tags || []).filter((x) => !(a.roles || []).includes(x) && !(a.style || []).includes(x) && x !== a.type && x !== a.category).map((x) => facet('tag', x)).join('')}
       </div>
       <div>
         <h4><span>Measured palette</span><span>click to copy</span></h4>

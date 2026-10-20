@@ -2,6 +2,9 @@ import { $, $$, esc, split, ink, bindCopy, debounce } from '../lib.js';
 import { normHex, hueFamily, contrast } from '../../../mcp/src/color.js';
 import { thumb, footer } from './shared.js';
 
+// a match on the base palette means the base render — name its theme so the detail opens the same one
+const matchTheme = (r) => r.theme || Object.entries(r.asset.variants || {}).find(([, v]) => v.src === r.asset.src)?.[0];
+
 const PRESETS = ['#FF5A1F', '#C6F432', '#3E63DD', '#0D2740', '#F9A8BB', '#18544E', '#FFD60A', '#8E4EC6', '#E5484D', '#12A594', '#D4AA7D', '#111111', '#F5F2EA', '#00A2C7', '#FE00AE', '#433455'];
 
 export default function colour(root, app, route) {
@@ -53,8 +56,8 @@ export default function colour(root, app, route) {
     const res = h.byColor(hex, { tolerance: +tol.value, limit: 300 }).filter((r) => { const k = (r.asset.live || r.asset.id).split('/').pop().replace(/^gen-[a-z]+-/, '').replace('.html', ''); seen[k] = (seen[k] || 0) + 1; return seen[k] <= 2; }).slice(0, 48);
     $('#resLabel', root).textContent = `${res.length} screens use ${hex}`;
     $('#res', root).innerHTML = res.length ? res.map((r, i) => `
-      <a class="cres" href="#/a/${r.asset.id}${r.theme ? `?theme=${r.theme}` : ''}" style="--i:${i}">
-        <div class="cres__img"><img src="${(r.theme && r.asset.variants?.[r.theme]?.thumb) || thumb(r.asset)}" alt="" loading="lazy"></div>
+      <a class="cres" href="#/a/${r.asset.id}${matchTheme(r) ? `?theme=${matchTheme(r)}` : ''}" style="--i:${i}">
+        <div class="cres__img"><img src="${(r.theme && r.asset.variants?.[r.theme]?.thumb) || r.asset.thumb || thumb(r.asset)}" alt="" loading="lazy"></div>
         <div class="cres__meta"><b>${esc(r.asset.title)}</b><span class="cres__match"><i style="--c:${r.match}"></i>${r.match} · ${r.area_pct}%${r.theme ? ` · ${r.theme}` : ''}</span></div>
       </a>`).join('') : '<div class="empty" style="grid-column:1/-1"><b>No close match.</b><p>Raise the tolerance, or try a neighbouring shade.</p></div>';
     history.replaceState(null, '', `#/colour?hex=${hex.slice(1)}`);
