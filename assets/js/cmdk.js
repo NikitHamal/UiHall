@@ -25,7 +25,7 @@ export function openCmd(app) {
     <div class="cmd" role="dialog" aria-modal="true" aria-label="Search">
       <div class="cmd__scrim"></div>
       <div class="cmd__box">
-        <div class="cmd__input">${icon.search}<input id="cmdQ" placeholder="Search references, styles, patterns… or a #hex" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="true" aria-controls="cmdList"><kbd>esc</kbd></div>
+        <div class="cmd__input">${icon.search}<input id="cmdQ" placeholder="Search screens, styles, patterns… or a #hex" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="true" aria-controls="cmdList"><kbd>esc</kbd></div>
         <div class="cmd__list" id="cmdList" role="listbox"></div>
         <div class="cmd__foot"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>↵</kbd> open</span><span><kbd>esc</kbd> close</span></div>
       </div>
@@ -45,7 +45,7 @@ export function openCmd(app) {
     }
     if (q) {
       const res = h.search({ query: q, limit: 7 }).results;
-      if (res.length) groups.push(['References', res.map((r) => ({ title: r.asset.title, sub: `${r.asset.id} · ${label(r.asset.category)} · ${(r.asset.roles || []).join(', ')}`, href: `#/a/${r.asset.id}`, img: thumb(r.asset), meta: r.asset.kind === 'video' ? 'video' : '' }))]);
+      if (res.length) groups.push(['Screens', res.map((r) => ({ title: r.asset.title, sub: `${r.asset.id} · ${label(r.asset.category)} · ${(r.asset.roles || []).join(', ')}`, href: `#/a/${r.asset.id}`, img: thumb(r.asset), meta: r.asset.kind === 'video' ? 'video' : '' }))]);
       const ql = q.toLowerCase();
       const facets = [];
       for (const [k, key] of [['categories', 'category'], ['roles', 'role'], ['styles', 'style'], ['tags', 'tag']]) {

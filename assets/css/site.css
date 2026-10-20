@@ -1309,3 +1309,8 @@
   .rail.open { visibility: visible; transition: transform var(--t-slow) var(--ease-out), visibility 0s; }
   body.landing .rail { display: none; }
 }
+
+@layer views {
+  .bcard__img--wide { display: grid; place-items: center; padding: 10px; }
+  .bcard__img--wide img { height: auto; object-fit: contain; border-radius: 8px; }
+}
