@@ -3,244 +3,259 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Hush — sleep onboarding · built with the UI Hall skill</title>
+<title>Hush — a complete sleep app · built with the UI Hall skill</title>
 <!--
-  Built with the uihall skill, following its workflow end to end:
+  Built with the uihall skill:
     brief:      design_brief("onboarding for a sleep tracking app", platform=ios, mood=calm)
     references: VID-0236 (question-per-step flow, small dark "Next" pill, soft blue panels, score card)
                 IMG-0618 (visual top ~60%, serif headline, full-width dark CTA + "Skip", choice chips)
                 VID-0173 (one dominant data visual, headline beneath)
-    patterns:   Single-promise onboarding · Soft light canvas, tinted cards · Editorial serif display
-    palette:    measured from VID-0236 — bg #F7F8F9 · surface #C7E3F0 · text #212229 (14.9:1)
-                accent #88BDDD as fill · #4B758F as text (nudged by check_contrast to pass 4.5:1)
+    patterns:   Single-promise onboarding · Soft light canvas, tinted cards · Editorial serif display · Progress ring as the hero
+    palette:    VID-0236 measured — bg #F7F8F9 · surface #C7E3F0 · text #212229 (14.9:1) · accent #88BDDD (fill) / #4B758F (text)
 -->
 <link rel="stylesheet" href="../../assets/css/fonts-v2.css">
+<link rel="stylesheet" href="../demo.css">
 <style>
-:root{
-  --bg:#F7F8F9;--surface:#C7E3F0;--text:#212229;--muted:#5C6470;--accent:#88BDDD;--accent-text:#4B758F;--warm:#DF5A5A;
-  --ink:#16171C;--line:rgba(33,34,41,.08);
-  --serif:'Instrument Serif',Georgia,serif;--sans:'Inter Tight',system-ui,sans-serif;--mono:'JetBrains Mono',monospace;
-  --ease:cubic-bezier(.16,1,.3,1);--spring:cubic-bezier(.34,1.4,.64,1);
-}
-*{box-sizing:border-box}
-body{margin:0;min-height:100dvh;background:#E9ECEF;color:var(--text);font:15px/1.5 var(--sans);display:grid;grid-template-columns:auto minmax(0,460px);justify-content:center;align-items:center;gap:clamp(40px,7vw,110px);padding:48px clamp(16px,5vw,80px)}
-@media(max-width:980px){body{grid-template-columns:1fr;justify-items:center;padding:24px 12px}}
-button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
-:focus-visible{outline:2px solid var(--accent-text);outline-offset:3px;border-radius:12px}
-
-/* ----------------------------------------------------------- notes panel */
-.notes{max-width:560px}
-.notes small{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.notes h1{font:400 clamp(40px,5vw,64px)/.98 var(--serif);letter-spacing:-.02em;margin:14px 0 16px}
-.notes h1 em{color:var(--accent-text)}
-.notes p{color:var(--muted);margin:0 0 22px;max-width:52ch}
-.refs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px}
-.refs a{display:block;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 0 0 1px var(--line);text-decoration:none;color:inherit;transition:transform .5s var(--spring)}
-.refs a:hover{transform:translateY(-4px)}
-.refs img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
-.refs span{display:block;padding:8px 10px;font:500 11px/1.3 var(--mono);color:var(--muted)}
-.refs b{display:block;color:var(--text);font:500 12px/1.3 var(--sans);margin-top:2px}
-.sw{display:flex;gap:6px;margin-bottom:10px}
-.sw i{flex:1;height:44px;border-radius:10px;box-shadow:inset 0 0 0 1px var(--line);position:relative}
-.sw i::after{content:attr(data-h);position:absolute;left:8px;bottom:6px;font:500 10px var(--mono);color:var(--text);opacity:.75}
-.checks{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:6px;font-size:13.5px}
-.checks li::before{content:'✓';color:var(--accent-text);font-weight:700;margin-right:8px}
-.back{display:inline-block;margin-top:22px;font:500 13px var(--sans);color:var(--accent-text)}
-@media(max-width:980px){.notes{justify-self:center;order:2}}
-
-/* ----------------------------------------------------------- phone */
-.phone{position:relative;width:390px;height:844px;max-width:100%;border-radius:56px;background:var(--bg);box-shadow:0 0 0 10px #101114,0 0 0 11px #2A2B30,0 50px 100px -30px rgba(20,30,50,.45);overflow:hidden;isolation:isolate}
-@media(max-width:440px){.phone{width:100%;height:min(844px,100dvh - 48px);border-radius:36px}}
-.status{position:absolute;inset:0 0 auto;height:54px;display:flex;justify-content:space-between;align-items:center;padding:0 32px 0 38px;font:600 15px var(--sans);z-index:5}
-.island{position:absolute;top:11px;left:50%;translate:-50% 0;width:122px;height:35px;border-radius:20px;background:#000;z-index:6}
-.top{position:absolute;top:58px;left:24px;right:24px;display:flex;align-items:center;gap:12px;z-index:5}
-.dots{flex:1;display:flex;gap:6px}
-.dots i{height:4px;flex:1;border-radius:4px;background:rgba(33,34,41,.1);overflow:hidden}
-.dots i::after{content:'';display:block;height:100%;width:0;background:var(--text);transition:width .6s var(--ease)}
-.dots i.on::after{width:100%}
-.skip{font-size:14px;color:var(--muted);padding:8px 4px;min-height:44px}
-.backbtn{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.7);opacity:0;pointer-events:none;transition:opacity .3s}
-.backbtn.on{opacity:1;pointer-events:auto}
-
-.steps{position:absolute;inset:0}
-.step{position:absolute;inset:0;padding:120px 24px 40px;display:flex;flex-direction:column;opacity:0;pointer-events:none;transform:translateX(40px);transition:opacity .5s var(--ease),transform .7s var(--ease)}
-.step.on{opacity:1;pointer-events:auto;transform:none}
-.step.past{transform:translateX(-40px)}
-.visual{flex:0 0 56%;position:relative;border-radius:32px;background:linear-gradient(170deg,#DCEEF7 0%,var(--surface) 55%,#A9D0E6 100%);overflow:hidden;display:grid;place-items:center}
-h2{font:400 36px/1.02 var(--serif);letter-spacing:-.015em;margin:26px 0 10px;color:var(--text)}
-.lead{color:var(--muted);margin:0;font-size:15px}
-.grow{flex:1}
-.cta{height:56px;border-radius:18px;background:var(--ink);color:#fff;font-weight:600;font-size:16px;width:100%;transition:transform .35s var(--spring),opacity .3s}
-.cta:active{transform:scale(.97)}
-.cta:disabled{opacity:.3;cursor:default}
-.ghost{display:block;width:100%;margin-top:6px;min-height:44px;color:var(--muted);font-size:14px}
-.ghost b{color:var(--accent-text)}
-
-/* step 1: breathing moon */
-.moon{width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff,#EAF4FA 55%,#CFE5F1);box-shadow:0 0 0 18px rgba(255,255,255,.25),0 0 0 44px rgba(255,255,255,.14),0 30px 60px -10px rgba(40,90,130,.35);animation:breathe 6s ease-in-out infinite}
-@keyframes breathe{50%{transform:scale(1.07);box-shadow:0 0 0 26px rgba(255,255,255,.22),0 0 0 60px rgba(255,255,255,.1),0 40px 70px -10px rgba(40,90,130,.3)}}
-.star{position:absolute;width:4px;height:4px;border-radius:50%;background:#fff;animation:tw 3s ease-in-out infinite}
-@keyframes tw{50%{opacity:.2}}
-.breath{position:absolute;bottom:18px;left:0;right:0;text-align:center;font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)}
-
-/* step 2: options */
-.opts{display:grid;gap:10px;margin-top:22px}
-.opt{display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 18px;border-radius:18px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);font-size:16px;font-weight:500;text-align:left;transition:background .25s,box-shadow .25s,transform .4s var(--spring)}
-.opt small{color:var(--muted);font-weight:400;font-size:13px}
-.opt::after{content:'';width:22px;height:22px;border-radius:50%;box-shadow:inset 0 0 0 1.5px rgba(33,34,41,.2);transition:box-shadow .3s var(--spring),background .3s}
-.opt[aria-checked=true]{background:#EAF4FA;box-shadow:inset 0 0 0 1.5px var(--accent-text)}
-.opt[aria-checked=true]::after{background:var(--accent-text);box-shadow:inset 0 0 0 6px #EAF4FA,0 0 0 1.5px var(--accent-text)}
-.opt:active{transform:scale(.98)}
-.pill{align-self:center;height:48px;padding:0 34px;border-radius:999px;background:var(--ink);color:#fff;font-weight:600;transition:transform .35s var(--spring),opacity .3s}
-.pill:disabled{opacity:.25;cursor:default}
-
-/* step 3: mood chips + wave */
-.wave{display:flex;align-items:center;gap:5px;height:120px}
-.wave i{width:6px;border-radius:6px;background:rgba(255,255,255,.85);height:calc(var(--h)*1px);transition:height .7s var(--spring)}
-.chips{display:flex;gap:8px;justify-content:center;margin-top:22px}
-.chip{height:44px;padding:0 20px;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);font-weight:500;transition:all .3s var(--spring)}
-.chip[aria-checked=true]{background:var(--text);color:#fff;box-shadow:none;transform:scale(1.05)}
-
-/* step 4: goal ring */
-.ring{position:relative;width:210px;height:210px}
+:root{--bg:#F7F8F9;--s1:#FFFFFF;--s2:#EDF1F4;--s3:#DCE6EE;--line:rgba(33,34,41,.08);--text:#212229;--t2:#5C6470;--t3:#8C96A2;--accent:#4B758F;--fill:#88BDDD;--sky:#C7E3F0;--ink:#16171C;--warm:#DF5A5A}
+body{background:#E6EBEF;color:var(--text)}
+.phone{box-shadow:0 0 0 10px #101114,0 0 0 11px #2A2B30,0 50px 100px -30px rgba(20,30,50,.45)}
+.tabbar{background:rgba(255,255,255,.82)}
+.tabbar button[aria-current=true]{background:var(--ink);color:#fff}
+.view{padding-top:60px}
+h2.serif{font:400 34px/1.02 'Instrument Serif',Georgia,serif;letter-spacing:-.015em;margin:0}
+.lead{color:var(--t2);margin:6px 0 0;font-size:15px}
+.cta{display:flex;align-items:center;justify-content:center;gap:8px;height:56px;width:100%;border-radius:18px;background:var(--ink);color:#fff;font-weight:600;font-size:16px;transition:transform .35s var(--spring),opacity .3s}
+.cta:active{transform:scale(.97)}.cta:disabled{opacity:.3}
+.ghost{display:block;width:100%;margin-top:6px;min-height:44px;color:var(--t2);font-size:14px}
+.pillbtn{align-self:center;height:48px;padding:0 34px;border-radius:999px;background:var(--ink);color:#fff;font-weight:600;transition:opacity .3s}
+.pillbtn:disabled{opacity:.25}
+.card{background:var(--s1);border-radius:22px;padding:16px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 0 0 1px var(--line)}
+.tint{background:linear-gradient(170deg,#DCEEF7,var(--sky) 55%,#A9D0E6);border-radius:28px;position:relative;overflow:hidden}
+/* onboarding */
+.ob{position:absolute;inset:0;z-index:25;background:var(--bg);display:flex;flex-direction:column;padding:60px 22px 34px;transition:opacity .5s var(--ease),transform .6s var(--ease)}
+.ob.gone{opacity:0;transform:scale(.98);visibility:hidden;transition:opacity .5s var(--ease),transform .6s var(--ease),visibility 0s .6s}.ob.gone *{pointer-events:none!important}
+.ob .top{display:flex;align-items:center;gap:12px}
+.dots{flex:1;display:flex;gap:6px}.dots i{height:4px;flex:1;border-radius:4px;background:rgba(33,34,41,.1);overflow:hidden}
+.dots i::after{content:'';display:block;height:100%;width:0;background:var(--text);transition:width .6s var(--ease)}.dots i.on::after{width:100%}
+.steps{position:relative;flex:1;margin-top:18px}
+.step{position:absolute;inset:0;display:flex;flex-direction:column;opacity:0;pointer-events:none;transform:translateX(40px);transition:opacity .5s var(--ease),transform .7s var(--ease)}
+.step.on{opacity:1;pointer-events:auto;transform:none}.step.past{transform:translateX(-40px)}
+.moon{width:140px;height:140px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff,#EAF4FA 55%,#CFE5F1);box-shadow:0 0 0 18px rgba(255,255,255,.25),0 0 0 44px rgba(255,255,255,.14),0 30px 60px -10px rgba(40,90,130,.35);animation:breathe 6s ease-in-out infinite}
+@keyframes breathe{50%{transform:scale(1.07)}}
+.opt{display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 18px;border-radius:18px;background:var(--s1);box-shadow:inset 0 0 0 1px var(--line);font-size:16px;font-weight:500;text-align:left;width:100%;transition:background .25s,box-shadow .25s}
+.opt small{color:var(--t2);font-weight:400;font-size:13px;display:block}
+.opt::after{content:'';width:22px;height:22px;border-radius:50%;box-shadow:inset 0 0 0 1.5px rgba(33,34,41,.2);flex:none}
+.opt[aria-checked=true]{background:#EAF4FA;box-shadow:inset 0 0 0 1.5px var(--accent)}
+.opt[aria-checked=true]::after{background:var(--accent);box-shadow:inset 0 0 0 6px #EAF4FA,0 0 0 1.5px var(--accent)}
+.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.chips button{height:44px;padding:0 20px;border-radius:999px;background:var(--s1);box-shadow:inset 0 0 0 1px var(--line);font-weight:500;transition:all .3s var(--spring)}
+.chips button[aria-checked=true],.chips button[aria-pressed=true]{background:var(--text);color:#fff;box-shadow:none}
+/* app */
+.ring{position:relative;width:200px;height:200px;margin:0 auto}
 .ring svg{width:100%;height:100%;transform:rotate(-90deg)}
-.ring circle{fill:none;stroke-width:16;stroke-linecap:round}
-.ring .track{stroke:rgba(255,255,255,.5)}
-.ring .fill{stroke:#fff;stroke-dasharray:597;stroke-dashoffset:597;transition:stroke-dashoffset 1.6s var(--ease) .3s}
-.step.on .ring .fill{stroke-dashoffset:calc(597 - 597 * var(--p))}
+.ring circle{fill:none;stroke-width:14;stroke-linecap:round}
+.ring .track{stroke:rgba(255,255,255,.55)}.ring .fill{stroke:#fff;transition:stroke-dashoffset 1.4s var(--ease)}
 .ring div{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
-.ring b{font:400 52px/1 var(--serif);color:var(--text)}
-.ring span{font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent-text);margin-top:6px}
-.facts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
-.facts div{padding:12px 14px;border-radius:16px;background:#fff;box-shadow:inset 0 0 0 1px var(--line)}
-.facts b{display:block;font:600 17px var(--sans);font-variant-numeric:tabular-nums}
-.facts small{color:var(--muted);font-size:12.5px}
-.done{position:absolute;inset:0;display:grid;place-content:center;text-align:center;padding:40px;background:var(--bg);opacity:0;pointer-events:none;transition:opacity .6s var(--ease);z-index:8}
-.done.on{opacity:1;pointer-events:auto}
-.done h2{margin-top:0}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:1ms!important}}
+.ring b{font:400 48px/1 'Instrument Serif',serif}
+.ring span{font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-top:6px}
+.routine{display:grid;gap:8px}
+.ritem{display:flex;align-items:center;gap:12px;padding:14px;border-radius:18px;background:var(--s1);box-shadow:0 0 0 1px var(--line);text-align:left;width:100%}
+.ritem .ck{width:26px;height:26px;border-radius:50%;box-shadow:inset 0 0 0 1.5px rgba(33,34,41,.2);display:grid;place-items:center;flex:none;transition:all .3s var(--spring)}
+.ritem[aria-checked=true] .ck{background:var(--accent);box-shadow:none;color:#fff}
+.ritem[aria-checked=true] b{text-decoration:line-through;color:var(--t3)}
+.ritem small{display:block;color:var(--t2);font-size:12.5px}
+.ritem em{margin-left:auto;font-style:normal;font:500 12px var(--mono);color:var(--t3)}
+.week{display:flex;align-items:flex-end;gap:8px;height:130px;margin-top:10px}
+.week div{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;height:100%;justify-content:flex-end}
+.week i{width:100%;border-radius:10px;background:var(--s3);transform-origin:bottom;animation:grow .8s var(--ease) both;animation-delay:calc(var(--k)*50ms);position:relative}
+.week i.on{background:var(--accent)}
+.week i b{position:absolute;left:0;right:0;bottom:0;border-radius:10px;background:rgba(255,255,255,.35)}
+@keyframes grow{from{transform:scaleY(0)}}
+.week span{font:11px var(--mono);color:var(--t3)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.stats div{padding:14px;border-radius:18px;background:var(--s1);box-shadow:0 0 0 1px var(--line)}
+.stats b{display:block;font:600 22px var(--sans);letter-spacing:-.02em}.stats small{color:var(--t2);font-size:12.5px}
+.stages{display:flex;height:34px;border-radius:12px;overflow:hidden;margin-top:12px}
+.stages i{display:block;height:100%}
+.legend{display:flex;gap:12px;margin-top:8px;font-size:12px;color:var(--t2)}.legend i{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:5px}
+.sound{display:grid;gap:8px;text-align:left;padding:12px;border-radius:22px;background:var(--s1);box-shadow:0 0 0 1px var(--line);transition:box-shadow .2s,transform .35s var(--spring)}
+.sound .art{aspect-ratio:1;border-radius:16px;position:relative;overflow:hidden}
+.sound[aria-pressed=true]{box-shadow:0 0 0 2px var(--accent)}
+.sound[aria-pressed=true] .art::after{content:'';position:absolute;inset:0;background:radial-gradient(circle,rgba(255,255,255,.4),transparent 60%);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.3}}
+.sgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.player{position:absolute;left:12px;right:12px;bottom:100px;display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:20px;background:var(--ink);color:#fff;z-index:15;transform:translateY(260px);opacity:0;transition:transform .5s var(--spring),opacity .3s}
+.player.on{transform:none;opacity:1}
+.player .art{width:40px;height:40px;border-radius:12px;flex:none}
+.player small{display:block;opacity:.6;font-size:12px}
+.player button{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.14);display:grid;place-items:center;margin-left:auto}
+.entry{display:grid;gap:6px;padding:14px 16px;border-radius:20px;background:var(--s1);box-shadow:0 0 0 1px var(--line);text-align:left;width:100%}
+.entry small{color:var(--t3);font:500 11.5px var(--mono)}
+.mood{font-size:22px}
+.timerbig{font:400 74px/1 'Instrument Serif',serif;text-align:center;margin-top:18px;letter-spacing:-.02em}
+textarea{width:100%;min-height:150px;border:0;border-radius:18px;background:var(--s2);padding:14px;font:15px/1.5 var(--sans);color:var(--text);resize:none;outline:none}
+textarea:focus{box-shadow:0 0 0 2px var(--accent)}
 </style>
 </head>
 <body>
-
-<main class="phone" aria-label="Hush onboarding prototype">
-  <div class="island"></div>
-  <div class="status"><span>9:41</span><svg aria-hidden="true" width="66" height="12" viewBox="0 0 66 12"><g fill="#212229"><rect x="0" y="7" width="3" height="5" rx="1"/><rect x="5" y="5" width="3" height="7" rx="1"/><rect x="10" y="2.5" width="3" height="9.5" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/><rect x="40" y="0.5" width="22" height="11" rx="3.5" fill="none" stroke="#212229" opacity=".4"/><rect x="42" y="2.5" width="16" height="7" rx="2"/><rect x="63.5" y="4" width="1.5" height="4" rx=".7" opacity=".4"/></g><path d="M29 3.2a8 8 0 0 1 9.5 0M30.6 5.6a5 5 0 0 1 6.3 0M32.4 8a2 2 0 0 1 2.7 0" stroke="#212229" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg></div>
-  <div class="top">
-    <button class="backbtn" id="back" aria-label="Back"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m12 4-6 6 6 6"/></svg></button>
-    <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
-    <button class="skip" id="skip">Skip</button>
+<main class="stage">
+  <div class="phone" id="phone" aria-label="Hush prototype">
+    <div class="island"></div>
+    <div class="status" data-status></div>
+    <div class="app" id="app"></div>
+    <nav class="tabbar" id="tabbar" aria-label="Tabs"></nav>
+    <div class="player" id="player"><span class="art" id="pArt"></span><div><b id="pName">Rain on tin</b><small id="pTime">45 min timer</small></div><button id="pBtn" aria-label="Pause"></button></div>
+    <div class="ob" id="ob">
+      <div class="top"><button id="obBack" aria-label="Back" style="width:40px;height:40px;border-radius:50%;background:#fff;display:grid;place-items:center;opacity:0;transition:opacity .3s"></button><div class="dots"><i class="on"></i><i></i><i></i><i></i></div><button id="obSkip" style="font-size:14px;color:var(--t2);padding:8px">Skip</button></div>
+      <div class="steps">
+        <section class="step on"><div class="tint" style="flex:0 0 54%;display:grid;place-items:center"><div class="moon"></div><span style="position:absolute;bottom:16px;font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)" id="breath">Breathe in</span></div>
+          <h2 class="serif" style="margin-top:24px">Sleep is a skill.<br>Let’s practise it.</h2><p class="lead">Two questions, thirty seconds, and Hush builds tonight’s wind-down around you.</p><div style="flex:1"></div><button class="cta" data-next>Get started</button><button class="ghost">I already have an account · <b style="color:var(--accent)">Log in</b></button></section>
+        <section class="step"><h2 class="serif">When do you usually fall asleep?</h2><p class="lead">A starting point, not a grade.</p>
+          <div style="display:grid;gap:10px;margin-top:22px" id="bed">${0}</div><div style="flex:1"></div><button class="pillbtn" data-next disabled>Next</button></section>
+        <section class="step"><div class="tint" style="flex:0 0 40%;display:grid;place-items:center"><div id="wave" style="display:flex;align-items:center;gap:5px;height:110px"></div></div>
+          <h2 class="serif" style="margin-top:22px">How do you wake up most days?</h2><div class="chips" id="mood" style="margin-top:18px"><button aria-checked="false" data-v="groggy">Groggy</button><button aria-checked="false" data-v="okay">Okay</button><button aria-checked="false" data-v="rested">Rested</button></div><div style="flex:1"></div><button class="pillbtn" data-next disabled>Next</button></section>
+        <section class="step"><div class="tint" style="flex:0 0 46%;display:grid;place-items:center"><div class="ring"><svg viewBox="0 0 200 200"><circle class="track" cx="100" cy="100" r="88"/><circle class="fill" cx="100" cy="100" r="88" stroke-dasharray="553" stroke-dashoffset="553" id="obRing"/></svg><div><b id="obGoal">7h 30m</b><span>tonight’s goal</span></div></div></div>
+          <h2 class="serif" style="margin-top:22px">Your first plan is ready.</h2><div class="stats"><div><b id="obWind">22:15</b><small>Start winding down</small></div><div><b id="obLights">22:45</b><small>Lights out</small></div></div><div style="flex:1"></div><button class="cta" data-finish>Remind me at <span id="obRemind">22:15</span></button><button class="ghost" data-finish>Not now</button></section>
+      </div>
+    </div>
+    <div class="scrim" id="scrim"></div>
+    <section class="sheet" id="sheet" role="dialog" aria-modal="true"><div class="grab"></div><div id="sheetBody"></div></section>
+    <div class="toast" id="toast"></div>
   </div>
-
-  <div class="steps">
-    <section class="step on" aria-label="Welcome">
-      <div class="visual">
-        <span class="star" style="top:18%;left:20%"></span><span class="star" style="top:30%;left:78%;animation-delay:1s"></span><span class="star" style="top:70%;left:14%;animation-delay:2s"></span><span class="star" style="top:62%;left:84%;animation-delay:.5s"></span>
-        <div class="moon"></div>
-        <div class="breath" id="breath">Breathe in</div>
-      </div>
-      <h2>Sleep is a skill.<br>Let’s practise it.</h2>
-      <p class="lead">Two questions, thirty seconds, and Hush builds tonight’s wind-down around you.</p>
-      <div class="grow"></div>
-      <button class="cta" data-next>Get started</button>
-      <button class="ghost">I already have an account · <b>Log in</b></button>
-    </section>
-
-    <section class="step" aria-label="Bedtime">
-      <h2 style="margin-top:12px">When do you usually fall asleep?</h2>
-      <p class="lead">Be honest — this is a starting point, not a grade.</p>
-      <div class="opts" role="radiogroup" id="bed">
-        <button class="opt" role="radio" aria-checked="false" data-v="22:00"><span>Before 22:00<br><small>Early bird</small></span></button>
-        <button class="opt" role="radio" aria-checked="false" data-v="23:00"><span>22:00 – 23:00<br><small>Right on schedule</small></span></button>
-        <button class="opt" role="radio" aria-checked="false" data-v="00:00"><span>23:00 – 00:00<br><small>A little late</small></span></button>
-        <button class="opt" role="radio" aria-checked="false" data-v="01:00"><span>After midnight<br><small>Night owl</small></span></button>
-      </div>
-      <div class="grow"></div>
-      <button class="pill" data-next disabled>Next</button>
-    </section>
-
-    <section class="step" aria-label="Mornings">
-      <div class="visual" style="flex-basis:44%"><div class="wave" id="wave"></div></div>
-      <h2>How do you wake up most days?</h2>
-      <p class="lead">Select the closest match.</p>
-      <div class="chips" role="radiogroup" id="mood">
-        <button class="chip" role="radio" aria-checked="false" data-v="groggy">Groggy</button>
-        <button class="chip" role="radio" aria-checked="false" data-v="okay">Okay</button>
-        <button class="chip" role="radio" aria-checked="false" data-v="rested">Rested</button>
-      </div>
-      <div class="grow"></div>
-      <button class="pill" data-next disabled>Next</button>
-    </section>
-
-    <section class="step" aria-label="Your goal">
-      <div class="visual" style="flex-basis:46%">
-        <div class="ring" style="--p:.78"><svg viewBox="0 0 210 210"><circle class="track" cx="105" cy="105" r="95"/><circle class="fill" cx="105" cy="105" r="95"/></svg>
-          <div><b id="goal">7h 30m</b><span>tonight’s goal</span></div></div>
-      </div>
-      <h2>Your first plan is ready.</h2>
-      <div class="facts">
-        <div><b id="wind">22:15</b><small>Start winding down</small></div>
-        <div><b id="lights">22:45</b><small>Lights out</small></div>
-      </div>
-      <div class="grow"></div>
-      <button class="cta" data-next>Remind me at 22:15</button>
-      <button class="ghost" data-next>Not now</button>
-    </section>
-  </div>
-
-  <div class="done" id="done"><h2>Sleep well.</h2><p class="lead">That’s the whole flow.</p><button class="ghost" id="again"><b>Replay</b></button></div>
+  <aside class="notes">
+    <small class="k">Built with the uihall skill · complete app</small>
+    <h1>A calm sleep app, <em>from evidence.</em></h1>
+    <p>Onboarding hands off to a working app: tonight’s plan with a checkable routine and a live wind-down timer, a week of sleep insights with stages, a soundscape player with a sleep timer, and a journal you can write in. Answers in onboarding change the plan.</p>
+    <div class="refs">
+      <a href="../../#/a/VID-0236"><img src="../../assets/thumb/VID-0236.webp" alt=""><span>VID-0236<b>One question per step</b></span></a>
+      <a href="../../#/a/IMG-0618"><img src="../../assets/thumb/IMG-0618.webp" alt=""><span>IMG-0618<b>Visual top, serif headline</b></span></a>
+      <a href="../../#/a/VID-0173"><img src="../../assets/thumb/VID-0173.webp" alt=""><span>VID-0173<b>One dominant data visual</b></span></a>
+    </div>
+    <div class="sw"><i style="background:#F7F8F9" data-h="#F7F8F9"></i><i style="background:#C7E3F0" data-h="#C7E3F0"></i><i style="background:#88BDDD" data-h="#88BDDD"></i><i style="background:#4B758F" data-h="#4B758F"></i><i style="background:#212229" data-h=""></i></div>
+    <small class="k">Measured from VID-0236 · text 14.9:1 · accent-as-text nudged to #4B758F</small>
+    <ul class="checks">
+      <li>One promise per step; permission asked last, after value</li>
+      <li>Serif only ≥ 28px; Inter Tight for everything interactive</li>
+      <li>The ring is tonight’s hero; everything else supports it</li>
+      <li>Empty journal teaches; timers and players keep state across tabs</li>
+    </ul>
+    <div class="links"><a href="../">← All demos</a><a href="../../#/agents?tab=skill">Get the skill</a><a href="#" id="replay">Replay onboarding</a></div>
+  </aside>
 </main>
+<script type="module">
+import { $, el, icon, mountPhone, push, pop, setRoot, openSheet, closeSheet, toast, seg } from '../demo.js';
+const S = { lights: 22 * 60 + 45, mood: 'okay', done: new Set(), journal: JSON.parse(localStorage.getItem('hush-j') || '[]'), timer: null, left: 0, sound: null, playing: false };
+const fmt = (m) => `${String(Math.floor(((m % 1440) + 1440) % 1440 / 60)).padStart(2, '0')}:${String(((m % 60) + 60) % 60).padStart(2, '0')}`;
+const goalMin = () => ({ groggy: 480, okay: 465, rested: 450 })[S.mood];
+const goalTxt = () => `${Math.floor(goalMin() / 60)}h ${String(goalMin() % 60).padStart(2, '0')}m`;
 
-<aside class="notes">
-  <small>Built with the uihall skill · end to end</small>
-  <h1>A calm onboarding, <em>from evidence.</em></h1>
-  <p>Asked for “onboarding for a sleep-tracking app, calm, iOS”, the skill pulled a brief from UI Hall, looked at the three closest references, and took their <em>structure</em> — not their skin. Every colour below is measured, and every text pair was contrast-checked.</p>
-  <div class="refs">
-    <a href="../../#/a/VID-0236"><img src="../../assets/thumb/VID-0236.webp" alt=""><span>VID-0236<b>One question per step</b></span></a>
-    <a href="../../#/a/IMG-0618"><img src="../../assets/thumb/IMG-0618.webp" alt=""><span>IMG-0618<b>Visual top, serif headline</b></span></a>
-    <a href="../../#/a/VID-0173"><img src="../../assets/thumb/VID-0173.webp" alt=""><span>VID-0173<b>One dominant data visual</b></span></a>
-  </div>
-  <div class="sw">
-    <i style="background:#F7F8F9" data-h="#F7F8F9"></i><i style="background:#C7E3F0" data-h="#C7E3F0"></i><i style="background:#88BDDD" data-h="#88BDDD"></i><i style="background:#4B758F" data-h="#4B758F"></i><i style="background:#212229" data-h=""></i>
-  </div>
-  <small>Measured from VID-0236 · text 14.9:1 · accent-as-text nudged to #4B758F</small>
-  <ul class="checks">
-    <li>One promise per step, one primary action in the thumb zone</li>
-    <li>Progress shown, skippable, back available after step one</li>
-    <li>Reminder permission asked last — after showing value</li>
-    <li>Serif only ≥ 28px; Inter Tight for everything interactive</li>
-    <li>Reduced-motion fallback; 44pt targets throughout</li>
-  </ul>
-  <a class="back" href="../">← All demos</a> &nbsp; <a class="back" href="../../#/agents?tab=skill">Get the skill →</a>
-</aside>
+/* ---------------------------------------------------------- onboarding -- */
+const LIGHTS = { '22:00': 21 * 60 + 45, '23:00': 22 * 60 + 30, '00:00': 23 * 60, '01:00': 23 * 60 + 30 };
+$('#bed').innerHTML = [['22:00', 'Before 22:00', 'Early bird'], ['23:00', '22:00 – 23:00', 'Right on schedule'], ['00:00', '23:00 – 00:00', 'A little late'], ['01:00', 'After midnight', 'Night owl']].map(([v, t, s]) => `<button class="opt" role="radio" aria-checked="false" data-v="${v}"><span>${t}<small>${s}</small></span></button>`).join('');
+const steps = [...document.querySelectorAll('.step')], dots = [...document.querySelectorAll('.dots i')];
+let si = 0;
+const show = (n) => { si = Math.max(0, Math.min(3, n)); steps.forEach((s, k) => { s.classList.toggle('on', k === si); s.classList.toggle('past', k < si); }); dots.forEach((d, k) => d.classList.toggle('on', k <= si)); $('#obBack').style.opacity = si ? 1 : 0; if (si === 3) setTimeout(() => { $('#obRing').style.strokeDashoffset = 553 - 553 * ({ groggy: .66, okay: .72, rested: .78 })[S.mood]; }, 200); };
+$('#obBack').innerHTML = icon.back;
+$('#ob').addEventListener('click', (e) => {
+  if (e.target.closest('[data-next]')) show(si + 1);
+  if (e.target.closest('[data-finish]')) finish(e.target.closest('.cta') !== null);
+  const o = e.target.closest('#bed .opt'); if (o) { $('#bed').querySelectorAll('.opt').forEach((x) => x.setAttribute('aria-checked', x === o)); S.lights = LIGHTS[o.dataset.v]; steps[1].querySelector('.pillbtn').disabled = false; plan(); }
+  const m = e.target.closest('#mood button'); if (m) { $('#mood').querySelectorAll('button').forEach((x) => x.setAttribute('aria-checked', x === m)); S.mood = m.dataset.v; steps[2].querySelector('.pillbtn').disabled = false; wave(); plan(); }
+});
+$('#obBack').onclick = () => show(si - 1);
+$('#obSkip').onclick = () => show(3);
+const plan = () => { $('#obWind').textContent = fmt(S.lights - 30); $('#obLights').textContent = fmt(S.lights); $('#obRemind').textContent = fmt(S.lights - 30); $('#obGoal').textContent = goalTxt(); };
+const W = $('#wave'); W.innerHTML = Array.from({ length: 22 }, () => '<i style="display:block;width:6px;border-radius:6px;background:rgba(255,255,255,.85);height:20px;transition:height .7s var(--spring)"></i>').join('');
+const shape = { groggy: (k) => 14 + Math.abs(Math.sin(k * 1.7)) * 26, okay: (k) => 24 + Math.sin(k / 3) * 24 + 24, rested: (k) => 30 + Math.sin(k / 22 * Math.PI) * 70 };
+const wave = () => [...W.children].forEach((b, k) => { b.style.height = `${shape[S.mood](k)}px`; });
+setInterval(() => { if (!$('#mood [aria-checked=true]')) [...W.children].forEach((b) => { b.style.height = `${12 + Math.random() * 50}px`; }); }, 900);
+let tick = 0; setInterval(() => { tick++; $('#breath').textContent = tick % 2 ? 'Breathe out' : 'Breathe in'; }, 3000);
+function finish(remind) { $('#ob').classList.add('gone'); localStorage.setItem('hush-ob', '1'); tab('tonight'); if (remind) setTimeout(() => toast(`Reminder set for ${fmt(S.lights - 30)}`), 600); }
+$('#replay').onclick = (e) => { e.preventDefault(); $('#ob').classList.remove('gone'); show(0); };
+plan();
 
-<script>
-const steps=[...document.querySelectorAll('.step')],dots=[...document.querySelectorAll('.dots i')];
-let i=0;const ans={};
-function show(n){i=Math.max(0,Math.min(n,steps.length));
-  if(i===steps.length){document.getElementById('done').classList.add('on');return}
-  steps.forEach((s,k)=>{s.classList.toggle('on',k===i);s.classList.toggle('past',k<i)});
-  dots.forEach((d,k)=>d.classList.toggle('on',k<=i));
-  document.getElementById('back').classList.toggle('on',i>0)}
-document.addEventListener('click',e=>{if(e.target.closest('[data-next]'))show(i+1)});
-document.getElementById('back').onclick=()=>show(i-1);
-document.getElementById('skip').onclick=()=>show(3);
-document.getElementById('again').onclick=()=>{document.getElementById('done').classList.remove('on');show(0)};
-function radio(id,cb){const g=document.getElementById(id);g.addEventListener('click',e=>{const b=e.target.closest('[role=radio]');if(!b)return;
-  g.querySelectorAll('[role=radio]').forEach(x=>x.setAttribute('aria-checked',x===b));g.closest('.step').querySelector('.pill').disabled=false;cb(b.dataset.v)})}
-const fmt=m=>{m=(m+1440)%1440;return String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0')};
-// Lights-out target: keep their rhythm, nudge night owls 30–60 min earlier.
-const LIGHTS={'22:00':21*60+45,'23:00':22*60+30,'00:00':23*60,'01:00':23*60+30};
-radio('bed',v=>{const lights=LIGHTS[v];ans.lights=lights;
-  document.getElementById('lights').textContent=fmt(lights);document.getElementById('wind').textContent=fmt(lights-30);
-  document.querySelector('.step:nth-child(4) .cta').textContent='Remind me at '+fmt(lights-30)});
-const wave=document.getElementById('wave');const N=22;wave.innerHTML=Array.from({length:N},()=>'<i style="--h:20"></i>').join('');
-const shape={groggy:k=>14+Math.abs(Math.sin(k*1.7))*26,okay:k=>24+Math.sin(k/3)*24+24,rested:k=>30+Math.sin(k/N*Math.PI)*70};
-radio('mood',v=>{[...wave.children].forEach((b,k)=>b.style.setProperty('--h',shape[v](k)));
-  document.getElementById('goal').textContent=v==='groggy'?'8h 00m':v==='okay'?'7h 45m':'7h 30m';
-  document.querySelector('.ring').style.setProperty('--p',v==='groggy'?.66:v==='okay'?.72:.78)});
-let tick=0;setInterval(()=>{tick++;document.getElementById('breath').textContent=tick%2?'Breathe out':'Breathe in'},3000);
-setInterval(()=>{if(!document.querySelector('#mood [aria-checked=true]'))[...wave.children].forEach((b,k)=>b.style.setProperty('--h',12+Math.random()*50))},900);
+/* ---------------------------------------------------------------- views -- */
+const ROUTINE = [['No screens', 'Phone on the charger, out of reach', 30], ['Dim the lights', 'Warm lamps only', 25], ['Stretch', '5 slow minutes', 20], ['Read', 'Paper, not a screen', 15], ['Breathing', '4-7-8, four rounds', 5]];
+const views = {
+  tonight() {
+    const pct = S.done.size / ROUTINE.length;
+    return el(`<div class="view">
+      <div class="hd"><div><small style="color:var(--t2)">Thursday · tonight</small><h2 class="serif" style="font-size:30px">Wind down at ${fmt(S.lights - 30)}</h2></div><button class="ibtn" data-act="settings" aria-label="Settings" style="width:40px;height:40px;border-radius:50%;background:#fff;display:grid;place-items:center">${icon.moon}</button></div>
+      <div class="tint" style="margin-top:16px;padding:22px 0"><div class="ring"><svg viewBox="0 0 200 200"><circle class="track" cx="100" cy="100" r="88"/><circle class="fill" cx="100" cy="100" r="88" stroke-dasharray="553" stroke-dashoffset="553" data-ring="${pct}"/></svg><div><b>${S.done.size}/${ROUTINE.length}</b><span>routine done</span></div></div>
+        <div style="display:flex;justify-content:center;gap:28px;margin-top:10px;font-size:13px;color:var(--t2)"><span>Lights out <b style="color:var(--text)">${fmt(S.lights)}</b></span><span>Goal <b style="color:var(--text)">${goalTxt()}</b></span></div></div>
+      <button class="cta" style="margin-top:14px" data-act="timer">${S.timer ? 'Wind-down running · ' + Math.ceil(S.left / 60) + ' min left' : 'Start 30-min wind-down'}</button>
+      <div class="sec" style="display:flex;justify-content:space-between;margin:20px 2px 10px"><b style="font-size:17px">Tonight’s routine</b><small style="color:var(--t2)">tap to check</small></div>
+      <div class="routine">${ROUTINE.map(([t, s, m], i) => `<button class="ritem" data-ri="${i}" aria-checked="${S.done.has(i)}"><span class="ck">${S.done.has(i) ? icon.check : ''}</span><span><b>${t}</b><small>${s}</small></span><em>−${m} min</em></button>`).join('')}</div>
+    </div>`, (v) => {
+      requestAnimationFrame(() => requestAnimationFrame(() => { const r = v.querySelector('[data-ring]'); r.style.strokeDashoffset = 553 - 553 * +r.dataset.ring; }));
+      v.addEventListener('click', (e) => { const r = e.target.closest('[data-ri]'); if (!r) return; const i = +r.dataset.ri; S.done.has(i) ? S.done.delete(i) : S.done.add(i); if (S.done.size === ROUTINE.length) toast('Routine complete — sleep well'); setRoot(views.tonight(), false); });
+    });
+  },
+  sleep() {
+    const days = [['M', 7.2, 82], ['T', 6.1, 64], ['W', 7.8, 88], ['T', 6.9, 76], ['F', 5.6, 58], ['S', 8.3, 91], ['S', 7.5, 85]];
+    return el(`<div class="view"><div class="hd"><h2 class="serif">Sleep</h2><div class="seg" data-seg style="width:150px;background:var(--s2);border-radius:12px;padding:3px;display:flex;position:relative"><button aria-pressed="true" data-v="w" style="flex:1;height:30px;border-radius:9px;font-size:13px;position:relative;z-index:1">Week</button><button aria-pressed="false" data-v="m" style="flex:1;height:30px;border-radius:9px;font-size:13px;position:relative;z-index:1">Month</button></div></div>
+      <div class="card" style="margin-top:14px"><div style="display:flex;justify-content:space-between;align-items:baseline"><span><small style="color:var(--t2)">Average score</small><br><b data-avg style="font:400 46px/1 'Instrument Serif',serif">78</b></span><small style="color:var(--accent);font-weight:600">▲ 6 vs last week</small></div>
+        <div class="week" data-week>${days.map(([d, h, s], k) => `<div><i class="${k === 5 ? 'on' : ''}" style="--k:${k};height:${s}%" title="${h}h · score ${s}"></i><span>${d}</span></div>`).join('')}</div></div>
+      <div class="card" style="margin-top:12px"><b>Last night · Saturday</b><div class="stages"><i style="width:9%;background:#E5B94E"></i><i style="width:46%;background:var(--fill)"></i><i style="width:24%;background:var(--accent)"></i><i style="width:21%;background:#2E4A5C"></i></div>
+        <div class="legend"><span><i style="background:#E5B94E"></i>Awake</span><span><i style="background:var(--fill)"></i>Light</span><span><i style="background:var(--accent)"></i>Deep</span><span><i style="background:#2E4A5C"></i>REM</span></div></div>
+      <div class="stats"><div><b>8h 18m</b><small>Time asleep</small></div><div><b>12 min</b><small>To fall asleep</small></div><div><b>91</b><small>Sleep score</small></div><div><b>54 bpm</b><small>Resting HR</small></div></div>
+      <div class="card" style="margin-top:12px;display:flex;gap:12px;align-items:center"><span style="width:40px;height:40px;border-radius:12px;background:var(--sky);display:grid;place-items:center;color:var(--accent)">${icon.sun}</span><span style="flex:1"><b>Insight</b><small style="display:block;color:var(--t2)">You sleep 41 min longer on nights you finish the routine.</small></span></div>
+    </div>`, (v) => {
+      seg(v.querySelector('[data-seg]'), (m) => { v.querySelector('[data-avg]').textContent = m === 'm' ? '74' : '78'; const ws = v.querySelectorAll('[data-week] i'); ws.forEach((x, k) => { x.style.animation = 'none'; void x.offsetWidth; x.style.animation = ''; x.style.height = `${m === 'm' ? 55 + (k * 13) % 40 : [82, 64, 88, 76, 58, 91, 85][k]}%`; }); });
+    });
+  },
+  sounds() {
+    const SND = [['Rain on tin', 'linear-gradient(135deg,#88BDDD,#2E4A5C)'], ['Night train', 'linear-gradient(135deg,#4B758F,#16171C)'], ['Ocean, far', 'linear-gradient(135deg,#C7E3F0,#4B758F)'], ['Brown noise', 'linear-gradient(135deg,#B9A58B,#5C4A3A)'], ['Forest, 3 am', 'linear-gradient(135deg,#8FB89A,#2C4A3A)'], ['Fan, low', 'linear-gradient(135deg,#DCE6EE,#8C96A2)']];
+    return el(`<div class="view"><div class="hd"><h2 class="serif">Sounds</h2></div><p class="lead">Fade out with a sleep timer — the player follows you across tabs.</p>
+      <div class="chips" data-tm style="justify-content:flex-start;margin-top:14px">${[15, 30, 45, 60].map((m) => `<button aria-pressed="${m === 45}" data-m="${m}" style="height:36px;padding:0 14px">${m} min</button>`).join('')}</div>
+      <div class="sgrid">${SND.map(([n, g], i) => `<button class="sound" data-snd="${i}" aria-pressed="${S.sound === i}"><span class="art" style="background:${g}"></span><b style="font-size:14px">${n}</b></button>`).join('')}</div></div>`, (v) => {
+      let mins = 45;
+      v.querySelector('[data-tm]').addEventListener('click', (e) => { const b = e.target.closest('[data-m]'); if (!b) return; mins = +b.dataset.m; v.querySelectorAll('[data-tm] button').forEach((x) => x.setAttribute('aria-pressed', x === b)); if (S.sound !== null) $('#pTime').textContent = `${mins} min timer`; });
+      v.addEventListener('click', (e) => { const b = e.target.closest('[data-snd]'); if (!b) return; const i = +b.dataset.snd; S.sound = i; S.playing = true; v.querySelectorAll('[data-snd]').forEach((x) => x.setAttribute('aria-pressed', x === b)); $('#pName').textContent = SND[i][0]; $('#pArt').style.background = SND[i][1]; $('#pTime').textContent = `${mins} min timer`; $('#pBtn').innerHTML = icon.pause; $('#player').classList.add('on'); });
+    });
+  },
+  journal() {
+    return el(`<div class="view"><div class="hd"><h2 class="serif">Journal</h2><button class="ibtn" data-act="write" aria-label="New entry" style="width:40px;height:40px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center">${icon.plus}</button></div>
+      ${S.journal.length ? `<div style="display:grid;gap:10px;margin-top:14px">${S.journal.map((j) => `<div class="entry"><small>${j.d} · <span class="mood">${j.m}</span></small><span>${j.t.replace(/</g, '&lt;')}</span></div>`).join('')}</div>`
+        : `<div class="tint" style="margin-top:16px;padding:26px 20px;text-align:center"><div style="font-size:40px">🌙</div><b style="display:block;font-size:17px;margin-top:6px">Clear your head before bed</b><p class="lead">Two lines about today help you let it go. Entries stay on this device.</p><button class="cta" data-act="write" style="margin-top:16px">Write tonight’s entry</button></div>`}
+    </div>`);
+  },
+};
+function writeSheet() {
+  let mood = '😌';
+  openSheet(`<h4>Tonight</h4><div class="chips" style="margin:14px 0" data-moods>${['😌', '🙂', '😐', '😟', '😴'].map((m, i) => `<button aria-pressed="${i === 0}" data-m="${m}" style="font-size:20px;height:46px;width:52px;padding:0">${m}</button>`).join('')}</div>
+    <textarea id="jt" placeholder="What’s on your mind?"></textarea><button class="cta" id="js" style="margin-top:12px" disabled>Save entry</button>`, (s) => {
+    const t = s.querySelector('#jt'); setTimeout(() => t.focus(), 400);
+    t.oninput = () => { s.querySelector('#js').disabled = !t.value.trim(); };
+    s.querySelector('[data-moods]').onclick = (e) => { const b = e.target.closest('[data-m]'); if (!b) return; mood = b.dataset.m; s.querySelectorAll('[data-m]').forEach((x) => x.setAttribute('aria-pressed', x === b)); };
+    s.querySelector('#js').onclick = () => { S.journal.unshift({ d: new Date().toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' }), m: mood, t: t.value.trim() }); localStorage.setItem('hush-j', JSON.stringify(S.journal.slice(0, 20))); closeSheet(); toast('Saved — sleep well'); tab('journal'); };
+  });
+}
+function timerView() {
+  if (!S.timer) { S.left = 30 * 60; S.timer = setInterval(() => { S.left = Math.max(0, S.left - 1); const el_ = document.querySelector('[data-left]'); if (el_) el_.textContent = `${String(Math.floor(S.left / 60)).padStart(2, '0')}:${String(S.left % 60).padStart(2, '0')}`; if (!S.left) { clearInterval(S.timer); S.timer = null; toast('Lights out — goodnight'); } }, 1000); }
+  return el(`<div class="view" style="background:linear-gradient(180deg,#DCEEF7,#F7F8F9 60%)"><div class="hd"><button class="ibtn" data-back aria-label="Back" style="width:40px;height:40px;border-radius:50%;background:#fff;display:grid;place-items:center">${icon.back}</button><b>Wind-down</b><span style="width:40px"></span></div>
+    <div style="display:grid;place-items:center;margin-top:36px"><div class="moon" style="width:170px;height:170px"></div></div>
+    <div class="timerbig num" data-left>30:00</div><p class="lead" style="text-align:center">Breathe with the moon. Lights out at ${fmt(S.lights)}.</p>
+    <div style="display:grid;gap:8px;margin-top:30px"><button class="cta" data-act="stoptimer">End wind-down</button><button class="ghost" data-tab="sounds">Add a soundscape</button></div></div>`);
+}
+
+/* ----------------------------------------------------------------- wire -- */
+let cur = 'tonight';
+function tab(n) { cur = n; setRoot(views[n]()); document.querySelectorAll('#tabbar button').forEach((b) => b.setAttribute('aria-current', b.dataset.tab === n)); }
+mountPhone({
+  tabs: [['tonight', 'Tonight', 'moon'], ['sleep', 'Sleep', 'chart'], ['sounds', 'Sounds', 'play'], ['journal', 'Journal', 'book']],
+  onTab: tab,
+  onAction(a) {
+    if (a === 'timer') push(timerView());
+    if (a === 'stoptimer') { clearInterval(S.timer); S.timer = null; pop(); setTimeout(() => setRoot(views.tonight(), false), 450); toast('Wind-down ended'); }
+    if (a === 'write') writeSheet();
+    if (a === 'settings') toast(`Lights out ${fmt(S.lights)} · goal ${goalTxt()}`);
+  },
+});
+$('#pBtn').innerHTML = icon.pause;
+$('#pBtn').onclick = () => { S.playing = !S.playing; $('#pBtn').innerHTML = S.playing ? icon.pause : icon.play; toast(S.playing ? 'Playing' : 'Paused'); };
+tab('tonight');
+if (localStorage.getItem('hush-ob')) $('#ob').classList.add('gone');
 </script>
 </body>
 </html>
