@@ -87,7 +87,7 @@ export default function home(root, app) {
       <p class="lede">Every original is a real, live screen from one kit. Flip a toggle, pick a chip, then switch the palette — the whole system re-skins in place.</p>
     </div>
     <div class="lp-orig__frame" data-reveal>
-      <iframe title="Live original — controls" src="originals/screens/components-controls.html?theme=ember&embed=1" loading="lazy"></iframe>
+      <iframe title="Live original" src="originals/screens/${innerWidth < 760 ? 'settings-grouped' : 'components-controls'}.html?theme=ember&embed=1" loading="lazy"></iframe>
       <div class="lp-orig__themes" id="lpLiveThemes" role="group" aria-label="Theme">${themes.map((x, i) => `<button type="button" data-v="${x}" aria-pressed="${i === 0}"><i class="lp-sw lp-sw--${x}"></i>${x[0].toUpperCase() + x.slice(1)}</button>`).join('')}</div>
     </div>
   </section>
