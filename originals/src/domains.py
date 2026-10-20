@@ -183,7 +183,7 @@ D = [
   profile=('Omar Haddad', '@omar · Rider since 2021', [('18', 'Rides'), ('4.94', 'Rating'), ('12 kg', 'CO₂ saved')]),
   checkout=('Confirm ride', [('Pickup', 'Rua da Saudade 12'), ('Drop-off', 'Airport · T1'), ('Comfort', '€18.40'), ('Arrives', '7:58 AM')], '€18.40', 'Confirm Comfort'),
   settings=[('Rides', [('Quiet mode', 1), ('Share trip status', 1), ('Child seat', 0)]), ('Payments', [('Business profile', 0), ('Auto-tip 10%', 0)])],
-  plans=[('Pay as you go', '€0', ['Upfront prices', 'Ride history', 'Support']), ('Glide+', '€6', ['5% back', 'No surge on airport', 'Priority']), ('Business', '€0', ['Monthly invoice', 'Policies', 'Admin'])]),
+  plans=[('Pay as you go', '€0', ['Upfront prices', 'Ride history', 'Support']), ('Glide+', '€6', ['5% back', 'No surge on airport', 'Priority']), ('Business', '€15', ['Monthly invoice', 'Policies', 'Admin'])]),
 
  dict(key='plants', app='Fern', noun='plant', area='plant care', icon='leaf',
   hero=('Today', '3 to water', '', 'Monstera, Pothos, Fiddle leaf'), chart=[3, 1, 2, 4, 0, 2, 3], chart_label='Waterings this week',
