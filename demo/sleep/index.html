@@ -229,7 +229,9 @@ document.getElementById('again').onclick=()=>{document.getElementById('done').cl
 function radio(id,cb){const g=document.getElementById(id);g.addEventListener('click',e=>{const b=e.target.closest('[role=radio]');if(!b)return;
   g.querySelectorAll('[role=radio]').forEach(x=>x.setAttribute('aria-checked',x===b));g.closest('.step').querySelector('.pill').disabled=false;cb(b.dataset.v)})}
 const fmt=m=>{m=(m+1440)%1440;return String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0')};
-radio('bed',v=>{const [h]=v.split(':').map(Number);const lights=(h===0?24:h)*60-45-(h>=24||h===0||h===1?30:0);ans.lights=lights;
+// Lights-out target: keep their rhythm, nudge night owls 30–60 min earlier.
+const LIGHTS={'22:00':21*60+45,'23:00':22*60+30,'00:00':23*60,'01:00':23*60+30};
+radio('bed',v=>{const lights=LIGHTS[v];ans.lights=lights;
   document.getElementById('lights').textContent=fmt(lights);document.getElementById('wind').textContent=fmt(lights-30);
   document.querySelector('.step:nth-child(4) .cta').textContent='Remind me at '+fmt(lights-30)});
 const wave=document.getElementById('wave');const N=22;wave.innerHTML=Array.from({length:N},()=>'<i style="--h:20"></i>').join('');

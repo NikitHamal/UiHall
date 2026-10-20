@@ -25,6 +25,7 @@ agent actually look at them before it writes code.
 | **The MCP server** (`mcp/`) | `uihall-mcp` — 12 design tools for Claude Code, Cursor, VS Code, Codex, Claude Desktop or anything that speaks MCP. One file, zero dependencies, no API key. |
 | **The skill** (`skills/uihall/`) | Tells the agent *when* and *how* to use the corpus: brief → look → steal structure → measured colour → checklist. Works with or without MCP (bundled CLI). |
 | **The plugin** (`plugin/`) | Skill + MCP in one Claude Code install. |
+| **The showcase** (`demo/sleep/`) | [Hush](https://nikithamal.github.io/UiHall/demo/sleep/) — an onboarding prototype built by following the skill end to end, citing its references and measured palette. |
 
 ## Install
 
