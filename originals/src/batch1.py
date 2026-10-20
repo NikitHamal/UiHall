@@ -53,7 +53,7 @@ screen('finance-home', dict(viewport='phone', title='Money home with hero balanc
 # 4 paywall --------------------------------------------------------------------
 screen('paywall-plans', dict(viewport='phone', title='Paywall with anchored yearly plan', category='mobile-app-ui', type='screen', roles=['pricing','checkout'],
   style=['bold-typography','rounded'], tags=['paywall','subscription','plans','cta-button','checklist'],
-  desc='A subscription paywall. A close button and "Go Pro" headline sit over a four-line checklist of benefits. Two plan cards follow: "Yearly" is anchored with an accent ring, a "Save 40%" tag, $59.99/year and the computed $5.00/month; "Monthly" at $8.99 is plain. A primary "Start 7-day free trial" button states the consequence, with "Cancel anytime · Restore purchase" beneath. Built on {words}. Idea: anchor one plan and show the saving as a number, not an adjective.'),
+  desc='A subscription paywall. A close button and "Go Pro" headline sit over a four-line checklist of benefits. Two plan cards follow: "Yearly" is anchored with an accent ring, a "Save 40%" tag, $59.99/year and the computed $5.00/month; "Monthly" at $8.99 is plain. A tinted five-star quote from a long-streak user adds proof. A primary "Start 7-day free trial" button states the consequence, with "Cancel anytime · Restore purchase" beneath. Built on {words}. Idea: anchor one plan and show the saving as a number, not an adjective.'),
   '''<div class="row"><div class="ico" style="width:36px;height:36px;border-radius:50%">✕</div></div>
   <span class="eyebrow" style="margin-top:22px">Pro</span><h1 class="d1" style="margin-top:8px">Go further with <em>Pro.</em></h1>
   <div class="col g12" style="margin:20px 0 22px">'''+''.join(f'<div class="row"><span class="ico a" style="width:24px;height:24px;border-radius:50%">{ic("check")}</span><span>{t}</span></div>' for t in ['Unlimited habits and reminders','Insights that spot your best days','Sync across phone, watch and web','Themes and custom app icons'])+'''</div>
@@ -61,6 +61,7 @@ screen('paywall-plans', dict(viewport='phone', title='Paywall with anchored year
    <div class="card" style="box-shadow:inset 0 0 0 2px var(--accent)"><div class="row"><span class="ico a" style="width:22px;height:22px;border-radius:50%">'''+ic('check')+'''</span><b class="h3">Yearly</b><span class="tag">Save 40%</span><div class="sp"></div><div class="col" style="align-items:flex-end"><b class="num">$59.99/yr</b><span class="small num">$5.00 / month</span></div></div></div>
    <div class="card"><div class="row"><span style="width:22px;height:22px;border-radius:50%;box-shadow:inset 0 0 0 1.5px var(--line)"></span><b class="h3">Monthly</b><div class="sp"></div><b class="num">$8.99/mo</b></div></div>
   </div>
+  <div class="tint" style="margin-top:18px;padding:14px 16px"><span style="color:var(--accent-text,var(--accent));letter-spacing:2px;font-size:13px">★★★★★</span><p style="margin-top:6px;font-size:14.5px;line-height:1.45">“The first habit app that nudges instead of nags. Pro paid for itself in a week.”</p><span class="small" style="display:block;margin-top:6px">Priya · 212-day streak</span></div>
   <div class="sp"></div>
   <button class="btn btn-p">Start 7-day free trial</button>
   <p class="small" style="text-align:center;margin-top:12px">Cancel anytime · Restore purchase</p>''')
@@ -68,13 +69,13 @@ screen('paywall-plans', dict(viewport='phone', title='Paywall with anchored year
 # 5 settings ------------------------------------------------------------------
 screen('settings-grouped', dict(viewport='phone', title='Grouped settings with toggles', category='mobile-app-ui', type='screen', roles=['settings','profile'],
   style=['minimal','card-based'], tags=['settings','toggle','list-row','avatar','account'],
-  desc='A settings screen in grouped cards. A profile row with avatar, name, email and chevron leads; a "Notifications" group holds three rows with toggles (two on), an "Appearance" group shows Theme and App icon values, and a "Privacy" group has Face ID and Data export rows. A red "Sign out" sits alone at the bottom. Built on {words}. Idea: section headers and grouped rows; toggles apply instantly and destructive actions live last.'),
+  desc='A settings screen in grouped cards. A profile row with avatar, name, email and chevron leads; a "Notifications" group holds three rows with toggles (two on), an "Appearance" group shows Theme and App icon values, a "Privacy" group has Face ID and Export my data rows. A red "Sign out" sits alone at the bottom. Built on {words}. Idea: section headers and grouped rows; toggles apply instantly and destructive actions live last.'),
   '''<div class="row"><div class="ico" style="width:36px;height:36px;border-radius:50%">'''+ic('back')+'''</div><b class="h3" style="margin:auto">Settings</b><span style="width:36px"></span></div>
   <div class="card row" style="margin-top:18px"><div class="av"></div><div class="col"><b>Maya Lin</b><span class="small">maya@northwind.co</span></div><div class="sp"></div>'''+ic('chev')+'''</div>
   '''+''.join(f'<span class="eyebrow" style="margin:20px 6px 8px">{g}</span><div class="card" style="padding:4px 16px"><div class="list">'+''.join(f'<div class="li"><div class="ico" style="width:32px;height:32px;border-radius:9px">{ic(k)}</div><span>{l}</span><div class="sp"></div>{r}</div>' for k,l,r in rows)+'</div></div>' for g,rows in [
    ('Notifications',[('bell','Daily reminder','<i class="toggle on"></i>'),('star','Streak milestones','<i class="toggle on"></i>'),('mail','Weekly summary email','<i class="toggle"></i>')]),
    ('Appearance',[('moon','Theme','<span class="small">System</span>'+ic('chev')),('grid','App icon','<span class="small">Classic</span>'+ic('chev'))]),
-   ('Privacy',[('lock','Face ID lock','<i class="toggle on"></i>')])])+'''
+   ('Privacy',[('lock','Face ID lock','<i class="toggle on"></i>'),('doc','Export my data','<span class="small">CSV</span>'+ic('chev'))])])+'''
   <div class="sp"></div><button class="btn" style="color:#E5625A">Sign out</button>''')
 
 # 6 chat ----------------------------------------------------------------------
