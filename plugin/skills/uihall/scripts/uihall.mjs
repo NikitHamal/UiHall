@@ -326,6 +326,30 @@ const PATTERNS = [
     build: ['Same crop, same device, same content in both states.', 'Label each side; call out the 2–3 changes that matter.', 'Put the improved version on the right.'],
     match: (a) => a.category === 'before-after' || tag(a, 'before-after', 'redesign'),
   },
+  {
+    slug: 'grouped-settings', name: 'Grouped settings, instant toggles', min: 6,
+    why: 'Preferences split into small labelled groups of rows, each change applied the moment it is made. Scannable, forgiving, and nothing to save.',
+    build: ['Account row first; 2–4 rows per group under a small-caps header.', 'Toggles apply instantly — no Save button; values (System, Classic) sit right-aligned with a chevron.', 'Destructive actions last, alone, in red text rather than a red fill.'],
+    match: (a) => role(a, 'settings') || tag(a, 'settings'),
+  },
+  {
+    slug: 'success-receipt', name: 'Celebrate, then itemise', min: 6,
+    why: 'A brief, confident success moment followed immediately by exactly what happened — the receipt is what actually reassures.',
+    build: ['One large check in the accent with a soft halo; headline under 3 words.', 'Itemised card: 3–4 lines and a bold total, tabular numerals.', 'One primary "Done", one quiet secondary (share, add to calendar).'],
+    match: (a) => tag(a, 'success', 'receipt'),
+  },
+  {
+    slug: 'week-strip', name: 'Week strip over a day timeline', min: 6,
+    why: 'A compact row of days picks the date; a time rail below lays out that day. Both scales in one view, no month grid needed.',
+    build: ['Seven equal day cells; selected day filled with the accent, today marked with a dot.', 'Times in a fixed 44–56px left rail, tabular numerals.', 'Highlight the current or next block; everything else stays neutral.'],
+    match: (a) => tag(a, 'week-strip') && tag(a, 'timeline', 'schedule', 'calendar'),
+  },
+  {
+    slug: 'search-before-typing', name: 'Search that helps before you type', min: 6,
+    why: 'A focused field with recents, scopes and top results already showing — the screen is useful at zero characters.',
+    build: ['Field focused with a clear button; scopes as a chip row directly below.', 'Recent searches as small pills; top results as full rows with a trailing value.', 'Group results under small-caps labels; never an empty white page.'],
+    match: (a) => role(a, 'search') && tag(a, 'chips'),
+  },
 ];
 
 function matchPatterns(assets) {
@@ -404,6 +428,8 @@ const FIELDS = [
 
 /* -------------------------------------------------------------- engine -- */
 
+const GENERIC = new Set(['for', 'a', 'an', 'the', 'and', 'with', 'of', 'to', 'in', 'on', 'my', 'our', 'that', 'this', 'as', 'or', 'app', 'apps', 'application', 'screen', 'screens', 'page', 'pages', 'ui', 'ux', 'design', 'view', 'website', 'site', 'mobile', 'web', 'ios', 'android']);
+
 class UiHall {
   constructor(corpus, { site = SITE } = {}) {
     this.corpus = corpus;
@@ -415,10 +441,18 @@ class UiHall {
     this.#index();
   }
 
+  /** Colour roles for an asset (or one of its themes): an original's real kit tokens, else roles inferred from the measured palette. */
+  rolesOf(a, theme) {
+    const th = theme && a.variants?.[theme] ? theme : a.themes?.[0];
+    const known = th && this.corpus.themes?.[th]?.roles;
+    if (known) return { ...known };
+    return paletteRoles(((theme && a.variants?.[theme]?.palette_detail) || a.palette_detail || []).filter((p) => normHex(p.hex)));
+  }
+
   /* derived per-asset facts, computed once */
   #derive(a) {
     const det = (a.palette_detail || []).filter((p) => normHex(p.hex));
-    const roles = paletteRoles(det);
+    const roles = this.rolesOf(a);
     const L = det.reduce((s, p) => s + toOklch(p.hex)[0] * p.pct, 0) / (det.reduce((s, p) => s + p.pct, 0) || 1);
     const hues = [...new Set(det.filter((p) => p.pct >= 4 && toOklch(p.hex)[1] >= 0.06).map((p) => hueFamily(p.hex)))];
     return {
@@ -636,7 +670,8 @@ class UiHall {
     let hits = new Map();
     if (about.trim()) {
       hits = new Map(this.search({ query: about, limit: 300 }).results.map((r) => [r.asset.id, r.score]));
-      const words = tokenize(about).map(stem);
+      // generic words ('app', 'screen') would tie every pattern to every query
+      const words = tokenize(about).filter((w) => !GENERIC.has(w)).map(stem);
       ranked = all.map((p) => {
         // mean of the best five matches, so a pattern with 300 loose examples can't outrank a specific one
         const evid = p.evidence.map((a) => hits.get(a.id) || 0).sort((x, y) => y - x).slice(0, 5).reduce((s, v) => s + v, 0);
@@ -664,14 +699,18 @@ class UiHall {
     const picks = [];
     const cands = [];
     for (const a of pool) {
-      cands.push([a, a._d.roles]);
-      for (const [th, v] of Object.entries(a.variants || {})) if (v.palette_detail && th !== a.themes?.[0]) cands.push([{ ...a, id: a.id, theme: th }, paletteRoles(v.palette_detail)]);
+      cands.push([a, a._d.roles, a.themes?.[0]]);
+      for (const th of (a.themes || []).slice(1)) cands.push([a, this.rolesOf(a, th), th]);
     }
-    for (const [a, r] of cands) {
-      if (!r || !r.accent) continue;
-      if (picks.some((p) => deltaE(p.roles.accent, r.accent) < 0.06 && deltaE(p.roles.background, r.background) < 0.06)) continue;
-      picks.push({ asset: a, roles: r });
-      if (picks.length >= count) break;
+    // two passes: one palette per source first, then let a source contribute another theme
+    for (const pass of [0, 1]) {
+      for (const [a, r, theme] of cands) {
+        if (picks.length >= count) break;
+        if (!r || !r.accent) continue;
+        if (pass === 0 && picks.some((p) => p.asset.id === a.id)) continue;
+        if (picks.some((p) => deltaE(p.roles.accent, r.accent) < 0.06 && deltaE(p.roles.background, r.background) < 0.06)) continue;
+        picks.push({ asset: a, roles: r, theme });
+      }
     }
     const fam = {};
     for (const a of pool.slice(0, 30)) if (a._d.accent_family) fam[a._d.accent_family] = (fam[a._d.accent_family] || 0) + 1;
@@ -679,7 +718,7 @@ class UiHall {
       query: q || null,
       evidence_size: pool.length,
       common_accent_families: Object.entries(fam).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([family, n]) => ({ family, assets: n })),
-      palettes: picks.map(({ asset, roles }) => ({ source: asset, ...this.checkRoles(roles) })),
+      palettes: picks.map(({ asset, roles, theme }) => ({ source: asset, ...(theme ? { theme } : {}), ...this.checkRoles(roles) })),
     };
   }
 
@@ -699,12 +738,12 @@ class UiHall {
   }
 
   /** Turn an asset's measured palette (or explicit colours) into code-ready design tokens. */
-  tokens({ id, colors, format = 'css', name = 'uh' } = {}) {
+  tokens({ id, colors, theme, format = 'css', name = 'uh' } = {}) {
     let roles, source = null;
     if (id) {
       const a = this.get(id);
       if (!a) throw new Error(`Unknown asset id: ${id}`);
-      roles = a._d.roles; source = a.id;
+      roles = this.rolesOf(a, theme); source = a.id + (theme && a.variants?.[theme] ? ` (${theme})` : '');
     } else if (colors?.length) {
       roles = paletteRoles(colors.map((hex, i) => ({ hex, pct: 100 / (i + 1) })));
     }
@@ -771,7 +810,7 @@ class UiHall {
       screen, platform: platform || null, mood: mood || null, surface: surf || 'either',
       references,
       motion_references: motion,
-      patterns: this.patterns(q).slice(0, 4),
+      patterns: ((ps) => ps.filter((p) => p.relevance >= Math.max(1.2, ps[0].relevance * 0.45)))(this.patterns(q)).slice(0, 4),
       palettes: this.paletteFor({ query: screen, mood, surface: surf, count: 3 }).palettes,
       guidance: guide.slice(0, 2).map(([k, g]) => ({ role: k, do: g.do, avoid: g.avoid })),
       checklist: [
@@ -1180,8 +1219,8 @@ const TOOLS = [
   {
     name: 'design_brief',
     title: 'Design brief',
-    description: 'One call to start any screen: the best references, motion references, the structural patterns that apply (with build rules), '
-      + 'three real measured palettes split into UI roles with contrast checks, role-specific do/avoid guidance and a done-checklist.',
+    description: 'One call to start any screen: the best references, the structural patterns that apply (with build rules), '
+      + 'three palettes from real references (an original\'s exact theme tokens) split into UI roles with contrast checks, role-specific do/avoid guidance and a done-checklist.',
     inputSchema: {
       type: 'object', required: ['screen'],
       properties: {
@@ -1199,8 +1238,8 @@ const TOOLS = [
         `# Brief: ${b.screen}`, `platform ${b.platform || 'any'} · mood ${b.mood || 'unspecified'} · surface ${b.surface}`, '',
         '## References', ...b.references.map((r) => line(h, r.asset)),
         b.motion_references.length ? '\n## Motion references' : '', ...b.motion_references.map((r) => line(h, r.asset)),
-        '\n## Patterns that apply', ...b.patterns.map((p) => `- **${p.name}** (${p.evidence_count} examples, e.g. ${p.examples.map((e) => e.id).join(', ')}) — ${p.why}\n  Build: ${p.build.join(' ')}`),
-        '\n## Palettes (measured from real references)', ...b.palettes.map((p) => `- from ${p.source.id}: ${rolesMd(p.roles, p.contrast)}${p.fixes ? ` · accent-as-text → ${p.fixes.accent_for_text_and_icons}` : ''}`),
+        '\n## Patterns that apply', ...(b.patterns.length ? [] : ['None catalogued strongly enough for this screen — lean on the references above.']), ...b.patterns.map((p) => `- **${p.name}** (${p.evidence_count} examples, e.g. ${p.examples.map((e) => e.id).join(', ')}) — ${p.why}\n  Build: ${p.build.join(' ')}`),
+        '\n## Palettes (from real references)', ...b.palettes.map((p) => `- from ${p.source.id}${p.theme ? ` · ${p.theme}` : ''}: ${rolesMd(p.roles, p.contrast)}${p.fixes ? ` · accent-as-text → ${p.fixes.accent_for_text_and_icons}` : ''}`),
         b.guidance.length ? '\n## Guidance' : '', ...b.guidance.map((g) => `**${g.role}** — do: ${g.do.join(' ')} Avoid: ${g.avoid.join(' ')}`),
         '\n## Done when', ...b.checklist.map((c) => `- [ ] ${c}`),
         '\nNext: view_design on the 2–3 closest references before writing code.',
@@ -1250,7 +1289,7 @@ const TOOLS = [
       const r = h.paletteFor(a);
       return {
         text: `Palettes for “${r.query || 'anything'}” from ${r.evidence_size} references. Common accent families: ${r.common_accent_families.map((f) => `${f.family} (${f.assets})`).join(', ') || 'n/a'}\n\n`
-          + r.palettes.map((p, i) => `${i + 1}. from **${p.source.id}** ${p.source.title}\n   ${rolesMd(p.roles, p.contrast)}${p.fixes ? `\n   accent as text → ${p.fixes.accent_for_text_and_icons}` : ''}`).join('\n')
+          + r.palettes.map((p, i) => `${i + 1}. from **${p.source.id}**${p.theme ? ` (${p.theme})` : ''} ${p.source.title}\n   ${rolesMd(p.roles, p.contrast)}${p.fixes ? `\n   accent as text → ${p.fixes.accent_for_text_and_icons}` : ''}`).join('\n')
           + '\n\nexport_tokens(id) turns any of these into CSS / Tailwind / SwiftUI / Compose tokens.',
         data: { ...r, palettes: r.palettes.map((p) => ({ ...p, source: h.card(p.source) })) },
       };
@@ -1283,20 +1322,21 @@ const TOOLS = [
   {
     name: 'export_tokens',
     title: 'Export design tokens',
-    description: 'Turn a reference\'s measured palette (or your own hex list) into ready-to-paste tokens: semantic colours, an 11-step accent ramp, '
+    description: 'Turn a reference\'s colours (an original\'s real theme tokens, or your own hex list) into ready-to-paste tokens: semantic colours, an 11-step accent ramp, '
       + 'a neutral ramp, radius and spacing — as CSS variables, Tailwind config, W3C design-tokens JSON, SwiftUI or Jetpack Compose.',
     inputSchema: {
       type: 'object',
       properties: {
         id: str('Asset id to take the palette from.'),
+        theme: { type: 'string', enum: ['ember', 'mint', 'ink', 'grape'], description: 'Which of the original\'s four themes to export. Default: its primary theme.' },
         colors: arr('Or explicit hex colours, most-used first.'),
         format: { type: 'string', enum: ['css', 'tailwind', 'dtcg', 'swiftui', 'compose'], default: 'css' },
         prefix: str('Variable prefix.', { default: 'uh' }),
       },
     },
     annotations: { title: 'Export design tokens', ...RO },
-    run(h, { id, colors, format = 'css', prefix = 'uh' }) {
-      const t = h.tokens({ id, colors, format, name: prefix });
+    run(h, { id, colors, theme, format = 'css', prefix = 'uh' }) {
+      const t = h.tokens({ id, colors, theme, format, name: prefix });
       const lang = { css: 'css', tailwind: 'js', dtcg: 'json', json: 'json', swiftui: 'swift', compose: 'kotlin' }[format];
       return { text: `Tokens (${t.scheme} scheme${t.source ? `, from ${t.source}` : ''}):\n\n\`\`\`${lang}\n${t.code}\`\`\``, data: t };
     },

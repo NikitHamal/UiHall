@@ -142,3 +142,43 @@ The primary action pinned to the bottom of a scrolling screen with the total or 
 - Hairline or blur behind the bar instead of a heavy shadow.
 
 Evidence (66): ORG-0581 (Personal finance account detail · Ledger), ORG-1193 (Personal finance confirmation · Ledger), ORG-0461 (Real estate book a viewing · Nest), ORG-1161 (Real estate confirmation · Nest)
+
+## Grouped settings, instant toggles
+
+Preferences split into small labelled groups of rows, each change applied the moment it is made. Scannable, forgiving, and nothing to save.
+
+- Account row first; 2–4 rows per group under a small-caps header.
+- Toggles apply instantly — no Save button; values (System, Classic) sit right-aligned with a chevron.
+- Destructive actions last, alone, in red text rather than a red fill.
+
+Evidence (22): ORG-0953 (Social settings · Loop), ORG-1065 (Travel settings · Wander), ORG-0897 (Fashion e-commerce settings · Thread), ORG-1009 (Productivity settings · Plan)
+
+## Celebrate, then itemise
+
+A brief, confident success moment followed immediately by exactly what happened — the receipt is what actually reassures.
+
+- One large check in the accent with a soft halo; headline under 3 words.
+- Itemised card: 3–4 lines and a bold total, tabular numerals.
+- One primary "Done", one quiet secondary (share, add to calendar).
+
+Evidence (20): ORG-1081 (Crypto confirmation · Halo), ORG-1193 (Personal finance confirmation · Ledger), ORG-1161 (Real estate confirmation · Nest), ORG-1177 (Language learning confirmation · Fable)
+
+## Week strip over a day timeline
+
+A compact row of days picks the date; a time rail below lays out that day. Both scales in one view, no month grid needed.
+
+- Seven equal day cells; selected day filled with the accent, today marked with a dot.
+- Times in a fixed 44–56px left rail, tabular numerals.
+- Highlight the current or next block; everything else stays neutral.
+
+Evidence (21): ORG-1449 (Job search schedule · Shortlist), ORG-1189 (Personal finance schedule · Ledger), ORG-1109 (Fitness schedule · Pulse), ORG-1077 (Crypto schedule · Halo)
+
+## Search that helps before you type
+
+A focused field with recents, scopes and top results already showing — the screen is useful at zero characters.
+
+- Field focused with a clear button; scopes as a chip row directly below.
+- Recent searches as small pills; top results as full rows with a trailing value.
+- Group results under small-caps labels; never an empty white page.
+
+Evidence (42): ORG-0317 (Fitness workout list · Pulse), ORG-0333 (Fitness search · Pulse), ORG-0389 (Food delivery search · Bowl), ORG-1381 (Business invoicing search · Tally)

@@ -27,14 +27,14 @@ tokens and check contrast before it calls the work done.
 
 - **A workflow, not a prompt.** Brief → look → steal structure → measured colour → checklist, plus a critique rubric
   for reviewing existing UI.
-- **`design_brief` in one call:** closest references, motion references, structural patterns with build rules, three
-  measured palettes split into background / surface / text / accent with WCAG checks, do/avoid guidance and a
+- **`design_brief` in one call:** closest references, structural patterns with build rules, three
+  palettes from real references (exact theme tokens) split into background / surface / text / accent with WCAG checks, do/avoid guidance and a
   done-checklist.
 - **References the agent can see:** returns the rendered screen, in any of its four themes, to multimodal models.
 - **Colour you can paste:** palette → CSS variables, Tailwind, W3C design tokens, SwiftUI or Jetpack Compose, with
   11-step ramps and contrast fixes.
-- **21 patterns with receipts:** hero number, bento grid, chip-filter row, bottom sheet, dark + single accent, AI chat
-  composer… each with build rules and the references that prove it.
+- **18 patterns with receipts:** hero number, metric grid, chip-filter row, grouped settings, week-strip schedule, AI chat
+  composer, celebrate-then-itemise… each with build rules and the references that prove it.
 - **A whole design system from one reference:** `generate_design_system` emits colour, a type pairing and scale chosen
   from the reference's style, radius, motion and base components as one CSS file.
 - **Compare directions:** `compare_designs` puts 2–4 references side by side with shared vs distinct traits and contrast.

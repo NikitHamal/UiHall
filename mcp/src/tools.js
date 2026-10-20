@@ -149,8 +149,8 @@ export const TOOLS = [
   {
     name: 'design_brief',
     title: 'Design brief',
-    description: 'One call to start any screen: the best references, motion references, the structural patterns that apply (with build rules), '
-      + 'three real measured palettes split into UI roles with contrast checks, role-specific do/avoid guidance and a done-checklist.',
+    description: 'One call to start any screen: the best references, the structural patterns that apply (with build rules), '
+      + 'three palettes from real references (an original\'s exact theme tokens) split into UI roles with contrast checks, role-specific do/avoid guidance and a done-checklist.',
     inputSchema: {
       type: 'object', required: ['screen'],
       properties: {
@@ -168,8 +168,8 @@ export const TOOLS = [
         `# Brief: ${b.screen}`, `platform ${b.platform || 'any'} · mood ${b.mood || 'unspecified'} · surface ${b.surface}`, '',
         '## References', ...b.references.map((r) => line(h, r.asset)),
         b.motion_references.length ? '\n## Motion references' : '', ...b.motion_references.map((r) => line(h, r.asset)),
-        '\n## Patterns that apply', ...b.patterns.map((p) => `- **${p.name}** (${p.evidence_count} examples, e.g. ${p.examples.map((e) => e.id).join(', ')}) — ${p.why}\n  Build: ${p.build.join(' ')}`),
-        '\n## Palettes (measured from real references)', ...b.palettes.map((p) => `- from ${p.source.id}: ${rolesMd(p.roles, p.contrast)}${p.fixes ? ` · accent-as-text → ${p.fixes.accent_for_text_and_icons}` : ''}`),
+        '\n## Patterns that apply', ...(b.patterns.length ? [] : ['None catalogued strongly enough for this screen — lean on the references above.']), ...b.patterns.map((p) => `- **${p.name}** (${p.evidence_count} examples, e.g. ${p.examples.map((e) => e.id).join(', ')}) — ${p.why}\n  Build: ${p.build.join(' ')}`),
+        '\n## Palettes (from real references)', ...b.palettes.map((p) => `- from ${p.source.id}${p.theme ? ` · ${p.theme}` : ''}: ${rolesMd(p.roles, p.contrast)}${p.fixes ? ` · accent-as-text → ${p.fixes.accent_for_text_and_icons}` : ''}`),
         b.guidance.length ? '\n## Guidance' : '', ...b.guidance.map((g) => `**${g.role}** — do: ${g.do.join(' ')} Avoid: ${g.avoid.join(' ')}`),
         '\n## Done when', ...b.checklist.map((c) => `- [ ] ${c}`),
         '\nNext: view_design on the 2–3 closest references before writing code.',
@@ -219,7 +219,7 @@ export const TOOLS = [
       const r = h.paletteFor(a);
       return {
         text: `Palettes for “${r.query || 'anything'}” from ${r.evidence_size} references. Common accent families: ${r.common_accent_families.map((f) => `${f.family} (${f.assets})`).join(', ') || 'n/a'}\n\n`
-          + r.palettes.map((p, i) => `${i + 1}. from **${p.source.id}** ${p.source.title}\n   ${rolesMd(p.roles, p.contrast)}${p.fixes ? `\n   accent as text → ${p.fixes.accent_for_text_and_icons}` : ''}`).join('\n')
+          + r.palettes.map((p, i) => `${i + 1}. from **${p.source.id}**${p.theme ? ` (${p.theme})` : ''} ${p.source.title}\n   ${rolesMd(p.roles, p.contrast)}${p.fixes ? `\n   accent as text → ${p.fixes.accent_for_text_and_icons}` : ''}`).join('\n')
           + '\n\nexport_tokens(id) turns any of these into CSS / Tailwind / SwiftUI / Compose tokens.',
         data: { ...r, palettes: r.palettes.map((p) => ({ ...p, source: h.card(p.source) })) },
       };
@@ -252,20 +252,21 @@ export const TOOLS = [
   {
     name: 'export_tokens',
     title: 'Export design tokens',
-    description: 'Turn a reference\'s measured palette (or your own hex list) into ready-to-paste tokens: semantic colours, an 11-step accent ramp, '
+    description: 'Turn a reference\'s colours (an original\'s real theme tokens, or your own hex list) into ready-to-paste tokens: semantic colours, an 11-step accent ramp, '
       + 'a neutral ramp, radius and spacing — as CSS variables, Tailwind config, W3C design-tokens JSON, SwiftUI or Jetpack Compose.',
     inputSchema: {
       type: 'object',
       properties: {
         id: str('Asset id to take the palette from.'),
+        theme: { type: 'string', enum: ['ember', 'mint', 'ink', 'grape'], description: 'Which of the original\'s four themes to export. Default: its primary theme.' },
         colors: arr('Or explicit hex colours, most-used first.'),
         format: { type: 'string', enum: ['css', 'tailwind', 'dtcg', 'swiftui', 'compose'], default: 'css' },
         prefix: str('Variable prefix.', { default: 'uh' }),
       },
     },
     annotations: { title: 'Export design tokens', ...RO },
-    run(h, { id, colors, format = 'css', prefix = 'uh' }) {
-      const t = h.tokens({ id, colors, format, name: prefix });
+    run(h, { id, colors, theme, format = 'css', prefix = 'uh' }) {
+      const t = h.tokens({ id, colors, theme, format, name: prefix });
       const lang = { css: 'css', tailwind: 'js', dtcg: 'json', json: 'json', swiftui: 'swift', compose: 'kotlin' }[format];
       return { text: `Tokens (${t.scheme} scheme${t.source ? `, from ${t.source}` : ''}):\n\n\`\`\`${lang}\n${t.code}\`\`\``, data: t };
     },

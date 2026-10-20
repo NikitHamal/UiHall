@@ -112,6 +112,9 @@ def main():
         base['source_html'] = base['live']
         merged.append(base)
     merged.sort(key=lambda x: x['id'])
+    # the kit's real tokens per theme — exact colour roles for every original (the palette stays measured from pixels)
+    c['themes'] = {k: {'name': t['name'], 'scheme': t['scheme'], 'roles': {'background': t['bg'], 'surface': t['surface'], 'text': t['text'], 'muted': t['muted'],
+                   'accent': t['accent'], 'on_accent': t['onAccent'], 'scheme': t['scheme']}} for k, t in THEMES.items()}
     c['assets'] = merged + refs
     assets = c['assets']
 

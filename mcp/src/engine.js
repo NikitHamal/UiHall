@@ -70,6 +70,8 @@ const FIELDS = [
 
 /* -------------------------------------------------------------- engine -- */
 
+const GENERIC = new Set(['for', 'a', 'an', 'the', 'and', 'with', 'of', 'to', 'in', 'on', 'my', 'our', 'that', 'this', 'as', 'or', 'app', 'apps', 'application', 'screen', 'screens', 'page', 'pages', 'ui', 'ux', 'design', 'view', 'website', 'site', 'mobile', 'web', 'ios', 'android']);
+
 export class UiHall {
   constructor(corpus, { site = SITE } = {}) {
     this.corpus = corpus;
@@ -81,10 +83,18 @@ export class UiHall {
     this.#index();
   }
 
+  /** Colour roles for an asset (or one of its themes): an original's real kit tokens, else roles inferred from the measured palette. */
+  rolesOf(a, theme) {
+    const th = theme && a.variants?.[theme] ? theme : a.themes?.[0];
+    const known = th && this.corpus.themes?.[th]?.roles;
+    if (known) return { ...known };
+    return paletteRoles(((theme && a.variants?.[theme]?.palette_detail) || a.palette_detail || []).filter((p) => normHex(p.hex)));
+  }
+
   /* derived per-asset facts, computed once */
   #derive(a) {
     const det = (a.palette_detail || []).filter((p) => normHex(p.hex));
-    const roles = paletteRoles(det);
+    const roles = this.rolesOf(a);
     const L = det.reduce((s, p) => s + toOklch(p.hex)[0] * p.pct, 0) / (det.reduce((s, p) => s + p.pct, 0) || 1);
     const hues = [...new Set(det.filter((p) => p.pct >= 4 && toOklch(p.hex)[1] >= 0.06).map((p) => hueFamily(p.hex)))];
     return {
@@ -302,7 +312,8 @@ export class UiHall {
     let hits = new Map();
     if (about.trim()) {
       hits = new Map(this.search({ query: about, limit: 300 }).results.map((r) => [r.asset.id, r.score]));
-      const words = tokenize(about).map(stem);
+      // generic words ('app', 'screen') would tie every pattern to every query
+      const words = tokenize(about).filter((w) => !GENERIC.has(w)).map(stem);
       ranked = all.map((p) => {
         // mean of the best five matches, so a pattern with 300 loose examples can't outrank a specific one
         const evid = p.evidence.map((a) => hits.get(a.id) || 0).sort((x, y) => y - x).slice(0, 5).reduce((s, v) => s + v, 0);
@@ -330,14 +341,18 @@ export class UiHall {
     const picks = [];
     const cands = [];
     for (const a of pool) {
-      cands.push([a, a._d.roles]);
-      for (const [th, v] of Object.entries(a.variants || {})) if (v.palette_detail && th !== a.themes?.[0]) cands.push([{ ...a, id: a.id, theme: th }, paletteRoles(v.palette_detail)]);
+      cands.push([a, a._d.roles, a.themes?.[0]]);
+      for (const th of (a.themes || []).slice(1)) cands.push([a, this.rolesOf(a, th), th]);
     }
-    for (const [a, r] of cands) {
-      if (!r || !r.accent) continue;
-      if (picks.some((p) => deltaE(p.roles.accent, r.accent) < 0.06 && deltaE(p.roles.background, r.background) < 0.06)) continue;
-      picks.push({ asset: a, roles: r });
-      if (picks.length >= count) break;
+    // two passes: one palette per source first, then let a source contribute another theme
+    for (const pass of [0, 1]) {
+      for (const [a, r, theme] of cands) {
+        if (picks.length >= count) break;
+        if (!r || !r.accent) continue;
+        if (pass === 0 && picks.some((p) => p.asset.id === a.id)) continue;
+        if (picks.some((p) => deltaE(p.roles.accent, r.accent) < 0.06 && deltaE(p.roles.background, r.background) < 0.06)) continue;
+        picks.push({ asset: a, roles: r, theme });
+      }
     }
     const fam = {};
     for (const a of pool.slice(0, 30)) if (a._d.accent_family) fam[a._d.accent_family] = (fam[a._d.accent_family] || 0) + 1;
@@ -345,7 +360,7 @@ export class UiHall {
       query: q || null,
       evidence_size: pool.length,
       common_accent_families: Object.entries(fam).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([family, n]) => ({ family, assets: n })),
-      palettes: picks.map(({ asset, roles }) => ({ source: asset, ...this.checkRoles(roles) })),
+      palettes: picks.map(({ asset, roles, theme }) => ({ source: asset, ...(theme ? { theme } : {}), ...this.checkRoles(roles) })),
     };
   }
 
@@ -365,12 +380,12 @@ export class UiHall {
   }
 
   /** Turn an asset's measured palette (or explicit colours) into code-ready design tokens. */
-  tokens({ id, colors, format = 'css', name = 'uh' } = {}) {
+  tokens({ id, colors, theme, format = 'css', name = 'uh' } = {}) {
     let roles, source = null;
     if (id) {
       const a = this.get(id);
       if (!a) throw new Error(`Unknown asset id: ${id}`);
-      roles = a._d.roles; source = a.id;
+      roles = this.rolesOf(a, theme); source = a.id + (theme && a.variants?.[theme] ? ` (${theme})` : '');
     } else if (colors?.length) {
       roles = paletteRoles(colors.map((hex, i) => ({ hex, pct: 100 / (i + 1) })));
     }
@@ -437,7 +452,7 @@ export class UiHall {
       screen, platform: platform || null, mood: mood || null, surface: surf || 'either',
       references,
       motion_references: motion,
-      patterns: this.patterns(q).slice(0, 4),
+      patterns: ((ps) => ps.filter((p) => p.relevance >= Math.max(1.2, ps[0].relevance * 0.45)))(this.patterns(q)).slice(0, 4),
       palettes: this.paletteFor({ query: screen, mood, surface: surf, count: 3 }).palettes,
       guidance: guide.slice(0, 2).map(([k, g]) => ({ role: k, do: g.do, avoid: g.avoid })),
       checklist: [

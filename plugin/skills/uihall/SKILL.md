@@ -69,8 +69,8 @@ didn't say, choose sensibly and say what you chose.
 design_brief(screen="onboarding for a sleep tracking app", platform="ios", mood="calm")
 ```
 
-You get the closest references, motion references, the patterns that apply (with build rules),
-three measured palettes split into UI roles with WCAG contrast, role-specific do/avoid
+You get the closest references, the patterns that apply (with build rules),
+three palettes from real references split into UI roles with WCAG contrast, role-specific do/avoid
 guidance, and a done-checklist.
 
 ### 3. Look before you build — this is the step agents skip

@@ -149,6 +149,30 @@ export const PATTERNS = [
     build: ['Same crop, same device, same content in both states.', 'Label each side; call out the 2–3 changes that matter.', 'Put the improved version on the right.'],
     match: (a) => a.category === 'before-after' || tag(a, 'before-after', 'redesign'),
   },
+  {
+    slug: 'grouped-settings', name: 'Grouped settings, instant toggles', min: 6,
+    why: 'Preferences split into small labelled groups of rows, each change applied the moment it is made. Scannable, forgiving, and nothing to save.',
+    build: ['Account row first; 2–4 rows per group under a small-caps header.', 'Toggles apply instantly — no Save button; values (System, Classic) sit right-aligned with a chevron.', 'Destructive actions last, alone, in red text rather than a red fill.'],
+    match: (a) => role(a, 'settings') || tag(a, 'settings'),
+  },
+  {
+    slug: 'success-receipt', name: 'Celebrate, then itemise', min: 6,
+    why: 'A brief, confident success moment followed immediately by exactly what happened — the receipt is what actually reassures.',
+    build: ['One large check in the accent with a soft halo; headline under 3 words.', 'Itemised card: 3–4 lines and a bold total, tabular numerals.', 'One primary "Done", one quiet secondary (share, add to calendar).'],
+    match: (a) => tag(a, 'success', 'receipt'),
+  },
+  {
+    slug: 'week-strip', name: 'Week strip over a day timeline', min: 6,
+    why: 'A compact row of days picks the date; a time rail below lays out that day. Both scales in one view, no month grid needed.',
+    build: ['Seven equal day cells; selected day filled with the accent, today marked with a dot.', 'Times in a fixed 44–56px left rail, tabular numerals.', 'Highlight the current or next block; everything else stays neutral.'],
+    match: (a) => tag(a, 'week-strip') && tag(a, 'timeline', 'schedule', 'calendar'),
+  },
+  {
+    slug: 'search-before-typing', name: 'Search that helps before you type', min: 6,
+    why: 'A focused field with recents, scopes and top results already showing — the screen is useful at zero characters.',
+    build: ['Field focused with a clear button; scopes as a chip row directly below.', 'Recent searches as small pills; top results as full rows with a trailing value.', 'Group results under small-caps labels; never an empty white page.'],
+    match: (a) => role(a, 'search') && tag(a, 'chips'),
+  },
 ];
 
 export function matchPatterns(assets) {

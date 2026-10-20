@@ -25,7 +25,7 @@ adapt — every one MIT licensed.
 | **The MCP server** (`mcp/`) | `uihall-mcp` — 13 design tools for Claude Code, Cursor, VS Code, Codex, Claude Desktop or anything that speaks MCP. One file, zero dependencies, no API key. |
 | **The skill** (`skills/uihall/`) | Tells the agent *when* and *how* to use the corpus: brief → look → steal structure → measured colour → checklist. Works with or without MCP (bundled CLI). |
 | **The plugin** (`plugin/`) | Skill + MCP in one Claude Code install. |
-| **The showcase** (`demo/`) | [Four working prototypes](https://nikithamal.github.io/UiHall/demo/) built by following the skill end to end — Halo (dark wallet), Relay (pricing page), Kiln (analytics dashboard), Hush (onboarding) — each citing its references and measured palette. |
+| **The showcase** (`demo/`) | [Four working prototypes](https://nikithamal.github.io/UiHall/#/demos) built by following the skill end to end — Halo (dark wallet), Relay (pricing page), Kiln (analytics dashboard), Hush (onboarding) — each citing its references and measured palette. |
 
 ## Install
 
@@ -69,7 +69,7 @@ to run fully offline from a checkout.
 
 | Tool | Answers |
 |---|---|
-| `design_brief` | "I'm building X" → closest references, motion references, patterns with build rules, three measured palettes split into UI roles with WCAG checks, do/avoid guidance, a done-checklist |
+| `design_brief` | "I'm building X" → closest references, patterns with build rules, three palettes from real references split into UI roles with WCAG checks, do/avoid guidance, a done-checklist |
 | `search_designs` | Ranked BM25 search with design synonyms ("fintech" ⇒ wallet, banking…) and facet filters; `include_images` attaches thumbnails |
 | `view_design` | The rendered screen, in any of its four themes, so the model sees proportion and polish |
 | `get_design` | Full write-up, measured palette with area %, colour roles, contrast, printed swatch names, URLs |
