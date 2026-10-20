@@ -37,7 +37,7 @@ export default function home(root, app) {
   root.innerHTML = `
   <header class="lp-nav" id="lpNav">
     <a class="lp-nav__brand" href="#/" aria-label="UI Hall"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 25V15a7 7 0 0 1 14 0v10" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round"/><path d="M16 25v-7" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg><span>UI&nbsp;Hall</span></a>
-    <nav class="lp-nav__links" aria-label="Sections"><a href="#/library">Library</a><a href="#/originals">Originals</a><a href="#/patterns">Patterns</a><a href="demo/">Demos</a><a href="#/agents">For agents</a></nav>
+    <nav class="lp-nav__links" aria-label="Sections"><a href="#/library">Library</a><a href="#/originals">Originals</a><a href="#/patterns">Patterns</a><a href="#/demos">Demos</a><a href="#/agents">For agents</a></nav>
     <div class="lp-nav__end"><button class="icon-btn" type="button" data-lp-theme aria-label="Toggle theme"><svg class="sun" viewBox="0 0 20 20"><path d="M10 3v1.5M10 15.5V17M3 10h1.5M15.5 10H17M5 5l1 1M14 14l1 1M5 15l1-1M14 6l1-1"/><circle cx="10" cy="10" r="3.2"/></svg></button><a class="btn btn--sm btn--primary" href="#/library">Open the hall ${icon.arrow}</a></div>
   </header>
 
@@ -293,7 +293,7 @@ export default function home(root, app) {
       <div class="palette-rows">${pal.map((p, i) => `<div class="palette-row" style="--c:${p.hex};--pct:${Math.max(2, p.pct)};--i:${i}"><i></i><span>${p.hex}</span><div class="bar"><span></span></div><em>${p.pct}%</em></div>`).join('')}</div>
       ${r ? `<div class="roles">${['background', 'surface', 'text', 'accent'].filter((k) => r.roles[k]).map((k) => `<div class="role" data-copy="${r.roles[k]}" style="cursor:copy"><i style="--c:${r.roles[k]}"></i><div><b>${k}</b><code>${r.roles[k]}</code></div></div>`).join('')}</div>
       <div class="row">${pill('Text', cx.text_on_background)}${pill('On accent', cx.on_accent_on_accent)}</div>` : ''}
-      <div class="anatomy__switch">${picks.map((p) => `<button type="button" aria-pressed="${p === a}" data-id="${p.id}" aria-label="${esc(p.title)}"><img src="${thumb(p)}" alt=""></button>`).join('')}</div>`;
+      <div class="anatomy__switch">${picks.map((p) => `<button type="button" aria-pressed="${p === a}" data-id="${p.id}" aria-label="${esc(p.title)}"><img src="${p.thumb}" alt=""></button>`).join('')}</div>`;
     requestAnimationFrame(() => requestAnimationFrame(() => $('.palette-bar', anat)?.classList.remove('collapsed')));
   };
   anat.addEventListener('click', (e) => { const b = e.target.closest('[data-id]'); if (b) showAsset(h.get(b.dataset.id)); });

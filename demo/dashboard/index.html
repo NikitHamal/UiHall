@@ -54,17 +54,17 @@ main{overflow-y:auto;height:100dvh}
 .search{margin-left:auto;display:flex;align-items:center;gap:8px;height:36px;width:280px;padding:0 10px;border-radius:10px;background:var(--s1);color:var(--t3)}
 .search kbd{margin-left:auto;font:11px var(--mono);border:1px solid var(--line);border-radius:5px;padding:1px 5px}
 .av{width:32px;height:32px;border-radius:50%;background:url(../../assets/thumb/ORG-0197.webp) center/cover;box-shadow:0 0 0 2px var(--s2)}
-.wrap{padding:24px;display:grid;gap:16px;max-width:1440px}
+.wrap{padding:24px;display:grid;grid-template-columns:minmax(0,1fr);gap:16px;max-width:1440px}
 .hd{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .hd h1{margin:0;font:400 38px/1 var(--serif);letter-spacing:-.01em}
 .hd p{margin:6px 0 0;color:var(--t2)}
 .btn{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;gap:8px;height:36px;padding:0 14px;border-radius:10px;font-weight:500;transition:transform .3s var(--spring),filter .2s}
 .btn:active{transform:scale(.96)}
-.btn.acc{background:var(--acc);color:#fff}.btn.acc:hover{filter:brightness(1.1)}
+.btn.acc{display:inline-flex;background:var(--acc);color:#fff}.btn.acc:hover{filter:brightness(1.1)}
 .btn.gh{background:var(--s1);box-shadow:inset 0 0 0 1px var(--line);color:var(--t2)}
 
 .kpis{display:grid;grid-template-columns:repeat(4,1fr);border-radius:16px;background:var(--s1);box-shadow:inset 0 0 0 1px var(--line)}
-.kpi{padding:16px 18px;display:grid;grid-template-columns:1fr auto;gap:4px 10px;align-items:end}
+.kpi{padding:16px 18px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;align-items:end}
 .kpi+.kpi{border-left:1px solid var(--line)}
 .kpi small{grid-column:1/-1;color:var(--t2);font-size:12.5px}
 .kpi b{font:600 26px/1 var(--sans);letter-spacing:-.03em}
@@ -123,8 +123,8 @@ td.r,th.r{text-align:right}
 .credit a{color:var(--acc-t);text-decoration:none}
 .credit .refs{display:flex;gap:8px;align-items:center}
 .credit img{width:34px;height:34px;border-radius:8px;object-fit:cover}
-@media(max-width:1100px){.grid{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr}.kpi:nth-child(3){border-left:0;border-top:1px solid var(--line)}.kpi:nth-child(4){border-top:1px solid var(--line)}}
-@media(max-width:760px){aside{display:none}body{grid-template-columns:1fr}.search{display:none}.tablewrap{overflow-x:auto}}
+@media(max-width:1100px){.grid{grid-template-columns:minmax(0,1fr)}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi:nth-child(3){border-left:0;border-top:1px solid var(--line)}.kpi:nth-child(4){border-top:1px solid var(--line)}}
+@media(max-width:760px){aside:not(.drawer){position:fixed;z-index:40;top:0;bottom:0;left:0;width:264px;transform:translateX(-105%);transition:transform .45s var(--ease);box-shadow:30px 0 60px -20px rgba(0,0,0,.6)}body.mini aside:not(.drawer){width:264px}body.navon aside:not(.drawer){transform:none}body.navon::after{content:'';position:fixed;inset:0;z-index:39;background:rgba(0,0,0,.5)}body{grid-template-columns:minmax(0,1fr)}main{min-width:0}.btn{white-space:nowrap}.search{display:none}.tablewrap{overflow-x:auto}.wrap{padding:16px}.kpi{padding:14px}.kpi svg{width:52px}.hd h1{font-size:32px}}@media(max-width:430px){.kpi b{font-size:22px}.kpi svg{width:40px}.kpi{gap:4px 6px}}
 @media(prefers-reduced-motion:reduce){*{transition-duration:1ms!important}}
 
 /* --- app additions --- */
@@ -220,7 +220,9 @@ const C=['#DB7850','#7C6FE0','#4CC38A','#E5B94E','#4AA3DF','#E5675C'];
 const ST=[['Paid','ok'],['Pending','warn'],['Refunded','bad']];
 const NAMES=['Ryan Korsgaard','Madelyn Lubin','Abram Bergson','Phillip Mango','Ana Ruiz','Kenji Watanabe','Lea Martin','Omar Haddad','Priya Nair','Tomás Silva','Ines Moreau','Jonah Park','Sara Lind','Wei Chen','Elif Kaya','Noah Brooks','Maya Lin','Luca Romano','Hana Sato','Diego Ortiz','Zoe Adams','Amir Rahimi','Freya Olsen','Kofi Mensah'];
 const PLANS=['Team · annual','Pro · annual','Pro · monthly','Add-on'];
-let TX=NAMES.map((n,i)=>({id:'#0'+(4910+i),who:n,plan:PLANS[(i*7)%4],st:i%9===3?2:i%5===2?1:0,seats:[12,20,22,4,8,40,3,1,6,15,9,2,30,5,11,7,18,3,25,4,10,6,14,2][i],amt:[41400,89200,75900,19500,18240,152000,1740,480,22300,61000,9800,1200,118000,7400,33100,12600,64800,2100,97500,5300,28900,8700,47200,960][i],date:`Oct ${20-Math.floor(i/2)}`}));
+let TX=NAMES.map((n,i)=>({id:'#0'+(4910+i),who:n,plan:null,st:i%9===3?2:i%5===2?1:0,seats:[12,20,22,4,8,40,3,1,6,15,9,2,30,5,11,7,18,3,25,4,10,6,14,2][i],amt:[41400,89200,75900,19500,18240,152000,1740,480,22300,61000,9800,1200,118000,7400,33100,12600,64800,2100,97500,5300,28900,8700,47200,960][i],date:`Oct ${20-Math.floor(i/2)}`}));
+// plan follows the size of the deal, so the drawer never shows a $150k add-on
+TX.forEach(t=>{t.plan=PLANS[t.amt>=50000?0:t.amt>=15000?1:t.amt>=2000?2:3]});
 const ACCTS=['Northwind','Parallax','Orbit AI','Fieldwork','Lumen','Meridian','Acme Labs','Halcyon','Brightline'].map((n,i)=>({n,plan:i%3?'Pro':'Team',seats:[40,22,12,8,30,15,6,10,18][i],mrr:[12400,6100,4800,2200,9300,3900,1600,2800,5200][i],health:[92,78,64,88,95,71,55,83,90][i],c:C[i%6]}));
 let page='overview';
 
@@ -295,7 +297,7 @@ settings(){const T={General:`<section class="card" style="max-width:640px;displa
  const show=t=>{$$('.tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.tab===t));$('#tabp').innerHTML=`<div class="page">${T[t]}</div>`};$('.tabs').onclick=e=>{const b=e.target.closest('[data-tab]');if(b)show(b.dataset.tab)};show('General')},
 };
 
-function go(p){page=p;$('#page').innerHTML=`<div class="page" style="display:grid;gap:16px">${PAGES[p]()}</div>`;INIT[p]?.();$$('aside .nav a').forEach(a=>a.toggleAttribute('aria-current',a.dataset.page===p));$('#crumb').textContent=p[0].toUpperCase()+p.slice(1);history.replaceState(null,'','#'+p);$('main').scrollTop=0}
+function go(p){page=p;$('#page').innerHTML=`<div class="page" style="display:grid;grid-template-columns:minmax(0,1fr);gap:16px">${PAGES[p]()}</div>`;INIT[p]?.();$$('aside .nav a').forEach(a=>a.toggleAttribute('aria-current',a.dataset.page===p));$('#crumb').textContent=p[0].toUpperCase()+p.slice(1);history.replaceState(null,'','#'+p);$('main').scrollTop=0}
 document.addEventListener('click',e=>{
  const a=e.target.closest('[data-page],[data-go]');if(a){e.preventDefault();go(a.dataset.page||a.dataset.go);return}
  const tx=e.target.closest('[data-tx]');if(tx){const r=TX.find(x=>x.id===tx.dataset.tx);const i=TX.indexOf(r);
@@ -314,7 +316,9 @@ $('#openK').onclick=kopen;$('#kq').oninput=()=>{ksel=0;kdraw()};
 $('#kres').onclick=e=>{const b=e.target.closest('[data-k]');if(b){closeAll();CMDS[+b.dataset.k][1]()}};
 addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();kopen()}if(e.key==='Escape')closeAll();
  if($('#cmdk').classList.contains('on')){const list=kdraw();if(e.key==='ArrowDown'){ksel=(ksel+1)%list.length;kdraw();e.preventDefault()}if(e.key==='ArrowUp'){ksel=(ksel-1+list.length)%list.length;kdraw();e.preventDefault()}if(e.key==='Enter'&&list[ksel]){closeAll();list[ksel][1]()}}});
-$('#mini').onclick=()=>document.body.classList.toggle('mini');
+const phone=matchMedia('(max-width:760px)');
+$('#mini').onclick=()=>document.body.classList.toggle(phone.matches?'navon':'mini');
+document.addEventListener('click',e=>{if(document.body.classList.contains('navon')&&(e.target.closest('aside .nav a')||!e.target.closest('aside,#mini')))document.body.classList.remove('navon')},true);
 $('#bell').onclick=()=>drawer(`<header><b>Notifications</b>${X}</header><div class="body"><div class="tl"><div>Orbit AI upgraded to Team<small>2 min ago</small></div><div>Refund requested by Lea Martin<small>1 h ago</small></div><div>Weekly digest is ready<small>Yesterday</small></div></div></div>`);
 go(['overview','reports','transactions','accounts','settings'].includes(location.hash.slice(1))?location.hash.slice(1):'overview');
 </script>
