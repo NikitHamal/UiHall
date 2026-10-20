@@ -65,14 +65,14 @@ function fill(app, a) {
   const sim = h.similar(a.id, { limit: 8 });
   const facet = (k, v) => `<a class="tag" href="#/library?${k}=${encodeURIComponent(v)}">${esc(label(v))}</a>`;
   const media = a.clip
-    ? `<video class="zoomable" src="${a.clip}" poster="${a.src}" autoplay muted loop playsinline controls></video>`
+    ? `<video src="${a.clip}" poster="${a.src}" autoplay muted loop playsinline title="Click to pause"></video>`
     : `<img class="zoomable" src="${a.src}" alt="${esc(a.title)}">`;
   const printed = f.printed_palette;
 
   sheet.innerHTML = `
     <div class="sheet__media">
       ${media}
-      ${a.strip ? `<div class="sheet__strip" aria-hidden="true">${Array.from({ length: 6 }, (_, i) => `<i style="--strip:url(${a.strip.src});--f:${i}"></i>`).join('')}</div>` : ''}
+      ${a.strip ? `<div class="sheet__strip">${Array.from({ length: 6 }, (_, i) => `<i role="button" tabindex="0" aria-label="Jump to frame ${i + 1}" data-f="${i}" style="--strip:url(${new URL(a.strip.src, document.baseURI).href});--f:${i}"></i>`).join('')}</div>` : ''}
       <button class="sheet__nav prev" type="button" aria-label="Previous">${icon.left}</button>
       <button class="sheet__nav next" type="button" aria-label="Next">${icon.right}</button>
     </div>
@@ -139,6 +139,14 @@ function fill(app, a) {
     z.style.transformOrigin = `${((e.clientX - box.left) / box.width) * 100}% ${((e.clientY - box.top) / box.height) * 100}%`;
     mediaBox.classList.toggle('zoomed');
   });
+  const v = sheet.querySelector('video');
+  if (v) {
+    v.addEventListener('click', () => (v.paused ? v.play() : v.pause()));
+    sheet.querySelector('.sheet__strip')?.addEventListener('click', (e) => {
+      const f = e.target.closest('[data-f]');
+      if (f && v.duration) { v.currentTime = (+f.dataset.f / 6) * v.duration; v.play(); }
+    });
+  }
   sheet.querySelector('.sheet__info').scrollTop = 0;
   document.title = `${a.title} · UI Hall`;
 }

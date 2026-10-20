@@ -2,6 +2,7 @@ import { $, $$, esc, split, countUp, reveal, bindCopy, ink, reduced, isTouch } f
 import { TOOLS } from '../../../../mcp/src/tools.js';
 import { contrast } from '../../../../mcp/src/color.js';
 import { footer, installBlock, bindInstall, thumb, arrowBtn } from './shared.js';
+import { BLURB } from '../blurbs.js';
 
 /* Curated picks for the "measured" demo — strong, varied palettes. */
 const ANATOMY = ['IMG-0468', 'IMG-0473', 'IMG-0055', 'IMG-0397', 'IMG-0587', 'IMG-0618'];
@@ -95,7 +96,7 @@ export default function home(root, app) {
       <p class="lede" data-reveal style="--d:1">Each tool answers a design question, not a database one. Try any of them in the <a href="#/agents?tab=playground" style="color:var(--accent)">playground</a>.</p>
     </div>
     <div class="tools-grid">
-      ${TOOLS.map((tl, i) => `<a class="tool-card" href="#/agents?tab=playground&tool=${tl.name}" data-reveal style="--d:${i % 4}"><code>${tl.name}</code><p>${esc(tl.description.split('. ')[0])}.</p></a>`).join('')}
+      ${TOOLS.map((tl, i) => `<a class="tool-card" href="#/agents?tab=playground&tool=${tl.name}" data-reveal style="--d:${i % 4}"><code>${tl.name}</code><p>${esc(BLURB[tl.name])}</p></a>`).join('')}
     </div>
   </section>
 

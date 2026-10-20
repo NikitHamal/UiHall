@@ -3,7 +3,8 @@
 
 import { $, $$, esc, split, md, jsonHtml, bindCopy, segmented, tint, withCopy, icon } from '../lib.js';
 import { TOOLS, PROMPTS } from '../../../../mcp/src/tools.js';
-import { footer, installBlock, bindInstall, thumb } from './shared.js';
+import { footer, installBlock, bindInstall } from './shared.js';
+import { BLURB } from '../blurbs.js';
 
 const EXAMPLES = {
   search_designs: { query: 'dark onboarding with illustration', limit: 6 },
@@ -108,7 +109,7 @@ function playgroundHtml() {
   <section class="container section" style="padding-top:40px">
     <div class="playground">
       <div class="pg__side" role="tablist" aria-label="Tools">
-        ${TOOLS.map((tl) => `<button class="pg__tool" type="button" role="tab" data-tool="${tl.name}" aria-selected="false"><code>${tl.name}</code><span>${esc(tl.description.split('. ')[0]).slice(0, 92)}</span></button>`).join('')}
+        ${TOOLS.map((tl) => `<button class="pg__tool" type="button" role="tab" data-tool="${tl.name}" aria-selected="false"><code>${tl.name}</code><span>${esc(BLURB[tl.name])}</span></button>`).join('')}
       </div>
       <div class="pg__main">
         <form class="pg__form" id="pgForm" autocomplete="off"></form>
@@ -121,7 +122,7 @@ function playgroundHtml() {
 
 function field(name, s, v) {
   const id = `f-${name}`;
-  const lab = `${name}${s.description ? ` <span title="${esc(s.description)}" style="opacity:.6">ⓘ</span>` : ''}`;
+  const lab = `<span title="${esc(s.description || '')}">${name}</span>`;
   if (s.type === 'boolean') return `<label class="check" for="${id}"><input type="checkbox" id="${id}" name="${name}" ${v ? 'checked' : ''}> ${name}</label>`;
   if (s.enum) return `<label for="${id}">${lab}<select class="input" id="${id}" name="${name}"><option value="">—</option>${s.enum.map((e) => `<option ${v === e ? 'selected' : ''}>${e}</option>`).join('')}</select></label>`;
   const val = Array.isArray(v) ? v.join(', ') : v ?? '';
