@@ -126,6 +126,18 @@ export const PATTERNS = [
     match: (a) => a.type === 'multi-screen' || a.type === 'flow-walkthrough',
   },
   {
+    slug: 'anchored-pricing', name: 'Three tiers, one anchored', min: 4,
+    why: 'Three plans side by side with the recommended one visually anchored — darker, taller or tagged — so the decision is made for most visitors before they compare rows.',
+    build: ['Three columns max; middle or right plan anchored by fill, not just a badge.', 'Billing toggle directly above the prices it changes; show the saving as a number.', 'One CTA per plan, the anchored plan\'s CTA is the only filled one.'],
+    match: (a) => role(a, 'pricing') || tag(a, 'pricing', 'plans', 'subscription', 'paywall'),
+  },
+  {
+    slug: 'sticky-cta', name: 'Sticky bottom action', min: 4,
+    why: 'The primary action pinned to the bottom of a scrolling screen with the total or state beside it — always reachable by the thumb, never hidden below long content.',
+    build: ['Pinned bar 64–84pt with a safe-area inset; content gets matching bottom padding.', 'Show the consequence on the button ("Pay $42.10", not "Continue").', 'Hairline or blur behind the bar instead of a heavy shadow.'],
+    match: (a) => role(a, 'checkout') || tag(a, 'cart', 'sticky-cta', 'checkout', 'booking'),
+  },
+  {
     slug: 'micro-interaction', name: 'Purposeful micro-interaction', min: 4,
     why: 'Motion that confirms an action or explains a state change — a toggle that morphs, a button that becomes its result.',
     build: ['150–300ms for UI feedback, 400–600ms for spatial transitions.', 'Ease-out for entering, ease-in for leaving; springs for direct manipulation.', 'Honour prefers-reduced-motion with an opacity-only fallback.'],

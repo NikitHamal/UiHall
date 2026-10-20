@@ -300,7 +300,8 @@ export class UiHall {
       hits = new Map(this.search({ query: about, limit: 300 }).results.map((r) => [r.asset.id, r.score]));
       const words = tokenize(about).map(stem);
       ranked = all.map((p) => {
-        const evid = p.evidence.reduce((s, a) => s + (hits.get(a.id) || 0), 0);
+        // mean of the best five matches, so a pattern with 300 loose examples can't outrank a specific one
+        const evid = p.evidence.map((a) => hits.get(a.id) || 0).sort((x, y) => y - x).slice(0, 5).reduce((s, v) => s + v, 0);
         const text = tokenize(`${p.name} ${p.why}`).map(stem);
         const lex = words.filter((w) => text.includes(w)).length;
         return { p, rel: evid + lex * 2 };
@@ -318,7 +319,7 @@ export class UiHall {
   /** Real palettes from the assets closest to a mood / product, each split into UI roles with contrast checks. */
   paletteFor({ mood = '', query = '', surface, category, count = 4 } = {}) {
     const q = `${mood} ${query}`.trim();
-    const found = this.search({ query: q, limit: 60, surface, category, exclude_crops: true }).results.map((r) => r.asset);
+    const found = this.search({ query: query || mood, boost: query ? mood : '', limit: 60, surface, category, exclude_crops: true }).results.map((r) => r.asset);
     const pool = found.length ? found : this.filter(this.assets, { surface, category });
     const picks = [];
     for (const a of pool) {

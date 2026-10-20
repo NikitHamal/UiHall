@@ -304,6 +304,18 @@ const PATTERNS = [
     match: (a) => a.type === 'multi-screen' || a.type === 'flow-walkthrough',
   },
   {
+    slug: 'anchored-pricing', name: 'Three tiers, one anchored', min: 4,
+    why: 'Three plans side by side with the recommended one visually anchored — darker, taller or tagged — so the decision is made for most visitors before they compare rows.',
+    build: ['Three columns max; middle or right plan anchored by fill, not just a badge.', 'Billing toggle directly above the prices it changes; show the saving as a number.', 'One CTA per plan, the anchored plan\'s CTA is the only filled one.'],
+    match: (a) => role(a, 'pricing') || tag(a, 'pricing', 'plans', 'subscription', 'paywall'),
+  },
+  {
+    slug: 'sticky-cta', name: 'Sticky bottom action', min: 4,
+    why: 'The primary action pinned to the bottom of a scrolling screen with the total or state beside it — always reachable by the thumb, never hidden below long content.',
+    build: ['Pinned bar 64–84pt with a safe-area inset; content gets matching bottom padding.', 'Show the consequence on the button ("Pay $42.10", not "Continue").', 'Hairline or blur behind the bar instead of a heavy shadow.'],
+    match: (a) => role(a, 'checkout') || tag(a, 'cart', 'sticky-cta', 'checkout', 'booking'),
+  },
+  {
     slug: 'micro-interaction', name: 'Purposeful micro-interaction', min: 4,
     why: 'Motion that confirms an action or explains a state change — a toggle that morphs, a button that becomes its result.',
     build: ['150–300ms for UI feedback, 400–600ms for spatial transitions.', 'Ease-out for entering, ease-in for leaving; springs for direct manipulation.', 'Honour prefers-reduced-motion with an opacity-only fallback.'],
@@ -623,7 +635,8 @@ class UiHall {
       hits = new Map(this.search({ query: about, limit: 300 }).results.map((r) => [r.asset.id, r.score]));
       const words = tokenize(about).map(stem);
       ranked = all.map((p) => {
-        const evid = p.evidence.reduce((s, a) => s + (hits.get(a.id) || 0), 0);
+        // mean of the best five matches, so a pattern with 300 loose examples can't outrank a specific one
+        const evid = p.evidence.map((a) => hits.get(a.id) || 0).sort((x, y) => y - x).slice(0, 5).reduce((s, v) => s + v, 0);
         const text = tokenize(`${p.name} ${p.why}`).map(stem);
         const lex = words.filter((w) => text.includes(w)).length;
         return { p, rel: evid + lex * 2 };
@@ -641,7 +654,7 @@ class UiHall {
   /** Real palettes from the assets closest to a mood / product, each split into UI roles with contrast checks. */
   paletteFor({ mood = '', query = '', surface, category, count = 4 } = {}) {
     const q = `${mood} ${query}`.trim();
-    const found = this.search({ query: q, limit: 60, surface, category, exclude_crops: true }).results.map((r) => r.asset);
+    const found = this.search({ query: query || mood, boost: query ? mood : '', limit: 60, surface, category, exclude_crops: true }).results.map((r) => r.asset);
     const pool = found.length ? found : this.filter(this.assets, { surface, category });
     const picks = [];
     for (const a of pool) {

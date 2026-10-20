@@ -193,6 +193,26 @@ Three or more screens of one flow left to right. Encodes the journey rather than
 
 Evidence (276): IMG-0161 (Scripture app onboarding screens, eight variants), IMG-0196 (Kids money request and card screens), IMG-0215 (Productivity home and schedule screens), IMG-0219 (Sales overview dashboard in light and dark)
 
+## Three tiers, one anchored
+
+Three plans side by side with the recommended one visually anchored — darker, taller or tagged — so the decision is made for most visitors before they compare rows.
+
+- Three columns max; middle or right plan anchored by fill, not just a badge.
+- Billing toggle directly above the prices it changes; show the saving as a number.
+- One CTA per plan, the anchored plan's CTA is the only filled one.
+
+Evidence (26): IMG-0224 (Dosebase paywall, success and invite screens), IMG-0225 (Ghost mascot onboarding flow, ten screens), IMG-0240 (Arc habit app onboarding and paywall), IMG-0332 (Settings with iridescent unlock card)
+
+## Sticky bottom action
+
+The primary action pinned to the bottom of a scrolling screen with the total or state beside it — always reachable by the thumb, never hidden below long content.
+
+- Pinned bar 64–84pt with a safe-area inset; content gets matching bottom padding.
+- Show the consequence on the button ("Pay $42.10", not "Continue").
+- Hairline or blur behind the bar instead of a heavy shadow.
+
+Evidence (31): IMG-0182 (Which one looks better property card test), IMG-0346 (TableMate social dining app screen set), IMG-0376 (Laundry provider, booking and order screens), IMG-0378 (Laundry booking form with return method)
+
 ## Purposeful micro-interaction
 
 Motion that confirms an action or explains a state change — a toggle that morphs, a button that becomes its result.
