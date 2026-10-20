@@ -1,5 +1,6 @@
-/* The library: faceted search over every reference, laid out as a true
-   masonry (real aspect ratios, ranked order preserved left-to-right). */
+/* The library: a toolbar of popover filters over a true masonry grid.
+   Ranked order is preserved left-to-right; density, sort and every filter
+   live in the URL so any view can be shared. */
 
 import { $, $$, esc, icon, debounce, reduced, isTouch, segmented } from '../lib.js';
 import { HUE_FAMILIES } from '../../../mcp/src/color.js';
@@ -7,123 +8,174 @@ import { thumb, label, footer } from './shared.js';
 import { board, pinIcon, flyToBoard } from '../board.js';
 import { openDetail } from './detail.js';
 
-const HUE_SW = { red: '#E5484D', orange: '#F76B15', brown: '#8D5B3A', yellow: '#FFD60A', lime: '#B8F230', green: '#30A46C', teal: '#12A594', cyan: '#00A2C7', blue: '#3E63DD', violet: '#8E4EC6', magenta: '#D6409F', black: '#111111', grey: '#8B8D98', white: '#F5F5F5' };
+export const HUE_SW = { red: '#E5484D', orange: '#F76B15', brown: '#8D5B3A', yellow: '#FFD60A', lime: '#B8F230', green: '#30A46C', teal: '#12A594', cyan: '#00A2C7', blue: '#3E63DD', violet: '#8E4EC6', magenta: '#D6409F', black: '#111111', grey: '#8B8D98', white: '#F5F5F5' };
 const MULTI = ['category', 'type', 'role', 'style', 'tag'];
 const PAGE = 48;
+const SORTS = [['curated', 'Curated'], ['az', 'A → Z'], ['dark', 'Dark first'], ['light', 'Light first']];
 
-export default function library(root, app, route) {
+export default function library(root, app, route, opts = {}) {
   const { h } = app;
+  const fixed = opts.fixed || {};
   const state = fromParams(route.params);
 
+  const facet = (key) => {
+    if (key === 'category') return h.corpus.categories.map((c) => [c.id, c.label, c.count]);
+    if (key === 'role') return h.corpus.roles.map((c) => [c.id, label(c.id), c.count]);
+    if (key === 'style') return h.corpus.styles.map((c) => [c.id, label(c.id), c.count]);
+    if (key === 'tag') return h.corpus.tags.filter((t) => t.count >= 3).map((c) => [c.id, c.id, c.count]);
+    if (key === 'surface') return [['dark', 'Dark', 0], ['mid', 'Mid', 0], ['light', 'Light', 0]];
+    if (key === 'source') return [['original', 'Originals · MIT', h.corpus.totals.originals || 0], ['reference', 'Collected references', h.corpus.totals.assets - (h.corpus.totals.originals || 0)]];
+    return [];
+  };
+
   root.innerHTML = `
-  <div class="container lib">
-    <aside class="lib__side" id="side" aria-label="Filters">
-      <div class="lib__group"><h3>Kind</h3><div class="seg" id="fKind" role="group" aria-label="Kind">
-        ${['all', 'image', 'video'].map((k) => `<button type="button" data-v="${k}" aria-pressed="${state.kind === k}">${{ all: 'All', image: 'Images', video: 'Video' }[k]}</button>`).join('')}
-      </div></div>
-      ${group('category', 'Category', h.corpus.categories.map((c) => [c.id, c.label, c.count]))}
-      ${group('role', 'Screen role', h.corpus.roles.map((c) => [c.id, label(c.id), c.count]))}
-      ${group('style', 'Style', h.corpus.styles.map((c) => [c.id, label(c.id), c.count]))}
-      <div class="lib__group"><h3>Surface <button type="button" data-clear="surface">clear</button></h3><div class="lib__chips" data-facet="surface">
-        ${['dark', 'mid', 'light'].map((s) => `<button class="chip" type="button" data-v="${s}" aria-pressed="false">${s}</button>`).join('')}
-      </div></div>
-      <div class="lib__group"><h3>Colour family <button type="button" data-clear="hue">clear</button></h3><div class="hues" data-facet="hue">
-        ${HUE_FAMILIES.map((x) => `<button class="hue" type="button" data-v="${x}" aria-pressed="false" style="--c:${HUE_SW[x]}" title="${x}" aria-label="${x}"></button>`).join('')}
-      </div></div>
-      <div class="lib__group"><h3>Motion</h3><div class="lib__chips" data-facet="motion"><button class="chip" type="button" data-v="1" aria-pressed="false">Has a motion clip</button></div></div>
-      ${group('tag', 'Popular tags', h.corpus.tags.slice(0, 40).map((c) => [c.id, c.id, c.count]))}
-    </aside>
-    <div class="lib__main">
-      <div class="lib__bar">
-        <label class="lib__search">${icon.search}<span class="sr-only">Search</span><input class="input" id="q" type="search" placeholder="Search: “dark crypto onboarding”, “pricing toggle”, “bento”…" autocomplete="off" spellcheck="false"></label>
-        <button class="btn btn--sm lib__filters-btn" id="filtersBtn" type="button">${icon.filter} Filters</button>
-        <span class="lib__count num" id="count"></span>
+  <div class="container">
+    ${opts.head || `<div class="page-head page-head--row">
+      <div><h1 class="display h-lg">Library</h1><p class="lede">Every reference, ranked by what you type and filtered by what a screen is for, how it looks and what it’s made of.</p></div>
+    </div>`}
+    <div class="toolbar" id="toolbar">
+      <div class="toolbar__row">
+        <label class="tsearch">${icon.search}<span class="sr-only">Search the library</span><input id="q" type="search" placeholder="Search: dark onboarding, pricing toggle, bento…" autocomplete="off" spellcheck="false"></label>
+        <div class="toolbar__end">
+          <button class="fbtn lib__filters-btn" id="filtersBtn" type="button">${icon.filter}<span>Filters</span></button>
+          <label class="select"><span class="sr-only">Sort</span><select id="sort">${SORTS.map(([v, l]) => `<option value="${v}" ${state.sort === v ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
+          <div class="seg seg--sm" id="density" role="group" aria-label="Density">
+            ${[['s', 'S'], ['m', 'M'], ['l', 'L']].map(([v, l]) => `<button type="button" data-v="${v}" aria-pressed="${state.size === v}" title="${{ s: 'Compact', m: 'Comfortable', l: 'Large' }[v]}">${l}</button>`).join('')}
+          </div>
+        </div>
       </div>
-      <div class="lib__active" id="active"></div>
-      <div class="masonry" id="grid" aria-live="polite"></div>
-      <div class="sentinel" id="more"></div>
+      <div class="toolbar__row toolbar__filters" id="filters">
+        <div class="seg seg--sm" id="fKind" role="group" aria-label="Kind">
+          ${['all', 'image', 'video'].map((k) => `<button type="button" data-v="${k}" aria-pressed="${state.kind === k}">${{ all: 'All', image: 'Images', video: 'Video' }[k]}</button>`).join('')}
+        </div>
+        <span class="toolbar__sep" aria-hidden="true"></span>
+        ${fixed.source ? '' : pop('source', 'Source')}${pop('category', 'Category')}${pop('role', 'Screen')}${pop('style', 'Style')}${pop('hue', 'Colour')}${pop('surface', 'Surface')}${pop('tag', 'Tags', true)}
+        <button class="fbtn" type="button" id="fMotion" aria-pressed="${state.motion}">${icon.play}<span>Motion</span></button>
+      </div>
     </div>
+    <div class="lib__status"><span class="lib__count num" id="count"></span><div class="lib__active" id="active"></div></div>
+    <div class="masonry" id="grid" aria-live="polite"></div>
+    <div class="sentinel" id="more"></div>
   </div>
   ${footer(h)}`;
 
-  const grid = $('#grid', root), side = $('#side', root), q = $('#q', root);
+  const grid = $('#grid', root), bar = $('#toolbar', root), q = $('#q', root);
   q.value = state.q;
-  let results = [], shown = 0, cols = [], colW = 0, gap = 12;
+  let results = [], shown = 0, cols = [], colW = 0, gap = 12, openPop = null;
 
-  /* -------------------------------------------------------- filters UI -- */
-  function syncUI() {
-    for (const el of $$('[data-facet]', side)) {
-      const key = el.dataset.facet;
-      for (const b of $$('[data-v]', el)) {
-        const on = key === 'motion' ? state.motion : key === 'surface' || key === 'hue' ? state[key] === b.dataset.v : state[key].includes(b.dataset.v);
-        b.setAttribute('aria-pressed', String(!!on));
-      }
+  /* ------------------------------------------------------------ popovers -- */
+  function pop(key, title, searchable = false) {
+    return `<div class="pop" data-pop="${key}"><button class="fbtn" type="button" aria-expanded="false" aria-haspopup="true"><span>${title}</span><em class="fbtn__n num"></em><svg class="chev" viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"/></svg></button>
+      <div class="pop__panel" role="dialog" aria-label="${title}">${searchable ? '<input class="pop__find" type="search" placeholder="Find…" aria-label="Find">' : ''}<div class="pop__list"></div><div class="pop__foot"><button type="button" class="pop__clear">Clear</button><button type="button" class="pop__done btn btn--sm btn--primary">Done</button></div></div></div>`;
+  }
+  const isMulti = (k) => MULTI.includes(k);
+  const selected = (k) => (isMulti(k) ? state[k] : state[k] ? [state[k]] : []);
+  function drawPop(el, filter = '') {
+    const key = el.dataset.pop, list = el.querySelector('.pop__list');
+    if (key === 'hue') {
+      list.innerHTML = `<div class="hues">${HUE_FAMILIES.map((x) => `<button class="hue" type="button" data-v="${x}" aria-pressed="${state.hue === x}" style="--c:${HUE_SW[x]}" title="${x}"><span class="sr-only">${x}</span></button>`).join('')}</div>`;
+      return;
     }
-    for (const b of $$('#fKind button', side)) b.setAttribute('aria-pressed', String(b.dataset.v === state.kind));
+    const f = filter.toLowerCase();
+    const items = facet(key).filter(([id, t]) => !f || id.includes(f) || String(t).toLowerCase().includes(f)).slice(0, 120);
+    list.innerHTML = items.map(([id, t, n]) => `<button type="button" class="opt" role="${isMulti(key) ? 'menuitemcheckbox' : 'menuitemradio'}" data-v="${esc(id)}" aria-checked="${selected(key).includes(id)}"><i class="opt__box"></i><span>${esc(t)}</span>${n ? `<em class="num">${n}</em>` : ''}</button>`).join('') || '<p class="faint" style="padding:10px 12px;font-size:13px">No matches</p>';
+  }
+  function closePop() { if (!openPop) return; openPop.classList.remove('open'); openPop.querySelector('.fbtn').setAttribute('aria-expanded', 'false'); openPop = null; }
+  bar.addEventListener('click', (e) => {
+    const p = e.target.closest('.pop');
+    const trigger = e.target.closest('.pop > .fbtn');
+    if (trigger) {
+      if (openPop === p) return closePop();
+      closePop(); openPop = p; p.classList.add('open'); trigger.setAttribute('aria-expanded', 'true');
+      drawPop(p); p.querySelector('.pop__find')?.focus();
+      const r = p.querySelector('.pop__panel'); r.style.left = ''; r.style.right = '';
+      const rect = r.getBoundingClientRect();
+      if (rect.right > innerWidth - 8) { r.style.left = 'auto'; r.style.right = '0'; }
+      return;
+    }
+    if (e.target.closest('.pop__done')) return closePop();
+    if (e.target.closest('.pop__clear')) { const k = p.dataset.pop; state[k] = isMulti(k) ? [] : ''; drawPop(p); return commit(); }
+    const opt = e.target.closest('.pop [data-v]');
+    if (opt) {
+      const k = p.dataset.pop, v = opt.dataset.v;
+      if (isMulti(k)) state[k] = state[k].includes(v) ? state[k].filter((x) => x !== v) : [...state[k], v];
+      else state[k] = state[k] === v ? '' : v;
+      drawPop(p, p.querySelector('.pop__find')?.value || '');
+      commit();
+    }
+  });
+  bar.addEventListener('input', (e) => { if (e.target.matches('.pop__find')) drawPop(e.target.closest('.pop'), e.target.value); });
+  const outside = (e) => { if (openPop && !openPop.contains(e.target)) closePop(); };
+  const esc_ = (e) => { if (e.key === 'Escape' && openPop) { e.stopPropagation(); closePop(); } };
+  document.addEventListener('pointerdown', outside);
+  addEventListener('keydown', esc_, true);
+
+  $('#fMotion', root).addEventListener('click', () => { state.motion = !state.motion; commit(); });
+  const placeKind = segmented($('#fKind', root), (v) => { state.kind = v; commit(); });
+  segmented($('#density', root), (v) => { state.size = v; commit(); });
+  $('#sort', root).addEventListener('change', (e) => { state.sort = e.target.value; commit(); });
+  q.addEventListener('input', debounce(() => { state.q = q.value.trim(); commit(true); }, 140));
+  $('#filtersBtn', root).addEventListener('click', () => bar.classList.toggle('show-filters'));
+
+  function syncUI() {
+    for (const p of $$('.pop', bar)) {
+      const n = selected(p.dataset.pop).length;
+      p.querySelector('.fbtn__n').textContent = n || '';
+      p.querySelector('.fbtn').classList.toggle('on', n > 0);
+    }
+    $('#fMotion', root).setAttribute('aria-pressed', String(state.motion));
+    for (const b of $$('#fKind button', root)) b.setAttribute('aria-pressed', String(b.dataset.v === state.kind));
     placeKind?.();
     const chips = [];
     if (state.q) chips.push(['q', state.q, `“${state.q}”`]);
     for (const k of MULTI) for (const v of state[k]) chips.push([k, v, label(v)]);
-    if (state.surface) chips.push(['surface', state.surface, `${state.surface} surface`]);
-    if (state.hue) chips.push(['hue', state.hue, state.hue]);
+    for (const k of ['surface', 'hue', 'source']) if (state[k]) chips.push([k, state[k], k === 'source' ? (state[k] === 'original' ? 'originals' : 'references') : `${state[k]}${k === 'surface' ? ' surface' : ''}`]);
     if (state.motion) chips.push(['motion', '1', 'motion clip']);
-    if (state.kind !== 'all') chips.push(['kind', state.kind, state.kind]);
-    $('#active', root).innerHTML = chips.map(([k, v, t]) => `<button class="chip" type="button" data-rm="${k}" data-v="${esc(v)}">${esc(t)}</button>`).join('')
-      + (chips.length > 1 ? '<button class="chip" type="button" data-rm="all" style="background:none">Clear all</button>' : '');
+    $('#active', root).innerHTML = chips.map(([k, v, t]) => `<button class="chip chip--x" type="button" data-rm="${k}" data-v="${esc(v)}">${esc(t)}</button>`).join('')
+      + (chips.length > 1 ? '<button class="chip chip--ghost" type="button" data-rm="all">Clear all</button>' : '');
   }
-
-  side.addEventListener('click', (e) => {
-    const clr = e.target.closest('[data-clear]');
-    if (clr) { const k = clr.dataset.clear; state[k] = MULTI.includes(k) ? [] : ''; return commit(); }
-    const b = e.target.closest('[data-facet] [data-v]');
-    if (!b) return;
-    const key = b.closest('[data-facet]').dataset.facet, v = b.dataset.v;
-    if (key === 'motion') state.motion = !state.motion;
-    else if (key === 'surface' || key === 'hue') state[key] = state[key] === v ? '' : v;
-    else state[key] = state[key].includes(v) ? state[key].filter((x) => x !== v) : [...state[key], v];
-    commit();
-  });
-  const placeKind = segmented($('#fKind', side), (v) => { state.kind = v; commit(); });
   $('#active', root).addEventListener('click', (e) => {
     const b = e.target.closest('[data-rm]');
     if (!b) return;
     const k = b.dataset.rm, v = b.dataset.v;
-    if (k === 'all') Object.assign(state, fromParams(new URLSearchParams()));
+    if (k === 'all') { Object.assign(state, fromParams(new URLSearchParams()), { size: state.size, sort: state.sort }); q.value = ''; }
     else if (k === 'q') { state.q = ''; q.value = ''; }
     else if (MULTI.includes(k)) state[k] = state[k].filter((x) => x !== v);
     else if (k === 'motion') state.motion = false;
-    else if (k === 'kind') state.kind = 'all';
     else state[k] = '';
     commit();
   });
-  q.addEventListener('input', debounce(() => { state.q = q.value.trim(); commit(true); }, 140));
-  $('#filtersBtn', root).addEventListener('click', () => side.classList.toggle('open'));
 
-  /* push state into the URL without re-rendering the view */
   function commit(replace = false) {
     const p = toParams(state);
-    const hash = `#/library${p ? `?${p}` : ''}`;
+    const base = opts.base || '#/library';
+    const hash = `${base}${p ? `?${p}` : ''}`;
     if (location.hash !== hash) (replace ? history.replaceState : history.pushState).call(history, null, '', hash);
     run();
   }
 
-  /* --------------------------------------------------------- results ---- */
+  /* ------------------------------------------------------------ results -- */
   function run() {
     syncUI();
     const res = h.search({
-      query: state.q, limit: 2000, kind: state.kind, category: state.category, type: state.type, role: state.role, style: state.style,
+      query: state.q, limit: 3000, kind: state.kind, category: state.category, type: state.type, role: state.role, style: state.style,
       tag: state.tag, surface: state.surface || undefined, hue: state.hue || undefined, has_motion: state.motion,
+      source: fixed.source || state.source || undefined,
     });
     results = res.results.map((r) => r.asset);
-    if (!state.q) results = curated(results);
-    $('#count', root).innerHTML = `<b>${results.length}</b> of ${h.assets.length}`;
+    if (!state.q && state.sort === 'curated') results = curated(results);
+    if (state.sort === 'az') results.sort((a, b) => a.title.localeCompare(b.title));
+    if (state.sort === 'dark') results.sort((a, b) => a._d.lightness - b._d.lightness);
+    if (state.sort === 'light') results.sort((a, b) => b._d.lightness - a._d.lightness);
+    $('#count', root).innerHTML = `<b>${results.length}</b> ${results.length === 1 ? 'result' : 'results'}`;
     layout(true);
   }
 
   function measure() {
     const w = grid.clientWidth;
-    const n = w > 1400 ? 5 : w > 1000 ? 4 : w > 620 ? 3 : 2;
+    const target = { s: 210, m: 290, l: 400 }[state.size] || 290;
     gap = w > 720 ? 12 : 8;
+    const n = Math.max(2, Math.round((w + gap) / (target + gap)));
     colW = (w - gap * (n - 1)) / n;
     return n;
   }
@@ -134,25 +186,26 @@ export default function library(root, app, route) {
       cols = Array(measure()).fill(0);
       if (!results.length) {
         grid.style.height = 'auto';
-        grid.innerHTML = `<div class="empty"><b>Nothing here — yet.</b><p>No reference matches every filter. Remove one, or search with broader words.</p><button class="btn btn--sm" type="button" data-rm-all>Clear filters</button></div>`;
-        grid.querySelector('[data-rm-all]').onclick = () => { Object.assign(state, fromParams(new URLSearchParams())); q.value = ''; commit(); };
+        grid.innerHTML = `<div class="empty"><b>Nothing matches — yet.</b><p>No reference fits every filter. Remove one, or search with broader words.</p><button class="btn btn--sm" type="button" data-rm-all>Clear filters</button></div>`;
+        grid.querySelector('[data-rm-all]').onclick = () => { Object.assign(state, fromParams(new URLSearchParams()), { size: state.size }); q.value = ''; commit(); };
         return;
       }
     }
     const frag = document.createDocumentFragment();
     const batch = results.slice(shown, shown + PAGE);
+    const showMeta = colW > 230;
     batch.forEach((a, i) => {
       const c = cols.indexOf(Math.min(...cols));
-      const hgt = Math.round(colW / Math.max(0.45, Math.min(2.4, a.w / a.h)));
+      const hgt = Math.round(colW / Math.max(0.5, Math.min(2.2, a.w / a.h)));
       const el = document.createElement('a');
       el.className = 'tile';
       el.href = `#/a/${a.id}`;
       el.dataset.id = a.id;
-      el.style.cssText = `left:${c * (colW + gap)}px;top:${cols[c]}px;width:${colW}px;height:${hgt}px;transition-delay:${reduced() ? 0 : Math.min(i, 16) * 28}ms`;
+      el.style.cssText = `left:${c * (colW + gap)}px;top:${cols[c]}px;width:${colW}px;height:${hgt}px;transition-delay:${reduced() ? 0 : Math.min(i, 16) * 26}ms`;
       el.innerHTML = `<img src="${thumb(a)}" alt="${esc(a.title)}" loading="lazy" decoding="async">
         <span class="tile__pin" role="button" tabindex="0" data-pin="${a.id}" aria-label="Pin ${a.id} to board" aria-pressed="${board.has(a.id)}">${pinIcon(board.has(a.id))}</span>
-        ${a.clip ? `<span class="tile__badge">${a.clip_meta?.duration_s ? Math.round(a.clip_meta.duration_s) + 's' : 'motion'}</span>` : ''}
-        <span class="tile__meta"><span>${a.id} · ${esc(label(a.category))}</span><b>${esc(a.title)}</b><span class="tile__pal">${(a.palette || []).slice(0, 5).map((x) => `<i style="--c:${x}"></i>`).join('')}</span></span>`;
+        ${a.original ? '<span class="tile__badge tile__badge--orig">Original</span>' : a.clip ? `<span class="tile__badge">${a.clip_meta?.duration_s ? Math.round(a.clip_meta.duration_s) + 's' : 'motion'}</span>` : ''}
+        ${showMeta ? `<span class="tile__meta"><span>${a.id} · ${esc(label(a.category))}</span><b>${esc(a.title)}</b><span class="tile__pal">${(a.palette || []).slice(0, 5).map((x) => `<i style="--c:${x}"></i>`).join('')}</span></span>` : ''}`;
       cols[c] += hgt + gap;
       frag.append(el);
     });
@@ -173,13 +226,12 @@ export default function library(root, app, route) {
   });
   ro.observe(grid);
 
-  /* pin to board, and morph tile → detail sheet with a shared-element view transition */
+  /* pin, and morph tile → sheet with a shared-element view transition */
   grid.addEventListener('click', (e) => {
     const pin = e.target.closest('[data-pin]');
     if (pin) {
       e.preventDefault(); e.stopPropagation();
-      const on = board.toggle(pin.dataset.pin);
-      if (on) flyToBoard(pin, thumb(h.get(pin.dataset.pin)));
+      if (board.toggle(pin.dataset.pin)) flyToBoard(pin, thumb(h.get(pin.dataset.pin)));
       return;
     }
     const t = e.target.closest('.tile');
@@ -223,41 +275,40 @@ export default function library(root, app, route) {
   return {
     order: () => results.map((a) => a.id),
     update(r) { Object.assign(state, fromParams(r.params)); q.value = state.q; run(); },
-    cleanup() { more.disconnect(); ro.disconnect(); stop(); removeEventListener('uh:board', onBoard); },
+    cleanup() { more.disconnect(); ro.disconnect(); stop(); removeEventListener('uh:board', onBoard); document.removeEventListener('pointerdown', outside); removeEventListener('keydown', esc_, true); },
   };
 }
 
 /* Default order when nothing is typed: round-robin across categories so the
-   first screenful shows the range of the hall, crops and swatches last. */
+   first screenful shows the range of the hall; originals lead, crops and swatches last. */
 let CURATED = null;
 function curated(list) {
   if (!CURATED) {
     const buckets = new Map();
-    for (const a of list.length ? window.__uh.assets : []) {
-      const k = a.crop_of ? 'zz-crop' : a.category === 'color-palette' ? 'zz-pal' : a.category;
+    for (const a of window.__uh.assets) {
+      const k = a.original ? 'aa-orig' : a.crop_of ? 'zz-crop' : a.category === 'color-palette' ? 'zz-pal' : a.category;
       if (!buckets.has(k)) buckets.set(k, []);
       buckets.get(k).push(a);
     }
-    const main = [...buckets.entries()].filter(([k]) => !k.startsWith('zz')).sort((a, b) => b[1].length - a[1].length).map(([, v]) => v);
+    const main = [...buckets.entries()].filter(([k]) => !k.startsWith('zz') && k !== 'aa-orig').sort((a, b) => b[1].length - a[1].length).map(([, v]) => [...v]);
     const weights = main.map((b) => Math.max(1, Math.round(Math.sqrt(b.length / 20))));
+    const orig = [...(buckets.get('aa-orig') || [])];
     const out = [];
-    while (main.some((b) => b.length)) main.forEach((b, i) => { for (let n = 0; n < weights[i] && b.length; n++) out.push(b.shift()); });
+    while (main.some((b) => b.length) || orig.length) {
+      if (orig.length) out.push(...orig.splice(0, 2));
+      main.forEach((b, i) => { for (let n = 0; n < weights[i] && b.length; n++) out.push(b.shift()); });
+    }
     CURATED = new Map([...out, ...(buckets.get('zz-pal') || []), ...(buckets.get('zz-crop') || [])].map((a, i) => [a.id, i]));
   }
-  return [...list].sort((a, b) => CURATED.get(a.id) - CURATED.get(b.id));
-}
-
-function group(key, title, items) {
-  return `<div class="lib__group"><h3>${title} <button type="button" data-clear="${key}">clear</button></h3><div class="lib__chips" data-facet="${key}">
-    ${items.map(([id, text, n]) => `<button class="chip" type="button" data-v="${esc(id)}" aria-pressed="false">${esc(text)} <span class="n">${n}</span></button>`).join('')}
-  </div></div>`;
+  return [...list].sort((a, b) => (CURATED.get(a.id) ?? 1e6) - (CURATED.get(b.id) ?? 1e6));
 }
 
 function fromParams(p) {
   return {
     q: p.get('q') || '', kind: p.get('kind') || 'all',
     category: p.getAll('category'), type: p.getAll('type'), role: p.getAll('role'), style: p.getAll('style'), tag: p.getAll('tag'),
-    surface: p.get('surface') || '', hue: p.get('hue') || '', motion: p.get('motion') === '1',
+    surface: p.get('surface') || '', hue: p.get('hue') || '', source: p.get('source') || '', motion: p.get('motion') === '1',
+    sort: p.get('sort') || 'curated', size: p.get('size') || 'm',
   };
 }
 
@@ -266,8 +317,9 @@ function toParams(s) {
   if (s.q) p.set('q', s.q);
   if (s.kind !== 'all') p.set('kind', s.kind);
   for (const k of MULTI) for (const v of s[k]) p.append(k, v);
-  if (s.surface) p.set('surface', s.surface);
-  if (s.hue) p.set('hue', s.hue);
+  for (const k of ['surface', 'hue', 'source']) if (s[k]) p.set(k, s[k]);
   if (s.motion) p.set('motion', '1');
+  if (s.sort !== 'curated') p.set('sort', s.sort);
+  if (s.size !== 'm') p.set('size', s.size);
   return p.toString();
 }

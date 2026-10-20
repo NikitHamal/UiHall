@@ -22,7 +22,7 @@ export const pinIcon = (on) => `<svg viewBox="0 0 20 20" aria-hidden="true"><pat
 
 /** A thumbnail arcs from the pin to the Board link — confirms where it went. */
 export function flyToBoard(fromEl, src) {
-  const target = document.querySelector('[data-nav="board"]');
+  const target = [...document.querySelectorAll('[data-nav="board"]')].find((e) => e.getBoundingClientRect().width > 0 && e.getBoundingClientRect().left >= 0);
   if (!fromEl || !target || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const a = fromEl.getBoundingClientRect(), b = target.getBoundingClientRect();
   const f = Object.assign(document.createElement('div'), { className: 'flyer' });

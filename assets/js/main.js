@@ -15,6 +15,8 @@ const VIEWS = {
   motion: () => import('./views/motion.js'),
   agents: () => import('./views/agents.js'),
   board: () => import('./views/board.js'),
+  originals: () => import('./views/originals.js'),
+  demos: () => import('./views/demos.js'),
 };
 
 export const app = { h: null, view: null, viewName: null, cleanup: null, cameFromApp: false };
@@ -70,34 +72,22 @@ async function render(name, r) {
     await document.startViewTransition(doRender).finished.catch(() => {});
   } else doRender();
   markNav(name);
-  document.title = { '': 'UI Hall — design evidence for humans and agents', library: 'Library · UI Hall', patterns: 'Patterns · UI Hall', colour: 'Colour · UI Hall', motion: 'Motion · UI Hall', agents: 'For agents · UI Hall', board: 'Board · UI Hall' }[name];
+  document.title = { '': 'UI Hall — design evidence for humans and agents', library: 'Library · UI Hall', patterns: 'Patterns · UI Hall', colour: 'Colour · UI Hall', motion: 'Motion · UI Hall', agents: 'For agents · UI Hall', board: 'Board · UI Hall', originals: 'Originals · UI Hall', demos: 'Demos · UI Hall' }[name];
 }
 
 /* ----------------------------------------------------------------- nav -- */
 function markNav(name) {
-  const pill = $('.nav__pill');
-  let on = null;
-  for (const a of $$('.nav__links a')) {
-    const hit = a.dataset.nav === name;
-    a.toggleAttribute('aria-current', hit);
-    if (hit) { a.setAttribute('aria-current', 'page'); on = a; }
+  for (const a of $$('.rail__link, .tabbar a')) {
+    if (a.dataset.nav === name) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   }
-  if (on) {
-    pill.style.left = `${on.offsetLeft}px`;
-    pill.style.width = `${on.offsetWidth}px`;
-    pill.style.opacity = '1';
-  } else pill.style.opacity = '0';
+  $('#rail').classList.remove('open');
 }
 
-function hideOnScroll() {
-  let last = 0;
-  const nav = $('#nav');
-  addEventListener('scroll', () => {
-    const y = scrollY;
-    nav.classList.toggle('hide', y > 240 && y > last + 4);
-    if (y < last - 4 || y < 240) nav.classList.remove('hide');
-    last = y;
-  }, { passive: true });
+function drawer() {
+  const rail = $('#rail'), scrim = $('#railScrim');
+  $('#menuBtn').addEventListener('click', () => rail.classList.add('open'));
+  scrim.addEventListener('click', () => rail.classList.remove('open'));
+  addEventListener('keydown', (e) => { if (e.key === 'Escape') rail.classList.remove('open'); });
 }
 
 function theme() {
@@ -115,14 +105,14 @@ function theme() {
 /* ---------------------------------------------------------------- boot -- */
 async function boot() {
   theme();
-  hideOnScroll();
+  drawer();
   glow();
   $('#openCmd').addEventListener('click', () => openCmd(app));
   addEventListener('keydown', (e) => {
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); openCmd(app); }
     if (e.key === '/' && !/input|textarea|select/i.test(document.activeElement?.tagName)) { e.preventDefault(); openCmd(app); }
   });
-  addEventListener('resize', () => markNav(app.viewName));
+  $('#keysBtn').addEventListener('click', () => openKeys());
   addEventListener('keydown', (e) => {
     if (/input|textarea|select/i.test(document.activeElement?.tagName) || e.metaKey || e.ctrlKey || e.altKey) return;
     if (e.key === '?') { e.preventDefault(); openKeys(); }
@@ -133,7 +123,6 @@ async function boot() {
   const syncBadge = (bump) => {
     badge.textContent = board.list().length || '';
     if (bump) { badge.classList.remove('bump'); void badge.offsetWidth; badge.classList.add('bump'); }
-    markNav(app.viewName);
   };
   addEventListener('uh:board', () => syncBadge(true));
   syncBadge(false);
@@ -141,6 +130,9 @@ async function boot() {
   try {
     app.h = new UiHall(await loadCorpus(), { site: new URL('.', location.href).href });
     window.__uh = app.h;
+    const t = app.h.corpus.totals;
+    $('#railStat').innerHTML = `<b>${t.assets}</b> references · <b>${t.originals || 0}</b> originals`;
+    $('.search__ph').textContent = `Search ${t.assets} references, patterns, colours…`;
   } catch (e) {
     $('#main').innerHTML = `<div class="container page-head"><h1 class="display h-md">The corpus didn’t load.</h1><p class="lede">${e.message}. If you opened this file directly, serve the repo over http: <code>node tools/serve.mjs</code>.</p></div>`;
     return;

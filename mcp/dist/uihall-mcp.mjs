@@ -508,6 +508,8 @@ class UiHall {
       if (hue.length && !hue.some((h) => a._d.hues.includes(h) || a._d.accent_family === h)) return false;
       if (f.has_motion && !a.clip) return false;
       if (f.exclude_crops && a.crop_of) return false;
+      if (f.source === 'original' && !a.original) return false;
+      if (f.source === 'reference' && a.original) return false;
       return true;
     });
   }
