@@ -693,7 +693,7 @@ class UiHall {
       provenance: {
         screens: 'Every screen is an original built in code for UI Hall, live and MIT licensed, in four themes.',
         descriptions: 'Each write-up is generated from the exact content the screen renders.',
-        palettes: 'Measured: k-means over the rendered pixels, with area percentages.',
+        palettes: 'Palettes are measured (k-means over the rendered pixels, with area percentages); colour roles come from each theme\'s real tokens.',
       },
     };
   }
