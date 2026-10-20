@@ -47,7 +47,16 @@ def main():
     c = json.load(open(CORPUS))
     man = json.load(open(MANIFEST)) if os.path.exists(MANIFEST) else {}
     nxt = max([int(v.split('-')[1]) for v in man.values()] + [0]) + 1
-    by_id = {a['id']: a for a in c['assets']}
+    by_id = {a['id']: a for a in c['assets'] if not a.get('original')}
+    # re-expand previously merged originals so unchanged themes survive a partial rebuild
+    for a in c['assets']:
+        if a.get('original') and a.get('variants'):
+            for th, v in a['variants'].items():
+                key = a['live'].split('/')[-1][:-5] + '@' + th
+                vid = man.get(key)
+                if vid: by_id[vid] = {**a, 'id': vid, 'theme': th, 'src': v['src'], 'thumb': v['thumb'], 'palette': v['palette'], 'palette_detail': v['palette_detail'], 'source_html': a['live'] + '?theme=' + th}
+        elif a.get('original'):
+            by_id[a['id']] = a
     made = 0
     for f in sorted(glob.glob(os.path.join(PNG, '*.png'))):
         key = os.path.basename(f)[:-4]
@@ -78,9 +87,32 @@ def main():
         }
         by_id[oid] = a
         made += 1
+    # Merge theme renders: one asset per screen, its themes as variants (the first theme's id is canonical).
     refs = [x for x in c['assets'] if not x.get('original')]
-    origs = sorted((x for x in by_id.values() if x.get('original')), key=lambda x: x['id'])
-    c['assets'] = origs + refs
+    rendered = [x for x in by_id.values() if x.get('original') and x.get('theme')]
+    groups = {}
+    for x in rendered:
+        slug = x['source_html'].split('/')[-1].split('.')[0]
+        groups.setdefault(slug, []).append(x)
+    order = list(THEMES)
+    merged = []
+    for slug, xs in groups.items():
+        xs.sort(key=lambda x: order.index(x['theme']))
+        base = dict(xs[0])
+        meta = meta_of(slug)
+        base['title'] = meta['title']
+        base['description'] = meta['desc'].format(words='the kit tokens — it ships in four themes (' + ', '.join(THEMES[x['theme']]['name'] for x in xs) + ') from one source file')
+        base['style'] = [s for s in meta['style']]
+        base['live'] = f'originals/screens/{slug}.html'
+        base['viewport'] = meta['viewport']
+        base['themes'] = [x['theme'] for x in xs]
+        base['variants'] = {x['theme']: {'src': x['src'], 'thumb': x['thumb'], 'palette': x['palette'], 'palette_detail': x['palette_detail'], 'scheme': THEMES[x['theme']]['scheme'], 'name': THEMES[x['theme']]['name']} for x in xs}
+        base['quality'] = 'Rendered from code at 2×; open it live to interact and switch themes.'
+        base.pop('theme', None)
+        base['source_html'] = base['live']
+        merged.append(base)
+    merged.sort(key=lambda x: x['id'])
+    c['assets'] = merged + refs
     assets = c['assets']
 
     def recount(key, field, multi):

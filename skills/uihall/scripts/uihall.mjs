@@ -587,12 +587,13 @@ class UiHall {
     for (const a of this.assets) {
       if (kind && a.kind !== kind) continue;
       let best = null;
-      for (const p of a.palette_detail || []) {
+      const sets = [[null, a.palette_detail || []], ...Object.entries(a.variants || {}).map(([t, v]) => [t, v.palette_detail || []])];
+      for (const [theme, det] of sets) for (const p of det) {
         if (p.pct < min_pct) continue;
         const d = deltaE(h, p.hex);
-        if (!best || d < best.d) best = { d, hex: normHex(p.hex), pct: p.pct };
+        if (!best || d < best.d) best = { d, hex: normHex(p.hex), pct: p.pct, theme };
       }
-      if (best && best.d <= tolerance) out.push({ asset: a, match: best.hex, distance: Math.round(best.d * 1000) / 1000, area_pct: best.pct });
+      if (best && best.d <= tolerance) out.push({ asset: a, match: best.hex, distance: Math.round(best.d * 1000) / 1000, area_pct: best.pct, ...(best.theme ? { theme: best.theme } : {}) });
     }
     return out.sort((x, y) => x.distance - y.distance || y.area_pct - x.area_pct).slice(0, limit);
   }
@@ -1066,7 +1067,7 @@ const TOOLS = [
   {
     name: 'search_designs',
     title: 'Search designs',
-    description: 'Search 755 curated, hand-described UI/UX references (mobile screens, web pages, dashboards, motion clips, design systems). '
+    description: 'Search 850+ curated, hand-described UI/UX references — collected work plus MIT-licensed originals built in code (mobile screens, web pages, dashboards, motion clips, design systems). '
       + 'Ranked full-text search with synonyms ("fintech" also finds wallet, banking…) plus facet filters. '
       + 'Use this first whenever you design, build or critique an interface, so decisions come from real examples instead of the generic average. '
       + 'Set include_images to actually see the top results.',

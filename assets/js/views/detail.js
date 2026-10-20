@@ -2,6 +2,9 @@
    whatever view is underneath so closing returns you exactly where you were. */
 
 import { $, esc, icon, bindCopy, ink, segmented, tint } from '../lib.js';
+import { paletteRoles } from '../../../mcp/src/color.js';
+const SW = { ember: '#FF6A2B', mint: '#1F7A4D', ink: '#2B4BF2', grape: '#C6F432' };
+let liveTheme = null, liveFor = null;
 import { thumb, label } from './shared.js';
 import { board, pinIcon, flyToBoard } from '../board.js';
 
@@ -77,20 +80,26 @@ export function closeDetail() {
   setTimeout(() => { el.remove(); document.documentElement.style.overflow = ''; }, 260);
 }
 
-function fill(app, a) {
+function fill(app, a, theme) {
   const { h } = app;
   const f = h.full(a);
-  const r = f.colour_roles;
   const sheet = host.querySelector('.sheet');
-  const pal = a.palette_detail || [];
+  if (a.original && a.variants) { if (liveFor !== a.id) { liveFor = a.id; liveTheme = a.themes[0]; } if (theme) liveTheme = theme; } else liveFor = null;
+  const v = a.original && a.variants ? a.variants[liveTheme] : null;
+  const pal = (v ? v.palette_detail : a.palette_detail) || [];
+  const r = v ? h.checkRoles(paletteRoles(pal)) : f.colour_roles;
+  const switching = v && theme && sheet.querySelector('.live iframe');
   const sim = h.similar(a.id, { limit: 8 });
   const facet = (k, v) => `<a class="tag" href="#/library?${k}=${encodeURIComponent(v)}">${esc(label(v))}</a>`;
-  const media = a.clip
+  const media = v
+    ? `<div class="live" data-vp="${a.viewport}"><div class="live__bar"><div class="live__themes" role="group" aria-label="Theme">${a.themes.map((t) => `<button type="button" data-theme="${t}" aria-pressed="${t === liveTheme}"><i style="background:${SW[t] || '#888'}"></i>${a.variants[t].name}</button>`).join('')}</div><a class="live__open" href="${a.live}?theme=${liveTheme}" target="_blank" rel="noopener">Open ${icon.ext}</a></div><iframe title="${esc(a.title)} — live" src="${a.live}?theme=${liveTheme}&embed=1" loading="lazy"></iframe><span class="live__hint">Live · tap toggles, chips, steppers and buttons</span></div>`
+    : a.clip
     ? `<video src="${a.clip}" poster="${a.src}" autoplay muted loop playsinline title="Click to pause"></video>`
     : `<img class="zoomable" src="${a.src}" alt="${esc(a.title)}">`;
   const printed = f.printed_palette;
 
-  sheet.innerHTML = `
+  const target = switching ? document.createElement('div') : sheet;
+  target.innerHTML = `
     <div class="sheet__media">
       ${media}
       ${a.strip ? `<div class="sheet__strip">${Array.from({ length: 6 }, (_, i) => `<i role="button" tabindex="0" aria-label="Jump to frame ${i + 1}" data-f="${i}" style="--strip:url(${new URL(a.strip.src, document.baseURI).href});--f:${i}"></i>`).join('')}</div>` : ''}
@@ -142,11 +151,18 @@ function fill(app, a) {
       </div>
     </div>`;
 
+  if (switching) {
+    sheet.querySelector('.sheet__info').replaceWith(target.querySelector('.sheet__info'));
+    sheet.querySelectorAll('.live__themes [data-theme]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.theme === liveTheme)));
+    sheet.querySelector('.live__open').href = `${a.live}?theme=${liveTheme}`;
+    sheet.querySelector('.live iframe').contentWindow?.postMessage({ uihallTheme: liveTheme }, '*');
+  }
+  if (!switching) sheet.querySelector('.live__themes')?.addEventListener('click', (e) => { const b = e.target.closest('[data-theme]'); if (b && b.dataset.theme !== liveTheme) { const sc = sheet.querySelector('.sheet__info').scrollTop; fill(app, a, b.dataset.theme); sheet.querySelector('.sheet__info').scrollTop = sc; } });
   const tok = sheet.querySelector('#tok');
   const showTok = (fmt) => {
     tok.innerHTML = fmt === 'mcp'
       ? tint(`# ask your agent, or call the tools directly\nget_design({ "id": "${a.id}" })\nview_design({ "ids": ["${a.id}"] })\nfind_similar({ "id": "${a.id}" })\nexport_tokens({ "id": "${a.id}", "format": "tailwind" })`)
-      : tint(h.tokens({ id: a.id, format: fmt }).code);
+      : tint(v ? h.tokens({ colors: pal.map((p) => p.hex), format: fmt }).code : h.tokens({ id: a.id, format: fmt }).code);
   };
   segmented(sheet.querySelector('.seg'), showTok);
   showTok('css');
@@ -167,14 +183,14 @@ function fill(app, a) {
     z.style.transformOrigin = `${((e.clientX - box.left) / box.width) * 100}% ${((e.clientY - box.top) / box.height) * 100}%`;
     mediaBox.classList.toggle('zoomed');
   });
-  const v = sheet.querySelector('video');
-  if (v) {
-    v.addEventListener('click', () => (v.paused ? v.play() : v.pause()));
+  const vid = sheet.querySelector('video');
+  if (vid) {
+    vid.addEventListener('click', () => (vid.paused ? vid.play() : vid.pause()));
     sheet.querySelector('.sheet__strip')?.addEventListener('click', (e) => {
       const f = e.target.closest('[data-f]');
-      if (f && v.duration) { v.currentTime = (+f.dataset.f / 6) * v.duration; v.play(); }
+      if (f && vid.duration) { vid.currentTime = (+f.dataset.f / 6) * vid.duration; vid.play(); }
     });
   }
-  sheet.querySelector('.sheet__info').scrollTop = 0;
+  if (!theme) sheet.querySelector('.sheet__info').scrollTop = 0;
   document.title = `${a.title} · UI Hall`;
 }

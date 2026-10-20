@@ -30,7 +30,7 @@ export default function home(root, app) {
 
   const themes = ['ember', 'mint', 'ink', 'grape'];
   const origBySlug = new Map();
-  for (const x of h.assets) if (x.original && x.source_html) { const slug = x.source_html.split('/').pop().split('.')[0]; if (!origBySlug.has(slug)) origBySlug.set(slug, {}); origBySlug.get(slug)[x.theme] = x; }
+  for (const x of h.assets) if (x.original && x.variants) origBySlug.set(x.live.split('/').pop().split('.')[0], Object.fromEntries(x.themes.map((th) => [th, { id: x.id, src: x.variants[th].src, title: x.title }])));
   const carouselSlugs = ['finance-home', 'music-now-playing', 'assistant-chat', 'product-detail-sneaker', 'fitness-rings', 'travel-flight-select', 'onboarding-welcome', 'paywall-plans', 'calendar-day', 'messages-inbox', 'profile-stats', 'cart-sticky-checkout'].filter((k) => origBySlug.has(k));
 
   root.innerHTML = `
@@ -43,7 +43,6 @@ export default function home(root, app) {
   <section class="lp-hero" id="lpHero">
     <div class="lp-grid" aria-hidden="true"></div>
     <div class="lp-hero__copy">
-      <span class="lp-kicker" data-reveal><i></i>Design reference · MCP server · agent skill</span>
       <h1 class="lp-title" id="heroTitle">The design reference your agent can <span class="lp-scribble">see.<svg viewBox="0 0 220 40" preserveAspectRatio="none" aria-hidden="true"><path d="M4 26 C40 10 90 8 132 14 S196 30 216 18" pathLength="1"/><path d="M18 34 C70 26 130 26 190 30" pathLength="1"/></svg></span></h1>
       <p class="lp-lede" data-reveal style="--d:4">${t.assets} real interfaces — ${t.originals || 0} built in code and free to use — each one written up by hand and colour-measured from the pixels. Browse it yourself, or hand it to Claude Code, Cursor and any MCP agent so it designs from evidence instead of the average.</p>
       <div class="lp-cta" data-reveal style="--d:5">

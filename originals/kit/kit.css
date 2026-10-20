@@ -71,3 +71,14 @@ body.present.dark{background:radial-gradient(120% 90% at 30% 10%,color-mix(in ok
 .dots{display:flex;gap:6px}.dots i{width:6px;height:6px;border-radius:6px;background:var(--line)}.dots i.on{width:20px;background:var(--text)}
 .bar-track{height:8px;border-radius:8px;background:var(--surface2);overflow:hidden}.bar-track i{display:block;height:100%;border-radius:inherit;background:var(--accent)}
 .kbd{font:500 11px var(--mono);padding:2px 6px;border-radius:5px;box-shadow:inset 0 0 0 1px var(--line);color:var(--muted)}
+/* embed + interaction polish */
+body.embed{min-height:100vh;padding:0;display:grid;place-items:center;overflow:hidden;background:transparent!important}
+body.embed .device,body.embed .desk,body.embed .sheet-canvas{position:absolute;left:50%;top:50%;flex:none;transform-origin:center}
+body.swap *{transition:background-color .45s ease,color .45s ease,border-color .45s ease,box-shadow .45s ease,fill .45s,stroke .45s}
+.interactive .btn,.interactive .pill,.interactive .toggle,.interactive .ico,.interactive .tabbar .t,.interactive .li{cursor:pointer}
+.interactive .btn:hover{filter:brightness(1.08)}
+.interactive .li{transition:background .2s;border-radius:10px}
+.interactive .li:hover{background:color-mix(in oklab,var(--text) 4%,transparent)}
+.toggle::after{transition:left .3s cubic-bezier(.34,1.56,.64,1)}
+.toggle{transition:background .25s}
+.pill{transition:background .25s,color .25s}

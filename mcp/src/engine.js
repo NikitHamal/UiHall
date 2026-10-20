@@ -253,12 +253,13 @@ export class UiHall {
     for (const a of this.assets) {
       if (kind && a.kind !== kind) continue;
       let best = null;
-      for (const p of a.palette_detail || []) {
+      const sets = [[null, a.palette_detail || []], ...Object.entries(a.variants || {}).map(([t, v]) => [t, v.palette_detail || []])];
+      for (const [theme, det] of sets) for (const p of det) {
         if (p.pct < min_pct) continue;
         const d = deltaE(h, p.hex);
-        if (!best || d < best.d) best = { d, hex: normHex(p.hex), pct: p.pct };
+        if (!best || d < best.d) best = { d, hex: normHex(p.hex), pct: p.pct, theme };
       }
-      if (best && best.d <= tolerance) out.push({ asset: a, match: best.hex, distance: Math.round(best.d * 1000) / 1000, area_pct: best.pct });
+      if (best && best.d <= tolerance) out.push({ asset: a, match: best.hex, distance: Math.round(best.d * 1000) / 1000, area_pct: best.pct, ...(best.theme ? { theme: best.theme } : {}) });
     }
     return out.sort((x, y) => x.distance - y.distance || y.area_pct - x.area_pct).slice(0, limit);
   }

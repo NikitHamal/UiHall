@@ -204,7 +204,7 @@ export default function library(root, app, route, opts = {}) {
       el.style.cssText = `left:${c * (colW + gap)}px;top:${cols[c]}px;width:${colW}px;height:${hgt}px;transition-delay:${reduced() ? 0 : Math.min(i, 16) * 26}ms`;
       el.innerHTML = `<img src="${thumb(a)}" alt="${esc(a.title)}" loading="lazy" decoding="async">
         <span class="tile__pin" role="button" tabindex="0" data-pin="${a.id}" aria-label="Pin ${a.id} to board" aria-pressed="${board.has(a.id)}">${pinIcon(board.has(a.id))}</span>
-        ${a.original ? '<span class="tile__badge tile__badge--orig">Original</span>' : a.clip ? `<span class="tile__badge">${a.clip_meta?.duration_s ? Math.round(a.clip_meta.duration_s) + 's' : 'motion'}</span>` : ''}
+        ${a.original ? `<span class="tile__badge tile__badge--orig">Original · ${a.themes?.length || 1} themes</span>` : a.clip ? `<span class="tile__badge">${a.clip_meta?.duration_s ? Math.round(a.clip_meta.duration_s) + 's' : 'motion'}</span>` : ''}
         ${showMeta ? `<span class="tile__meta"><span>${a.id} · ${esc(label(a.category))}</span><b>${esc(a.title)}</b><span class="tile__pal">${(a.palette || []).slice(0, 5).map((x) => `<i style="--c:${x}"></i>`).join('')}</span></span>` : ''}`;
       cols[c] += hgt + gap;
       frag.append(el);
