@@ -20,7 +20,7 @@ export default function colour(root, app, route) {
       <label class="picker__swatch" id="sw"><input type="color" id="pick" aria-label="Pick a colour"><b id="hexLabel"></b><span id="fam"></span></label>
       <input class="input mono" id="hexIn" maxlength="7" spellcheck="false" aria-label="Hex value">
       <div class="picker__presets">${PRESETS.map((p) => `<button type="button" style="--c:${p}" data-hex="${p}" aria-label="${p}" title="${p}"></button>`).join('')}</div>
-      <div class="row" style="justify-content:space-between"><span class="faint" style="font-size:13px">Tolerance</span><input type="range" id="tol" min="0.03" max="0.2" step="0.01" value="0.09" style="flex:1;max-width:180px;accent-color:var(--accent)"></div>
+      <div class="row" style="justify-content:space-between"><span class="faint" style="font-size:13px">Tolerance</span><input type="range" id="tol" min="0.03" max="0.2" step="0.01" value="0.09" style="flex:1;max-width:180px;accent-color:var(--accent-text)"></div>
       <div class="row" id="cx"></div>
     </div>
     <div>

@@ -71,7 +71,7 @@ export default function boardView(root, app, route) {
         <div class="card syn-card">
           <h4 class="syn-h"><span>Hand it to your agent</span><span>paste into Claude Code, Cursor…</span></h4>
           <div style="position:relative"><pre class="code" id="bprompt" style="white-space:pre-wrap;max-height:360px;overflow:auto">${esc(promptText)}</pre><button class="code__copy" type="button" data-copy="#code:#bprompt" data-copy-label="Prompt copied" aria-label="Copy">${icon.copy}</button></div>
-          <p class="faint mt-s" style="font-size:12.5px">Works with the UI Hall MCP server or skill installed — the agent will open these exact references. <a href="#/agents" style="color:var(--accent)">Install →</a></p>
+          <p class="faint mt-s" style="font-size:12.5px">Works with the UI Hall MCP server or skill installed — the agent will open these exact references. <a href="#/agents" style="color:var(--accent-text)">Install →</a></p>
         </div>
       </section>
 

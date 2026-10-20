@@ -153,7 +153,8 @@ export function segmented(seg, onChange) {
 export function ink(hex) {
   const n = parseInt(String(hex).slice(1), 16);
   const [r, g, b] = [(n >> 16) & 255, (n >> 8) & 255, n & 255].map((v) => { v /= 255; return v <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; });
-  return 0.2126 * r + 0.7152 * g + 0.0722 * b > 0.32 ? '#0A0A0A' : '#FFFFFF';
+  const L = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  return (L + 0.05) / 0.0532 >= 1.05 / (L + 0.05) ? '#0A0A0A' : '#FFFFFF'; // whichever gives more contrast
 }
 
 /** Minimal, safe markdown for tool output: headings, lists, bold, italics, code, links, hex swatches. */

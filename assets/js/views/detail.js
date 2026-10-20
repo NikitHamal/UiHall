@@ -120,7 +120,7 @@ function fill(app, a, theme) {
         <h2 class="sheet__title">${esc(a.title)}</h2>
         <p class="sheet__desc mt-s">${esc(a.description)}</p>
         ${a.live ? `<div class="sheet__actions"><a class="btn btn--sm btn--primary" href="${a.live}?theme=${liveTheme}" target="_blank" rel="noopener">${icon.ext} Open live</a><button class="btn btn--sm" type="button" data-copy="Use UI Hall: get_design({ &quot;id&quot;: &quot;${a.id}&quot; }) then adapt the live HTML at ${location.origin + location.pathname.replace(/[^/]*$/, '')}${a.live}" data-copy-label="Agent prompt copied">${icon.copy} Copy for agent</button><span class="sheet__lic">MIT · ${a.themes.length} themes</span></div>` : ''}
-        ${a.quality ? `<p class="faint mt-s" style="font-size:12.5px">${esc(a.quality)}${a.crop_of ? ` · crop of <a href="#/a/${a.crop_of}" style="color:var(--accent)">${a.crop_of}</a>` : ''}</p>` : ''}
+        ${a.quality ? `<p class="faint mt-s" style="font-size:12.5px">${esc(a.quality)}${a.crop_of ? ` · crop of <a href="#/a/${a.crop_of}" style="color:var(--accent-text)">${a.crop_of}</a>` : ''}</p>` : ''}
       </div>
       <div class="facets">
         ${facet('category', a.category)}${facet('type', a.type)}

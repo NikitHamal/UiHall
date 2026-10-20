@@ -79,7 +79,7 @@ function mcpHtml(h) {
   <section class="container section" style="padding-top:72px">
     <div class="section__head"><h2 class="display h-md">Tools</h2><p class="lede">All read-only, all annotated, every result as compact markdown for the model plus <code>structuredContent</code> for code.</p></div>
     <div class="faq">
-      ${TOOLS.map((tl) => `<details><summary><span><code style="color:var(--accent)">${tl.name}</code> <span class="faint" style="font-weight:400">— ${esc(tl.title)}</span></span></summary>
+      ${TOOLS.map((tl) => `<details><summary><span><code style="color:var(--accent-text)">${tl.name}</code> <span class="faint" style="font-weight:400">— ${esc(tl.title)}</span></span></summary>
         <p>${esc(tl.description)}</p>
         <div style="padding-bottom:18px">${withCopy(`schema-${tl.name}`, jsonHtml(tl.inputSchema))}</div></details>`).join('')}
     </div>
