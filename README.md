@@ -21,7 +21,7 @@ adapt — every one MIT licensed.
 
 | | What it is |
 |---|---|
-| **The hall** (repo root) | A browsable library: ranked search, facets by role/style/surface/colour, a colour search in OKLab, a pattern library, a motion reel and a detail view that turns any palette into code tokens. |
+| **The hall** (repo root) | A browsable library of live screens: ranked search that understands colour words ("green settings"), facets by role/style/surface/colour, a colour search in OKLab, a pattern library, and a detail view where you switch a screen's four themes in place and lift its tokens as code. |
 | **The MCP server** (`mcp/`) | `uihall-mcp` — 13 design tools for Claude Code, Cursor, VS Code, Codex, Claude Desktop or anything that speaks MCP. One file, zero dependencies, no API key. |
 | **The skill** (`skills/uihall/`) | Tells the agent *when* and *how* to use the corpus: brief → look → steal structure → measured colour → checklist. Works with or without MCP (bundled CLI). |
 | **The plugin** (`plugin/`) | Skill + MCP in one Claude Code install. |
@@ -74,10 +74,10 @@ to run fully offline from a checkout.
 | `view_design` | The rendered screen, in any of its four themes, so the model sees proportion and polish |
 | `get_design` | Full write-up, measured palette with area %, colour roles, contrast, printed swatch names, URLs |
 | `find_similar` | Neighbours by content, by measured colour, or both |
-| `find_patterns` | 21 structural patterns, each with why, build rules and evidence ids |
+| `find_patterns` | 18 structural patterns, each with why, build rules and evidence ids |
 | `palette_for` | Real palettes for a mood or product, never invented |
 | `search_by_color` | Who actually uses this colour (OKLab ΔE over measured swatches) |
-| `export_tokens` | Palette → CSS variables, Tailwind, W3C design tokens, SwiftUI or Jetpack Compose (11-step accent + neutral ramps) |
+| `export_tokens` | A screen's theme (or your hex list) → CSS variables, Tailwind, W3C design tokens, SwiftUI or Jetpack Compose (11-step accent + neutral ramps) |
 | `compare_designs` | 2–4 references side by side: shared vs distinct traits, colour roles, palette distance |
 | `generate_design_system` | A paste-ready starter system — colour + ramps, type pairing and scale, radius, motion, base components |
 | `check_contrast` | WCAG ratio + verdict + the nearest passing colour |
@@ -95,7 +95,7 @@ No MCP? The skill's CLI runs the same tools: `node skills/uihall/scripts/uihall.
 |---|---|
 | **Original** — every screen | Designed and built in code for UI Hall from one shared kit (`originals/kit`), rendered in four themes (Ember, Mint, Ink, Grape), MIT licensed. 44 are hand-built; 360 are composed by `originals/src/gen.py` across 20 product domains × 18 screen types. |
 | **Observed** — descriptions | Generated from the exact content each screen renders, so a write-up cannot drift from its pixels. |
-| **Measured** — palettes | k-means over each rendered theme with area percentages; split into background / surface / text / accent roles and contrast-checked at query time. |
+| **Measured** — palettes | k-means over each rendered theme with area percentages. Colour roles (background / surface / text / muted / accent) come from each theme's real tokens and are contrast-checked at query time. |
 | **Live** — interaction | Every screen opens as real HTML: toggles, chips, steppers, tabs and fields work, and the palette switches in place. |
 
 The hall previously also held ~730 collected third-party references; they were replaced by originals in October 2026 and remain only in git history.
@@ -113,12 +113,12 @@ mcp/                     uihall-mcp
   src/engine.js          isomorphic engine — the site imports this same file
   src/{color,patterns,tools,corpus,server,cli}.js
   dist/uihall-mcp.mjs    single-file build (what people install)
-  test/selftest.mjs      30 protocol-level assertions
+  test/selftest.mjs      31 protocol-level checks
 skills/uihall/           the skill (SKILL.md, references/, scripts/uihall.mjs)
 plugin/                  Claude Code plugin (built)
 .claude-plugin/          plugin marketplace manifest
 tools/                   corpus pipeline (Python) + release build + local server
-_work/                   pipeline intermediates
+originals/               kit (kit.css, theme.js, themes.json), screen sources (src/) and live screens
 ```
 
 ### Develop

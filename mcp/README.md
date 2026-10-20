@@ -23,5 +23,5 @@ playground: https://nikithamal.github.io/UiHall/#/agents
 
 ```bash
 npm run build   # src → dist/uihall-mcp.mjs and the skill CLI
-npm test        # 30 protocol assertions against source and bundle
+npm test        # 31 protocol checks against source and bundle
 ```
