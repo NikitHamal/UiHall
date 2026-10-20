@@ -1,0 +1,149 @@
+[
+{
+"id": "ORG-0005",
+"slug": "assistant-chat",
+"theme": "ember",
+"src": "assets/landing/ring/assistant-chat.webp",
+"title": "AI assistant chat with composer"
+},
+{
+"id": "ORG-0009",
+"slug": "auth-sign-in",
+"theme": "grape",
+"src": "assets/landing/ring/auth-sign-in.webp",
+"title": "Sign in with passkey first"
+},
+{
+"id": "ORG-0013",
+"slug": "cart-sticky-checkout",
+"theme": "ink",
+"src": "assets/landing/ring/cart-sticky-checkout.webp",
+"title": "Cart with sticky pay button"
+},
+{
+"id": "ORG-0025",
+"slug": "empty-state-teach",
+"theme": "ember",
+"src": "assets/landing/ring/empty-state-teach.webp",
+"title": "Empty inbox that teaches"
+},
+{
+"id": "ORG-0029",
+"slug": "finance-home",
+"theme": "mint",
+"src": "assets/landing/ring/finance-home.webp",
+"title": "Money home with hero balance"
+},
+{
+"id": "ORG-0037",
+"slug": "onboarding-welcome",
+"theme": "grape",
+"src": "assets/landing/ring/onboarding-welcome.webp",
+"title": "Welcome with orbit illustration"
+},
+{
+"id": "ORG-0041",
+"slug": "paywall-plans",
+"theme": "ember",
+"src": "assets/landing/ring/paywall-plans.webp",
+"title": "Paywall with anchored yearly plan"
+},
+{
+"id": "ORG-0045",
+"slug": "profile-stats",
+"theme": "ember",
+"src": "assets/landing/ring/profile-stats.webp",
+"title": "Profile with stats and streak grid"
+},
+{
+"id": "ORG-0049",
+"slug": "search-chips-results",
+"theme": "grape",
+"src": "assets/landing/ring/search-chips-results.webp",
+"title": "Search with filter chips and results"
+},
+{
+"id": "ORG-0053",
+"slug": "settings-grouped",
+"theme": "ink",
+"src": "assets/landing/ring/settings-grouped.webp",
+"title": "Grouped settings with toggles"
+},
+{
+"id": "ORG-0057",
+"slug": "calendar-day",
+"theme": "ember",
+"src": "assets/landing/ring/calendar-day.webp",
+"title": "Calendar day with timeline"
+},
+{
+"id": "ORG-0061",
+"slug": "fitness-rings",
+"theme": "mint",
+"src": "assets/landing/ring/fitness-rings.webp",
+"title": "Activity rings and workout list"
+},
+{
+"id": "ORG-0069",
+"slug": "messages-inbox",
+"theme": "grape",
+"src": "assets/landing/ring/messages-inbox.webp",
+"title": "Messages inbox with pinned threads"
+},
+{
+"id": "ORG-0073",
+"slug": "music-now-playing",
+"theme": "ember",
+"src": "assets/landing/ring/music-now-playing.webp",
+"title": "Now playing with waveform scrubber"
+},
+{
+"id": "ORG-0077",
+"slug": "notifications-feed",
+"theme": "ember",
+"src": "assets/landing/ring/notifications-feed.webp",
+"title": "Notifications grouped by day"
+},
+{
+"id": "ORG-0081",
+"slug": "product-detail-sneaker",
+"theme": "grape",
+"src": "assets/landing/ring/product-detail-sneaker.webp",
+"title": "Product detail with size picker"
+},
+{
+"id": "ORG-0089",
+"slug": "travel-flight-select",
+"theme": "ink",
+"src": "assets/landing/ring/travel-flight-select.webp",
+"title": "Flight selection with date strip"
+},
+{
+"id": "ORG-0109",
+"slug": "card-controls",
+"theme": "ember",
+"src": "assets/landing/ring/card-controls.webp",
+"title": "Card management with freeze toggle"
+},
+{
+"id": "ORG-0113",
+"slug": "delivery-tracking",
+"theme": "mint",
+"src": "assets/landing/ring/delivery-tracking.webp",
+"title": "Delivery tracking with live map"
+},
+{
+"id": "ORG-0117",
+"slug": "hotel-booking",
+"theme": "grape",
+"src": "assets/landing/ring/hotel-booking.webp",
+"title": "Hotel detail with booking bar"
+},
+{
+"id": "ORG-0125",
+"slug": "meditation-timer",
+"theme": "ember",
+"src": "assets/landing/ring/meditation-timer.webp",
+"title": "Meditation timer with breathing orb"
+}
+]

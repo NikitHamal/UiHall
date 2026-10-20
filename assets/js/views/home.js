@@ -10,6 +10,7 @@ const JUMP_IC = {
   code: '<svg viewBox="0 0 20 20"><path d="M7 6 3 10l4 4M13 6l4 4-4 4"/></svg>',
 };
 import { BLURB } from '../blurbs.js';
+import { RING } from '../ring-data.js';
 
 /* Curated picks for the "measured" demo — strong, varied palettes. */
 const ANATOMY = ['IMG-0468', 'IMG-0473', 'IMG-0055', 'IMG-0397', 'IMG-0587', 'IMG-0618'];
@@ -40,35 +41,28 @@ export default function home(root, app) {
     <div class="lp-nav__end"><button class="icon-btn" type="button" data-lp-theme aria-label="Toggle theme"><svg class="sun" viewBox="0 0 20 20"><path d="M10 3v1.5M10 15.5V17M3 10h1.5M15.5 10H17M5 5l1 1M14 14l1 1M5 15l1-1M14 6l1-1"/><circle cx="10" cy="10" r="3.2"/></svg></button><a class="btn btn--sm btn--primary" href="#/library">Open the hall ${icon.arrow}</a></div>
   </header>
 
-  <section class="lp-hero" id="lpHero">
-    <div class="lp-grid" aria-hidden="true"></div>
-    <div class="lp-hero__copy">
+  <section class="lp-hero2" id="lpHero">
+    <div class="lp-hero2__copy">
       <h1 class="lp-title" id="heroTitle">The design reference your agent can <span class="lp-scribble">see.<svg viewBox="0 0 220 40" preserveAspectRatio="none" aria-hidden="true"><path d="M4 26 C40 10 90 8 132 14 S196 30 216 18" pathLength="1"/><path d="M18 34 C70 26 130 26 190 30" pathLength="1"/></svg></span></h1>
-      <p class="lp-lede" data-reveal style="--d:4">${t.assets} real interfaces — ${t.originals || 0} built in code and free to use — each one written up by hand and colour-measured from the pixels. Browse it yourself, or hand it to Claude Code, Cursor and any MCP agent so it designs from evidence instead of the average.</p>
-      <div class="lp-cta" data-reveal style="--d:5">
+      <p class="lp-lede lp-rise" style="--d:5">${t.assets} interfaces, each written up by hand and colour-measured from the pixels — ${t.originals || 0} of them built in code and free to use. For you to study, and for Claude Code, Cursor and any MCP agent to design from.</p>
+      <div class="lp-cta lp-rise" style="--d:6">
         <a class="btn btn--primary lp-btn" href="#/library">Explore the hall ${icon.arrow}</a>
         <button class="lp-copy" type="button" data-copy="claude plugin marketplace add https://nikithamal.github.io/UiHall/.claude-plugin/marketplace.json && claude plugin install uihall@uihall" data-copy-label="Install command copied"><span>$</span>claude plugin install uihall<em>${icon.copy}</em></button>
       </div>
     </div>
-    <div class="lp-stage" id="lpStage" aria-hidden="true">
-      <div class="lp-blob"></div>
-      <img class="lp-phone lp-phone--l" src="assets/landing/chat.webp" alt="">
-      <img class="lp-phone lp-phone--r" src="assets/landing/music.webp" alt="">
-      <img class="lp-phone lp-phone--c" src="assets/landing/finance.webp" alt="">
-      <div class="lp-note lp-note--a"><span>hero number · 3× body</span><svg viewBox="0 0 120 60"><path d="M4 8 C40 6 80 18 112 50" pathLength="1"/><path d="M100 50 L113 51 L110 38" pathLength="1"/></svg></div>
-      <div class="lp-note lp-note--b"><svg viewBox="0 0 120 60"><path d="M116 10 C80 4 40 20 10 50" pathLength="1"/><path d="M8 37 L9 51 L22 48" pathLength="1"/></svg><span>one accent carries<br>every action</span></div>
-      <div class="lp-chip lp-chip--1"><i style="background:#FF6A2B"></i>#FF6A2B <b>4.2%</b></div>
-      <div class="lp-chip lp-chip--2"><i style="background:#181615"></i>#181615 <b>61%</b></div>
-      <div class="lp-chip lp-chip--3"><span class="contrast-pill pass" style="height:auto;padding:0;background:none">text 16.4:1 · AAA</span></div>
-    </div>
-    <a class="lp-scroll" href="#lpProof" aria-label="Scroll"><i></i></a>
+    <div class="lp-ring" id="lpRing" aria-label="Original screens — drag to turn"><div class="lp-ring__track" id="lpTrack"></div></div>
+    <p class="lp-ring__caption lp-rise" style="--d:8">Every screen in this ring is an original — built in code, MIT licensed, live in the library. <a href="#/originals">See them all ${icon.arrow}</a></p>
+  </section>
+
+  <section class="container lp-manifesto" id="lpManifesto">
+    <p class="lp-manifesto__text" id="lpManifestoText">Ask an agent for a finance app and you get a blue gradient, a card and a rounded button — the average of everything it has ever seen. UI Hall replaces the average with evidence: real screens it can search, open and measure, patterns with receipts, and colour you can paste. Taste, made callable.</p>
   </section>
 
   <section class="lp-proof" id="lpProof">
     <div class="container lp-stats hero__stats">
       ${[[t.assets, 'references'], [t.originals || 0, 'originals · MIT'], [h.patterns().length, 'patterns with receipts'], [h.assets.reduce((n, x) => n + (x.palette_detail?.length || 0), 0), 'colours measured'], [TOOLS.length, 'agent tools']].map(([n, l]) => `<div class="stat"><b class="num" data-count="${n}">0</b><span>${l}</span></div>`).join('')}
     </div>
-    <div class="marquee lp-marquee"><div class="marquee__track">${(() => { const x = h.patterns().map((pt) => `<a class="lp-tag" href="#/patterns#${pt.slug}">${esc(pt.name)}</a><span class="lp-dot">✦</span>`).join(''); return x + x; })()}</div></div>
+    <div class="marquee lp-marquee"><div class="marquee__track">${(() => { const x = h.patterns().map((pt) => `<a class="lp-tag" href="#/patterns#${pt.slug}">${esc(pt.name)}</a>`).join(''); return x + x; })()}</div></div>
   </section>
 
   <section class="container lp-moves" id="lpMoves">
@@ -170,7 +164,7 @@ export default function home(root, app) {
   /* hero: kinetic headline, hand-drawn scribble, counters */
   const title = $('#heroTitle', root);
   split(title);
-  requestAnimationFrame(() => requestAnimationFrame(() => { title.classList.add('in'); $('#lpStage', root).classList.add('in'); }));
+  requestAnimationFrame(() => requestAnimationFrame(() => { title.classList.add('in'); root.querySelector('.lp-hero2').classList.add('in'); }));
   $('.lp-stats', root).addEventListener('reveal', () => $$('[data-count]', root).forEach((el, i) => setTimeout(() => countUp(el, +el.dataset.count), i * 90)), { once: true });
   $('.lp-stats', root).setAttribute('data-io', '');
 
@@ -180,12 +174,55 @@ export default function home(root, app) {
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
   $('[data-lp-theme]', root).addEventListener('click', () => $('#themeBtn').click());
 
-  /* hero stage: pointer parallax with spring-ish easing */
-  const stageEl = $('#lpStage', root);
-  let tx = 0, ty = 0, cx = 0, cy = 0, raf = 0;
-  const tick = () => { cx += (tx - cx) * 0.08; cy += (ty - cy) * 0.08; stageEl.style.setProperty('--mx', cx.toFixed(3)); stageEl.style.setProperty('--my', cy.toFixed(3)); raf = Math.abs(tx - cx) + Math.abs(ty - cy) > 0.001 ? requestAnimationFrame(tick) : 0; };
-  const onMove = (e) => { tx = e.clientX / innerWidth - 0.5; ty = e.clientY / innerHeight - 0.5; if (!raf) raf = requestAnimationFrame(tick); };
-  if (!isTouch() && !reduced()) addEventListener('pointermove', onMove, { passive: true });
+  /* hero ring: a 3D carousel of originals — idles, follows scroll, drags with inertia */
+  const track = $('#lpTrack', root), ringEl = $('#lpRing', root);
+  const N = RING.length || 1;
+  track.innerHTML = RING.map((r, i) => `<a class="lp-card" href="#/a/${r.id}" style="--i:${i}" draggable="false"><img src="${r.src}" alt="${esc(r.title)}" draggable="false" loading="${i < 8 ? 'eager' : 'lazy'}"></a>`).join('');
+  const cards = $$('.lp-card', track);
+  let R = 0, W = 0;
+  const size = () => { W = innerWidth < 640 ? 150 : innerWidth < 1100 ? 190 : 220; R = Math.round((N * (W + 34)) / (2 * Math.PI)); ringEl.style.setProperty('--cw', `${W}px`); ringEl.style.setProperty('--R', `${R}px`); };
+  size(); addEventListener('resize', size);
+  let angle = 40, vel = 0, target = 0, dragging = false, lastX = 0, rmoved = 0, lastT = performance.now(), alive2 = true, spinUp = 1;
+  const scrollAngle = () => scrollY * 0.12;
+  const frame = (t) => {
+    if (!alive2) return;
+    const dt = Math.min(48, t - lastT); lastT = t;
+    spinUp *= 0.965; // entrance: fast spin settling to idle
+    if (!dragging) { vel *= 0.94; angle += vel + (reduced() ? 0 : (0.012 + spinUp * 0.9) * dt / 16); }
+    target += (scrollAngle() - target) * 0.08;
+    const a = angle + target;
+    track.style.transform = `translateZ(calc(var(--R) * -1)) rotateX(-7deg) rotateY(${-a}deg)`;
+    for (let i = 0; i < cards.length; i++) {
+      const rel = ((i * 360 / N - a) % 360 + 540) % 360 - 180; // -180..180, 0 = facing
+      const f = Math.cos(rel * Math.PI / 180);
+      cards[i].style.opacity = (0.18 + Math.max(0, f) * 0.82).toFixed(3);
+      cards[i].style.filter = f < 0.2 ? `brightness(${(0.45 + Math.max(0, f + 0.6) * 0.5).toFixed(2)})` : '';
+      cards[i].style.zIndex = Math.round(f * 100) + 100;
+    }
+    requestAnimationFrame(frame);
+  };
+  requestAnimationFrame(frame);
+  ringEl.addEventListener('pointerdown', (e) => { dragging = true; lastX = e.clientX; rmoved = 0; vel = 0; ringEl.setPointerCapture(e.pointerId); ringEl.classList.add('grab'); });
+  ringEl.addEventListener('pointermove', (e) => { if (!dragging) return; const dx = e.clientX - lastX; lastX = e.clientX; rmoved += Math.abs(dx); const d = -dx * 0.22; angle += d; vel = d; });
+  const end = (e) => { if (!dragging) return; dragging = false; ringEl.classList.remove('grab'); if (rmoved < 6 && e.type === 'pointerup') { ringEl.releasePointerCapture?.(e.pointerId); const hit = document.elementFromPoint(e.clientX, e.clientY)?.closest('.lp-card'); if (hit) location.hash = hit.getAttribute('href'); } };
+  ringEl.addEventListener('pointerup', end); ringEl.addEventListener('pointercancel', end);
+  ringEl.addEventListener('click', (e) => { if (rmoved > 6) { e.preventDefault(); e.stopPropagation(); } }, true);
+
+  /* manifesto: words light up as you scroll through it */
+  const mt = $('#lpManifestoText', root);
+  mt.innerHTML = mt.textContent.split(' ').map((w) => `<span>${esc(w)}</span>`).join(' ');
+  const words = $$('span', mt);
+  let mv = 0;
+  const onMan = () => {
+    const r = mt.getBoundingClientRect();
+    const p = Math.min(1, Math.max(0, (innerHeight * 0.85 - r.top) / (r.height + innerHeight * 0.35)));
+    mv += (p - mv) * 0.25;
+    const n = Math.round(mv * words.length);
+    words.forEach((w, i) => w.classList.toggle('on', i < n));
+  };
+  const onHeroScroll = () => requestAnimationFrame(onMan);
+  addEventListener('scroll', onHeroScroll, { passive: true }); onMan();
+  const onMove = () => {};
 
   /* three moves: sticky story, panels built from the live engine */
   const brief = h.brief({ screen: 'onboarding for a sleep tracking app', platform: 'ios', mood: 'calm' });
@@ -215,10 +252,6 @@ export default function home(root, app) {
     $$('#lpLiveThemes button', root).forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
     liveFrame.contentWindow?.postMessage({ uihallTheme: b.dataset.v }, '*');
   });
-
-  /* hero phones drift apart as you scroll away */
-  const onHeroScroll = () => { const p = Math.min(1, scrollY / (innerHeight * 0.9)); stageEl.style.setProperty('--sy', p.toFixed(3)); };
-  addEventListener('scroll', onHeroScroll, { passive: true });
 
   /* originals shelf: drag to scroll, theme switch re-skins in place */
   const shelf = $('#lpShelf', root);
@@ -339,6 +372,6 @@ export default function home(root, app) {
   reveal(root);
 
   return {
-    cleanup() { alive = false; timers.forEach(clearTimeout); clearInterval(autoStep); stepIO.disconnect(); removeEventListener('pointermove', onMove); removeEventListener('scroll', onScroll); removeEventListener('scroll', onHeroScroll); removeEventListener('keydown', onKeyShelf); },
+    cleanup() { alive = false; alive2 = false; removeEventListener('resize', size); timers.forEach(clearTimeout); clearInterval(autoStep); stepIO.disconnect(); removeEventListener('pointermove', onMove); removeEventListener('scroll', onScroll); removeEventListener('scroll', onHeroScroll); removeEventListener('keydown', onKeyShelf); },
   };
 }
