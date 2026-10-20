@@ -60,5 +60,5 @@ svg.i{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stro
 .sw i::after{content:attr(data-h);position:absolute;left:8px;bottom:6px;font:500 10px var(--mono);color:#fff;opacity:.75}
 .checks{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:6px;font-size:13.5px}
 .checks li::before{content:'✓';color:var(--accent);font-weight:700;margin-right:8px}
-.links{display:flex;gap:18px;margin-top:22px;font-size:13px}.links a{color:var(--accent);text-decoration:none}
+.links{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:22px;font-size:13px}.links a{color:var(--accent);text-decoration:none;display:inline-flex;align-items:center;min-height:36px}
 @media(prefers-reduced-motion:reduce){*{animation-duration:1ms!important;transition-duration:1ms!important}}
