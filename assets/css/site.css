@@ -1285,3 +1285,11 @@
   .lp-final2 h2 { font-size: clamp(46px, 7vw, 112px); line-height: .92; letter-spacing: -.03em; text-wrap: balance; }
   @media (prefers-reduced-motion: reduce) { .lp-drift__track, .lp-final2__beam { animation: none; } }
 }
+
+@layer views {
+  .sheet__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 16px; }
+  .sheet__actions .btn svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .sheet__lic { margin-left: auto; font: 500 11px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--text-3); }
+  .tile { transition: opacity 700ms var(--ease-out), translate 900ms var(--ease-out), box-shadow var(--t-fast), transform 500ms var(--ease-out); }
+  .tile:hover { transform: translateY(-3px); box-shadow: inset 0 0 0 1px var(--line-2), 0 24px 48px -28px rgba(0, 0, 0, .7); }
+}
