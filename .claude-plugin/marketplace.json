@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "uihall",
+  "description": "UI Hall — design evidence for coding agents: 755 hand-described UI/UX references with measured palettes, as an MCP server plus a skill.",
+  "owner": { "name": "Nikit Hamal", "url": "https://github.com/NikitHamal" },
+  "plugins": [
+    {
+      "name": "uihall",
+      "displayName": "UI Hall",
+      "description": "Design from real references instead of the generic average: briefs, searchable and viewable references, patterns with build rules, measured palettes, token export and contrast checks.",
+      "version": "2.0.0",
+      "category": "design",
+      "tags": ["design", "ui", "ux", "frontend", "design-system", "mcp", "palette", "accessibility"],
+      "source": { "source": "git-subdir", "url": "https://github.com/NikitHamal/UiHall.git", "path": "plugin" },
+      "homepage": "https://nikithamal.github.io/UiHall/",
+      "license": "MIT"
+    }
+  ]
+}

@@ -7,7 +7,15 @@ export const FETCH = `curl -fsSL ${BUNDLE} -o ~/.uihall-mcp.mjs`;
 
 export const CLIENTS = [
   {
-    id: 'claude-code', name: 'Claude Code', short: 'CC', hint: 'Skill + MCP, one command each',
+    id: 'plugin', name: 'Claude Code plugin', short: '✦', hint: 'Skill + MCP in one install',
+    blurb: 'The easiest path: one plugin bundles the skill and the MCP server. Claude Code fetches only the plugin folder, not the image corpus.',
+    steps: [
+      ['Add the marketplace', `claude plugin marketplace add ${SITE}.claude-plugin/marketplace.json`],
+      ['Install the plugin', 'claude plugin install uihall@uihall'],
+    ],
+  },
+  {
+    id: 'claude-code', name: 'Claude Code', short: 'CC', hint: 'Skill + MCP, set up by hand',
     blurb: 'Add the MCP server, then drop in the skill so Claude reaches for UI Hall whenever it designs or builds UI.',
     steps: [
       ['Fetch the server (one file, zero dependencies)', FETCH],

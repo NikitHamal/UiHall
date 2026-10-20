@@ -1,0 +1,14 @@
+{
+  "name": "uihall",
+  "displayName": "UI Hall",
+  "version": "2.0.0",
+  "description": "Design from real references instead of the generic average: briefs, searchable and viewable references, patterns with build rules, measured palettes, token export and contrast checks.",
+  "author": { "name": "Nikit Hamal", "url": "https://github.com/NikitHamal" },
+  "homepage": "https://nikithamal.github.io/UiHall/",
+  "repository": "https://github.com/NikitHamal/UiHall",
+  "license": "MIT",
+  "keywords": ["design", "ui", "ux", "frontend", "mcp", "design-system", "palette"],
+  "mcpServers": {
+    "uihall": { "command": "node", "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/uihall-mcp.mjs"] }
+  }
+}
