@@ -24,6 +24,7 @@ const FILTERS = {
   surface: SURFACE,
   hue: { type: 'string', enum: HUE_FAMILIES, description: 'Only assets using this colour family as a real accent.' },
   has_motion: { type: 'boolean', description: 'Only assets that ship a playable motion clip.' },
+  source: { type: 'string', enum: ['original', 'reference'], description: "'original' = screens built in code for UI Hall (MIT, safe to reuse); 'reference' = collected work, study only." },
 };
 
 /* ------------------------------------------------------------ renderers -- */

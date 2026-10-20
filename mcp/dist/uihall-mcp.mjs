@@ -881,7 +881,7 @@ h1 { font-size: var(${p}-text-4xl); } h2 { font-size: var(${p}-text-2xl); } h3 {
       ...(a.roles?.length ? { roles: a.roles } : {}), style: a.style, tags: (a.tags || []).slice(0, 8),
       summary: sentences.slice(0, 2).join(' ').trim(),
       surface: a._d.surface, accent: a._d.accent, palette: (a.palette || []).slice(0, 5),
-      ...(a.clip ? { motion: true } : {}), ...(a.crop_of ? { crop_of: a.crop_of } : {}),
+      ...(a.clip ? { motion: true } : {}), ...(a.crop_of ? { crop_of: a.crop_of } : {}), ...(a.original ? { original: true, license: 'MIT', source_html: a.source_html } : {}),
       url: this.url(a), image: this.url(a, 'thumb'),
       ...extra,
     };
@@ -1046,6 +1046,7 @@ const FILTERS = {
   surface: SURFACE,
   hue: { type: 'string', enum: HUE_FAMILIES, description: 'Only assets using this colour family as a real accent.' },
   has_motion: { type: 'boolean', description: 'Only assets that ship a playable motion clip.' },
+  source: { type: 'string', enum: ['original', 'reference'], description: "'original' = screens built in code for UI Hall (MIT, safe to reuse); 'reference' = collected work, study only." },
 };
 
 /* ------------------------------------------------------------ renderers -- */

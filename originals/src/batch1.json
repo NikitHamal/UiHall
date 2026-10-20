@@ -1,0 +1,327 @@
+[
+ {
+  "viewport": "phone",
+  "title": "Welcome with orbit illustration",
+  "category": "mobile-app-ui",
+  "type": "screen",
+  "roles": [
+   "onboarding"
+  ],
+  "style": [
+   "minimal",
+   "rounded"
+  ],
+  "tags": [
+   "welcome-screen",
+   "onboarding",
+   "illustration",
+   "cta-button",
+   "progress"
+  ],
+  "desc": "A single onboarding welcome screen for a habit app. The top 55% is a tinted panel holding a code-drawn orbit illustration: three concentric rings with small planets around a glowing core. Below sit page dots, the headline \"Small steps, every single day.\", one line of support, a full-width primary \"Get started\" button and a quiet \"I already have an account\" link. Built on {words}. Idea: one promise and one action per step, with the visual carrying the mood.",
+  "slug": "onboarding-welcome"
+ },
+ {
+  "viewport": "phone",
+  "title": "Sign in with passkey first",
+  "category": "mobile-app-ui",
+  "type": "screen",
+  "roles": [
+   "auth",
+   "form"
+  ],
+  "style": [
+   "minimal",
+   "card-based"
+  ],
+  "tags": [
+   "sign-in",
+   "login",
+   "input",
+   "cta-button",
+   "social"
+  ],
+  "desc": "A sign-in screen that leads with a passkey. A small brand mark and \"Welcome back\" headline sit over one line of copy; a primary \"Continue with passkey\" button comes first, then Apple and Google buttons, an \"or\" divider and an email field shown in its focused state with a caption. A footer link offers account creation. Built on {words}. Idea: the fastest secure method first, with the form as the fallback, not the hero.",
+  "slug": "auth-sign-in"
+ },
+ {
+  "viewport": "phone",
+  "title": "Money home with hero balance",
+  "category": "mobile-app-ui",
+  "type": "screen",
+  "roles": [
+   "home",
+   "dashboard"
+  ],
+  "style": [
+   "card-based",
+   "rounded"
+  ],
+  "tags": [
+   "finance",
+   "balance",
+   "quick-actions",
+   "list-row",
+   "bottom-nav",
+   "kpi",
+   "bar-chart"
+  ],
+  "desc": "A personal-finance home screen. A greeting row with avatar and bell sits above \"Total balance\" and a hero figure \"$12,480.32\" with greyed cents and a green weekly change. Four round quick actions (Send, Request, Swap, Top up) lead into a seven-bar spending card for the week with today highlighted, then a \"Recent\" list of two transactions with merchant icons, and a floating four-tab bar. Built on {words}. Idea: one hero number at 3\u00d7 body size, everything else subordinated.",
+  "slug": "finance-home"
+ },
+ {
+  "viewport": "phone",
+  "title": "Paywall with anchored yearly plan",
+  "category": "mobile-app-ui",
+  "type": "screen",
+  "roles": [
+   "pricing",
+   "checkout"
+  ],
+  "style": [
+   "bold-typography",
+   "rounded"
+  ],
+  "tags": [
+   "paywall",
+   "subscription",
+   "plans",
+   "cta-button",
+   "checklist"
+  ],
+  "desc": "A subscription paywall. A close button and \"Go Pro\" headline sit over a four-line checklist of benefits. Two plan cards follow: \"Yearly\" is anchored with an accent ring, a \"Save 40%\" tag, $59.99/year and the computed $5.00/month; \"Monthly\" at $8.99 is plain. A primary \"Start 7-day free trial\" button states the consequence, with \"Cancel anytime \u00b7 Restore purchase\" beneath. Built on {words}. Idea: anchor one plan and show the saving as a number, not an adjective.",
+  "slug": "paywall-plans"
+ },
+ {
+  "viewport": "phone",
+  "title": "Grouped settings with toggles",
+  "category": "mobile-app-ui",
+  "type": "screen",
+  "roles": [
+   "settings",
+   "profile"
+  ],
+  "style": [
+   "minimal",
+   "card-based"
+  ],
+  "tags": [
+   "settings",
+   "toggle",
+   "list-row",
+   "avatar",
+   "account"
+  ],
+  "desc": "A settings screen in grouped cards. A profile row with avatar, name, email and chevron leads; a \"Notifications\" group holds three rows with toggles (two on), an \"Appearance\" group shows Theme and App icon values, and a \"Privacy\" group has Face ID and Data export rows. A red \"Sign out\" sits alone at the bottom. Built on {words}. Idea: section headers and grouped rows; toggles apply instantly and destructive actions live last.",
+  "slug": "settings-grouped"
+ },
+ {
+  "viewport": "phone",
+  "title": "AI assistant chat with composer",
+  "category": "mobile-app-ui",
+  "type": "screen",
+  "roles": [
+   "chat"
+  ],
+  "style": [
+   "minimal",
+   "rounded"
+  ],
+  "tags": [
+   "ai",
+   "assistant",
+   "chat",
+   "prompt",
+   "chips",
+   "input"
+  ],
+  "desc": "An AI assistant conversation. A header names the assistant with a model pill. A compact user bubble asks to plan a three-day Lisbon trip under \u20ac600; the reply runs full width with a short intro, a three-row itinerary card (Day 1\u20133 with costs) and a total, followed by a quiet tool-status line. Two suggestion chips sit above an anchored composer with attach, text, mic and an accent send button. Built on {words}. Idea: user messages as bubbles, assistant answers full-width, composer always anchored.",
+  "slug": "assistant-chat"
+ },
+ {
+  "viewport": "phone",
+  "title": "Cart with sticky pay button",
+  "category": "mobile-app-ui",
+  "type": "screen",
+  "roles": [
+   "checkout",
+   "list"
+  ],
+  "style": [
+   "card-based",
+   "rounded"
+  ],
+  "tags": [
+   "cart",
+   "checkout",
+   "food",
+   "stepper",
+   "sticky-cta",
+   "price"
+  ],
+  "desc": "A food-delivery cart. Three line items with colour-block dish thumbnails, notes and \u2212/+ steppers sit above a delivery-time card (\"Arrives 7:40\u20137:55 PM\") and a promo row with an applied code. A summary lists subtotal, delivery, service and a discount in green. A sticky bottom bar shows the total and a primary \"Pay $42.10\" button. Built on {words}. Idea: the consequence on the button and the total always within thumb reach.",
+  "slug": "cart-sticky-checkout"
+ },
+ {
+  "viewport": "phone",
+  "title": "Empty inbox that teaches",
+  "category": "mobile-app-ui",
+  "type": "screen",
+  "roles": [
+   "empty-state",
+   "list"
+  ],
+  "style": [
+   "minimal",
+   "illustration-led"
+  ],
+  "tags": [
+   "empty-state",
+   "illustration",
+   "cta-button",
+   "onboarding"
+  ],
+  "desc": "An empty \"Saved\" tab that teaches instead of apologising. A segmented control (Saved / Collections) sits under the title; the centre shows a ghosted preview of two saved cards stacked behind a bookmark badge, the line \"Nothing saved yet\", a sentence explaining how saving works and a single \"Browse ideas\" button. A tab bar sits below. Built on {words}. Idea: show the filled state as a ghost and offer exactly one next step.",
+  "slug": "empty-state-teach"
+ },
+ {
+  "viewport": "phone",
+  "title": "Profile with stats and streak grid",
+  "category": "mobile-app-ui",
+  "type": "screen",
+  "roles": [
+   "profile"
+  ],
+  "style": [
+   "card-based",
+   "rounded"
+  ],
+  "tags": [
+   "avatar",
+   "stats",
+   "streak",
+   "progress",
+   "grid"
+  ],
+  "desc": "A user profile. A large avatar, name and handle sit centred above \"Edit profile\" and share buttons; a three-up stat row shows Streak 42, Habits 7 and Done 318. A \"Last 12 weeks\" card renders a contribution-style grid of squares in four intensities of the accent, and a \"Badges\" row holds three round achievement medals. Built on {words}. Idea: identity first, stats as a compact row, history as a dense glanceable grid.",
+  "slug": "profile-stats"
+ },
+ {
+  "viewport": "phone",
+  "title": "Search with filter chips and results",
+  "category": "mobile-app-ui",
+  "type": "screen",
+  "roles": [
+   "search",
+   "list"
+  ],
+  "style": [
+   "minimal",
+   "card-based"
+  ],
+  "tags": [
+   "search",
+   "chips",
+   "filters",
+   "list-row",
+   "rating"
+  ],
+  "desc": "A search results screen for places. A focused search field reads \"coffee\" with a clear button; a horizontally scrolling chip row (Open now, Under $$, Wi-Fi, Outdoor) has the first chip selected and a filter icon at the end. A results count leads into four rows, each with a tinted square thumbnail, name, distance and price, a star rating and an open/closed tag. Built on {words}. Idea: chips never wrap \u2014 they scroll \u2014 and each row has the same anatomy.",
+  "slug": "search-chips-results"
+ },
+ {
+  "viewport": "desktop",
+  "title": "Product landing hero with app preview",
+  "category": "website",
+  "type": "screen",
+  "roles": [
+   "landing-section",
+   "hero"
+  ],
+  "style": [
+   "bold-typography",
+   "minimal"
+  ],
+  "tags": [
+   "landing-page",
+   "hero",
+   "headline",
+   "cta-button",
+   "social-proof",
+   "desktop"
+  ],
+  "desc": "A desktop landing page hero for a habit app. A slim nav carries the wordmark, four links and \"Sign in\" / \"Get the app\". The left column has an eyebrow pill (\"New \u00b7 Streak insights\"), a two-line headline \"Build habits that actually stick.\", a sentence of support, primary and ghost CTAs and a row of five avatars with \"Loved by 40k people\". The right column shows a code-built phone preview with a streak card, progress ring and checklist on a tinted panel. Built on {words}. Idea: outcome headline, one primary action and a real product visual above the fold.",
+  "slug": "landing-hero-desktop"
+ },
+ {
+  "viewport": "desktop",
+  "title": "Analytics overview with sidebar",
+  "category": "dashboard",
+  "type": "screen",
+  "roles": [
+   "dashboard"
+  ],
+  "style": [
+   "data-dense",
+   "card-based"
+  ],
+  "tags": [
+   "analytics",
+   "sidebar",
+   "kpi",
+   "metric-tile",
+   "line-chart",
+   "data-table",
+   "desktop"
+  ],
+  "desc": "A desktop analytics overview. A sidebar groups navigation under Main and Workspace with the active item tinted. The canvas has a title row with a date-range control, four KPI tiles (Revenue $184.2k, Active users 12,480, Conversion 3.8%, Churn 1.2%) each with a delta, a large area chart of revenue over twelve months with a highlighted point, a \"Top channels\" list with inline bars, and a compact table of recent deals with status pills. Built on {words}. Idea: KPI strip, one dominant chart, tables recede.",
+  "slug": "analytics-desktop"
+ },
+ {
+  "viewport": "canvas",
+  "title": "Buttons, inputs and controls sheet",
+  "category": "design-system",
+  "type": "component",
+  "roles": [
+   "form"
+  ],
+  "style": [
+   "flat",
+   "minimal"
+  ],
+  "tags": [
+   "components",
+   "buttons",
+   "input",
+   "toggle",
+   "chips",
+   "segmented-control",
+   "slider"
+  ],
+  "desc": "A component sheet documenting a control set. Rows show buttons in primary, secondary, outline and ghost variants at two sizes plus a disabled state; text fields in default, focused (with accent ring) and error states with helper text; a segmented control, chips with one selected, toggles on and off, a checkbox, radio and a slider with value. Labels in mono caps name each group. Built on {words}. Idea: every state on one page, so the system is reviewed as a whole.",
+  "slug": "components-controls"
+ },
+ {
+  "viewport": "canvas",
+  "title": "Card patterns sheet",
+  "category": "design-system",
+  "type": "component",
+  "roles": [
+   "detail"
+  ],
+  "style": [
+   "card-based",
+   "rounded"
+  ],
+  "tags": [
+   "components",
+   "card",
+   "kpi",
+   "list-row",
+   "avatar",
+   "progress"
+  ],
+  "desc": "A component sheet of six card patterns on one grid: a metric card with hero number and sparkline, a person card with avatar and follow button, a progress card with a ring and steps, a notification card with an action, a media card with a tinted image block and tags, and a list card with three rows. Built on {words}. Idea: one radius, one padding and one shadow rule shared by every card.",
+  "slug": "components-cards"
+ }
+]

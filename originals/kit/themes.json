@@ -1,0 +1,10 @@
+{
+  "ember": { "name": "Ember", "scheme": "dark", "words": "a warm near-black ground with a single ember-orange accent",
+    "bg": "#0E0D0C", "surface": "#181615", "surface2": "#221F1D", "text": "#F4EFEA", "muted": "#A39B93", "line": "rgba(244,239,234,.08)", "accent": "#FF6A2B", "onAccent": "#1A0C05", "accent2": "#FFB37A", "back": "#2A1D16", "display": "serif", "radius": 18 },
+  "mint": { "name": "Mint", "scheme": "light", "words": "an off-white ground with soft mint tints and a deep green accent",
+    "bg": "#F6F8F5", "surface": "#FFFFFF", "surface2": "#E9F1EA", "text": "#14201A", "muted": "#5E6B63", "line": "rgba(20,32,26,.09)", "accent": "#1F7A4D", "onAccent": "#FFFFFF", "accent2": "#B9E4C9", "back": "#DCEADF", "display": "sans", "radius": 22 },
+  "ink": { "name": "Ink", "scheme": "light", "words": "a paper-white editorial ground, ink-black type and a cobalt accent",
+    "bg": "#FAF9F6", "surface": "#FFFFFF", "surface2": "#F0EEE8", "text": "#111111", "muted": "#66625B", "line": "rgba(17,17,17,.1)", "accent": "#2B4BF2", "onAccent": "#FFFFFF", "accent2": "#C9D2FF", "back": "#E7E4DC", "display": "serif", "radius": 10 },
+  "grape": { "name": "Grape", "scheme": "dark", "words": "a deep violet-black ground with an electric lime accent",
+    "bg": "#0F0C16", "surface": "#191424", "surface2": "#231C33", "text": "#F1EEF8", "muted": "#9C94B0", "line": "rgba(241,238,248,.08)", "accent": "#C6F432", "onAccent": "#11140A", "accent2": "#8E6CF5", "back": "#221A35", "display": "sans", "radius": 24 }
+}
