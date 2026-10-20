@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Halo — dark wallet home · built with the UI Hall skill</title>
+<!--
+  Built with the uihall skill:
+    brief:      design_brief("crypto wallet home", platform=ios, mood=premium, surface=dark)
+    references: IMG-0365 (wallet pill, hero balance with greyed cents, four round quick actions, asset cards with sparklines)
+                IMG-0433 (dark portfolio: segmented All/Tokens/DeFi/Cash, rows with price + delta, floating action)
+                VID-0382 (balance widget: one saturated blue carries every action; amount chips)
+    patterns:   One hero number · Dark surface, single hot accent · Bottom sheet for secondary tasks · Segmented range control
+    palette:    VID-0382 measured — surface #090C0F, text #E3EDF4 (13.4:1), accent #1985F0 (on-accent #0A0A0A 5.33:1)
+-->
+<link rel="stylesheet" href="../../assets/css/fonts-v2.css">
+<style>
+:root{
+  --bg:#07090C;--s1:#0F1317;--s2:#151A20;--s3:#1D232B;--line:rgba(227,237,244,.07);
+  --text:#E3EDF4;--t2:#8C97A3;--t3:#5D6772;--accent:#1985F0;--on-accent:#04121F;--up:#3DD68C;--down:#FF6B6B;
+  --sans:'Inter Tight',system-ui,sans-serif;--serif:'Instrument Serif',Georgia,serif;--mono:'JetBrains Mono',monospace;
+  --ease:cubic-bezier(.16,1,.3,1);--spring:cubic-bezier(.34,1.45,.64,1);
+}
+*{box-sizing:border-box}
+body{margin:0;min-height:100dvh;background:radial-gradient(1200px 700px at 30% 20%,#101826,#05070A 60%);color:var(--text);font:15px/1.45 var(--sans);display:grid;grid-template-columns:auto minmax(0,460px);justify-content:center;align-items:center;gap:clamp(40px,7vw,110px);padding:48px clamp(16px,5vw,80px)}
+@media(max-width:980px){body{grid-template-columns:1fr;justify-items:center;padding:24px 12px}}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:12px}
+.num{font-variant-numeric:tabular-nums}
+
+.phone{position:relative;width:390px;height:844px;max-width:100%;border-radius:56px;background:var(--bg);box-shadow:0 0 0 10px #0B0C0E,0 0 0 11px #2A2D33,0 60px 120px -30px rgba(0,0,0,.8);overflow:hidden;isolation:isolate}
+@media(max-width:440px){.phone{width:100%;height:min(844px,100dvh - 48px);border-radius:36px}}
+.island{position:absolute;top:11px;left:50%;translate:-50% 0;width:122px;height:35px;border-radius:20px;background:#000;z-index:20}
+.status{position:absolute;inset:0 0 auto;height:54px;display:flex;justify-content:space-between;align-items:center;padding:0 32px 0 38px;font:600 15px var(--sans);z-index:19}
+.scroll{position:absolute;inset:0;overflow-y:auto;padding:58px 18px 120px;scrollbar-width:none}
+.scroll::-webkit-scrollbar{display:none}
+.glow{position:absolute;top:-120px;left:50%;translate:-50% 0;width:520px;height:360px;background:radial-gradient(closest-side,rgba(25,133,240,.28),transparent);pointer-events:none;z-index:-1;transition:opacity .6s}
+
+.head{display:flex;justify-content:space-between;align-items:center;height:44px}
+.ibtn{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--s2);transition:transform .3s var(--spring)}
+.ibtn:active{transform:scale(.9)}
+.ibtn svg,.qa svg,.tab svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.wallet{display:flex;align-items:center;gap:6px;height:34px;padding:0 12px 0 6px;border-radius:999px;background:var(--s2);font-size:13px;font-weight:500}
+.wallet i{width:22px;height:22px;border-radius:50%;background:conic-gradient(from 200deg,#1985F0,#7B61FF,#1985F0)}
+
+.hero{text-align:center;padding:26px 0 8px}
+.hero small{color:var(--t2);font-size:13px;display:inline-flex;gap:6px;align-items:center}
+.eye{color:var(--t2);padding:4px;display:inline-grid}
+.eye svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8}
+.bal{font:600 52px/1 var(--sans);letter-spacing:-.04em;margin-top:10px;display:inline-flex;align-items:baseline;transition:filter .4s var(--ease)}
+.bal .c{color:var(--t3);font-size:30px;letter-spacing:-.02em}
+.bal.hidden{filter:blur(12px)}
+.delta{margin-top:10px;display:inline-flex;gap:8px;align-items:center;font-size:13px;color:var(--up);background:rgba(61,214,140,.1);padding:5px 10px;border-radius:999px}
+.range{display:flex;justify-content:center;gap:2px;margin-top:16px;position:relative}
+.range button{position:relative;z-index:1;height:30px;padding:0 13px;border-radius:999px;font-size:12.5px;color:var(--t2);transition:color .25s}
+.range button[aria-pressed=true]{color:var(--text)}
+.range .thumb{position:absolute;top:0;height:30px;border-radius:999px;background:var(--s3);transition:left .35s var(--ease),width .35s var(--ease)}
+.chart{height:110px;margin:6px -18px 0}
+.chart path.l{fill:none;stroke:var(--accent);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw 1.4s var(--ease) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.chart path.a{fill:url(#g);opacity:0;animation:fade .8s .5s forwards}
+@keyframes fade{to{opacity:1}}
+
+.qas{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0 22px}
+.qa{display:grid;justify-items:center;gap:8px;font-size:12px;color:var(--t2)}
+.qa span{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--s2);color:var(--text);box-shadow:inset 0 0 0 1px var(--line);transition:transform .35s var(--spring),background .2s}
+.qa:first-child span{background:var(--accent);color:var(--on-accent);box-shadow:0 10px 26px -8px rgba(25,133,240,.7)}
+.qa:active span{transform:scale(.88)}
+
+.promo{display:flex;gap:14px;align-items:center;padding:16px;border-radius:22px;background:linear-gradient(120deg,#0E2340,#13161C 70%);box-shadow:inset 0 0 0 1px rgba(25,133,240,.25);margin-bottom:22px;overflow:hidden;position:relative}
+.promo b{display:block;font-weight:600}
+.promo small{color:var(--t2);font-size:12.5px}
+.coin3d{flex:none;width:56px;height:56px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#7CC0FF,#1985F0 45%,#0A3E78);box-shadow:inset -4px -6px 12px rgba(0,0,0,.35),0 10px 24px -6px rgba(25,133,240,.6);animation:spin 6s ease-in-out infinite}
+@keyframes spin{50%{transform:rotateY(180deg) translateY(-3px)}}
+
+.sec{display:flex;justify-content:space-between;align-items:baseline;margin:0 2px 10px}
+.sec h3{margin:0;font-size:17px;font-weight:600;letter-spacing:-.01em}
+.sec a,.links a{text-decoration:none}.sec a{color:var(--t2);font-size:13px}
+.tabs{display:flex;gap:6px;margin-bottom:6px;overflow-x:auto;scrollbar-width:none}
+.tabs button{height:34px;min-width:64px;padding:0 14px;border-radius:999px;background:var(--s1);color:var(--t2);font-size:13px;font-weight:500;white-space:nowrap;box-shadow:inset 0 0 0 1px var(--line);transition:all .25s}
+.tabs button[aria-pressed=true]{background:var(--text);color:var(--bg);box-shadow:none}
+.rows{display:grid}
+.row{display:grid;grid-template-columns:40px 1fr auto;gap:12px;align-items:center;padding:12px 2px;border-bottom:1px solid var(--line);animation:rin .5s var(--ease) both;animation-delay:calc(var(--i)*45ms)}
+@keyframes rin{from{opacity:0;transform:translateY(8px)}}
+.tok{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:700 13px var(--sans);color:#fff}
+.row b{display:block;font-weight:600}
+.row small{color:var(--t2);font-size:12.5px}
+.row .r{text-align:right}
+.row .r small.up{color:var(--up)}.row .r small.down{color:var(--down)}
+.flash-up{animation:fu .9s}.flash-down{animation:fd .9s}
+@keyframes fu{20%{color:var(--up)}}@keyframes fd{20%{color:var(--down)}}
+
+.bar{position:absolute;left:50%;bottom:28px;translate:-50% 0;display:flex;gap:4px;padding:6px;border-radius:999px;background:rgba(21,26,32,.78);backdrop-filter:blur(18px) saturate(1.4);box-shadow:inset 0 0 0 1px var(--line),0 20px 40px -10px rgba(0,0,0,.7);z-index:10}
+.tab{width:52px;height:46px;border-radius:999px;display:grid;place-items:center;color:var(--t3);transition:background .3s,color .3s}
+.tab[aria-current=true]{background:var(--s3);color:var(--text)}
+
+.scrim{position:absolute;inset:0;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .4s var(--ease);z-index:30}
+.sheet{position:absolute;left:8px;right:8px;bottom:8px;border-radius:38px;background:var(--s1);box-shadow:inset 0 0 0 1px var(--line);padding:10px 18px 22px;transform:translateY(110%);transition:transform .55s var(--ease);z-index:31}
+.open .scrim{opacity:1;pointer-events:auto}.open .sheet{transform:none}
+.grab{width:38px;height:5px;border-radius:5px;background:var(--s3);margin:0 auto 14px}
+.sheet h4{margin:0;text-align:center;font-weight:600;font-size:16px}
+.to{display:flex;align-items:center;gap:10px;margin:14px 0 6px;padding:10px 12px;border-radius:16px;background:var(--s2)}
+.to i{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#FFB86B,#FF6B9A)}
+.to small{color:var(--t2);display:block;font-size:12px}
+.amt{text-align:center;font:600 50px/1.1 var(--sans);letter-spacing:-.04em;margin:14px 0 2px;min-height:56px}
+.amt .cur{color:var(--t3)}
+.amt.shake{animation:shake .4s}
+@keyframes shake{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+.avail{text-align:center;color:var(--t2);font-size:12.5px}
+.chips{display:flex;gap:6px;justify-content:center;margin:12px 0}
+.chips button{height:32px;padding:0 12px;border-radius:999px;background:var(--s2);font-size:12.5px;color:var(--t2)}
+.keys{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.keys button{height:52px;border-radius:16px;font-size:22px;font-weight:500;transition:background .15s}
+.keys button:active{background:var(--s2)}
+.go{margin-top:10px;width:100%;height:56px;border-radius:18px;background:var(--accent);color:var(--on-accent);font-weight:700;font-size:16px;transition:opacity .3s,transform .3s var(--spring)}
+.go:disabled{opacity:.3}
+.go:active{transform:scale(.97)}
+.done{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:10px;background:var(--s1);border-radius:38px;opacity:0;pointer-events:none;transition:opacity .4s}
+.done.on{opacity:1;pointer-events:auto}
+.tick{width:84px;height:84px;border-radius:50%;background:var(--accent);display:grid;place-items:center;transform:scale(.4);transition:transform .6s var(--spring)}
+.done.on .tick{transform:none}
+.tick svg{width:40px;height:40px;fill:none;stroke:var(--on-accent);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:40;stroke-dashoffset:40;transition:stroke-dashoffset .5s .3s var(--ease)}
+.done.on .tick svg{stroke-dashoffset:0}
+
+/* notes */
+.notes{max-width:560px}
+.notes small.k{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--t2)}
+.notes h1{font:400 clamp(40px,5vw,64px)/.98 var(--serif);letter-spacing:-.02em;margin:14px 0 16px}
+.notes h1 em{color:var(--accent)}
+.notes p{color:var(--t2);margin:0 0 22px}
+.refs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px}
+.refs a{display:block;border-radius:14px;overflow:hidden;background:var(--s1);box-shadow:0 0 0 1px var(--line);text-decoration:none;color:inherit;transition:transform .5s var(--spring)}
+.refs a:hover{transform:translateY(-4px)}
+.refs img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.refs span{display:block;padding:8px 10px;font:500 11px/1.3 var(--mono);color:var(--t2)}
+.refs b{display:block;color:var(--text);font:500 12px/1.3 var(--sans);margin-top:2px}
+.sw{display:flex;gap:6px;margin-bottom:10px}
+.sw i{flex:1;height:44px;border-radius:10px;box-shadow:inset 0 0 0 1px var(--line);position:relative}
+.sw i::after{content:attr(data-h);position:absolute;left:8px;bottom:6px;font:500 10px var(--mono);color:#fff;opacity:.75}
+.checks{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:6px;font-size:13.5px;color:var(--text)}
+.checks li::before{content:'✓';color:var(--accent);font-weight:700;margin-right:8px}
+.links{display:flex;gap:18px;margin-top:22px;font-size:13px}.links a{color:var(--accent)}
+@media(max-width:980px){.notes{order:2}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:1ms!important}}
+</style>
+</head>
+<body>
+<main class="phone" id="phone" aria-label="Halo wallet prototype">
+  <div class="island"></div>
+  <div class="status"><span>9:41</span><svg width="66" height="12" viewBox="0 0 66 12" aria-hidden="true"><g fill="#E3EDF4"><rect x="0" y="7" width="3" height="5" rx="1"/><rect x="5" y="5" width="3" height="7" rx="1"/><rect x="10" y="2.5" width="3" height="9.5" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/><rect x="40" y="0.5" width="22" height="11" rx="3.5" fill="none" stroke="#E3EDF4" opacity=".4"/><rect x="42" y="2.5" width="16" height="7" rx="2"/></g><path d="M29 3.2a8 8 0 0 1 9.5 0M30.6 5.6a5 5 0 0 1 6.3 0M32.4 8a2 2 0 0 1 2.7 0" stroke="#E3EDF4" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg></div>
+  <div class="scroll">
+    <div class="glow"></div>
+    <div class="head">
+      <button class="ibtn" aria-label="Menu"><svg viewBox="0 0 20 20"><path d="M4 7h12M4 13h8"/></svg></button>
+      <button class="wallet"><i></i>Main wallet <svg width="12" height="12" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 8 4 4 4-4"/></svg></button>
+      <button class="ibtn" aria-label="Scan"><svg viewBox="0 0 20 20"><path d="M3 7V4h3M14 4h3v3M17 13v3h-3M6 16H3v-3M3 10h14"/></svg></button>
+    </div>
+    <section class="hero">
+      <small>Total balance <button class="eye" id="eye" aria-label="Hide balance"><svg viewBox="0 0 20 20"><path d="M2 10s3-5.5 8-5.5S18 10 18 10s-3 5.5-8 5.5S2 10 2 10Z"/><circle cx="10" cy="10" r="2.5"/></svg></button></small><br>
+      <div class="bal num" id="bal">$0<span class="c">.00</span></div><br>
+      <span class="delta num" id="delta">▲ $1,192.92 · 1.46% today</span>
+      <svg class="chart" id="chart" viewBox="0 0 390 110" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1985F0" stop-opacity=".35"/><stop offset="1" stop-color="#1985F0" stop-opacity="0"/></linearGradient></defs></svg>
+      <div class="range" id="range"><span class="thumb"></span>
+        <button aria-pressed="false" data-r="1D">1D</button><button aria-pressed="true" data-r="1W">1W</button><button aria-pressed="false" data-r="1M">1M</button><button aria-pressed="false" data-r="1Y">1Y</button><button aria-pressed="false" data-r="All">All</button>
+      </div>
+    </section>
+    <div class="qas">
+      <button class="qa" id="send"><span><svg viewBox="0 0 20 20"><path d="M5 15 15 5M8 5h7v7"/></svg></span>Send</button>
+      <button class="qa"><span><svg viewBox="0 0 20 20"><path d="M15 5 5 15M12 15H5V8"/></svg></span>Receive</button>
+      <button class="qa"><span><svg viewBox="0 0 20 20"><path d="M4 7h11l-3-3M16 13H5l3 3"/></svg></span>Swap</button>
+      <button class="qa"><span><svg viewBox="0 0 20 20"><path d="M10 4v12M4 10h12"/></svg></span>Buy</button>
+    </div>
+    <div class="promo"><div class="coin3d"></div><div><b>Stake ETH, earn 3.8%</b><small>Unstake any time · no lock-ups</small></div></div>
+    <div class="sec"><h3>Portfolio</h3><a href="#">See all</a></div>
+    <div class="tabs" id="tabs"><button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="token">Tokens</button><button aria-pressed="false" data-f="defi">DeFi</button><button aria-pressed="false" data-f="cash">Cash</button></div>
+    <div class="rows" id="rows"></div>
+  </div>
+  <nav class="bar" aria-label="Tabs">
+    <button class="tab" aria-current="true" aria-label="Home"><svg viewBox="0 0 20 20"><path d="M3 9 10 3l7 6v8H3z"/></svg></button>
+    <button class="tab" aria-label="Markets"><svg viewBox="0 0 20 20"><path d="M3 15l4-5 3 3 7-8"/></svg></button>
+    <button class="tab" aria-label="Activity"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l3 2"/></svg></button>
+    <button class="tab" aria-label="Profile"><svg viewBox="0 0 20 20"><circle cx="10" cy="7" r="3.5"/><path d="M3.5 17a6.5 6.5 0 0 1 13 0"/></svg></button>
+  </nav>
+  <div class="scrim" id="scrim"></div>
+  <section class="sheet" id="sheet" aria-label="Send" role="dialog">
+    <div class="grab"></div>
+    <h4>Send</h4>
+    <div class="to"><i></i><div><b>maya.eth</b><small>0x40e…033d · sent 3 times</small></div></div>
+    <div class="amt num" id="amt"><span class="cur">$</span>0</div>
+    <div class="avail num">Available $8,500.90 · fee ≈ $0.42</div>
+    <div class="chips"><button data-q="25">$25</button><button data-q="100">$100</button><button data-q="500">$500</button><button data-q="max">Max</button></div>
+    <div class="keys" id="keys"></div>
+    <button class="go" id="go" disabled>Review</button>
+    <div class="done" id="done"><div class="tick"><svg viewBox="0 0 40 40"><path d="m11 21 6 6 12-14"/></svg></div><b style="font-size:18px">Sent to maya.eth</b><span id="sentAmt" style="color:var(--t2)"></span><button class="go" id="ok" style="width:200px">Done</button></div>
+  </section>
+</main>
+
+<aside class="notes">
+  <small class="k">Built with the uihall skill · end to end</small>
+  <h1>A premium wallet, <em>one blue at a time.</em></h1>
+  <p>From <code>design_brief("crypto wallet home", mood: premium, surface: dark)</code>. The three references below supplied the skeleton: the hero balance with greyed cents, four round actions, a segmented portfolio and a single saturated blue that carries every interactive element — nothing else on the screen is coloured except gains and losses.</p>
+  <div class="refs">
+    <a href="../../#/a/IMG-0365"><img src="../../assets/thumb/IMG-0365.webp" alt=""><span>IMG-0365<b>Hero balance, 4 actions</b></span></a>
+    <a href="../../#/a/IMG-0433"><img src="../../assets/thumb/IMG-0433.webp" alt=""><span>IMG-0433<b>Segmented portfolio rows</b></span></a>
+    <a href="../../#/a/VID-0382"><img src="../../assets/thumb/VID-0382.webp" alt=""><span>VID-0382<b>One blue for every action</b></span></a>
+  </div>
+  <div class="sw"><i style="background:#07090C" data-h="#07090C"></i><i style="background:#151A20" data-h="#151A20"></i><i style="background:#1985F0" data-h="#1985F0"></i><i style="background:#E3EDF4" data-h=""></i></div>
+  <small class="k">Accent #1985F0 from VID-0382 · text 13.4:1 · on-accent 5.3:1</small>
+  <ul class="checks">
+    <li>One hero number at 3.5× body, cents subordinated</li>
+    <li>Single accent: Send, chart, tab — gains/losses are the only other colour</li>
+    <li>Secondary task (Send) in a bottom sheet — you never lose your place</li>
+    <li>Range switch redraws the chart and nothing else</li>
+    <li>Tap the eye to hide the balance; tap Send to try the keypad</li>
+  </ul>
+  <div class="links"><a href="../">← All demos</a><a href="../../#/agents">Get the skill + MCP</a></div>
+</aside>
+
+<script>
+const $=s=>document.querySelector(s);
+const money=v=>'$'+v.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+/* balance count-up */
+const BAL=8500.9;let t0=performance.now();
+(function tick(t){const p=Math.min(1,(t-t0)/1300),e=1-Math.pow(1-p,4),v=BAL*e;const [w,c]=v.toFixed(2).split('.');
+ $('#bal').innerHTML='$'+Number(w).toLocaleString('en-US')+'<span class="c">.'+c+'</span>';if(p<1)requestAnimationFrame(tick)})(t0);
+$('#eye').onclick=()=>$('#bal').classList.toggle('hidden');
+/* chart */
+const series={'1D':[5,6,5.5,7,6.6,7.4,8,7.6,8.4,8.2,9],'1W':[4,5,4.6,6,5.2,6.8,7.4,6.9,8.1,8.8,9.3],'1M':[6,5,5.4,4.2,5.6,6.1,5.5,7.2,6.8,8.4,9],'1Y':[2,3,2.6,4.4,3.8,5.6,5,6.8,7.6,7.1,9.2],'All':[1,1.4,2.2,1.8,3.6,4.8,4.1,6.2,7.8,7.2,9.4]};
+function draw(k){const d=series[k],W=390,H=110,max=Math.max(...d),min=Math.min(...d);
+ const pts=d.map((v,i)=>[i*W/(d.length-1),H-12-(v-min)/(max-min)*(H-30)]);
+ let p='M'+pts[0];for(let i=1;i<pts.length;i++){const [x0,y0]=pts[i-1],[x1,y1]=pts[i],cx=(x0+x1)/2;p+=` C${cx},${y0} ${cx},${y1} ${x1},${y1}`}
+ $('#chart').innerHTML=$('#chart').querySelector('defs').outerHTML+`<path class="a" d="${p} L${W},${H} L0,${H}Z"/><path class="l" d="${p}"/><circle cx="${pts.at(-1)[0]-4}" cy="${pts.at(-1)[1]}" r="4" fill="#1985F0"><animate attributeName="r" values="4;7;4" dur="2s" repeatCount="indefinite"/></circle>`}
+const range=$('#range'),thumb=range.querySelector('.thumb');
+const place=()=>{const b=range.querySelector('[aria-pressed=true]');thumb.style.left=b.offsetLeft+'px';thumb.style.width=b.offsetWidth+'px'};
+range.onclick=e=>{const b=e.target.closest('button');if(!b)return;range.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));place();draw(b.dataset.r)};
+draw('1W');requestAnimationFrame(place);
+/* portfolio */
+const TOK=[['Bitcoin','BTC','#F7931A','₿',75158.75,0.88,'token',1.1342],['Ethereum','ETH','#627EEA','Ξ',3123.4,-1.3,'token',0.9],['Solana','SOL','#9945FF','◎',187.21,4.12,'token',6.2],['Lido stETH','stETH','#00A3FF','◆',3119.9,-1.2,'defi',0.42],['Aave USDC','aUSDC','#B6509E','A',1.0,0.02,'defi',1200],['US Dollar','USD','#2E7D5B','$',1,0,'cash',412.65]];
+let filter='all';
+function rows(){$('#rows').innerHTML=TOK.filter(t=>filter==='all'||t[6]===filter).map((t,i)=>`<div class="row" style="--i:${i}"><span class="tok" style="background:${t[2]}">${t[3]}</span><div><b>${t[0]}</b><small class="num">${t[7]} ${t[1]}</small></div><div class="r num"><b data-p="${t[1]}">${money(t[4]*t[7])}</b><small class="${t[5]>=0?'up':'down'}">${t[5]>=0?'▲':'▼'} ${Math.abs(t[5]).toFixed(2)}%</small></div></div>`).join('')}
+$('#tabs').onclick=e=>{const b=e.target.closest('button');if(!b)return;filter=b.dataset.f;$('#tabs').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));rows()};
+rows();
+setInterval(()=>{const t=TOK[Math.floor(Math.random()*3)];const d=(Math.random()-.48)*.004;t[4]*=1+d;const el=document.querySelector(`[data-p="${t[1]}"]`);if(!el)return;el.textContent=money(t[4]*t[7]);el.classList.remove('flash-up','flash-down');void el.offsetWidth;el.classList.add(d>=0?'flash-up':'flash-down')},1600);
+/* send sheet */
+const phone=$('#phone');let amt='0';
+$('#keys').innerHTML=[...'123456789.0'].map(k=>`<button data-k="${k}">${k}</button>`).join('')+'<button data-k="del" aria-label="Delete">⌫</button>';
+const show=()=>{$('#amt').innerHTML='<span class="cur">$</span>'+amt;$('#go').disabled=!(parseFloat(amt)>0)};
+$('#send').onclick=()=>{phone.classList.add('open');amt='0';show()};
+$('#scrim').onclick=()=>phone.classList.remove('open');
+$('#keys').onclick=e=>{const k=e.target.closest('button')?.dataset.k;if(!k)return;
+ if(k==='del')amt=amt.length>1?amt.slice(0,-1):'0';else if(k==='.'){if(!amt.includes('.'))amt+='.'}else{if(/\.\d\d$/.test(amt))return;amt=amt==='0'?k:amt+k}
+ if(parseFloat(amt)>BAL){amt=amt.slice(0,-1)||'0';$('#amt').classList.remove('shake');void $('#amt').offsetWidth;$('#amt').classList.add('shake')}show()};
+document.querySelector('.chips').onclick=e=>{const q=e.target.closest('button')?.dataset.q;if(!q)return;amt=q==='max'?String(BAL-0.42):q;show()};
+$('#go').onclick=()=>{$('#sentAmt').textContent=money(parseFloat(amt))+' · arrives in ~12 s';$('#done').classList.add('on')};
+$('#ok').onclick=()=>{$('#done').classList.remove('on');phone.classList.remove('open')};
+</script>
+</body>
+</html>
