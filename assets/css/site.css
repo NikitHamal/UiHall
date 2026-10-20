@@ -1303,3 +1303,9 @@
   .pg__call { min-width: 0; }
   @media (max-width: 600px) { .tag { min-height: 28px; } .facets { gap: 8px; } }
 }
+@layer views {
+  /* the drawer is off-screen until opened: keep it out of the tab order */
+  .rail { visibility: hidden; transition: transform var(--t-slow) var(--ease-out), visibility 0s linear var(--t-slow); }
+  .rail.open { visibility: visible; transition: transform var(--t-slow) var(--ease-out), visibility 0s; }
+  body.landing .rail { display: none; }
+}

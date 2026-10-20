@@ -80,14 +80,16 @@ function markNav(name) {
   for (const a of $$('.rail__link, .tabbar a, .topnav a, .topbar__board')) {
     if (a.dataset.nav === name) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   }
-  $('#rail').classList.remove('open');
+  $('#rail').classList.remove('open'); $('#railScrim').classList.remove('on');
 }
 
 function drawer() {
   const rail = $('#rail'), scrim = $('#railScrim');
-  $('#menuBtn').addEventListener('click', () => rail.classList.add('open'));
-  scrim.addEventListener('click', () => rail.classList.remove('open'));
-  addEventListener('keydown', (e) => { if (e.key === 'Escape') rail.classList.remove('open'); });
+  const set = (on) => { rail.classList.toggle('open', on); scrim.classList.toggle('on', on); if (on) rail.querySelector('a')?.focus(); };
+  $('#menuBtn').addEventListener('click', () => set(true));
+  scrim.addEventListener('click', () => set(false));
+  rail.addEventListener('click', (e) => { if (e.target.closest('a')) set(false); });
+  addEventListener('keydown', (e) => { if (e.key === 'Escape' && rail.classList.contains('open')) set(false); });
 }
 
 function theme() {
