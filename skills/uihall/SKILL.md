@@ -6,7 +6,7 @@ description: >-
   page, a dashboard, a component, a design system or a colour palette ("design an onboarding",
   "make this page look better", "what should a crypto wallet home look like", "pick colours
   for a calm health app", "why does this look generic", "build a pricing section"). Gives you
-  755 hand-described UI/UX references with palettes measured from the pixels, a pattern library
+  850+ hand-described UI/UX references (100+ of them MIT-licensed originals built in code) with palettes measured from the pixels, a pattern library
   with build rules, palette-to-token export and contrast checks — through the UI Hall MCP
   server when connected, or a bundled zero-dependency CLI when not.
 license: MIT
@@ -22,7 +22,7 @@ Asked for "a finance app", an agent produces a blue gradient, a card and a round
 because that is the average of everything it has seen. This skill replaces the average with
 specific, real, *described* references — and makes you look at them before you write code.
 
-UI Hall is a corpus of **755 real interfaces** (mobile screens, websites, dashboards, motion
+UI Hall is a corpus of **850+ interfaces** — 750+ collected references and 100+ MIT-licensed originals built in code — (mobile screens, websites, dashboards, motion
 clips, design systems, redesigns). Every item was looked at and written up by hand and
 re-audited against the pixels; every palette is k-means over the real image with area
 percentages; every video's motion was measured.

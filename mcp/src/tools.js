@@ -45,7 +45,7 @@ export const TOOLS = [
   {
     name: 'search_designs',
     title: 'Search designs',
-    description: 'Search 755 curated, hand-described UI/UX references (mobile screens, web pages, dashboards, motion clips, design systems). '
+    description: 'Search 850+ curated, hand-described UI/UX references — collected work plus MIT-licensed originals built in code (mobile screens, web pages, dashboards, motion clips, design systems). '
       + 'Ranked full-text search with synonyms ("fintech" also finds wallet, banking…) plus facet filters. '
       + 'Use this first whenever you design, build or critique an interface, so decisions come from real examples instead of the generic average. '
       + 'Set include_images to actually see the top results.',

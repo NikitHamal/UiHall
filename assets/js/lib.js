@@ -167,7 +167,16 @@ export function md(src) {
     .replace(/(https?:\/\/[^\s<)]+)/g, (u) => `<a href="${u}" target="_blank" rel="noopener">${u.replace(/^https?:\/\/[^/]+\/UiHall\/#\/a\//, '#')}</a>`)
     .replace(/(^|[\s(])(#[0-9A-Fa-f]{6})\b/g, '$1<span class="sw" style="background:$2"></span>$2')
     .replace(/\b((?:IMG|VID)-\d{4})\b(?![^<]*<\/a>)/g, '<a href="#/a/$1">$1</a>');
-  for (const l of lines) {
+  let table = null;
+  const flushTable = () => { if (!table) return; const [hd, ...rows] = table.filter((r) => !/^\|?\s*:?-{3,}/.test(r)); const cells = (r) => r.replace(/^\||\|$/g, '').split('|').map((c) => inline(c.trim()));
+    html += `<table><thead><tr>${cells(hd).map((c) => `<th>${c}</th>`).join('')}</tr></thead><tbody>${rows.map((r) => `<tr>${cells(r).map((c) => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`; table = null; };
+  let prevBlank = true;
+  for (const raw of lines) {
+    const l = raw; const blank = !l.trim();
+    if (blank && !inCode) { prevBlank = true; flushTable(); if (inList) { html += '</ul>'; inList = false; } continue; }
+    const pb = prevBlank; prevBlank = false;
+    if (!inCode && /^\|.*\|\s*$/.test(l.trim())) { (table ||= []).push(l.trim()); continue; }
+    flushTable();
     if (l.startsWith('```')) {
       if (inCode) { html += `<pre><code>${code}</code></pre>`; code = ''; }
       inCode = !inCode; continue;
@@ -181,8 +190,9 @@ export function md(src) {
     if (h) { html += `<h${h[1].length}>${inline(h[2])}</h${h[1].length}>`; continue; }
     const n = l.match(/^\s*(\d+)\. (.*)/);
     if (n) { html += `<p><strong>${n[1]}.</strong> ${inline(n[2])}</p>`; continue; }
-    if (l.trim()) html += `<p>${inline(l)}</p>`;
+    if (l.trim()) { if (html.endsWith('</p>') && !pb) html = html.slice(0, -4) + ' ' + inline(l) + '</p>'; else html += `<p>${inline(l)}</p>`; }
   }
+  flushTable();
   if (inList) html += '</ul>';
   return html;
 }
