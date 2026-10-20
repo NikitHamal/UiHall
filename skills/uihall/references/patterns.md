@@ -1,6 +1,6 @@
 # Pattern library
 
-Generated from the corpus (v2.0.0, 781 references) by `tools/build_release.mjs`.
+Generated from the corpus (v2.0.0, 787 references) by `tools/build_release.mjs`.
 Evidence ids open at `https://nikithamal.github.io/UiHall/#/a/<id>` or via `get_design` / `view_design`.
 
 ## One hero number
@@ -51,7 +51,7 @@ Filters as chips in one horizontally scrolling row — never wrapping, never cli
 - white-space: nowrap; overflow-x: auto; hidden scrollbar; edge fade.
 - Selected chip inverts (ink fill), not just a border change.
 
-Evidence (66): ORG-0005 (AI assistant chat with composer), ORG-0021 (Buttons, inputs and controls sheet), ORG-0049 (Search with filter chips and results), ORG-0069 (Messages inbox with pinned threads)
+Evidence (68): ORG-0005 (AI assistant chat with composer), ORG-0021 (Buttons, inputs and controls sheet), ORG-0049 (Search with filter chips and results), ORG-0069 (Messages inbox with pinned threads)
 
 ## Segmented range control
 
@@ -141,7 +141,7 @@ Conversation scrolls; the composer stays anchored with attachments and model con
 - Assistant replies full-width, user messages as compact bubbles.
 - Suggested prompts as chips only in the empty state.
 
-Evidence (72): ORG-0005 (AI assistant chat with composer), ORG-0069 (Messages inbox with pinned threads), IMG-0169 (Dark pill toolbar and status chip set), IMG-0183 (Wandor AI trip planner landing page)
+Evidence (73): ORG-0005 (AI assistant chat with composer), ORG-0069 (Messages inbox with pinned threads), ORG-0105 (AI image studio with prompt and grid), IMG-0169 (Dark pill toolbar and status chip set)
 
 ## Dense data table with quiet chrome
 
@@ -151,7 +151,7 @@ Tables carry the data; chrome recedes. Zebra-free rows, hairline dividers, statu
 - Sticky header; filters above, not in the header row.
 - Status pills: tinted background at 12–16% with full-strength text.
 
-Evidence (76): ORG-0001 (Analytics overview with sidebar), ORG-0061 (Activity rings and workout list), ORG-0065 (Kanban board with swimlane columns), IMG-0184 (Wave training readiness dark home screen)
+Evidence (77): ORG-0001 (Analytics overview with sidebar), ORG-0061 (Activity rings and workout list), ORG-0065 (Kanban board with swimlane columns), ORG-0121 (Email client with three panes)
 
 ## Sidebar workspace shell
 
@@ -161,7 +161,7 @@ A persistent left rail for navigation and a content canvas on the right — the 
 - Group nav with small caps headings; active row tinted, not bold.
 - Canvas max-width only for reading views, never for tables.
 
-Evidence (32): ORG-0001 (Analytics overview with sidebar), ORG-0065 (Kanban board with swimlane columns), IMG-0483 (Recruiting outreach sequence editor), IMG-0499 (WorkStation project dashboard)
+Evidence (33): ORG-0001 (Analytics overview with sidebar), ORG-0065 (Kanban board with swimlane columns), ORG-0121 (Email client with three panes), IMG-0483 (Recruiting outreach sequence editor)
 
 ## Progress ring as the hero
 
@@ -171,7 +171,7 @@ Goal completion shown as one ring (or nested rings) carrying the number inside. 
 - Number centred inside, unit below at small size.
 - Animate fill on appear (600–900ms, ease-out).
 
-Evidence (54): ORG-0017 (Card patterns sheet), ORG-0037 (Welcome with orbit illustration), ORG-0045 (Profile with stats and streak grid), ORG-0061 (Activity rings and workout list)
+Evidence (57): ORG-0017 (Card patterns sheet), ORG-0037 (Welcome with orbit illustration), ORG-0045 (Profile with stats and streak grid), ORG-0061 (Activity rings and workout list)
 
 ## Frameless device on flat colour
 
@@ -211,7 +211,7 @@ The primary action pinned to the bottom of a scrolling screen with the total or 
 - Show the consequence on the button ("Pay $42.10", not "Continue").
 - Hairline or blur behind the bar instead of a heavy shadow.
 
-Evidence (35): ORG-0013 (Cart with sticky pay button), ORG-0041 (Paywall with anchored yearly plan), ORG-0081 (Product detail with size picker), ORG-0089 (Flight selection with date strip)
+Evidence (36): ORG-0013 (Cart with sticky pay button), ORG-0041 (Paywall with anchored yearly plan), ORG-0081 (Product detail with size picker), ORG-0089 (Flight selection with date strip)
 
 ## Purposeful micro-interaction
 
