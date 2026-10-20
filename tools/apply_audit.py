@@ -22,6 +22,8 @@ DROP = {
     "IMG-0430": "blank, overexposed screen", "IMG-0427": "every artboard unreadable",
     "IMG-0542": "fragment: tab bar and part of a card", "IMG-0508": "empty placeholder tiles",
     "VID-0312": "placeholder 'Item 1..20' list",
+    "IMG-0357": "third-party watermark", "IMG-0358": "third-party watermark", "IMG-0359": "third-party watermark",
+    "IMG-0360": "third-party watermark", "IMG-0361": "third-party watermark",
 }
 CROP_OF = {
     "IMG-0370": "IMG-0369", "IMG-0371": "IMG-0369", "IMG-0380": "IMG-0379", "IMG-0392": "IMG-0393",

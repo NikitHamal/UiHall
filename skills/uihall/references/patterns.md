@@ -1,6 +1,6 @@
 # Pattern library
 
-Generated from the corpus (v2.0.0, 787 references) by `tools/build_release.mjs`.
+Generated from the corpus (v2.0.0, 788 references) by `tools/build_release.mjs`.
 Evidence ids open at `https://nikithamal.github.io/UiHall/#/a/<id>` or via `get_design` / `view_design`.
 
 ## One hero number
@@ -41,7 +41,7 @@ Fixed bottom navigation with a small, stable set of destinations; the active one
 - Active = accent tint + filled icon; inactive = 60% ink.
 - Respect the home indicator safe area.
 
-Evidence (41): ORG-0029 (Money home with hero balance), IMG-0184 (Wave training readiness dark home screen), IMG-0194 (Kids allowance app home screen), IMG-0208 (Parcel delivery merchant home screen)
+Evidence (41): ORG-0029 (Money home with hero balance), ORG-0145 (Social feed with post actions), IMG-0184 (Wave training readiness dark home screen), IMG-0194 (Kids allowance app home screen)
 
 ## Scrollable chip-filter row
 
@@ -51,7 +51,7 @@ Filters as chips in one horizontally scrolling row — never wrapping, never cli
 - white-space: nowrap; overflow-x: auto; hidden scrollbar; edge fade.
 - Selected chip inverts (ink fill), not just a border change.
 
-Evidence (68): ORG-0005 (AI assistant chat with composer), ORG-0021 (Buttons, inputs and controls sheet), ORG-0049 (Search with filter chips and results), ORG-0069 (Messages inbox with pinned threads)
+Evidence (70): ORG-0005 (AI assistant chat with composer), ORG-0021 (Buttons, inputs and controls sheet), ORG-0049 (Search with filter chips and results), ORG-0069 (Messages inbox with pinned threads)
 
 ## Segmented range control
 
@@ -61,7 +61,7 @@ A Week / Month switch that redraws one view and moves nothing else. One state, o
 - Abbreviate day labels to three letters, never one.
 - Only the controlled region re-renders.
 
-Evidence (58): ORG-0021 (Buttons, inputs and controls sheet), ORG-0057 (Calendar day with timeline), ORG-0061 (Activity rings and workout list), ORG-0089 (Flight selection with date strip)
+Evidence (57): ORG-0021 (Buttons, inputs and controls sheet), ORG-0057 (Calendar day with timeline), ORG-0061 (Activity rings and workout list), ORG-0089 (Flight selection with date strip)
 
 ## Bottom sheet for secondary tasks
 
@@ -81,7 +81,7 @@ The zero-data screen explains what will appear and offers exactly one action, in
 - One sentence of value, one primary button.
 - Show a ghosted preview of the filled state when possible.
 
-Evidence (17): ORG-0025 (Empty inbox that teaches), IMG-0198 (Dark AI agent app empty start screen), IMG-0210 (Delivery app first-run home with steps), IMG-0343 (Smart alarms home with empty state)
+Evidence (16): ORG-0025 (Empty inbox that teaches), IMG-0198 (Dark AI agent app empty start screen), IMG-0210 (Delivery app first-run home with steps), IMG-0343 (Smart alarms home with empty state)
 
 ## Single-promise onboarding
 
@@ -91,7 +91,7 @@ Each onboarding step makes one promise with one visual; progress dots and a sing
 - Primary CTA full-width at the thumb zone; "Log in" as secondary text.
 - Three steps maximum before value.
 
-Evidence (107): ORG-0025 (Empty inbox that teaches), ORG-0037 (Welcome with orbit illustration), IMG-0161 (Scripture app onboarding screens, eight variants), IMG-0180 (Volta splash built in four steps)
+Evidence (106): ORG-0025 (Empty inbox that teaches), ORG-0037 (Welcome with orbit illustration), IMG-0161 (Scripture app onboarding screens, eight variants), IMG-0180 (Volta splash built in four steps)
 
 ## Dark surface, single hot accent
 
@@ -131,7 +131,7 @@ A serif display face over a neutral sans for UI. Signals craft and calm; stronge
 - Generous leading on body (1.5–1.6).
 - Pair with a restrained palette — the type is the ornament.
 
-Evidence (39): IMG-0161 (Scripture app onboarding screens, eight variants), IMG-0187 (Elsewhere poster with ringed planet), IMG-0189 (Focus3 daily intentions landing page), IMG-0193 (Elsewhere poster with ringed blue planet)
+Evidence (40): ORG-0149 (Editorial article with reading rail), IMG-0161 (Scripture app onboarding screens, eight variants), IMG-0187 (Elsewhere poster with ringed planet), IMG-0189 (Focus3 daily intentions landing page)
 
 ## AI chat with anchored composer
 
@@ -141,7 +141,7 @@ Conversation scrolls; the composer stays anchored with attachments and model con
 - Assistant replies full-width, user messages as compact bubbles.
 - Suggested prompts as chips only in the empty state.
 
-Evidence (73): ORG-0005 (AI assistant chat with composer), ORG-0069 (Messages inbox with pinned threads), ORG-0105 (AI image studio with prompt and grid), IMG-0169 (Dark pill toolbar and status chip set)
+Evidence (74): ORG-0005 (AI assistant chat with composer), ORG-0069 (Messages inbox with pinned threads), ORG-0105 (AI image studio with prompt and grid), ORG-0129 (Chat thread with reactions and composer)
 
 ## Dense data table with quiet chrome
 
@@ -151,7 +151,7 @@ Tables carry the data; chrome recedes. Zebra-free rows, hairline dividers, statu
 - Sticky header; filters above, not in the header row.
 - Status pills: tinted background at 12–16% with full-strength text.
 
-Evidence (77): ORG-0001 (Analytics overview with sidebar), ORG-0061 (Activity rings and workout list), ORG-0065 (Kanban board with swimlane columns), ORG-0121 (Email client with three panes)
+Evidence (78): ORG-0001 (Analytics overview with sidebar), ORG-0061 (Activity rings and workout list), ORG-0065 (Kanban board with swimlane columns), ORG-0121 (Email client with three panes)
 
 ## Sidebar workspace shell
 
@@ -161,7 +161,7 @@ A persistent left rail for navigation and a content canvas on the right — the 
 - Group nav with small caps headings; active row tinted, not bold.
 - Canvas max-width only for reading views, never for tables.
 
-Evidence (33): ORG-0001 (Analytics overview with sidebar), ORG-0065 (Kanban board with swimlane columns), ORG-0121 (Email client with three panes), IMG-0483 (Recruiting outreach sequence editor)
+Evidence (34): ORG-0001 (Analytics overview with sidebar), ORG-0065 (Kanban board with swimlane columns), ORG-0121 (Email client with three panes), ORG-0133 (Customers table with filters and bulk actions)
 
 ## Progress ring as the hero
 
@@ -211,7 +211,7 @@ The primary action pinned to the bottom of a scrolling screen with the total or 
 - Show the consequence on the button ("Pay $42.10", not "Continue").
 - Hairline or blur behind the bar instead of a heavy shadow.
 
-Evidence (36): ORG-0013 (Cart with sticky pay button), ORG-0041 (Paywall with anchored yearly plan), ORG-0081 (Product detail with size picker), ORG-0089 (Flight selection with date strip)
+Evidence (37): ORG-0013 (Cart with sticky pay button), ORG-0041 (Paywall with anchored yearly plan), ORG-0081 (Product detail with size picker), ORG-0089 (Flight selection with date strip)
 
 ## Purposeful micro-interaction
 
