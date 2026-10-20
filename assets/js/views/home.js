@@ -58,104 +58,107 @@ export default function home(root, app) {
     <p class="lp-manifesto__text" id="lpManifestoText">Ask an agent for a finance app and you get a blue gradient, a card and a rounded button — the average of everything it has ever seen. UI Hall replaces the average with evidence: real screens it can search, open and measure, patterns with receipts, and colour you can paste. Taste, made callable.</p>
   </section>
 
-  <section class="lp-proof" id="lpProof">
-    <div class="container lp-stats hero__stats">
-      ${[[t.assets, 'references'], [t.originals || 0, 'originals · MIT'], [h.patterns().length, 'patterns with receipts'], [h.assets.reduce((n, x) => n + (x.palette_detail?.length || 0), 0), 'colours measured'], [TOOLS.length, 'agent tools']].map(([n, l]) => `<div class="stat"><b class="num" data-count="${n}">0</b><span>${l}</span></div>`).join('')}
-    </div>
-    <div class="marquee lp-marquee"><div class="marquee__track">${(() => { const x = h.patterns().map((pt) => `<a class="lp-tag" href="#/patterns#${pt.slug}">${esc(pt.name)}</a>`).join(''); return x + x; })()}</div></div>
+  <section class="container lp-numbers" id="lpNumbers" data-io>
+    ${[[t.assets, 'references', 'Every one opened, described and colour-measured.'], [t.originals || 0, 'originals', 'Built in code, live, four themes each, MIT.'], [h.patterns().length, 'patterns', 'Structural moves with build rules and receipts.'], [TOOLS.length, 'agent tools', 'One MCP server, one skill, zero dependencies.']].map(([n, l, d], i) => `<div class="lp-num" style="--d:${i}"><b class="num" data-count="${n}">0</b><span>${l}</span><p>${d}</p></div>`).join('')}
   </section>
+  <div class="marquee lp-marquee" aria-hidden="true"><div class="marquee__track">${(() => { const x = h.patterns().map((pt) => `<span class="lp-tag">${esc(pt.name)}</span>`).join(''); return x + x; })()}</div></div>
 
-  <section class="container lp-moves" id="lpMoves">
-    <div class="lp-moves__copy">
-      <span class="eyebrow">How it works</span>
-      <h2 class="display h-lg">Three moves, <em>every screen.</em></h2>
-      <ol class="lp-steps">
-        <li data-step="0" class="on"><b>Brief</b><p>Your agent asks UI Hall for the screen it’s about to build and gets the closest real references, the patterns that apply and three measured palettes — in one call.</p></li>
-        <li data-step="1"><b>Look</b><p>It actually opens the images. Proportion, rhythm and density live in pixels, not in descriptions — so it looks before it codes, and takes structure, not skin.</p></li>
-        <li data-step="2"><b>Build</b><p>Measured colour becomes tokens, contrast gets checked, and a whole design system lands in your codebase — CSS, Tailwind, SwiftUI or Compose.</p></li>
-      </ol>
-    </div>
-    <div class="lp-moves__stage" id="lpMovesStage">
-      <div class="lp-panel" data-panel="0"></div>
-      <div class="lp-panel" data-panel="1"></div>
-      <div class="lp-panel" data-panel="2"></div>
-    </div>
-  </section>
-
-  <section class="lp-originals" id="lpOriginals">
-    <div class="container section__head">
-      <div><span class="eyebrow">Originals · MIT</span><h2 class="display h-lg mt-s">Built in code. <em>Yours to use.</em></h2></div>
-      <div class="lp-originals__side"><p class="lede">Every original renders in four themes from one kit — switch them and the whole shelf re-skins. Written up, measured and searchable like everything else.</p>
-        <div class="seg lp-themes" id="lpThemes" role="group" aria-label="Theme">${themes.map((x, i) => `<button type="button" data-v="${x}" aria-pressed="${i === 0}"><i class="lp-sw lp-sw--${x}"></i>${x[0].toUpperCase() + x.slice(1)}</button>`).join('')}</div></div>
-    </div>
-    <div class="lp-shelf" id="lpShelf">${carouselSlugs.map((k, i) => { const x = origBySlug.get(k).ember; return `<a class="lp-shelf__item" href="#/a/${x.id}" data-slug="${k}" style="--i:${i}"><img src="${x.src}" alt="${esc(x.title)}" loading="lazy" draggable="false"><span>${esc(x.title.split(' · ')[0])}</span></a>`; }).join('')}</div>
-    <div class="container row mt-m">${arrowBtn('#/originals', `All ${t.originals || 0} originals`)}<span class="faint" style="font-size:13px">Drag the shelf · or use ← →</span></div>
-  </section>
-
-  <section class="container lp-live" id="lpLive">
-    <div class="lp-live__frame"><iframe title="Live original — controls" src="originals/screens/components-controls.html?theme=ember&embed=1" loading="lazy"></iframe></div>
-    <div class="lp-live__copy">
-      <span class="eyebrow">Live, not a screenshot</span>
-      <h2 class="display h-md">Go on — <em>touch it.</em></h2>
-      <p class="lede">Every original is a real screen built from one kit. Flip a toggle, pick a chip, then swap the palette — the whole system re-skins in place, exactly as it would in your product.</p>
-      <div class="lp-live__themes" id="lpLiveThemes">${themes.map((x, i) => `<button type="button" data-v="${x}" aria-pressed="${i === 0}"><i class="lp-sw lp-sw--${x}"></i><b>${x[0].toUpperCase() + x.slice(1)}</b><span>${{ ember: 'warm dark · orange', mint: 'soft light · green', ink: 'editorial · cobalt', grape: 'violet dark · lime' }[x]}</span></button>`).join('')}</div>
-      <div class="row">${arrowBtn('#/originals', 'Explore the originals')}</div>
+  <section class="lp-pin" id="lpPin">
+    <div class="lp-pin__sticky">
+      <div class="container lp-pin__grid">
+        <div class="lp-pin__copy">
+          <span class="eyebrow">How it works</span>
+          <h2 class="display h-lg">Three moves, <em>every screen.</em></h2>
+          <ol class="lp-pin__steps">
+            <li data-step="0"><i><b></b></i><div><strong>Brief</strong><p>The agent asks UI Hall for the screen it’s about to build — and gets the closest real references, the patterns that apply and three measured palettes in one call.</p></div></li>
+            <li data-step="1"><i><b></b></i><div><strong>Look</strong><p>It opens the images. Proportion, rhythm and density live in pixels, so it looks before it codes — and takes structure, never skin.</p></div></li>
+            <li data-step="2"><i><b></b></i><div><strong>Build</strong><p>Measured colour becomes tokens, contrast gets checked, and a design system lands in your codebase — CSS, Tailwind, SwiftUI or Compose.</p></div></li>
+          </ol>
+        </div>
+        <div class="lp-pin__stage"><div class="lp-panel" data-panel="0"></div><div class="lp-panel" data-panel="1"></div><div class="lp-panel" data-panel="2"></div></div>
+      </div>
     </div>
   </section>
 
-  <section class="container section" id="agent" data-io>
-    <div class="section__head">
-      <h2 class="display h-lg" data-reveal>Your agent, <em>with taste.</em></h2>
-      <p class="lede" data-reveal style="--d:1">A real session against the real engine. Ask for a screen; UI Hall answers with references, patterns, a measured palette — and the agent builds from them.</p>
+  <section class="container lp-orig" id="lpOriginals">
+    <div class="lp-head">
+      <span class="eyebrow">Originals · MIT licensed</span>
+      <h2 class="display h-lg">Built in code. <em>Touch it.</em></h2>
+      <p class="lede">Every original is a real, live screen from one kit. Flip a toggle, pick a chip, then switch the palette — the whole system re-skins in place.</p>
     </div>
-    <div class="agent-demo" data-reveal style="--d:2">
-      <div class="term" aria-label="Agent session demo">
-        <div class="term__bar"><i></i><i></i><i></i><span>claude — ~/sleep-app</span></div>
+    <div class="lp-orig__frame" data-reveal>
+      <iframe title="Live original — controls" src="originals/screens/components-controls.html?theme=ember&embed=1" loading="lazy"></iframe>
+      <div class="lp-orig__themes" id="lpLiveThemes" role="group" aria-label="Theme">${themes.map((x, i) => `<button type="button" data-v="${x}" aria-pressed="${i === 0}"><i class="lp-sw lp-sw--${x}"></i>${x[0].toUpperCase() + x.slice(1)}</button>`).join('')}</div>
+    </div>
+  </section>
+  <div class="lp-drift" aria-label="More originals">
+    ${[0, 1].map((row) => { const items = [...origBySlug.entries()].filter((_, i) => i % 2 === row).map(([k, v]) => { const th = themes[(k.length + row) % 4]; const x = v[th] || v.ember; return `<a class="lp-drift__item" href="#/a/${x.id}"><img src="${x.src}" alt="${esc(x.title)}" loading="lazy"><span>${esc(x.title)}</span></a>`; }).join(''); return `<div class="lp-drift__row ${row ? 'rev' : ''}"><div class="lp-drift__track">${items}${items}</div></div>`; }).join('')}
+  </div>
+  <div class="container row lp-orig__more">${arrowBtn('#/originals', `All ${t.originals || 0} originals`)}</div>
+
+  <section class="container lp-sec" id="agent" data-io>
+    <div class="lp-head">
+      <span class="eyebrow">A real session</span>
+      <h2 class="display h-lg">Your agent, <em>with taste.</em></h2>
+      <p class="lede">Ask for a screen. UI Hall answers with references, patterns and a measured palette — and the agent builds from them. Live output from the real engine.</p>
+    </div>
+    <div class="lp-window" data-reveal>
+      <div class="lp-window__bar"><i></i><i></i><i></i><span>claude — ~/sleep-app</span><em>uihall · connected</em></div>
+      <div class="lp-window__split">
         <div class="term__body" id="termBody"></div>
-      </div>
-      <div class="stage" id="stage">
-        <div class="stage__label"><span class="eyebrow" id="stageLabel">Waiting for a tool call</span><span class="tag" id="stageTool">—</span></div>
-        <div class="stage__grid" id="stageGrid"></div>
-        <div class="stage__palette" id="stagePal"></div>
+        <div class="stage" id="stage">
+          <div class="stage__label"><span class="eyebrow" id="stageLabel">Waiting for a tool call</span><span class="tag" id="stageTool">—</span></div>
+          <div class="stage__grid" id="stageGrid"></div>
+          <div class="stage__palette" id="stagePal"></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="container section" id="anatomy">
-    <div class="section__head">
-      <h2 class="display h-lg" data-reveal>Every pixel, <em>measured.</em></h2>
-      <p class="lede" data-reveal style="--d:1">Pick a reference. Its palette is what the image is actually made of — ranked by area, assigned to UI roles and contrast-checked, by the same engine the MCP server runs.</p>
+  <section class="container lp-sec" id="anatomy">
+    <div class="lp-head">
+      <span class="eyebrow">Measured, not guessed</span>
+      <h2 class="display h-lg">Every pixel, <em>measured.</em></h2>
+      <p class="lede">Pick a reference. Its palette is what the image is actually made of — ranked by area, split into UI roles and contrast-checked by the same engine the MCP runs.</p>
     </div>
-    <div class="anatomy" data-reveal style="--d:2">
+    <div class="anatomy" data-reveal>
       <div class="anatomy__media"><img alt=""><div class="scan"></div></div>
       <div class="anatomy__panel card"></div>
     </div>
   </section>
 
-  <section class="container section">
-    <div class="section__head">
-      <h2 class="display h-lg" data-reveal>Evidence in, <em>product out.</em></h2>
-      <p class="lede" data-reveal style="--d:1">Complete, working apps built by following the skill end to end — each one cites the references and measured palette it borrowed.</p>
+  <section class="container lp-sec">
+    <div class="lp-head">
+      <span class="eyebrow">Built with the skill</span>
+      <h2 class="display h-lg">Evidence in, <em>product out.</em></h2>
+      <p class="lede">Four complete, working apps made by following the skill end to end. Each cites the references and measured palette it borrowed.</p>
     </div>
-    <div class="showcase">
-      ${[['wallet', 'Halo', 'Wallet app · iOS', 'IMG-0365 · IMG-0433 · VID-0382'], ['pricing', 'Relay', 'Product site · web', 'IMG-0587 · IMG-0592 · IMG-0610'], ['dashboard', 'Kiln', 'Analytics · web', 'VID-0314 · IMG-0518 · IMG-0455'], ['sleep', 'Hush', 'Wellness app · iOS', 'VID-0236 · IMG-0618 · VID-0173']].map(([d, n, k, refs], i) => `
-      <a class="show" href="demo/${d}/" data-reveal style="--d:${i}"><div class="show__img"><img src="demo/${d}/cover.jpg" alt="${n} prototype" loading="lazy"></div>
-        <div class="show__meta"><b>${n}</b><span>${k}</span><small>${refs}</small></div></a>`).join('')}
+    <div class="lp-demos">
+      ${[['wallet', 'Halo', 'Wallet app · iOS', 'Tabs, coin pages, swap, send, receive, receipts'], ['pricing', 'Relay', 'Product site · web', 'Product, pricing, docs, changelog, sign-up'], ['dashboard', 'Kiln', 'Analytics · web', 'Reports, transactions, accounts, ⌘K'], ['sleep', 'Hush', 'Sleep app · iOS', 'Onboarding, routine, insights, sounds, journal']].map(([d, n, k, f], i) => `
+      <a class="lp-demo" href="demo/${d}/" data-reveal style="--d:${i}"><div class="lp-demo__img"><img src="demo/${d}/cover.jpg" alt="${n}" loading="lazy"></div><div class="lp-demo__meta"><span>${k}</span><b>${n}</b><p>${f}</p></div><i class="lp-demo__go">${icon.arrow}</i></a>`).join('')}
     </div>
   </section>
 
-  <section class="container section" id="install">
-    <div class="section__head">
-      <h2 class="display h-lg" data-reveal>Thirty seconds <em>to install.</em></h2>
-      <p class="lede" data-reveal style="--d:1">One file, zero dependencies, no API key. Claude Code, Cursor, VS Code, Codex, Claude Desktop — anything that speaks MCP.</p>
+  <section class="container lp-sec" id="install">
+    <div class="lp-head">
+      <span class="eyebrow">Get started</span>
+      <h2 class="display h-lg">Thirty seconds <em>to install.</em></h2>
+      <p class="lede">One file, no dependencies, no API key. Pick your path — <a href="#/agents" class="lp-link">every client is covered here</a>.</p>
     </div>
-    <div data-reveal style="--d:2">${installBlock()}</div>
+    <div class="lp-get">
+      ${[['Claude Code plugin', 'Skill + MCP in one install.', 'claude plugin marketplace add https://nikithamal.github.io/UiHall/.claude-plugin/marketplace.json\nclaude plugin install uihall@uihall', 'Recommended'],
+        ['Any MCP client', 'Cursor, VS Code, Codex, Desktop…', 'curl -fsSL https://nikithamal.github.io/UiHall/mcp/dist/uihall-mcp.mjs -o ~/.uihall-mcp.mjs\nnode ~/.uihall-mcp.mjs', ''],
+        ['Just the skill', 'For agents that read SKILL.md.', 'mkdir -p ~/.claude/skills\ncurl -fsSL https://nikithamal.github.io/UiHall/skills/uihall.tar.gz | tar -xz -C ~/.claude/skills', '']].map(([t1, d, c, b], i) => `
+      <div class="lp-get__card" data-reveal style="--d:${i}">${b ? `<span class="lp-get__badge">${b}</span>` : ''}<b>${t1}</b><p>${d}</p><div class="lp-get__code"><pre id="get${i}">${tint(c)}</pre><button class="code__copy" type="button" data-copy="#code:#get${i}" aria-label="Copy">${icon.copy}</button></div></div>`).join('')}
+    </div>
   </section>
 
-  <section class="container lp-final">
-    <div class="lp-final__card" data-reveal>
-      <h2 class="display">Stop designing from <em>the&nbsp;average.</em></h2>
-      <div class="row" style="justify-content:center"><a class="btn btn--primary lp-btn" href="#/library">Open the hall ${icon.arrow}</a><a class="btn lp-btn" href="#/agents">Connect your agent</a></div>
+  <section class="lp-final2">
+    <div class="lp-final2__beam" aria-hidden="true"></div>
+    <div class="container lp-final2__in">
+      <h2 class="display" data-reveal>Stop designing from <em>the&nbsp;average.</em></h2>
+      <p class="lede" data-reveal style="--d:1">Give your agent an eye — and yourself a hall of evidence.</p>
+      <div class="row" data-reveal style="--d:2;justify-content:center"><a class="btn btn--primary lp-btn" href="#/library">Open the hall ${icon.arrow}</a><a class="btn lp-btn" href="#/agents">Connect your agent</a></div>
     </div>
   </section>
 
@@ -165,8 +168,7 @@ export default function home(root, app) {
   const title = $('#heroTitle', root);
   split(title);
   requestAnimationFrame(() => requestAnimationFrame(() => { title.classList.add('in'); root.querySelector('.lp-hero2').classList.add('in'); }));
-  $('.lp-stats', root).addEventListener('reveal', () => $$('[data-count]', root).forEach((el, i) => setTimeout(() => countUp(el, +el.dataset.count), i * 90)), { once: true });
-  $('.lp-stats', root).setAttribute('data-io', '');
+  $('#lpNumbers', root).addEventListener('reveal', () => $$('#lpNumbers [data-count]', root).forEach((el, i) => setTimeout(() => countUp(el, +el.dataset.count, 1600), i * 120)), { once: true });
 
   /* nav: glass once you leave the hero */
   const nav = $('#lpNav', root);
@@ -237,38 +239,38 @@ export default function home(root, app) {
   panels[2].innerHTML = `<div class="lp-build"><div class="lp-build__ui" style="--b:${sys.tokens.color.background};--s:${sys.tokens.color.surface};--t:${sys.tokens.color.text};--a:${sys.tokens.color.accent};--o:${sys.tokens.color['on-accent']};--m:${sys.tokens.color['text-muted']}">
       <span class="lp-build__eyebrow">Step 1 of 3</span><b>Sleep is a skill.</b><p>Two questions and Hush builds tonight’s wind-down around you.</p><i class="lp-build__btn">Get started</i></div>
     <pre class="code">${tint(sys.css.split('\n').slice(0, 16).join('\n'))}</pre></div>`;
-  const steps = $$('.lp-steps li', root);
-  const setStep = (n) => { steps.forEach((x) => x.classList.toggle('on', +x.dataset.step === n)); panels.forEach((x) => x.classList.toggle('on', +x.dataset.panel === n)); };
-  setStep(0);
-  steps.forEach((x) => x.addEventListener('click', () => setStep(+x.dataset.step)));
-  const stepIO = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) setStep(+e.target.dataset.step); }), { rootMargin: '-45% 0px -45% 0px' });
-  steps.forEach((x) => stepIO.observe(x));
-  let autoStep = setInterval(() => { const r = $('#lpMoves', root)?.getBoundingClientRect(); if (r && r.top < innerHeight && r.bottom > 0 && innerWidth < 980) setStep((+(steps.find((x) => x.classList.contains('on'))?.dataset.step || 0) + 1) % 3); }, 3200);
+  /* pinned story: scroll progress drives the active step, its bar and the panel */
+  const pinEl = $('#lpPin', root), steps = $$('.lp-pin__steps li', root);
+  let pinP = 0, pinT = 0, pinRaf = 0;
+  const pinFrame = () => {
+    pinP += (pinT - pinP) * 0.14;
+    const n = Math.min(2, Math.floor(pinP * 3));
+    steps.forEach((li, i) => { li.classList.toggle('on', i === n); li.querySelector('b').style.transform = `scaleY(${Math.max(0, Math.min(1, pinP * 3 - i))})`; });
+    panels.forEach((x, i) => x.classList.toggle('on', i === n));
+    pinRaf = Math.abs(pinT - pinP) > 0.0005 ? requestAnimationFrame(pinFrame) : 0;
+  };
+  const onPin = () => {
+    const r = pinEl.getBoundingClientRect(); const span = r.height - innerHeight;
+    pinT = span > 0 ? Math.min(0.999, Math.max(0, -r.top / span)) : 0;
+    if (!pinRaf) pinRaf = requestAnimationFrame(pinFrame);
+  };
+  addEventListener('scroll', onPin, { passive: true }); onPin();
+  steps.forEach((li) => li.addEventListener('click', () => { const r = pinEl.getBoundingClientRect(); scrollTo({ top: scrollY + r.top + (+li.dataset.step + 0.5) / 3 * (r.height - innerHeight), behavior: 'smooth' }); }));
+  const autoStep = 0, stepIO = { disconnect() {} };
 
   /* live frame: palette cards post the theme into the iframe */
-  const liveFrame = $('#lpLive iframe', root);
+  const liveFrame = $('#lpOriginals iframe', root);
   $('#lpLiveThemes', root).addEventListener('click', (e) => {
     const b = e.target.closest('[data-v]'); if (!b) return;
     $$('#lpLiveThemes button', root).forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
     liveFrame.contentWindow?.postMessage({ uihallTheme: b.dataset.v }, '*');
   });
 
-  /* originals shelf: drag to scroll, theme switch re-skins in place */
-  const shelf = $('#lpShelf', root);
-  segmented($('#lpThemes', root), (th) => {
-    $$('.lp-shelf__item', shelf).forEach((it, i) => {
-      const x = origBySlug.get(it.dataset.slug)[th]; if (!x) return;
-      const img = it.querySelector('img');
-      setTimeout(() => { img.style.opacity = '0'; img.style.transform = 'scale(.97)'; setTimeout(() => { img.src = x.src; it.href = `#/a/${x.id}`; img.onload = () => { img.style.opacity = ''; img.style.transform = ''; }; }, 180); }, i * 45);
-    });
-  });
-  let down = null, moved = false;
-  shelf.addEventListener('pointerdown', (e) => { down = { x: e.clientX, s: shelf.scrollLeft }; moved = false; shelf.classList.add('drag'); });
-  addEventListener('pointermove', (e) => { if (!down) return; const dx = e.clientX - down.x; if (Math.abs(dx) > 4) moved = true; shelf.scrollLeft = down.s - dx; });
-  addEventListener('pointerup', () => { down = null; shelf.classList.remove('drag'); });
-  shelf.addEventListener('click', (e) => { if (moved) { e.preventDefault(); e.stopPropagation(); } }, true);
-  const onKeyShelf = (e) => { const r = shelf.getBoundingClientRect(); if (r.top > innerHeight || r.bottom < 0 || /input|textarea/i.test(document.activeElement?.tagName)) return; if (e.key === 'ArrowRight') shelf.scrollBy({ left: 360, behavior: 'smooth' }); if (e.key === 'ArrowLeft') shelf.scrollBy({ left: -360, behavior: 'smooth' }); };
-  addEventListener('keydown', onKeyShelf);
+  /* demo cards: gentle 3D tilt toward the pointer */
+  const onTilt = (e) => { const c = e.target.closest?.('.lp-demo'); if (!c) return; const r = c.getBoundingClientRect(); c.style.setProperty('--rx', `${((e.clientY - r.top) / r.height - 0.5) * -6}deg`); c.style.setProperty('--ry', `${((e.clientX - r.left) / r.width - 0.5) * 8}deg`); };
+  const offTilt = (e) => { const c = e.target.closest?.('.lp-demo'); if (c && !c.contains(e.relatedTarget)) { c.style.setProperty('--rx', '0deg'); c.style.setProperty('--ry', '0deg'); } };
+  if (!isTouch() && !reduced()) { root.addEventListener('pointermove', onTilt); root.addEventListener('pointerout', offTilt); }
+  const onKeyShelf = () => {};
 
   /* ------------------------------------------------------- anatomy demo -- */
   const anat = $('.anatomy', root);
@@ -372,6 +374,6 @@ export default function home(root, app) {
   reveal(root);
 
   return {
-    cleanup() { alive = false; alive2 = false; removeEventListener('resize', size); timers.forEach(clearTimeout); clearInterval(autoStep); stepIO.disconnect(); removeEventListener('pointermove', onMove); removeEventListener('scroll', onScroll); removeEventListener('scroll', onHeroScroll); removeEventListener('keydown', onKeyShelf); },
+    cleanup() { alive = false; alive2 = false; removeEventListener('resize', size); timers.forEach(clearTimeout); clearInterval(autoStep); stepIO.disconnect(); removeEventListener('pointermove', onMove); removeEventListener('scroll', onScroll); removeEventListener('scroll', onHeroScroll); removeEventListener('scroll', onPin); removeEventListener('keydown', onKeyShelf); },
   };
 }
