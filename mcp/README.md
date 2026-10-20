@@ -18,7 +18,7 @@ Once published to npm: `claude mcp add uihall -- npx -y uihall-mcp`.
   `~/.cache/uihall` → the public site.
 
 Tools: `design_brief`, `search_designs`, `view_design`, `get_design`, `find_similar`, `find_patterns`, `palette_for`,
-`search_by_color`, `export_tokens`, `check_contrast`, `before_after`, `corpus_overview`. Full reference and an in-browser
+`search_by_color`, `export_tokens`, `compare_designs`, `generate_design_system`, `check_contrast`, `before_after`, `corpus_overview`. Full reference and an in-browser
 playground: https://nikithamal.github.io/UiHall/ui-hall/#/agents
 
 ```bash

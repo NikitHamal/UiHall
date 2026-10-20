@@ -26,7 +26,7 @@ ok(/design_brief/.test(init.result.instructions), 'server instructions mention d
 p.stdin.write('{"jsonrpc":"2.0","method":"notifications/initialized"}\n');
 
 const tools = (await rpc('tools/list')).result.tools;
-ok(tools.length === 12, `12 tools listed (${tools.length})`);
+ok(tools.length === 14, `14 tools listed (${tools.length})`);
 ok(tools.every((t) => t.annotations?.readOnlyHint && t.inputSchema?.type === 'object' && t.description.length > 60), 'every tool is read-only, typed and described');
 
 let r = await call('search_designs', { query: 'crypto wallet', limit: 5 });
@@ -66,6 +66,10 @@ for (const f of ['css', 'tailwind', 'dtcg', 'swiftui', 'compose']) {
   r = await call('export_tokens', { id: 'IMG-0055', format: f });
   ok(!r.isError && r.structuredContent.code.length > 200, `export_tokens ${f}`);
 }
+r = await call('compare_designs', { ids: ['IMG-0432', 'IMG-0433'], include_images: true });
+ok(r.structuredContent.assets.length === 2 && r.content.filter((c) => c.type === 'image').length === 2, 'compare_designs with images');
+r = await call('generate_design_system', { id: 'IMG-0473', mood: 'editorial' });
+ok(/--uh-text-4xl/.test(r.structuredContent.css) && /\.btn-primary/.test(r.structuredContent.css), 'generate_design_system emits tokens + components');
 r = await call('check_contrast', { foreground: '#888', background: '#fff' });
 ok(r.structuredContent.ratio === 3.54 && r.structuredContent.suggestion, 'check_contrast + fix');
 r = await call('before_after', {});

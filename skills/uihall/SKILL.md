@@ -47,6 +47,8 @@ node scripts/uihall.mjs <command> [args]      # path relative to this skill fold
 | Palette for a mood | `palette_for(mood, query?, surface?)` | `palette --mood calm --query wellness` |
 | Who uses this colour | `search_by_color(hex)` | `color "#C6F432"` |
 | Tokens for code | `export_tokens(id \| colors, format)` | `tokens IMG-0473 --format tailwind` |
+| Choose between directions | `compare_designs(ids, include_images?)` | `compare IMG-0432 IMG-0433` |
+| Whole starter system | `generate_design_system(id \| colors, mood?)` | `system IMG-0473 --mood editorial` |
 | Accessibility | `check_contrast(fg, bg)` | `contrast "#888" "#fff"` |
 | Redesign evidence | `before_after(topic?)` | `before-after wallet` |
 | Vocabulary | `corpus_overview()` | `overview --tags` |
@@ -89,7 +91,8 @@ Cite the reference ids in a comment at the top of the component.
 
 Pick one palette from the brief (or `palette_for`). Use the **literal hex values** — they are
 measured, not guessed. Run `export_tokens(id, format)` in the format the codebase uses
-(`css`, `tailwind`, `dtcg`, `swiftui`, `compose`). Run `check_contrast` on every text/background
+(`css`, `tailwind`, `dtcg`, `swiftui`, `compose`) — or, for a new project with no system yet,
+`generate_design_system(id)` for colour, type, radius, motion and base components in one CSS file. Run `check_contrast` on every text/background
 pair; if a measured accent fails as text, use the nudged value the tool suggests.
 
 ### 6. Build, then finish

@@ -11,6 +11,8 @@
  *   node uihall.mjs palette --mood calm --query wellness
  *   node uihall.mjs color "#C6F432"
  *   node uihall.mjs tokens IMG-0473 --format tailwind
+ *   node uihall.mjs compare IMG-0432 IMG-0433
+ *   node uihall.mjs system IMG-0473 --mood editorial   → full starter design system CSS
  *   node uihall.mjs contrast "#888" "#fff"
  *   node uihall.mjs patterns "dashboard"
  *   node uihall.mjs before-after wallet
@@ -48,6 +50,8 @@ const MAP = {
   palette: () => ['palette_for', { mood: flags.mood || text, query: flags.query, surface: flags.surface, count: num(flags.count) }],
   color: () => ['search_by_color', { hex: rest[0], tolerance: num(flags.tolerance), limit: num(flags.limit) }],
   tokens: () => ['export_tokens', rest[0]?.startsWith('#') ? { colors: rest, format: flags.format } : { id: rest[0], format: flags.format, prefix: flags.prefix }],
+  compare: () => ['compare_designs', { ids: rest }],
+  system: () => ['generate_design_system', rest[0]?.startsWith('#') ? { colors: rest, mood: flags.mood } : { id: rest[0], mood: flags.mood, prefix: flags.prefix }],
   contrast: () => ['check_contrast', { foreground: rest[0], background: rest[1], target: num(flags.target) }],
   'before-after': () => ['before_after', { topic: text, limit: num(flags.limit) }],
   overview: () => ['corpus_overview', { tags: !!flags.tags }],

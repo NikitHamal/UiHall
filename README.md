@@ -22,7 +22,7 @@ agent actually look at them before it writes code.
 | | What it is |
 |---|---|
 | **The hall** (`ui-hall/`) | A browsable library: ranked search, facets by role/style/surface/colour, a colour search in OKLab, a pattern library, a motion reel and a detail view that turns any palette into code tokens. |
-| **The MCP server** (`mcp/`) | `uihall-mcp` — 12 design tools for Claude Code, Cursor, VS Code, Codex, Claude Desktop or anything that speaks MCP. One file, zero dependencies, no API key. |
+| **The MCP server** (`mcp/`) | `uihall-mcp` — 14 design tools for Claude Code, Cursor, VS Code, Codex, Claude Desktop or anything that speaks MCP. One file, zero dependencies, no API key. |
 | **The skill** (`skills/uihall/`) | Tells the agent *when* and *how* to use the corpus: brief → look → steal structure → measured colour → checklist. Works with or without MCP (bundled CLI). |
 | **The plugin** (`plugin/`) | Skill + MCP in one Claude Code install. |
 | **The showcase** (`demo/sleep/`) | [Hush](https://nikithamal.github.io/UiHall/demo/sleep/) — an onboarding prototype built by following the skill end to end, citing its references and measured palette. |
@@ -78,6 +78,8 @@ to run fully offline from a checkout.
 | `palette_for` | Real palettes for a mood or product, never invented |
 | `search_by_color` | Who actually uses this colour (OKLab ΔE over measured swatches) |
 | `export_tokens` | Palette → CSS variables, Tailwind, W3C design tokens, SwiftUI or Jetpack Compose (11-step accent + neutral ramps) |
+| `compare_designs` | 2–4 references side by side: shared vs distinct traits, colour roles, palette distance |
+| `generate_design_system` | A paste-ready starter system — colour + ramps, type pairing and scale, radius, motion, base components |
 | `check_contrast` | WCAG ratio + verdict + the nearest passing colour |
 | `before_after` | Redesign evidence: the same screen done weakly and done well |
 | `corpus_overview` | The exact vocabulary for filters, counts, patterns and provenance |

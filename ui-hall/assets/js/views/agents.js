@@ -16,6 +16,8 @@ const EXAMPLES = {
   palette_for: { mood: 'calm and trustworthy', query: 'health app', count: 3 },
   search_by_color: { hex: '#3E63DD', limit: 8 },
   export_tokens: { id: 'IMG-0473', format: 'tailwind' },
+  compare_designs: { ids: ['IMG-0432', 'IMG-0433', 'IMG-0365'], include_images: true },
+  generate_design_system: { id: 'IMG-0618', mood: 'calm' },
   check_contrast: { foreground: '#8A8A8A', background: '#FFFFFF' },
   before_after: { topic: 'wallet' },
   corpus_overview: {},

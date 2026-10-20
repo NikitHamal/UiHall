@@ -270,6 +270,60 @@ export const TOOLS = [
     },
   },
   {
+    name: 'compare_designs',
+    title: 'Compare designs',
+    description: 'Put 2–4 references side by side: shared and distinct roles, styles and tags, each one\'s colour roles with WCAG contrast, '
+      + 'and how far apart their palettes are. Use it to choose between directions or to explain why one works better. Set include_images to see them together.',
+    inputSchema: {
+      type: 'object', required: ['ids'],
+      properties: {
+        ids: { type: 'array', items: { type: 'string' }, minItems: 2, maxItems: 4, description: 'Asset ids to compare.' },
+        include_images: { type: 'boolean', default: false, description: 'Attach the thumbnails.' },
+      },
+    },
+    annotations: { title: 'Compare designs', ...RO },
+    run(h, { ids, include_images = false }) {
+      const c = h.compare(Array.isArray(ids) ? ids : [ids]);
+      const md = [
+        `# Comparing ${c.assets.map((a) => a.id).join(' · ')}`, '',
+        ...c.assets.map((a) => line(h, a)), '',
+        `**Shared** — roles: ${c.shared.roles.join(', ') || '—'} · style: ${c.shared.style.join(', ') || '—'} · tags: ${c.shared.tags.join(', ') || '—'}`,
+        '**Distinct**', ...c.distinct.tags.map((d, i) => `- ${d.id}: ${[...c.distinct.style[i].values, ...d.values].slice(0, 10).join(', ') || '—'}`),
+        '**Colour**', ...c.colour.map((x) => `- ${x.id} (${x.surface}): ${x.roles ? rolesMd(x.roles, x.contrast) : 'n/a'}`),
+        `**Palette distance** (OKLab, 0 = identical): ${c.palette_distance.map((p) => `${p.a}↔${p.b} ${p.palette_distance}`).join(' · ')}`,
+      ].join('\n');
+      return {
+        text: md,
+        data: { ...c, assets: c.assets.map((a) => h.card(a)) },
+        images: include_images ? c.assets.map((a) => ({ id: a.id, which: 'thumb' })) : [],
+      };
+    },
+  },
+  {
+    name: 'generate_design_system',
+    title: 'Generate design system',
+    description: 'A complete, paste-ready starter design system from a reference (or your own colours): semantic colour + 11-step ramps, '
+      + 'a type pairing and modular scale chosen from the reference\'s style, spacing, radius, elevation and motion tokens, '
+      + 'plus base CSS for buttons, cards, inputs and chips. Contrast-checked. The fastest way from "I like this one" to code.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        id: str('Asset id to build from.'),
+        colors: arr('Or explicit hex colours, most-used first.'),
+        mood: str('Optional tone that nudges type and radius: "editorial", "playful", "dense".'),
+        prefix: str('CSS variable prefix.', { default: 'uh' }),
+      },
+    },
+    annotations: { title: 'Generate design system', ...RO },
+    run(h, { id, colors, mood = '', prefix = 'uh' }) {
+      const d = h.designSystem({ id, colors, mood, name: prefix });
+      return {
+        text: `Design system (${d.scheme}${d.source ? `, from ${d.source}` : ''}) — ${d.type.rationale} Base ${d.type.base}px × ${d.type.ratio}.\n\n\`\`\`css\n${d.css}\`\`\``,
+        data: d,
+      };
+    },
+  },
+  {
     name: 'check_contrast',
     title: 'Check contrast',
     description: 'WCAG 2.x contrast for a text/background pair, the AA/AAA verdict, and the nearest passing text colour if it fails.',

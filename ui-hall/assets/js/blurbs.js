@@ -9,6 +9,8 @@ export const BLURB = {
   palette_for: 'Real palettes for a mood, split into UI roles and contrast-checked.',
   search_by_color: 'Interfaces that actually use a colour, matched perceptually in OKLab.',
   export_tokens: 'Palette → CSS variables, Tailwind, W3C tokens, SwiftUI or Compose.',
+  compare_designs: 'Two to four references side by side: shared and distinct traits, colour roles, palette distance.',
+  generate_design_system: 'A paste-ready starter system: colour, type pairing + scale, radius, motion, base components.',
   check_contrast: 'WCAG ratio and verdict, plus the nearest passing colour if it fails.',
   before_after: 'Redesign evidence: the same screen done weakly and done well.',
   corpus_overview: 'Counts, the exact filter vocabulary, patterns and provenance.',
