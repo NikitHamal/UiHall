@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Relay pricing · built with the UI Hall skill</title>
+<title>Relay — a complete product site · built with the UI Hall skill</title>
 <!--
   Built with the uihall skill:
     brief:      design_brief("pricing page for a developer tool", platform=web)
@@ -117,15 +117,114 @@ details p{margin:0 0 20px;color:var(--t2);max-width:60ch}
 .credit .refs img{width:44px;height:44px;border-radius:10px;object-fit:cover;box-shadow:0 0 0 1px var(--line)}
 [data-in]{opacity:0;transform:translateY(18px);transition:opacity .8s var(--ease),transform 1s var(--ease)}[data-in].in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*{transition-duration:1ms!important}}
+/* --- site additions --- */
+nav .links a{cursor:pointer}
+#view{min-height:70vh}
+.view-in{animation:vin .5s var(--ease) both}@keyframes vin{from{opacity:0;transform:translateY(10px)}}
+.h-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:56px;align-items:center;padding:64px 0 40px}
+@media(max-width:960px){.h-hero{grid-template-columns:1fr}}
+.h-hero h1{font-size:clamp(52px,6.6vw,92px)}
+.pillnew{display:inline-flex;align-items:center;gap:8px;height:30px;padding:0 12px 0 4px;border-radius:999px;background:var(--white);box-shadow:inset 0 0 0 1px var(--line);font-size:13px;color:var(--t2);text-decoration:none}
+.pillnew b{background:var(--ink);color:#fff;border-radius:999px;padding:3px 9px;font-size:11.5px}
+.run{border-radius:22px;background:var(--ink);color:#e9e9e9;box-shadow:0 40px 80px -40px rgba(0,0,0,.5);overflow:hidden;font:13px/1.6 var(--mono)}
+.run header{display:flex;align-items:center;gap:8px;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.08);color:#9a9a9a;font-size:12px}
+.run header i{width:10px;height:10px;border-radius:50%;background:#333}
+.run header .st{margin-left:auto;color:#7ee2a8}
+.run .lines{padding:16px 18px;min-height:290px}
+.run .ln{display:flex;gap:10px;opacity:0;transform:translateY(4px);animation:ln .35s var(--ease) forwards}
+@keyframes ln{to{opacity:1;transform:none}}
+.run .ln time{color:#666;flex:none}.run .ok{color:#7ee2a8}.run .warn{color:#f3c96b}.run .bad{color:#ff8a80}.run .k{color:var(--sky)}
+.run .diff{margin:10px 0;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.05)}
+.run .diff .a{color:#7ee2a8}.run .diff .d{color:#ff8a80}
+.bento{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:minmax(200px,auto);gap:14px;margin-top:28px}
+.bento>div{border-radius:22px;background:var(--white);box-shadow:inset 0 0 0 1px var(--line);padding:22px;display:flex;flex-direction:column;gap:8px}
+.bento b{font-size:18px;letter-spacing:-.01em}.bento p{margin:0;color:var(--t2);font-size:14.5px}
+.bento .big{grid-row:span 2;background:linear-gradient(160deg,#fff,#EAF5FC)}
+.bento .dark{background:var(--ink);color:#eee}.bento .dark p{color:#aaa}
+@media(max-width:900px){.bento{grid-template-columns:1fr}}
+.sec2{margin-top:110px}
+.sec2 h2{font:400 clamp(38px,4.4vw,56px)/1 var(--serif);letter-spacing:-.02em;margin:0}
+.sec2 h2 em{color:var(--sky-t)}
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px;counter-reset:s}
+.steps3>div{counter-increment:s;padding:22px;border-radius:22px;background:var(--white);box-shadow:inset 0 0 0 1px var(--line)}
+.steps3>div::before{content:'0' counter(s);font:500 12px var(--mono);color:var(--sky-t)}
+.steps3 b{display:block;margin:10px 0 6px;font-size:18px}.steps3 p{margin:0;color:var(--t2);font-size:14.5px}
+.steps3 pre{margin:14px 0 0;padding:12px;border-radius:12px;background:var(--ink);color:#e9e9e9;font:12px/1.6 var(--mono);white-space:pre-wrap;word-break:break-all}
+@media(max-width:900px){.steps3{grid-template-columns:1fr}}
+.quote{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.quote>div{padding:24px;border-radius:22px;background:var(--white);box-shadow:inset 0 0 0 1px var(--line);display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.quote p{margin:0;font-size:17px;line-height:1.5}.quote small{color:var(--t2)}
+@media(max-width:900px){.quote{grid-template-columns:1fr}}
+/* docs */
+.docs{display:grid;grid-template-columns:240px minmax(0,1fr) 200px;gap:40px;padding:40px 0 80px}
+@media(max-width:1000px){.docs{grid-template-columns:1fr}.docs .toc{display:none}}
+.dnav{position:sticky;top:20px;align-self:start;display:grid;gap:2px}
+.dnav input{height:38px;border-radius:10px;border:0;box-shadow:inset 0 0 0 1px var(--line);padding:0 12px;margin-bottom:12px;background:var(--white);font:inherit;outline:none}
+#dlinks{display:grid;gap:2px}.dnav b{font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--t3);margin:12px 0 4px}
+.dnav a{padding:7px 10px;border-radius:8px;color:var(--t2);text-decoration:none;font-size:14px;cursor:pointer}
+.dnav a:hover{background:var(--white)}.dnav a[aria-current]{background:var(--white);color:var(--text);box-shadow:inset 0 0 0 1px var(--line)}
+.dmain h1{font-size:52px;margin:0 0 10px}.dmain h3{font-size:20px;margin:30px 0 8px}.dmain p{color:var(--t2);max-width:65ch}
+.codet{border-radius:14px;background:var(--ink);overflow:hidden;margin:14px 0}
+.codet .tabs{display:flex;gap:2px;padding:6px;border-bottom:1px solid rgba(255,255,255,.08)}
+.codet .tabs button{height:30px;padding:0 12px;border-radius:8px;color:#999;font:500 12.5px var(--sans)}
+.codet .tabs button[aria-pressed=true]{background:rgba(255,255,255,.1);color:#fff}
+.codet pre{margin:0;padding:16px;color:#e9e9e9;font:13px/1.65 var(--mono);white-space:pre-wrap;word-break:break-word;position:relative}
+.codet .cp{position:absolute;top:10px;right:10px;height:28px;padding:0 10px;border-radius:8px;background:rgba(255,255,255,.1);color:#ddd;font:500 12px var(--sans)}
+.callout{padding:14px 16px;border-radius:14px;background:#EAF5FC;color:#29475A;font-size:14px;margin:14px 0}
+.toc{position:sticky;top:20px;align-self:start;font-size:13px;display:grid;gap:8px;color:var(--t2)}
+.toc b{color:var(--text);font-size:12px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.06em}
+.feedback{display:flex;gap:8px;align-items:center;margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--t2);font-size:14px}
+.feedback button{height:32px;padding:0 12px;border-radius:9px;box-shadow:inset 0 0 0 1px var(--line);background:var(--white)}
+/* changelog */
+.cl{display:grid;gap:0;margin-top:30px;max-width:820px}
+.cl article{display:grid;grid-template-columns:160px minmax(0,1fr);gap:28px;padding:32px 0;border-top:1px solid var(--line)}
+@media(max-width:700px){.cl article{grid-template-columns:1fr;gap:8px}}
+.cl time{font:500 13px var(--mono);color:var(--t3)}
+.cl h3{margin:0 0 8px;font-size:22px;letter-spacing:-.01em}.cl p{margin:0;color:var(--t2)}
+.cl .vis{margin-top:14px;height:150px;border-radius:16px;background:linear-gradient(135deg,#EAF5FC,#cfe8f7);position:relative;overflow:hidden}
+.cl ul{margin:10px 0 0;padding-left:18px;color:var(--t2)}
+.tagc{display:inline-block;margin-right:6px;padding:2px 8px;border-radius:999px;font:600 11px var(--sans);background:var(--sky);color:#123}
+/* sign-up modal */
+.mscrim{position:fixed;inset:0;background:rgba(20,20,20,.4);backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .35s;z-index:50}
+.mscrim.on{opacity:1;pointer-events:auto}
+.signup{position:fixed;left:50%;top:50%;width:min(460px,92vw);translate:-50% -46%;opacity:0;pointer-events:none;background:var(--white);border-radius:26px;box-shadow:0 50px 100px -30px rgba(0,0,0,.4);padding:26px;z-index:51;transition:opacity .3s,translate .5s var(--spring)}
+.signup.on{opacity:1;pointer-events:auto;translate:-50% -50%}
+.signup .bar{height:4px;border-radius:4px;background:var(--card);overflow:hidden;margin-bottom:22px}.signup .bar i{display:block;height:100%;background:var(--ink);transition:width .5s var(--ease)}
+.signup h3{margin:0 0 6px;font:400 32px/1.05 var(--serif)}.signup p{margin:0 0 18px;color:var(--t2)}
+.signup label{display:grid;gap:6px;font-size:13px;color:var(--t2);margin-bottom:12px}
+.signup input{height:46px;border:0;border-radius:12px;box-shadow:inset 0 0 0 1px var(--line);padding:0 14px;font:inherit;outline:none;color:var(--text)}
+.signup input:focus{box-shadow:inset 0 0 0 1.5px var(--sky-t),0 0 0 4px rgba(85,122,141,.15)}
+.signup input.err{box-shadow:inset 0 0 0 1.5px #d4453b}
+.signup .err-t{color:#d4453b;font-size:12.5px;min-height:16px;margin:-6px 0 8px}
+.choice{display:grid;gap:8px;margin-bottom:16px}
+.choice button{display:flex;justify-content:space-between;align-items:center;padding:14px;border-radius:14px;box-shadow:inset 0 0 0 1px var(--line);text-align:left}
+.choice button[aria-pressed=true]{box-shadow:inset 0 0 0 2px var(--ink)}
+.choice small{color:var(--t2)}
+.close{position:absolute;top:16px;right:16px;width:34px;height:34px;border-radius:50%;background:var(--card)}
+.toast{position:fixed;left:50%;bottom:24px;translate:-50% 20px;opacity:0;padding:10px 16px;border-radius:999px;background:var(--ink);color:#fff;font-weight:600;font-size:13px;z-index:60;transition:opacity .3s,translate .45s var(--spring);pointer-events:none}
+.toast.on{opacity:1;translate:-50% 0}
 </style>
 </head>
 <body>
 <div class="ribbon">Built with the UI Hall skill from three real references. <a href="#credits">See how →</a></div>
 <div class="wrap">
-  <nav><span class="logo"><i></i>Relay</span>
-    <div class="links"><a href="#">Product</a><a href="#">Docs</a><a href="#" aria-current="page">Pricing</a><a href="#">Changelog</a></div>
-    <div class="r"><a class="btn light" href="#">Sign in</a><a class="btn dark" href="#">Start free</a></div></nav>
-
+  <nav><a class="logo" href="#/" style="text-decoration:none;color:inherit"><i></i>Relay</a>
+    <div class="links"><a href="#/" data-r="">Product</a><a href="#/docs" data-r="docs">Docs</a><a href="#/pricing" data-r="pricing">Pricing</a><a href="#/changelog" data-r="changelog">Changelog</a></div>
+    <div class="r"><button class="btn light" data-signin>Sign in</button><button class="btn dark" data-signup>Start free</button></div></nav>
+  <div id="view"></div>
+  <footer class="credit" id="credits">
+    <div class="refs"><span>Structure from</span>
+      <a href="../../#/a/IMG-0587" title="IMG-0587"><img src="../../assets/thumb/IMG-0587.webp" alt="IMG-0587"></a>
+      <a href="../../#/a/IMG-0592" title="IMG-0592"><img src="../../assets/thumb/IMG-0592.webp" alt="IMG-0592"></a>
+      <a href="../../#/a/IMG-0610" title="IMG-0610"><img src="../../assets/thumb/IMG-0610.webp" alt="IMG-0610"></a>
+      <span>· palette measured from IMG-0587, accent IMG-0592 (#AADCF7 → #557A8D for text).</span></div>
+    <span><a href="../">All demos</a> · <a href="../../#/agents">Get the skill + MCP</a></span>
+  </footer>
+</div>
+<div class="mscrim" id="mscrim"></div>
+<div class="signup" id="signup" role="dialog" aria-modal="true"></div>
+<div class="toast" id="toast"></div>
+<template id="tpl-pricing">
   <header class="hero">
     <div><span class="eyebrow">Pricing</span><h1>Simple pricing,<br><em>no surprises.</em></h1><p class="sub">CI for AI agents. Every run sandboxed, replayable and diffed. Start free; pay when your agents ship.</p></div>
     <div class="toggle">
@@ -178,16 +277,71 @@ details p{margin:0 0 20px;color:var(--t2);max-width:60ch}
 
   <section class="cta" data-in><h2>Ship agents you can <em>trust.</em></h2><a class="btn inv" href="#">Start free — no card</a></section>
 
-  <footer class="credit" id="credits">
-    <div class="refs"><span>Structure from</span>
-      <a href="../../#/a/IMG-0587" title="IMG-0587"><img src="../../assets/thumb/IMG-0587.webp" alt="IMG-0587"></a>
-      <a href="../../#/a/IMG-0592" title="IMG-0592"><img src="../../assets/thumb/IMG-0592.webp" alt="IMG-0592"></a>
-      <a href="../../#/a/IMG-0610" title="IMG-0610"><img src="../../assets/thumb/IMG-0610.webp" alt="IMG-0610"></a>
-      <span>· palette measured from IMG-0587, accent IMG-0592 (#AADCF7 → #557A8D for text).</span></div>
-    <span><a href="../">All demos</a> · <a href="../../#/agents">Get the skill + MCP</a></span>
-  </footer>
-</div>
+</template>
 <script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+let tt;function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('on'),1800)}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+const VIEWS={
+'':()=>`<header class="h-hero"><div><a class="pillnew" href="#/changelog"><b>New</b>Semantic diffs for every run →</a><h1>CI for agents. <em>Ship with proof.</em></h1><p class="sub" style="max-width:34em">Every agent run sandboxed, replayable and diffed against the last good one — so you find the regression before your users do.</p>
+  <div style="display:flex;gap:10px;margin-top:28px;flex-wrap:wrap"><button class="btn dark" style="height:50px;padding:0 24px" data-signup>Start free</button><a class="btn light" style="height:50px;padding:0 22px" href="#/docs">Read the quickstart</a></div>
+  <p style="margin-top:22px;color:var(--t3);font-size:13px">Free for 1,000 runs a month · no card</p></div>
+  <div class="run" aria-label="A replayed agent run"><header><i></i><i></i><i></i><span>run #8812 · support-agent · replay</span><span class="st" id="runst">● running</span></header><div class="lines" id="lines"></div></div></header>
+  <div class="logos" data-in><span>Northwind</span><span>ACME LABS</span><span>Parallax</span><span>orbit/ai</span><span>Lumen</span><span>FIELDWORK</span></div>
+  <section class="sec2" data-in><h2>Everything a run needs to be <em>trusted.</em></h2><div class="bento">
+   <div class="big"><b>Replay any run</b><p>Step through every tool call, prompt and response exactly as it happened — then re-run it against a new model in one click.</p><div class="run" style="margin-top:auto;font-size:11.5px"><div class="lines" style="min-height:0;padding:12px 14px"><div class="ln" style="animation-delay:0s"><time>00.12</time><span class="k">tool</span> search_orders(id: 4417)</div><div class="ln" style="animation-delay:.1s"><time>00.48</time><span class="ok">✓</span> 1 order · shipped</div><div class="ln" style="animation-delay:.2s"><time>01.03</time><span class="k">reply</span> “Your order left Lisbon…”</div></div></div></div>
+   <div><b>Semantic diffs</b><p>See what changed in meaning, not just in tokens, between two runs.</p></div>
+   <div class="dark"><b>Eval suites on every PR</b><p>Block merges when quality drops — with the failing transcripts attached.</p></div>
+   <div><b>Sandboxed tools</b><p>Every run gets an isolated filesystem, network policy and secrets.</p></div>
+   <div><b>Cost per run</b><p>Tokens, tools and minutes — attributed to the agent, the PR and the customer.</p></div></div></section>
+  <section class="sec2" data-in><h2>Live in <em>three steps.</em></h2><div class="steps3">
+   <div><b>Install the SDK</b><p>One package, works with any framework.</p><pre>npm i @relay/agents</pre></div>
+   <div><b>Wrap your agent</b><p>Every call is captured and sandboxed.</p><pre>const agent = relay.wrap(myAgent)</pre></div>
+   <div><b>Add the check</b><p>Runs your eval suite on every PR.</p><pre>relay ci --suite support</pre></div></div></section>
+  <section class="sec2" data-in><h2>Teams that <em>ship with it.</em></h2><div class="quote">
+   <div><p>“We caught a refund-policy regression in CI that would have cost us a week of tickets.”</p><small><b>Ana Ruiz</b> · Head of AI, Parallax</small></div>
+   <div><p>“Replays turned ‘the agent did something weird’ into a two-minute investigation.”</p><small><b>Kenji Watanabe</b> · Staff Engineer, Orbit</small></div>
+   <div><p>“The semantic diff is the feature I didn’t know I needed. Now I can’t review without it.”</p><small><b>Priya Nair</b> · CTO, Lumen</small></div></div></section>
+  <section class="cta" data-in style="margin-bottom:60px"><h2>Ship agents you can <em>trust.</em></h2><button class="btn inv" data-signup>Start free — no card</button></section>`,
+pricing:()=>$('#tpl-pricing').innerHTML,
+docs:()=>`<div class="docs"><aside class="dnav"><input placeholder="Search docs…" id="dq" aria-label="Search docs"><div id="dlinks"></div></aside>
+  <article class="dmain" id="dmain"></article>
+  <aside class="toc"><b>On this page</b><span>Install</span><span>Wrap your agent</span><span>Run in CI</span><span>Next steps</span></aside></div>`,
+changelog:()=>`<header style="padding:64px 0 10px"><span class="eyebrow">Changelog</span><h1 style="font-size:64px">What’s <em>new.</em></h1><p class="sub">New features and fixes, every week.</p></header>
+ <div class="cl">${[['Oct 14, 2026','Semantic diffs','Compare two runs by meaning, not tokens. Highlights changed claims, tool choices and tone.',['Diff any two runs from the replay view','Ignores rephrasing that keeps the meaning','Available on Pro and Team'],'New'],
+  ['Oct 2, 2026','Private runners','Run sandboxes inside your own VPC with a single Helm chart.',['AWS, GCP and Azure','Same replay and diff experience'],'Team'],
+  ['Sep 18, 2026','Cost per customer','Attribute tokens and tool minutes to the customer who triggered the run.',['New “Customers” breakdown','CSV export'],'Improved'],
+  ['Sep 4, 2026','Faster replays','Replays start 4× faster thanks to snapshot caching.',[],'Improved']].map(([d,t,p,li,tag],i)=>`<article data-in><time>${d}</time><div><span class="tagc">${tag}</span><h3>${t}</h3><p>${p}</p>${li.length?`<ul>${li.map(x=>`<li>${x}</li>`).join('')}</ul>`:''}${i===0?'<div class="vis"><svg viewBox="0 0 600 150" style="width:100%;height:100%"><rect x="30" y="30" width="250" height="90" rx="12" fill="#fff"/><rect x="320" y="30" width="250" height="90" rx="12" fill="#fff"/><rect x="50" y="50" width="160" height="10" rx="5" fill="#d9e4ea"/><rect x="50" y="72" width="200" height="10" rx="5" fill="#ffd4cf"/><rect x="340" y="50" width="160" height="10" rx="5" fill="#d9e4ea"/><rect x="340" y="72" width="200" height="10" rx="5" fill="#c9f2da"/></svg></div>':''}</div></article>`).join('')}</div>`,
+};
+const DOCS={Quickstart:`<h1>Quickstart</h1><p>Capture, replay and test your first agent run in about five minutes.</p><h3>Install</h3>${code({npm:'npm i @relay/agents',pnpm:'pnpm add @relay/agents',pip:'pip install relay-agents'})}<h3>Wrap your agent</h3>${code({TypeScript:"import { relay } from '@relay/agents'\n\nconst agent = relay.wrap(myAgent, { name: 'support' })\nawait agent.run({ input: 'Where is order 4417?' })",Python:"from relay import wrap\n\nagent = wrap(my_agent, name='support')\nagent.run(input='Where is order 4417?')"})}<div class="callout">Runs appear in the dashboard within a second. Nothing leaves your network unless you enable cloud replay.</div><h3>Run in CI</h3>${code({'GitHub Actions':"- uses: relay/agents-action@v2\n  with:\n    suite: support\n    fail-on: regression"})}<h3>Next steps</h3><p>Add an eval suite, invite your team, and turn on semantic diffs.</p>`,
+ 'Eval suites':`<h1>Eval suites</h1><p>A suite is a list of inputs and the checks every run must pass.</p>${code({YAML:"suite: support\ncases:\n  - input: Where is order 4417?\n    expect: mentions shipping status\n  - input: I want a refund\n    expect: follows refund policy"})}`,
+ 'Replays':`<h1>Replays</h1><p>Every run is recorded with its tool calls, prompts and responses, so you can step through it or re-run it against another model.</p>`,
+ 'Private runners':`<h1>Private runners</h1><p>Install the Helm chart in your cluster and point your workspace at it.</p>${code({Shell:'helm install relay-runner relay/runner --set token=$RELAY_TOKEN'})}`};
+function code(tabs){const id='c'+Math.random().toString(36).slice(2,7);const ks=Object.keys(tabs);return `<div class="codet" data-code="${id}"><div class="tabs">${ks.map((k,i)=>`<button aria-pressed="${i===0}" data-k="${encodeURIComponent(k)}">${k}</button>`).join('')}</div><pre>${tabs[ks[0]].replace(/</g,'&lt;')}<button class="cp">Copy</button></pre><script type="application/json">${JSON.stringify(tabs).replace(/</g,'\\u003c')}<\/script></div>`}
+function docs(page='Quickstart'){const q=($('#dq')?.value||'').toLowerCase();const groups={'Get started':['Quickstart'],'Guides':['Eval suites','Replays'],'Deploy':['Private runners']};
+ $('#dlinks').innerHTML=Object.entries(groups).map(([g,ps])=>{const f=ps.filter(p=>p.toLowerCase().includes(q)||DOCS[p].toLowerCase().includes(q));return f.length?`<b>${g}</b>${f.map(p=>`<a data-doc="${p}" ${p===page?'aria-current="page"':''}>${p}</a>`).join('')}`:''}).join('')||'<p style="color:var(--t3);font-size:13px">No pages match.</p>';
+ $('#dmain').innerHTML=DOCS[page]+`<div class="feedback">Was this page helpful? <button data-fb>Yes</button><button data-fb>No</button></div>`}
+function route(){const r=location.hash.replace(/^#\/?/,'');const name=r in VIEWS?r:'';$('#view').innerHTML=`<div class="view-in">${VIEWS[name]()}</div>`;$$('nav .links a').forEach(a=>a.toggleAttribute('aria-current',a.dataset.r===name));
+ $$('#view [data-in]').forEach(el=>io.observe(el));scrollTo({top:0});
+ if(name==='pricing')initPricing();if(name==='')runDemo();if(name==='docs'){docs();$('#dq').oninput=()=>docs($('#dmain h1')?.textContent)}}
+addEventListener('hashchange',route);
+document.addEventListener('click',e=>{
+ const d=e.target.closest('[data-doc]');if(d){docs(d.dataset.doc);return}
+ const tb=e.target.closest('.codet .tabs button');if(tb){const box=tb.closest('.codet');const tabs=JSON.parse(box.querySelector('script').textContent);box.querySelectorAll('.tabs button').forEach(x=>x.setAttribute('aria-pressed',x===tb));const pre=box.querySelector('pre');pre.innerHTML=tabs[decodeURIComponent(tb.dataset.k)].replace(/</g,'&lt;')+'<button class="cp">Copy</button>';return}
+ const cp=e.target.closest('.cp');if(cp){navigator.clipboard?.writeText(cp.parentElement.firstChild.textContent).catch(()=>{});cp.textContent='Copied';setTimeout(()=>cp.textContent='Copy',1200);return}
+ if(e.target.closest('[data-fb]')){e.target.closest('.feedback').innerHTML='Thanks — that helps us improve the docs.';return}
+ if(e.target.closest('[data-signup]')){e.preventDefault();signup(0);return}
+ if(e.target.closest('[data-signin]')){signin();return}
+ if(e.target.closest('#mscrim')||e.target.closest('.close')){closeM()}
+ const plan=e.target.closest('.plan .btn');if(plan){e.preventDefault();signup(0,plan.closest('.plan').querySelector('.pname').firstChild.textContent.trim())}
+});
+/* hero run replay */
+let runT=[];function runDemo(){runT.forEach(clearTimeout);runT=[];const L=$('#lines');if(!L)return;L.innerHTML='';$('#runst').textContent='● running';$('#runst').className='st';
+ const steps=[['00.00','<span class="k">input</span> “I was charged twice for order 4417”'],['00.31','<span class="k">tool</span> search_orders(id: 4417)'],['00.74','<span class="ok">✓</span> 1 order · 2 charges found'],['01.12','<span class="k">tool</span> refund(charge: ch_93a, amount: 42.10)'],['01.60','<span class="ok">✓</span> refund issued'],['02.05','<span class="k">reply</span> “Sorry about that — I’ve refunded the duplicate $42.10.”'],['02.40','<span class="warn">eval</span> refund-policy · tone · accuracy'],['02.90','<div class="diff">vs run #8790:<br><span class="d">− “Please contact billing.”</span><br><span class="a">+ “I’ve refunded the duplicate $42.10.”</span></div>'],['03.30','<span class="ok">✓ 3/3 checks passed · ready to merge</span>']];
+ steps.forEach(([t,h],i)=>runT.push(setTimeout(()=>{const d=document.createElement('div');d.className='ln';d.innerHTML=`<time>${t}</time><span>${h}</span>`;L.append(d);if(i===steps.length-1){$('#runst').textContent='✓ passed'}},400+i*520)));
+ runT.push(setTimeout(runDemo,400+steps.length*520+5000))}
+/* pricing */
+function initPricing(){
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 let cycle='m';
 function setPrice(el,v){const s=String(v);let html='';for(const ch of '$'+s)html+=`<span class="digit">${ch}</span>`;
@@ -207,6 +361,25 @@ function usage(){const i=+$('#runs').value,r=RUNS[i];$('#runsOut').textContent=L
 $('#runs').oninput=usage;usage();
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
 $$('[data-in]').forEach(el=>io.observe(el));
+}
+/* sign up / sign in */
+const SU={email:'',ws:'',plan:'Pro'};
+function closeM(){$('#signup').classList.remove('on');$('#mscrim').classList.remove('on')}
+function signin(){$('#signup').innerHTML=`<button class="close" aria-label="Close">✕</button><h3>Welcome back</h3><p>Sign in to your workspace.</p><label>Email<input id="se" type="email" placeholder="you@company.com"></label><div class="err-t" id="sre"></div><button class="btn dark full" id="sgo">Send magic link</button>`;$('#signup').classList.add('on');$('#mscrim').classList.add('on');setTimeout(()=>$('#se').focus(),50);
+ $('#sgo').onclick=()=>{if(!/^\S+@\S+\.\S+$/.test($('#se').value)){$('#se').classList.add('err');$('#sre').textContent='Enter a valid email address.';return}closeM();toast('Magic link sent — check your inbox')}}
+function signup(step,plan){if(plan)SU.plan=plan;const m=$('#signup');const bar=`<div class="bar"><i style="width:${(step+1)*25}%"></i></div>`;
+ const S=[()=>`${bar}<h3>Start free</h3><p>1,000 runs a month, no card.</p><label>Work email<input id="f" type="email" placeholder="you@company.com" value="${SU.email}"></label><div class="err-t" id="er"></div><button class="btn dark full" id="nx">Continue</button><p style="margin:14px 0 0;font-size:13px;text-align:center">Already have an account? <a href="#" data-signin style="color:var(--sky-t)">Sign in</a></p>`,
+  ()=>`${bar}<h3>Name your workspace</h3><p>You can change this later.</p><label>Workspace<input id="f" placeholder="Northwind" value="${SU.ws||(SU.email.split('@')[1]||'').split('.')[0].replace(/^./,c=>c.toUpperCase())}"></label><div class="err-t" id="er"></div><button class="btn dark full" id="nx">Continue</button>`,
+  ()=>`${bar}<h3>Pick a plan</h3><p>Every plan starts with a 14-day trial of Pro.</p><div class="choice">${[['Hobby','$0','1k runs'],['Pro','$29 / seat','50k runs'],['Team','$79 / seat','Unlimited']].map(([n,p,d])=>`<button aria-pressed="${n===SU.plan}" data-p="${n}"><span><b>${n}</b><br><small>${d}</small></span><b>${p}</b></button>`).join('')}</div><button class="btn dark full" id="nx">Create workspace</button>`,
+  ()=>`${bar}<div style="text-align:center"><div style="width:72px;height:72px;border-radius:50%;background:var(--sky);display:grid;place-items:center;margin:4px auto 16px;font-size:30px">✓</div><h3>You’re in, ${SU.ws}.</h3><p>Workspace created on the ${SU.plan} plan. Next: install the SDK.</p><pre style="text-align:left;padding:12px;border-radius:12px;background:var(--ink);color:#eee;font:12.5px var(--mono)">npm i @relay/agents</pre><button class="btn dark full" id="nx" style="margin-top:12px">Open the quickstart</button></div>`];
+ m.innerHTML=`<button class="close" aria-label="Close">✕</button>`+S[step]();m.classList.add('on');$('#mscrim').classList.add('on');const f=$('#f');f&&setTimeout(()=>f.focus(),60);
+ m.querySelectorAll('[data-p]').forEach(b=>b.onclick=()=>{SU.plan=b.dataset.p;m.querySelectorAll('[data-p]').forEach(x=>x.setAttribute('aria-pressed',x===b))});
+ $('#nx').onclick=()=>{if(step===0){const v=f.value.trim();if(!/^\S+@\S+\.\S+$/.test(v)){f.classList.add('err');$('#er').textContent='Enter a work email like you@company.com.';return}SU.email=v}
+  if(step===1){const v=f.value.trim();if(v.length<2){f.classList.add('err');$('#er').textContent='At least two characters.';return}SU.ws=v}
+  if(step===3){closeM();location.hash='#/docs';return}signup(step+1)};
+ f&&f.addEventListener('keydown',ev=>{if(ev.key==='Enter')$('#nx').click()})}
+addEventListener('keydown',e=>{if(e.key==='Escape')closeM()});
+route();
 </script>
 </body>
 </html>
