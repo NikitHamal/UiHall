@@ -65,6 +65,7 @@ async function render(name, r) {
     app.view = mod.default(main, app, r) || {};
     app.cleanup = app.view.cleanup;
     app.viewName = name;
+    document.body.classList.toggle('landing', name === '');
     reveal(main);
     window.scrollTo({ top: 0, behavior: 'instant' });
   };
