@@ -1,0 +1,22 @@
+{
+  "name": "uihall-mcp",
+  "version": "2.0.0",
+  "description": "MCP server for UI Hall — 750+ real, hand-described UI/UX references with measured palettes. Gives coding agents design evidence: search, briefs, patterns, palettes, tokens, contrast.",
+  "type": "module",
+  "bin": { "uihall-mcp": "dist/uihall-mcp.mjs" },
+  "main": "src/engine.js",
+  "exports": { ".": "./src/engine.js", "./color": "./src/color.js", "./tools": "./src/tools.js" },
+  "files": ["src", "dist", "README.md"],
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test/selftest.mjs && node test/selftest.mjs dist/uihall-mcp.mjs",
+    "start": "node src/server.js",
+    "prepublishOnly": "node build.mjs && node test/selftest.mjs dist/uihall-mcp.mjs"
+  },
+  "keywords": ["mcp", "model-context-protocol", "design", "ui", "ux", "design-system", "claude", "cursor", "agent", "skill"],
+  "homepage": "https://nikithamal.github.io/UiHall/",
+  "repository": { "type": "git", "url": "git+https://github.com/NikitHamal/UiHall.git", "directory": "mcp" },
+  "author": "Nikit Hamal",
+  "license": "MIT",
+  "engines": { "node": ">=18" }
+}

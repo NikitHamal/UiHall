@@ -53,6 +53,9 @@ def main():
             for k in FIELDS:
                 a[k] = r[k]
         a.pop("source_note", None)
+        strip = os.path.join(ROOT, "ui-hall", "assets", "strip", a["id"] + ".webp")
+        if os.path.exists(strip):
+            a["strip"] = {"src": "assets/strip/%s.webp" % a["id"], "frames": 6}
         if a["id"] in CROP_OF:
             a["crop_of"] = CROP_OF[a["id"]]
         assets.append(a)
