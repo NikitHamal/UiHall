@@ -46,7 +46,7 @@ node scripts/uihall.mjs <command> [args]      # path relative to this skill fold
 | Structural patterns | `find_patterns(about?)` | `patterns "dashboard"` |
 | Palette for a mood | `palette_for(mood, query?, surface?)` | `palette --mood calm --query wellness` |
 | Who uses this colour | `search_by_color(hex)` | `color "#C6F432"` |
-| Tokens for code | `export_tokens(id \| colors, format)` | `tokens ORG-0197 --format tailwind` |
+| Tokens for code | `export_tokens(id \| colors, theme?, format)` | `tokens ORG-0197 --theme mint --format tailwind` |
 | Choose between directions | `compare_designs(ids, include_images?)` | `compare ORG-0197 ORG-0109` |
 | Whole starter system | `generate_design_system(id \| colors, mood?)` | `system ORG-0197 --mood editorial` |
 | Accessibility | `check_contrast(fg, bg)` | `contrast "#888" "#fff"` |
@@ -88,8 +88,8 @@ Cite the reference ids in a comment at the top of the component.
 
 ### 5. Colour from measurement
 
-Pick one palette from the brief (or `palette_for`). Use the **literal hex values** — they are
-measured, not guessed. Run `export_tokens(id, format)` in the format the codebase uses
+Pick one palette from the brief (or `palette_for`). Use the **literal hex values** — they come
+from real, rendered screens, not guesses. Run `export_tokens(id, format)` in the format the codebase uses
 (`css`, `tailwind`, `dtcg`, `swiftui`, `compose`) — or, for a new project with no system yet,
 `generate_design_system(id)` for colour, type, radius, motion and base components in one CSS file. Run `check_contrast` on every text/background
 pair; if a measured accent fails as text, use the nudged value the tool suggests.
@@ -102,15 +102,18 @@ done, walk the brief's checklist honestly — including empty, loading and error
 ## Critiquing an existing UI
 
 1. `search_designs` for the same kind of screen; `view_design` the best three.
+2. Compare the existing UI against them on hierarchy, the primary action, density, colour and
+   contrast, type and states — note where it differs and whether the difference is a choice or a gap.
 3. Report the **three highest-impact changes first** (hierarchy, primary action, density,
    colour/contrast, type), each tied to a reference id, with concrete values (sizes, hex,
    spacing). Then polish notes. Rubric: [references/critique.md](references/critique.md).
 
 ## Originals
 
-Assets with ids `ORG-…` are MIT-licensed screens built in code for UI Hall. `get_design` returns their `live_url`:
-the actual HTML, interactive, in four themes (`?theme=ember|mint|ink|grape`). Prefer them when you need markup
-you can legitimately adapt; filter with `search_designs(source="original")`.
+Every asset (`ORG-…`) is an MIT-licensed screen built in code for UI Hall. `get_design` returns its `live_url`:
+the actual HTML, interactive, in four themes (`?theme=ember|mint|ink|grape`) — markup you can legitimately adapt.
+Colour words in a search pick a theme ("green settings" → the mint variant), and `view_design` / `export_tokens`
+take a `theme` so what you see and what you paste match.
 
 ## Rules
 
