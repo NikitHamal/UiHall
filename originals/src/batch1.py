@@ -76,7 +76,7 @@ screen('settings-grouped', dict(viewport='phone', title='Grouped settings with t
    ('Notifications',[('bell','Daily reminder','<i class="toggle on"></i>'),('star','Streak milestones','<i class="toggle on"></i>'),('mail','Weekly summary email','<i class="toggle"></i>')]),
    ('Appearance',[('moon','Theme','<span class="small">System</span>'+ic('chev')),('grid','App icon','<span class="small">Classic</span>'+ic('chev'))]),
    ('Privacy',[('lock','Face ID lock','<i class="toggle on"></i>'),('doc','Export my data','<span class="small">CSV</span>'+ic('chev'))])])+'''
-  <div class="sp"></div><button class="btn" style="color:#E5625A">Sign out</button>''')
+  <div class="sp"></div><button class="btn danger">Sign out</button>''')
 
 # 6 chat ----------------------------------------------------------------------
 screen('assistant-chat', dict(viewport='phone', title='AI assistant chat with composer', category='mobile-app-ui', type='screen', roles=['chat'],

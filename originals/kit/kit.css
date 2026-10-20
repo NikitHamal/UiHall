@@ -34,7 +34,7 @@ body.present.dark{background:radial-gradient(120% 90% at 30% 10%,color-mix(in ok
 .big{font:600 52px/1 var(--sans);letter-spacing:-.045em}
 .big .c{color:var(--muted);font-size:.55em;letter-spacing:-.02em}
 .up{color:#3DBF7F}.down{color:#E5625A}
-.light .up{color:#1C7F4E}.light .down{color:#C23B32}
+.danger{color:#E5625A}.light .danger{color:#B8322A}.light .up{color:#1C7F4E}.light .down{color:#C23B32}
 .dark .up{color:#4FD99A}
 
 /* controls */
