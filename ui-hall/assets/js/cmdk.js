@@ -12,6 +12,7 @@ const PAGES = [
   ['Colour', '#/colour', 'Search the corpus by colour'],
   ['Motion', '#/motion', 'Clips that actually move'],
   ['For agents', '#/agents', 'MCP server, skill and playground'],
+  ['Board', '#/board', 'Your pinned references'],
   ['Playground', '#/agents?tab=playground', 'Run the MCP tools in your browser'],
 ];
 
@@ -87,4 +88,20 @@ export function openCmd(app) {
   root.querySelector('.cmd__scrim').addEventListener('click', close);
   draw();
   input.focus();
+}
+
+/** "?" — the keyboard map. */
+export function openKeys() {
+  if (open) return;
+  open = true;
+  const root = $('#cmd');
+  const rows = [['⌘K  /', 'Search everything'], ['?', 'This help'], ['G', 'Home'], ['L', 'Library'], ['B', 'Board'], ['C', 'Colour'], ['M', 'Motion'], ['A', 'For agents'],
+    ['←  →', 'Previous / next reference (in a detail view)'], ['P', 'Pin to board (in a detail view)'], ['Esc', 'Close']];
+  root.innerHTML = `<div class="cmd" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts"><div class="cmd__scrim"></div>
+    <div class="cmd__box" style="width:min(460px,100%);padding:26px 28px"><h3 class="display" style="font-size:30px;margin-bottom:18px">Keyboard</h3>
+    <div class="keys">${rows.map(([k, d]) => `<kbd>${k}</kbd><span>${d}</span>`).join('')}</div></div></div>`;
+  const close = () => { open = false; root.innerHTML = ''; removeEventListener('keydown', onKey, true); };
+  const onKey = (e) => { if (e.key === 'Escape' || e.key === '?') { e.preventDefault(); e.stopImmediatePropagation(); close(); } };
+  addEventListener('keydown', onKey, true);
+  root.querySelector('.cmd__scrim').addEventListener('click', close);
 }

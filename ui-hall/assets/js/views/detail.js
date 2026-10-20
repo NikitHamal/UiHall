@@ -3,12 +3,13 @@
 
 import { $, esc, icon, bindCopy, ink, segmented, tint } from '../lib.js';
 import { thumb, label } from './shared.js';
+import { board, pinIcon, flyToBoard } from '../board.js';
 
 let host = null, current = null, list = [], keyHandler = null;
 
 export const isDetailOpen = () => !!host;
 
-export function openDetail(app, id) {
+export function openDetail(app, id, { morph = false } = {}) {
   const { h } = app;
   const a = h.get(id);
   if (!a) { location.hash = '#/library'; return; }
@@ -19,6 +20,7 @@ export function openDetail(app, id) {
     host.setAttribute('role', 'dialog');
     host.setAttribute('aria-modal', 'true');
     host.innerHTML = '<div class="modal__scrim"></div><article class="sheet"></article>';
+    host.classList.toggle('morph', morph);
     $('#overlay').append(host);
     document.documentElement.style.overflow = 'hidden';
     host.querySelector('.modal__scrim').addEventListener('click', () => close(app));
@@ -26,12 +28,17 @@ export function openDetail(app, id) {
       if (e.key === 'Escape') close(app);
       if (e.key === 'ArrowRight') step(1);
       if (e.key === 'ArrowLeft') step(-1);
+      if ((e.key === 'p' || e.key === 'P') && !/input|textarea/i.test(document.activeElement?.tagName)) host?.querySelector('.sheet__pin')?.click();
     };
     addEventListener('keydown', keyHandler);
     bindCopy(host);
   }
   current = a;
   fill(app, a);
+  if (morph) {
+    const m = host.querySelector('.sheet__media img, .sheet__media video');
+    if (m) { m.style.viewTransitionName = 'uh-media'; setTimeout(() => { m.style.viewTransitionName = ''; }, 700); }
+  }
 }
 
 function step(d) {
@@ -49,6 +56,20 @@ function close(app) {
 
 export function closeDetail() {
   if (!host) return;
+  const tileImg = current && document.querySelector(`.tile[data-id="${current.id}"] img`);
+  const media = host.querySelector('.sheet__media img, .sheet__media video');
+  const r = tileImg?.getBoundingClientRect();
+  if (tileImg && media && document.startViewTransition && r.bottom > 0 && r.top < innerHeight && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const el = host;
+    host = null; current = null;
+    removeEventListener('keydown', keyHandler);
+    media.style.viewTransitionName = 'uh-media';
+    document.startViewTransition(() => {
+      el.remove(); document.documentElement.style.overflow = '';
+      tileImg.style.viewTransitionName = 'uh-media';
+    }).finished.finally(() => { tileImg.style.viewTransitionName = ''; });
+    return;
+  }
   const el = host;
   host = null; current = null;
   removeEventListener('keydown', keyHandler);
@@ -80,6 +101,7 @@ function fill(app, a) {
       <div class="sheet__top">
         <span class="sheet__id">${a.id} · ${a.kind}${a.clip ? ' · motion' : ''} · ${a.w}×${a.h}</span>
         <div class="row" style="gap:4px">
+          <button class="sheet__pin" type="button" aria-pressed="${board.has(a.id)}" aria-label="Pin to board (P)" title="Pin to board (P)">${pinIcon(board.has(a.id))}</button>
           <button class="icon-btn" type="button" data-copy="${location.origin + location.pathname}#/a/${a.id}" data-copy-label="Link copied" aria-label="Copy link">${icon.copy}</button>
           <button class="icon-btn" type="button" data-close aria-label="Close">${icon.close}</button>
         </div>
@@ -131,6 +153,12 @@ function fill(app, a) {
 
   const mediaBox = sheet.querySelector('.sheet__media');
   sheet.querySelector('[data-close]').onclick = () => close(app);
+  const pinBtn = sheet.querySelector('.sheet__pin');
+  pinBtn.onclick = () => {
+    const on = board.toggle(a.id);
+    pinBtn.setAttribute('aria-pressed', String(on)); pinBtn.innerHTML = pinIcon(on);
+    if (on) flyToBoard(pinBtn, thumb(a));
+  };
   sheet.querySelector('.prev').onclick = () => step(-1);
   sheet.querySelector('.next').onclick = () => step(1);
   const z = sheet.querySelector('img.zoomable');

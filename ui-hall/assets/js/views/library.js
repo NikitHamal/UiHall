@@ -4,6 +4,8 @@
 import { $, $$, esc, icon, debounce, reduced, isTouch, segmented } from '../lib.js';
 import { HUE_FAMILIES } from '../../../../mcp/src/color.js';
 import { thumb, label, footer } from './shared.js';
+import { board, pinIcon, flyToBoard } from '../board.js';
+import { openDetail } from './detail.js';
 
 const HUE_SW = { red: '#E5484D', orange: '#F76B15', brown: '#8D5B3A', yellow: '#FFD60A', lime: '#B8F230', green: '#30A46C', teal: '#12A594', cyan: '#00A2C7', blue: '#3E63DD', violet: '#8E4EC6', magenta: '#D6409F', black: '#111111', grey: '#8B8D98', white: '#F5F5F5' };
 const MULTI = ['category', 'type', 'role', 'style', 'tag'];
@@ -148,6 +150,7 @@ export default function library(root, app, route) {
       el.dataset.id = a.id;
       el.style.cssText = `left:${c * (colW + gap)}px;top:${cols[c]}px;width:${colW}px;height:${hgt}px;transition-delay:${reduced() ? 0 : Math.min(i, 16) * 28}ms`;
       el.innerHTML = `<img src="${thumb(a)}" alt="${esc(a.title)}" loading="lazy" decoding="async">
+        <span class="tile__pin" role="button" tabindex="0" data-pin="${a.id}" aria-label="Pin ${a.id} to board" aria-pressed="${board.has(a.id)}">${pinIcon(board.has(a.id))}</span>
         ${a.clip ? `<span class="tile__badge">${a.clip_meta?.duration_s ? Math.round(a.clip_meta.duration_s) + 's' : 'motion'}</span>` : ''}
         <span class="tile__meta"><span>${a.id} · ${esc(label(a.category))}</span><b>${esc(a.title)}</b><span class="tile__pal">${(a.palette || []).slice(0, 5).map((x) => `<i style="--c:${x}"></i>`).join('')}</span></span>`;
       cols[c] += hgt + gap;
@@ -169,6 +172,31 @@ export default function library(root, app, route) {
     while (shown < keep) layout(false);
   });
   ro.observe(grid);
+
+  /* pin to board, and morph tile → detail sheet with a shared-element view transition */
+  grid.addEventListener('click', (e) => {
+    const pin = e.target.closest('[data-pin]');
+    if (pin) {
+      e.preventDefault(); e.stopPropagation();
+      const on = board.toggle(pin.dataset.pin);
+      if (on) flyToBoard(pin, thumb(h.get(pin.dataset.pin)));
+      return;
+    }
+    const t = e.target.closest('.tile');
+    if (!t || e.metaKey || e.ctrlKey || e.shiftKey || !document.startViewTransition || reduced()) return;
+    e.preventDefault();
+    const img = t.querySelector('img');
+    img.style.viewTransitionName = 'uh-media';
+    document.startViewTransition(() => {
+      img.style.viewTransitionName = '';
+      history.pushState(null, '', `#/a/${t.dataset.id}`);
+      app.cameFromApp = true;
+      openDetail(app, t.dataset.id, { morph: true });
+    });
+  });
+  grid.addEventListener('keydown', (e) => { if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('[data-pin]')) { e.preventDefault(); e.target.click(); } });
+  const onBoard = () => { for (const p of grid.querySelectorAll('[data-pin]')) { const on = board.has(p.dataset.pin); p.setAttribute('aria-pressed', String(on)); p.innerHTML = pinIcon(on); } };
+  addEventListener('uh:board', onBoard);
 
   /* hover-to-play: motion clips stream only while you look at them */
   let playing = null;
@@ -195,7 +223,7 @@ export default function library(root, app, route) {
   return {
     order: () => results.map((a) => a.id),
     update(r) { Object.assign(state, fromParams(r.params)); q.value = state.q; run(); },
-    cleanup() { more.disconnect(); ro.disconnect(); stop(); },
+    cleanup() { more.disconnect(); ro.disconnect(); stop(); removeEventListener('uh:board', onBoard); },
   };
 }
 

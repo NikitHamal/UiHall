@@ -3,7 +3,8 @@
 
 import { UiHall } from '../../../mcp/src/engine.js';
 import { $, $$, glow, reveal } from './lib.js';
-import { openCmd } from './cmdk.js';
+import { openCmd, openKeys } from './cmdk.js';
+import { board } from './board.js';
 import { openDetail, closeDetail, isDetailOpen } from './views/detail.js';
 
 const VIEWS = {
@@ -13,6 +14,7 @@ const VIEWS = {
   colour: () => import('./views/colour.js'),
   motion: () => import('./views/motion.js'),
   agents: () => import('./views/agents.js'),
+  board: () => import('./views/board.js'),
 };
 
 export const app = { h: null, view: null, viewName: null, cleanup: null, cameFromApp: false };
@@ -68,7 +70,7 @@ async function render(name, r) {
     await document.startViewTransition(doRender).finished.catch(() => {});
   } else doRender();
   markNav(name);
-  document.title = { '': 'UI Hall — design evidence for humans and agents', library: 'Library · UI Hall', patterns: 'Patterns · UI Hall', colour: 'Colour · UI Hall', motion: 'Motion · UI Hall', agents: 'For agents · UI Hall' }[name];
+  document.title = { '': 'UI Hall — design evidence for humans and agents', library: 'Library · UI Hall', patterns: 'Patterns · UI Hall', colour: 'Colour · UI Hall', motion: 'Motion · UI Hall', agents: 'For agents · UI Hall', board: 'Board · UI Hall' }[name];
 }
 
 /* ----------------------------------------------------------------- nav -- */
@@ -121,6 +123,20 @@ async function boot() {
     if (e.key === '/' && !/input|textarea|select/i.test(document.activeElement?.tagName)) { e.preventDefault(); openCmd(app); }
   });
   addEventListener('resize', () => markNav(app.viewName));
+  addEventListener('keydown', (e) => {
+    if (/input|textarea|select/i.test(document.activeElement?.tagName) || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key === '?') { e.preventDefault(); openKeys(); }
+    const jump = { g: '#/', l: '#/library', b: '#/board', a: '#/agents', c: '#/colour', m: '#/motion' }[e.key];
+    if (jump && !isDetailOpen()) location.hash = jump;
+  });
+  const badge = $('#boardBadge');
+  const syncBadge = (bump) => {
+    badge.textContent = board.list().length || '';
+    if (bump) { badge.classList.remove('bump'); void badge.offsetWidth; badge.classList.add('bump'); }
+    markNav(app.viewName);
+  };
+  addEventListener('uh:board', () => syncBadge(true));
+  syncBadge(false);
   app.viewName = null;
   try {
     app.h = new UiHall(await loadCorpus(), { site: new URL('.', location.href).href });
