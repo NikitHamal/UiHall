@@ -292,7 +292,11 @@ function curated(list) {
     }
     const main = [...buckets.entries()].filter(([k]) => !k.startsWith('zz') && k !== 'aa-orig').sort((a, b) => b[1].length - a[1].length).map(([, v]) => [...v]);
     const weights = main.map((b) => Math.max(1, Math.round(Math.sqrt(b.length / 20))));
-    const orig = [...(buckets.get('aa-orig') || [])];
+    // interleave originals so neighbours differ in both screen and theme
+    const bySlug = new Map();
+    for (const a of buckets.get('aa-orig') || []) { const k = (a.source_html || a.id).split('?')[0]; if (!bySlug.has(k)) bySlug.set(k, []); bySlug.get(k).push(a); }
+    const groups = [...bySlug.values()], orig = [];
+    for (let r = 0; groups.some((g) => g.length); r++) groups.forEach((g, i) => { if (g.length) orig.push(g.splice((i + r) % g.length, 1)[0]); });
     const out = [];
     while (main.some((b) => b.length) || orig.length) {
       if (orig.length) out.push(...orig.splice(0, 2));

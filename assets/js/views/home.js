@@ -2,6 +2,13 @@ import { $, $$, esc, split, countUp, reveal, bindCopy, ink, reduced, isTouch } f
 import { TOOLS } from '../../../mcp/src/tools.js';
 import { contrast } from '../../../mcp/src/color.js';
 import { footer, installBlock, bindInstall, thumb, arrowBtn } from './shared.js';
+import { icon } from '../lib.js';
+const JUMP_IC = {
+  grid: '<svg viewBox="0 0 20 20"><rect x="3" y="3" width="6" height="6" rx="1.5"/><rect x="11" y="3" width="6" height="6" rx="1.5"/><rect x="3" y="11" width="6" height="6" rx="1.5"/><rect x="11" y="11" width="6" height="6" rx="1.5"/></svg>',
+  star: '<svg viewBox="0 0 20 20"><path d="m10 2.8 2.1 4.3 4.7.7-3.4 3.3.8 4.7L10 13.6l-4.2 2.2.8-4.7-3.4-3.3 4.7-.7z"/></svg>',
+  pin: '<svg viewBox="0 0 20 20"><path d="M5.5 3.5h9v13.2L10 13.4l-4.5 3.3z"/></svg>',
+  code: '<svg viewBox="0 0 20 20"><path d="M7 6 3 10l4 4M13 6l4 4-4 4"/></svg>',
+};
 import { BLURB } from '../blurbs.js';
 
 /* Curated picks for the "measured" demo — strong, varied palettes. */
@@ -22,34 +29,49 @@ export default function home(root, app) {
   const later = (fn, ms) => timers.push(setTimeout(fn, ms));
 
   root.innerHTML = `
-  <section class="hero">
-    <div class="wall" aria-hidden="true"></div>
-    <div class="container hero__inner">
-      <span class="eyebrow" data-reveal>A design reference corpus · MCP server · agent skill</span>
-      <h1 class="display h-xl hero__title" id="heroTitle">Stop designing from <em>the average.</em></h1>
-      <div class="hero__row">
-        <p class="lede" data-reveal style="--d:3">${t.assets} real interfaces, each one looked at and written up by hand, every colour measured from the pixels. Browse the hall — or plug it into Claude Code, Cursor and any MCP agent so it designs from evidence instead of habit.</p>
-        <div class="hero__cta" data-reveal style="--d:4">
-          ${arrowBtn('#/library', 'Explore the library', true)}
-          <a class="btn" href="#/agents">Connect your agent</a>
-        </div>
+  <section class="container hero2">
+    <div class="hero2__text">
+      <span class="eyebrow" data-reveal>Design reference · MCP server · agent skill</span>
+      <h1 class="display h-xl hero__title" id="heroTitle">Stop designing from <em>the&nbsp;average.</em></h1>
+      <p class="lede" data-reveal style="--d:3">${t.assets} interfaces — ${t.originals || 0} built in code and free to use, the rest collected and described by hand — every colour measured from the pixels. Browse them, or plug them into Claude Code, Cursor and any MCP agent so it designs from evidence instead of habit.</p>
+      <div class="row" data-reveal style="--d:4">
+        ${arrowBtn('#/library', 'Explore the library', true)}
+        <a class="btn" href="#/agents">Connect your agent</a>
       </div>
-      <div class="hero__stats" data-reveal style="--d:5">
+      <button class="hero__install" type="button" data-copy="claude plugin marketplace add https://nikithamal.github.io/UiHall/.claude-plugin/marketplace.json" data-copy-label="Install command copied" data-reveal style="--d:5"><span class="faint">$</span> claude plugin marketplace add <b>…/UiHall</b> <span class="faint">· click to copy</span></button>
+      <div class="hero__stats" data-reveal style="--d:6">
         <div class="stat"><b class="num" data-count="${t.assets}">0</b><span>references</span></div>
-        <div class="stat"><b class="num" data-count="${t.clips}">0</b><span>motion clips</span></div>
-        <div class="stat"><b class="num" data-count="${h.patterns().length}">0</b><span>patterns with evidence</span></div>
-        <div class="stat"><b class="num" data-count="${h.assets.reduce((s, a) => s + (a.palette_detail?.length || 0), 0)}">0</b><span>colours measured</span></div>
+        <div class="stat"><b class="num" data-count="${t.originals || 0}">0</b><span>originals · MIT</span></div>
+        <div class="stat"><b class="num" data-count="${h.patterns().length}">0</b><span>patterns</span></div>
         <div class="stat"><b class="num" data-count="${TOOLS.length}">0</b><span>agent tools</span></div>
       </div>
     </div>
-    <div class="scroll-cue"><i></i>Scroll</div>
+    <div class="hero2__wall" aria-hidden="true"><div class="wall"></div></div>
+  </section>
+
+  <section class="container">
+    <div class="jump">
+      ${[['#/library', 'Library', `${t.assets} references, ranked and filterable`, 'grid'], ['#/originals', 'Originals', `${t.originals || 0} coded screens, free to reuse`, 'star'], ['#/board', 'Board', 'Pin, compare, hand to your agent', 'pin'], ['#/agents', 'For agents', 'MCP server, skill and playground', 'code']].map(([href, n, d, k], i) => `
+      <a class="jump__card" href="${href}" data-reveal style="--d:${i}"><span class="jump__ic">${JUMP_IC[k]}</span><b>${n}</b><span>${d}</span><i class="jump__go">${icon.arrow}</i></a>`).join('')}
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="section__head">
+      <h2 class="display h-lg" data-reveal>Built in code, <em>free to use.</em></h2>
+      <p class="lede" data-reveal style="--d:1">Originals are screens and components designed for UI Hall and rendered from code — written up and measured like every reference, but MIT licensed. New batches land continuously.</p>
+    </div>
+    <div class="orig-strip">
+      ${h.search({ source: 'original', limit: 400 }).results.map((r) => r.asset).filter((a, i, arr) => arr.findIndex((x) => x.source_html.split('?')[0] === a.source_html.split('?')[0]) === i).slice(0, 8).map((a, i) => `<a class="orig-card" href="#/a/${a.id}" data-reveal style="--d:${i % 4}"><img src="${a.thumb}" alt="${esc(a.title)}" loading="lazy"><span>${esc(a.title.split(' · ')[0])}</span></a>`).join('')}
+    </div>
+    <div class="row mt-m" data-reveal>${arrowBtn('#/originals', 'See all originals')}</div>
   </section>
 
   <section class="container section">
     <div class="claims" data-reveal>
-      <div><span class="k">Observed</span><b>Read by eye, not guessed.</b><p>Every reference was opened and described: what it is, what it says, how it’s built, and the one idea worth stealing. In October 2026 all ${t.assets} were re-audited against the pixels.</p></div>
+      <div><span class="k">Observed</span><b>Read by eye, not guessed.</b><p>Every collected reference was opened and described — what it is, what it says, how it’s built — and re-audited against the pixels. Originals carry their write-up next to their code.</p></div>
       <div><span class="k">Measured</span><b>Colour from pixels, not vibes.</b><p>Palettes are k-means over the real image with area percentages, split into background, surface, text and accent — and checked for WCAG contrast.</p></div>
-      <div><span class="k">Agent-ready</span><b>Built to be called.</b><p>A zero-dependency MCP server and a skill turn the hall into tools an agent uses mid-task: briefs, references, patterns, palettes and tokens.</p></div>
+      <div><span class="k">Agent-ready</span><b>Built to be called.</b><p>A zero-dependency MCP server and a skill turn the hall into tools an agent uses mid-task: briefs, references, patterns, palettes, tokens and whole design systems.</p></div>
     </div>
   </section>
 
@@ -148,23 +170,19 @@ export default function home(root, app) {
 
   /* ---------------------------------------------------------- the wall -- */
   const wall = $('.wall', root);
-  const cols = innerWidth < 640 ? 3 : innerWidth < 1000 ? 5 : 7;
+  const cols = innerWidth < 1100 ? 3 : 4;
   wall.style.setProperty('--cols', cols);
   const pool = h.assets.filter((a) => a.thumb && !a.crop_of && a.w / a.h > 0.45 && a.w / a.h < 1.9 && a.category !== 'color-palette');
-  const seeded = pool.map((a, i) => [((i * 2654435761) >>> 0) % 997, a]).sort((x, y) => x[0] - y[0]).map((x) => x[1]);
-  const per = 9;
+  const seeded = [...pool.filter((a) => a.original), ...pool.filter((a) => !a.original).map((a, i) => [((i * 2654435761) >>> 0) % 997, a]).sort((x, y) => x[0] - y[0]).map((x) => x[1])];
+  const per = 8;
   let colsHtml = '';
   for (let c = 0; c < cols; c++) {
-    const items = seeded.slice(c * per, c * per + per);
-    const cell = items.map((a) => `<img src="${thumb(a)}" alt="" loading="${c < 3 ? 'eager' : 'lazy'}" decoding="async" style="--ar:${(a.w / a.h).toFixed(3)}">`).join('');
-    colsHtml += `<div class="wall__col" style="--dur:${80 + (c % 3) * 22}s">${cell}${cell}</div>`;
+    const items = seeded.filter((_, i) => i % cols === c).slice(0, per);
+    const cell = items.map((a) => `<img src="${thumb(a)}" alt="" loading="eager" decoding="async" style="--ar:${(a.w / a.h).toFixed(3)}">`).join('');
+    colsHtml += `<div class="wall__col" style="--dur:${70 + (c % 3) * 18}s">${cell}${cell}</div>`;
   }
   wall.innerHTML = colsHtml;
-  const onMove = (e) => {
-    const x = (e.clientX / innerWidth - 0.5) * -30, y = (e.clientY / innerHeight - 0.5) * -20;
-    wall.style.setProperty('--px', `${x}px`); wall.style.setProperty('--py', `${y}px`);
-  };
-  if (!isTouch() && !reduced()) addEventListener('pointermove', onMove, { passive: true });
+  const onMove = () => {};
 
   /* ------------------------------------------------------- anatomy demo -- */
   const anat = $('.anatomy', root);
