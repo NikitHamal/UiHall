@@ -1122,11 +1122,10 @@ const RO = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, o
 
 const SURFACE = { type: 'string', enum: ['dark', 'light', 'mid'], description: 'Dominant surface lightness, measured from the palette.' };
 const FILTERS = {
-  kind: { type: 'string', enum: ['all', 'image', 'video'], description: 'Media kind.' },
-  category: arr('Category ids, e.g. mobile-app-ui, website, dashboard, motion-demo, design-system, before-after.'),
+  category: arr('Category ids: mobile-app-ui, website, dashboard, design-system.'),
   role: arr('Screen roles (any of), e.g. onboarding, auth, dashboard, checkout, pricing, settings, empty-state, chat.'),
-  style: arr('Visual styles (all of), e.g. dark-mode, minimal, editorial, glassmorphism, playful, bold-typography.'),
-  tag: arr('Tags (all of), e.g. bottom-nav, chips, serif, kpi, 3d, sheet. See corpus_overview for the vocabulary.'),
+  style: arr('Visual styles (all of), e.g. minimal, card-based, editorial, data-dense, bold-typography, illustration-led.'),
+  tag: arr('Tags (all of), e.g. bottom-nav, chips, toggle, kpi, week-strip, serif. See corpus_overview for the vocabulary.'),
   surface: SURFACE,
   hue: { type: 'string', enum: HUE_FAMILIES, description: 'Only assets using this colour family as a real accent.' },
   viewport: { type: 'string', enum: ['phone', 'desktop', 'canvas'], description: 'Format: phone screens, desktop screens or design-system sheets.' },
@@ -1183,7 +1182,7 @@ const TOOLS = [
     name: 'get_design',
     title: 'Get design',
     description: 'Full record for one reference: the hand-written description, facets, the measured palette with area percentages, '
-      + 'colour roles (background/surface/text/accent) with WCAG contrast, printed palette names if any, and image/clip URLs.',
+      + 'colour roles (background/surface/text/accent) with WCAG contrast, and the image and live-HTML URLs.',
     inputSchema: { type: 'object', required: ['id'], properties: { id: str('Asset id, e.g. ORG-1037 or ORG-0073.') } },
     annotations: { title: 'Get design', ...RO },
     run(h, { id }) {
@@ -1464,7 +1463,7 @@ const TOOLS = [
       const f = h.facets(), s = h.stats();
       const fmt = (xs) => xs.map((x) => `${x.id} (${x.count})`).join(', ');
       const text = [
-        `# UI Hall corpus v${s.version}: ${s.totals.assets} references — ${s.totals.images} images, ${s.totals.videos} videos (${s.totals.clips} with motion clips)`,
+        `# UI Hall corpus v${s.version}: ${s.totals.assets} live screens built in code, each in four themes (${Object.values(h.corpus.themes || {}).map((t) => `${t.name} ${t.scheme}`).join(', ')}) — MIT licensed`,
         `**categories**: ${fmt(f.categories)}`, `**types**: ${fmt(f.types)}`, `**roles**: ${fmt(f.roles)}`, `**styles**: ${fmt(f.styles)}`,
         `**surfaces**: ${Object.entries(f.surfaces).map(([k, v]) => `${k} (${v})`).join(', ')}`,
         `**colour families**: ${Object.entries(f.hue_families).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k} (${v})`).join(', ')}`,
