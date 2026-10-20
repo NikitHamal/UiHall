@@ -20,7 +20,7 @@ const PROTOCOLS = ['2025-06-18', '2025-03-26', '2024-11-05'];
 const err = (id, code, message) => ({ jsonrpc: '2.0', id, error: { code, message } });
 const ok = (id, result) => ({ jsonrpc: '2.0', id, result });
 
-const INSTRUCTIONS = `UI Hall is a curated corpus of 850+ interface designs, 100+ of them MIT-licensed originals built in code (mobile, web, dashboards, motion, design systems). Every item was looked at and written up by hand; every palette was measured from the pixels.
+const INSTRUCTIONS = `UI Hall is a library of 268 live UI screens built in code (mobile, web, dashboards, design systems), each in four themes, MIT licensed, written up and colour-measured.
 Use it before designing or building any UI, so layout and colour decisions come from evidence rather than the generic average:
 - design_brief(screen) to start a screen — references, patterns, palettes, checklist in one call.
 - search_designs / find_similar / search_by_color to explore; view_design to actually look at the images.

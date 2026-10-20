@@ -6,12 +6,12 @@ description: >-
   page, a dashboard, a component, a design system or a colour palette ("design an onboarding",
   "make this page look better", "what should a crypto wallet home look like", "pick colours
   for a calm health app", "why does this look generic", "build a pricing section"). Gives you
-  850+ hand-described UI/UX references (100+ of them MIT-licensed originals built in code) with palettes measured from the pixels, a pattern library
+  268 live, MIT-licensed UI screens built in code (four themes each) with palettes measured from the pixels, a pattern library
   with build rules, palette-to-token export and contrast checks — through the UI Hall MCP
   server when connected, or a bundled zero-dependency CLI when not.
 license: MIT
 metadata:
-  version: 2.1.0
+  version: 3.0.0
   homepage: https://nikithamal.github.io/UiHall/
   repository: https://github.com/NikitHamal/UiHall
 ---
@@ -22,10 +22,10 @@ Asked for "a finance app", an agent produces a blue gradient, a card and a round
 because that is the average of everything it has seen. This skill replaces the average with
 specific, real, *described* references — and makes you look at them before you write code.
 
-UI Hall is a corpus of **850+ interfaces** — 750+ collected references and 100+ MIT-licensed originals built in code — (mobile screens, websites, dashboards, motion
-clips, design systems, redesigns). Every item was looked at and written up by hand and
-re-audited against the pixels; every palette is k-means over the real image with area
-percentages; every video's motion was measured.
+UI Hall is a library of **268 live interface screens** built in code — mobile apps, websites,
+dashboards and design systems across 16+ product domains — each in four themes and MIT licensed.
+Every write-up is generated from what the screen renders; every palette is k-means over the
+rendered pixels with area percentages. `get_design` returns the live HTML, so you can adapt real markup.
 
 ## Tools: MCP first, CLI as fallback
 
@@ -40,17 +40,16 @@ node scripts/uihall.mjs <command> [args]      # path relative to this skill fold
 |---|---|---|
 | Start any screen | `design_brief(screen, platform?, mood?, surface?)` | `brief "<screen>" --platform ios --mood calm` |
 | Find references | `search_designs(query, role?, style?, tag?, surface?, hue?, include_images?)` | `search "<query>" --role onboarding --surface dark` |
-| Full write-up + colour roles | `get_design(id)` | `get IMG-0468` |
-| **See** references | `view_design(ids)` | `image IMG-0468 VID-0221` → open the printed files |
-| Branch out | `find_similar(id, by?)` | `similar IMG-0468 --by palette` |
+| Full write-up + colour roles | `get_design(id)` | `get ORG-1037` |
+| **See** references | `view_design(ids)` | `image ORG-1037 ORG-0073` → open the printed files |
+| Branch out | `find_similar(id, by?)` | `similar ORG-1037 --by palette` |
 | Structural patterns | `find_patterns(about?)` | `patterns "dashboard"` |
 | Palette for a mood | `palette_for(mood, query?, surface?)` | `palette --mood calm --query wellness` |
 | Who uses this colour | `search_by_color(hex)` | `color "#C6F432"` |
-| Tokens for code | `export_tokens(id \| colors, format)` | `tokens IMG-0365 --format tailwind` |
-| Choose between directions | `compare_designs(ids, include_images?)` | `compare IMG-0432 IMG-0433` |
-| Whole starter system | `generate_design_system(id \| colors, mood?)` | `system IMG-0365 --mood editorial` |
+| Tokens for code | `export_tokens(id \| colors, format)` | `tokens ORG-0197 --format tailwind` |
+| Choose between directions | `compare_designs(ids, include_images?)` | `compare ORG-0197 ORG-0109` |
+| Whole starter system | `generate_design_system(id \| colors, mood?)` | `system ORG-0197 --mood editorial` |
 | Accessibility | `check_contrast(fg, bg)` | `contrast "#888" "#fff"` |
-| Redesign evidence | `before_after(topic?)` | `before-after wallet` |
 | Vocabulary | `corpus_overview()` | `overview --tags` |
 
 The CLI and server fetch the corpus once from the public site and cache it in
@@ -103,7 +102,6 @@ done, walk the brief's checklist honestly — including empty, loading and error
 ## Critiquing an existing UI
 
 1. `search_designs` for the same kind of screen; `view_design` the best three.
-2. `before_after(topic)` to see what redesigns typically fix.
 3. Report the **three highest-impact changes first** (hierarchy, primary action, density,
    colour/contrast, type), each tied to a reference id, with concrete values (sizes, hex,
    spacing). Then polish notes. Rubric: [references/critique.md](references/critique.md).

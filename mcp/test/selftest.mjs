@@ -26,7 +26,7 @@ ok(/design_brief/.test(init.result.instructions), 'server instructions mention d
 p.stdin.write('{"jsonrpc":"2.0","method":"notifications/initialized"}\n');
 
 const tools = (await rpc('tools/list')).result.tools;
-ok(tools.length === 14, `14 tools listed (${tools.length})`);
+ok(tools.length === 13, `13 tools listed (${tools.length})`);
 ok(tools.every((t) => t.annotations?.readOnlyHint && t.inputSchema?.type === 'object' && t.description.length > 60), 'every tool is read-only, typed and described');
 
 let r = await call('search_designs', { query: 'crypto wallet', limit: 5 });
@@ -38,15 +38,15 @@ ok(r.structuredContent.results.every((x) => x.roles?.includes('onboarding') && x
 r = await call('search_designs', { query: 'pricing', limit: 2, include_images: true });
 ok(r.content.filter((c) => c.type === 'image').length === 2, 'include_images attaches thumbnails');
 
-r = await call('get_design', { id: 'img-0468' });
-ok(/Lisbon|Day plan/.test(r.content[0].text) && r.structuredContent.colour_roles, 'get_design (case-insensitive id) with colour roles');
+r = await call('get_design', { id: 'org-1037' });
+ok(/Wander|travel/i.test(r.content[0].text) && r.structuredContent.colour_roles && r.structuredContent.live_url, 'get_design (case-insensitive id) with colour roles + live url');
 ok((await call('get_design', { id: 'NOPE-1' })).isError === true, 'unknown id is a tool error, not a crash');
 
-r = await call('view_design', { ids: ['IMG-0468', 'VID-0221'], size: 'thumb' });
-ok(r.content.filter((c) => c.type === 'image').length === 3, 'view_design: image + video poster + strip');
+r = await call('view_design', { ids: ['ORG-1037', 'ORG-0073'], size: 'thumb' });
+ok(r.content.filter((c) => c.type === 'image').length === 2, 'view_design returns both images');
 
-r = await call('find_similar', { id: 'IMG-0468', limit: 5 });
-ok(r.structuredContent.results.length === 5 && !r.structuredContent.results.some((x) => x.id === 'IMG-0468'), 'find_similar excludes self');
+r = await call('find_similar', { id: 'ORG-1037', limit: 5 });
+ok(r.structuredContent.results.length === 5 && !r.structuredContent.results.some((x) => x.id === 'ORG-1037'), 'find_similar excludes self');
 
 r = await call('design_brief', { screen: 'onboarding for a sleep tracking app', platform: 'ios', mood: 'calm' });
 const b = r.structuredContent;
@@ -63,23 +63,21 @@ r = await call('search_by_color', { hex: '#C1FE1A' });
 ok(r.structuredContent.results.length > 0 && r.structuredContent.family === 'lime', 'search_by_color finds lime');
 
 for (const f of ['css', 'tailwind', 'dtcg', 'swiftui', 'compose']) {
-  r = await call('export_tokens', { id: 'IMG-0055', format: f });
+  r = await call('export_tokens', { id: 'ORG-0085', format: f });
   ok(!r.isError && r.structuredContent.code.length > 200, `export_tokens ${f}`);
 }
-r = await call('compare_designs', { ids: ['IMG-0432', 'IMG-0433'], include_images: true });
+r = await call('compare_designs', { ids: ['ORG-0197', 'ORG-0109'], include_images: true });
 ok(r.structuredContent.assets.length === 2 && r.content.filter((c) => c.type === 'image').length === 2, 'compare_designs with images');
-r = await call('generate_design_system', { id: 'IMG-0365', mood: 'editorial' });
+r = await call('generate_design_system', { id: 'ORG-0197', mood: 'editorial' });
 ok(/--uh-text-4xl/.test(r.structuredContent.css) && /\.btn-primary/.test(r.structuredContent.css), 'generate_design_system emits tokens + components');
 r = await call('check_contrast', { foreground: '#888', background: '#fff' });
 ok(r.structuredContent.ratio === 3.54 && r.structuredContent.suggestion, 'check_contrast + fix');
-r = await call('before_after', {});
-ok(r.structuredContent.results.length > 0, 'before_after');
 r = await call('corpus_overview', {});
-ok(r.structuredContent.totals.assets > 700, 'corpus_overview');
+ok(r.structuredContent.totals.assets > 200, 'corpus_overview');
 
 ok((await rpc('resources/templates/list')).result.resourceTemplates.length === 2, 'resource templates');
-r = (await rpc('resources/read', { uri: 'uihall://design/IMG-0055' })).result;
-ok(/Raspberry|Deep Space/i.test(r.contents[0].text), 'resources/read design');
+r = (await rpc('resources/read', { uri: 'uihall://design/ORG-0085' })).result;
+ok(/Type scale|token/i.test(r.contents[0].text), 'resources/read design');
 r = (await rpc('prompts/get', { name: 'design-screen', arguments: { screen: 'checkout' } })).result;
 ok(/design_brief/.test(r.messages[0].content.text), 'prompts/get design-screen');
 ok((await rpc('nope/method')).error?.code === -32601, 'unknown method → -32601');

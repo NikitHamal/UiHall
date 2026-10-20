@@ -6,18 +6,17 @@
  *
  *   node uihall.mjs brief "onboarding for a sleep tracking app" --platform ios --mood calm
  *   node uihall.mjs search "dark crypto wallet" --limit 5
- *   node uihall.mjs get IMG-0468
- *   node uihall.mjs similar IMG-0468
+ *   node uihall.mjs get ORG-1037
+ *   node uihall.mjs similar ORG-1037
  *   node uihall.mjs palette --mood calm --query wellness
  *   node uihall.mjs color "#C6F432"
- *   node uihall.mjs tokens IMG-0365 --format tailwind
- *   node uihall.mjs compare IMG-0432 IMG-0433
- *   node uihall.mjs system IMG-0365 --mood editorial   → full starter design system CSS
+ *   node uihall.mjs tokens ORG-0197 --format tailwind
+ *   node uihall.mjs compare ORG-0197 ORG-0109
+ *   node uihall.mjs system ORG-0197 --mood editorial   → full starter design system CSS
  *   node uihall.mjs contrast "#888" "#fff"
  *   node uihall.mjs patterns "dashboard"
- *   node uihall.mjs before-after wallet
  *   node uihall.mjs overview
- *   node uihall.mjs image IMG-0468        → prints a local file path you can open
+ *   node uihall.mjs image ORG-1037        → prints a local file path you can open
  */
 
 import fs from 'node:fs';
@@ -53,7 +52,6 @@ const MAP = {
   compare: () => ['compare_designs', { ids: rest }],
   system: () => ['generate_design_system', rest[0]?.startsWith('#') ? { colors: rest, mood: flags.mood } : { id: rest[0], mood: flags.mood, prefix: flags.prefix }],
   contrast: () => ['check_contrast', { foreground: rest[0], background: rest[1], target: num(flags.target) }],
-  'before-after': () => ['before_after', { topic: text, limit: num(flags.limit) }],
   overview: () => ['corpus_overview', { tags: !!flags.tags }],
 };
 

@@ -8,7 +8,7 @@
       "name": "uihall",
       "displayName": "UI Hall",
       "description": "Design from real references instead of the generic average: briefs, searchable and viewable references, patterns with build rules, measured palettes, token export and contrast checks.",
-      "version": "2.1.0",
+      "version": "3.0.0",
       "category": "design",
       "tags": ["design", "ui", "ux", "frontend", "design-system", "mcp", "palette", "accessibility"],
       "source": { "source": "git-subdir", "url": "https://github.com/NikitHamal/UiHall.git", "path": "plugin" },

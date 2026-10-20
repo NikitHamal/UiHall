@@ -2,13 +2,13 @@ import { esc } from '../lib.js';
 import { footer } from './shared.js';
 
 export const DEMOS = [
-  { id: 'wallet', name: 'Halo', kind: 'iOS app · dark · fintech', title: 'A premium wallet, <em>one blue at a time.</em>', refs: ['IMG-0365', 'IMG-0433', 'VID-0382'],
+  { id: 'wallet', name: 'Halo', kind: 'iOS app · dark · fintech', title: 'A premium wallet, <em>one blue at a time.</em>', refs: ['ORG-0197', 'ORG-0109', 'ORG-0189'],
     text: 'A complete wallet: home with live balance and chart, markets, asset detail, swap, activity, profile — plus Send and Receive flows.' },
-  { id: 'dashboard', name: 'Kiln', kind: 'Web app · dark · analytics', title: 'A dashboard that <em>leads with the number.</em>', refs: ['VID-0314', 'IMG-0518', 'IMG-0455'],
+  { id: 'dashboard', name: 'Kiln', kind: 'Web app · dark · analytics', title: 'A dashboard that <em>leads with the number.</em>', refs: ['ORG-0001', 'ORG-0577', 'ORG-0297'],
     text: 'Overview, reports, transactions with a detail drawer, accounts and settings — sortable, filterable and keyboard friendly.' },
-  { id: 'pricing', name: 'Relay', kind: 'Website · light · developer tool', title: 'A product site, <em>no surprises.</em>', refs: ['IMG-0587', 'IMG-0592', 'IMG-0610'],
+  { id: 'pricing', name: 'Relay', kind: 'Website · light · developer tool', title: 'A product site, <em>no surprises.</em>', refs: ['ORG-0097', 'ORG-0997', 'ORG-0033'],
     text: 'Landing, pricing with a usage-based recommender, compare table, FAQ and a sign-up flow.' },
-  { id: 'sleep', name: 'Hush', kind: 'iOS app · light · wellness', title: 'A calm onboarding, <em>from evidence.</em>', refs: ['VID-0236', 'IMG-0618', 'VID-0173'],
+  { id: 'sleep', name: 'Hush', kind: 'iOS app · light · wellness', title: 'A calm onboarding, <em>from evidence.</em>', refs: ['ORG-0125', 'ORG-0037', 'ORG-0061'],
     text: 'Onboarding into a working app: tonight’s plan, a wind-down timer, sleep insights and a journal.' },
 ];
 

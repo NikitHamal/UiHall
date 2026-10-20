@@ -498,6 +498,7 @@ class UiHall {
     const surf = arr(f.surface), hue = arr(f.hue);
     return list.filter((a) => {
       if (f.kind && f.kind !== 'all' && a.kind !== f.kind) return false;
+      if (f.viewport && f.viewport !== 'all' && a.viewport !== f.viewport) return false;
       if (cat.length && !cat.includes(a.category)) return false;
       if (typ.length && !typ.includes(a.type)) return false;
       if (role.length && !role.some((r) => a.roles?.includes(r))) return false;
@@ -621,9 +622,9 @@ class UiHall {
       top_roles: (c.roles || []).slice(0, 10), top_styles: (c.styles || []).slice(0, 10), top_tags: (c.tags || []).slice(0, 24),
       patterns: this.patterns().map((p) => ({ name: p.name, evidence: p.evidence_count })),
       provenance: {
-        descriptions: 'Every asset was looked at and written up; re-audited against the pixels in October 2026.',
-        palettes: 'Measured: k-means over the real pixels, with area percentages.',
-        motion: 'Measured: mean frame-to-frame difference. Only clips that actually move ship as video.',
+        screens: 'Every screen is an original built in code for UI Hall, live and MIT licensed, in four themes.',
+        descriptions: 'Each write-up is generated from the exact content the screen renders.',
+        palettes: 'Measured: k-means over the rendered pixels, with area percentages.',
       },
     };
   }
@@ -659,8 +660,12 @@ class UiHall {
     const found = this.search({ query: query || mood, boost: query ? mood : '', limit: 60, surface, category, exclude_crops: true }).results.map((r) => r.asset);
     const pool = found.length ? found : this.filter(this.assets, { surface, category });
     const picks = [];
+    const cands = [];
     for (const a of pool) {
-      const r = a._d.roles;
+      cands.push([a, a._d.roles]);
+      for (const [th, v] of Object.entries(a.variants || {})) if (v.palette_detail && th !== a.themes?.[0]) cands.push([{ ...a, id: a.id, theme: th }, paletteRoles(v.palette_detail)]);
+    }
+    for (const [a, r] of cands) {
       if (!r || !r.accent) continue;
       if (picks.some((p) => deltaE(p.roles.accent, r.accent) < 0.06 && deltaE(p.roles.background, r.background) < 0.06)) continue;
       picks.push({ asset: a, roles: r });
@@ -957,7 +962,7 @@ const ROLE_GUIDE = {
  */
 
 
-const VERSION = '2.1.0';
+const VERSION = '3.0.0';
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const SITE_URL = (process.env.UIHALL_SITE || SITE).replace(/\/?$/, '/');
 const CACHE = process.env.UIHALL_CACHE || path.join(os.homedir(), '.cache', 'uihall');
@@ -1046,8 +1051,7 @@ const FILTERS = {
   tag: arr('Tags (all of), e.g. bottom-nav, chips, serif, kpi, 3d, sheet. See corpus_overview for the vocabulary.'),
   surface: SURFACE,
   hue: { type: 'string', enum: HUE_FAMILIES, description: 'Only assets using this colour family as a real accent.' },
-  has_motion: { type: 'boolean', description: 'Only assets that ship a playable motion clip.' },
-  source: { type: 'string', enum: ['original', 'reference'], description: "'original' = screens built in code for UI Hall (MIT, safe to reuse); 'reference' = collected work, study only." },
+  viewport: { type: 'string', enum: ['phone', 'desktop', 'canvas'], description: 'Format: phone screens, desktop screens or design-system sheets.' },
 };
 
 /* ------------------------------------------------------------ renderers -- */
@@ -1068,7 +1072,7 @@ const TOOLS = [
   {
     name: 'search_designs',
     title: 'Search designs',
-    description: 'Search 850+ curated, hand-described UI/UX references — collected work plus MIT-licensed originals built in code (mobile screens, web pages, dashboards, motion clips, design systems). '
+    description: 'Search 268 live, MIT-licensed UI screens built in code — mobile apps, websites, dashboards and design systems across 16+ product domains, each in four themes and written up from its own content. '
       + 'Ranked full-text search with synonyms ("fintech" also finds wallet, banking…) plus facet filters. '
       + 'Use this first whenever you design, build or critique an interface, so decisions come from real examples instead of the generic average. '
       + 'Set include_images to actually see the top results.',
@@ -1100,11 +1104,11 @@ const TOOLS = [
     title: 'Get design',
     description: 'Full record for one reference: the hand-written description, facets, the measured palette with area percentages, '
       + 'colour roles (background/surface/text/accent) with WCAG contrast, printed palette names if any, and image/clip URLs.',
-    inputSchema: { type: 'object', required: ['id'], properties: { id: str('Asset id, e.g. IMG-0468 or VID-0221.') } },
+    inputSchema: { type: 'object', required: ['id'], properties: { id: str('Asset id, e.g. ORG-1037 or ORG-0073.') } },
     annotations: { title: 'Get design', ...RO },
     run(h, { id }) {
       const a = h.get(id);
-      if (!a) throw new Error(`Unknown id ${id}. Ids look like IMG-0468 or VID-0221; get them from search_designs.`);
+      if (!a) throw new Error(`Unknown id ${id}. Ids look like ORG-1037 or ORG-0073; get them from search_designs.`);
       const f = h.full(a);
       const cr = f.colour_roles;
       const text = [
@@ -1368,20 +1372,6 @@ const TOOLS = [
     },
   },
   {
-    name: 'before_after',
-    title: 'Before / after',
-    description: 'Redesign evidence: the same screen done weakly and done well, with the write-up of what changed. Best teaching material in the corpus for critiques.',
-    inputSchema: { type: 'object', properties: { topic: str('Optional topic: "wallet", "landing page", "settings".'), limit: int('Max results.', 1, 20, 6) } },
-    annotations: { title: 'Before / after', ...RO },
-    run(h, { topic = '', limit = 6 }) {
-      const r = h.beforeAfter({ topic, limit });
-      return {
-        text: r.length ? r.map((x) => line(h, x.asset)).join('\n') : 'No before/after pairs match; try without a topic.',
-        data: { topic: topic || null, results: r.map((x) => h.card(x.asset)) },
-      };
-    },
-  },
-  {
     name: 'corpus_overview',
     title: 'Corpus overview',
     description: 'What the corpus contains and the exact vocabulary for filters: categories, types, roles, styles, tags with counts, surfaces, colour families, patterns and provenance.',
@@ -1432,7 +1422,6 @@ const PROMPTS = [
     render: ({ description }) => `Critique this interface: ${description}
 
 1. search_designs for the same kind of screen and view_design the best 3.
-2. before_after for the topic, to see what redesigns typically fix.
 3. Report: the 3 changes with the biggest impact first (hierarchy, primary action, density, colour/contrast, type), each tied to a reference id. Then smaller polish notes. Be specific: sizes, colours, spacing values.`,
   },
   {
@@ -1455,18 +1444,17 @@ const PROMPTS = [
  *
  *   node uihall.mjs brief "onboarding for a sleep tracking app" --platform ios --mood calm
  *   node uihall.mjs search "dark crypto wallet" --limit 5
- *   node uihall.mjs get IMG-0468
- *   node uihall.mjs similar IMG-0468
+ *   node uihall.mjs get ORG-1037
+ *   node uihall.mjs similar ORG-1037
  *   node uihall.mjs palette --mood calm --query wellness
  *   node uihall.mjs color "#C6F432"
- *   node uihall.mjs tokens IMG-0365 --format tailwind
- *   node uihall.mjs compare IMG-0432 IMG-0433
- *   node uihall.mjs system IMG-0365 --mood editorial   → full starter design system CSS
+ *   node uihall.mjs tokens ORG-0197 --format tailwind
+ *   node uihall.mjs compare ORG-0197 ORG-0109
+ *   node uihall.mjs system ORG-0197 --mood editorial   → full starter design system CSS
  *   node uihall.mjs contrast "#888" "#fff"
  *   node uihall.mjs patterns "dashboard"
- *   node uihall.mjs before-after wallet
  *   node uihall.mjs overview
- *   node uihall.mjs image IMG-0468        → prints a local file path you can open
+ *   node uihall.mjs image ORG-1037        → prints a local file path you can open
  */
 
 
@@ -1497,7 +1485,6 @@ const MAP = {
   compare: () => ['compare_designs', { ids: rest }],
   system: () => ['generate_design_system', rest[0]?.startsWith('#') ? { colors: rest, mood: flags.mood } : { id: rest[0], mood: flags.mood, prefix: flags.prefix }],
   contrast: () => ['check_contrast', { foreground: rest[0], background: rest[1], target: num(flags.target) }],
-  'before-after': () => ['before_after', { topic: text, limit: num(flags.limit) }],
   overview: () => ['corpus_overview', { tags: !!flags.tags }],
 };
 

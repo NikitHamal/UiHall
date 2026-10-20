@@ -12,7 +12,6 @@ const VIEWS = {
   library: () => import('./views/library.js'),
   patterns: () => import('./views/patterns.js'),
   colour: () => import('./views/colour.js'),
-  motion: () => import('./views/motion.js'),
   agents: () => import('./views/agents.js'),
   board: () => import('./views/board.js'),
   originals: () => import('./views/originals.js'),
@@ -118,7 +117,7 @@ async function boot() {
   addEventListener('keydown', (e) => {
     if (/input|textarea|select/i.test(document.activeElement?.tagName) || e.metaKey || e.ctrlKey || e.altKey) return;
     if (e.key === '?') { e.preventDefault(); openKeys(); }
-    const jump = { g: '#/', l: '#/library', b: '#/board', a: '#/agents', c: '#/colour', m: '#/motion' }[e.key];
+    const jump = { g: '#/', l: '#/library', b: '#/board', a: '#/agents', c: '#/colour' }[e.key];
     if (jump && !isDetailOpen()) location.hash = jump;
   });
   const badge = $('#boardBadge');
@@ -134,7 +133,7 @@ async function boot() {
     app.h = new UiHall(await loadCorpus(), { site: new URL('.', location.href).href });
     window.__uh = app.h;
     const t = app.h.corpus.totals;
-    $('#railStat').innerHTML = `<b>${t.assets}</b> references · <b>${t.originals || 0}</b> originals`;
+    $('#railStat').innerHTML = `<b>${t.assets}</b> live screens · MIT`;
     $(".search__ph").textContent = "Search the hall…";
   } catch (e) {
     $('#main').innerHTML = `<div class="container page-head"><h1 class="display h-md">The corpus didn’t load.</h1><p class="lede">${e.message}. If you opened this file directly, serve the repo over http: <code>node tools/serve.mjs</code>.</p></div>`;

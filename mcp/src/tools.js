@@ -23,8 +23,7 @@ const FILTERS = {
   tag: arr('Tags (all of), e.g. bottom-nav, chips, serif, kpi, 3d, sheet. See corpus_overview for the vocabulary.'),
   surface: SURFACE,
   hue: { type: 'string', enum: HUE_FAMILIES, description: 'Only assets using this colour family as a real accent.' },
-  has_motion: { type: 'boolean', description: 'Only assets that ship a playable motion clip.' },
-  source: { type: 'string', enum: ['original', 'reference'], description: "'original' = screens built in code for UI Hall (MIT, safe to reuse); 'reference' = collected work, study only." },
+  viewport: { type: 'string', enum: ['phone', 'desktop', 'canvas'], description: 'Format: phone screens, desktop screens or design-system sheets.' },
 };
 
 /* ------------------------------------------------------------ renderers -- */
@@ -45,7 +44,7 @@ export const TOOLS = [
   {
     name: 'search_designs',
     title: 'Search designs',
-    description: 'Search 850+ curated, hand-described UI/UX references — collected work plus MIT-licensed originals built in code (mobile screens, web pages, dashboards, motion clips, design systems). '
+    description: 'Search 268 live, MIT-licensed UI screens built in code — mobile apps, websites, dashboards and design systems across 16+ product domains, each in four themes and written up from its own content. '
       + 'Ranked full-text search with synonyms ("fintech" also finds wallet, banking…) plus facet filters. '
       + 'Use this first whenever you design, build or critique an interface, so decisions come from real examples instead of the generic average. '
       + 'Set include_images to actually see the top results.',
@@ -77,11 +76,11 @@ export const TOOLS = [
     title: 'Get design',
     description: 'Full record for one reference: the hand-written description, facets, the measured palette with area percentages, '
       + 'colour roles (background/surface/text/accent) with WCAG contrast, printed palette names if any, and image/clip URLs.',
-    inputSchema: { type: 'object', required: ['id'], properties: { id: str('Asset id, e.g. IMG-0468 or VID-0221.') } },
+    inputSchema: { type: 'object', required: ['id'], properties: { id: str('Asset id, e.g. ORG-1037 or ORG-0073.') } },
     annotations: { title: 'Get design', ...RO },
     run(h, { id }) {
       const a = h.get(id);
-      if (!a) throw new Error(`Unknown id ${id}. Ids look like IMG-0468 or VID-0221; get them from search_designs.`);
+      if (!a) throw new Error(`Unknown id ${id}. Ids look like ORG-1037 or ORG-0073; get them from search_designs.`);
       const f = h.full(a);
       const cr = f.colour_roles;
       const text = [
@@ -345,20 +344,6 @@ export const TOOLS = [
     },
   },
   {
-    name: 'before_after',
-    title: 'Before / after',
-    description: 'Redesign evidence: the same screen done weakly and done well, with the write-up of what changed. Best teaching material in the corpus for critiques.',
-    inputSchema: { type: 'object', properties: { topic: str('Optional topic: "wallet", "landing page", "settings".'), limit: int('Max results.', 1, 20, 6) } },
-    annotations: { title: 'Before / after', ...RO },
-    run(h, { topic = '', limit = 6 }) {
-      const r = h.beforeAfter({ topic, limit });
-      return {
-        text: r.length ? r.map((x) => line(h, x.asset)).join('\n') : 'No before/after pairs match; try without a topic.',
-        data: { topic: topic || null, results: r.map((x) => h.card(x.asset)) },
-      };
-    },
-  },
-  {
     name: 'corpus_overview',
     title: 'Corpus overview',
     description: 'What the corpus contains and the exact vocabulary for filters: categories, types, roles, styles, tags with counts, surfaces, colour families, patterns and provenance.',
@@ -409,7 +394,6 @@ export const PROMPTS = [
     render: ({ description }) => `Critique this interface: ${description}
 
 1. search_designs for the same kind of screen and view_design the best 3.
-2. before_after for the topic, to see what redesigns typically fix.
 3. Report: the 3 changes with the biggest impact first (hierarchy, primary action, density, colour/contrast, type), each tied to a reference id. Then smaller polish notes. Be specific: sizes, colours, spacing values.`,
   },
   {

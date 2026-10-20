@@ -5,7 +5,7 @@ import { $, esc, icon, bindCopy, ink, segmented, tint } from '../lib.js';
 import { paletteRoles } from '../../../mcp/src/color.js';
 const SW = { ember: '#FF6A2B', mint: '#1F7A4D', ink: '#2B4BF2', grape: '#C6F432' };
 let liveTheme = null, liveFor = null;
-import { thumb, label } from './shared.js';
+import { thumb, label, pickTheme } from './shared.js';
 import { board, pinIcon, flyToBoard } from '../board.js';
 
 let host = null, current = null, list = [], keyHandler = null;
@@ -84,7 +84,7 @@ function fill(app, a, theme) {
   const { h } = app;
   const f = h.full(a);
   const sheet = host.querySelector('.sheet');
-  if (a.original && a.variants) { if (liveFor !== a.id) { liveFor = a.id; liveTheme = a.themes[0]; } if (theme) liveTheme = theme; } else liveFor = null;
+  if (a.original && a.variants) { if (liveFor !== a.id) { liveFor = a.id; liveTheme = pickTheme(a) || a.themes[0]; } if (theme) liveTheme = theme; } else liveFor = null;
   const v = a.original && a.variants ? a.variants[liveTheme] : null;
   const pal = (v ? v.palette_detail : a.palette_detail) || [];
   const r = v ? h.checkRoles(paletteRoles(pal)) : f.colour_roles;

@@ -1,7 +1,9 @@
 import { esc, icon, tint, withCopy } from '../lib.js';
 import { CLIENTS } from '../install.js';
 
-export const thumb = (a) => a.thumb || a.src;
+// Originals show a different one of their four themes per screen, so grids feel varied.
+export const pickTheme = (a) => (a.themes?.length ? a.themes[[...a.id].reduce((n, ch) => n * 31 + ch.charCodeAt(0), 7) % a.themes.length] : null);
+export const thumb = (a) => { const t = pickTheme(a); return (t && a.variants?.[t]?.thumb) || a.thumb || a.src; };
 export const label = (s) => String(s || '').replace(/-/g, ' ');
 
 export function footer(h) {
@@ -12,14 +14,14 @@ export function footer(h) {
       <div class="footer__grid">
         <div>
           <h4>UI Hall</h4>
-          <p style="max-width:34ch">${t.assets} real interface designs, read by eye and measured by machine. A reference for people, and a tool for the agents they work with.</p>
+          <p style="max-width:34ch">${t.assets} interface screens built in code, live in four themes, colour-measured. A reference for people, and a tool for the agents they work with.</p>
         </div>
-        <div><h4>Explore</h4><a href="#/library">Library</a><a href="#/patterns">Patterns</a><a href="#/colour">Colour</a><a href="#/motion">Motion</a></div>
+        <div><h4>Explore</h4><a href="#/library">Library</a><a href="#/patterns">Patterns</a><a href="#/colour">Colour</a></div>
         <div><h4>Agents</h4><a href="#/agents">MCP server</a><a href="#/agents?tab=skill">Agent skill</a><a href="#/agents?tab=playground">Playground</a><a href="demo/">Built with the skill</a></div>
         <div><h4>Source</h4><a href="https://github.com/NikitHamal/UiHall">GitHub</a><a href="https://github.com/NikitHamal/UiHall/tree/main/mcp">uihall-mcp</a><a href="https://github.com/NikitHamal/UiHall/tree/main/skills/uihall">Skill</a></div>
       </div>
       <div class="footer__big" aria-hidden="true">UI <em>Hall</em></div>
-      <p class="mt-m faint" style="font-size:12px">Interfaces belong to the people who designed them; collected from public sources for study. Learn the vocabulary — don’t ship a clone.</p>
+      <p class="mt-m faint" style="font-size:12px">Every screen in the hall is an original built for UI Hall and MIT licensed — study it, remix it, ship it.</p>
     </div>
   </footer>`;
 }

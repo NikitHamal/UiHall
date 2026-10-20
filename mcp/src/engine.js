@@ -164,6 +164,7 @@ export class UiHall {
     const surf = arr(f.surface), hue = arr(f.hue);
     return list.filter((a) => {
       if (f.kind && f.kind !== 'all' && a.kind !== f.kind) return false;
+      if (f.viewport && f.viewport !== 'all' && a.viewport !== f.viewport) return false;
       if (cat.length && !cat.includes(a.category)) return false;
       if (typ.length && !typ.includes(a.type)) return false;
       if (role.length && !role.some((r) => a.roles?.includes(r))) return false;
@@ -287,9 +288,9 @@ export class UiHall {
       top_roles: (c.roles || []).slice(0, 10), top_styles: (c.styles || []).slice(0, 10), top_tags: (c.tags || []).slice(0, 24),
       patterns: this.patterns().map((p) => ({ name: p.name, evidence: p.evidence_count })),
       provenance: {
-        descriptions: 'Every asset was looked at and written up; re-audited against the pixels in October 2026.',
-        palettes: 'Measured: k-means over the real pixels, with area percentages.',
-        motion: 'Measured: mean frame-to-frame difference. Only clips that actually move ship as video.',
+        screens: 'Every screen is an original built in code for UI Hall, live and MIT licensed, in four themes.',
+        descriptions: 'Each write-up is generated from the exact content the screen renders.',
+        palettes: 'Measured: k-means over the rendered pixels, with area percentages.',
       },
     };
   }
@@ -325,8 +326,12 @@ export class UiHall {
     const found = this.search({ query: query || mood, boost: query ? mood : '', limit: 60, surface, category, exclude_crops: true }).results.map((r) => r.asset);
     const pool = found.length ? found : this.filter(this.assets, { surface, category });
     const picks = [];
+    const cands = [];
     for (const a of pool) {
-      const r = a._d.roles;
+      cands.push([a, a._d.roles]);
+      for (const [th, v] of Object.entries(a.variants || {})) if (v.palette_detail && th !== a.themes?.[0]) cands.push([{ ...a, id: a.id, theme: th }, paletteRoles(v.palette_detail)]);
+    }
+    for (const [a, r] of cands) {
       if (!r || !r.accent) continue;
       if (picks.some((p) => deltaE(p.roles.accent, r.accent) < 0.06 && deltaE(p.roles.background, r.background) < 0.06)) continue;
       picks.push({ asset: a, roles: r });

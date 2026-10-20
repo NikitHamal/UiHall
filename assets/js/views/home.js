@@ -13,7 +13,7 @@ import { BLURB } from '../blurbs.js';
 import { RING } from '../ring-data.js';
 
 /* Curated picks for the "measured" demo — strong, varied palettes. */
-const ANATOMY = ['IMG-0468', 'IMG-0365', 'IMG-0055', 'IMG-0397', 'IMG-0587', 'IMG-0618'];
+const ANATOMY = ['ORG-1037', 'ORG-0197', 'ORG-0085', 'ORG-0029', 'ORG-0097', 'ORG-0037'];
 
 /* Scripted agent sessions; results come from the real engine at runtime. */
 const SESSIONS = [
@@ -44,14 +44,14 @@ export default function home(root, app) {
   <section class="lp-hero2" id="lpHero">
     <div class="lp-hero2__copy">
       <h1 class="lp-title" id="heroTitle">The design reference your agent can <span class="lp-scribble">see.<svg viewBox="0 0 220 40" preserveAspectRatio="none" aria-hidden="true"><path d="M4 26 C40 10 90 8 132 14 S196 30 216 18" pathLength="1"/><path d="M18 34 C70 26 130 26 190 30" pathLength="1"/></svg></span></h1>
-      <p class="lp-lede lp-rise" style="--d:5">${t.assets} interfaces, each written up by hand and colour-measured from the pixels — ${t.originals || 0} of them built in code and free to use. For you to study, and for Claude Code, Cursor and any MCP agent to design from.</p>
+      <p class="lp-lede lp-rise" style="--d:5">${t.assets} interface screens built in code — live, interactive, four themes each, every colour measured from the pixels and every one MIT licensed. For you to study and ship, and for Claude Code, Cursor and any MCP agent to design from.</p>
       <div class="lp-cta lp-rise" style="--d:6">
         <a class="btn btn--primary lp-btn" href="#/library">Explore the hall ${icon.arrow}</a>
         <button class="lp-copy" type="button" data-copy="claude plugin marketplace add https://nikithamal.github.io/UiHall/.claude-plugin/marketplace.json && claude plugin install uihall@uihall" data-copy-label="Install command copied"><span>$</span>claude plugin install uihall<em>${icon.copy}</em></button>
       </div>
     </div>
     <div class="lp-ring" id="lpRing" aria-label="Original screens — drag to turn"><div class="lp-ring__track" id="lpTrack"></div></div>
-    <p class="lp-ring__caption lp-rise" style="--d:8">Every screen in this ring is an original — built in code, MIT licensed, live in the library. <a href="#/originals">See them all ${icon.arrow}</a></p>
+    <p class="lp-ring__caption lp-rise" style="--d:8">Every screen here is live in the hall — built in code, MIT licensed. <a href="#/originals">See them all ${icon.arrow}</a></p>
   </section>
 
   <section class="container lp-manifesto" id="lpManifesto">
@@ -59,7 +59,7 @@ export default function home(root, app) {
   </section>
 
   <section class="container lp-numbers" id="lpNumbers" data-io>
-    ${[[t.assets, 'references', 'Every one opened, described and colour-measured.'], [t.originals || 0, 'originals', 'Built in code, live, four themes each, MIT.'], [h.patterns().length, 'patterns', 'Structural moves with build rules and receipts.'], [TOOLS.length, 'agent tools', 'One MCP server, one skill, zero dependencies.']].map(([n, l, d], i) => `<div class="lp-num" style="--d:${i}"><b class="num" data-count="${n}">0</b><span>${l}</span><p>${d}</p></div>`).join('')}
+    ${[[t.assets, 'live screens', 'Built in code, written up and colour-measured.'], [t.assets * 4, 'themed variants', 'Every screen ships in four palettes from one file.'], [h.patterns().length, 'patterns', 'Structural moves with build rules and receipts.'], [TOOLS.length, 'agent tools', 'One MCP server, one skill, zero dependencies.']].map(([n, l, d], i) => `<div class="lp-num" style="--d:${i}"><b class="num" data-count="${n}">0</b><span>${l}</span><p>${d}</p></div>`).join('')}
   </section>
   <div class="marquee lp-marquee" aria-hidden="true"><div class="marquee__track">${(() => { const x = h.patterns().map((pt) => `<span class="lp-tag">${esc(pt.name)}</span>`).join(''); return x + x; })()}</div></div>
 
@@ -131,7 +131,7 @@ export default function home(root, app) {
     <div class="lp-head">
       <span class="eyebrow">Built with the skill</span>
       <h2 class="display h-lg">Evidence in, <em>product out.</em></h2>
-      <p class="lede">Four complete, working apps made by following the skill end to end. Each cites the references and measured palette it borrowed.</p>
+      <p class="lede">Four complete, working apps made by following the skill end to end. Each links related originals in the hall.</p>
     </div>
     <div class="lp-demos">
       ${[['wallet', 'Halo', 'Wallet app · iOS', 'Tabs, coin pages, swap, send, receive, receipts'], ['pricing', 'Relay', 'Product site · web', 'Product, pricing, docs, changelog, sign-up'], ['dashboard', 'Kiln', 'Analytics · web', 'Reports, transactions, accounts, ⌘K'], ['sleep', 'Hush', 'Sleep app · iOS', 'Onboarding, routine, insights, sounds, journal']].map(([d, n, k, f], i) => `
@@ -234,7 +234,7 @@ export default function home(root, app) {
     <div class="lp-refgrid">${brief.references.slice(0, 6).map((r, i) => `<div style="--i:${i}"><img src="${thumb(r.asset)}" alt=""><span>${r.asset.id}</span></div>`).join('')}</div>
     <div class="lp-pcard__foot"><span>${brief.patterns.slice(0, 2).map((x) => esc(x.name)).join(' · ')}</span><span class="stage__palette in" style="display:flex;gap:4px;width:120px">${pal ? [pal.background, pal.surface, pal.accent, pal.text].map((c, i) => `<i style="--c:${c};--i:${i};height:22px"></i>`).join('') : ''}</span></div></div>`;
   const look = brief.references[0].asset;
-  panels[1].innerHTML = `<div class="lp-look"><img src="${look.src}" alt="${esc(look.title)}"><div class="lp-look__ann lp-look__ann--1"><b>Structure</b> one promise per step</div><div class="lp-look__ann lp-look__ann--2"><b>Rhythm</b> visual top · CTA in thumb zone</div><div class="lp-look__ann lp-look__ann--3"><b>Skip</b> its mascot and blue — wrong product</div></div>`;
+  panels[1].innerHTML = `<div class="lp-look"><img src="${look.src}" alt="${esc(look.title)}"><div class="lp-look__ann lp-look__ann--1"><b>Structure</b> one promise per step</div><div class="lp-look__ann lp-look__ann--2"><b>Rhythm</b> visual top · CTA in thumb zone</div><div class="lp-look__ann lp-look__ann--3"><b>Skip</b> its brand colour — wrong product</div></div>`;
   const sys = h.designSystem({ id: look.id, name: 'hush' });
   panels[2].innerHTML = `<div class="lp-build"><div class="lp-build__ui" style="--b:${sys.tokens.color.background};--s:${sys.tokens.color.surface};--t:${sys.tokens.color.text};--a:${sys.tokens.color.accent};--o:${sys.tokens.color['on-accent']};--m:${sys.tokens.color['text-muted']}">
       <span class="lp-build__eyebrow">Step 1 of 3</span><b>Sleep is a skill.</b><p>Two questions and Hush builds tonight’s wind-down around you.</p><i class="lp-build__btn">Get started</i></div>

@@ -4,7 +4,7 @@
 
 **Design evidence for humans and agents.**
 
-755 real interface designs, each one looked at and written up by hand, every colour measured from the pixels —
+268 live interface screens built in code — four themes each, written up and colour-measured, all MIT licensed —
 as a website, an MCP server and an agent skill.
 
 [**Open the hall →**](https://nikithamal.github.io/UiHall/) · [For agents](https://nikithamal.github.io/UiHall/#/agents) · [Playground](https://nikithamal.github.io/UiHall/#/agents?tab=playground)
@@ -16,13 +16,13 @@ as a website, an MCP server and an agent skill.
 ---
 
 Ask a coding agent for "a finance app" and you get a blue gradient, a card and a rounded button — the average of
-everything it has seen. UI Hall replaces the average with specific, real, *described* references, and lets the
-agent actually look at them before it writes code.
+everything it has seen. UI Hall replaces the average with real, live, *described* screens it can search, open and
+adapt — every one MIT licensed.
 
 | | What it is |
 |---|---|
 | **The hall** (repo root) | A browsable library: ranked search, facets by role/style/surface/colour, a colour search in OKLab, a pattern library, a motion reel and a detail view that turns any palette into code tokens. |
-| **The MCP server** (`mcp/`) | `uihall-mcp` — 14 design tools for Claude Code, Cursor, VS Code, Codex, Claude Desktop or anything that speaks MCP. One file, zero dependencies, no API key. |
+| **The MCP server** (`mcp/`) | `uihall-mcp` — 13 design tools for Claude Code, Cursor, VS Code, Codex, Claude Desktop or anything that speaks MCP. One file, zero dependencies, no API key. |
 | **The skill** (`skills/uihall/`) | Tells the agent *when* and *how* to use the corpus: brief → look → steal structure → measured colour → checklist. Works with or without MCP (bundled CLI). |
 | **The plugin** (`plugin/`) | Skill + MCP in one Claude Code install. |
 | **The showcase** (`demo/`) | [Four working prototypes](https://nikithamal.github.io/UiHall/demo/) built by following the skill end to end — Halo (dark wallet), Relay (pricing page), Kiln (analytics dashboard), Hush (onboarding) — each citing its references and measured palette. |
@@ -81,7 +81,6 @@ to run fully offline from a checkout.
 | `compare_designs` | 2–4 references side by side: shared vs distinct traits, colour roles, palette distance |
 | `generate_design_system` | A paste-ready starter system — colour + ramps, type pairing and scale, radius, motion, base components |
 | `check_contrast` | WCAG ratio + verdict + the nearest passing colour |
-| `before_after` | Redesign evidence: the same screen done weakly and done well |
 | `corpus_overview` | The exact vocabulary for filters, counts, patterns and provenance |
 
 Plus resources (`uihall://overview`, `uihall://patterns`, `uihall://design/{id}`, `uihall://image/{id}`) and prompts
@@ -90,14 +89,16 @@ tool is annotated read-only and returns compact markdown for the model plus `str
 
 No MCP? The skill's CLI runs the same tools: `node skills/uihall/scripts/uihall.mjs brief "pricing page for a dev tool" --platform web`.
 
-## How the corpus is made
+## How the hall is made
 
 | Claim | How |
 |---|---|
-| **Observed** — titles & descriptions | Written by looking at each asset. In October 2026 the whole corpus was re-audited against the pixels: 707 of 766 write-ups were corrected (wrong product names, invented copy, miscounted screens, videos described as stills), 11 duplicates / empty captures removed, crops linked to their source with `crop_of`. |
-| **Measured** — palettes | k-means over the real pixels with area percentages; split into background / surface / text / accent roles and contrast-checked at query time. |
-| **Measured** — motion | Mean frame-to-frame difference; only clips that actually move ship as video, each with a six-frame strip. |
-| **Closed vocabulary** | Categories, types, roles, styles and ~700 tags from one taxonomy, so filters mean the same thing everywhere. |
+| **Original** — every screen | Designed and built in code for UI Hall from one shared kit (`originals/kit`), rendered in four themes (Ember, Mint, Ink, Grape), MIT licensed. 44 are hand-built; 224 are composed by `originals/src/gen.py` across 16 product domains × 14 screen types. |
+| **Observed** — descriptions | Generated from the exact content each screen renders, so a write-up cannot drift from its pixels. |
+| **Measured** — palettes | k-means over each rendered theme with area percentages; split into background / surface / text / accent roles and contrast-checked at query time. |
+| **Live** — interaction | Every screen opens as real HTML: toggles, chips, steppers, tabs and fields work, and the palette switches in place. |
+
+The hall previously also held ~730 collected third-party references; they were replaced by originals in October 2026 and remain only in git history.
 
 ## Repository
 

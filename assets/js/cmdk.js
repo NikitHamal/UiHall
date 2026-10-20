@@ -10,7 +10,6 @@ const PAGES = [
   ['Library', '#/library', 'Browse every reference'],
   ['Patterns', '#/patterns', 'Structural moves with build rules'],
   ['Colour', '#/colour', 'Search the corpus by colour'],
-  ['Motion', '#/motion', 'Clips that actually move'],
   ['For agents', '#/agents', 'MCP server, skill and playground'],
   ['Board', '#/board', 'Your pinned references'],
   ['Demos', 'demo/', 'Prototypes built with the skill'],
@@ -96,7 +95,7 @@ export function openKeys() {
   if (open) return;
   open = true;
   const root = $('#cmd');
-  const rows = [['⌘K  /', 'Search everything'], ['?', 'This help'], ['G', 'Home'], ['L', 'Library'], ['B', 'Board'], ['C', 'Colour'], ['M', 'Motion'], ['A', 'For agents'],
+  const rows = [['⌘K  /', 'Search everything'], ['?', 'This help'], ['G', 'Home'], ['L', 'Library'], ['B', 'Board'], ['C', 'Colour'], ['A', 'For agents'],
     ['←  →', 'Previous / next reference (in a detail view)'], ['P', 'Pin to board (in a detail view)'], ['Esc', 'Close']];
   root.innerHTML = `<div class="cmd" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts"><div class="cmd__scrim"></div>
     <div class="cmd__box" style="width:min(460px,100%);padding:26px 28px"><h3 class="display" style="font-size:30px;margin-bottom:18px">Keyboard</h3>

@@ -20,7 +20,7 @@ concrete value.
 
 ```
 ## Top 3 changes
-1. <change> — <why, tied to IMG-xxxx/VID-xxxx> — <concrete values>
+1. <change> — <why, tied to ORG-xxxx> — <concrete values>
 2. …
 3. …
 
@@ -31,4 +31,4 @@ concrete value.
 - …
 ```
 
-Use `before_after` to find redesigns of the same kind of screen — they show which fixes matter.
+Use `find_similar` and `compare_designs` on the closest screens to see which choices differ.

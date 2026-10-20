@@ -4,7 +4,7 @@
 
 import { $, $$, esc, icon, debounce, reduced, isTouch, segmented } from '../lib.js';
 import { HUE_FAMILIES } from '../../../mcp/src/color.js';
-import { thumb, label, footer } from './shared.js';
+import { thumb, label, footer, pickTheme } from './shared.js';
 import { board, pinIcon, flyToBoard } from '../board.js';
 import { openDetail } from './detail.js';
 
@@ -31,7 +31,7 @@ export default function library(root, app, route, opts = {}) {
   root.innerHTML = `
   <div class="container">
     ${opts.head || `<div class="page-head page-head--row">
-      <div><h1 class="display h-lg">Library</h1><p class="lede">Every reference, ranked by what you type and filtered by what a screen is for, how it looks and what it’s made of.</p></div>
+      <div><h1 class="display h-lg">Library</h1><p class="lede">Every screen, ranked by what you type and filtered by what it’s for, how it looks and what it’s made of — all built in code, all live.</p></div>
     </div>`}
     <div class="toolbar" id="toolbar">
       <div class="toolbar__row">
@@ -45,12 +45,11 @@ export default function library(root, app, route, opts = {}) {
         </div>
       </div>
       <div class="toolbar__row toolbar__filters" id="filters">
-        <div class="seg seg--sm" id="fKind" role="group" aria-label="Kind">
-          ${['all', 'image', 'video'].map((k) => `<button type="button" data-v="${k}" aria-pressed="${state.kind === k}">${{ all: 'All', image: 'Images', video: 'Video' }[k]}</button>`).join('')}
+        <div class="seg seg--sm" id="fKind" role="group" aria-label="Format">
+          ${['all', 'phone', 'desktop', 'canvas'].map((k) => `<button type="button" data-v="${k}" aria-pressed="${state.kind === k}">${{ all: 'All', phone: 'Mobile', desktop: 'Desktop', canvas: 'Systems' }[k]}</button>`).join('')}
         </div>
         <span class="toolbar__sep" aria-hidden="true"></span>
-        ${fixed.source ? '' : pop('source', 'Source')}${pop('category', 'Category')}${pop('role', 'Screen')}${pop('style', 'Style')}${pop('hue', 'Colour')}${pop('surface', 'Surface')}${pop('tag', 'Tags', true)}
-        <button class="fbtn" type="button" id="fMotion" aria-pressed="${state.motion}">${icon.play}<span>Motion</span></button>
+        ${pop('category', 'Category')}${pop('role', 'Screen')}${pop('style', 'Style')}${pop('hue', 'Colour')}${pop('surface', 'Surface')}${pop('tag', 'Tags', true)}
       </div>
     </div>
     <div class="lib__status"><span class="lib__count num" id="count"></span><div class="lib__active" id="active"></div></div>
@@ -110,7 +109,6 @@ export default function library(root, app, route, opts = {}) {
   document.addEventListener('pointerdown', outside);
   addEventListener('keydown', esc_, true);
 
-  $('#fMotion', root).addEventListener('click', () => { state.motion = !state.motion; commit(); });
   const placeKind = segmented($('#fKind', root), (v) => { state.kind = v; commit(); });
   segmented($('#density', root), (v) => { state.size = v; commit(); });
   $('#sort', root).addEventListener('change', (e) => { state.sort = e.target.value; commit(); });
@@ -123,7 +121,6 @@ export default function library(root, app, route, opts = {}) {
       p.querySelector('.fbtn__n').textContent = n || '';
       p.querySelector('.fbtn').classList.toggle('on', n > 0);
     }
-    $('#fMotion', root).setAttribute('aria-pressed', String(state.motion));
     for (const b of $$('#fKind button', root)) b.setAttribute('aria-pressed', String(b.dataset.v === state.kind));
     placeKind?.();
     const chips = [];
@@ -158,7 +155,7 @@ export default function library(root, app, route, opts = {}) {
   function run() {
     syncUI();
     const res = h.search({
-      query: state.q, limit: 3000, kind: state.kind, category: state.category, type: state.type, role: state.role, style: state.style,
+      query: state.q, limit: 3000, viewport: state.kind, category: state.category, type: state.type, role: state.role, style: state.style,
       tag: state.tag, surface: state.surface || undefined, hue: state.hue || undefined, has_motion: state.motion,
       source: fixed.source || state.source || undefined,
     });
@@ -204,8 +201,8 @@ export default function library(root, app, route, opts = {}) {
       el.style.cssText = `left:${c * (colW + gap)}px;top:${cols[c]}px;width:${colW}px;height:${hgt}px;transition-delay:${reduced() ? 0 : Math.min(i, 16) * 26}ms`;
       el.innerHTML = `<img src="${thumb(a)}" alt="${esc(a.title)}" loading="lazy" decoding="async">
         <span class="tile__pin" role="button" tabindex="0" data-pin="${a.id}" aria-label="Pin ${a.id} to board" aria-pressed="${board.has(a.id)}">${pinIcon(board.has(a.id))}</span>
-        ${a.original ? `<span class="tile__badge tile__badge--orig">Original · ${a.themes?.length || 1} themes</span>` : a.clip ? `<span class="tile__badge">${a.clip_meta?.duration_s ? Math.round(a.clip_meta.duration_s) + 's' : 'motion'}</span>` : ''}
-        ${showMeta ? `<span class="tile__meta"><span>${a.id} · ${esc(label(a.category))}</span><b>${esc(a.title)}</b><span class="tile__pal">${(a.palette || []).slice(0, 5).map((x) => `<i style="--c:${x}"></i>`).join('')}</span></span>` : ''}`;
+        ${a.original ? '' : a.clip ? `<span class="tile__badge">${a.clip_meta?.duration_s ? Math.round(a.clip_meta.duration_s) + 's' : 'motion'}</span>` : ''}
+        ${showMeta ? `<span class="tile__meta"><span>${a.id} · ${esc(label(a.category))}</span><b>${esc(a.title)}</b><span class="tile__pal">${((pickTheme(a) && a.variants?.[pickTheme(a)]?.palette) || a.palette || []).slice(0, 5).map((x) => `<i style="--c:${x}"></i>`).join('')}</span></span>` : ''}`;
       cols[c] += hgt + gap;
       frag.append(el);
     });

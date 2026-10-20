@@ -8,16 +8,16 @@ import { BLURB } from '../blurbs.js';
 
 const EXAMPLES = {
   search_designs: { query: 'dark onboarding with illustration', limit: 6 },
-  get_design: { id: 'IMG-0468' },
-  view_design: { ids: ['IMG-0468', 'VID-0221'] },
-  find_similar: { id: 'IMG-0365', limit: 6 },
+  get_design: { id: 'ORG-1037' },
+  view_design: { ids: ['ORG-1037', 'ORG-0073'] },
+  find_similar: { id: 'ORG-0197', limit: 6 },
   design_brief: { screen: 'checkout for a food delivery app', platform: 'ios', mood: 'warm' },
   find_patterns: { about: 'analytics dashboard', limit: 4 },
   palette_for: { mood: 'calm and trustworthy', query: 'health app', count: 3 },
   search_by_color: { hex: '#3E63DD', limit: 8 },
-  export_tokens: { id: 'IMG-0365', format: 'tailwind' },
-  compare_designs: { ids: ['IMG-0432', 'IMG-0433', 'IMG-0365'], include_images: true },
-  generate_design_system: { id: 'IMG-0618', mood: 'calm' },
+  export_tokens: { id: 'ORG-0197', format: 'tailwind' },
+  compare_designs: { ids: ['ORG-0197', 'ORG-0109', 'ORG-0197'], include_images: true },
+  generate_design_system: { id: 'ORG-0037', mood: 'calm' },
   check_contrast: { foreground: '#8A8A8A', background: '#FFFFFF' },
   before_after: { topic: 'wallet' },
   corpus_overview: {},
@@ -99,8 +99,8 @@ function mcpHtml(h) {
     <div class="faq">
       <details><summary>Does it need an API key or a clone of this repo?</summary><p>No. The server is one dependency-free file. On first run it downloads the corpus (~1.3 MB) from this site and caches it; images are fetched on demand when an agent asks to see them. Point <code>UIHALL_ROOT</code> at a local checkout to run fully offline.</p></details>
       <details><summary>Can agents really “see” the designs?</summary><p>Yes — <code>view_design</code> and <code>search_designs(include_images: true)</code> return standard MCP image content. Multimodal models (Claude, GPT-4o-class, Gemini) read them directly. Videos come back as a poster plus a six-frame strip across the clip.</p></details>
-      <details><summary>How accurate are the descriptions?</summary><p>Every reference was written up by looking at it, then the whole corpus was re-audited against the pixels in October 2026 — 707 of 766 write-ups were corrected (wrong app names, invented copy, miscounted screens, videos described as stills) and 11 duplicates or empty captures were removed. Palettes and motion scores are computed, not estimated.</p></details>
-      <details><summary>Is it safe to copy these designs?</summary><p>Learn the vocabulary — hierarchy, spacing, colour logic — not the skin. The interfaces belong to the people who designed them. The skill and the <code>design-screen</code> prompt explicitly tell agents to take structure, not surface, and to cite reference ids.</p></details>
+      <details><summary>Where do the screens come from?</summary><p>Every screen is an original built in code for UI Hall from one shared kit, rendered in four themes, and MIT licensed. Each write-up is generated from the exact content the screen renders, so descriptions cannot drift from the pixels; palettes are measured from the renders.</p></details>
+      <details><summary>Can I use these designs?</summary><p>Yes — everything is MIT licensed. Agents get the live HTML of any screen through <code>get_design</code>, so they can adapt real markup and tokens instead of guessing.</p></details>
     </div>
   </section>`;
 }

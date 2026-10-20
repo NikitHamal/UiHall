@@ -13,7 +13,7 @@ export default function colour(root, app, route) {
   <div class="container page-head">
     <span class="eyebrow" data-reveal>Colour · measured from pixels</span>
     <h1 class="display h-lg" id="ct">Search by <em>colour.</em></h1>
-    <p class="lede" data-reveal style="--d:2">Pick any colour and see the real interfaces built on it, matched in OKLab — the perceptual colour space — over palettes measured from the images themselves. Then lift the palette as tokens.</p>
+    <p class="lede" data-reveal style="--d:2">Pick any colour and see the screens built on it, across all four themes, matched in OKLab — the perceptual colour space — over palettes measured from the images themselves. Then lift the palette as tokens.</p>
   </div>
   <div class="container colour-tool">
     <div class="picker card" data-reveal>
@@ -28,7 +28,7 @@ export default function colour(root, app, route) {
       <div class="color-results" id="res"></div>
     </div>
   </div>
-  <section class="container section">
+  ${pairs.length ? `<section class="container section">
     <div class="section__head">
       <h2 class="display h-md" data-reveal>Named <em>pairings.</em></h2>
       <p class="lede" data-reveal style="--d:1">Two-tone cards with designer-given names and printed hex values — each one a contrast specimen.</p>
@@ -38,7 +38,7 @@ export default function colour(root, app, route) {
         <div class="pair__bands">${p.map((s) => `<div style="background:${s.hex};color:${s.ink}">${esc(s.name)}</div>`).join('')}</div>
         <div class="pair__meta"><b>${p.map((s) => esc(s.name)).join(' / ')}</b><code>${p.map((s) => s.hex).join(' ')}</code></div>
       </a>`).join('')}</div>
-  </section>
+  </section>` : ''}
   ${footer(h)}`;
 
   const t = $('#ct', root); split(t); requestAnimationFrame(() => t.classList.add('in'));

@@ -8,7 +8,7 @@ https://nikithamal.github.io/UiHall/skills/uihall.zip).
 
 **Name:** UI Hall — Design From Evidence
 
-**Tagline (≤ 80 chars):** Your agent designs from 755 real, hand-described UIs — not the generic average.
+**Tagline (≤ 80 chars):** Your agent designs from 268 live, MIT-licensed UI screens — not the average.
 
 **Category:** Design / Frontend · **Tags:** ui, ux, design, frontend, design-system, tailwind, swiftui, accessibility, palette, mcp
 
@@ -18,7 +18,7 @@ Claude Desktop — any agent that reads SKILL.md; MCP server optional.
 ## Short description
 
 Ask an agent for "a finance app" and you get a blue gradient, a card and a rounded button. UI Hall gives your agent a
-corpus of 755 real interfaces — mobile screens, websites, dashboards, motion studies, design systems, redesigns — each
+library of 268 live interface screens built in code — mobile apps, websites, dashboards and design systems across 16+ domains, four themes each, MIT licensed — each
 written up by a person who looked at it, with every palette measured from the pixels. The skill makes the agent pull a
 brief, actually look at the closest references, take their structure (not their skin), use measured colour, export
 tokens and check contrast before it calls the work done.
@@ -56,9 +56,7 @@ tokens and check contrast before it calls the work done.
   a reference image. No user data is sent. No telemetry, no credentials. Disclosed in SKILL.md.
 - **Code:** `scripts/uihall.mjs` is a readable, unminified single-file build of the open-source engine at
   https://github.com/NikitHamal/UiHall/tree/main/mcp/src. MIT.
-- **Data:** descriptions were written by looking at each asset and re-audited against the pixels in October 2026;
-  palettes and motion are computed. Reference images remain the property of their designers and are used as study
-  references; the skill instructs agents to learn structure and never ship clones.
+- **Data:** every screen is original work built in code for UI Hall and MIT licensed; descriptions are generated from the rendered content and palettes are measured from the renders.
 
 ## Pricing suggestion
 
