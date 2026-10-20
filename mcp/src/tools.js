@@ -93,7 +93,7 @@ export const TOOLS = [
         cr ? `**Colour roles**: ${rolesMd(cr.roles, cr.contrast)}${cr.fixes ? `\n${cr.fixes.note} → ${cr.fixes.accent_for_text_and_icons}` : ''}` : '',
         f.printed_palette ? `**Printed swatches**: ${f.printed_palette.map((s) => `${s.name} ${s.hex}`).join(' · ')}` : '',
         `size ${a.w}×${a.h}${a.clip ? ` · motion clip ${a.clip_meta?.duration_s ?? a.duration_s}s` : ''}${a.crop_of ? ` · crop of ${a.crop_of}` : ''} · quality: ${a.quality || 'n/a'}`,
-        `page ${f.url} · image ${f.image}${f.clip ? ` · clip ${f.clip}` : ''}`,
+        `page ${f.url} · image ${f.image}${f.clip ? ` · clip ${f.clip}` : ''}${f.live_url ? `\n**Original (MIT)** — live, interactive source: ${f.live_url}?theme=${f.themes[0]} · themes: ${f.themes.join(', ')}. Read the HTML for exact markup and tokens.` : ''}`,
       ].filter(Boolean).join('\n');
       return { text, data: f };
     },

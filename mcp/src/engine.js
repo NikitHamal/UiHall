@@ -564,6 +564,7 @@ h1 { font-size: var(${p}-text-4xl); } h2 { font-size: var(${p}-text-2xl); } h3 {
       printed_palette: this.corpus.printed_palettes?.[a.id],
       url: this.url(a), image: this.url(a, 'src'), thumbnail: this.url(a, 'thumb'), ...(a.clip ? { clip: this.url(a, 'clip') } : {}),
       source_file: origin?.path,
+      ...(a.live ? { live_url: this.site + a.live, themes: a.themes, license: 'MIT' } : {}),
     };
   }
 }

@@ -108,6 +108,12 @@ done, walk the brief's checklist honestly — including empty, loading and error
    colour/contrast, type), each tied to a reference id, with concrete values (sizes, hex,
    spacing). Then polish notes. Rubric: [references/critique.md](references/critique.md).
 
+## Originals
+
+Assets with ids `ORG-…` are MIT-licensed screens built in code for UI Hall. `get_design` returns their `live_url`:
+the actual HTML, interactive, in four themes (`?theme=ember|mint|ink|grape`). Prefer them when you need markup
+you can legitimately adapt; filter with `search_designs(source="original")`.
+
 ## Rules
 
 - **Never invent a reference id or a palette.** If a tool didn't return it, it doesn't exist.
