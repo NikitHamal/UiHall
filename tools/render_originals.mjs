@@ -5,7 +5,7 @@ import fs from 'node:fs';
 const [,, out = '/tmp/orig_png', base = 'http://localhost:8099', filter = ''] = process.argv;
 const root = new URL('../', import.meta.url);
 const themes = Object.keys(JSON.parse(fs.readFileSync(new URL('originals/kit/themes.json', root))));
-const slugs = fs.readdirSync(new URL('originals/screens/', root)).filter((f) => f.endsWith('.html') && f.includes(filter)).map((f) => f.slice(0, -5));
+const slugs = fs.readdirSync(new URL('originals/screens/', root)).filter((f) => f.endsWith('.html') && (!filter || filter.split(',').some((x) => f.startsWith(x)))).map((f) => f.slice(0, -5));
 fs.mkdirSync(out, { recursive: true });
 const VP = { phone: [600, 1000], desktop: [1600, 1060], canvas: [1300, 900] };
 const b = await chromium.launch();
