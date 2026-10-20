@@ -11,7 +11,7 @@ description: >-
   server when connected, or a bundled zero-dependency CLI when not.
 license: MIT
 metadata:
-  version: 2.0.0
+  version: 2.1.0
   homepage: https://nikithamal.github.io/UiHall/
   repository: https://github.com/NikitHamal/UiHall
 ---

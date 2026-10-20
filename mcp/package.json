@@ -1,6 +1,6 @@
 {
   "name": "uihall-mcp",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "MCP server for UI Hall — 750+ real, hand-described UI/UX references with measured palettes. Gives coding agents design evidence: search, briefs, patterns, palettes, tokens, contrast.",
   "type": "module",
   "bin": { "uihall-mcp": "dist/uihall-mcp.mjs" },

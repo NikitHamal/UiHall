@@ -953,7 +953,7 @@ const ROLE_GUIDE = {
  */
 
 
-const VERSION = '2.0.0';
+const VERSION = '2.1.0';
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const SITE_URL = (process.env.UIHALL_SITE || SITE).replace(/\/?$/, '/');
 const CACHE = process.env.UIHALL_CACHE || path.join(os.homedir(), '.cache', 'uihall');
