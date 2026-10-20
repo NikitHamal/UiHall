@@ -1227,7 +1227,7 @@ const TOOLS = [
         if (a.strip) images.push({ id: a.id, which: 'strip' });
       }
       return {
-        text: list.map((a) => `**${a.id}** · ${a.title}${a.variants?.[theme] ? ` · ${theme} theme` : ''}${a.live ? ` · live: ${h.site}${a.live}` : ''}`).join('\n'),
+        text: list.map((a) => `- **${a.id}** · ${a.title}${a.variants?.[theme] ? ` · ${theme} theme` : ''}${a.live ? ` · live: ${h.site}${a.live}` : ''}`).join('\n'),
         data: { assets: list.map((a) => h.card(a)) },
         images,
       };
