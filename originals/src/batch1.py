@@ -81,7 +81,7 @@ screen('settings-grouped', dict(viewport='phone', title='Grouped settings with t
 # 6 chat ----------------------------------------------------------------------
 screen('assistant-chat', dict(viewport='phone', title='AI assistant chat with composer', category='mobile-app-ui', type='screen', roles=['chat'],
   style=['minimal','rounded'], tags=['ai','assistant','chat','prompt','chips','input'],
-  desc='An AI assistant conversation. A header names the assistant with a model pill. A compact user bubble asks to plan a three-day Lisbon trip under €600; the reply runs full width with a short intro, a three-row itinerary card (Day 1–3 with costs) and a total, followed by a quiet tool-status line. Two suggestion chips sit above an anchored composer with attach, text, mic and an accent send button. Built on {words}. Idea: user messages as bubbles, assistant answers full-width, composer always anchored.'),
+  desc='An AI assistant conversation. A header names the assistant with a model pill. A compact user bubble asks to plan a three-day Lisbon trip under €600; the reply runs full width with a short intro, a three-row itinerary card (Day 1–3 with costs) and a total, followed by a quiet tool-status line, a short follow-up question and a typing indicator. Two suggestion chips sit above an anchored composer with attach, text, mic and an accent send button. Built on {words}. Idea: user messages as bubbles, assistant answers full-width, composer always anchored.'),
   '''<div class="row"><div class="ico" style="width:36px;height:36px;border-radius:50%">'''+ic('back')+'''</div><div class="col" style="margin:auto;align-items:center"><b>Atlas</b><span class="small">GPT-class · travel</span></div><div class="ico" style="width:36px;height:36px;border-radius:50%">'''+ic('more')+'''</div></div>
   <div class="col g16" style="margin-top:18px">
    <div style="align-self:flex-end;max-width:78%;padding:12px 14px;border-radius:18px 18px 6px 18px;background:var(--accent);color:var(--onAccent);font-weight:500">Plan 3 days in Lisbon under €600, I love food and views.</div>
@@ -90,6 +90,8 @@ screen('assistant-chat', dict(viewport='phone', title='AI assistant chat with co
     <div class="card" style="padding:4px 14px"><div class="list">'''+''.join(f'<div class="li"><span class="tag">Day {d}</span><span style="font-size:14px">{t}</span><div class="sp"></div><b class="num" style="font-size:14px">€{c}</b></div>' for d,t,c in [(1,'Tram 28 · Miradouro da Graça',140),(2,'Belém · Pastéis · LX Factory',165),(3,'Sintra day trip',190)])+'''</div></div>
     <div class="row"><span class="small">Total with stays</span><div class="sp"></div><b class="num">€495</b></div>
     <span class="small" style="font-family:var(--mono);font-size:11.5px">✓ checked 14 stays · 3 restaurants</span></div>
+   <div style="align-self:flex-end;max-width:78%;padding:12px 14px;border-radius:18px 18px 6px 18px;background:var(--accent);color:var(--onAccent);font-weight:500">Where’s the one great dinner?</div>
+   <div class="row g8"><span class="ico a" style="width:26px;height:26px;border-radius:50%">'''+ic('spark')+'''</span><div class="row" style="gap:5px;padding:12px 14px;border-radius:16px;background:var(--surface2)">'''+''.join(f'<i style="width:7px;height:7px;border-radius:50%;background:var(--muted);opacity:{o}"></i>' for o in (.9,.6,.3))+'''</div></div>
   </div>
   <div class="sp"></div>
   <div class="row g8" style="margin-bottom:10px"><span class="pill">Swap Sintra for beaches</span><span class="pill">Book stays</span></div>

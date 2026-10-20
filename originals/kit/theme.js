@@ -21,9 +21,10 @@
     document.body.classList.add('embed');
     const frame = document.querySelector('.device, .desk, .sheet-canvas');
     const fit = () => {
-      const w = frame.offsetWidth, h = frame.offsetHeight, pad = 64;
-      const s = Math.min((innerWidth - pad) / w, (innerHeight - pad) / h, 1.6);
-      frame.style.transform = `translate(-50%, -50%) scale(${s})`;
+      // the bezel is drawn outside the box, and the host overlays a hint at the bottom — leave room for both
+      const w = frame.offsetWidth, h = frame.offsetHeight;
+      const s = Math.min((innerWidth - 72) / w, (innerHeight - 112) / h, 1.6);
+      frame.style.transform = `translate(-50%, -50%) scale(${s})`; frame.style.top = `${(innerHeight - 28) / 2}px`;
     };
     addEventListener('resize', fit); fit();
     document.body.classList.add('interactive');

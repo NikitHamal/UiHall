@@ -109,7 +109,7 @@ function fill(app, a, theme) {
     </div>
     <div class="sheet__info">
       <div class="sheet__top">
-        <span class="sheet__id">${a.id} · ${a.kind}${a.clip ? ' · motion' : ''} · ${a.w}×${a.h}</span>
+        <span class="sheet__id">${a.id} · ${a.live ? ({ phone: 'phone', desktop: 'desktop', canvas: 'system' }[a.viewport] || a.viewport) + ' · live' : a.kind}${a.clip ? ' · motion' : ''} · ${a.w}×${a.h}</span>
         <div class="row" style="gap:4px">
           <button class="sheet__pin" type="button" aria-pressed="${board.has(a.id)}" aria-label="Pin to board (P)" title="Pin to board (P)">${pinIcon(board.has(a.id))}</button>
           <button class="icon-btn" type="button" data-copy="${location.origin + location.pathname}#/a/${a.id}" data-copy-label="Link copied" aria-label="Copy link">${icon.copy}</button>
@@ -126,7 +126,7 @@ function fill(app, a, theme) {
         ${facet('category', a.category)}${facet('type', a.type)}
         ${(a.roles || []).map((x) => facet('role', x)).join('')}
         ${(a.style || []).map((x) => facet('style', x)).join('')}
-        ${(a.tags || []).map((x) => facet('tag', x)).join('')}
+        ${(a.tags || []).filter((x) => !(a.roles || []).includes(x) && !(a.style || []).includes(x) && x !== a.type).map((x) => facet('tag', x)).join('')}
       </div>
       <div>
         <h4><span>Measured palette</span><span>click to copy</span></h4>
@@ -135,7 +135,7 @@ function fill(app, a, theme) {
         ${printed ? `<div class="row mt-s">${printed.map((s) => `<span class="contrast-pill" data-copy="${s.hex}" style="cursor:copy"><span class="sw" style="display:inline-block;width:10px;height:10px;border-radius:3px;background:${s.hex}"></span>${esc(s.name)} ${s.hex}</span>`).join('')}</div>` : ''}
       </div>
       ${r ? `<div>
-        <h4><span>Colour roles</span><span>${f.surface} surface</span></h4>
+        <h4><span>Colour roles</span><span>${v?.scheme || f.surface} surface</span></h4>
         <div class="roles">${['background', 'surface', 'text', 'muted', 'accent', 'on_accent'].filter((k) => r.roles[k]).map((k) => `<div class="role" data-copy="${r.roles[k]}" style="cursor:copy"><i style="--c:${r.roles[k]}"></i><div><b>${k.replace('_', '-')}</b><code>${r.roles[k]}</code></div></div>`).join('')}</div>
         <div class="row mt-s">${Object.entries(r.contrast).map(([k, c]) => `<span class="contrast-pill ${c.ratio >= 3 ? 'pass' : 'fail'}">${k.replace(/_/g, ' ').replace('on accent on accent', 'on-accent')} ${c.ratio}:1</span>`).join('')}</div>
         ${r.fixes ? `<p class="faint mt-s" style="font-size:12.5px">${esc(r.fixes.note)} <code data-copy="${r.fixes.accent_for_text_and_icons}" style="cursor:copy;color:var(--text)">${r.fixes.accent_for_text_and_icons}</code></p>` : ''}
