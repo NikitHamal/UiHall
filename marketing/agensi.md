@@ -35,6 +35,9 @@ tokens and check contrast before it calls the work done.
   11-step ramps and contrast fixes.
 - **21 patterns with receipts:** hero number, bento grid, chip-filter row, bottom sheet, dark + single accent, AI chat
   composer… each with build rules and the references that prove it.
+- **A whole design system from one reference:** `generate_design_system` emits colour, a type pairing and scale chosen
+  from the reference's style, radius, motion and base components as one CSS file.
+- **Compare directions:** `compare_designs` puts 2–4 references side by side with shared vs distinct traits and contrast.
 - **Search by colour:** "show me real interfaces built on this lime" — matched perceptually in OKLab.
 - **Zero setup:** a bundled single-file Node CLI (no dependencies, no API key). Optional MCP server for agents that
   prefer tools.
@@ -63,6 +66,11 @@ The repo and site are public, so the paid value is the packaging, curation and w
 
 1. **Free** for the first listing — builds reviews and ranking, drives traffic to the site and GitHub.
 2. **$9 one-time** — comparable to other design skills; keep the GitHub version as the free tier.
+
+## Proof it works
+
+Three prototypes built by following the skill end to end: https://nikithamal.github.io/UiHall/demo/ — each cites the
+references and measured palette it used. `evals/README.md` in the skill lists the behaviours it is graded on.
 
 ## Screenshots
 

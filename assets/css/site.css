@@ -196,7 +196,7 @@
   .nav__mark { width: 26px; height: 26px; transition: transform var(--t-slow) var(--spring); }
   .nav__brand:hover .nav__mark { transform: rotate(-8deg) scale(1.08); }
   .nav__links { position: relative; display: flex; gap: 2px; }
-  .nav__links a { position: relative; z-index: 1; padding: 8px 14px; border-radius: var(--r-pill); font-size: 14px; color: var(--text-2); transition: color var(--t-fast); }
+  .nav__links a { position: relative; z-index: 1; white-space: nowrap; padding: 8px 14px; border-radius: var(--r-pill); font-size: 14px; color: var(--text-2); transition: color var(--t-fast); }
   .nav__links a:hover, .nav__links a[aria-current='page'] { color: var(--text); }
   .nav__pill { position: absolute; z-index: 0; top: 0; height: 100%; border-radius: var(--r-pill); background: var(--surface-3); opacity: 0; transition: left var(--t-med) var(--ease-out), width var(--t-med) var(--ease-out), opacity var(--t-fast); }
   .nav__tools { display: flex; align-items: center; gap: 4px; justify-self: end; }
@@ -219,7 +219,7 @@
   }
   @media (max-width: 640px) {
     .nav { height: auto; grid-template-columns: 1fr auto; padding: 8px 8px 8px 16px; border-radius: 24px; row-gap: 6px; }
-    .nav__links { grid-column: 1 / -1; grid-row: 2; justify-self: stretch; }
+    .nav__links { grid-column: 1 / -1; grid-row: 2; justify-self: stretch; mask-image: linear-gradient(90deg, #000 85%, transparent); padding-right: 24px; }
   }
 
   .view { outline: none; min-height: 100dvh; }
@@ -748,4 +748,11 @@
   .show__meta b { font: 400 28px/1 var(--font-display); }
   .show__meta span { font: 500 11px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--text-3); }
   .show__meta small { grid-column: 1 / -1; color: var(--text-3); font: 11.5px var(--font-mono); margin-top: 6px; }
+}
+
+@layer views {
+  .boot { min-height: 100dvh; display: grid; place-content: center; justify-items: center; gap: 18px; color: var(--text-3); font: 500 11.5px/1 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; }
+  .boot svg { width: 64px; height: 64px; color: var(--text); }
+  .boot__arch { stroke-dasharray: 1; stroke-dashoffset: 1; animation: arch 1.4s var(--ease-in-out) infinite alternate; }
+  @keyframes arch { to { stroke-dashoffset: 0; } }
 }
