@@ -57,7 +57,7 @@ export function openCmd(app) {
       groups.push(['Search', [{ title: `Search the library for “${q}”`, sub: 'Open with this query', href: `#/library?q=${encodeURIComponent(q)}`, icon: icon.search }]]);
     } else {
       groups.push(['Go to', PAGES.map(([t, href, sub]) => ({ title: t, sub, href, icon: icon.right }))]);
-      groups.push(['Try', ['dark onboarding', 'pricing toggle', 'bottom sheet', 'bento grid', 'ai chat'].map((s) => ({ title: s, sub: 'search', href: `#/library?q=${encodeURIComponent(s)}`, icon: icon.search })) ]);
+      groups.push(['Try', ['dark onboarding', 'green settings', 'pricing toggle', 'ai chat', 'kanban board'].map((s) => ({ title: s, sub: 'search', href: `#/library?q=${encodeURIComponent(s)}`, icon: icon.search })) ]);
     }
     items = groups.flatMap(([, xs]) => xs);
     sel = Math.min(sel, items.length - 1);
