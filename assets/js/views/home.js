@@ -82,13 +82,26 @@ export default function home(root, app) {
     </div>
   </section>
 
+  <section class="container section">
+    <div class="section__head">
+      <h2 class="display h-lg" data-reveal>Evidence in, <em>product out.</em></h2>
+      <p class="lede" data-reveal style="--d:1">Three working prototypes, each made by following the skill end to end — brief, look, take the structure, use the measured palette, walk the checklist — and each citing exactly what it borrowed.</p>
+    </div>
+    <div class="showcase">
+      ${[['wallet', 'Halo', 'Dark wallet · iOS', 'IMG-0365 · IMG-0433 · VID-0382'], ['pricing', 'Relay', 'Pricing page · web', 'IMG-0587 · IMG-0592 · IMG-0610'], ['sleep', 'Hush', 'Onboarding · iOS', 'VID-0236 · IMG-0618 · VID-0173']].map(([d, n, k, refs], i) => `
+      <a class="show" href="demo/${d}/" data-reveal style="--d:${i}"><div class="show__img"><img src="demo/${d}/cover.jpg" alt="${n} prototype" loading="lazy"></div>
+        <div class="show__meta"><b>${n}</b><span>${k}</span><small>${refs}</small></div></a>`).join('')}
+    </div>
+    <div class="row mt-m" data-reveal>${arrowBtn('demo/', 'Open the showcase')}</div>
+  </section>
+
   <section class="container section" id="install">
     <div class="section__head">
       <h2 class="display h-lg" data-reveal>Thirty seconds <em>to install.</em></h2>
       <p class="lede" data-reveal style="--d:1">One file, zero dependencies, no API key. Works with Claude Code, Cursor, VS Code, Codex, Claude Desktop — anything that speaks MCP.</p>
     </div>
     <div data-reveal style="--d:2">${installBlock()}</div>
-    <div class="row mt-m" data-reveal style="--d:3">${arrowBtn('demo/', 'See what the skill builds')}<a class="btn btn--ghost" href="#/agents?tab=playground">Try the tools in your browser</a></div>
+    <div class="row mt-m" data-reveal style="--d:3"><a class="btn btn--ghost" href="#/agents?tab=playground">Try the tools in your browser →</a></div>
   </section>
 
   <section class="container section">
