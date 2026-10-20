@@ -103,6 +103,8 @@ def main():
         base['title'] = meta['title']
         base['description'] = meta['desc'].format(words='the kit tokens — it ships in four themes (' + ', '.join(THEMES[x['theme']]['name'] for x in xs) + ') from one source file')
         base['style'] = [s for s in meta['style']]
+        base['tags'], base['roles'] = list(meta['tags']), list(meta['roles'])
+        base['category'], base['type'] = meta['category'], meta['type']
         base['live'] = f'originals/screens/{slug}.html'
         base['viewport'] = meta['viewport']
         base['themes'] = [x['theme'] for x in xs]

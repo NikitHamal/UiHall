@@ -23,6 +23,8 @@ def canvas(body): return f'<body class="present"><div class="sheet-canvas">{body
 SCREENS = []
 def screen(slug, meta, html, css=''):
     meta['slug'] = slug
+    # tag what the markup actually contains, so patterns find their evidence
+    if 'class="tabbar' in html and 'bottom-nav' not in meta.get('tags', []): meta['tags'] = meta.get('tags', []) + ['bottom-nav']
     SCREENS.append(meta)
     doc = HEAD.format(title=meta['title'], css=css) + {'phone': phone, 'desktop': desk, 'canvas': canvas}[meta['viewport']](html.replace('&quot;', '"'))
     doc = doc.replace('<head>', '<head><script type="application/json" id="meta">' + json.dumps(meta) + '</script>', 1)

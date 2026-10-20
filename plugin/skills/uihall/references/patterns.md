@@ -31,7 +31,7 @@ Fixed bottom navigation with a small, stable set of destinations; the active one
 - Active = accent tint + filled icon; inactive = 60% ink.
 - Respect the home indicator safe area.
 
-Evidence (23): ORG-0813 (Ride-hailing home · Glide), ORG-1037 (Travel home · Wander), ORG-0757 (Plant care home · Fern), ORG-0645 (Music streaming home · Tide)
+Evidence (84): ORG-1001 (Productivity profile · Plan), ORG-1033 (Travel empty state · Wander), ORG-0813 (Ride-hailing home · Glide), ORG-0721 (Pet care profile · Paws)
 
 ## Scrollable chip-filter row
 
