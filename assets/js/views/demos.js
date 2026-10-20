@@ -17,7 +17,7 @@ export default function demos(root, app) {
   <div class="container">
     <div class="page-head page-head--row">
       <div><span class="eyebrow">Built with the skill</span><h1 class="display h-lg mt-s">Evidence in, <em>product out.</em></h1>
-      <p class="lede">Complete, working prototypes made by following the uihall skill end to end — brief, look, take the structure, use the measured palette, walk the checklist. Each one cites what it borrowed. Open them and click around: every tab works.</p></div>
+      <p class="lede">Complete, working prototypes made by following the uihall skill end to end — brief, look, take the structure, use the measured palette, walk the checklist. Each links the related originals in the hall. Open them and click around: every tab works.</p></div>
     </div>
     <div class="demo-list">
       ${DEMOS.map((d) => `

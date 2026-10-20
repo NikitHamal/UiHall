@@ -35,7 +35,7 @@ export default function library(root, app, route, opts = {}) {
     </div>`}
     <div class="toolbar" id="toolbar">
       <div class="toolbar__row">
-        <label class="tsearch">${icon.search}<span class="sr-only">Search the library</span><input id="q" type="search" placeholder="Search: dark onboarding, pricing toggle, bento…" autocomplete="off" spellcheck="false"></label>
+        <label class="tsearch">${icon.search}<span class="sr-only">Search the library</span><input id="q" type="search" placeholder="Search screens — try “dark onboarding”" autocomplete="off" spellcheck="false"></label>
         <div class="toolbar__end">
           <button class="fbtn lib__filters-btn" id="filtersBtn" type="button">${icon.filter}<span>Filters</span></button>
           <label class="select"><span class="sr-only">Sort</span><select id="sort">${SORTS.map(([v, l]) => `<option value="${v}" ${state.sort === v ? 'selected' : ''}>${l}</option>`).join('')}</select></label>

@@ -30,7 +30,7 @@ export default function agents(root, app, route) {
   root.innerHTML = `
   <div class="container page-head agents-hero">
     <div>
-      <span class="eyebrow" data-reveal>uihall-mcp · v2 · MCP 2025-06-18</span>
+      <span class="eyebrow" data-reveal>uihall-mcp · v3 · MCP 2025-06-18</span>
       <h1 class="display h-lg mt-s" id="at">Give your agent <em>an eye.</em></h1>
     </div>
     <p class="lede" data-reveal style="--d:2">Coding agents design from the statistical average — a blue gradient, a card, a rounded button. UI Hall gives them evidence instead: real references they can search and actually look at, measured palettes, patterns with build rules, and tokens they can paste. One MCP server, one skill.</p>
