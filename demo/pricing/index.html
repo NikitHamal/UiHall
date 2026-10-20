@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relay pricing · built with the UI Hall skill</title>
+<!--
+  Built with the uihall skill:
+    brief:      design_brief("pricing page for a developer tool", platform=web)
+    references: IMG-0587 (left-aligned headline + billing toggle; each plan = inner white card holding name/price/CTA
+                          inside a tinted outer card that lists features; the top plan anchored in near-black)
+                IMG-0592 (a sky image in one plan's header; "Save up to 20%" stated as a number by the toggle)
+                IMG-0610 (dev-tool landing rhythm: pricing row, FAQ, closing banner)
+    patterns:   Three tiers, one anchored · Segmented range control · Editorial restraint
+    palette:    IMG-0587 measured — #F8F8F8 ground, #262626 text (15.4:1), #DDDDDD hairlines;
+                accent #AADCF7 from IMG-0592 as a fill, #557A8D as text (check_contrast fix)
+-->
+<link rel="stylesheet" href="../../assets/css/fonts-v2.css">
+<style>
+:root{--bg:#F8F8F8;--card:#EEEEEE;--white:#fff;--text:#262626;--t2:#5E5E5E;--t3:#8A8A8A;--line:#DDDDDD;--ink:#171717;--sky:#AADCF7;--sky-t:#557A8D;
+  --sans:'Inter Tight',system-ui,sans-serif;--serif:'Instrument Serif',Georgia,serif;--mono:'JetBrains Mono',monospace;--ease:cubic-bezier(.16,1,.3,1);--spring:cubic-bezier(.34,1.4,.64,1)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--sky-t);outline-offset:3px;border-radius:10px}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.ribbon{background:var(--ink);color:#d8d8d8;font-size:13px;text-align:center;padding:9px 16px}
+.ribbon a{color:var(--sky);text-decoration:none;margin-left:6px}
+nav{display:flex;align-items:center;gap:28px;height:72px}
+.logo{display:flex;gap:9px;align-items:center;font-weight:700;letter-spacing:-.02em;font-size:17px}
+.logo i{width:22px;height:22px;border-radius:7px;background:conic-gradient(from 90deg,var(--ink) 0 25%,var(--sky) 0 50%,var(--ink) 0 75%,var(--sky) 0)}
+nav .links{display:flex;gap:22px;color:var(--t2);font-size:14px}
+nav .links a{text-decoration:none}nav .links a[aria-current]{color:var(--text);font-weight:500}
+nav .r{margin-left:auto;display:flex;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:42px;padding:0 18px;border-radius:12px;font-weight:600;font-size:14px;text-decoration:none;transition:transform .3s var(--spring),background .2s,box-shadow .2s}
+.btn:active{transform:scale(.97)}
+.btn.dark{background:var(--ink);color:#fff}.btn.dark:hover{background:#000}
+.btn.light{background:var(--white);box-shadow:inset 0 0 0 1px var(--line)}.btn.light:hover{box-shadow:inset 0 0 0 1px #bdbdbd}
+.btn.inv{background:#fff;color:var(--ink)}
+.btn.full{width:100%;height:46px}
+
+header.hero{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;padding:72px 0 36px;flex-wrap:wrap}
+.eyebrow{font:500 12px var(--mono);color:var(--sky-t);letter-spacing:.06em;text-transform:uppercase}
+h1{font:400 clamp(48px,6.4vw,84px)/.95 var(--serif);letter-spacing:-.025em;margin:14px 0 14px}
+h1 em{color:var(--sky-t)}
+.sub{color:var(--t2);max-width:46ch;margin:0;font-size:16.5px}
+.toggle{display:grid;gap:10px;justify-items:end}
+.seg{position:relative;display:inline-flex;padding:4px;border-radius:14px;background:var(--white);box-shadow:inset 0 0 0 1px var(--line),0 10px 30px -14px rgba(0,0,0,.25)}
+.seg button{position:relative;z-index:1;height:40px;padding:0 18px;border-radius:10px;font-weight:500;font-size:14px;color:var(--t2);transition:color .25s}
+.seg button[aria-pressed=true]{color:var(--text)}
+.seg .thumb{position:absolute;top:4px;height:40px;border-radius:10px;background:var(--card);transition:left .4s var(--ease),width .4s var(--ease)}
+.save{font-size:13px;color:var(--sky-t);font-weight:500;display:flex;gap:6px;align-items:center}
+.save b{background:var(--sky);color:#123;padding:2px 8px;border-radius:999px;font-weight:600}
+
+.usage{display:flex;align-items:center;gap:18px;padding:16px 20px;border-radius:18px;background:var(--white);box-shadow:inset 0 0 0 1px var(--line);margin-bottom:18px;flex-wrap:wrap}
+.usage label{font-weight:500;font-size:14px}
+.usage input{flex:1;min-width:200px;accent-color:var(--ink)}
+.usage output{font:500 14px var(--mono);min-width:150px;text-align:right}
+.usage small{color:var(--t3);width:100%}
+
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}
+@media(max-width:900px){.plans{grid-template-columns:1fr}}
+.plan{border-radius:26px;background:var(--card);padding:8px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.03);transition:transform .5s var(--spring),box-shadow .4s}
+.plan.rec{transform:translateY(-6px);box-shadow:0 0 0 2px var(--sky-t),0 30px 60px -30px rgba(85,122,141,.6)}
+.plan.dark{background:#1B1B1B;color:#EDEDED}
+.inner{border-radius:20px;background:var(--white);padding:22px;box-shadow:0 1px 2px rgba(0,0,0,.05),0 12px 30px -18px rgba(0,0,0,.25);position:relative;overflow:hidden}
+.plan.dark .inner{background:#262626;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
+.sky .inner::before{content:'';position:absolute;inset:0 0 auto;height:150px;background:radial-gradient(60% 120% at 20% 0%,#fff 0,transparent 60%),linear-gradient(160deg,#cfeafb,#AADCF7 50%,#86c3e8);-webkit-mask:linear-gradient(#000 40%,transparent);mask:linear-gradient(#000 40%,transparent)}
+.sky .inner>*{position:relative}
+.pname{display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:16px}
+.tagp{font:600 11px var(--sans);padding:4px 9px;border-radius:999px;background:var(--ink);color:#fff}
+.plan.dark .tagp{background:var(--sky);color:#123}
+.for{color:var(--t2);font-size:13.5px;margin:22px 0 6px}
+.plan.dark .for{color:#A8A8A8}
+.price{display:flex;align-items:baseline;gap:6px;margin-bottom:18px;height:56px}
+.price b{font:600 48px/1 var(--sans);letter-spacing:-.04em;display:inline-flex;overflow:hidden;height:52px}
+.digit{display:inline-block;transition:transform .6s var(--ease)}
+.price>span{color:var(--t3);font-size:14px}
+.price s{color:var(--t3);font-size:15px;margin-left:4px}
+.plan.dark .price>span,.plan.dark .price s{color:#8f8f8f}
+.plan.dark .btn.dark{background:#fff;color:var(--ink)}
+.feats{list-style:none;margin:0;padding:18px 16px 14px;display:grid;gap:9px;font-size:14px}
+.feats li{display:flex;gap:10px;align-items:flex-start}
+.feats li::before{content:'';flex:none;width:16px;height:16px;margin-top:3px;border-radius:50%;background:var(--sky) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4.5 8.3 2.2 2.2 4.8-5' fill='none' stroke='%23123' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain}
+.plan.dark .feats{color:#D4D4D4}
+
+.logos{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin:56px 0 0;padding:26px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:#9a9a9a;font:600 18px var(--sans);letter-spacing:-.02em}
+.logos span:nth-child(odd){font-family:var(--serif);font-weight:400;font-size:22px}
+.cmp{margin-top:96px}
+.cmp h2,.faq h2{font:400 44px/1 var(--serif);letter-spacing:-.02em;margin:0 0 24px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:14px 12px;text-align:left;border-bottom:1px solid var(--line)}
+th{font-weight:600;position:sticky;top:0;background:var(--bg)}
+td:not(:first-child),th:not(:first-child){text-align:center;width:18%}
+tr.grp td{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--t3);padding-top:26px}
+.y{display:inline-block;width:18px;height:18px;border-radius:50%;background:var(--sky) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4.5 8.3 2.2 2.2 4.8-5' fill='none' stroke='%23123' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain;vertical-align:middle}
+.n{color:#c4c4c4}
+.faq{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;margin-top:110px}
+@media(max-width:900px){.faq{grid-template-columns:1fr}}
+.faq p.s{color:var(--t2)}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-weight:500;font-size:16px}
+summary::after{content:'+';font-size:22px;line-height:1;color:var(--t3);transition:transform .35s var(--ease)}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 20px;color:var(--t2);max-width:60ch}
+.cta{margin:110px 0 80px;border-radius:32px;background:var(--ink);color:#fff;padding:56px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;position:relative;overflow:hidden}
+.cta::after{content:'';position:absolute;right:-120px;top:-160px;width:460px;height:460px;border-radius:50%;background:radial-gradient(closest-side,rgba(170,220,247,.45),transparent)}
+.cta h2{font:400 52px/1 var(--serif);margin:0;letter-spacing:-.02em;position:relative}
+.cta h2 em{color:var(--sky)}
+.cta .btn{position:relative}
+.credit{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:22px 0 40px;color:var(--t3);font-size:13px;border-top:1px solid var(--line)}
+.credit a{color:var(--sky-t)}
+.credit .refs{display:flex;gap:10px;align-items:center}
+.credit .refs img{width:44px;height:44px;border-radius:10px;object-fit:cover;box-shadow:0 0 0 1px var(--line)}
+[data-in]{opacity:0;transform:translateY(18px);transition:opacity .8s var(--ease),transform 1s var(--ease)}[data-in].in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{transition-duration:1ms!important}}
+</style>
+</head>
+<body>
+<div class="ribbon">Built with the UI Hall skill from three real references. <a href="#credits">See how →</a></div>
+<div class="wrap">
+  <nav><span class="logo"><i></i>Relay</span>
+    <div class="links"><a href="#">Product</a><a href="#">Docs</a><a href="#" aria-current="page">Pricing</a><a href="#">Changelog</a></div>
+    <div class="r"><a class="btn light" href="#">Sign in</a><a class="btn dark" href="#">Start free</a></div></nav>
+
+  <header class="hero">
+    <div><span class="eyebrow">Pricing</span><h1>Simple pricing,<br><em>no surprises.</em></h1><p class="sub">CI for AI agents. Every run sandboxed, replayable and diffed. Start free; pay when your agents ship.</p></div>
+    <div class="toggle">
+      <div class="seg" id="bill"><span class="thumb"></span><button aria-pressed="true" data-b="m">Monthly</button><button aria-pressed="false" data-b="y">Annual</button></div>
+      <span class="save">Annual billing <b>saves 20%</b></span>
+    </div>
+  </header>
+
+  <div class="usage"><label for="runs">How many agent runs a month?</label><input id="runs" type="range" min="0" max="5" step="1" value="2"><output id="runsOut" class="num"></output><small id="runsHint"></small></div>
+
+  <section class="plans" id="plans">
+    <article class="plan" data-plan="0"><div class="inner"><div class="pname">Hobby</div><p class="for">For side projects and trying things out</p>
+      <div class="price"><b class="num" data-m="0" data-y="0"></b><span>/month</span></div><a class="btn light full" href="#">Start for free</a></div>
+      <ul class="feats"><li>1,000 runs / month</li><li>3 agents, 1 seat</li><li>7-day run replay</li><li>Community support</li></ul></article>
+    <article class="plan sky" data-plan="1"><div class="inner"><div class="pname">Pro <span class="tagp">Most popular</span></div><p class="for">For engineers shipping agents to users</p>
+      <div class="price"><b class="num" data-m="29" data-y="23"></b><span>/seat · month</span><s class="num" data-strike></s></div><a class="btn dark full" href="#">Start 14-day trial</a></div>
+      <ul class="feats"><li>50,000 runs / month</li><li>Unlimited agents, up to 10 seats</li><li>90-day replay + semantic diffs</li><li>Eval suites on every PR</li><li>Email support, 1-day response</li></ul></article>
+    <article class="plan dark" data-plan="2"><div class="inner"><div class="pname">Team <span class="tagp">Best value at scale</span></div><p class="for">For teams running agents in production</p>
+      <div class="price"><b class="num" data-m="79" data-y="63"></b><span>/seat · month</span><s class="num" data-strike></s></div><a class="btn dark full" href="#">Talk to us</a></div>
+      <ul class="feats"><li>Unlimited runs, fair use</li><li>SSO, SCIM and audit log</li><li>1-year replay, data residency</li><li>Private runners in your VPC</li><li>Shared Slack, 4-hour response</li></ul></article>
+  </section>
+
+  <div class="logos" data-in><span>Northwind</span><span>ACME LABS</span><span>Parallax</span><span>orbit/ai</span><span>Lumen</span><span>FIELDWORK</span></div>
+
+  <section class="cmp" data-in>
+    <h2>Compare plans</h2>
+    <table><thead><tr><th>Feature</th><th>Hobby</th><th>Pro</th><th>Team</th></tr></thead><tbody>
+      <tr class="grp"><td colspan="4">Runs</td></tr>
+      <tr><td>Included runs</td><td class="num">1k</td><td class="num">50k</td><td>Unlimited</td></tr>
+      <tr><td>Parallel sandboxes</td><td class="num">2</td><td class="num">20</td><td class="num">200</td></tr>
+      <tr><td>Run replay</td><td>7 days</td><td>90 days</td><td>1 year</td></tr>
+      <tr class="grp"><td colspan="4">Quality</td></tr>
+      <tr><td>Semantic diffs</td><td><span class="n">—</span></td><td><span class="y"></span></td><td><span class="y"></span></td></tr>
+      <tr><td>Eval suites on PRs</td><td><span class="n">—</span></td><td><span class="y"></span></td><td><span class="y"></span></td></tr>
+      <tr class="grp"><td colspan="4">Security</td></tr>
+      <tr><td>SSO / SCIM</td><td><span class="n">—</span></td><td><span class="n">—</span></td><td><span class="y"></span></td></tr>
+      <tr><td>Private runners</td><td><span class="n">—</span></td><td><span class="n">—</span></td><td><span class="y"></span></td></tr>
+    </tbody></table>
+  </section>
+
+  <section class="faq" data-in>
+    <div><h2>Questions</h2><p class="s">Anything else? Our engineers answer the chat — usually within an hour.</p></div>
+    <div>
+      <details open><summary>What counts as a run?</summary><p>One agent invocation from trigger to final output, however many tool calls it makes. Retries of the same run are free.</p></details>
+      <details><summary>What happens if I go over?</summary><p>Nothing breaks. Extra runs are $0.40 per thousand on Pro, and we email you at 80% so it never surprises you.</p></details>
+      <details><summary>Can I switch plans later?</summary><p>Any time. Upgrades are prorated to the day; downgrades apply at the next billing date.</p></details>
+      <details><summary>Do you offer discounts for open source?</summary><p>Yes — Pro is free for maintainers of public repositories with more than 100 stars.</p></details>
+    </div>
+  </section>
+
+  <section class="cta" data-in><h2>Ship agents you can <em>trust.</em></h2><a class="btn inv" href="#">Start free — no card</a></section>
+
+  <footer class="credit" id="credits">
+    <div class="refs"><span>Structure from</span>
+      <a href="../../#/a/IMG-0587" title="IMG-0587"><img src="../../assets/thumb/IMG-0587.webp" alt="IMG-0587"></a>
+      <a href="../../#/a/IMG-0592" title="IMG-0592"><img src="../../assets/thumb/IMG-0592.webp" alt="IMG-0592"></a>
+      <a href="../../#/a/IMG-0610" title="IMG-0610"><img src="../../assets/thumb/IMG-0610.webp" alt="IMG-0610"></a>
+      <span>· palette measured from IMG-0587, accent IMG-0592 (#AADCF7 → #557A8D for text).</span></div>
+    <span><a href="../">All demos</a> · <a href="../../#/agents">Get the skill + MCP</a></span>
+  </footer>
+</div>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+let cycle='m';
+function setPrice(el,v){const s=String(v);let html='';for(const ch of '$'+s)html+=`<span class="digit">${ch}</span>`;
+  if(el.dataset.cur===s){return}el.dataset.cur=s;
+  el.animate([{transform:'translateY(0)',opacity:1},{transform:'translateY(-40%)',opacity:0}],{duration:180,easing:'ease-in'}).onfinish=()=>{el.innerHTML=html;el.animate([{transform:'translateY(40%)',opacity:0},{transform:'none',opacity:1}],{duration:420,easing:'cubic-bezier(.16,1,.3,1)'})}}
+function prices(){$$('.price b').forEach(b=>setPrice(b,b.dataset[cycle]));
+  $$('[data-strike]').forEach(s=>{const m=s.parentElement.querySelector('b').dataset.m;s.textContent=cycle==='y'?'$'+m:''})}
+const seg=$('#bill'),th=seg.querySelector('.thumb');
+const place=()=>{const b=seg.querySelector('[aria-pressed=true]');th.style.left=b.offsetLeft+'px';th.style.width=b.offsetWidth+'px'};
+seg.onclick=e=>{const b=e.target.closest('button');if(!b)return;seg.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));cycle=b.dataset.b;place();prices()};
+$$('.price b').forEach(b=>{b.innerHTML=[...('$'+b.dataset.m)].map(c=>`<span class="digit">${c}</span>`).join('');b.dataset.cur=b.dataset.m});
+requestAnimationFrame(place);
+const RUNS=[500,1000,10000,50000,250000,1000000],LBL=['500','1,000','10,000','50,000','250,000','1M+'];
+function usage(){const i=+$('#runs').value,r=RUNS[i];$('#runsOut').textContent=LBL[i]+' runs';
+  const plan=r<=1000?0:r<=50000?1:2;$$('.plan').forEach(p=>p.classList.toggle('rec',+p.dataset.plan===plan));
+  $('#runsHint').textContent=['Hobby covers you — free forever.','Hobby covers you — free forever.','Pro fits, with plenty of headroom.','Pro, right at the included limit.','Team: unlimited runs, fair use.','Team, plus private runners.'][i]}
+$('#runs').oninput=usage;usage();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+$$('[data-in]').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

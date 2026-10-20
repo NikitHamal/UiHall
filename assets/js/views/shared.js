@@ -15,7 +15,7 @@ export function footer(h) {
           <p style="max-width:34ch">${t.assets} real interface designs, read by eye and measured by machine. A reference for people, and a tool for the agents they work with.</p>
         </div>
         <div><h4>Explore</h4><a href="#/library">Library</a><a href="#/patterns">Patterns</a><a href="#/colour">Colour</a><a href="#/motion">Motion</a></div>
-        <div><h4>Agents</h4><a href="#/agents">MCP server</a><a href="#/agents?tab=skill">Agent skill</a><a href="#/agents?tab=playground">Playground</a></div>
+        <div><h4>Agents</h4><a href="#/agents">MCP server</a><a href="#/agents?tab=skill">Agent skill</a><a href="#/agents?tab=playground">Playground</a><a href="demo/">Built with the skill</a></div>
         <div><h4>Source</h4><a href="https://github.com/NikitHamal/UiHall">GitHub</a><a href="https://github.com/NikitHamal/UiHall/tree/main/mcp">uihall-mcp</a><a href="https://github.com/NikitHamal/UiHall/tree/main/skills/uihall">Skill</a></div>
       </div>
       <div class="footer__big" aria-hidden="true">UI <em>Hall</em></div>

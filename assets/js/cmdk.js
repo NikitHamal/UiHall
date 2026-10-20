@@ -13,6 +13,7 @@ const PAGES = [
   ['Motion', '#/motion', 'Clips that actually move'],
   ['For agents', '#/agents', 'MCP server, skill and playground'],
   ['Board', '#/board', 'Your pinned references'],
+  ['Demos', 'demo/', 'Prototypes built with the skill'],
   ['Playground', '#/agents?tab=playground', 'Run the MCP tools in your browser'],
 ];
 
@@ -34,7 +35,7 @@ export function openCmd(app) {
   let items = [], sel = 0;
 
   const close = () => { open = false; root.innerHTML = ''; removeEventListener('keydown', onKey, true); };
-  const choose = (i) => { const it = items[i]; if (!it) return; close(); location.hash = it.href; };
+  const choose = (i) => { const it = items[i]; if (!it) return; close(); if (it.href.startsWith('#')) location.hash = it.href; else location.href = it.href; };
 
   const draw = () => {
     const q = input.value.trim();

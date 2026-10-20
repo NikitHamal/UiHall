@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Built with the skill · UI Hall</title>
+<meta name="description" content="Working prototypes built by following the UI Hall skill end to end — each cites its references and measured palette.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/fonts-v2.css">
+<link rel="stylesheet" href="../assets/css/site.css">
+<style>
+.demos{display:grid;gap:18px}
+.demo{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:0;border-radius:var(--r-xl);overflow:hidden;background:var(--surface);box-shadow:inset 0 0 0 1px var(--line);text-decoration:none;transition:transform .6s var(--spring),box-shadow .3s}
+.demo:hover{transform:translateY(-4px);box-shadow:inset 0 0 0 1px var(--line-2),0 40px 80px -40px rgba(0,0,0,.6)}
+.demo__img{position:relative;background:var(--img-bg);min-height:380px;overflow:hidden;display:grid;place-items:center}
+.demo__img img{max-height:420px;width:auto;max-width:92%;border-radius:18px;box-shadow:0 30px 60px -20px rgba(0,0,0,.6);transition:transform 1.1s var(--ease-out)}
+.demo:hover .demo__img img{transform:scale(1.03) translateY(-6px)}
+.demo__body{padding:34px;display:grid;gap:16px;align-content:center}
+.demo__body h2{font:400 46px/1 var(--font-display);letter-spacing:-.02em}
+.demo__body h2 em{color:var(--accent)}
+.demo__body p{color:var(--text-2)}
+.demo__refs{display:flex;gap:8px;align-items:center}
+.demo__refs img{width:46px;height:46px;border-radius:10px;object-fit:cover;box-shadow:0 0 0 1px var(--line-2)}
+.demo__refs span{font:500 11.5px var(--font-mono);color:var(--text-3);margin-left:4px}
+@media(max-width:860px){.demo{grid-template-columns:1fr}.demo__img{min-height:300px}}
+</style>
+</head>
+<body>
+<header class="nav" style="grid-template-columns:1fr auto">
+  <a class="nav__brand" href="../"><svg class="nav__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M9 25V15a7 7 0 0 1 14 0v10" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round"/><path d="M16 25v-7" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg><span>UI&nbsp;Hall</span></a>
+  <div class="nav__tools"><a class="btn btn--sm" href="../#/agents">Get the skill</a></div>
+</header>
+<main class="container">
+  <div class="page-head">
+    <span class="eyebrow">Showcase · built with the skill</span>
+    <h1 class="display h-lg">Evidence in, <em>product out.</em></h1>
+    <p class="lede">Each prototype was made by following the uihall skill end to end: a <code>design_brief</code>, looking at the three closest references, taking their structure, using their measured palette and walking the checklist. Every one cites what it borrowed — open them and click around; they all work.</p>
+  </div>
+  <div class="demos">
+    <a class="demo" href="wallet/"><div class="demo__img"><img src="wallet/cover.jpg" alt="Halo wallet prototype"></div>
+      <div class="demo__body"><span class="eyebrow">iOS · dark · fintech</span><h2>Halo — a premium wallet, <em>one blue at a time.</em></h2>
+        <p>Hero balance with greyed cents, a range-switched chart, live price ticks, a segmented portfolio and a Send sheet with keypad and guardrails. One measured accent carries every action.</p>
+        <div class="demo__refs"><img src="../assets/thumb/IMG-0365.webp" alt=""><img src="../assets/thumb/IMG-0433.webp" alt=""><img src="../assets/thumb/VID-0382.webp" alt=""><span>IMG-0365 · IMG-0433 · VID-0382</span></div></div></a>
+    <a class="demo" href="pricing/"><div class="demo__img"><img src="pricing/cover.jpg" alt="Relay pricing page"></div>
+      <div class="demo__body"><span class="eyebrow">Web · light · developer tool</span><h2>Relay — pricing, <em>no surprises.</em></h2>
+        <p>Three tiers with one anchored, nested plan cards, a billing toggle that rolls the numbers, a usage slider that recommends a plan, a compare table and an FAQ.</p>
+        <div class="demo__refs"><img src="../assets/thumb/IMG-0587.webp" alt=""><img src="../assets/thumb/IMG-0592.webp" alt=""><img src="../assets/thumb/IMG-0610.webp" alt=""><span>IMG-0587 · IMG-0592 · IMG-0610</span></div></div></a>
+    <a class="demo" href="sleep/"><div class="demo__img"><img src="sleep/cover.jpg" alt="Hush onboarding prototype"></div>
+      <div class="demo__body"><span class="eyebrow">iOS · light · wellness</span><h2>Hush — a calm onboarding, <em>from evidence.</em></h2>
+        <p>Four single-promise steps: a breathing welcome, two questions and a plan that animates into place — with the reminder permission asked last, after showing value.</p>
+        <div class="demo__refs"><img src="../assets/thumb/VID-0236.webp" alt=""><img src="../assets/thumb/IMG-0618.webp" alt=""><img src="../assets/thumb/VID-0173.webp" alt=""><span>VID-0236 · IMG-0618 · VID-0173</span></div></div></a>
+  </div>
+  <p class="faint mt-l" style="font-size:13px">Want your agent to work like this? <a href="../#/agents" style="color:var(--accent)">Install the skill and MCP server →</a></p>
+</main>
+<div class="grain" aria-hidden="true"></div>
+<script>try{const t=localStorage.getItem('uh-theme');if(t)document.documentElement.dataset.theme=t}catch{}</script>
+</body>
+</html>

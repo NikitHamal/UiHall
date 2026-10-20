@@ -205,7 +205,7 @@ function skillHtml() {
         ${withCopy('sk2', tint(`mkdir -p .claude/skills && curl -fsSL https://nikithamal.github.io/UiHall/skills/uihall.tar.gz | tar -xz -C .claude/skills`))}
         <p>Any agent that reads <code>SKILL.md</code> (Cursor, Codex, Copilot, Gemini CLI …): download the folder and place it where your agent loads skills or rules from.</p>
         <p>See it used end to end — brief, references, measured palette, checklist — in a working prototype:</p>
-        <div class="row"><a class="btn btn--sm btn--primary" href="demo/sleep/">${icon.ext} Open the demo</a></div>
+        <div class="row"><a class="btn btn--sm btn--primary" href="demo/">${icon.ext} See the demos</a></div>
         <div class="row"><a class="btn btn--sm" href="skills/uihall.tar.gz" download>${icon.ext} Download uihall.tar.gz</a><a class="btn btn--sm btn--ghost" href="https://github.com/NikitHamal/UiHall/tree/main/skills/uihall">View on GitHub</a></div>
       </div>
       <div class="card doc"><div class="md" id="skillMd"><p class="faint">Loading SKILL.md…</p></div></div>
