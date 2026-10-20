@@ -1,6 +1,6 @@
 # Pattern library
 
-Generated from the corpus (v3.0.0, 268 references) by `tools/build_release.mjs`.
+Generated from the corpus (v3.0.0, 332 references) by `tools/build_release.mjs`.
 Evidence ids open at `https://nikithamal.github.io/UiHall/#/a/<id>` or via `get_design` / `view_design`.
 
 ## One hero number
@@ -11,7 +11,7 @@ A single figure set far larger than everything around it, with supporting detail
 - One supporting line directly under it (delta, period or unit) at muted contrast.
 - Nothing else on the screen above the fold at the same weight.
 
-Evidence (32): ORG-0001 (Analytics overview with sidebar), ORG-0017 (Card patterns sheet), ORG-0029 (Money home with hero balance), ORG-0185 (Crypto desktop dashboard · Halo)
+Evidence (49): ORG-0001 (Analytics overview with sidebar), ORG-0017 (Card patterns sheet), ORG-0029 (Money home with hero balance), ORG-0185 (Crypto desktop dashboard · Halo)
 
 ## Metric grid
 
@@ -21,7 +21,7 @@ Small multiples of equal-weight tiles, each one number and one label. Reads in a
 - Number first, label second; never more than one chart per tile.
 - Colour encodes status only, never decoration.
 
-Evidence (31): ORG-0001 (Analytics overview with sidebar), ORG-0029 (Money home with hero balance), ORG-0045 (Profile with stats and streak grid), ORG-0061 (Activity rings and workout list)
+Evidence (47): ORG-0001 (Analytics overview with sidebar), ORG-0029 (Money home with hero balance), ORG-0045 (Profile with stats and streak grid), ORG-0061 (Activity rings and workout list)
 
 ## Bottom tab bar, 4–5 destinations
 
@@ -41,7 +41,7 @@ Filters as chips in one horizontally scrolling row — never wrapping, never cli
 - white-space: nowrap; overflow-x: auto; hidden scrollbar; edge fade.
 - Selected chip inverts (ink fill), not just a border change.
 
-Evidence (63): ORG-0005 (AI assistant chat with composer), ORG-0021 (Buttons, inputs and controls sheet), ORG-0049 (Search with filter chips and results), ORG-0069 (Messages inbox with pinned threads)
+Evidence (79): ORG-0005 (AI assistant chat with composer), ORG-0021 (Buttons, inputs and controls sheet), ORG-0049 (Search with filter chips and results), ORG-0069 (Messages inbox with pinned threads)
 
 ## Segmented range control
 
@@ -51,7 +51,7 @@ A Week / Month switch that redraws one view and moves nothing else. One state, o
 - Abbreviate day labels to three letters, never one.
 - Only the controlled region re-renders.
 
-Evidence (5): ORG-0021 (Buttons, inputs and controls sheet), ORG-0057 (Calendar day with timeline), ORG-0061 (Activity rings and workout list), ORG-0089 (Flight selection with date strip)
+Evidence (21): ORG-0021 (Buttons, inputs and controls sheet), ORG-0057 (Calendar day with timeline), ORG-0061 (Activity rings and workout list), ORG-0089 (Flight selection with date strip)
 
 ## Empty state that teaches
 
@@ -91,7 +91,7 @@ Conversation scrolls; the composer stays anchored with attachments and model con
 - Assistant replies full-width, user messages as compact bubbles.
 - Suggested prompts as chips only in the empty state.
 
-Evidence (4): ORG-0005 (AI assistant chat with composer), ORG-0069 (Messages inbox with pinned threads), ORG-0105 (AI image studio with prompt and grid), ORG-0129 (Chat thread with reactions and composer)
+Evidence (20): ORG-0005 (AI assistant chat with composer), ORG-0069 (Messages inbox with pinned threads), ORG-0105 (AI image studio with prompt and grid), ORG-0129 (Chat thread with reactions and composer)
 
 ## Dense data table with quiet chrome
 
@@ -101,7 +101,7 @@ Tables carry the data; chrome recedes. Zebra-free rows, hairline dividers, statu
 - Sticky header; filters above, not in the header row.
 - Status pills: tinted background at 12–16% with full-strength text.
 
-Evidence (38): ORG-0001 (Analytics overview with sidebar), ORG-0061 (Activity rings and workout list), ORG-0065 (Kanban board with swimlane columns), ORG-0121 (Email client with three panes)
+Evidence (54): ORG-0001 (Analytics overview with sidebar), ORG-0061 (Activity rings and workout list), ORG-0065 (Kanban board with swimlane columns), ORG-0121 (Email client with three panes)
 
 ## Sidebar workspace shell
 
@@ -121,7 +121,7 @@ Goal completion shown as one ring (or nested rings) carrying the number inside. 
 - Number centred inside, unit below at small size.
 - Animate fill on appear (600–900ms, ease-out).
 
-Evidence (9): ORG-0017 (Card patterns sheet), ORG-0037 (Welcome with orbit illustration), ORG-0045 (Profile with stats and streak grid), ORG-0061 (Activity rings and workout list)
+Evidence (25): ORG-0017 (Card patterns sheet), ORG-0037 (Welcome with orbit illustration), ORG-0045 (Profile with stats and streak grid), ORG-0061 (Activity rings and workout list)
 
 ## Three tiers, one anchored
 
@@ -141,4 +141,4 @@ The primary action pinned to the bottom of a scrolling screen with the total or 
 - Show the consequence on the button ("Pay $42.10", not "Continue").
 - Hairline or blur behind the bar instead of a heavy shadow.
 
-Evidence (38): ORG-0013 (Cart with sticky pay button), ORG-0041 (Paywall with anchored yearly plan), ORG-0081 (Product detail with size picker), ORG-0089 (Flight selection with date strip)
+Evidence (54): ORG-0013 (Cart with sticky pay button), ORG-0041 (Paywall with anchored yearly plan), ORG-0081 (Product detail with size picker), ORG-0089 (Flight selection with date strip)

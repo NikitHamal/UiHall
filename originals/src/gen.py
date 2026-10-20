@@ -14,13 +14,27 @@ I.update({
  'clock': '<circle cx="10" cy="10" r="7"/><path d="M10 6v4l3 2"/>', 'grid': '<rect x="3" y="3" width="6" height="6" rx="1.5"/><rect x="11" y="3" width="6" height="6" rx="1.5"/><rect x="3" y="11" width="6" height="6" rx="1.5"/><rect x="11" y="11" width="6" height="6" rx="1.5"/>',
 })
 
+CUR = {'icon': 'star'}
+
 def art(seed, h=200, r=24, extra=''):
-    a = (seed * 37) % 100
-    return (f'<div style="height:{h}px;border-radius:{r}px;position:relative;overflow:hidden;background:linear-gradient(160deg,color-mix(in oklab,var(--accent2) 55%,var(--surface2)),color-mix(in oklab,var(--accent) {35 + seed % 30}%,var(--surface2)));{extra}">'
-            f'<svg viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%">'
-            f'<circle cx="{60 + a * 1.8:.0f}" cy="{50 + (seed * 13) % 60}" r="{38 + seed % 20}" fill="rgba(255,255,255,.35)"/>'
-            f'<path d="M0 {140 + seed % 20} Q 80 {100 + (seed * 7) % 40} 160 {135} T 300 {120 + seed % 30} V200 H0Z" fill="rgba(0,0,0,.14)"/>'
-            f'<path d="M0 {165} Q 100 {145 + seed % 25} 200 {170} T 300 {160} V200 H0Z" fill="rgba(0,0,0,.2)"/></svg></div>')
+    """Domain artwork in five styles, all from the theme tokens; the domain icon anchors rings/orbs/grid styles."""
+    st = seed % 5
+    bg = f'linear-gradient(160deg,color-mix(in oklab,var(--accent2) 55%,var(--surface2)),color-mix(in oklab,var(--accent) {35 + seed % 30}%,var(--surface2)))'
+    glyph = (f'<g transform="translate(150 100)"><circle r="34" fill="var(--bg)" opacity=".92"/><g transform="translate(-16 -16) scale(1.6)" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{I.get(CUR["icon"], I["star"])}</g></g>')
+    if st == 0:
+        svg = (f'<circle cx="{60 + (seed * 37) % 100 * 1.8:.0f}" cy="{50 + (seed * 13) % 60}" r="{38 + seed % 20}" fill="rgba(255,255,255,.35)"/>'
+               f'<path d="M0 {140 + seed % 20} Q 80 {100 + (seed * 7) % 40} 160 135 T 300 {120 + seed % 30} V200 H0Z" fill="rgba(0,0,0,.14)"/><path d="M0 165 Q 100 {145 + seed % 25} 200 170 T 300 160 V200 H0Z" fill="rgba(0,0,0,.2)"/>')
+    elif st == 1:
+        svg = ''.join(f'<circle cx="150" cy="100" r="{40 + k * 26}" fill="none" stroke="rgba(255,255,255,{.42 - k * .08:.2f})" stroke-width="1.5"/>' for k in range(5)) + f'<circle cx="{150 + 92 * (1 if seed % 2 else -1)}" cy="{70 + seed % 40}" r="7" fill="var(--bg)"/>' + glyph
+    elif st == 2:
+        svg = ''.join(f'<rect x="{18 + (k % 6) * 46}" y="{14 + (k // 6) * 46}" width="38" height="38" rx="10" fill="rgba(255,255,255,{.5 if k == (seed % 18) else .16})"/>' for k in range(24)) + glyph
+    elif st == 3:
+        svg = ''.join(f'<path d="M{-100 + k * 60} 220 L{40 + k * 60} -20" stroke="rgba(255,255,255,{.08 + (k % 3) * .06:.2f})" stroke-width="26"/>' for k in range(9)) + f'<circle cx="{90 + seed % 120}" cy="{80 + seed % 40}" r="56" fill="rgba(255,255,255,.28)"/>'
+    else:
+        svg = (f'<circle cx="110" cy="110" r="70" fill="rgba(255,255,255,.22)"/><circle cx="190" cy="90" r="60" fill="color-mix(in oklab,var(--accent) 60%,transparent)"/>'
+               f'<circle cx="160" cy="140" r="40" fill="rgba(0,0,0,.12)"/>' + glyph)
+    return (f'<div style="height:{h}px;border-radius:{r}px;position:relative;overflow:hidden;background:{bg};{extra}">'
+            f'<svg viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%">{svg}</svg></div>')
 
 def head(title, right='', back=False):
     return (f'<div class="row">{"<span class=&quot;ico&quot; style=&quot;width:36px;height:36px;border-radius:50%&quot;>" + ic("back") + "</span>" if back else ""}'
@@ -44,6 +58,7 @@ def meta(d, kind, title, roles, style, tags, desc, vp='phone'):
 
 for n, d in enumerate(D):
     k, app, v = d['key'], d['app'], n % 3
+    CUR['icon'] = d['icon']
     H = d['hero']; items = d['items']
 
     # 1 home ----------------------------------------------------------------
@@ -143,6 +158,49 @@ for n, d in enumerate(D):
             f'<span class="eyebrow" style="margin:18px 0 6px">Top results</span><div class="list">{"".join(row(*it) for it in items[:4])}</div>')
     desc = f'A search screen in {app}: a focused field with a clear button, a chip row ({", ".join(d["cats"][:4])}), recent searches as pills, and "Top results" — {", ".join(a for a, *_ in items[:4])}. Idea: the empty state of search is useful before you type.'
     screen(f'gen-{k}-search', meta(d, 'search', f'{app} search', ['search', 'list'], ['minimal'], ['search', 'chips', 'list-row'], desc), body)
+
+    # 11 insights ----------------------------------------------------------
+    ch = d['chart']; mx = max(ch) or 1
+    pts = ' '.join(f'{i * 50},{110 - v / mx * 90:.0f}' for i, v in enumerate(ch))
+    pct = int(sum(1 for v in ch if v > mx * .5) / len(ch) * 100)
+    body = (head('Insights', '<span class="pill">Week ▾</span>') + f'<div class="card" style="margin-top:16px"><span class="small">{d["chart_label"]}</span><div class="col" style="gap:2px"><b class="d2 num">{H[1]}{H[2]}</b><span class="small up" style="font-weight:600">{H[3]}</span></div>'
+            f'<svg viewBox="0 0 300 120" style="width:100%;height:130px;margin-top:8px"><defs><linearGradient id="ig" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--accent)" stop-opacity=".35"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></linearGradient></defs><polygon points="0,120 {pts} 300,120" fill="url(#ig)"/><polyline points="{pts}" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>' + ''.join(f'<circle cx="{i * 50}" cy="{110 - v / mx * 90:.0f}" r="{5 if i == 5 else 0}" fill="var(--accent)" stroke="var(--surface)" stroke-width="3"/>' for i, v in enumerate(ch)) + '</svg>'
+            '<div class="row small" style="justify-content:space-between;font-size:11px">' + ''.join(f'<span>{x}</span>' for x in 'Mon Tue Wed Thu Fri Sat Sun'.split()) + '</div></div>'
+            f'<div class="row g12" style="margin-top:12px"><div class="card row g12" style="flex:1"><div style="width:58px;height:58px;border-radius:50%;flex:none;background:conic-gradient(var(--accent) 0 {pct}%,var(--surface2) 0);display:grid;place-items:center"><i style="width:44px;height:44px;border-radius:50%;background:var(--surface);display:grid;place-items:center;font:600 13px var(--sans);font-style:normal">{pct}%</i></div><span class="small">of days above your usual</span></div></div>'
+            '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px">' + ''.join(f'<div class="tint col g4" style="padding:12px"><span class="small" style="font-size:12px">{a}</span><b class="num" style="font-size:14.5px">{b}</b><span class="small" style="font-size:12px">{c}</span></div>' for a, b, c in d['kpis'][1:]) + '</div>' + tabbar('chart'))
+    desc = f'An insights screen in {app}. A Week selector sits beside the title; a card plots {d["chart_label"].lower()} as an area line with Saturday highlighted under the figure {H[1]}{H[2]} ({H[3]}); a progress ring shows {pct}% of days above usual; three tiles follow — ' + ', '.join(f'{a} {b}' for a, b, _ in d['kpis'][1:]) + '. Idea: one trend, one ratio, then supporting numbers.'
+    screen(f'gen-{k}-insights', meta(d, 'insights', f'{app} insights', ['dashboard'], ['data-dense', 'card-based'], ['line-chart', 'progress-ring', 'stats', 'kpi'], desc), body)
+
+    # 12 support chat ------------------------------------------------------
+    it = items[0]
+    body = (f'<div class="row"><span class="ico" style="width:36px;height:36px;border-radius:50%">{ic("back")}</span><span class="ico a" style="margin-left:6px;border-radius:50%">{ic(d["icon"])}</span><div class="col"><b>{app} support</b><span class="small" style="color:#3DBF7F">Typically replies in 2 min</span></div></div>'
+            '<div class="col g8" style="margin-top:16px;flex:1"><span class="small" style="text-align:center">Today</span>'
+            f'<div style="align-self:flex-end;max-width:78%;padding:10px 14px;border-radius:18px 18px 6px 18px;background:var(--accent);color:var(--onAccent)">Hi! I have a question about {it[0]}.</div>'
+            f'<div style="align-self:flex-start;max-width:80%;padding:10px 14px;border-radius:18px 18px 18px 6px;background:var(--surface2)">Of course — I can see it here. What would you like to change?</div>'
+            f'<div class="card row" style="align-self:flex-start;width:82%;padding:12px"><span class="ico">{ic(it[3])}</span><div class="col" style="min-width:0"><b style="font-size:14px">{it[0]}</b><span class="small">{it[1]}</span></div><div class="sp"></div><b class="num" style="font-size:14px">{it[2]}</b></div>'
+            '<div style="align-self:flex-end;max-width:78%;padding:10px 14px;border-radius:18px 18px 6px 18px;background:var(--accent);color:var(--onAccent)">Can I move it to next week?</div>'
+            '<div class="row g8" style="align-self:flex-start;padding:10px 14px;border-radius:18px;background:var(--surface2)">' + ''.join(f'<i style="width:7px;height:7px;border-radius:50%;background:var(--muted);opacity:{o}"></i>' for o in (.4, .7, 1)) + '</div></div>'
+            '<div class="row g8" style="margin-bottom:10px;overflow:hidden;white-space:nowrap"><span class="pill">Yes, next week</span><span class="pill">Talk to a person</span></div>'
+            f'<div class="row g8" style="padding:8px;border-radius:22px;background:var(--surface);box-shadow:inset 0 0 0 1px var(--line)"><span class="ico" style="width:36px;height:36px;border-radius:50%">{ic("plus")}</span><span class="small" style="flex:1">Message {app}…</span><span class="ico a" style="width:38px;height:38px;border-radius:50%">{ic("send")}</span></div>')
+    desc = f'A support conversation inside {app}. The header shows the support avatar and "Typically replies in 2 min"; the user asks about {it[0]}, the agent replies, a context card shows {it[0]} ({it[1]}, {it[2]}), a follow-up asks to move it, a typing indicator and two quick-reply chips sit above an anchored composer. Idea: show the object being discussed inside the thread.'
+    screen(f'gen-{k}-support', meta(d, 'support', f'{app} support chat', ['chat'], ['minimal', 'rounded'], ['chat', 'messaging', 'chips', 'input'], desc), body)
+
+    # 13 schedule -----------------------------------------------------------
+    times = ['08:00', '09:30', '12:00', '14:30', '17:00', '19:30']
+    body = (head('Schedule', f'<span class="ico a" style="width:38px;height:38px;border-radius:50%">{ic("plus")}</span>') + '<div class="row" style="justify-content:space-between;margin-top:14px">'
+            + ''.join(f'<div class="col g4" style="align-items:center;width:42px;padding:8px 0;border-radius:14px;{"background:var(--accent);color:var(--onAccent)" if i == 3 else ""}"><span style="font-size:11.5px;opacity:.7">{dd}</span><b class="num">{11 + i}</b></div>' for i, dd in enumerate('MTWTFSS')) + '</div>'
+            '<div class="col" style="margin-top:16px;gap:10px">' + ''.join(f'<div class="row g12" style="align-items:stretch"><span class="small num" style="width:44px;padding-top:12px">{t}</span><div class="{"card" if i != 1 else ""}" style="flex:1;padding:12px 14px;border-radius:var(--r);{"background:var(--accent);color:var(--onAccent)" if i == 1 else ""};box-shadow:inset 3px 0 0 var(--accent2)"><b style="font-size:14.5px">{a}</b><span style="display:block;font-size:12.5px;opacity:.75">{b}</span></div></div>' for i, (t, (a, b, _, _)) in enumerate(zip(times, items))) + '</div>')
+    desc = f'A day schedule in {app}. A week strip with Thursday selected sits under the title; a timeline lists six entries from 08:00 to 19:30 — ' + ', '.join(f'{t} {a}' for t, (a, *_) in zip(times, items)) + ' — the second highlighted in the accent. Idea: time on the left rail, one emphasised "now" block.'
+    screen(f'gen-{k}-schedule', meta(d, 'schedule', f'{app} schedule', ['list'], ['card-based', 'minimal'], ['calendar', 'schedule', 'timeline', 'week-strip'], desc), body)
+
+    # 14 success ------------------------------------------------------------
+    body = ('<div class="col" style="flex:1;align-items:center;justify-content:center;text-align:center;padding-bottom:30px">'
+            f'<div style="position:relative;width:120px;height:120px;margin-bottom:22px"><i style="position:absolute;inset:-18px;border-radius:50%;background:color-mix(in oklab,var(--accent) 18%,transparent)"></i><i style="position:absolute;inset:-36px;border-radius:50%;background:color-mix(in oklab,var(--accent) 8%,transparent)"></i><span class="ico a" style="position:relative;width:120px;height:120px;border-radius:50%">{ic("check").replace("class=\"i\"", "class=\"i\" style=\"width:52px;height:52px\"")}</span></div>'
+            f'<h1 class="d1" style="font-size:32px">All set!</h1><p class="lede" style="margin:8px 26px 22px">{c[0]} confirmed — we’ve sent the details to your email.</p>'
+            '<div class="card" style="width:100%;padding:4px 16px;text-align:left"><div class="list">' + ''.join(f'<div class="li"><span class="small" style="flex:1">{a}</span><b class="num">{b}</b></div>' for a, b in c[1][:3]) + f'<div class="li"><b style="flex:1">Total</b><b class="num">{c[2]}</b></div></div></div></div>'
+            f'<button class="btn btn-p">Done</button><button class="btn" style="margin-top:8px;background:none">{ic("send")} Share receipt</button>')
+    desc = f'A success screen in {app} after "{c[0]}". A large accent check with two soft halos sits over "All set!" and a confirmation line; a receipt card lists {"; ".join(f"{a} {b}" for a, b in c[1][:3])} and the total {c[2]}; Done and Share receipt close the screen. Idea: celebrate briefly, then show exactly what happened.'
+    screen(f'gen-{k}-success', meta(d, 'success', f'{app} confirmation', ['checkout'], ['minimal', 'rounded'], ['success', 'receipt', 'cta-button'], desc), body)
 
     # desktop: dashboard ------------------------------------------------------
     body = (f'<div class="row" style="height:100%;align-items:stretch;gap:0"><aside style="width:230px;background:var(--surface);border-right:1px solid var(--line);padding:20px 14px;display:flex;flex-direction:column;gap:2px"><b class="h3 row g8" style="padding:0 8px 18px"><span class="ico a" style="width:28px;height:28px;border-radius:8px">{ic(d["icon"])}</span>{app}</b>'
