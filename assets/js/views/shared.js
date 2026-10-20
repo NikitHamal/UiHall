@@ -37,6 +37,8 @@ export function installBlock() {
   </div>`;
 }
 
+const TRY = ['Design the onboarding for a sleep-tracking app — calm, iOS. Use UI Hall.', 'Find three dashboard references with a dark surface and lift their palette as Tailwind tokens.', 'Check this screen against the UI Hall checklist before we ship.'];
+
 export function bindInstall(root) {
   const box = root.querySelector('[data-install]');
   if (!box) return;
@@ -45,7 +47,8 @@ export function bindInstall(root) {
     const c = CLIENTS.find((x) => x.id === id);
     for (const t of box.querySelectorAll('.install__tab')) t.setAttribute('aria-selected', String(t.dataset.client === id));
     panel.innerHTML = `<p>${esc(c.blurb)}</p>${c.steps.map(([title, code], i) => `<div class="mt-s"><div class="faint mono" style="font-size:11.5px;margin-bottom:8px">${String(i + 1).padStart(2, '0')} · ${esc(title)}</div>${withCopy(`ins-${c.id}-${i}`, tint(code))}</div>`).join('')}
-      <p class="faint" style="font-size:13px">Needs Node 18+. The server fetches the corpus from this site on first run and caches it — no clone, no API key.</p>`;
+      <p class="faint" style="font-size:13px">Needs Node 18+. The server fetches the corpus from this site on first run and caches it — no clone, no API key.</p>
+      <div class="install__try"><span class="faint mono">Then ask your agent</span>${TRY.map((t) => `<button type="button" class="install__prompt" data-copy="${esc(t)}" data-copy-label="Prompt copied">“${esc(t)}”${icon.copy || ''}</button>`).join('')}</div>`;
     panel.animate?.([{ opacity: 0, transform: 'translateY(8px)' }, { opacity: 1, transform: 'none' }], { duration: 420, easing: 'cubic-bezier(.16,1,.3,1)' });
   };
   box.addEventListener('click', (e) => { const t = e.target.closest('[data-client]'); if (t) show(t.dataset.client); });

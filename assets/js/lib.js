@@ -61,7 +61,7 @@ export function bindCopy(root) {
 }
 
 export const codeBlock = (id, html, raw = true) =>
-  `<pre class="code" id="${id}">${raw ? html : esc(html)}</pre>`;
+  `<pre class="code" id="${id}"><span class="code__in">${raw ? html : esc(html)}</span></pre>`;
 export const withCopy = (id, html) =>
   `<div style="position:relative">${codeBlock(id, html)}<button class="code__copy" type="button" data-copy="#code:#${id}" aria-label="Copy">${icon.copy}</button></div>`;
 
