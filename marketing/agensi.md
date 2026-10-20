@@ -69,7 +69,7 @@ The repo and site are public, so the paid value is the packaging, curation and w
 
 ## Proof it works
 
-Three prototypes built by following the skill end to end: https://nikithamal.github.io/UiHall/demo/ — each cites the
+Four prototypes built by following the skill end to end: https://nikithamal.github.io/UiHall/demo/ — each cites the
 references and measured palette it used. `evals/README.md` in the skill lists the behaviours it is graded on.
 
 ## Screenshots

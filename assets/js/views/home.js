@@ -85,10 +85,10 @@ export default function home(root, app) {
   <section class="container section">
     <div class="section__head">
       <h2 class="display h-lg" data-reveal>Evidence in, <em>product out.</em></h2>
-      <p class="lede" data-reveal style="--d:1">Three working prototypes, each made by following the skill end to end — brief, look, take the structure, use the measured palette, walk the checklist — and each citing exactly what it borrowed.</p>
+      <p class="lede" data-reveal style="--d:1">Four working prototypes, each made by following the skill end to end — brief, look, take the structure, use the measured palette, walk the checklist — and each citing exactly what it borrowed.</p>
     </div>
     <div class="showcase">
-      ${[['wallet', 'Halo', 'Dark wallet · iOS', 'IMG-0365 · IMG-0433 · VID-0382'], ['pricing', 'Relay', 'Pricing page · web', 'IMG-0587 · IMG-0592 · IMG-0610'], ['sleep', 'Hush', 'Onboarding · iOS', 'VID-0236 · IMG-0618 · VID-0173']].map(([d, n, k, refs], i) => `
+      ${[['wallet', 'Halo', 'Dark wallet · iOS', 'IMG-0365 · IMG-0433 · VID-0382'], ['pricing', 'Relay', 'Pricing page · web', 'IMG-0587 · IMG-0592 · IMG-0610'], ['dashboard', 'Kiln', 'Analytics · web', 'VID-0314 · IMG-0518 · IMG-0455'], ['sleep', 'Hush', 'Onboarding · iOS', 'VID-0236 · IMG-0618 · VID-0173']].map(([d, n, k, refs], i) => `
       <a class="show" href="demo/${d}/" data-reveal style="--d:${i}"><div class="show__img"><img src="demo/${d}/cover.jpg" alt="${n} prototype" loading="lazy"></div>
         <div class="show__meta"><b>${n}</b><span>${k}</span><small>${refs}</small></div></a>`).join('')}
     </div>
