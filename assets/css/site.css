@@ -1154,7 +1154,7 @@
   .lp-hero2.in .lp-ring { opacity: 1; transform: none; }
   .lp-ring.grab { cursor: grabbing; }
   .lp-ring__track { position: absolute; left: 50%; top: 4%; width: var(--cw); height: calc(var(--cw) * 2.1); margin-left: calc(var(--cw) / -2); transform-style: preserve-3d; will-change: transform; }
-  .lp-card { position: absolute; inset: 0; transform: rotateY(calc(var(--i) * (360deg / 21))) translateZ(var(--R)); backface-visibility: hidden; border-radius: calc(var(--cw) * .13); transition: filter .3s; }
+  .lp-card { position: absolute; inset: 0; transform: rotateY(calc(var(--i) * (360deg / var(--n, 21)))) translateZ(var(--R)); backface-visibility: hidden; border-radius: calc(var(--cw) * .13); transition: filter .3s; }
   .lp-card img { width: 100%; height: auto; display: block; filter: drop-shadow(0 30px 40px rgba(0, 0, 0, .45)); pointer-events: none; }
   .lp-card:hover img { filter: drop-shadow(0 30px 40px rgba(0, 0, 0, .45)) drop-shadow(0 0 0 transparent); }
   .lp-ring__caption { margin-top: 8px; font-size: 13.5px; color: var(--text-3); }

@@ -180,7 +180,7 @@ export default function home(root, app) {
   track.innerHTML = RING.map((r, i) => `<a class="lp-card" href="#/a/${r.id}" style="--i:${i}" draggable="false"><img src="${r.src}" alt="${esc(r.title)}" draggable="false" loading="${i < 8 ? 'eager' : 'lazy'}"></a>`).join('');
   const cards = $$('.lp-card', track);
   let R = 0, W = 0;
-  const size = () => { W = innerWidth < 640 ? 150 : innerWidth < 1100 ? 190 : 220; R = Math.round((N * (W + 34)) / (2 * Math.PI)); ringEl.style.setProperty('--cw', `${W}px`); ringEl.style.setProperty('--R', `${R}px`); };
+  const size = () => { W = innerWidth < 640 ? 150 : innerWidth < 1100 ? 190 : 220; R = Math.round((N * (W + 34)) / (2 * Math.PI)); ringEl.style.setProperty('--cw', `${W}px`); ringEl.style.setProperty('--R', `${R}px`); ringEl.style.setProperty('--n', N); };
   size(); addEventListener('resize', size);
   let angle = 40, vel = 0, target = 0, dragging = false, lastX = 0, rmoved = 0, lastT = performance.now(), alive2 = true, spinUp = 1;
   const scrollAngle = () => scrollY * 0.12;
