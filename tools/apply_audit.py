@@ -98,10 +98,6 @@ def main():
         if "origin" in a:
             a["origin"]["path"] = os.path.basename(a["origin"]["path"].replace("\\", "/"))
     json.dump(c, open(CORPUS, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-    with open(CORPUS[:-2], "w", encoding="utf-8") as f:
-        f.write("window.STORMY_CORPUS=")
-        json.dump(c, f, ensure_ascii=False, separators=(",", ":"))
-        f.write(";\n")
     print("assets", len(assets), "dropped", len(DROP), "categories", [(x["id"], x["count"]) for x in c["categories"]])
 
 

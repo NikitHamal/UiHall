@@ -13,7 +13,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const ROOT = path.resolve(fileURLToPath(new URL("..", import.meta.url)), "ui-hall");
+// Serve the repo root: the site lives in /ui-hall/ and imports the engine from /mcp/src/.
+const ROOT = path.resolve(fileURLToPath(new URL("..", import.meta.url)));
 const PORT = Number(process.argv[2] || 8788);
 
 const TYPES = {
@@ -80,6 +81,6 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, "127.0.0.1", () => {
-  console.log(`UI Hall  ->  http://127.0.0.1:${PORT}/`);
+  console.log(`UI Hall  ->  http://127.0.0.1:${PORT}/ui-hall/`);
   console.log(`root: ${ROOT}`);
 });

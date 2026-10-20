@@ -25,5 +25,5 @@ if not defined NODE (
 set "PORT=8099"
 echo Serving UI Hall at http://127.0.0.1:%PORT%/
 echo Press Ctrl+C to stop.
-start "" "http://127.0.0.1:%PORT%/"
+start "" "http://127.0.0.1:%PORT%/ui-hall/"
 "%NODE%" "tools\serve.mjs" %PORT%
