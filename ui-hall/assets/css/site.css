@@ -207,7 +207,8 @@
   .nav__search:hover { color: var(--text-2); box-shadow: inset 0 0 0 1px var(--line-2); }
   .nav__search svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
   .nav__search span { margin-right: 18px; }
-  [data-theme='light'] .icon-btn .sun { opacity: 0; }
+  #themeBtn .moon, [data-theme='light'] #themeBtn .sun { display: none; }
+  [data-theme='light'] #themeBtn .moon { display: block; }
 
   @media (max-width: 900px) {
     .nav { grid-template-columns: auto 1fr auto; }

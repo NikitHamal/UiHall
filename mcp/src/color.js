@@ -78,13 +78,13 @@ export function fromOklab([L, a, b]) {
 export function toOklch(hex) {
   const [L, a, b] = toOklab(hex);
   const C = Math.hypot(a, b);
-  let h = (Math.atan2(b, a) * 180) / Math.PI;
+  let h = C < 1e-4 ? 0 : (Math.atan2(b, a) * 180) / Math.PI;
   if (h < 0) h += 360;
   return [L, C, h];
 }
 
 export function fromOklch([L, C, h]) {
-  const r = (h * Math.PI) / 180;
+  const r = ((Number.isFinite(h) ? h : 0) * Math.PI) / 180;
   return fromOklab([L, C * Math.cos(r), C * Math.sin(r)]);
 }
 

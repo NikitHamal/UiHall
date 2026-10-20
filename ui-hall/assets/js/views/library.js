@@ -211,7 +211,7 @@ function curated(list) {
       buckets.get(k).push(a);
     }
     const main = [...buckets.entries()].filter(([k]) => !k.startsWith('zz')).sort((a, b) => b[1].length - a[1].length).map(([, v]) => v);
-    const weights = main.map((b) => Math.max(1, Math.round(b.length / main[main.length - 1].length) ** 0.5 | 0));
+    const weights = main.map((b) => Math.max(1, Math.round(Math.sqrt(b.length / 20))));
     const out = [];
     while (main.some((b) => b.length)) main.forEach((b, i) => { for (let n = 0; n < weights[i] && b.length; n++) out.push(b.shift()); });
     CURATED = new Map([...out, ...(buckets.get('zz-pal') || []), ...(buckets.get('zz-crop') || [])].map((a, i) => [a.id, i]));
